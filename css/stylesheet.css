@@ -47,7 +47,7 @@ h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; font-family: 
 h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
 h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
 h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
-h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; color: #CCB380}
 
 /* Larger than phablet */
 @media (min-width: 550px) {
@@ -63,17 +63,23 @@ p {
   margin-top: 0; }
 
 /*..............................................B NAVIATIONSBAR */
+.navigationbar {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0;/* Position the navbar at the top of the page */
+  width: 100%;
+  z-index: 1;/* Sætter Navigationsbar over slider*/
+  }
 .logo {
   display: inline;
 }
 #logo {
   display: inline;
 }
-.navigationsmenu {
+.navigationmenu {
   display: inline;
+  float: right;
 }
-
-.navigationsmenu > p {
+.navigationmenu > p {
   display: inline;
 }
 /*..............................................C HEADER */
@@ -83,6 +89,18 @@ p {
    width: 100%;
    height: 70vh;
    background-size: cover;
+   position: relative;
+}
+
+.header_text{
+  width: 30%;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 /*..............................................D FOOTER */
@@ -378,17 +396,23 @@ body {
 =======
 #float_bar_left ul{
   float:left;
-  text-align:center;
+  text-align:left;
   list-style:none;
-  width:75%;
+  color:white;
+  width:80%;
 }
 
 #float_bar_right ul{
   float:right;
   text-align:center;
   list-style:none;
+<<<<<<< HEAD
+  color:#fff;
+  width:20%;
+=======
   width:25%;
 >>>>>>> 476c9db13397b3810eb67db2d500fb70b083bbf7
+>>>>>>> 35b172ba8da60e54ba2e413ae520f60027affba6
 }
 
 #center_bar{
