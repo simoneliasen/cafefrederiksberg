@@ -78,6 +78,13 @@ p {
 }
 /*..............................................C HEADER */
 
+.bg_img{
+   background-image: url("../img/bg_img_placeholder.jpg");
+   width: 100%;
+   height: 70vh;
+   background-size: cover;
+}
+
 /*..............................................D FOOTER */
 
 /*..............................................1 INDEX */
