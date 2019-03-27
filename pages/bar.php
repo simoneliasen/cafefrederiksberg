@@ -57,7 +57,56 @@
             </li>
           </ul>
         </div>
+
         <div class="one-half column">
+          <h2 class="center_bar">ØL & VAND</h2>
+          <ul class="bar_menu">
+            <li>
+              <div class="bar_menu_name"><strong>Beverage Type</strong><br> Description
+              </div>
+              <div class="bar_menu_price">13,-</div>
+            </li>
+            <li>
+              <div class="bar_menu_name"><strong>Beverage Type</strong><br> Description
+              </div>
+              <div class="bar_menu_price">13,-</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="one-third column">
+          <h2 class="center_bar">ØL & VAND</h2>
+          <ul class="bar_menu">
+            <li>
+              <div class="bar_menu_name"><strong>Beverage Type</strong><br> Description
+              </div>
+              <div class="bar_menu_price">13,-</div>
+            </li>
+            <li>
+              <div class="bar_menu_name"><strong>Beverage Type</strong><br> Description
+              </div>
+              <div class="bar_menu_price">13,-</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="one-third column">
+          <h2 class="center_bar">ØL & VAND</h2>
+          <ul class="bar_menu">
+            <li>
+              <div class="bar_menu_name"><strong>Beverage Type</strong><br> Description
+              </div>
+              <div class="bar_menu_price">13,-</div>
+            </li>
+            <li>
+              <div class="bar_menu_name"><strong>Beverage Type</strong><br> Description
+              </div>
+              <div class="bar_menu_price">13,-</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="one-third column">
           <h2 class="center_bar">ØL & VAND</h2>
           <ul class="bar_menu">
             <li>
