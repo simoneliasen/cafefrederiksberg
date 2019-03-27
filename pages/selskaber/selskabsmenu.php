@@ -42,8 +42,8 @@
                     <!-- opretter række, som elementer let kan placeres i-->
                     <div class="row indholdsoversigt">
                         <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
-                        <div class="two columns"></div>
-                        <div class="six columns">
+                        <div class="one columns"></div>
+                        <div class="seven columns">
                             <h5> Klar suppe</h5>
                             <p>Med boller og flütes</p>
                             <h5>*Flødegeleret aspargessuppe</h5>
@@ -54,7 +54,7 @@
                             <h5>- per couv. kr. 52,-</h5><br><br>
                             <h5>- per couv. kr. 52,-</h5>
                         </div>
-                        <div class="one columns"></div>
+
 
                     </div>
         </div>
