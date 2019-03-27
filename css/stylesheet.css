@@ -63,6 +63,13 @@ p {
   margin-top: 0; }
 
 /*..............................................B NAVIATIONSBAR */
+.navigationbar {
+  background-color: #101010;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  z-index: 1;
+  }
 .logo {
   display: inline;
 }
@@ -71,6 +78,7 @@ p {
 }
 .navigationmenu {
   display: inline;
+  float: right;
 }
 
 .navigationmenu > p {
@@ -100,16 +108,27 @@ p {
 /*..............................................D FOOTER */
 
 /*..............................................1 INDEX */
-
+.onlineBestilling {
+background-color: #1E1D20;
+}
+.introHistorie {
+background-color: #101010;
+}
+.indholdsoversigt {
+background-color: #1E1D20;
+}
+.katalog {
+background-color: #101010;
+}
+.kommendeEvents {
+background-color: #101010;
+}
+.googleMaps {
+background-color: #1E1D20;
+}
 /*..............................................2 ADMIN */
 
 /*..............................................3 BAR */
-
-
-
-.kommendeEvents {
-  background-color: pink;
-}
 
 .center_bar{
   text-align:center
@@ -154,6 +173,19 @@ text-align:left;
   background-color: #1E1D20;
   width: 100%;
   height: 80px;
+}
+.Opening_info{
+  background-color: #101010;
+}
+.opening_float_left{
+  float: left;
+}
+.kontaktinfo_float_right{
+  float: right;
+}
+.opening_times li{
+  font-family: "poppins";
+  list-style: none;
 }
 
 /*..............................................7 RESTAURANT */

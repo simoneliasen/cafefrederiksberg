@@ -35,11 +35,11 @@
 
     <div class="wrapper indholdsoversigt">
         <!--Indhold centreret i wrapper-->
-        <div class="container indholdsoversigt">
+        <div class="container-katagori">
             <h2 class="header-centertext">Sammensæt din egen menu<h2>
                     <hr>
                     <h2 class="header-centertext"> Forretter </h2><br>
-                    <div class="row indholdsoversigt">
+                    <div class="container-retter">
                         <div class="one columns"></div>
                         <div class="seven columns">
                             <h5> Klar suppe</h5>
@@ -54,14 +54,36 @@
                         </div>
 
 
+                    </div><br>
+                    <div class="wrapper indholdsoversigt">
+                        <!--Indhold centreret i wrapper-->
+                        <div class="container-katagori">
+                            <div class="container-retter">
+                                <div class="one columns"></div>
+                                <div class="seven columns">
+                                    <h5> grøn suppe</h5>
+                                    <p>Med boller og flütes</p>
+                                    <h5>*Flødegeleret aspargessuppe</h5>
+                                    <p>uden kødboller og flutes<p>
+
+                                </div>
+                                <div class="four columns">
+                                    <h5>- per couv. kr. 52,-</h5><br><br>
+                                    <h5>- per couv. kr. 52,-</h5>
+                                </div>
+
+
+                            </div>
+                        </div>
                     </div>
         </div>
     </div>
 
 
 
-    <!--Indrag footer fra filen includes/footer.php-->
-    <?php include '../../includes/footer.php'; ?>
+
+
+
 
 
 
