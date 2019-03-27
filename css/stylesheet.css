@@ -384,31 +384,38 @@ body {
 
 .kommendeEvents {
   background-color: pink;
-=======
-#float_bar_left ul{
-  float:left;
-  text-align:left;
+}
+
+.center_bar{
+  text-align:center
+}
+
+.bar_menu_name{
+float:left;
+background-color:green;
+width:80%;
+font-family:"Poppins";
+text-align:left;
+}
+
+.bar_menu_price{
+  float:right;
+  background-color:purple;
+  width:20%;
+  font-family:"Poppins";
+  font-style:italic;
+  text-align:right;
+}
+
+.bar_menu li{
   list-style:none;
-  color:white;
+}
+
+.bar_menu{
+  margin:auto;
   width:80%;
 }
 
-#float_bar_right ul{
-  float:right;
-  text-align:center;
-  list-style:none;
-<<<<<<< HEAD
-  color:#fff;
-  width:20%;
-=======
-  width:25%;
->>>>>>> 476c9db13397b3810eb67db2d500fb70b083bbf7
->>>>>>> 35b172ba8da60e54ba2e413ae520f60027affba6
-}
-
-#center_bar{
-  text-align:center
-}
 
 /*..............................................4 BOOKING */
 
