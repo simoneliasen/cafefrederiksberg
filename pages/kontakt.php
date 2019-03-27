@@ -55,7 +55,7 @@
     </div>
   </div>
     <!-- Kontakt info -->
-    <div class="wrapper opening_info">
+    <div class="container opening_info">
       <div class="opening_info">
         <div class="row indholdsoversigt">
           <div class="one-third">
