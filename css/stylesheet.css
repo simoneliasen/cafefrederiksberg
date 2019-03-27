@@ -63,7 +63,19 @@ p {
   margin-top: 0; }
 
 /*..............................................B NAVIATIONSBAR */
+.logo {
+  display: inline;
+}
+#logo {
+  display: inline;
+}
+.navigationsmenu {
+  display: inline;
+}
 
+.navigationsmenu > p {
+  display: inline;
+}
 /*..............................................C HEADER */
 
 /*..............................................D FOOTER */
