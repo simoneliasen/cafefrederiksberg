@@ -105,7 +105,9 @@ p {
 
 .opening_float_left{
   float:left;
-  text-align: center;
+}
+
+.opening_times{
   list-style: none;
 }
 
