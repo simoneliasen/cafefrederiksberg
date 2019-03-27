@@ -97,6 +97,9 @@ p {
 /*..............................................5 EVENTS */
 
 /*..............................................6 KONTAKT */
+.Bestil_online{
+  padding-left: 10px;
+}
 .container_buttons{
   background-color: #1E1D20;
   width: 100%;
