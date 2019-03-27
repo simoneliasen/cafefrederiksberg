@@ -81,13 +81,20 @@
     <!--Indhold centreret i wrapper-->
     <div class="container katalog">
       <!--Div til katalog  -->
-      <div class="six columns">
+      <div class="six columns katalog">
         <!--Midlertidig  -->
         <img src="img/katalog.png" width="50%" height="auto">
       </div>
       <!--Div til tekst  -->
-      <div class="six columns">
+      <div class="six columns katalogtekst">
         <h2>Katalog</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis neque in nunc varius fringilla.
+          Morbi bibendum nunc ut posuere tempor. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
+          Proin vel mauris sagittis, volutpat est at, gravida enim. Etiam mi quam, aliquet eget sodales sed, vestibulum ac nibh.
+          Mauris elementum, quam in finibus vehicula, tellus nunc tempus urna, ac gravida arcu est id urna.
+
+          Cras a sagittis ligula. Maecenas placerat quis tellus vitae ullamcorper.
+          Aenean id cursus urna. Pellentesque aliquet dictum diam, vel mattis nisi sagittis eget.</p>
       </div>
   </div>
 

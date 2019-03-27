@@ -120,6 +120,14 @@ background-color: #1E1D20;
 .katalog {
 background-color: #101010;
 }
+.katalog img {
+  float: right;
+  margin-top: 4rem;
+}
+.six.columns.katalogtekst {
+  float: left;
+  margin-top: 10rem;
+}
 .kommendeEvents {
 background-color: #101010;
 }
