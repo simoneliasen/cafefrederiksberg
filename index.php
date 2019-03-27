@@ -80,8 +80,15 @@
   <div class="wrapper katalog">
     <!--Indhold centreret i wrapper-->
     <div class="container katalog">
-      <h1> Her kommer der til at være et katalog </h1>
-    </div>
+      <!--Div til katalog  -->
+      <div class="six columns">
+        <!--Midlertidig  -->
+        <img src="img/katalog.png" width="50%" height="auto">
+      </div>
+      <!--Div til tekst  -->
+      <div class="six columns">
+        <h2>Katalog</h2>
+      </div>
   </div>
 
 
