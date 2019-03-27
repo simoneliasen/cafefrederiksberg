@@ -58,26 +58,42 @@
     <!-- Kontakt info -->
       <div class="Opening_info">
         <div class="row indholdsoversigt">
-          <div class="six columns">
+          <div class="one-third">
             <div class="opening_float_left">
               <h2>Åbningstid:</h2>
                 <ul class="opening_times">
-                  <li>Mandag:  kl. 10.00-00.00</li>
-                  <li>Tirsdag: kl. 10.00-00.00</li>
-                  <li>Onsdag:  Kl. 10.00-00.00</li>
-                  <li>Torsdag: Kl. 10.00-03.00</li>
-                  <li>Fredag:  Kl. 10.00-03.00</li>
-                  <li>Lørdag:  Kl. 08.00-03.00</li>
-                  <li>Søndag:  Kl. 08.00-00.00</li>
+                  <li><strong>Mandag:</strong>  kl. 10.00-00.00</li>
+                  <li><strong>Tirsdag:</strong> kl. 10.00-00.00</li>
+                  <li><strong>Onsdag:</strong>  Kl. 10.00-00.00</li>
+                  <li><strong>Torsdag:</strong> Kl. 10.00-03.00</li>
+                  <li><strong>Fredag:</strong>  Kl. 10.00-03.00</li>
+                  <li><strong>Lørdag:</strong>  Kl. 08.00-03.00</li>
+                  <li><strong>Søndag:</strong>  Kl. 08.00-00.00</li>
                 </ul>
-              <h2>Køkken</h2>
+              <h2>Køkken:</h2>
               <ul class="opening_times">
-                <li>Hver dag:  Kl. 12.00-14.00 & 17.00-20.00</li>
-            </div>
-              <div class="opening_float_right">
-
+                <li><strong>Hver dag:</strong>  Kl. 12.00-14.00 & 17.00-20.00</li>
               </div>
-          </div>
+            </div>
+            <div class="one-third">
+            </div>
+            <div class="one-third">
+              <div class="kontaktinfo_float_right">
+                <h2>Find os her</h2>
+                  <ul class="opening_times">
+                    <li><strong>Hadsundvej 1B</strong></li>
+                    <li><strong>9000 Aalborg</strong></li>
+                    <li><strong>Danmark</strong></li>
+                    <li><strong>(+45) 98 12 03 83</strong></li>
+                    <li><strong>cafefrederiksberg@gmail.com</strong></li>
+                  </ul>
+                <h2>Vedrørende fest</h2>
+                <ul class="opening_times">
+                  <li><strong>(+45) 22 42 43 00</strong></li>
+                  <li><strong>Frederiksbergselskaber@gmail.com</strong></li>
+                </ul>
+              </div>
+            </div>
         </div>
       </div>
     </div>
