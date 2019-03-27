@@ -32,12 +32,9 @@
 
 
   <!--Eksempel m. 3-delt container og overskrift  -->
-  <div class="wrapper indholdsoversigt">
+  <div class="wrapper bestil_bar">
     <!--Indhold centreret i wrapper-->
     <div class="container indholdsoversigt">
-      <h1> Her kommer der til at være en indholdsoversigt </h1>
-
-
       <div class="container_buttons">
         <div class="row indholdsoversigt">
           <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
@@ -56,7 +53,9 @@
         </div>
       </div>
     </div>
+  </div>
     <!-- Kontakt info -->
+    <div class="wrapper opening_info">
       <div class="opening_info">
         <div class="row indholdsoversigt">
           <div class="one-third">
@@ -97,7 +96,8 @@
             </div>
         </div>
       </div>
-  </div>
+    </div>
+
 
 
 
