@@ -57,7 +57,7 @@
     <!-- Kontakt info -->
     <div class="container opening_info">
       <div class="opening_info">
-        <div class="row indholdsoversigt">
+        <div class="row opening_info">
           <div class="one-third">
             <div class="opening_float_left">
               <h2>Åbningstid:</h2>
