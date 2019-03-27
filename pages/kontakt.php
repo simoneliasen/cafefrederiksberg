@@ -36,13 +36,13 @@
     <!--Indhold centreret i wrapper-->
     <div class="container indholdsoversigt">
       <h1> Her kommer der til at være en indholdsoversigt </h1>
-      <!-- opretter række, som elementer let kan placeres i-->
+
 
       <div class="container_buttons">
         <div class="row indholdsoversigt">
           <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
           <div class="six columns">
-            <h2>Bestil online</h2>
+            <div class="Bestil_online"><h2>Bestil online</h2></div>
           </div>
           <div class="two columns">
             <a class="button button-primary" href="#">Bord</a>
@@ -55,6 +55,8 @@
           </div>
         </div>
       </div>
+    <!-- Kontakt info -->
+
     </div>
   </div>
 
