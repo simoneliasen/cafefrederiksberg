@@ -59,6 +59,8 @@
       <div class="Opening_info">
         <div class="row indholdsoversigt">
           <div class="three columns">
+          </div>
+          <div class="three columns">
             <div class="opening_float_left">
               <h2>Åbningstid:</h2>
                 <ul class="opening_times">
