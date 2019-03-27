@@ -70,12 +70,24 @@
                   <li><strong>Lørdag:</strong>  Kl. 08.00-03.00</li>
                   <li><strong>Søndag:</strong>  Kl. 08.00-00.00</li>
                 </ul>
-              <h2>Køkken</h2>
+              <h2>Køkken:</h2>
               <ul class="opening_times">
                 <li><strong>Hver dag:</strong>  Kl. 12.00-14.00 & 17.00-20.00</li>
             </div>
-              <div class="opening_float_right">
-
+              <div class="kontaktinfo_float_right">
+                <h2>Find os her</h2>
+                  <ul class="opening_times">
+                    <li><strong>Hadsundvej 1B</strong></li>
+                    <li><strong>9000 Aalborg</strong></li>
+                    <li><strong>Danmark</strong></li>
+                    <li><strong>(+45) 98 12 03 83</strong></li>
+                    <li><strong>cafefrederiksberg@gmail.com</strong></li>
+                  </ul>
+                <h2>Vedrørende fest</h2>
+                <ul class="opening_times">
+                  <li><strong>(+45) 22 42 43 00</strong></li>
+                  <li><strong>Frederiksbergselskaber@gmail.com</strong></li>
+                </ul>
               </div>
           </div>
         </div>
