@@ -31,31 +31,32 @@
 </div>
 
 
-<!--Eksempel m. 3-delt container og overskrift  -->
-<div class="wrapper indholdsoversigt">
-  <!--Indhold centreret i wrapper-->
-  <div class="container indholdsoversigt">
-    <h1> Her kommer der til at være en indholdsoversigt </h1>
-    <!-- opretter række, som elementer let kan placeres i-->
-  </div>
-  <div class="container_buttons">
-    <div class="row indholdsoversigt">
-      <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
-      <div class="three columns">
-        <h2>Bestil online</h2>
-      </div>
-      <div class="three columns">
-        <a class="button button-primary" href="#">Bord</a>
-      </div>
-      <div class="three columns">
-        <a class="button button-primary" href="#">Biletter</a>
-      </div>
-      <div class="three columns">
-        <a class="button button-primary" href="#">Take-away</a>
+  <!--Eksempel m. 3-delt container og overskrift  -->
+  <div class="wrapper indholdsoversigt">
+    <!--Indhold centreret i wrapper-->
+    <div class="container indholdsoversigt">
+      <h1> Her kommer der til at være en indholdsoversigt </h1>
+      <!-- opretter række, som elementer let kan placeres i-->
+
+      <div class="container_buttons">
+        <div class="row indholdsoversigt">
+          <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
+          <div class="six columns">
+            <h2>Bestil online</h2>
+          </div>
+          <div class="two columns">
+            <a class="button button-primary" href="#">Bord</a>
+          </div>
+          <div class="two columns">
+            <a class="button button-primary" href="#">Biletter</a>
+          </div>
+          <div class="two columns">
+            <a class="button button-primary" href="#">Take-away</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
 
