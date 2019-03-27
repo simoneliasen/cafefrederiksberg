@@ -62,17 +62,17 @@
             <div class="opening_float_left">
               <h2>Åbningstid:</h2>
                 <ul class="opening_times">
-                  <li>Mandag:  kl. 10.00-00.00</li>
-                  <li>Tirsdag: kl. 10.00-00.00</li>
-                  <li>Onsdag:  Kl. 10.00-00.00</li>
-                  <li>Torsdag: Kl. 10.00-03.00</li>
-                  <li>Fredag:  Kl. 10.00-03.00</li>
-                  <li>Lørdag:  Kl. 08.00-03.00</li>
-                  <li>Søndag:  Kl. 08.00-00.00</li>
+                  <li><strong>Mandag:</strong>  kl. 10.00-00.00</li>
+                  <li><strong>Tirsdag:</strong> kl. 10.00-00.00</li>
+                  <li><strong>Onsdag:</strong>  Kl. 10.00-00.00</li>
+                  <li><strong>Torsdag:</strong> Kl. 10.00-03.00</li>
+                  <li><strong>Fredag:</strong>  Kl. 10.00-03.00</li>
+                  <li><strong>Lørdag:</strong>  Kl. 08.00-03.00</li>
+                  <li><strong>Søndag:</strong>  Kl. 08.00-00.00</li>
                 </ul>
               <h2>Køkken</h2>
               <ul class="opening_times">
-                <li>Hver dag:  Kl. 12.00-14.00 & 17.00-20.00</li>
+                <li><strong>Hver dag:</strong>  Kl. 12.00-14.00 & 17.00-20.00</li>
             </div>
               <div class="opening_float_right">
 
