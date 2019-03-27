@@ -63,6 +63,13 @@ p {
   margin-top: 0; }
 
 /*..............................................B NAVIATIONSBAR */
+.navigationbar {
+  background-color: #101010;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  z-index: 1;
+  }
 .logo {
   display: inline;
 }
