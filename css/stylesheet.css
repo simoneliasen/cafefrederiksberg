@@ -379,13 +379,16 @@ body {
 .arrleft {
   width: 500px;
   margin: auto;
-  border: 3px solid #73AD21;
+  border: 3px solid grey;
+  position: relative;
+ left: -20px;
 }
-.aarright {
-  max-width: 500px;
+.arrright {
+    width: 500px;
    margin: auto;
-   border: 3px solid #73AD21;
-
+   border: 3px solid grey;
+   position: relative;
+    left: 20px;
 }
 
 .kommendeEvents {
