@@ -163,9 +163,9 @@ text-align:left;
   width: 100%;
   height: 80px;
 }
-.opening_times{
+.opening_times li{
   font-family: "poppins";
-  text-decoration: none;
+  list-style: none;
 }
 
 /*..............................................7 RESTAURANT */

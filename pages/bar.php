@@ -43,44 +43,85 @@
       <div class="row indholdsoversigt">
         <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
         <div class="one-half column">
-          <h2 class="center_bar">ØL & VAND</h2>
+          <h2 class="center_bar">LOREM IPSUM</h2>
           <ul class="bar_menu">
             <li>
-              <div class="bar_menu_name"><strong>Beverage Type</strong><br> Description
+              <div class="bar_menu_name"><strong>lorem ipsum</strong><br> lorem ipsum
               </div>
-              <div class="bar_menu_price">13,-</div>
+              <div class="bar_menu_price">0,-</div>
             </li>
             <li>
-              <div class="bar_menu_name"><strong>Beverage Type</strong><br> Description
+              <div class="bar_menu_name"><strong>lorem ipsum</strong><br> lorem ipsum
               </div>
-              <div class="bar_menu_price">13,-</div>
+              <div class="bar_menu_price">0,-</div>
             </li>
           </ul>
         </div>
         <div class="one-half column">
-          <h2 class="center_bar">ØL & VAND</h2>
+          <h2 class="center_bar">LOREM IPSUM</h2>
           <ul class="bar_menu">
             <li>
-              <div class="bar_menu_name"><strong>Beverage Type</strong><br> Description
+              <div class="bar_menu_name"><strong>lorem ipsum</strong><br> lorem ipsum
               </div>
-              <div class="bar_menu_price">13,-</div>
+              <div class="bar_menu_price">0,-</div>
             </li>
             <li>
-              <div class="bar_menu_name"><strong>Beverage Type</strong><br> Description
+              <div class="bar_menu_name"><strong>lorem ipsum</strong><br> lorem ipsum
               </div>
-              <div class="bar_menu_price">13,-</div>
+              <div class="bar_menu_price">0,-</div>
             </li>
           </ul>
         </div>
-
+        <div class="one-third column">
+          <h2 class="center_bar">OST</h2>
+          <ul class="bar_menu">
+            <li>
+              <div class="bar_menu_name"><strong>lorem ipsum</strong><br> lorem ipsum
+              </div>
+              <div class="bar_menu_price">0,-</div>
+            </li>
+            <li>
+              <div class="bar_menu_name"><strong>lorem ipsum</strong><br> lorem ipsum
+              </div>
+              <div class="bar_menu_price">0,-</div>
+            </li>
+          </ul>
+        </div>
+        <div class="one-third column">
+          <h2 class="center_bar">OST</h2>
+          <ul class="bar_menu">
+            <li>
+              <div class="bar_menu_name"><strong>lorem ipsum</strong><br> lorem ipsum
+              </div>
+              <div class="bar_menu_price">0,-</div>
+            </li>
+            <li>
+              <div class="bar_menu_name"><strong>lorem ipsum</strong><br> lorem ipsum
+              </div>
+              <div class="bar_menu_price">0,-</div>
+            </li>
+          </ul>
+        </div>
+        <div class="one-third column">
+          <h2 class="center_bar">OST</h2>
+          <ul class="bar_menu">
+            <li>
+              <div class="bar_menu_name"><strong>lorem ipsum</strong><br> lorem ipsum
+              </div>
+              <div class="bar_menu_price">0,-</div>
+            </li>
+            <li>
+              <div class="bar_menu_name"><strong>lorem ipsum</strong><br> lorem ipsum
+              </div>
+              <div class="bar_menu_price">0,-</div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-  </div>
 
-  <!--Indrag footer fra filen includes/footer.php-->
-  <?php include '../includes/footer.php'; ?>
+    <!--Indrag footer fra filen includes/footer.php-->
+    <?php include '../includes/footer.php'; ?>
 
 </body>
 
