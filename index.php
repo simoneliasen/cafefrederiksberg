@@ -32,7 +32,7 @@
   <div class="wrapper onlineBestilling">
     <!--Indhold centreret i wrapper-->
     <div class="container onlineBestilling">
-      <h1> Her kommer der til at være en online bestillingsbar </h1>
+      <h1> Indsæt "Bestil online" her </h1>
     </div>
   </div>
 
@@ -43,7 +43,15 @@
   <div class="wrapper introHistorie">
     <!--Indhold centreret i wrapper-->
     <div class="container introHistorie">
-      <h1> Her kommer der til at være en intro historie </h1>
+      <div class="six columns">
+        <h2> Historien om Café Frederiksberg </h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis neque in nunc varius fringilla.
+          Morbi bibendum nunc ut posuere tempor. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
+          Proin vel mauris sagittis.</p>
+      </div>
+      <div class="six columns">
+        <img src="img/Butikfront.png">
+      </div>
     </div>
   </div>
 
