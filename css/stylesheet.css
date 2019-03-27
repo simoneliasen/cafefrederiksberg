@@ -72,6 +72,24 @@ p {
 
 /*..............................................3 BAR */
 
+#float_bar_left ul{
+  float:left;
+  width:50%;
+  text-align:center;
+  list-style:none;
+}
+
+#float_bar_right ul{
+  float:right;
+  width:50%;
+  text-align:center;
+  list-style:none;
+}
+
+#center_bar{
+  text-align:center
+}
+
 /*..............................................4 BOOKING */
 
 /*..............................................5 EVENTS */
