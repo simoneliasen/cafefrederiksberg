@@ -42,7 +42,7 @@
         <div class="row indholdsoversigt">
           <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
           <div class="six columns">
-            <h2>Bestil online</h2>
+            <div class="Bestil_online"><h2>Bestil online</h2></div>
           </div>
           <div class="two columns">
             <a class="button button-primary" href="#">Bord</a>
