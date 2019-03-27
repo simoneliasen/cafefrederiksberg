@@ -69,11 +69,11 @@ p {
 #logo {
   display: inline;
 }
-.navigationsmenu {
+.navigationmenu {
   display: inline;
 }
 
-.navigationsmenu > p {
+.navigationmenu > p {
   display: inline;
 }
 /*..............................................C HEADER */
