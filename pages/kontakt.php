@@ -55,8 +55,9 @@
           </div>
         </div>
       </div>
+    </div>
     <!-- Kontakt info -->
-      <div class="Opening_info">
+      <div class="opening_info">
         <div class="row indholdsoversigt">
           <div class="one-third">
             <div class="opening_float_left">
@@ -96,7 +97,6 @@
             </div>
         </div>
       </div>
-    </div>
   </div>
 
 
