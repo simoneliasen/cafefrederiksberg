@@ -41,16 +41,16 @@
       <div class="container_buttons">
         <div class="row indholdsoversigt">
           <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
-          <div class="three columns">
+          <div class="six columns">
             <h2>Bestil online</h2>
           </div>
-          <div class="three columns">
+          <div class="two columns">
             <a class="button button-primary" href="#">Bord</a>
           </div>
-          <div class="three columns">
+          <div class="two columns">
             <a class="button button-primary" href="#">Biletter</a>
           </div>
-          <div class="three columns">
+          <div class="two columns">
             <a class="button button-primary" href="#">Take-away</a>
           </div>
         </div>
