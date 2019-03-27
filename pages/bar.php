@@ -44,11 +44,16 @@
           <h2 id="center_bar">ØL & VAND</h2>
           <div id="float_bar_left">
             <ul>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
+                vitae turpis massa sed</li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
+                vitae turpis massa sed</li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
+                vitae turpis massa sed</li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
+                vitae turpis massa sed</li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
+                vitae turpis massa sed</li>
             </ul>
           </div>
           <div id="float_bar_right">
@@ -62,14 +67,19 @@
           </div>
         </div>
         <div class="one-half column">
-          <h2 id="center_bar">ØL & VAND</h2>
+          <h2 id="center_bar">VARME DRIKKE</h2>
           <div id="float_bar_left">
             <ul>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
+                vitae turpis massa sed</li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
+                vitae turpis massa sed</li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
+                vitae turpis massa sed</li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
+                vitae turpis massa sed</li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
+                vitae turpis massa sed</li>
             </ul>
           </div>
           <div id="float_bar_right">
