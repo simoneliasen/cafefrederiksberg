@@ -177,6 +177,9 @@ text-align:left;
 .Bestil_online{
   padding-left: 10px;
 }
+.container.opening_info{
+  background-color: #000;
+}
 .container_buttons{
   background-color: #1E1D20;
   width: 100%;
