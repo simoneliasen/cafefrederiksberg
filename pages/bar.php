@@ -122,7 +122,9 @@
           </ul>
         </div>
 
+
       </div>
+      <?php include '../includes/header.php'; ?>
     </div>
   </div>
   </div>
