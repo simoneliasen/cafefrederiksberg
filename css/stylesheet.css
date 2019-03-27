@@ -174,8 +174,8 @@ text-align:left;
   width: 100%;
   height: 80px;
 }
-.Opening_info{
-  background-color: #101010;
+.opening_info{
+  background-color: red;
 }
 .opening_float_left{
   float: left;
@@ -201,7 +201,7 @@ text-align:left;
 
 .container-katagori{
   background-color: red;
-  margin: 3% 0% 3% 0%; 
+  margin: 3% 0% 3% 0%;
 }
 
 .
