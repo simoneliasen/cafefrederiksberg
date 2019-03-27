@@ -67,6 +67,42 @@ p {
 /*..............................................D FOOTER */
 
 /*..............................................1 INDEX */
+.slider {
+  background-color: blue;
+  height: 80vh;
+}
+
+/*Wrapper farve for onlineBestilling  */
+.wrapper.onlineBestilling {
+  background-color: red;
+}
+
+/*Container farve for onlineBestilling  */
+.container.onlineBestilling {
+  background-color: pink;
+}
+
+.introHistorie {
+  background-color: green;
+}
+
+.indholdsoversigt {
+  background-color: yellow;
+  text-align: center;
+}
+
+.katalog {
+  background-color: orange;
+}
+
+.kommendeEvents {
+  background-color: pink;
+}
+
+.googleMaps {
+  background-color: brown;
+  height: 20vh;
+}
 
 /*..............................................2 ADMIN */
 
