@@ -56,7 +56,23 @@
         </div>
       </div>
     <!-- Kontakt info -->
+      <div class="Opening_info">
+        <div class="row indholdsoversigt">
+          <div class="six columns">
+            <h2>Åbningstid:</h2>
+              <ul>
+                <li>Mandag:  kl. 10.00-00.00</li>
+                <li>Tirsdag: kl. 10.00-00.00</li>
+                <li>Onsdag:  Kl. 10.00-00.00</li>
+                <li>Torsdag: Kl. 10.00-03.00</li>
+                <li>Fredag:  Kl. 10.00-03.00</li>
+                <li>Lørdag:  Kl. 08.00-03.00</li>
+                <li>Søndag:  Kl. 08.00-00.00</li>
+              </ul>
 
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
