@@ -15,7 +15,9 @@
   <!-- Normalize stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
   <!-- Includer Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
 
 </head>
 
@@ -41,59 +43,40 @@
       <div class="row indholdsoversigt">
         <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
         <div class="one-half column">
-          <h2 id="center_bar">ØL & VAND</h2>
-          <div id="float_bar_left">
-            <ul>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
-                vitae turpis massa sed</li>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
-                vitae turpis massa sed</li>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
-                vitae turpis massa sed</li>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
-                vitae turpis massa sed</li>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
-                vitae turpis massa sed</li>
-            </ul>
-          </div>
-          <div id="float_bar_right">
-            <ul>
-              <li><i>13,-</i></li>
-              <li><i>13,-</i></li>
-              <li><i>13,-</i></li>
-              <li><i>13,-</i></li>
-              <li><i>13,-</i></li>
-            </ul>
-          </div>
+          <h2 class="center_bar">ØL & VAND</h2>
+          <ul class="bar_menu">
+            <li>
+              <div class="bar_menu_name"><strong>Beverage Type</strong><br> Description
+              </div>
+              <div class="bar_menu_price">13,-</div>
+            </li>
+            <li>
+              <div class="bar_menu_name"><strong>Beverage Type</strong><br> Description
+              </div>
+              <div class="bar_menu_price">13,-</div>
+            </li>
+          </ul>
         </div>
         <div class="one-half column">
-          <h2 id="center_bar">VARME DRIKKE</h2>
-          <div id="float_bar_left">
-            <ul>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
-                vitae turpis massa sed</li>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
-                vitae turpis massa sed</li>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
-                vitae turpis massa sed</li>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
-                vitae turpis massa sed</li>
-              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br>nisl vel pretium lectus quam id leo in
-                vitae turpis massa sed</li>
-            </ul>
-          </div>
-          <div id="float_bar_right">
-            <ul>
-              <li><i>13,-</i></li>
-              <li><i>13,-</i></li>
-              <li><i>13,-</i></li>
-              <li><i>13,-</i></li>
-              <li><i>13,-</i></li>
-            </ul>
-          </div>
+          <h2 class="center_bar">ØL & VAND</h2>
+          <ul class="bar_menu">
+            <li>
+              <div class="bar_menu_name"><strong>Beverage Type</strong><br> Description
+              </div>
+              <div class="bar_menu_price">13,-</div>
+            </li>
+            <li>
+              <div class="bar_menu_name"><strong>Beverage Type</strong><br> Description
+              </div>
+              <div class="bar_menu_price">13,-</div>
+            </li>
+          </ul>
         </div>
+
       </div>
     </div>
+  </div>
+  </div>
   </div>
 
   <!--Indrag footer fra filen includes/footer.php-->
