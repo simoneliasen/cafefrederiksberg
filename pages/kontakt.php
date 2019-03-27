@@ -29,32 +29,36 @@
 <div class="content slider">
   <h1> her kommer der til at være en slider </h1>
 </div>
-</div>
 
 
-<!--Eksempel m. 3-delt container og overskrift  -->
-<div class="wrapper indholdsoversigt">
-  <!--Indhold centreret i wrapper-->
-  <div class="container indholdsoversigt">
-    <h1> Her kommer der til at være en indholdsoversigt </h1>
-    <!-- opretter række, som elementer let kan placeres i-->
-    <div class="row indholdsoversigt">
-      <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
-      <div class="three columns">
-        <h2>RESTAURANT</h2>
+  <!--Eksempel m. 3-delt container og overskrift  -->
+  <div class="wrapper indholdsoversigt">
+    <!--Indhold centreret i wrapper-->
+    <div class="container indholdsoversigt">
+      <h1> Her kommer der til at være en indholdsoversigt </h1>
+
+
+      <div class="container_buttons">
+        <div class="row indholdsoversigt">
+          <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
+          <div class="six columns">
+            <div class="Bestil_online"><h2>Bestil online</h2></div>
+          </div>
+          <div class="two columns">
+            <a class="button button-primary" href="#">Bord</a>
+          </div>
+          <div class="two columns">
+            <a class="button button-primary" href="#">Biletter</a>
+          </div>
+          <div class="two columns">
+            <a class="button button-primary" href="#">Take-away</a>
+          </div>
+        </div>
       </div>
-      <div class="three columns">
-        <h2>BAR</h2>
-      </div>
-      <div class="three columns">
-        <h2>EVENTS</h2>
-      </div>
-      <div class="three columns">
-        <h2>SELSKABER</h2>
-      </div>
+    <!-- Kontakt info -->
+
     </div>
   </div>
-</div>
 
 
 

@@ -22,46 +22,72 @@
 <body>
 
 
-<!--Indsætter navigationsbar fra filen includes/navigation.php-->
-<?php include '../includes/navigation.php'; ?>
+  <!--Indsætter navigationsbar fra filen includes/navigation.php-->
+  <?php include '../includes/navigation.php'; ?>
 
-<!-- Indsætter slider  -->
-<div class="content slider">
-  <h1> her kommer der til at være en slider </h1>
-</div>
-</div>
+  <!-- Indsætter slider  -->
+  <div class="content slider">
+    <h1> her kommer der til at være en slider </h1>
+  </div>
+  </div>
 
 
-<!--Eksempel m. 3-delt container og overskrift  -->
-<div class="wrapper indholdsoversigt">
-  <!--Indhold centreret i wrapper-->
-  <div class="container indholdsoversigt">
-    <h1> Her kommer der til at være en indholdsoversigt </h1>
-    <!-- opretter række, som elementer let kan placeres i-->
-    <div class="row indholdsoversigt">
-      <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
-      <div class="three columns">
-        <h2>RESTAURANT</h2>
-      </div>
-      <div class="three columns">
-        <h2>BAR</h2>
-      </div>
-      <div class="three columns">
-        <h2>EVENTS</h2>
-      </div>
-      <div class="three columns">
-        <h2>SELSKABER</h2>
+  <!--Eksempel m. 3-delt container og overskrift  -->
+  <div class="wrapper indholdsoversigt">
+    <!--Indhold centreret i wrapper-->
+    <div class="container indholdsoversigt">
+      <h1> Her kommer der til at være en indholdsoversigt </h1>
+      <!-- opretter række, som elementer let kan placeres i-->
+      <div class="row indholdsoversigt">
+        <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
+        <div class="one-half column">
+          <h2 id="center_bar">ØL & VAND</h2>
+          <div id="float_bar_left">
+            <ul>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+            </ul>
+          </div>
+          <div id="float_bar_right">
+            <ul>
+              <li><i>13,-</i></li>
+              <li><i>13,-</i></li>
+              <li><i>13,-</i></li>
+              <li><i>13,-</i></li>
+              <li><i>13,-</i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="one-half column">
+          <h2 id="center_bar">ØL & VAND</h2>
+          <div id="float_bar_left">
+            <ul>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+            </ul>
+          </div>
+          <div id="float_bar_right">
+            <ul>
+              <li><i>13,-</i></li>
+              <li><i>13,-</i></li>
+              <li><i>13,-</i></li>
+              <li><i>13,-</i></li>
+              <li><i>13,-</i></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-
-
-<!--Indrag footer fra filen includes/footer.php-->
-<?php include '../includes/footer.php'; ?>
-
-
+  <!--Indrag footer fra filen includes/footer.php-->
+  <?php include '../includes/footer.php'; ?>
 
 </body>
 
