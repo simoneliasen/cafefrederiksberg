@@ -27,7 +27,7 @@
 
     <!-- Indsætter slider  -->
     <div class="content slider">
-        <h1> her kommer der til at være en slider </h1>
+        <h1 class="header-centertext"> her kommer der til at være en slider </h1><br>
     </div>
     </div>
 
@@ -36,8 +36,9 @@
     <div class="wrapper indholdsoversigt">
         <!--Indhold centreret i wrapper-->
         <div class="container indholdsoversigt">
-            <h2>Sammensæt din egen menu<h2>
-                    <h3> Forretter </h3>
+            <h2 class="header-centertext">Sammensæt din egen menu<h2>
+                    <hr>
+                    <h2 class="header-centertext"> Forretter </h2><br>
                     <!-- opretter række, som elementer let kan placeres i-->
                     <div class="row indholdsoversigt">
                         <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->

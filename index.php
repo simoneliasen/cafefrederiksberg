@@ -28,10 +28,7 @@
 
 
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
-  <div class="content slider">
-    <h1> her kommer der til at være en slider </h1>
-  </div>
-  </div>
+  <?php include 'includes/header.php'; ?>
 
 
 
