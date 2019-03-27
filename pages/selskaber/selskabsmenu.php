@@ -36,8 +36,9 @@
     <div class="wrapper indholdsoversigt">
         <!--Indhold centreret i wrapper-->
         <div class="container indholdsoversigt">
-            <h2>Sammensæt din egen menu<h2>
-                    <h3> Forretter </h3>
+            <h2 class="h2centertext">Sammensæt din egen menu<h2>
+                    <hr>
+                    <h2 class="h2centertext"> Forretter </h2>
                     <!-- opretter række, som elementer let kan placeres i-->
                     <div class="row indholdsoversigt">
                         <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
