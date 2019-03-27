@@ -61,13 +61,13 @@
           <div class="six columns">
             <h2>Åbningstid:</h2>
               <ul>
-                <li><h6>Mandag:</h6>  kl. 10.00-00.00</li>
-                <li><h6>Tirsdag:</h6> kl. 10.00-00.00</li>
-                <li><h6>Onsdag:</h6>  Kl. 10.00-00.00</li>
-                <li><h6>Torsdag:</h6> Kl. 10.00-03.00</li>
-                <li><h6>Fredag:</h6>  Kl. 10.00-03.00</li>
-                <li><h6>Lørdag:</h6>  Kl. 08.00-03.00</li>
-                <li><h6>Søndag:</h6>  Kl. 08.00-00.00</li>
+                <li>Mandag:  kl. 10.00-00.00</li>
+                <li>Tirsdag: kl. 10.00-00.00</li>
+                <li>Onsdag:  Kl. 10.00-00.00</li>
+                <li>Torsdag: Kl. 10.00-03.00</li>
+                <li>Fredag:  Kl. 10.00-03.00</li>
+                <li>Lørdag:  Kl. 08.00-03.00</li>
+                <li>Søndag:  Kl. 08.00-00.00</li>
               </ul>
 
           </div>
