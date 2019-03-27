@@ -78,6 +78,8 @@
               </div>
             </div>
             <div class="three columns">
+            </div>
+            <div class="three columns">
               <div class="kontaktinfo_float_right">
                 <h2>Find os her</h2>
                   <ul class="opening_times">
