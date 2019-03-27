@@ -439,6 +439,14 @@ body {
 .header-centertext{
   text-align: center;
 }
+
+.container-retter{
+  background-color: pink;
+}
+
+.container-katagori{
+  background-color: red;
+}
 <<<<<<< HEAD
 =======
 /* .............................................8.2 BUFFET */
