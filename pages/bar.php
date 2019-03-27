@@ -44,20 +44,20 @@
           <h2 id="center_bar">ØL & VAND</h2>
           <div id="float_bar_left">
             <ul>
-              <li>Left Item 1</li>
-              <li>Left Item 2</li>
-              <li>Left Item 3</li>
-              <li>Left Item 4</li>
-              <li>Left Item 5</li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
             </ul>
           </div>
           <div id="float_bar_right">
             <ul>
-              <li>Right Item 1</li>
-              <li>Right Item 2</li>
-              <li>Right Item 3</li>
-              <li>Right Item 4</li>
-              <li>Right Item 5</li>
+              <li><i>13,-</i></li>
+              <li><i>13,-</i></li>
+              <li><i>13,-</i></li>
+              <li><i>13,-</i></li>
+              <li><i>13,-</i></li>
             </ul>
           </div>
         </div>
@@ -65,20 +65,20 @@
           <h2 id="center_bar">ØL & VAND</h2>
           <div id="float_bar_left">
             <ul>
-              <li>Left Item 1</li>
-              <li>Left Item 2</li>
-              <li>Left Item 3</li>
-              <li>Left Item 4</li>
-              <li>Left Item 5</li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
+              <li><strong>FYRAFTENSØL</strong> (hverdage kl. 16.00 - 18.00) <br></li>
             </ul>
           </div>
           <div id="float_bar_right">
             <ul>
-              <li>Right Item 1</li>
-              <li>Right Item 2</li>
-              <li>Right Item 3</li>
-              <li>Right Item 4</li>
-              <li>Right Item 5</li>
+              <li><i>13,-</i></li>
+              <li><i>13,-</i></li>
+              <li><i>13,-</i></li>
+              <li><i>13,-</i></li>
+              <li><i>13,-</i></li>
             </ul>
           </div>
         </div>

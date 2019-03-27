@@ -74,16 +74,16 @@ p {
 
 #float_bar_left ul{
   float:left;
-  width:50%;
   text-align:center;
   list-style:none;
+  width:75%;
 }
 
 #float_bar_right ul{
   float:right;
-  width:50%;
   text-align:center;
   list-style:none;
+  width:25%;
 }
 
 #center_bar{
