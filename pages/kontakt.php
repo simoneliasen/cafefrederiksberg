@@ -36,7 +36,7 @@
     <!--Indhold centreret i wrapper-->
     <div class="container indholdsoversigt">
       <h1> Her kommer der til at være en indholdsoversigt </h1>
-      <!-- opretter række, som elementer let kan placeres i-->
+
 
       <div class="container_buttons">
         <div class="row indholdsoversigt">
@@ -55,6 +55,8 @@
           </div>
         </div>
       </div>
+    <!-- Kontakt info -->
+
     </div>
   </div>
 
