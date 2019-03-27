@@ -73,7 +73,9 @@
               <h2>Køkken:</h2>
               <ul class="opening_times">
                 <li><strong>Hver dag:</strong>  Kl. 12.00-14.00 & 17.00-20.00</li>
+              </div>
             </div>
+            <div class="six columns">
               <div class="kontaktinfo_float_right">
                 <h2>Find os her</h2>
                   <ul class="opening_times">
@@ -89,7 +91,7 @@
                   <li><strong>Frederiksbergselskaber@gmail.com</strong></li>
                 </ul>
               </div>
-          </div>
+            </div>
         </div>
       </div>
     </div>
