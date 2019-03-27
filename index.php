@@ -111,7 +111,7 @@
   <div class="wrapper kommendeEvents">
     <!--Indhold centreret i wrapper-->
     <div class="container kommendeEvents">
-      <h1> Her kommer der til at være en kommende events </h1>
+      <h1><br> Her kommer der til at være en kommende events </h1>
     </div>
   </div>
 
