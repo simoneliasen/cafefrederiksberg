@@ -164,46 +164,37 @@ background-color: #1E1D20;
 
 /*..............................................3 BAR */
 
-.menu-title{
-  text-align:center;
+.center_bar{
+  text-align:center
 }
 
-<<<<<<< HEAD
-.menu-item {
-  margin: 35px 0;
-=======
 .bar_menu_name{
   float:left;
   background-color:green;
   width:80%;
   font-family:"Poppins";
   text-align:left;
->>>>>>> cbcd8b9f12f774c988efdf5224d870971ae2f2b1
 }
- 
-.menu-item-name{
-  font-weight: bold;
-}
- 
-.menu-item-description{
-  font-size: .9em;
-  line-height: 1.5em;
-}
- 
-.menu-item-price{
-  float: right;
-  margin-top: -22px;
+
+.bar_menu_price{
+  float:right;
+  background-color:purple;
+  width:20%;
+  font-family:"Poppins";
   font-style:italic;
+  text-align:right;
 }
 
-.barrow{
-  padding:0rem 2rem;
+.bar_menu li{
+  list-style:none;
 }
 
-.shrinkrow{
-width:80rem;
-margin:auto;
+.bar_menu{
+  margin:auto;
+  width:80%;
 }
+
+
 /*..............................................4 BOOKING */
 
 /*..............................................5 EVENTS */
@@ -274,13 +265,12 @@ margin:auto;
 }
 
 .selskab_menu_overskrift{
- 
+
 }
 
 .selskab_menu_item{
   width: 60%;
   Margin: 0px auto;
-  height: 10rem;
 }
 
 .selskab_menu_item_fontstyle{
@@ -291,17 +281,19 @@ font-size: 2rem;
 
 .selskab_menu_item_name{
   float: left;
+
   height: 100px;
   width: 200px;
 }
 
 .selskab_menu_item_price{
 float: right;
+
 }
 
-
+.
 /* .............................................8.2 BUFFET */
-
+/* 297 er lim til 300 */
 .buffet-menulinje {
 
 }
@@ -312,4 +304,7 @@ float: right;
   color: #CCB380;
   }
 
+.buffet_1 li{
+  list-style-type: none;
+}
 /* .............................................8.3 ARRANGEMENTER */
