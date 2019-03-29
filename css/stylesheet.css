@@ -172,19 +172,17 @@ background-color: #1E1D20;
   text-align:left;
 }
 
-<<<<<<< HEAD
-=======
 .bar_menu_price{
   float:right;
   background-color:purple;
   width:20%;
   font-family:"Poppins";
-=======
+}
+
 .menu-item {
   margin: 35px 0;
 }
 
->>>>>>> 3321b5669518ad4319cfa78e47fa3028e2e9bb11
 .menu-item-name{
   font-weight: bold;
 }
@@ -197,12 +195,11 @@ background-color: #1E1D20;
 .menu-item-price{
   float: right;
   margin-top: -22px;
->>>>>>> de68987e2059e43efcc9d21729d92558fc32a617
   font-style:italic;
   text-align:right;
 }
 
-<<<<<<< HEAD
+
 .bar_menu li{
   list-style:none;
 }
@@ -219,13 +216,13 @@ width:80rem;
 margin:auto;
 }
 
->>>>>>> de68987e2059e43efcc9d21729d92558fc32a617
+
 /*..............................................4 BOOKING */
 
 /*..............................................5 EVENTS */
 
 .bg_dark{
-  background-color: #1E1D20;
+  background-color: #101010;
 }
 
 .frede_live_katalog{
@@ -305,23 +302,10 @@ font-size: 2rem;
 
 .selskab_menu_item_name{
   float: left;
-<<<<<<< HEAD
-=======
   width: 50%;
   background-color: green;
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> de68987e2059e43efcc9d21729d92558fc32a617
->>>>>>> 3321b5669518ad4319cfa78e47fa3028e2e9bb11
-
   height: 100px;
   width: 200px;
->>>>>>> 25f8622d2ecd1be1e4eaa9809c3dc8f62337f22a
-=======
->>>>>>> 021e6216f8039eb80da6ce504095b8869e3cdf8d
 }
 
 .selskab_menu_item_price{

@@ -11,7 +11,6 @@
 
   <!--Standard stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
   <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
 
@@ -39,10 +38,12 @@
 
         <a href="#">
           <div class="frede_live_katalog_img">
+
           </div>
         </a>
 
       </div>
+
       <div class="one-half column frede_live_katalog_text">
 
         <div class="frede_live_katalog_text_container">
