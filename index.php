@@ -32,7 +32,10 @@
   <div class="wrapper onlineBestilling">
     <!--Indhold centreret i wrapper-->
     <div class="container onlineBestilling">
-      <h1> Indsæt "Bestil online" her </h1>
+      <h2 id "bestilonline">Bestil online</h2>
+      <button>Biletter </button>
+      <button>Klub Frede </button>
+      <button>Take away </button>
     </div>
   </div>
 

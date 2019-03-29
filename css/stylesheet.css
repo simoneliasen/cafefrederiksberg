@@ -187,7 +187,7 @@ background-color: #1E1D20;
 
 /*..............................................6 KONTAKT */
 .Bestil_online{
-  padding-left: 10px;
+  padding-left: 20%;
 }
 .row.opening_info{
   background-color: #000;
@@ -202,11 +202,11 @@ background-color: #1E1D20;
 }
 .opening_float_left{
   float: left;
-  padding-left: 10px;
+  padding-left: 10%;
 }
 .kontaktinfo_float_right{
   float: right;
-  padding-right: 10px;
+  padding-right: 20%;
 }
 .opening_times li{
   font-family: "poppins";

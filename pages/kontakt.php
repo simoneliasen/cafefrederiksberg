@@ -27,7 +27,7 @@
 
 <!-- Indsætter slider  -->
 <div class="content slider">
-  <h1> her kommer der til at være en slider </h1>
+  <?php include '../includes/header.php'; ?>
 </div>
 
 
@@ -39,7 +39,7 @@
         <div class="row indholdsoversigt">
           <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
           <div class="six columns">
-            <div class="Bestil_online"><h2>Bestil online</h2></div>
+            <div class="Bestil_online"><h2>Bestil online:</h2></div>
           </div>
           <div class="two columns">
             <a class="button button-primary" href="#">Bord</a>
