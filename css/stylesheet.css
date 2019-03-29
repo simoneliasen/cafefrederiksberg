@@ -108,6 +108,7 @@ p {
 
 /*..............................................1 INDEX */
 
+/*Bestillingsbar*/
 .wrapper.onlineBestilling {
 background-color: #343434;
 }
@@ -117,12 +118,15 @@ background-color: #343434;
 #bestilonlineheader {
   margin-top: 1.5rem;
 }
-/*Knapper  */
+
+/*Knapper til bestillingsbar */
 .button.button-primary.bestil{
   margin-top: 1rem;
   background-color: #CCB380;
   border-color: #CCB380;
 }
+
+/* Café frederiksberg introhistorie forside  */
 .introHistorie {
 background-color: #101010;
 margin-top: 2rem;
@@ -130,35 +134,24 @@ margin-top: 2rem;
 .six.columns.introHistorie {
   margin-top: 1rem;
 }
-.six.columns.introHistorie > h2 {
 
-}
+/*Billede af café frederiksberg i introhistorie  */
 #butikfront {
   width: 38rem;
   height: 24.25rem;
 }
 
+/*Café frederiksbergs primære interesseområder  */
 .indholdsoversigt {
   background-color: #343434;
 }
 
-
-.katalog {
-background-color: #101010;
-}
-.katalog img {
-  float: right;
-  margin-top: 4rem;
-}
-.six.columns.katalogtekst {
-  float: left;
-  margin-top: 10rem;
-}
-
-
+/*Kommende events (duplikering af Event-side )  */
 .kommendeEvents {
 background-color: #101010;
 }
+
+/*Google maps Integrering  */
 .googleMaps {
 background-color: #1E1D20;
 }
@@ -170,10 +163,31 @@ background-color: #1E1D20;
   text-align:center
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+.bar_menu_name{
+  float:left;
+  background-color:green;
+  width:80%;
+  font-family:"Poppins";
+  text-align:left;
+}
+
+<<<<<<< HEAD
+=======
+.bar_menu_price{
+  float:right;
+  background-color:purple;
+  width:20%;
+  font-family:"Poppins";
+=======
+>>>>>>> 7c4a1b36fb0609cde0973cef2b293256580c6f01
 .menu-item {
   margin: 35px 0;
 }
 
+>>>>>>> 3321b5669518ad4319cfa78e47fa3028e2e9bb11
 .menu-item-name{
   font-weight: bold;
 }
@@ -205,7 +219,6 @@ margin:auto;
 
 .frede_live_katalog{
   height: 600px;
-
 }
 
 .frede_live_katalog_img{
@@ -286,6 +299,13 @@ font-size: 2rem;
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> de68987e2059e43efcc9d21729d92558fc32a617
+>>>>>>> 3321b5669518ad4319cfa78e47fa3028e2e9bb11
+>>>>>>> 7c4a1b36fb0609cde0973cef2b293256580c6f01
 
   height: 100px;
   width: 200px;
@@ -335,3 +355,7 @@ float: right;
   float: right;
 }
 /* .............................................8.3 ARRANGEMENTER */
+
+.wrapper-Arrangementer {
+  color: #1d1d1d;
+}
