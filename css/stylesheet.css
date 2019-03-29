@@ -114,6 +114,13 @@ background-color: #343434;
 #bestilonline {
   display: inline;
 }
+
+/*Knapper  */
+.button.button-primary.bestil{
+  margin-top: 1rem;
+  background-color: #CCB380;
+  border-color: #CCB380;
+}
 .introHistorie {
 background-color: #101010;
 margin-top: 2rem;
@@ -122,7 +129,7 @@ margin-top: 2rem;
   margin-top: 1rem;
 }
 .six.columns.introHistorie > h2 {
-  
+
 }
 #butikfront {
   width: 38rem;
@@ -281,15 +288,18 @@ font-size: 2rem;
 
 .selskab_menu_item_price{
 float: right;
+<<<<<<< HEAD
 
+=======
+width: 50%;
+background-color:yellow;
+>>>>>>> cb7d8a0f2237a828382aee759c310e8e5ee20f1e
 }
 
 .
 /* .............................................8.2 BUFFET */
-.buffet_menu{
-  background-color: red;
-  padding-left: 10rem;
-  width: 100%;
-  height: 08rem;
+.buffet-menulinje ul{
+  display: inline;
+  list-style: none;
 }
 /* .............................................8.3 ARRANGEMENTER */

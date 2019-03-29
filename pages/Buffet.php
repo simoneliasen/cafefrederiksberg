@@ -32,32 +32,20 @@
 
 
 <!--Eksempel m. 3-delt container og overskrift  -->
-<div class="wrapper buffet_menu">
+<div class="wrapper buffet-menu">
   <!--Indhold centreret i wrapper-->
-  <div class="container buffet_menu">
+  <div class="container buffet-menu">
     <h1> Her kommer der til at være en indholdsoversigt </h1>
     <!-- opretter række, som elementer let kan placeres i-->
-    <div class="one column">
-        <a class="button button-primary" href="#">Buffet 1</a>
-    </div>
-    <div class="one column">
-        <a class="button button-primary" href="#">Buffet 2</a>
-    </div>
-    <div class="one column">
-        <a class="button button-primary" href="#">Buffet 3</a>
-    </div>
-    <div class="one column">
-        <a class="button button-primary" href="#">Buffet 4</a>
-    </div>
-    <div class="one column">
-        <a class="button button-primary" href="#">USA buffet</a>
-    </div>
-    <div class="one column">
-        <a class="button button-primary" href="#">Øko buffet</a>
-    </div>
-    <div class="one column">
-        <a class="button button-primary" href="#">Italiensk buffet</a>
-    </div>
+    <ul class="buffet-menulinje">
+      <li>Buffet 1</li>
+      <li>Buffet 2</li>
+      <li>Buffet 3</li>
+      <li>Buffet 4</li>
+      <li>USA buffet</li>
+      <li>Italiensk Buffet</li>
+      <li>Øko buffet</li>
+    </ul>
   </div>
 </div>
 
