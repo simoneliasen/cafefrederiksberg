@@ -257,20 +257,11 @@ background-color: #1E1D20;
   text-align: center;
 }
 
-<<<<<<< HEAD
 .Smenu_katagori{
-=======
-.container-retter{
-  margin: 0% 25% 50% 25%;
-}
-
-.container-katagori{
->>>>>>> bd6e3c0419da0a31ad0daafb3ff8c6581013c0ec
   background-color: red;
   margin: 3% 0% 3% 0%;
 }
 
-<<<<<<< HEAD
 .Smenu_samletret{
   background-color: turquoise;
 }
@@ -286,10 +277,6 @@ background-color: #1E1D20;
 float: right;
 width: 50%;  
 background-color:yellow;
-=======
-.container-pris{
-  line-height: 50%;
->>>>>>> bd6e3c0419da0a31ad0daafb3ff8c6581013c0ec
 }
 
 .
