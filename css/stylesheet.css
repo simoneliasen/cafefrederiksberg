@@ -159,47 +159,34 @@ background-color: #1E1D20;
 
 /*..............................................3 BAR */
 
-.bar-title{
-  text-align:center;
+.center_bar{
+  text-align:center
 }
 
-.bar-item {
+.menu-item {
   margin: 35px 0;
 }
 
-.bar-item-name{
+>>>>>>> 3321b5669518ad4319cfa78e47fa3028e2e9bb11
+.menu-item-name{
   font-weight: bold;
 }
 
-.bar-item-description{
+.menu-item-description{
   font-size: .9em;
   line-height: 1.5em;
 }
 
-.bar-item-price{
+.menu-item-price{
   float: right;
   margin-top: -22px;
   font-style:italic;
   text-align:right;
 }
 
-.barshrinkbarrow{
+.shrinkbarrow{
 width:80rem;
 margin:auto;
-}
-
-.barcentergin{
-  text-align:center;
-  padding-top:3rem;
-  margin-bottom:-2rem;
-}
-
-.barcentergintext{
-  text-align:center;
-  margin-top:3rem;
-  margin-bottom:-2rem;
-  font-style:italic;
-  color:#CCB380;
 }
 
 /*..............................................4 BOOKING */
@@ -267,36 +254,49 @@ margin:auto;
 /*..............................................8 SELSKABER */
 /* .............................................8.1 SELSKABSMENU */
 .header-centertext{
-   text-align: center;
- }
+  text-align: center;
+}
 
- .selskab_menu_overskrift{
+.selskab_menu_overskrift{
 
- }
+}
 
- .selskab_menu_item{
-   width: 60%;
-   Margin: 0px auto;
- }
+.selskab_menu_item{
+  width: 60%;
+  Margin: 0px auto;
+}
 
- .selskab_menu_item_fontstyle{
- font-family: 'Playfair Display';
- font-weight: 400;
- font-size: 2rem;
- }
+.selskab_menu_item_fontstyle{
+font-family: 'Playfair Display';
+font-weight: 400;
+font-size: 2rem;
+}
 
- .selskab_menu_item_name{
-   float: left;
-   height: 100px;
-   width: 70%;
- }
+.selskab_menu_item_name{
+  float: left;
+  width: 50%;
+  background-color: green;
 
- .selskab_menu_item_price{
- float: right;
- width:30%;
- }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 3321b5669518ad4319cfa78e47fa3028e2e9bb11
+>>>>>>> 7c4a1b36fb0609cde0973cef2b293256580c6f01
 
+  height: 100px;
+  width: 200px;
+>>>>>>> 25f8622d2ecd1be1e4eaa9809c3dc8f62337f22a
+=======
+>>>>>>> 021e6216f8039eb80da6ce504095b8869e3cdf8d
+}
 
+.selskab_menu_item_price{
+float: right;
+
+}
+
+.
 /* .............................................8.2 BUFFET */
 /* 297 er lim til 300 */
 .buffet-menulinje {
@@ -313,8 +313,18 @@ margin:auto;
   list-style-type: none;
 }
 .row.buffet_1{
-  padding-bottom: 10rem;
+  background-color: #1E1D20;
 }
+.row.buffet_2{
+padding-top: 02rem;
+padding-bottom: 02rem;
+
+}
+
+.row.buffet_3{
+  background-color: #1E1D20;
+}
+
 .buffet_placeholder_img_left{
 
   height: 482px;
