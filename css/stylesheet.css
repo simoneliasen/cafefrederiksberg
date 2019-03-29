@@ -110,6 +110,9 @@ p {
 .onlineBestilling {
 background-color: #1E1D20;
 }
+#bestilonline {
+  display: inline;
+}
 .introHistorie {
 background-color: #101010;
 }
@@ -221,12 +224,16 @@ background-color: #1E1D20;
 }
 
 .container-retter{
-  margin: 0% 25% 0% 25%;
+  margin: 0% 25% 50% 25%;
 }
 
 .container-katagori{
   background-color: red;
   margin: 3% 0% 3% 0%;
+}
+
+.container-pris{
+  line-height: 50%;
 }
 
 .
