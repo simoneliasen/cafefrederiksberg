@@ -108,7 +108,6 @@ p {
 
 /*..............................................1 INDEX */
 
-/*Bestillingsbar*/
 .wrapper.onlineBestilling {
 background-color: #343434;
 }
@@ -118,15 +117,12 @@ background-color: #343434;
 #bestilonlineheader {
   margin-top: 1.5rem;
 }
-
-/*Knapper til bestillingsbar */
+/*Knapper  */
 .button.button-primary.bestil{
   margin-top: 1rem;
   background-color: #CCB380;
   border-color: #CCB380;
 }
-
-/* Café frederiksberg introhistorie forside  */
 .introHistorie {
 background-color: #101010;
 margin-top: 2rem;
@@ -134,24 +130,35 @@ margin-top: 2rem;
 .six.columns.introHistorie {
   margin-top: 1rem;
 }
+.six.columns.introHistorie > h2 {
 
-/*Billede af café frederiksberg i introhistorie  */
+}
 #butikfront {
   width: 38rem;
   height: 24.25rem;
 }
 
-/*Café frederiksbergs primære interesseområder  */
 .indholdsoversigt {
   background-color: #343434;
 }
 
-/*Kommende events (duplikering af Event-side )  */
+
+.katalog {
+background-color: #101010;
+}
+.katalog img {
+  float: right;
+  margin-top: 4rem;
+}
+.six.columns.katalogtekst {
+  float: left;
+  margin-top: 10rem;
+}
+
+
 .kommendeEvents {
 background-color: #101010;
 }
-
-/*Google maps Integrering  */
 .googleMaps {
 background-color: #1E1D20;
 }
@@ -163,6 +170,11 @@ background-color: #1E1D20;
   text-align:center
 }
 
+.bar_menu_price{
+  float:right;
+  background-color:purple;
+  width:20%;
+  font-family:"Poppins";
 .menu-item {
   margin: 35px 0;
 }
@@ -183,9 +195,24 @@ background-color: #1E1D20;
   text-align:right;
 }
 
+<<<<<<< HEAD
+.barcentergin{
+  text-align:center;
+  padding-top:3rem;
+  margin-bottom:-2rem;
+}
+
+.barcentergintext{
+  text-align:center;
+  margin-top:3rem;
+  margin-bottom:-2rem;
+  font-style:italic;
+  color:#CCB380;
+=======
 .shrinkbarrow{
 width:80rem;
 margin:auto;
+>>>>>>> 692ef0869570c0e54840bdab4d92b9dda8f64930
 }
 
 /*..............................................4 BOOKING */
@@ -198,6 +225,7 @@ margin:auto;
 
 .frede_live_katalog{
   height: 600px;
+
 }
 
 .frede_live_katalog_img{
@@ -273,8 +301,11 @@ font-size: 2rem;
 
 .selskab_menu_item_name{
   float: left;
+
+
   height: 100px;
-  width: 70%;
+  width: 200px;
+
 }
 
 .selskab_menu_item_price{
@@ -293,7 +324,7 @@ Width: 30%;
   color: #CCB380;
   }
 
-.buffet_liste li{
+.buffet_1 li{
   list-style-type: none;
 }
 .row.buffet_1{
@@ -327,6 +358,10 @@ padding-bottom: 02rem;
 }
 /* .............................................8.3 ARRANGEMENTER */
 
-.wrapper-Arrangementer {
-  color: #1d1d1d;
+.wrapper{
+  background-color: white;
 }
+.wrapper {
+  color: b;
+}
+.container { background-color: blue;}
