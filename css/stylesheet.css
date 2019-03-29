@@ -271,6 +271,7 @@ background-color: #1E1D20;
 .selskab_menu_item{
   width: 60%;
   Margin: 0px auto;
+  height: 10rem;
 }
 
 .selskab_menu_item_fontstyle{
@@ -288,12 +289,6 @@ font-size: 2rem;
 
 .selskab_menu_item_price{
 float: right;
-<<<<<<< HEAD
-
-=======
-width: 50%;
-background-color:yellow;
->>>>>>> cb7d8a0f2237a828382aee759c310e8e5ee20f1e
 }
 
 .
