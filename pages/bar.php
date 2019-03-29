@@ -327,7 +327,7 @@
               Hverdage kl. 16.00 - 18.00.
             </div>
           </div>
-          
+
         </div>
 
         <div class="one-third column">
@@ -395,18 +395,17 @@
             <div class="bar-item-description">
               Hverdage kl. 16.00 - 18.00.
             </div>
+            <!-- SECTION STARTS: 5 -->
           </div>
 
 
           </ul>
         </div>
 
-
-      
+      </div>
     </div>
   </div>
-  </div>
-  </div>
+
 
   <!--Indrag footer fra filen includes/footer.php-->
   <?php include '../includes/footer.php'; ?>
