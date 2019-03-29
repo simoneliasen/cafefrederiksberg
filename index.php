@@ -66,7 +66,7 @@
 
       <div class="six columns introHistorie">
         <h2> Café Frederiksberg </h2>
-        <h3> Siden år 1900</h3>
+        <h4> Siden år 1900</h4>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis neque in nunc varius fringilla.
           Morbi bibendum nunc ut posuere tempor. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
           Proin vel mauris sagittis.</p>
@@ -109,28 +109,30 @@
 
 
 
-  <!-- Wrapper til katalog -->
-  <div class="wrapper katalog">
-    <!--Indhold centreret i wrapper-->
-    <div class="container katalog">
+  <div class="bg_dark">
+    <div class="container">
+      <div class="row">
+        <div class="one-half column frede_live_katalog">
 
-      <!--Div til katalog  -->
-      <div class="six columns katalog">
-        <!--Midlertidig  -->
-        <img src="img/katalog.png" width="50%" height="auto">
-      </div>
-      <!--Div til tekst  -->
-      <div class="six columns katalogtekst">
-        <h2>Katalog</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis neque in nunc varius fringilla.
-          Morbi bibendum nunc ut posuere tempor. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
-          Proin vel mauris sagittis, volutpat est at, gravida enim. Etiam mi quam, aliquet eget sodales sed, vestibulum ac nibh.
-          Mauris elementum, quam in finibus vehicula, tellus nunc tempus urna, ac gravida arcu est id urna.
+          <a href="#">
+            <div class="frede_live_katalog_img">
+            </div>
+          </a>
 
-          Cras a sagittis ligula. Maecenas placerat quis tellus vitae ullamcorper.
-          Aenean id cursus urna. Pellentesque aliquet dictum diam, vel mattis nisi sagittis eget.</p>
+        </div>
+        <div class="one-half column frede_live_katalog_text">
+
+          <div class="frede_live_katalog_text_container">
+            <h2>Frede Live</h2>
+            <h6>Livemusik og events</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a class="button" href="#">Se vores Magsin <u>her</u></a>
+          </div>
+
+        </div>
       </div>
     </div>
+  </div>
 
 
 
