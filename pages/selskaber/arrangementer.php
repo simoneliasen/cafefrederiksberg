@@ -72,9 +72,8 @@
 </div>
 
 
-<div class="wrapper">
 
-  <div class="container">
+  <div class="container wrapper">
       <h2> Bryllup </h2>
     <div class="row">
 
@@ -90,7 +89,6 @@
 
 </div>
 
-</div>
 
 
 <div class="wrapperarr">

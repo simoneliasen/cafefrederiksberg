@@ -170,15 +170,11 @@ background-color: #1E1D20;
   text-align:center
 }
 
-<<<<<<< HEAD
 .bar_menu_price{
   float:right;
   background-color:purple;
   width:20%;
   font-family:"Poppins";
-=======
-=======
->>>>>>> a66df126d3e99729a92182de2a606ad38888eeeb
 .menu-item {
   margin: 35px 0;
 }
@@ -195,7 +191,6 @@ background-color: #1E1D20;
 .menu-item-price{
   float: right;
   margin-top: -22px;
->>>>>>> de68987e2059e43efcc9d21729d92558fc32a617
   font-style:italic;
   text-align:right;
 }
@@ -291,16 +286,11 @@ font-size: 2rem;
 
 .selskab_menu_item_name{
   float: left;
-<<<<<<< HEAD
 
 
   height: 100px;
   width: 200px;
 
-=======
-  height: 100px;
-  width: 70%;
->>>>>>> a66df126d3e99729a92182de2a606ad38888eeeb
 }
 
 .selskab_menu_item_price{
@@ -322,8 +312,6 @@ Width: 30%;
 .buffet_1 li{
   list-style-type: none;
 }
-<<<<<<< HEAD
-=======
 .row.buffet_1{
   background-color: #1E1D20;
 }
@@ -353,12 +341,12 @@ padding-bottom: 02rem;
   background-size: 482px 440px;
   float: right;
 }
->>>>>>> a66df126d3e99729a92182de2a606ad38888eeeb
 /* .............................................8.3 ARRANGEMENTER */
 
 .wrapper{
-  background-color: white !important;
+  background-color: white;
 }
 .wrapper {
-  color: red;
+  color: b;
 }
+.container { background-color: blue;}
