@@ -188,7 +188,7 @@
   <div class="bg_dark">
     <div class="container">
 
-      <h2 class="barcentergin">GIN</h2>
+      <h2 class="barcentergin">gineseoer</h2>
       <p class="barcentergintext">Aalborgs bedste Ginkort med over 40 lækre gins <br>Prisen er for 2 cl</p>
 
       <!-- row begins-->
