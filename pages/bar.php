@@ -643,6 +643,7 @@
               lorem ipsum
             </div>
           </div>
+
           <!-- Item ends -->
           <!-- Item starts -->
           <div class="bar-item">
