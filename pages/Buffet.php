@@ -34,18 +34,47 @@
 <!--Eksempel m. 3-delt container og overskrift  -->
 <div class="wrapper buffet-menu">
   <!--Indhold centreret i wrapper-->
-  <div class="container buffet-menu">
+  <div class="container buffet-linje">
     <!-- opretter række, som elementer let kan placeres i-->
-      <div class="buffet-menulinje">
-      <ul>
-        <li>Buffet 1</li>
-        <li>Buffet 2</li>
-        <li>Buffet 3</li>
-        <li>Buffet 4</li>
-        <li>USA buffet</li>
-        <li>Italiensk Buffet</li>
-        <li>Øko buffet</li>
-      </ul>
+      <div class="row menulinje_buffet">
+        <div class="twelve columns">
+          <div class="buffet-menulinje">
+          <ul>
+            <li>Buffet 1</li>
+            <li>Buffet 2</li>
+            <li>Buffet 3</li>
+            <li>Buffet 4</li>
+            <li>USA buffet</li>
+            <li>Italiensk Buffet</li>
+            <li>Øko buffet</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container buffet-menuer">
+    <div class="row buffet_1">
+      <div class="six columns">
+        <h2>Buffet 1</h2>
+          <div class="buffet_1">
+            <ul>
+              <li>Hvide sild med karrysalat</li>
+              <li>Pålægsfad med 3 slags pålæg</li>
+              <li>Lun glaseret skinke</li>
+              <li>Grønne salater med 2 slags dressing</li>
+              <li>Soltørrede tomater, oliven, marinerede hvidløg og Croutons</li>
+              <li>Lun leverpostej med bacon og champignon</li>
+              <li>Kyllingebryst med agurkesalat</li>
+              <li>Pastasalat</li>
+              <li>Frikadeller med flødekartofler</li>
+              <li>Osteanretning med druer og frugt</li>
+              <li>Brød og smør</li>
+            </ul>
+          </div>
+      </div>
+      <div class="six columns">
+        
+      </div>
     </div>
   </div>
 </div>
