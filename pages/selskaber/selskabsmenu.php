@@ -25,17 +25,16 @@
     <!--Indsætter navigationsbar fra filen includes/navigation.php-->
     <?php include '../../includes/navigation.php'; ?>
 
-    <!-- Indsætter slider  -->
-    <div class="content slider">
-        <h1 class="header-centertext"> her kommer der til at være en slider </h1><br>
-    </div>
-    </div>
+    <?php include '../../includes/header.php'; ?>
 
     <div class="container">
         <h2 class="header-centertext">Sammensæt din egen menu...<h2>
                 <hr>
-    </div>
+                <div class="selskab_menu_overskrift">
+                    <h3 class="header-centertext"> Forretter </h3><br>
+                </div>
 
+    </div>
 
     <div class="bg_dark">
         <div class="container">
