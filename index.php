@@ -137,13 +137,70 @@
 
 
 
-    <!-- Wrapper til kommendeEvents -->
-    <div class="wrapper kommendeEvents">
-      <!--Indhold centreret i wrapper-->
-      <div class="container kommendeEvents">
-        <h1><br> Her kommer der til at være  kommende events </h1>
+
+  <div class="container">
+    <div class="events_overskrift">
+      <h2>Frede Live</h2>
+      <h6>Kommende Events</h6>
+    </div>
+
+    <div class="row">
+      <div class="eight columns" style=" height: 200px;">
+        <div class="kommende_events_date" style="width:20%; height:100%; position: relative; float: left;">
+          Dato:
+          <br>
+          19 - 06 - 2019
+        </div>
+        <div class="kommende_events_info" style="width:80%; height:100%; float: right; position: relative;">
+          <h3>Michael Jackson Live</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+          <a href="#">Læs mere</a>
+        </div>
+      </div>
+      <div class="four columns" style="height: 200px;">
+        <img src="img/katalog.png" alt="Smiley face" height="100%" width="100%">
       </div>
     </div>
+    <hr style="border-color: #fff">
+
+    <div class="row">
+      <div class="eight columns" style=" height: 200px;">
+        <div class="kommende_events_date" style="width:20%; height:100%; position: relative; float: left;">
+          Dato:
+          <br>
+          19 - 06 - 2019
+        </div>
+        <div class="kommende_events_info" style="width:80%; height:100%; float: right; position: relative;">
+          <h3>Michael Jackson Live</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+          <a href="#">Læs mere</a>
+        </div>
+      </div>
+      <div class="four columns" style="height: 200px;">
+        <img src="img/katalog.png" alt="Smiley face" height="100%" width="100%">
+      </div>
+    </div>
+    <hr style="border-color: #fff">
+
+    <div class="row">
+      <div class="eight columns" style=" height: 200px;">
+        <div class="kommende_events_date" style="width:20%; height:100%; position: relative; float: left;">
+          Dato:
+          <br>
+          19 - 06 - 2019
+        </div>
+        <div class="kommende_events_info" style="width:80%; height:100%; float: right; position: relative;">
+          <h3>Michael Jackson Live</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+          <a href="#">Læs mere</a>
+        </div>
+      </div>
+      <div class="four columns" style="height: 200px;">
+        <img src="img/katalog.png" alt="Smiley face" height="100%" width="100%">
+      </div>
+    </div>
+    <hr style="border-color: #fff">
+  </div>
 
 
 
