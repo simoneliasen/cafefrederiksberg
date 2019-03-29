@@ -168,17 +168,8 @@ background-color: #1E1D20;
   text-align:center;
 }
 
-<<<<<<< HEAD
 .menu-item {
   margin: 35px 0;
-=======
-.bar_menu_name{
-  float:left;
-  background-color:green;
-  width:80%;
-  font-family:"Poppins";
-  text-align:left;
->>>>>>> cbcd8b9f12f774c988efdf5224d870971ae2f2b1
 }
  
 .menu-item-name{
@@ -196,14 +187,11 @@ background-color: #1E1D20;
   font-style:italic;
 }
 
-.barrow{
-  padding:0rem 2rem;
-}
-
-.shrinkrow{
+.shrinkbarrow{
 width:80rem;
 margin:auto;
 }
+
 /*..............................................4 BOOKING */
 
 /*..............................................5 EVENTS */
@@ -290,25 +278,13 @@ font-size: 2rem;
 
 .selskab_menu_item_name{
   float: left;
-<<<<<<< HEAD
   width: 50%;
   background-color: green;
 
-=======
- 
-  height: 100px;
-  width: 200px;
->>>>>>> 25f8622d2ecd1be1e4eaa9809c3dc8f62337f22a
 }
 
 .selskab_menu_item_price{
 float: right;
-<<<<<<< HEAD
-
-=======
-width: 50%;
-background-color:yellow;
->>>>>>> cb7d8a0f2237a828382aee759c310e8e5ee20f1e
 }
 
 .
