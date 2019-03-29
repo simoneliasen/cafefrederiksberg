@@ -134,9 +134,6 @@ margin-top: 2rem;
 .six.columns.introHistorie {
   margin-top: 1rem;
 }
-.six.columns.introHistorie > h2 {
-
-}
 
 /*Billede af café frederiksberg i introhistorie  */
 #butikfront {
@@ -149,12 +146,12 @@ margin-top: 2rem;
   background-color: #343434;
 }
 
-
-
-
+/*Kommende events (duplikering af Event-side )  */
 .kommendeEvents {
 background-color: #101010;
 }
+
+/*Google maps Integrering  */
 .googleMaps {
 background-color: #1E1D20;
 }
