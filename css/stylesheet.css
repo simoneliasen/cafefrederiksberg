@@ -267,38 +267,36 @@ margin:auto;
 /*..............................................8 SELSKABER */
 /* .............................................8.1 SELSKABSMENU */
 .header-centertext{
-  text-align: center;
-}
+   text-align: center;
+ }
 
-.selskab_menu_overskrift{
+ .selskab_menu_overskrift{
 
-}
+ }
 
-.selskab_menu_item{
-  width: 60%;
-  Margin: 0px auto;
-}
+ .selskab_menu_item{
+   width: 60%;
+   Margin: 0px auto;
+ }
 
-.selskab_menu_item_fontstyle{
-font-family: 'Playfair Display';
-font-weight: 400;
-font-size: 2rem;
-}
+ .selskab_menu_item_fontstyle{
+ font-family: 'Playfair Display';
+ font-weight: 400;
+ font-size: 2rem;
+ }
 
-.selskab_menu_item_name{
-  float: left;
-  width: 50%;
-  background-color: green;
-  height: 100px;
-  width: 200px;
-}
+ .selskab_menu_item_name{
+   float: left;
+   height: 100px;
+   width: 70%;
+ }
 
-.selskab_menu_item_price{
-float: right;
+ .selskab_menu_item_price{
+ float: right;
+ width:30%;
+ }
 
-}
 
-.
 /* .............................................8.2 BUFFET */
 /* 297 er lim til 300 */
 .buffet-menulinje {
