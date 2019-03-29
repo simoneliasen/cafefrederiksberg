@@ -108,19 +108,25 @@ p {
 
 /*..............................................1 INDEX */
 
+/*Bestillingsbar*/
 .wrapper.onlineBestilling {
 background-color: #343434;
 }
 #bestilonline {
   display: inline;
 }
+#bestilonlineheader {
+  margin-top: 1.5rem;
+}
 
-/*Knapper  */
+/*Knapper til bestillingsbar */
 .button.button-primary.bestil{
   margin-top: 1rem;
   background-color: #CCB380;
   border-color: #CCB380;
 }
+
+/* Café frederiksberg introhistorie forside  */
 .introHistorie {
 background-color: #101010;
 margin-top: 2rem;
@@ -128,35 +134,24 @@ margin-top: 2rem;
 .six.columns.introHistorie {
   margin-top: 1rem;
 }
-.six.columns.introHistorie > h2 {
 
-}
+/*Billede af café frederiksberg i introhistorie  */
 #butikfront {
   width: 38rem;
   height: 24.25rem;
 }
 
+/*Café frederiksbergs primære interesseområder  */
 .indholdsoversigt {
   background-color: #343434;
 }
 
-
-.katalog {
-background-color: #101010;
-}
-.katalog img {
-  float: right;
-  margin-top: 4rem;
-}
-.six.columns.katalogtekst {
-  float: left;
-  margin-top: 10rem;
-}
-
-
+/*Kommende events (duplikering af Event-side )  */
 .kommendeEvents {
 background-color: #101010;
 }
+
+/*Google maps Integrering  */
 .googleMaps {
 background-color: #1E1D20;
 }
@@ -185,6 +180,7 @@ background-color: #1E1D20;
   float: right;
   margin-top: -22px;
   font-style:italic;
+  text-align:right;
 }
 
 .barshrinkbarrow{
@@ -216,7 +212,6 @@ margin:auto;
 
 .frede_live_katalog{
   height: 600px;
-
 }
 
 .frede_live_katalog_img{
@@ -282,7 +277,6 @@ margin:auto;
 .selskab_menu_item{
   width: 60%;
   Margin: 0px auto;
-  height: 10rem;
 }
 
 .selskab_menu_item_fontstyle{
@@ -296,15 +290,31 @@ font-size: 2rem;
   width: 50%;
   background-color: green;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> de68987e2059e43efcc9d21729d92558fc32a617
+>>>>>>> 3321b5669518ad4319cfa78e47fa3028e2e9bb11
+>>>>>>> 7c4a1b36fb0609cde0973cef2b293256580c6f01
+
+  height: 100px;
+  width: 200px;
+>>>>>>> 25f8622d2ecd1be1e4eaa9809c3dc8f62337f22a
+=======
+>>>>>>> 021e6216f8039eb80da6ce504095b8869e3cdf8d
 }
 
 .selskab_menu_item_price{
 float: right;
+
 }
 
-
+.
 /* .............................................8.2 BUFFET */
-
+/* 297 er lim til 300 */
 .buffet-menulinje {
 
 }
@@ -315,4 +325,30 @@ float: right;
   color: #CCB380;
   }
 
+.buffet_liste li{
+  list-style-type: none;
+}
+.row.buffet_1{
+  padding-bottom: 10rem;
+}
+.buffet_placeholder_img_left{
+
+  height: 482px;
+  width: 482px;
+  background-image: url("../img/bg_img_placeholder.jpg");
+  background-size: 482px 440px;
+  float: left;
+}
+.buffet_placeholder_img_right{
+
+  height: 482px;
+  width: 482px;
+  background-image: url("../img/bg_img_placeholder.jpg");
+  background-size: 482px 440px;
+  float: right;
+}
 /* .............................................8.3 ARRANGEMENTER */
+
+.wrapper-Arrangementer {
+  color: #1d1d1d;
+}
