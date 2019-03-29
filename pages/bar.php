@@ -33,6 +33,8 @@
   </div>
   </div>
 
+  <?php include '../includes/header.php'; ?>
+
 
   <!--Eksempel m. 3-delt container og overskrift  -->
   <div class="container">
@@ -260,174 +262,147 @@
         </div>
 
         <div class="one-third column">
-          <<<<<<< HEAD <!-- SECTION STARTS: 4 -->
-            <!-- Item starts -->
-            <div class="bar-item">
-              <div class="bar-item-name">
-                Fyraftensøl
-              </div>
-              <div class="bar-item-price">
-                13,-
-              </div>
-              <div class="bar-item-description">
-                Hverdage kl. 16.00 - 18.00.
-              </div>
+          <!-- SECTION STARTS: 4 -->
+          <!-- Item starts -->
+          <div class="bar-item">
+            <div class="bar-item-name">
+              Fyraftensøl
             </div>
-            <!-- Item ends -->
-            <!-- Item starts -->
-            <div class="bar-item">
-              <div class="bar-item-name">
-                Fyraftensøl
-              </div>
-              <div class="bar-item-price">
-                13,-
-              </div>
-              <div class="bar-item-description">
-                Hverdage kl. 16.00 - 18.00.
-              </div>
+            <div class="bar-item-price">
+              13,-
             </div>
-            <!-- Item ends -->
-            <!-- Item starts -->
-            <div class="bar-item">
-              <div class="bar-item-name">
-                Fyraftensøl
-              </div>
-              <div class="bar-item-price">
-                13,-
-              </div>
-              <div class="bar-item-description">
-                Hverdage kl. 16.00 - 18.00.
-              </div>
+            <div class="bar-item-description">
+              Hverdage kl. 16.00 - 18.00.
             </div>
-            <!-- Item ends -->
-            <!-- Item starts -->
-            <div class="bar-item">
-              <div class="bar-item-name">
-                Fyraftensøl
-              </div>
-              <div class="bar-item-price">
-                13,-
-              </div>
-              <div class="bar-item-description">
-                Hverdage kl. 16.00 - 18.00.
-              </div>
+          </div>
+          <!-- Item ends -->
+          <!-- Item starts -->
+          <div class="bar-item">
+            <div class="bar-item-name">
+              Fyraftensøl
             </div>
-            <!-- Item ends -->
-            <!-- Item starts -->
-            <div class="bar-item">
-              <div class="bar-item-name">
-                Fyraftensøl
-              </div>
-              <div class="bar-item-price">
-                13,-
-              </div>
-              <div class="bar-item-description">
-                Hverdage kl. 16.00 - 18.00.
-              </div>
+            <div class="bar-item-price">
+              13,-
             </div>
-            =======
-            <h2 class="center_bar">ØL & VAND</h2>
-            <ul class="bar_menu">
-              <li>
-                <div class="bar_menu_name"><strong>Beverage Type</strong><br> Description
-                </div>
-                <div class="bar_menu_price">13,-</div>
-              </li>
-              <li>
-                <div class="bar_menu_name"><strong>Beverage Type</strong><br> Description
-                </div>
-                <div class="bar_menu_price">13,-</div>
-              </li>
-            </ul>
-            >>>>>>> f67434d86630f85560c4a21fbffce378d92ff97e
+            <div class="bar-item-description">
+              Hverdage kl. 16.00 - 18.00.
+            </div>
+          </div>
+          <!-- Item ends -->
+          <!-- Item starts -->
+          <div class="bar-item">
+            <div class="bar-item-name">
+              Fyraftensøl
+            </div>
+            <div class="bar-item-price">
+              13,-
+            </div>
+            <div class="bar-item-description">
+              Hverdage kl. 16.00 - 18.00.
+            </div>
+          </div>
+          <!-- Item ends -->
+          <!-- Item starts -->
+          <div class="bar-item">
+            <div class="bar-item-name">
+              Fyraftensøl
+            </div>
+            <div class="bar-item-price">
+              13,-
+            </div>
+            <div class="bar-item-description">
+              Hverdage kl. 16.00 - 18.00.
+            </div>
+          </div>
+          <!-- Item ends -->
+          <!-- Item starts -->
+          <div class="bar-item">
+            <div class="bar-item-name">
+              Fyraftensøl
+            </div>
+            <div class="bar-item-price">
+              13,-
+            </div>
+            <div class="bar-item-description">
+              Hverdage kl. 16.00 - 18.00.
+            </div>
+          </div>
+          
         </div>
 
         <div class="one-third column">
-          <<<<<<< HEAD <!-- SECTION STARTS: 5 -->
-            <!-- Item starts -->
-            <div class="bar-item">
-              <div class="bar-item-name">
-                Fyraftensøl
-              </div>
-              <div class="bar-item-price">
-                13,-
-              </div>
-              <div class="bar-item-description">
-                Hverdage kl. 16.00 - 18.00.
-              </div>
+          <!-- SECTION STARTS: 5 -->
+          <!-- Item starts -->
+          <div class="bar-item">
+            <div class="bar-item-name">
+              Fyraftensøl
             </div>
-            <!-- Item ends -->
-            <!-- Item starts -->
-            <div class="bar-item">
-              <div class="bar-item-name">
-                Fyraftensøl
-              </div>
-              <div class="bar-item-price">
-                13,-
-              </div>
-              <div class="bar-item-description">
-                Hverdage kl. 16.00 - 18.00.
-              </div>
+            <div class="bar-item-price">
+              13,-
             </div>
-            <!-- Item ends -->
-            <!-- Item starts -->
-            <div class="bar-item">
-              <div class="bar-item-name">
-                Fyraftensøl
-              </div>
-              <div class="bar-item-price">
-                13,-
-              </div>
-              <div class="bar-item-description">
-                Hverdage kl. 16.00 - 18.00.
-              </div>
+            <div class="bar-item-description">
+              Hverdage kl. 16.00 - 18.00.
             </div>
-            <!-- Item ends -->
-            <!-- Item starts -->
-            <div class="bar-item">
-              <div class="bar-item-name">
-                Fyraftensøl
-              </div>
-              <div class="bar-item-price">
-                13,-
-              </div>
-              <div class="bar-item-description">
-                Hverdage kl. 16.00 - 18.00.
-              </div>
+          </div>
+          <!-- Item ends -->
+          <!-- Item starts -->
+          <div class="bar-item">
+            <div class="bar-item-name">
+              Fyraftensøl
             </div>
-            <!-- Item ends -->
-            <!-- Item starts -->
-            <div class="bar-item">
-              <div class="bar-item-name">
-                Fyraftensøl
-              </div>
-              <div class="bar-item-price">
-                13,-
-              </div>
-              <div class="bar-item-description">
-                Hverdage kl. 16.00 - 18.00.
-              </div>
+            <div class="bar-item-price">
+              13,-
             </div>
-            =======
-            <h2 class="center_bar">ØL & VAND</h2>
-            <ul class="bar_menu">
-              <li>
-                <div class="bar_menu_name"><strong>Beverage Type</strong><br> Description
-                </div>
-                <div class="bar_menu_price">13,-</div>
-              </li>
-              <li>
-                <div class="bar_menu_name"><strong>Beverage Type</strong><br> Description
-                </div>
-                <div class="bar_menu_price">13,-</div>
-              </li>
-            </ul>
-            >>>>>>> f67434d86630f85560c4a21fbffce378d92ff97e
+            <div class="bar-item-description">
+              Hverdage kl. 16.00 - 18.00.
+            </div>
+          </div>
+          <!-- Item ends -->
+          <!-- Item starts -->
+          <div class="bar-item">
+            <div class="bar-item-name">
+              Fyraftensøl
+            </div>
+            <div class="bar-item-price">
+              13,-
+            </div>
+            <div class="bar-item-description">
+              Hverdage kl. 16.00 - 18.00.
+            </div>
+          </div>
+          <!-- Item ends -->
+          <!-- Item starts -->
+          <div class="bar-item">
+            <div class="bar-item-name">
+              Fyraftensøl
+            </div>
+            <div class="bar-item-price">
+              13,-
+            </div>
+            <div class="bar-item-description">
+              Hverdage kl. 16.00 - 18.00.
+            </div>
+          </div>
+          <!-- Item ends -->
+          <!-- Item starts -->
+          <div class="bar-item">
+            <div class="bar-item-name">
+              Fyraftensøl
+            </div>
+            <div class="bar-item-price">
+              13,-
+            </div>
+            <div class="bar-item-description">
+              Hverdage kl. 16.00 - 18.00.
+            </div>
+          </div>
+
+
+          </ul>
         </div>
 
 
-      </div>
-      <?php include '../includes/header.php'; ?>
+      
     </div>
   </div>
   </div>
