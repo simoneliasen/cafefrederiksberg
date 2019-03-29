@@ -35,78 +35,58 @@
 
 
     <div class="container">
-        <div class="selskab_menu_overskrift">
-            <h2 class="header-centertext">Sammensæt din egen menu<h2>
-                    <hr>
-                    <h3 class="header-centertext"> Forretter </h3><br>
-        </div>
-
-
-        <div class="selskab_menu_item">
-            <div class="selskab_menu_item_name">
-                <span class="selskab_menu_item_fontstyle">Klar suppe</span>
-                <p>Med boller og flütes</p>
-            </div>
-            <div class="selskab_menu_item_price">
-                <span class="selskab_menu_item_fontstyle">- per couv. kr. 52,-</span>
-            </div>
-        </div>
-
-
+        <h2 class="header-centertext">Sammensæt din egen menu<h2>
+                <hr>
     </div>
 
+    <div class="selskab_menu_overskrift">
+        <h3 class="header-centertext"> Forretter </h3><br>
+    </div>
 
-    <!--<div class="one columns"></div>
-            <div class="seven columns">
-                <div class="container-retter">
-                    <h5> Klar suppe</h5>
+    <div class="bg_dark">
+        <div class="container">
+            <!-- Her tilføjes hver enkelt ret samt pris -->
+            <div class="selskab_menu_item">
+                <div class="selskab_menu_item_name">
+                    <span class="selskab_menu_item_fontstyle">Klar suppe</span>
                     <p>Med boller og flütes</p>
-                    <h5>*Flødegeleret aspargessuppe</h5>
-                    <p>Med kødboller og flutes<p>
-                            <h5>Karry Suppe</h5>
-                            <p>Med ris, hønskekød, og flutes</p>
-                            <h5>Hønsesalat</h5>
-                            <p>På ananasring og flutes</p>
-                            <h5>2 tarteletter</h5>
-                            <p>Med høns og asparges</p>
-                            <h5>Buttedejsskal</h5>
-                            <p>Med dampet og stegt fiskefilet, rejer og hollandaisesauce</p>
-                            <h5>Klassisk rejecocktail</h5>
-                            <p>Med håndpillede rejer, kaviar, dressing og flutes</p>
-                            <h5>Røget ørred</h5>
-                            <p>Med håndpillede rejer, kaviar, dressing og flutes</p>
-                            <h5>Hvidvinsdampet laks</h5>
-                            <p>Med håndpillede rejer, dressing og flutes</p>
-                            <h5>Ferskrøget laks</h5>
-                            <p>Med flødestuvet spinat, asparges og flutes</p>
-                            <h5>*Hummer a la' Americain</h5>
-                            <p>Fersk dampet hummer med garniture</p>
+                </div>
+                <div class="selskab_menu_item_price">
+                    <span class="selskab_menu_item_fontstyle">- per couv. kr. 52,-</span>
+                </div>
+            </div>
+
+            <div class="selskab_menu_item">
+                <div class="selskab_menu_item_name">
+                    <span class="selskab_menu_item_fontstyle">Klar suppe</span>
+                    <p>Med boller og flütes</p>
+                </div>
+                <div class="selskab_menu_item_price">
+                    <span class="selskab_menu_item_fontstyle">- per couv. kr. 52,-</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="selskab_menu_overskrift">
+        <h3 class="header-centertext"> Hovedretter </h3><br>
+    </div>
+    <div class="bg_dark">
+        <div class="container">
+            <div class="selskab_menu_item">
+
+                <div class="selskab_menu_item_name">
+                    <span class="selskab_menu_item_fontstyle">Klar suppe</span>
+                    <p>Med boller og flütes</p>
                 </div>
 
-            </div>
-            <div class="four columns">
-                <div class="container-pris">
-                    <h5>- per couv. kr. 52,-</h5><br><br>
-                    <h5>- per couv. kr. 52,-</h5><br><br>
-                    <h5>- per couv. kr. 52,-</h5><br><br>
-                    <h5>- per couv. kr. 52,-</h5><br><br>
-                    <h5>- per couv. kr. 52,-</h5><br><br>
-                    <h5>- per couv. kr. 52,-</h5><br><br>
-                    <h5>- per couv. kr. 52,-</h5><br><br>
-                    <h5>- per couv. kr. 52,-</h5><br><br>
-                    <h5>- per couv. kr. 52,-</h5><br><br>
-                    <h5>- per couv. kr. 52,-</h5><br><br>
-                    <h5>- per couv. kr. 52,-</h5><br><br>
+                <div class="selskab_menu_item_price">
+                    <span class="selskab_menu_item_fontstyle">- per couv. kr. 52,-</span>
                 </div>
+
             </div>
         </div>
     </div>
--->
-
-
-
-
-
     <?php
     include '../../includes/footer.php'; ?>
 </body>
