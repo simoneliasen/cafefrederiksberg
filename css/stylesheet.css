@@ -164,37 +164,46 @@ background-color: #1E1D20;
 
 /*..............................................3 BAR */
 
-.center_bar{
-  text-align:center
+.menu-title{
+  text-align:center;
 }
 
+<<<<<<< HEAD
+.menu-item {
+  margin: 35px 0;
+=======
 .bar_menu_name{
   float:left;
   background-color:green;
   width:80%;
   font-family:"Poppins";
   text-align:left;
+>>>>>>> cbcd8b9f12f774c988efdf5224d870971ae2f2b1
 }
-
-.bar_menu_price{
-  float:right;
-  background-color:purple;
-  width:20%;
-  font-family:"Poppins";
+ 
+.menu-item-name{
+  font-weight: bold;
+}
+ 
+.menu-item-description{
+  font-size: .9em;
+  line-height: 1.5em;
+}
+ 
+.menu-item-price{
+  float: right;
+  margin-top: -22px;
   font-style:italic;
-  text-align:right;
 }
 
-.bar_menu li{
-  list-style:none;
+.barrow{
+  padding:0rem 2rem;
 }
 
-.bar_menu{
-  margin:auto;
-  width:80%;
+.shrinkrow{
+width:80rem;
+margin:auto;
 }
-
-
 /*..............................................4 BOOKING */
 
 /*..............................................5 EVENTS */
