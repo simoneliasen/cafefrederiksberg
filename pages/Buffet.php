@@ -26,30 +26,26 @@
 <?php include '../includes/navigation.php'; ?>
 
 <!-- Indsætter slider  -->
-<?php include '../includes/header.php'; ?>
-
+<div class="content slider">
+  <?php include '../includes/header.php'; ?>
+</div>
 
 
 <!--Eksempel m. 3-delt container og overskrift  -->
-<div class="wrapper indholdsoversigt">
+<div class="wrapper buffet-menu">
   <!--Indhold centreret i wrapper-->
-  <div class="container indholdsoversigt">
-    <h1> Her kommer der til at være en indholdsoversigt </h1>
+  <div class="container buffet-menu">
     <!-- opretter række, som elementer let kan placeres i-->
-    <div class="row indholdsoversigt">
-      <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
-      <div class="three columns">
-        <h2>RESTAURANT</h2>
-      </div>
-      <div class="three columns">
-        <h2>BAR</h2>
-      </div>
-      <div class="three columns">
-        <h2>EVENTS</h2>
-      </div>
-      <div class="three columns">
-        <h2>SELSKABER</h2>
-      </div>
+      <div class="buffet-menulinje">
+      <ul>
+        <li>Buffet 1</li>
+        <li>Buffet 2</li>
+        <li>Buffet 3</li>
+        <li>Buffet 4</li>
+        <li>USA buffet</li>
+        <li>Italiensk Buffet</li>
+        <li>Øko buffet</li>
+      </ul>
     </div>
   </div>
 </div>

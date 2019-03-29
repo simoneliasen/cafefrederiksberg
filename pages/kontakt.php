@@ -27,19 +27,19 @@
 
 <!-- Indsætter slider  -->
 <div class="content slider">
-  <h1> her kommer der til at være en slider </h1>
+  <?php include '../includes/header.php'; ?>
 </div>
 
 
   <!--Eksempel m. 3-delt container og overskrift  -->
-  <div class="wrapper bestil_bar">
+  <div class="wrapper kontakt_info">
     <!--Indhold centreret i wrapper-->
-    <div class="container indholdsoversigt">
-      <div class="container_buttons">
-        <div class="row indholdsoversigt">
+    <div class="container kontakt_info">
+      <div class="kontakt_info_buttons">
+        <div class="row kontakt_info">
           <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
           <div class="six columns">
-            <div class="Bestil_online"><h2>Bestil online</h2></div>
+            <div class="Bestil_online"><h2>Bestil online:</h2></div>
           </div>
           <div class="two columns">
             <a class="button button-primary" href="#">Bord</a>
