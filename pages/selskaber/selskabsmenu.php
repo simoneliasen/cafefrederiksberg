@@ -30,9 +30,9 @@
     <div class="container">
         <h2 class="header-centertext">Sammensæt din egen menu...<h2>
                 <hr>
-                <div class="selskab_menu_overskrift">
-                    <h3 class="header-centertext"> Forretter </h3><br>
-                </div>
+          <div class="selskab_menu_overskrift">
+              <h3 class="header-centertext"> Forretter </h3><br>
+          </div>
 
     </div>
 
@@ -162,7 +162,57 @@
     </div>
     <div class="bg_dark">
         <div class="container">
-            <div class="selskab_menu_item">
+          <div class="selskab_menu_item">
+              <div class="selskab_menu_item_name">
+                  <span class="selskab_menu_item_fontstyle"> Svinekam</span>
+                  <p>Med svesker, rødkål, asier, hvide og brune kartofler</p>
+              </div>
+              <div class="selskab_menu_item_price">
+                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 110,-</span>
+              </div>
+          </div>
+
+          <div class="selskab_menu_item">
+              <div class="selskab_menu_item_name">
+                  <span class="selskab_menu_item_fontstyle"> Svinekam stegt som vildt</span>
+                  <p>Med waldorffsalat, gelé, hvide og brune kartofler</p>
+              </div>
+              <div class="selskab_menu_item_price">
+                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 120,-</span>
+              </div>
+          </div>
+
+          <div class="selskab_menu_item">
+              <div class="selskab_menu_item_name">
+                  <span class="selskab_menu_item_fontstyle"> Kalvefilet</span>
+                  <p>Med grøntsager, kartofler og portvinssauce</p>
+              </div>
+              <div class="selskab_menu_item_price">
+                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 130,-</span>
+              </div>
+          </div>
+
+          <div class="selskab_menu_item">
+              <div class="selskab_menu_item_name">
+                  <span class="selskab_menu_item_fontstyle"> Kalvefilet stegt som vildt</span>
+                  <p>Med waldorffsalat, gelé, hvide og brune kartofler</p>
+              </div>
+              <div class="selskab_menu_item_price">
+                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 130,-</span>
+              </div>
+          </div>
+
+          <hr>
+
+          <div class="selskab_menu_item">
+              <div class="selskab_menu_item_name">
+                  <span class="selskab_menu_item_fontstyle"> Gammeldags oksesteg</span>
+                  <p>Med bønner, glasserede løg og hvide kartofler</p>
+              </div>
+              <div class="selskab_menu_item_price">
+                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 120,-</span>
+              </div>
+          </div>
 
 
 
