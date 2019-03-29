@@ -107,8 +107,8 @@ p {
 /*..............................................D FOOTER */
 
 /*..............................................1 INDEX */
-.onlineBestilling {
-background-color: #1E1D20;
+.wrapper.onlineBestilling {
+background-color: #343434;
 }
 #bestilonline {
   display: inline;
@@ -117,7 +117,7 @@ background-color: #1E1D20;
 background-color: #101010;
 }
 .indholdsoversigt {
-background-color: #1E1D20;
+  background-color: #343434;
 }
 .katalog {
 background-color: #101010;
@@ -223,17 +223,25 @@ background-color: #1E1D20;
   text-align: center;
 }
 
-.container-retter{
-  margin: 0% 25% 50% 25%;
-}
-
 .container-katagori{
   background-color: red;
   margin: 3% 0% 3% 0%;
 }
 
+.container-samletret{
+
+}
+
+.container-retter{
+  float: left;
+  width: 50%;
+  background-color: green;
+}
+
 .container-pris{
-  line-height: 50%;
+float: right;
+width: 50%;  
+background-color:yellow;
 }
 
 .
