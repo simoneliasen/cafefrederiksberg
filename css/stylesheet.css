@@ -229,13 +229,14 @@ background-color: #1E1D20;
 }
 
 .container-samletret{
-
+  background-color: turquoise;
 }
 
 .container-retter{
   float: left;
   width: 50%;
   background-color: green;
+  color: aqua;
 }
 
 .container-pris{

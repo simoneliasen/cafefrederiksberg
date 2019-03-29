@@ -35,25 +35,41 @@
 
     <div class="wrapper indholdsoversigt">
         <!--Indhold centreret i wrapper-->
-        <div class="container-katagori">
+        <div class="Smenu_katagori">
             <h2 class="header-centertext">Sammensæt din egen menu<h2>
                     <hr>
                     <h2 class="header-centertext"> Forretter </h2><br>
         </div>
 
-        <div class="twelve.columns">
-            <div class="container-samletret">
+        <div>
+            <div class="Smenu_samletret">
 
-                <div class="container-retter">
+                <div class="Smenu_retter">
                     <h5> Klar suppe</h5>
                     <p>Med boller og flütes</p>
                 </div>
 
-                <div class="container-pris">
+                <div class="Smenu_pris">
                     <h5>- per couv. kr. 52,-</h5>
                 </div>
 
             </div>
+            <div class="Smenu_samletret">
+
+                <div class="Smenu_retter">
+                    <h5> *Flødegeleret aspargessuppe</h5>
+                    <p>Med kødboller og flutes</p>
+                </div>
+
+                <div class="Smenu_pris">
+                    <h5>- per couv. kr. 52,-</h5>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="Smenu_katagori">
+            <h2 class="header-centertext"> Hovedretter </h2><br>
         </div>
 
     </div>
