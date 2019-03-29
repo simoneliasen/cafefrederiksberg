@@ -318,6 +318,9 @@ float: right;
 }
 /* .............................................8.3 ARRANGEMENTER */
 
-.wrapperarr{
-  background-color: #101010;
+.wrapper{
+  background-color: white !important;
+}
+.wrapper {
+  color: red;
 }
