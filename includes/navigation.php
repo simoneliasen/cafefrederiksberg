@@ -3,7 +3,7 @@
   <nav class="container">
     <!--Placeholder logo  -->
     <div class="logo">
-    <h4 id="logo"> Café Frederiksberg</h4>
+    <a href="/cafefrederiksberg/index.php"><h4 id="logo"> Café Frederiksberg</h4>
     </div>
 <!--Navigationsmenu m. relative path fra document root  -->
 <div class="navigationmenu">
