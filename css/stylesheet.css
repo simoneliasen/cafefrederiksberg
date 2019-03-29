@@ -220,17 +220,27 @@ background-color: #1E1D20;
   text-align: center;
 }
 
-.container-retter{
-  margin: 0% 25% 50% 25%;
-}
-
 .container-katagori{
   background-color: red;
   margin: 3% 0% 3% 0%;
 }
 
+.container-samletret{
+
+}
+
+.container-retter{
+  float: left;
+  width: 50%;
+  background-color: green;
+  color:red;
+
+}
+
 .container-pris{
-  line-height: 50%;
+float: right;
+width: 50%;  
+background-color:yellow;
 }
 
 .

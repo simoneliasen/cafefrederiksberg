@@ -40,7 +40,20 @@
                     <hr>
                     <h2 class="header-centertext"> Forretter </h2><br>
         </div>
-        <div>
+
+        <div class="twelve.columns">
+            <div class="container-samletret">
+
+                <div class="container-retter">
+                    <h5> Klar suppe</h5>
+                    <p>Med boller og flütes</p>
+                </div>
+
+                <div class="container-pris">
+                    <h5>- per couv. kr. 52,-</h5>
+                </div>
+
+            </div>
         </div>
 
     </div>
