@@ -67,7 +67,7 @@ p {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%;
-  z-index: 1;
+  z-index: 1;  /*puts header in front of content*/
   }
 .logo {
   display: inline;
@@ -107,6 +107,7 @@ p {
 /*..............................................D FOOTER */
 
 /*..............................................1 INDEX */
+
 .wrapper.onlineBestilling {
 background-color: #343434;
 }
@@ -115,10 +116,24 @@ background-color: #343434;
 }
 .introHistorie {
 background-color: #101010;
+margin-top: 2rem;
 }
+.six.columns.introHistorie {
+  margin-top: 1rem;
+}
+.six.columns.introHistorie > h2 {
+  
+}
+#butikfront {
+  width: 38rem;
+  height: 24.25rem;
+}
+
 .indholdsoversigt {
   background-color: #343434;
 }
+
+
 .katalog {
 background-color: #101010;
 }
@@ -130,6 +145,8 @@ background-color: #101010;
   float: left;
   margin-top: 10rem;
 }
+
+
 .kommendeEvents {
 background-color: #101010;
 }
@@ -195,7 +212,7 @@ background-color: #1E1D20;
 .row.opening_info{
   background-color: #000;
 }
-.kontakt_info_buttons{
+.container_buttons{
   background-color: #1E1D20;
   width: 100%;
   height: 08rem;
@@ -223,25 +240,17 @@ background-color: #1E1D20;
   text-align: center;
 }
 
+.container-retter{
+  margin: 0% 25% 50% 25%;
+}
+
 .container-katagori{
   background-color: red;
   margin: 3% 0% 3% 0%;
 }
 
-.container-samletret{
-
-}
-
-.container-retter{
-  float: left;
-  width: 50%;
-  background-color: green;
-}
-
 .container-pris{
-float: right;
-width: 50%;  
-background-color:yellow;
+  line-height: 50%;
 }
 
 .
