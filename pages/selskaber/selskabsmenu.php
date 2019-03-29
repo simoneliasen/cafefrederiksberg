@@ -41,7 +41,7 @@
                     <h2 class="header-centertext"> Forretter </h2><br>
         </div>
 
-        <div>
+        <div class="twelve.columns">
             <div class="Smenu_samletret">
 
                 <div class="Smenu_retter">

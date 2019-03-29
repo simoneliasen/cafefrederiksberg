@@ -223,23 +223,23 @@ background-color: #1E1D20;
   text-align: center;
 }
 
-.container-katagori{
+.Smenu_katagori{
   background-color: red;
   margin: 3% 0% 3% 0%;
 }
 
-.container-samletret{
+.Smenu_samletret{
   background-color: turquoise;
 }
 
-.container-retter{
+.Smenu_retter{
   float: left;
   width: 50%;
   background-color: green;
-  color: aqua;
+  
 }
 
-.container-pris{
+.Smenu_pris{
 float: right;
 width: 50%;  
 background-color:yellow;
