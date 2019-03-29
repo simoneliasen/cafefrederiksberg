@@ -347,3 +347,15 @@ padding-bottom: 02rem;
   float: right;
 }
 /* .............................................8.3 ARRANGEMENTER */
+
+.arrangementer{
+  position: relative;
+  height: 400px;
+}
+
+.arrangementer_wrapper{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
