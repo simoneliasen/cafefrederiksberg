@@ -114,6 +114,13 @@ background-color: #343434;
 #bestilonline {
   display: inline;
 }
+
+/*Knapper  */
+.button.button-primary.bestil{
+  margin-top: 1rem;
+  background-color: #CCB380;
+  border-color: #CCB380;
+}
 .introHistorie {
 background-color: #101010;
 margin-top: 2rem;
@@ -122,7 +129,7 @@ margin-top: 2rem;
   margin-top: 1rem;
 }
 .six.columns.introHistorie > h2 {
-  
+
 }
 #butikfront {
   width: 38rem;

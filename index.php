@@ -36,20 +36,20 @@
       <div class="row indholdsoversigt">
         <div class="six columns">
           <div class="Bestil_onlineindex">
-            <h2>Bestil online:</h2>
+            <h2 id ="bestilonlineheader">Bestil online:</h2>
           </div>
         </div>
 
         <div class="two columns">
-          <a class="button button-primary" href="#">Bord</a>
+          <a class="button button-primary bestil" href="#">Bord</a>
         </div>
 
         <div class="two columns">
-          <a class="button button-primary" href="#">Biletter</a>
+          <a class="button button-primary bestil" href="#">Biletter</a>
         </div>
 
         <div class="two columns">
-          <a class="button button-primary" href="#">Take-away</a>
+          <a class="button button-primary bestil" href="#">Take-away</a>
         </div>
       </div>
 
