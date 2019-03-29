@@ -264,26 +264,42 @@ background-color: #1E1D20;
   text-align: center;
 }
 
-.Smenu_katagori{
-  background-color: red;
-  margin: 3% 0% 3% 0%;
+.selskab_menu_overskrift{
+ 
 }
 
-.Smenu_samletret{
-  background-color: turquoise;
+.selskab_menu_item{
+  width: 60%;
+  Margin: 0px auto;
 }
 
-.Smenu_retter{
+.selskab_menu_item_fontstyle{
+font-family: 'Playfair Display';
+font-weight: 400;
+font-size: 2rem;
+}
+
+.selskab_menu_item_name{
   float: left;
+<<<<<<< HEAD
   width: 50%;
   background-color: green;
 
+=======
+ 
+  height: 100px;
+  width: 200px;
+>>>>>>> 25f8622d2ecd1be1e4eaa9809c3dc8f62337f22a
 }
 
-.Smenu_pris{
+.selskab_menu_item_price{
 float: right;
+<<<<<<< HEAD
+
+=======
 width: 50%;
 background-color:yellow;
+>>>>>>> cb7d8a0f2237a828382aee759c310e8e5ee20f1e
 }
 
 .
