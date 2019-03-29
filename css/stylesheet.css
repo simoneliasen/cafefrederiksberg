@@ -255,6 +255,33 @@ margin:auto;
 .header-centertext{
   text-align: center;
 }
+<<<<<<< HEAD
+
+.selskab_menu_overskrift{
+
+}
+
+.selskab_menu_item{
+  width: 60%;
+  Margin: 0px auto;
+}
+
+.selskab_menu_item_fontstyle{
+font-family: 'Playfair Display';
+font-weight: 400;
+font-size: 2rem;
+}
+
+.selskab_menu_item_name{
+  float: left;
+  height: 100px;
+  width: 70%;
+}
+
+.selskab_menu_item_price{
+float: right;
+Width: 30%;
+=======
 
 .selskab_menu_overskrift{
 
@@ -293,6 +320,7 @@ font-size: 2rem;
 .selskab_menu_item_price{
 float: right;
 
+>>>>>>> d0515946cfaa24ddc07b608074df25557b8c938e
 }
 
 .
@@ -313,12 +341,21 @@ float: right;
 }
 .row.buffet_1{
   background-color: #1E1D20;
+<<<<<<< HEAD
 }
 .row.buffet_2{
 padding-top: 02rem;
 padding-bottom: 02rem;
 
 }
+=======
+}
+.row.buffet_2{
+padding-top: 02rem;
+padding-bottom: 02rem;
+
+}
+>>>>>>> d0515946cfaa24ddc07b608074df25557b8c938e
 
 .row.buffet_3{
   background-color: #1E1D20;
