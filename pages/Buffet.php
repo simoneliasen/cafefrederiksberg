@@ -56,7 +56,7 @@
     <div class="row buffet_1">
       <div class="six columns">
         <h2>Buffet 1</h2>
-          <div class="buffet_1">
+          <div class="buffet_liste">
             <ul>
               <li>Hvide sild med karrysalat</li>
               <li>Pålægsfad med 3 slags pålæg</li>
@@ -73,7 +73,30 @@
           </div>
       </div>
       <div class="six columns">
-        
+        <div class="buffet_placeholder_img_right">
+        </div>
+      </div>
+    </div>
+    <div class="row buffet_2">
+      <div class="six columns">
+        <div class="buffet_placeholder_img_left">
+        </div>
+      </div>
+      <div class="six columns">
+        <h2>Buffet 2</h2>
+          <div class="buffet_liste">
+            <ul>
+              <li>Laksefad med hummerdressing, rejer, asparges og kaviar</li>
+              <li>Lune mørbradbøffer med grilltomat og champignon a la creme</li>
+              <li>Leverpostej med bacon og svampe.</li>
+              <li>Oksefilet med flødekartofler</li>
+              <li>Grønne salater med 2 slags dressing</li>
+              <li>Kylling med olivenstegte kartofler, coleslaw salat, pesto, oliven, hvidløg, soltørrede tomater og croutons</li>
+              <li>Pastasalat</li>
+              <li>Osteanretning med druer og frugt</li>
+              <li>Brød og smør</li>
+            </ul>
+          </div>
       </div>
     </div>
   </div>

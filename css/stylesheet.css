@@ -159,63 +159,48 @@ background-color: #1E1D20;
 
 /*..............................................3 BAR */
 
-.center_bar{
-  text-align:center
+.bar-title{
+  text-align:center;
 }
 
-<<<<<<< HEAD
-.bar_menu_name{
-  float:left;
-  background-color:green;
-  width:80%;
-  font-family:"Poppins";
-  text-align:left;
-}
-
-.bar_menu_price{
-  float:right;
-  background-color:purple;
-  width:20%;
-  font-family:"Poppins";
-}
-
-.menu-item {
+.bar-item {
   margin: 35px 0;
 }
 
-.menu-item-name{
+.bar-item-name{
   font-weight: bold;
 }
 
-.menu-item-description{
+.bar-item-description{
   font-size: .9em;
   line-height: 1.5em;
 }
 
-.menu-item-price{
+.bar-item-price{
   float: right;
   margin-top: -22px;
   font-style:italic;
   text-align:right;
 }
 
-
-.bar_menu li{
-  list-style:none;
-}
-
-.bar_menu{
-  margin:auto;
-  width:80%;
-}
-
-
-=======
-.shrinkbarrow{
+.barshrinkbarrow{
 width:80rem;
 margin:auto;
 }
 
+.barcentergin{
+  text-align:center;
+  padding-top:3rem;
+  margin-bottom:-2rem;
+}
+
+.barcentergintext{
+  text-align:center;
+  margin-top:3rem;
+  margin-bottom:-2rem;
+  font-style:italic;
+  color:#CCB380;
+}
 
 /*..............................................4 BOOKING */
 
@@ -326,8 +311,27 @@ float: right;
   color: #CCB380;
   }
 
-.buffet_1 li{
+.buffet_liste li{
   list-style-type: none;
+}
+.row.buffet_1{
+  padding-bottom: 10rem;
+}
+.buffet_placeholder_img_left{
+
+  height: 482px;
+  width: 482px;
+  background-image: url("../img/bg_img_placeholder.jpg");
+  background-size: 482px 440px;
+  float: left;
+}
+.buffet_placeholder_img_right{
+
+  height: 482px;
+  width: 482px;
+  background-image: url("../img/bg_img_placeholder.jpg");
+  background-size: 482px 440px;
+  float: right;
 }
 /* .............................................8.3 ARRANGEMENTER */
 
