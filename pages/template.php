@@ -26,10 +26,8 @@
 <?php include '../includes/navigation.php'; ?>
 
 <!-- Indsætter slider  -->
-<div class="content slider">
-  <h1> her kommer der til at være en slider </h1>
-</div>
-</div>
+<?php include '../includes/header.php'; ?>
+
 
 
 <!--Eksempel m. 3-delt container og overskrift  -->
