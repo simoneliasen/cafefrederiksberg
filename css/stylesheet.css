@@ -114,7 +114,9 @@ background-color: #343434;
 #bestilonline {
   display: inline;
 }
-
+#bestilonlineheader {
+  margin-top: 1.5rem;
+}
 /*Knapper  */
 .button.button-primary.bestil{
   margin-top: 1rem;
@@ -265,7 +267,7 @@ background-color: #1E1D20;
 }
 
 .selskab_menu_overskrift{
- 
+
 }
 
 .selskab_menu_item{
@@ -286,7 +288,7 @@ font-size: 2rem;
   background-color: green;
 
 =======
- 
+
   height: 100px;
   width: 200px;
 >>>>>>> 25f8622d2ecd1be1e4eaa9809c3dc8f62337f22a

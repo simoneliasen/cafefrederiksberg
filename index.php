@@ -66,7 +66,7 @@
 
       <div class="six columns introHistorie">
         <h2> Café Frederiksberg </h2>
-        <h3> Siden år 1900</h3>
+        <h4> Siden år 1900</h4>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis neque in nunc varius fringilla.
           Morbi bibendum nunc ut posuere tempor. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
           Proin vel mauris sagittis.</p>
