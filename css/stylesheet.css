@@ -170,12 +170,15 @@ background-color: #1E1D20;
   text-align:center
 }
 
+<<<<<<< HEAD
 .bar_menu_price{
   float:right;
   background-color:purple;
   width:20%;
   font-family:"Poppins";
 =======
+=======
+>>>>>>> a66df126d3e99729a92182de2a606ad38888eeeb
 .menu-item {
   margin: 35px 0;
 }
@@ -288,19 +291,22 @@ font-size: 2rem;
 
 .selskab_menu_item_name{
   float: left;
+<<<<<<< HEAD
 
 
   height: 100px;
   width: 200px;
 
+=======
+  height: 100px;
+  width: 70%;
+>>>>>>> a66df126d3e99729a92182de2a606ad38888eeeb
 }
 
 .selskab_menu_item_price{
 float: right;
-
+Width: 30%;
 }
-
-.
 /* .............................................8.2 BUFFET */
 /* 297 er lim til 300 */
 .buffet-menulinje {
@@ -316,6 +322,38 @@ float: right;
 .buffet_1 li{
   list-style-type: none;
 }
+<<<<<<< HEAD
+=======
+.row.buffet_1{
+  background-color: #1E1D20;
+}
+.row.buffet_2{
+padding-top: 02rem;
+padding-bottom: 02rem;
+
+}
+
+.row.buffet_3{
+  background-color: #1E1D20;
+}
+
+.buffet_placeholder_img_left{
+
+  height: 482px;
+  width: 482px;
+  background-image: url("../img/bg_img_placeholder.jpg");
+  background-size: 482px 440px;
+  float: left;
+}
+.buffet_placeholder_img_right{
+
+  height: 482px;
+  width: 482px;
+  background-image: url("../img/bg_img_placeholder.jpg");
+  background-size: 482px 440px;
+  float: right;
+}
+>>>>>>> a66df126d3e99729a92182de2a606ad38888eeeb
 /* .............................................8.3 ARRANGEMENTER */
 
 .wrapper{

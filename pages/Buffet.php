@@ -88,7 +88,7 @@
             <ul>
               <li>Laksefad med hummerdressing, rejer, asparges og kaviar</li>
               <li>Lune mørbradbøffer med grilltomat og champignon a la creme</li>
-              <li>Leverpostej med bacon og svampe.</li>
+              <li>Leverpostej med bacon og svampe</li>
               <li>Oksefilet med flødekartofler</li>
               <li>Grønne salater med 2 slags dressing</li>
               <li>Kylling med olivenstegte kartofler, coleslaw salat, pesto, oliven, hvidløg, soltørrede tomater og croutons</li>
@@ -97,6 +97,71 @@
               <li>Brød og smør</li>
             </ul>
           </div>
+      </div>
+    </div>
+    <div class="row buffet_3">
+      <div class="six columns">
+        <h2>Buffet 3</h2>
+          <div class="buffet_liste">
+            <ul>
+              <li>Røget laks med asparges og kaviar</li>
+              <li>Lune frikadeller med kartoffelsalat</li>
+              <li>Mørbradbøffer med bløde løg, sprød bacon,champignon og surt</li>
+              <li>barbequekylling</li>
+              <li>Grønne salater med 2 slags dressing</li>
+              <li>Lun glaseret skinke med olivenstegte kartofler, pesto, oliven, marinerede hvidløg, soltørrede tomater og croutons</li>
+              <li>Pastasalat</li>
+              <li>Osteanretning med druer og frugt</li>
+              <li>Brød og smør</li>
+            </ul>
+          </div>
+      </div>
+      <div class="six columns">
+        <div class="buffet_placeholder_img_right">
+        </div>
+      </div>
+    </div>
+    <div class="row buffet_2">
+      <div class="six columns">
+        <div class="buffet_placeholder_img_left">
+        </div>
+      </div>
+      <div class="six columns">
+        <h2>Buffet 4</h2>
+          <div class="buffet_liste">
+            <ul>
+              <li>Kold dampet fiskefilet med aparges, kaviar og hummerdressing</li>
+              <li>Rejer og mayonnaise</li>
+              <li>Lun lammekølle med myntegelé</li>
+              <li>Lun tyndstegsfilet med flødekartofler</li>
+              <li>Lun glaseret skinke</li>
+              <li>Salater med 2 slags dressing</li>
+              <li>Lun leverpostej med bacon og champignon</li>
+              <li>Stort ostebord med friske frugter</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="row buffet_3">
+      <div class="six columns">
+        <h2>USA buffet</h2>
+          <div class="buffet_liste">
+            <ul>
+              <li>Salat med grillede rejer på bund af avocado, tomat og ananas - hertil cocktailsauce</li>
+              <li>Beer batter fish - stegt torsk i sprød dej på spidskål, majs og persille - hertil hvidløgscreme</li>
+              <li>Pulled pork i chili og honning, braiserede urter, honningglaserede rodfrugter og syltede tomater</li>
+              <li>US oksesteg med timian, bagte kartofler og salater</li>
+              <li>Majskylling steg med persilleolie, marinerede svampe med mandler og bagte rødløg</li>
+              <li>Spinat - og kartoffeltærter med cheddarost</li>
+              <li>caesar salat med sprøde croutons, bagte tomater, sprød bacon og parmesanost</li>
+              <li>American brownies med softice og frugt</li>
+
+            </ul>
+          </div>
+      </div>
+      <div class="six columns">
+        <div class="buffet_placeholder_img_right">
+        </div>
       </div>
     </div>
   </div>
