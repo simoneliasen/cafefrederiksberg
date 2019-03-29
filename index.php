@@ -32,10 +32,27 @@
   <div class="wrapper onlineBestilling">
     <!--Indhold centreret i wrapper-->
     <div class="container onlineBestilling">
-      <h2 id "bestilonline">Bestil online</h2>
-      <button>Biletter </button>
-      <button>Klub Frede </button>
-      <button>Take away </button>
+
+      <div class="row indholdsoversigt">
+        <div class="six columns">
+          <div class="Bestil_onlineindex">
+            <h2>Bestil online:</h2>
+          </div>
+        </div>
+
+        <div class="two columns">
+          <a class="button button-primary" href="#">Bord</a>
+        </div>
+
+        <div class="two columns">
+          <a class="button button-primary" href="#">Biletter</a>
+        </div>
+
+        <div class="two columns">
+          <a class="button button-primary" href="#">Take-away</a>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -46,15 +63,19 @@
   <div class="wrapper introHistorie">
     <!--Indhold centreret i wrapper-->
     <div class="container introHistorie">
-      <div class="six columns">
-        <h2> Historien om Café Frederiksberg </h2>
+
+      <div class="six columns introHistorie">
+        <h2> Café Frederiksberg </h2>
+        <h3> Siden år 1900</h3>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis neque in nunc varius fringilla.
           Morbi bibendum nunc ut posuere tempor. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
           Proin vel mauris sagittis.</p>
       </div>
+
       <div class="six columns">
-        <img src="img/Butikfront.png">
+        <img src="img/Butikfront.png" id="butikfront">
       </div>
+
     </div>
   </div>
 
@@ -65,6 +86,7 @@
   <div class="wrapper indholdsoversigt">
     <!--Indhold centreret i wrapper-->
     <div class="container indholdsoversigt">
+
       <!-- opretter række, som elementer let kan placeres i-->
       <div class="row indholdsoversigt">
         <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
@@ -81,6 +103,7 @@
           <h2>SELSKABER</h2>
         </div>
       </div>
+
     </div>
   </div>
 
@@ -90,6 +113,7 @@
   <div class="wrapper katalog">
     <!--Indhold centreret i wrapper-->
     <div class="container katalog">
+
       <!--Div til katalog  -->
       <div class="six columns katalog">
         <!--Midlertidig  -->
@@ -106,30 +130,30 @@
           Cras a sagittis ligula. Maecenas placerat quis tellus vitae ullamcorper.
           Aenean id cursus urna. Pellentesque aliquet dictum diam, vel mattis nisi sagittis eget.</p>
       </div>
-  </div>
-
-
-
-  <!-- Wrapper til kommendeEvents -->
-  <div class="wrapper kommendeEvents">
-    <!--Indhold centreret i wrapper-->
-    <div class="container kommendeEvents">
-      <h1><br> Her kommer der til at være en kommende events </h1>
     </div>
-  </div>
 
 
 
-  <!--Google maps (ikke centreret, da den skal have full width)  -->
-  <div class="googleMaps">
-    <img src="img/Mapsplaceholder.png">
-  </div>
+    <!-- Wrapper til kommendeEvents -->
+    <div class="wrapper kommendeEvents">
+      <!--Indhold centreret i wrapper-->
+      <div class="container kommendeEvents">
+        <h1><br> Her kommer der til at være  kommende events </h1>
+      </div>
+    </div>
+
+
+
+    <!--Google maps (ikke centreret, da den skal have full width)  -->
+    <div class="googleMaps">
+      <img src="img/Mapsplaceholder.png">
+    </div>
 
 
 
 
-  <!--Inddrager footer fra "includes/footer.php"-->
-  <?php include 'includes/footer.php'; ?>
+    <!--Inddrager footer fra "includes/footer.php"-->
+    <?php include 'includes/footer.php'; ?>
 
 
 </body>
