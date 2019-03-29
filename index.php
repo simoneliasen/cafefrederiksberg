@@ -64,15 +64,16 @@
     <!--Indhold centreret i wrapper-->
     <div class="container introHistorie">
 
-      <div class="six columns">
-        <h2> Historien om Café Frederiksberg </h2>
+      <div class="six columns introHistorie">
+        <h2> Café Frederiksberg </h2>
+        <h3> Siden år 1900</h3>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis neque in nunc varius fringilla.
           Morbi bibendum nunc ut posuere tempor. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
           Proin vel mauris sagittis.</p>
       </div>
 
       <div class="six columns">
-        <img src="img/Butikfront.png">
+        <img src="img/Butikfront.png" id="butikfront">
       </div>
 
     </div>
@@ -137,7 +138,7 @@
     <div class="wrapper kommendeEvents">
       <!--Indhold centreret i wrapper-->
       <div class="container kommendeEvents">
-        <h1><br> Her kommer der til at være en kommende events </h1>
+        <h1><br> Her kommer der til at være  kommende events </h1>
       </div>
     </div>
 

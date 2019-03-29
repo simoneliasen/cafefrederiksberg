@@ -35,17 +35,32 @@
 <div class="bg_dark">
   <div class="container">
     <div class="row">
-      <div class="one-half column frede_live_katalog" style="background-color: red;">
-        <img src="../img/katalog.png" alt="katalog">
+      <div class="one-half column frede_live_katalog">
+
+        <a href="#">
+          <div class="frede_live_katalog_img">
+          </div>
+        </a>
+
       </div>
-      <div class="one-half column">
-        <h2>Frede Live</h2>
-        <h6>Livemusik og events</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="one-half column frede_live_katalog_text">
+
+        <div class="frede_live_katalog_text_container">
+          <h2>Frede Live</h2>
+          <h6>Livemusik og events</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a class="button" href="#">Se vores Magsin <u>her</u></a>
+        </div>
+
       </div>
     </div>
   </div>
 </div>
+
+<div class="container">
+
+</div>
+
 
 
 
