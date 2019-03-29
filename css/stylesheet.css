@@ -175,6 +175,8 @@ background-color: #1E1D20;
   text-align:left;
 }
 
+<<<<<<< HEAD
+=======
 .bar_menu_price{
   float:right;
   background-color:purple;
@@ -185,6 +187,7 @@ background-color: #1E1D20;
   margin: 35px 0;
 }
 
+>>>>>>> 3321b5669518ad4319cfa78e47fa3028e2e9bb11
 .menu-item-name{
   font-weight: bold;
 }
@@ -312,7 +315,10 @@ font-size: 2rem;
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 >>>>>>> de68987e2059e43efcc9d21729d92558fc32a617
+>>>>>>> 3321b5669518ad4319cfa78e47fa3028e2e9bb11
 
   height: 100px;
   width: 200px;
@@ -343,3 +349,7 @@ float: right;
   list-style-type: none;
 }
 /* .............................................8.3 ARRANGEMENTER */
+
+.wrapper-Arrangementer {
+  color: #1d1d1d;
+}
