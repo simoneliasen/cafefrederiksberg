@@ -277,7 +277,7 @@ background-color: #1E1D20;
   float: left;
   width: 50%;
   background-color: green;
-  
+
 }
 
 .Smenu_pris{
@@ -288,8 +288,15 @@ background-color:yellow;
 
 .
 /* .............................................8.2 BUFFET */
-.buffet-menulinje ul{
-  display: inline;
-  list-style: none;
+
+.buffet-menulinje {
+
 }
+.buffet-menulinje li{
+    list-style-type: none;
+  display: inline;
+  padding-right: 08rem;
+  color: #CCB380;
+  }
+
 /* .............................................8.3 ARRANGEMENTER */

@@ -35,17 +35,18 @@
 <div class="wrapper buffet-menu">
   <!--Indhold centreret i wrapper-->
   <div class="container buffet-menu">
-    <h1> Her kommer der til at være en indholdsoversigt </h1>
     <!-- opretter række, som elementer let kan placeres i-->
-    <ul class="buffet-menulinje">
-      <li>Buffet 1</li>
-      <li>Buffet 2</li>
-      <li>Buffet 3</li>
-      <li>Buffet 4</li>
-      <li>USA buffet</li>
-      <li>Italiensk Buffet</li>
-      <li>Øko buffet</li>
-    </ul>
+      <div class="buffet-menulinje">
+      <ul>
+        <li>Buffet 1</li>
+        <li>Buffet 2</li>
+        <li>Buffet 3</li>
+        <li>Buffet 4</li>
+        <li>USA buffet</li>
+        <li>Italiensk Buffet</li>
+        <li>Øko buffet</li>
+      </ul>
+    </div>
   </div>
 </div>
 
