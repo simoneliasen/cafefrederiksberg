@@ -164,32 +164,46 @@ background-color: #1E1D20;
 
 /*..............................................3 BAR */
 
-.menu-title{
+.bar-title{
   text-align:center;
 }
 
-.menu-item {
+.bar-item {
   margin: 35px 0;
 }
 
-.menu-item-name{
+.bar-item-name{
   font-weight: bold;
 }
 
-.menu-item-description{
+.bar-item-description{
   font-size: .9em;
   line-height: 1.5em;
 }
 
-.menu-item-price{
+.bar-item-price{
   float: right;
   margin-top: -22px;
   font-style:italic;
 }
 
-.shrinkbarrow{
+.barshrinkbarrow{
 width:80rem;
 margin:auto;
+}
+
+.barcentergin{
+  text-align:center; 
+  padding-top:3rem; 
+  margin-bottom:-2rem;
+}
+
+.barcentergintext{
+  text-align:center;
+  margin-top:3rem;
+  margin-bottom:-2rem;
+  font-style:italic;
+  color:#CCB380;
 }
 
 /*..............................................4 BOOKING */
