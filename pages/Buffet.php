@@ -32,25 +32,31 @@
 
 
 <!--Eksempel m. 3-delt container og overskrift  -->
-<div class="wrapper indholdsoversigt">
+<div class="wrapper buffet_menu">
   <!--Indhold centreret i wrapper-->
-  <div class="container indholdsoversigt">
+  <div class="container buffet_menu">
     <h1> Her kommer der til at være en indholdsoversigt </h1>
     <!-- opretter række, som elementer let kan placeres i-->
-    <div class="row indholdsoversigt">
-      <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
-      <div class="three columns">
-        <h2>RESTAURANT</h2>
-      </div>
-      <div class="three columns">
-        <h2>BAR</h2>
-      </div>
-      <div class="three columns">
-        <h2>EVENTS</h2>
-      </div>
-      <div class="three columns">
-        <h2>SELSKABER</h2>
-      </div>
+    <div class="one column">
+        <a class="button button-primary" href="#">Buffet 1</a>
+    </div>
+    <div class="one column">
+        <a class="button button-primary" href="#">Buffet 2</a>
+    </div>
+    <div class="one column">
+        <a class="button button-primary" href="#">Buffet 3</a>
+    </div>
+    <div class="one column">
+        <a class="button button-primary" href="#">Buffet 4</a>
+    </div>
+    <div class="one column">
+        <a class="button button-primary" href="#">USA buffet</a>
+    </div>
+    <div class="one column">
+        <a class="button button-primary" href="#">Øko buffet</a>
+    </div>
+    <div class="one column">
+        <a class="button button-primary" href="#">Italiensk buffet</a>
     </div>
   </div>
 </div>
