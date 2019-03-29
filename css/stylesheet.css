@@ -282,9 +282,15 @@ font-size: 2rem;
 
 .selskab_menu_item_name{
   float: left;
+<<<<<<< HEAD
+  width: 50%;
+  background-color: green;
+
+=======
  
   height: 100px;
   width: 200px;
+>>>>>>> 25f8622d2ecd1be1e4eaa9809c3dc8f62337f22a
 }
 
 .selskab_menu_item_price{
@@ -293,8 +299,15 @@ float: right;
 
 .
 /* .............................................8.2 BUFFET */
-.buffet-menulinje ul{
-  display: inline;
-  list-style: none;
+
+.buffet-menulinje {
+
 }
+.buffet-menulinje li{
+    list-style-type: none;
+  display: inline;
+  padding-right: 08rem;
+  color: #CCB380;
+  }
+
 /* .............................................8.3 ARRANGEMENTER */
