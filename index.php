@@ -36,20 +36,20 @@
       <div class="row indholdsoversigt">
         <div class="six columns">
           <div class="Bestil_onlineindex">
-            <h2>Bestil online:</h2>
+            <h2 id ="bestilonlineheader">Bestil online:</h2>
           </div>
         </div>
 
         <div class="two columns">
-          <a class="button button-primary" href="#">Bord</a>
+          <a class="button button-primary bestil" href="#">Bord</a>
         </div>
 
         <div class="two columns">
-          <a class="button button-primary" href="#">Biletter</a>
+          <a class="button button-primary bestil" href="#">Biletter</a>
         </div>
 
         <div class="two columns">
-          <a class="button button-primary" href="#">Take-away</a>
+          <a class="button button-primary bestil" href="#">Take-away</a>
         </div>
       </div>
 
@@ -64,15 +64,16 @@
     <!--Indhold centreret i wrapper-->
     <div class="container introHistorie">
 
-      <div class="six columns">
-        <h2> Historien om Café Frederiksberg </h2>
+      <div class="six columns introHistorie">
+        <h2> Café Frederiksberg </h2>
+        <h3> Siden år 1900</h3>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis neque in nunc varius fringilla.
           Morbi bibendum nunc ut posuere tempor. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
           Proin vel mauris sagittis.</p>
       </div>
 
       <div class="six columns">
-        <img src="img/Butikfront.png">
+        <img src="img/Butikfront.png" id="butikfront">
       </div>
 
     </div>
