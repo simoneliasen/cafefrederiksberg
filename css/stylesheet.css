@@ -180,16 +180,16 @@ background-color: #1E1D20;
   text-align:left;
 >>>>>>> cbcd8b9f12f774c988efdf5224d870971ae2f2b1
 }
- 
+
 .menu-item-name{
   font-weight: bold;
 }
- 
+
 .menu-item-description{
   font-size: .9em;
   line-height: 1.5em;
 }
- 
+
 .menu-item-price{
   float: right;
   margin-top: -22px;
@@ -274,7 +274,7 @@ margin:auto;
 }
 
 .selskab_menu_overskrift{
- 
+
 }
 
 .selskab_menu_item{
@@ -295,7 +295,7 @@ font-size: 2rem;
   background-color: green;
 
 =======
- 
+
   height: 100px;
   width: 200px;
 >>>>>>> 25f8622d2ecd1be1e4eaa9809c3dc8f62337f22a
@@ -325,3 +325,7 @@ background-color:yellow;
   }
 
 /* .............................................8.3 ARRANGEMENTER */
+
+.wrapper-Arrangementer {
+  color: #1d1d1d;
+}
