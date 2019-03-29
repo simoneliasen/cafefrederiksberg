@@ -108,6 +108,7 @@ p {
 
 /*..............................................1 INDEX */
 
+/*Bestillingsbar*/
 .wrapper.onlineBestilling {
 background-color: #343434;
 }
@@ -117,12 +118,15 @@ background-color: #343434;
 #bestilonlineheader {
   margin-top: 1.5rem;
 }
-/*Knapper  */
+
+/*Knapper til bestillingsbar */
 .button.button-primary.bestil{
   margin-top: 1rem;
   background-color: #CCB380;
   border-color: #CCB380;
 }
+
+/* Café frederiksberg introhistorie forside  */
 .introHistorie {
 background-color: #101010;
 margin-top: 2rem;
@@ -133,27 +137,19 @@ margin-top: 2rem;
 .six.columns.introHistorie > h2 {
 
 }
+
+/*Billede af café frederiksberg i introhistorie  */
 #butikfront {
   width: 38rem;
   height: 24.25rem;
 }
 
+/*Café frederiksbergs primære interesseområder  */
 .indholdsoversigt {
   background-color: #343434;
 }
 
 
-.katalog {
-background-color: #101010;
-}
-.katalog img {
-  float: right;
-  margin-top: 4rem;
-}
-.six.columns.katalogtekst {
-  float: left;
-  margin-top: 10rem;
-}
 
 
 .kommendeEvents {
@@ -234,7 +230,6 @@ margin:auto;
 
 .frede_live_katalog{
   height: 600px;
-
 }
 
 .frede_live_katalog_img{
