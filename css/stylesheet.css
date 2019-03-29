@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
 
 h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem; font-family: 'Playfair Display', serif; font-weight: 700; color: #fff; }
-h2 { font-size: 3.6rem; line-height: 0.4; letter-spacing: -.1rem; font-family: 'Playfair Display', serif; font-weight: 700; color: #CCB380; }
+h2 { font-size: 3.6rem; line-height: 1; letter-spacing: -.1rem; font-family: 'Playfair Display', serif; font-weight: 700; color: #CCB380; }
 h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
 h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
 h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
@@ -166,36 +166,33 @@ background-color: #1E1D20;
 
 /*..............................................3 BAR */
 
-.center_bar{
-  text-align:center
+.menu-title{
+  text-align:center;
 }
 
-.bar_menu_name{
-  float:left;
-  background-color:green;
-  width:80%;
-  font-family:"Poppins";
-  text-align:left;
+.menu-item {
+  margin: 35px 0;
 }
 
-.bar_menu_price{
-  float:right;
-  background-color:purple;
-  width:20%;
-  font-family:"Poppins";
+.menu-item-name{
+  font-weight: bold;
+}
+
+.menu-item-description{
+  font-size: .9em;
+  line-height: 1.5em;
+}
+
+.menu-item-price{
+  float: right;
+  margin-top: -22px;
   font-style:italic;
-  text-align:right;
 }
 
-.bar_menu li{
-  list-style:none;
+.shrinkbarrow{
+width:80rem;
+margin:auto;
 }
-
-.bar_menu{
-  margin:auto;
-  width:80%;
-}
-
 
 /*..............................................4 BOOKING */
 
@@ -273,6 +270,7 @@ background-color: #1E1D20;
 .selskab_menu_item{
   width: 60%;
   Margin: 0px auto;
+  height: 10rem;
 }
 
 .selskab_menu_item_fontstyle{
@@ -283,28 +281,24 @@ font-size: 2rem;
 
 .selskab_menu_item_name{
   float: left;
-<<<<<<< HEAD
   width: 50%;
   background-color: green;
 
+<<<<<<< HEAD
 =======
 
   height: 100px;
   width: 200px;
 >>>>>>> 25f8622d2ecd1be1e4eaa9809c3dc8f62337f22a
+=======
+>>>>>>> 021e6216f8039eb80da6ce504095b8869e3cdf8d
 }
 
 .selskab_menu_item_price{
 float: right;
-<<<<<<< HEAD
-
-=======
-width: 50%;
-background-color:yellow;
->>>>>>> cb7d8a0f2237a828382aee759c310e8e5ee20f1e
 }
 
-.
+
 /* .............................................8.2 BUFFET */
 
 .buffet-menulinje {
