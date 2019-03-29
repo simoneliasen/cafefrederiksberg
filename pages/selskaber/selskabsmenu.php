@@ -202,8 +202,6 @@
               </div>
           </div>
 
-          <hr>
-
           <div class="selskab_menu_item">
               <div class="selskab_menu_item_name">
                   <span class="selskab_menu_item_fontstyle"> Gammeldags oksesteg</span>
@@ -213,6 +211,53 @@
                   <span class="selskab_menu_item_fontstyle">- per couv. kr. 120,-</span>
               </div>
           </div>
+
+          <div class="selskab_menu_item">
+              <div class="selskab_menu_item_name">
+                  <span class="selskab_menu_item_fontstyle"> Oksemørbrad</span>
+                  <p>Med grøntsager og smørstegte kartofler</p>
+              </div>
+              <div class="selskab_menu_item_price">
+                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 175,-</span>
+              </div>
+          </div>
+
+          <div class="selskab_menu_item">
+              <div class="selskab_menu_item_name">
+                  <span class="selskab_menu_item_fontstyle"> Lammeryg</span>
+                  <p>Med grøntsager og kartofler</p>
+              </div>
+              <div class="selskab_menu_item_price">
+                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 210,-</span>
+              </div>
+          </div>
+
+          <div class="selskab_menu_item">
+              <div class="selskab_menu_item_name">
+                  <span class="selskab_menu_item_fontstyle"> Andesteg</span>
+                  <p>Med rødkål, svesker, hvide og brune kartofler</p>
+              </div>
+              <div class="selskab_menu_item_price">
+                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 135,-</span>
+              </div>
+          </div>
+
+          <div class="selskab_menu_item">
+              <div class="selskab_menu_item_name">
+                  <span class="selskab_menu_item_fontstyle"> Dyreryg</span>
+                  <p>Med waldorffsalat, hvide og brune kartofler</p>
+              </div>
+              <div class="selskab_menu_item_price">
+                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 225,-</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    <div class="selskab_menu_overskrift">
+        <h3 class="header-centertext"> Desserter </h3><br>
+    </div>
+      <div class="bg_dark">
+          <div class="container">
 
 
 
