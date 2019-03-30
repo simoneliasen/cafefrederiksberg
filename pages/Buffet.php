@@ -155,13 +155,72 @@
               <li>Spinat - og kartoffeltærter med cheddarost</li>
               <li>caesar salat med sprøde croutons, bagte tomater, sprød bacon og parmesanost</li>
               <li>American brownies med softice og frugt</li>
-
             </ul>
           </div>
       </div>
       <div class="six columns">
         <div class="buffet_placeholder_img_right">
         </div>
+      </div>
+    </div>
+    <div class="row buffet_2">
+      <div class="six columns">
+        <h2>Italiensk buffet</h2>
+          <div class="buffet_liste">
+            <ul>
+              <li>Insalata de mare - skaldyrssalat med olivenolie og krydderurter</li>
+              <li>Carpaccio - marineret oksekød med parmasanost</li>
+              <li>Lufttørret parmaskinke med soltørret tomatsalat</li>
+              <li>Filetto De Maiale Gratinato - Svinemørbrad vendt i olivenolie og paneret med krydderurter</li>
+              <li>Farserede tomater</li>
+              <li>Lasagne</li>
+              <li>Spaghetti alla carbonara</li>
+              <li>Lammekølle med tomatsauce og frisk basilikum</li>
+              <li>Små olivenristede kartofler med friske krydderurter</li>
+              <li>Friske frugter og italienske oste</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="row buffet_3">
+      <div class="six columns">
+        <h2>Øko buffet</h2>
+          <div class="buffet_liste">
+            <ul>
+              <li>Gazpacho suppe</li>
+              <li>Kartoffelomelet</li>
+              <li>Fyldte muslinger</li>
+              <li>Farserede champignon</li>
+              <li>Pinchos med forskellig fyld</li>
+              <li>Stegte kartofler med aioli</li>
+              <li>Kødboller i tomatsauce</li>
+              <li>Lam med citron</li>
+              <li>Empanadas med kødfyld</li>
+              <li>Oste med friske frugter</li>
+            </ul>
+          </div>
+      </div>
+      <div class="six columns">
+        <div class="buffet_placeholder_img_right">
+        </div>
+      </div>
+    </div>
+    <div class="row buffet_2">
+      <div class="six columns">
+        <h2>Natmad</h2>
+          <div class="buffet_liste">
+            <ul>
+              <li>Klar suppe med boller og flütes</li>
+              <li>Karrysuppe med flütes</li>
+              <li>Flødelegeret aspargessuppe med kødboller og flütes</li>
+              <li>Frikadeller med kartoffelsalat</li>
+              <li>Glasseret skinke med salat, dressing og flütes</li>
+              <li>Skibberlabskovs med rugbrød, smør og rødbeder</li>
+              <li>Pølsebord med 4 slags pålæg, leverpostej og ost</li>
+              <li>Hotdogs med klassisk tilbehør</li>
+              <li><i>Allegiker/Vegetar kan bestilles mod tillæg i prisen</i></li>
+            </ul>
+          </div>
       </div>
     </div>
   </div>
