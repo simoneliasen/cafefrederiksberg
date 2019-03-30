@@ -303,42 +303,62 @@ Width: 30%;
 }
 /* .............................................8.2 BUFFET */
 /* 297 er lim til 300 */
-.buffet-menulinje {
 
-}
-.buffet-menulinje li{
-    list-style-type: none;
-  display: inline;
-  padding-right: 08rem;
-  color: #CCB380;
-  }
-
-.buffet_1 li{
+.menulinje-buffet li{
   list-style-type: none;
+  display: inline;
+  padding-right: 07rem;
+  padding-left: 01rem;
+  font-size: 16px;
+  color: #CCB380;
+  font-family: "Playfair Display"
+  }
+.buffet_infooverskrift{
+  text-align: center;
 }
-.row.buffet_1{
-  background-color: #1E1D20;
-}
-.row.buffet_2{
-padding-top: 02rem;
-padding-bottom: 02rem;
+
+
+.buffet_odd li{
+  list-style-type: none;
 
 }
-
-.row.buffet_3{
+.row.buffet_odd{
   background-color: #1E1D20;
+  padding-left: 01rem;
+}
+
+.buffet_even li{
+  list-style-type: none;
+  font: "Poppins"
+
+}
+.row.buffet_even{
+  padding-top: 01rem;
+  padding-bottom: 01rem;
+}
+.buffet_priser_info{
+  display: inline;
+  font-size: 20px;
+  color: white;
+  font-family: "Poppins"
+}
+.buffet_pris{
+  display: inline;
+  font-family: "Playfair Display";
+  font-size: 18px;
+  color: #CCB380;
+  padding-left: 08rem;
 }
 
 .buffet_placeholder_img_left{
-
   height: 482px;
   width: 482px;
   background-image: url("../img/bg_img_placeholder.jpg");
   background-size: 482px 440px;
   float: left;
 }
-.buffet_placeholder_img_right{
 
+.buffet_placeholder_img_right{
   height: 482px;
   width: 482px;
   background-image: url("../img/bg_img_placeholder.jpg");

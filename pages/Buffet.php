@@ -36,9 +36,18 @@
   <!--Indhold centreret i wrapper-->
   <div class="container buffet-linje">
     <!-- opretter række, som elementer let kan placeres i-->
+      <div class="row buffet_infotekst">
+        <div class="twelve columns">
+          <div class="buffet_infooverskrift">
+            <h2>Café Frederiksberg har et udvalg af lækre buffeter</h2>
+            </div>
+          <p>eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <P>Vi er stolte over at kunne fremvise 5 elite smileys - <a href="https://www.findsmiley.dk/25727" target="_blank"><img src="../img/kontrolrapport.JPEG" width="50" height="25" border="0"></a>
+        </div>
+      </div>
       <div class="row menulinje_buffet">
         <div class="twelve columns">
-          <div class="buffet-menulinje">
+          <div class="menulinje-buffet">
           <ul>
             <li>Buffet 1</li>
             <li>Buffet 2</li>
@@ -53,10 +62,10 @@
     </div>
   </div>
   <div class="container buffet-menuer">
-    <div class="row buffet_1">
+    <div class="row buffet_odd">
       <div class="six columns">
         <h2>Buffet 1</h2>
-          <div class="buffet_liste">
+
             <ul>
               <li>Hvide sild med karrysalat</li>
               <li>Pålægsfad med 3 slags pålæg</li>
@@ -70,14 +79,22 @@
               <li>Osteanretning med druer og frugt</li>
               <li>Brød og smør</li>
             </ul>
-          </div>
+
+            <h2>Priser <p class="buffet_priser_info">- inkl. fri øl, vin og vand</p> </h2>
+              <ul>
+                <li>For 4 timer - min. 20 personer <p class="buffet_pris">Kun 299 ,-</p></li>
+                <li>For 4 timer - under 20 personer <p class="buffet_pris">Kun 399 ,- </p></li>
+                <li>For 5 timer - min. 20 personer <p class="buffet_pris">Kun 329 ,- </p></li>
+                <li>For 5 timer - under 20 personer <p class="buffet_pris">Kun 429 ,- </p></li>
+              </ul>
+
       </div>
       <div class="six columns">
         <div class="buffet_placeholder_img_right">
         </div>
       </div>
     </div>
-    <div class="row buffet_2">
+    <div class="row buffet_even">
       <div class="six columns">
         <div class="buffet_placeholder_img_left">
         </div>
@@ -96,10 +113,19 @@
               <li>Osteanretning med druer og frugt</li>
               <li>Brød og smør</li>
             </ul>
+
+            <h2>Priser <p class="buffet_priser_info">- inkl. fri øl, vin og vand</p> </h2>
+              <ul>
+                <li>For 4 timer - min. 20 personer <p class="buffet_pris">Kun 299 ,-</p></li>
+                <li>For 4 timer - under 20 personer <p class="buffet_pris">Kun 399 ,- </p></li>
+                <li>For 5 timer - min. 20 personer <p class="buffet_pris">Kun 329 ,- </p></li>
+                <li>For 5 timer - under 20 personer <p class="buffet_pris">Kun 429 ,- </p></li>
+              </ul>
+
           </div>
       </div>
     </div>
-    <div class="row buffet_3">
+    <div class="row buffet_odd">
       <div class="six columns">
         <h2>Buffet 3</h2>
           <div class="buffet_liste">
@@ -114,6 +140,15 @@
               <li>Osteanretning med druer og frugt</li>
               <li>Brød og smør</li>
             </ul>
+
+            <h2>Priser <p class="buffet_priser_info">- inkl. fri øl, vin og vand</p> </h2>
+              <ul>
+                <li>For 4 timer - min. 20 personer <p class="buffet_pris">Kun 299 ,-</p></li>
+                <li>For 4 timer - under 20 personer <p class="buffet_pris">Kun 399 ,- </p></li>
+                <li>For 5 timer - min. 20 personer <p class="buffet_pris">Kun 329 ,- </p></li>
+                <li>For 5 timer - under 20 personer <p class="buffet_pris">Kun 429 ,- </p></li>
+              </ul>
+
           </div>
       </div>
       <div class="six columns">
@@ -121,7 +156,7 @@
         </div>
       </div>
     </div>
-    <div class="row buffet_2">
+    <div class="row buffet_even">
       <div class="six columns">
         <div class="buffet_placeholder_img_left">
         </div>
@@ -139,10 +174,17 @@
               <li>Lun leverpostej med bacon og champignon</li>
               <li>Stort ostebord med friske frugter</li>
             </ul>
+
+            <h2>Priser</h2>
+              <ul>
+                <li>Per couv.  <p class="buffet_pris">Kun 189 ,- </p></li>
+                <li>Buffet inkl. fri øl, vin og vand i 4 timer <p class="buffet_pris">Kun 365 ,-</p></li>
+              </ul>
           </div>
+
       </div>
     </div>
-    <div class="row buffet_3">
+    <div class="row buffet_odd">
       <div class="six columns">
         <h2>USA buffet</h2>
           <div class="buffet_liste">
@@ -155,13 +197,102 @@
               <li>Spinat - og kartoffeltærter med cheddarost</li>
               <li>caesar salat med sprøde croutons, bagte tomater, sprød bacon og parmesanost</li>
               <li>American brownies med softice og frugt</li>
+            </ul>
 
+            <h2>Priser <p class="buffet_priser_info">- inkl. fri øl, vin og vand</p> </h2>
+            <ul>
+              <li>For 4 timer - min. 20 personer <p class="buffet_pris">Kun 379 ,-</p></li>
+              <li>For 4 timer - under 20 personer <p class="buffet_pris">Kun 479 ,- </p></li>
+              <li>For ekstra time af øl, vin og vand <p class="buffet_pris">50 ,- per person </p></li>
             </ul>
           </div>
       </div>
       <div class="six columns">
         <div class="buffet_placeholder_img_right">
         </div>
+      </div>
+    </div>
+    <div class="row buffet_even">
+      <div class="six columns">
+        <div class="buffet_placeholder_img_left">
+        </div>
+      </div>
+      <div class="six columns">
+        <h2>Italiensk buffet</h2>
+          <div class="buffet_liste">
+            <ul>
+              <li>Insalata de mare - skaldyrssalat med olivenolie og krydderurter</li>
+              <li>Carpaccio - marineret oksekød med parmasanost</li>
+              <li>Lufttørret parmaskinke med soltørret tomatsalat</li>
+              <li>Filetto De Maiale Gratinato - Svinemørbrad vendt i olivenolie og paneret med krydderurter</li>
+              <li>Farserede tomater</li>
+              <li>Lasagne</li>
+              <li>Spaghetti alla carbonara</li>
+              <li>Lammekølle med tomatsauce og frisk basilikum</li>
+              <li>Små olivenristede kartofler med friske krydderurter</li>
+              <li>Friske frugter og italienske oste</li>
+            </ul>
+
+            <h2>Priser</h2>
+              <ul>
+                <li>Per couv. <p class="buffet_pris">Kun 189 ,-</p></li>
+                <li>Buffet inkl. fri øl, vin og vand <p class="buffet_pris">Kun 365 ,- </p></li>
+              </ul>
+
+          </div>
+      </div>
+    </div>
+    <div class="row buffet_odd">
+      <div class="six columns">
+        <h2>Øko buffet</h2>
+          <div class="buffet_liste">
+            <ul>
+              <li>Gazpacho suppe</li>
+              <li>Kartoffelomelet</li>
+              <li>Fyldte muslinger</li>
+              <li>Farserede champignon</li>
+              <li>Pinchos med forskellig fyld</li>
+              <li>Stegte kartofler med aioli</li>
+              <li>Kødboller i tomatsauce</li>
+              <li>Lam med citron</li>
+              <li>Empanadas med kødfyld</li>
+              <li>Oste med friske frugter</li>
+            </ul>
+
+            <h2>Priser <p class="buffet_priser_info">- inkl. fri øl, vin og vand</p> </h2>
+            <ul>
+              <li>For 4 timer - min. 20 personer <p class="buffet_pris">Kun 489 ,-</p></li>
+              <li>For 4 timer - under 20 personer <p class="buffet_pris">Kun 589 ,- </p></li>
+              <li>For ekstra time af øl, vin og vand <p class="buffet_pris">50 ,- per person </p></li>
+            </ul>
+
+          </div>
+      </div>
+      <div class="six columns">
+        <div class="buffet_placeholder_img_right">
+        </div>
+      </div>
+    </div>
+    <div class="row buffet_even">
+      <div class="six columns">
+        <div class="buffet_placeholder_img_left">
+        </div>
+      </div>
+      <div class="six columns">
+        <h2>Natmad</h2>
+          <div class="buffet_liste">
+            <ul>
+              <li>Klar suppe med boller og flütes</li>
+              <li>Karrysuppe med flütes</li>
+              <li>Flødelegeret aspargessuppe med kødboller og flütes</li>
+              <li>Frikadeller med kartoffelsalat</li>
+              <li>Glasseret skinke med salat, dressing og flütes</li>
+              <li>Skibberlabskovs med rugbrød, smør og rødbeder</li>
+              <li>Pølsebord med 4 slags pålæg, leverpostej og ost</li>
+              <li>Hotdogs med klassisk tilbehør</li>
+              <li><i>Allegiker/Vegetar kan bestilles mod tillæg i prisen</i></li>
+            </ul>
+          </div>
       </div>
     </div>
   </div>
