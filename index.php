@@ -91,16 +91,24 @@
       <div class="row indholdsoversigt">
         <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
         <div class="three columns">
-          <h2>RESTAURANT</h2>
+          <img src="img/RestaurantIconTest.png">
+          <h2>Restaurant</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
         </div>
         <div class="three columns">
-          <h2>BAR</h2>
+          <img src="img/RestaurantIconTest.png">
+          <h2>Bar</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
         </div>
         <div class="three columns">
-          <h2>EVENTS</h2>
+          <img src="img/RestaurantIconTest.png">
+          <h2>Events</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
         </div>
         <div class="three columns">
-          <h2>SELSKABER</h2>
+          <img src="img/RestaurantIconTest.png">
+          <h2>Selskaber</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
         </div>
       </div>
 
@@ -206,9 +214,7 @@
 
     <!--Google maps placeholder  -->
     <center>
-    <div class="googleMaps">
-      <img src="img/Mapsplaceholder.png" width="40%">
-    </div>
+  <div class="mapouter"><div class="gmap_canvas"><iframe width="1080" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Caf%C3%A9%20frederiksberg%20aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:1080px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1080px;}</style></div>
   </center>
 
 
