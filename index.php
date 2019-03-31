@@ -73,7 +73,7 @@
       </div>
 
       <div class="six columns">
-        <img src="img/Butikfront.png" id="butikfront">
+        <img src="img/Butikfront.png" id="butikfront" >
       </div>
 
     </div>
