@@ -5,18 +5,48 @@
 
     <!--Logo  -->
     <div class="logo">
-    <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" width="230rem" height="auto"></a>
+    <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" width="150rem" height="auto"></a>
     </div>
 
 <!--Navigationsmenu m. relative path fra document root (skal hedde caffrederiksberg, før den virker (ændres når den tages online)) -->
 <div class="navigationmenu">
-<a href="/cafefrederiksberg/pages/restaurant.php">RESTAURANT</a>
-<a href="/cafefrederiksberg/pages/bar.php">BAR</a>
-<a href="/cafefrederiksberg/pages/events.php">EVENTS</a>
-<a href="/cafefrederiksberg/pages/selskaber.php">SELSKABER</a>
-<a href="/cafefrederiksberg/pages/kontakt.php">KONTAKT</a>
+<a href="/cafefrederiksberg/pages/restaurant.php">Restaurant</a>
+<a href="/cafefrederiksberg/pages/bar.php">Bar</a>
+<a href="/cafefrederiksberg/pages/events.php">Events</a>
+<a href="/cafefrederiksberg/pages/selskaber.php">Selskaber</a>
+<a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
 </div>
+  <hr id="headerline">
 
   </nav>
 
 </div>
+
+<style>
+
+#logo {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.navigationmenu {
+  margin-top: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.navigationmenu > a {
+  padding-left: 3.2rem;
+  font-family: "Poppins";
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.navigationmenu > a:hover {
+  color: #9A9A9A;
+}
+#headerline {
+  margin: 0;
+  background-color: #E2E2E2;
+  color: #E2E2E2;
+  border-color: #E2E2E2;
+}
+</style>
