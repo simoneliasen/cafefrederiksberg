@@ -65,11 +65,15 @@
     <div class="container introHistorie">
 
       <div class="six columns introHistorie">
-        <h2> Café Frederiksberg </h2>
-        <h4> Siden år 1900</h4>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis neque in nunc varius fringilla.
+        <h2 id="introhistoriecaféfrederiksbergheading"> Café Frederiksberg </h2>
+        <h4 id="introhistoriecaféfrederiksbergsubheading"> Siden år 1900</h4>
+        <p id="introhistoriecaféfrederiksbergtext"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis neque in nunc varius fringilla.
           Morbi bibendum nunc ut posuere tempor. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
-          Proin vel mauris sagittis.</p>
+          Proin vel mauris sagittis. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
+          Proin vel mauris sagittis Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
+          Proin vel mauris sagittis Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
+          Proin vel mauris sagittis Proin vel mauris sagittis Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
+          Proin vel mauris sagittis</p>
       </div>
 
       <div class="six columns">
@@ -80,8 +84,32 @@
   </div>
 
 
+<style>
 
-
+.container.introHistorie {
+  margin-top: 119px;
+  margin-bottom: 93px;
+}
+#introhistoriecaféfrederiksbergheading {
+font-family: "Playfair Display";
+font weight: bold;
+font-size: 32px;
+line-spacing: 32px;
+}
+#introhistoriecaféfrederiksbergsubheading {
+  font-family: "Playfair Display";
+  font weight: regular;
+  font-size: 22px;
+  line-spacing: 30px;
+}
+#introhistoriecaféfrederiksbergtext {
+  margin-top: 16px;
+  font-family: "Poppins";
+  font weight: regular;
+  font-size: 15px;
+  line-spacing: 23px;
+}
+</style>
   <!-- Wrapper til indholdsoversigt -->
   <div class="wrapper indholdsoversigt">
     <!--Indhold centreret i wrapper-->
