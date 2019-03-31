@@ -19,11 +19,11 @@ Opsæt statisk layout for hele siden
 
 Hovedfunktioner
 - Opstæning af database
-- Integrer events m. facebook API
+- Integrer events m. facebook API (Frederik)
 - Opsæt adminpanels funktionalitet
 - Lav bookingsystem
 - opsæt slider-funktion
-- Google maps integration
+- Google maps integration (Simon)
 
 Ekstra funktioner
 - gør siden SEO-venlig
