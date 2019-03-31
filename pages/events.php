@@ -130,6 +130,25 @@
   <!-- facebook php event implementation -->
 
   <?php
+
+//   require_once '../vendor/autoload.php';
+//
+//   $fb = new \Facebook\Facebook([
+//   'app_id' => '2107776996179147',
+//   'app_secret' => '364cdeeee1650b910466a0e4d8eac477',
+//   'default_graph_version' => 'v5.7',
+//   //'default_access_token' => '{access-token}', // optional
+// ]);
+//
+// # login.php
+// $fb = new Facebook\Facebook([/* . . . */]);
+//
+// $helper = $fb->getRedirectLoginHelper();
+// $permissions = ['email', 'user_likes']; // optional
+// $loginUrl = $helper->getLoginUrl('http://{your-website}/login-callback.php', $permissions);
+//
+// echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
+
 // $pageid='274122705947707';
 //
 // $MEevents = $facebook->api('/'.$pageid.'/events?access_token='.$app_access_token.'&fields=id,name,from,start_time,location,end_time&limit=8');
@@ -161,8 +180,8 @@
     ?>
 
     <!-- alternativ nem løsning -->
-    
-    <div id="fb-root"></div>
+
+    <!-- <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
@@ -175,7 +194,7 @@
 
 
 
-</div>
+</div> -->
 
 
 
