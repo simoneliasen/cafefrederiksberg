@@ -41,15 +41,15 @@
         </div>
 
         <div class="two columns">
-          <a class="button button-primary bestil" href="#">Bord</a>
+          <a class="button button-primary bestil" href="pages/booking.php">Bord</a>
         </div>
 
         <div class="two columns">
-          <a class="button button-primary bestil" href="#">Biletter</a>
+          <a class="button button-primary bestil" href="pages/booking.php">Biletter</a>
         </div>
 
         <div class="two columns">
-          <a class="button button-primary bestil" href="#">Take-away</a>
+          <a class="button button-primary bestil" href="pages/booking.php">Take-away</a>
         </div>
       </div>
 
@@ -204,10 +204,12 @@
 
 
 
-    <!--Google maps (ikke centreret, da den skal have full width)  -->
+    <!--Google maps placeholder  -->
+    <center>
     <div class="googleMaps">
-      <img src="img/Mapsplaceholder.png">
+      <img src="img/Mapsplaceholder.png" width="40%">
     </div>
+  </center>
 
 
 
