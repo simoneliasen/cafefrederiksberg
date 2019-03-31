@@ -1,5 +1,4 @@
 Opsæt statisk layout for hele siden
-
 - forside(index) (Simon)
 - Header (Simon)
 - Footer (Simon)
@@ -19,13 +18,14 @@ Opsæt statisk layout for hele siden
 - Bookingsystem
 
 Hovedfunktioner
-- opsæt slider-funktion
-- Integrer events m. facebook API
-- gør siden SEO-venlig
-- Opsæt SSL certifikat (gøres først på egentlige domæne, café frederiksberg skal introduceres for det)
+- Opstæning af database
+- Integrer events m. facebook API (Frederik)
 - Opsæt adminpanels funktionalitet
 - Lav bookingsystem
-- Google maps integration
-- Opstæning af database
-- Opsætning for adgang fra mobil
+- opsæt slider-funktion
+- Google maps integration (Simon)
 
+Ekstra funktioner
+- gør siden SEO-venlig
+- Opsæt SSL certifikat (gøres først på egentlige domæne, café frederiksberg skal introduceres for det)
+- Opsætning for adgang fra mobil
