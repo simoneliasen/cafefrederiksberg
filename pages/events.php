@@ -33,6 +33,9 @@
 <!--Eksempel m. 3-delt container og overskrift  -->
 <div class="bg_dark">
   <div class="container">
+
+
+
     <div class="row">
       <div class="one-half column frede_live_katalog">
 
@@ -65,7 +68,7 @@
   </div>
 
   <div class="row">
-    <div class="eight columns" style=" height: 200px;">
+    <div class="eight columns" style="">
       <div class="kommende_events_date" style="width:20%; height:100%; position: relative; float: left;">
         Dato:
         <br>
@@ -84,7 +87,7 @@
   <hr style="border-color: #fff">
 
   <div class="row">
-    <div class="eight columns" style=" height: 200px;">
+    <div class="eight columns" style="">
       <div class="kommende_events_date" style="width:20%; height:100%; position: relative; float: left;">
         Dato:
         <br>
@@ -103,7 +106,7 @@
   <hr style="border-color: #fff">
 
   <div class="row">
-    <div class="eight columns" style=" height: 200px;">
+    <div class="eight columns" style="">
       <div class="kommende_events_date" style="width:20%; height:100%; position: relative; float: left;">
         Dato:
         <br>
@@ -124,8 +127,55 @@
 
 <div class="container">
 
-</div>
+  <!-- facebook php event implementation -->
 
+  <?php
+// $pageid='274122705947707';
+//
+// $MEevents = $facebook->api('/'.$pageid.'/events?access_token='.$app_access_token.'&fields=id,name,from,start_time,location,end_time&limit=8');
+// echo '<div align="center" style="border: 0px solid; width: 100%;">';
+// foreach ($MEevents as $key=>$value) {
+//       $i=1;
+//       foreach ($value as $fkey=>$fvalue) {
+//       if($fvalue[id]==h){
+//       }else{
+//       $i++;
+//       $whofrom = $fvalue[from];
+//       $whofromname = $whofrom[name];
+//       $whofrompic = $whofrom[id];
+//
+//       echo '<div title="'.$fvalue[name].'" style="vertical-align: top; border: 1px inset; width: 700px; min-height: 80px; margin: 2px;">';
+//       echo '<div id=""></div>';
+//       echo '<div style="margin: 4px; padding: 3px; text-align: left;">';
+//       echo '<img src="https://graph.facebook.com/'.$fvalue[id].'/picture" style="float: left; clear: left; margin: 5px;">&nbsp;';
+//       echo '<a href="https://www.facebook.com/event.php?eid='.$fvalue[id].'" target="_blank">'.$fvalue[name].'</a><br />';
+//       echo 'Location: '.$fvalue[location].'<br />';
+//       echo 'Starts '.nicetime($fvalue[start_time]).' - Ends '.nicetime($fvalue[end_time]).'<br />';
+//       echo '</div>';
+//       echo '</div>';
+//           }
+//
+//       }
+//   }
+//   echo '</div>';
+    ?>
+
+    <!-- alternativ nem løsning -->
+    
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=683879905040205&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="fb-like-box" data-href="https://www.facebook.com/Fredelive/" data-height="500" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>
+
+
+
+</div>
 
 
 
