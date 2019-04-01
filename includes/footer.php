@@ -43,18 +43,17 @@
 <style>
 
 
-ul {
+
+.four.columns.åbningstider ul,.four.columns.links ul ,.four.columns.kontaktos ul {
   font-size: 30px;
   font-family: "Poppins";
   font-weight: bold;
   margin-top: 6rem;
-
 }
+
 .four.columns.kontaktos ul,.four.columns.kontaktos li, .four.columns.åbningstider ul,.four.columns.åbningstider li,.four.columns.links ul,.four.columns.links li {
   text-align: center;
   list-style-type: none;
 }
-
-
 
 </style>
