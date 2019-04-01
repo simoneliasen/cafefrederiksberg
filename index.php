@@ -33,6 +33,8 @@
 
     <div class="container onlineBestilling">
 
+
+
       <div class="row indholdsoversigt">
         <div class="six columns">
           <div class="Bestil_onlineindex">
@@ -57,9 +59,22 @@
   </div>
 
 
+<style>
 
 
-  <!-- Wrapper til introHistorie -->
+
+</style>
+
+
+
+
+
+
+
+
+
+
+  <!-- introHistorie -->
   <div class="wrapper introHistorie">
     <!--Indhold centreret i wrapper-->
     <div class="container introHistorie">
