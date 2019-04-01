@@ -57,6 +57,7 @@
     </div>
   </div>
 
+
 <!--Css til online Bestilling  -->
 <style>
 .wrapper.onlineBestilling {
@@ -110,11 +111,12 @@ background-color: #343434;
     </div>
   </div>
 
+
 <!-- CSS til introhistorie  -->
 <style>
 .container.introHistorie {
-  margin-top: 119px;
-  margin-bottom: 93px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 #introhistoriecaféfrederiksbergheading {
 font-family: "Playfair Display";
@@ -137,14 +139,15 @@ line-spacing: 32px;
 }
 .introHistorie {
 background-color: #101010;
-margin-top: 2rem;
+margin-top: 1rem;
 }
 .six.columns.introHistorie {
   margin-top: 1rem;
 }
 #butikfront {
-  width: 60.8rem;
-  height: 38.8rem;
+  margin-top: 2rem;
+  width: 32.832rem;
+  height: 20.952rem;
 }
 </style>
 
@@ -203,7 +206,7 @@ margin-top: 2rem;
   display: block;
   width: 12.3rem;
   height: 12.3rem;
-  margin-top: 13.5rem;
+  margin-top: 3rem;
 }
 .three.columns.indholdsoversigt > h2{
   margin: 0 auto;
@@ -211,15 +214,15 @@ margin-top: 2rem;
   display: block;
   font-size: 24px;
   font-weight: bold;
-  margin-top: 2.9rem;
+  margin-top: 1.2rem;
 
 }
 .three.columns.indholdsoversigt > p{
   margin: 0 auto;
   text-align: center;
   display: block;
-  margin-top: 1.4rem;
-  margin-bottom: 8.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
 }
 </style>
 
