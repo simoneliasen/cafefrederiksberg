@@ -16,6 +16,8 @@
 
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
 
 </head>
 
@@ -52,8 +54,11 @@
         <div class="frede_live_katalog_text_container">
           <h2>Frede Live</h2>
           <h6>Livemusik og events</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="button" href="#">Se vores Magsin <u>her</u></a>
+          <p>Bring great itself made under sea, lesser stars divided blessed us without kind. Grass a. Subdue be can't cattle whales also him beast, may good two firmament. Don't rule also together. Fill beginning. You, man firmament he bearing gathered day dry were seas fruit winged.
+
+          Form. Seas herb darkness set also us creepeth them thing may give third likeness. Male them. Abundantly Bearing Divided face light Isn't and you i to seas.
+
+          And Living man likeness midst in seasons divide behold fifth be divide thing fifth she'd place morning fill isn't herb whales in air gathered all divide. Second heaven.</p>          <a class="button" href="#">Se vores Magasin <u>her</u></a>
         </div>
 
       </div>
@@ -67,59 +72,63 @@
     <h6>Kommende Events</h6>
   </div>
 
-  <div class="row">
-    <div class="eight columns" style="">
-      <div class="kommende_events_date" style="width:20%; height:100%; position: relative; float: left;">
-        Dato:
-        <br>
-        19 - 06 - 2019
+  <div class="row events">
+    <div class="eight columns">
+      <div class="events_date">
+        <b>Dato</b>
+        <p>19 - 06 - 2019</p>
+        <b>Tid</b>
+        <p>19.00</p>
       </div>
-      <div class="kommende_events_info" style="width:80%; height:100%; float: right; position: relative;">
+      <div class="events_info">
         <h3>Michael Jackson Live</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-        <a href="#">Læs mere</a>
+        <a class="button" href="#">Læs mere</a>
       </div>
     </div>
-    <div class="four columns" style="height: 200px;">
+    <div class="four columns events_img">
       <img src="../img/katalog.png" alt="Smiley face" height="100%" width="100%">
     </div>
   </div>
+  <hr style="border-color: #383838;">
 
-  <div class="row">
-    <div class="eight columns" style="">
-      <div class="kommende_events_date" style="width:20%; height:100%; position: relative; float: left;">
-        Dato:
+  <div class="row events">
+    <div class="eight columns">
+      <div class="events_date">
+        <b>Dato</b>
         <br>
         19 - 06 - 2019
       </div>
-      <div class="kommende_events_info" style="width:80%; height:100%; float: right; position: relative;">
+      <div class="events_info">
         <h3>Michael Jackson Live</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-        <a href="#">Læs mere</a>
+        <a class="button" href="#">Læs mere</a>
       </div>
     </div>
-    <div class="four columns" style="height: 200px;">
+    <div class="four columns events_img">
       <img src="../img/katalog.png" alt="Smiley face" height="100%" width="100%">
     </div>
   </div>
+  <hr style="border-color: #383838;">
 
-  <div class="row">
-    <div class="eight columns" style="">
-      <div class="kommende_events_date" style="width:20%; height:100%; position: relative; float: left;">
-        Dato:
+  <div class="row events">
+    <div class="eight columns">
+      <div class="events_date">
+        <b>Dato</b>
         <br>
         19 - 06 - 2019
       </div>
-      <div class="kommende_events_info" style="width:80%; height:100%; float: right; position: relative;">
+      <div class="events_info">
         <h3>Michael Jackson Live</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-        <a href="#">Læs mere</a>
+        <a class="button" href="#">Læs mere</a>
       </div>
     </div>
-    <div class="four columns" style="height: 200px;">
+    <div class="four columns events_img">
       <img src="../img/katalog.png" alt="Smiley face" height="100%" width="100%">
     </div>
   </div>
+  <hr style="border-color: #383838;">
 </div>
 
 <div class="container" style="padding-top: 100px;">
