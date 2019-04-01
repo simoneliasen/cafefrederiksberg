@@ -28,7 +28,14 @@
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include 'includes/header.php'; ?>
 
-  <!-- Oversigt over muligheder for online bstilling  -->
+
+
+
+
+
+
+
+  <!--Online bestilling  -->
   <div class="wrapper onlineBestilling">
     <div class="container onlineBestilling">
       <div class="row onlineBestilling">
@@ -50,6 +57,36 @@
     </div>
   </div>
 
+<!--Css til online Bestilling  -->
+<style>
+.wrapper.onlineBestilling {
+background-color: #343434;
+}
+#bestilonline {
+  display: inline;
+}
+#bestilonlineheader {
+  margin-top: 4.9rem;
+  margin-bottom: 4.9rem;
+  font-size: 30px;
+  font-weight: bold;
+}
+/*Knapper  */
+.button.button-primary.bestil{
+  margin-top: 4.3rem;
+  margin-bottom: 4.3rem;
+  background-color: #CCB380;
+  border-color: #CCB380;
+}
+</style>
+
+
+
+
+
+
+
+
 
   <!-- introHistorie -->
   <div class="wrapper introHistorie">
@@ -67,17 +104,14 @@
           Proin vel mauris sagittis Proin vel mauris sagittis Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
           Proin vel mauris sagittis</p>
       </div>
-
       <div class="six columns">
         <img src="img/Butikfront.png" id="butikfront" >
       </div>
-
     </div>
   </div>
 
-
+<!-- CSS til introhistorie  -->
 <style>
-
 .container.introHistorie {
   margin-top: 119px;
   margin-bottom: 93px;
@@ -101,7 +135,30 @@ line-spacing: 32px;
   font-size: 15px;
   line-spacing: 23px;
 }
+.introHistorie {
+background-color: #101010;
+margin-top: 2rem;
+}
+.six.columns.introHistorie {
+  margin-top: 1rem;
+}
+#butikfront {
+  width: 60.8rem;
+  height: 38.8rem;
+}
 </style>
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- Wrapper til indholdsoversigt -->
   <div class="wrapper indholdsoversigt">
@@ -135,7 +192,11 @@ line-spacing: 32px;
     </div>
   </div>
 
+<!-- CSS til indholdsoversigt -->
 <style>
+.indholdsoversigt {
+  background-color: #343434;
+}
 .three.columns.indholdsoversigt > img{
   margin: 0 auto;
   text-align: center;
@@ -160,10 +221,11 @@ line-spacing: 32px;
   margin-top: 1.4rem;
   margin-bottom: 8.5rem;
 }
-
-
-
 </style>
+
+
+
+
 
 
   <!-- Katalog (Kopi af Katalog under Events)  -->
@@ -191,6 +253,13 @@ line-spacing: 32px;
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
 
 
 
@@ -261,10 +330,21 @@ line-spacing: 32px;
 
 
 
+
+
+
+
+
     <!--Google maps placeholder  -->
     <center>
   <div class="mapouter"><div class="gmap_canvas"><iframe width="1080" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Caf%C3%A9%20frederiksberg%20aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:1080px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1080px;}</style></div>
   </center>
+
+
+
+
+
+
 
 
 
