@@ -28,45 +28,27 @@
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include 'includes/header.php'; ?>
 
-  <!-- Wrapper til onlineBestilling -->
+  <!-- Oversigt over muligheder for online bstilling  -->
   <div class="wrapper onlineBestilling">
-
     <div class="container onlineBestilling">
-
-
-
-      <div class="row indholdsoversigt">
+      <div class="row onlineBestilling">
         <div class="six columns">
           <div class="Bestil_onlineindex">
             <h2 id ="bestilonlineheader">Bestil online:</h2>
           </div>
         </div>
-
         <div class="two columns">
           <a class="button button-primary bestil" href="pages/booking.php">Bord</a>
         </div>
-
         <div class="two columns">
           <a class="button button-primary bestil" href="pages/booking.php">Biletter</a>
         </div>
-
         <div class="two columns">
           <a class="button button-primary bestil" href="pages/booking.php">Take-away</a>
         </div>
       </div>
-
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
 
 
   <!-- introHistorie -->
@@ -120,11 +102,11 @@ line-spacing: 32px;
   line-spacing: 23px;
 }
 </style>
+
   <!-- Wrapper til indholdsoversigt -->
   <div class="wrapper indholdsoversigt">
     <!--Indhold centreret i wrapper-->
     <div class="container indholdsoversigt">
-
       <!-- opretter række, som elementer let kan placeres i-->
       <div class="row indholdsoversigt">
         <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
