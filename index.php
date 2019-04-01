@@ -30,7 +30,7 @@
 
   <!-- Wrapper til onlineBestilling -->
   <div class="wrapper onlineBestilling">
-    <!--Indhold centreret i wrapper-->
+
     <div class="container onlineBestilling">
 
       <div class="row indholdsoversigt">
@@ -118,22 +118,22 @@ line-spacing: 32px;
       <!-- opretter række, som elementer let kan placeres i-->
       <div class="row indholdsoversigt">
         <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
-        <div class="three columns">
+        <div class="three columns indholdsoversigt">
           <img src="img/RestaurantIconTest.png">
           <h2>Restaurant</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
         </div>
-        <div class="three columns">
+        <div class="three columns indholdsoversigt">
           <img src="img/RestaurantIconTest.png">
           <h2>Bar</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
         </div>
-        <div class="three columns">
+        <div class="three columns indholdsoversigt">
           <img src="img/RestaurantIconTest.png">
           <h2>Events</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
         </div>
-        <div class="three columns">
+        <div class="three columns indholdsoversigt">
           <img src="img/RestaurantIconTest.png">
           <h2>Selskaber</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
@@ -143,9 +143,38 @@ line-spacing: 32px;
     </div>
   </div>
 
+<style>
+.three.columns.indholdsoversigt > img{
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 12.3rem;
+  height: 12.3rem;
+  margin-top: 13.5rem;
+}
+.three.columns.indholdsoversigt > h2{
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 2.9rem;
+
+}
+.three.columns.indholdsoversigt > p{
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-top: 1.4rem;
+  margin-bottom: 8.5rem;
+}
 
 
-  <!--Eksempel m. 3-delt container og overskrift  -->
+
+</style>
+
+
+  <!-- Katalog (Kopi af Katalog under Events)  -->
   <div class="bg_dark">
     <div class="container">
       <div class="row">
@@ -173,7 +202,7 @@ line-spacing: 32px;
 
 
 
-
+  <!-- Events (Kopi af Event-sektion under Events)  -->
   <div class="container">
     <div class="events_overskrift">
       <h2>Frede Live</h2>
