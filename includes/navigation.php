@@ -49,4 +49,28 @@
   color: #E2E2E2;
   border-color: #E2E2E2;
 }
+
+
+
+
+/*Fra external css  */
+.navigationbar {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  z-index: 1;  /*puts header in front of content*/
+  }
+.logo {
+  display: inline;
+}
+#logo {
+  display: inline;
+}
+.navigationmenu {
+  display: inline;
+  float: right;
+}
+
+.navigationmenu > p {
+  display: inline;
 </style>
