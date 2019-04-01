@@ -9,6 +9,8 @@
   <!--Side titel  -->
   <title>Café Frederiksberg</title>
 
+  
+
   <!--Standard stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
   <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
