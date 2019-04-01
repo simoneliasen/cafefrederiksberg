@@ -156,11 +156,13 @@ margin-top: 2rem;
 
 .bar-item-name{
   font-weight: bold;
+  width:90%;
 }
 
 .bar-item-description{
   font-size: .9em;
   line-height: 1.5em;
+  width:75%;
 }
 
 .bar-item-price{
@@ -168,6 +170,7 @@ margin-top: 2rem;
   margin-top: -22px;
   font-style:italic;
   text-align:right;
+  width:10%;
 }
 
 .barcentergin{
