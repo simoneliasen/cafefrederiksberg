@@ -100,9 +100,9 @@ background-color: #343434;
           Morbi bibendum nunc ut posuere tempor. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
           Proin vel mauris sagittis. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
           Proin vel mauris sagittis Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
-          Proin vel mauris sagittis Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
-          Proin vel mauris sagittis Proin vel mauris sagittis Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
-          Proin vel mauris sagittis</p>
+           sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
+          </p>
+          <a class="button introhistorie" href="pages/tidslinje.php">Se hele Café Frederikbergs historie <u>her</u></a>
       </div>
       <div class="six columns">
         <img src="img/Butikfront.png" id="butikfront" >
@@ -326,9 +326,21 @@ margin-top: 2rem;
       </div>
     </div>
     <hr style="border-color: #fff">
+<!-- Midlertidigt <center> tag -->
+    <center>
+    <a class="button alleeventsforside" href="pages/events.php">Se alle kommende events <u>her</u></a>
+</center>
   </div>
 
-
+<!--Css til events specifikt til forside  -->
+<style>
+.button.alleeventsforside {
+  margin: 0 auto;
+  margin-bottom: 4.2rem;
+  margin-top: 2.2rem;
+  text-align: center;
+}
+</style>
 
 
 
@@ -336,9 +348,10 @@ margin-top: 2rem;
 
 
     <!--Google maps placeholder  -->
-    <center>
-  <div class="mapouter"><div class="gmap_canvas"><iframe width="1080" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Caf%C3%A9%20frederiksberg%20aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:1080px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1080px;}</style></div>
-  </center>
+
+      <center>
+<div class="mapouter"><div class="gmap_canvas"><iframe width="1920" height="575" id="gmap_canvas" src="https://maps.google.com/maps?q=Caf%C3%A9%20Frederiksberg%20Aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;height:575px;width:1920px;}.gmap_canvas {overflow:hidden;background:none!important;height:575px;width:1920px;}</style></div></center>
+
 
 
 
