@@ -84,7 +84,6 @@
       <img src="../img/katalog.png" alt="Smiley face" height="100%" width="100%">
     </div>
   </div>
-  <hr style="border-color: #fff">
 
   <div class="row">
     <div class="eight columns" style="">
@@ -103,7 +102,6 @@
       <img src="../img/katalog.png" alt="Smiley face" height="100%" width="100%">
     </div>
   </div>
-  <hr style="border-color: #fff">
 
   <div class="row">
     <div class="eight columns" style="">
@@ -122,13 +120,14 @@
       <img src="../img/katalog.png" alt="Smiley face" height="100%" width="100%">
     </div>
   </div>
-  <hr style="border-color: #fff">
 </div>
 
-<div class="container">
-
-  <!-- facebook php event implementation -->
-
+<div class="container" style="padding-top: 100px;">
+  <h2>Følg os på Instagram</h2>
+  <script src="https://snapwidget.com/js/snapwidget.js"></script>
+  <iframe src="https://snapwidget.com/embed/678509" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+  <div style="font:10px/14px 'Roboto','Helvetica Neue',Arial,Helvetica,sans-serif;font-weight:400;width:100%;text-align:right"><a href="https://snapwidget.com" style="color:#777;text-decoration:none;">SnapWidget · Instagram Widget</a></div>
+</div>
   <?php
 
 //   require_once '../vendor/autoload.php';
@@ -179,22 +178,7 @@
 //   echo '</div>';
     ?>
 
-    <!-- alternativ nem løsning -->
 
-    <!-- <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=683879905040205&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-    <div class="fb-like-box" data-href="https://www.facebook.com/Fredelive/" data-height="500" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>
-
-
-
-</div> -->
 
 
 
