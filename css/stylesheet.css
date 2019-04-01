@@ -115,11 +115,15 @@ background-color: #343434;
   display: inline;
 }
 #bestilonlineheader {
-  margin-top: 1.5rem;
+  margin-top: 4.9rem;
+  margin-bottom: 4.9rem;
+  font-size: 30px;
+  font-weight: bold;
 }
 /*Knapper  */
 .button.button-primary.bestil{
-  margin-top: 1rem;
+  margin-top: 4.3rem;
+  margin-bottom: 4.3rem;
   background-color: #CCB380;
   border-color: #CCB380;
 }
@@ -142,26 +146,6 @@ margin-top: 2rem;
   background-color: #343434;
 }
 
-
-.katalog {
-background-color: #101010;
-}
-.katalog img {
-  float: right;
-  margin-top: 4rem;
-}
-.six.columns.katalogtekst {
-  float: left;
-  margin-top: 10rem;
-}
-
-
-.kommendeEvents {
-background-color: #101010;
-}
-.googleMaps {
-background-color: #1E1D20;
-}
 /*..............................................2 ADMIN */
 
 /*..............................................3 BAR */
@@ -369,7 +353,7 @@ Width: 30%;
 
 .arrangementer{
   position: relative;
-  height: 400px;
+  height: 400 px;
 }
 
 .arrangementer_wrapper{
