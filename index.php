@@ -28,38 +28,67 @@
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include 'includes/header.php'; ?>
 
-  <!-- Wrapper til onlineBestilling -->
+
+
+
+
+
+
+
+  <!--Online bestilling  -->
   <div class="wrapper onlineBestilling">
-
     <div class="container onlineBestilling">
-
-      <div class="row indholdsoversigt">
+      <div class="row onlineBestilling">
         <div class="six columns">
           <div class="Bestil_onlineindex">
             <h2 id ="bestilonlineheader">Bestil online:</h2>
           </div>
         </div>
-
         <div class="two columns">
           <a class="button button-primary bestil" href="pages/booking.php">Bord</a>
         </div>
-
         <div class="two columns">
           <a class="button button-primary bestil" href="pages/booking.php">Biletter</a>
         </div>
-
         <div class="two columns">
           <a class="button button-primary bestil" href="pages/booking.php">Take-away</a>
         </div>
       </div>
-
     </div>
   </div>
 
+<!--Css til online Bestilling  -->
+<style>
+.wrapper.onlineBestilling {
+background-color: #343434;
+}
+#bestilonline {
+  display: inline;
+}
+#bestilonlineheader {
+  margin-top: 4.9rem;
+  margin-bottom: 4.9rem;
+  font-size: 30px;
+  font-weight: bold;
+}
+/*Knapper  */
+.button.button-primary.bestil{
+  margin-top: 4.3rem;
+  margin-bottom: 4.3rem;
+  background-color: #CCB380;
+  border-color: #CCB380;
+}
+</style>
 
 
 
-  <!-- Wrapper til introHistorie -->
+
+
+
+
+
+
+  <!-- introHistorie -->
   <div class="wrapper introHistorie">
     <!--Indhold centreret i wrapper-->
     <div class="container introHistorie">
@@ -71,21 +100,18 @@
           Morbi bibendum nunc ut posuere tempor. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
           Proin vel mauris sagittis. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
           Proin vel mauris sagittis Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
-          Proin vel mauris sagittis Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
-          Proin vel mauris sagittis Proin vel mauris sagittis Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
-          Proin vel mauris sagittis</p>
+           sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
+          </p>
+          <a class="button introhistorie" href="pages/tidslinje.php">Se hele Café Frederikbergs historie <u>her</u></a>
       </div>
-
       <div class="six columns">
         <img src="img/Butikfront.png" id="butikfront" >
       </div>
-
     </div>
   </div>
 
-
+<!-- CSS til introhistorie  -->
 <style>
-
 .container.introHistorie {
   margin-top: 119px;
   margin-bottom: 93px;
@@ -109,12 +135,35 @@ line-spacing: 32px;
   font-size: 15px;
   line-spacing: 23px;
 }
+.introHistorie {
+background-color: #101010;
+margin-top: 2rem;
+}
+.six.columns.introHistorie {
+  margin-top: 1rem;
+}
+#butikfront {
+  width: 60.8rem;
+  height: 38.8rem;
+}
 </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!-- Wrapper til indholdsoversigt -->
   <div class="wrapper indholdsoversigt">
     <!--Indhold centreret i wrapper-->
     <div class="container indholdsoversigt">
-
       <!-- opretter række, som elementer let kan placeres i-->
       <div class="row indholdsoversigt">
         <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
@@ -143,7 +192,11 @@ line-spacing: 32px;
     </div>
   </div>
 
+<!-- CSS til indholdsoversigt -->
 <style>
+.indholdsoversigt {
+  background-color: #343434;
+}
 .three.columns.indholdsoversigt > img{
   margin: 0 auto;
   text-align: center;
@@ -168,10 +221,11 @@ line-spacing: 32px;
   margin-top: 1.4rem;
   margin-bottom: 8.5rem;
 }
-
-
-
 </style>
+
+
+
+
 
 
   <!-- Katalog (Kopi af Katalog under Events)  -->
@@ -199,6 +253,13 @@ line-spacing: 32px;
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
 
 
 
@@ -265,14 +326,38 @@ line-spacing: 32px;
       </div>
     </div>
     <hr style="border-color: #fff">
+<!-- Midlertidigt <center> tag -->
+    <center>
+    <a class="button alleeventsforside" href="pages/events.php">Se alle kommende events <u>her</u></a>
+</center>
   </div>
+
+<!--Css til events specifikt til forside  -->
+<style>
+.button.alleeventsforside {
+  margin: 0 auto;
+  margin-bottom: 4.2rem;
+  margin-top: 2.2rem;
+  text-align: center;
+}
+</style>
+
+
+
 
 
 
     <!--Google maps placeholder  -->
-    <center>
-  <div class="mapouter"><div class="gmap_canvas"><iframe width="1080" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Caf%C3%A9%20frederiksberg%20aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:1080px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1080px;}</style></div>
-  </center>
+
+      <center>
+<div class="mapouter"><div class="gmap_canvas"><iframe width="1920" height="575" id="gmap_canvas" src="https://maps.google.com/maps?q=Caf%C3%A9%20Frederiksberg%20Aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;height:575px;width:1920px;}.gmap_canvas {overflow:hidden;background:none!important;height:575px;width:1920px;}</style></div></center>
+
+
+
+
+
+
+
 
 
 
