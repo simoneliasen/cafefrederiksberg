@@ -202,8 +202,6 @@
               </div>
           </div>
 
-          <hr>
-
           <div class="selskab_menu_item">
               <div class="selskab_menu_item_name">
                   <span class="selskab_menu_item_fontstyle"> Gammeldags oksesteg</span>
@@ -213,6 +211,213 @@
                   <span class="selskab_menu_item_fontstyle">- per couv. kr. 120,-</span>
               </div>
           </div>
+
+          <div class="selskab_menu_item">
+              <div class="selskab_menu_item_name">
+                  <span class="selskab_menu_item_fontstyle"> Oksemørbrad</span>
+                  <p>Med grøntsager og smørstegte kartofler</p>
+              </div>
+              <div class="selskab_menu_item_price">
+                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 175,-</span>
+              </div>
+          </div>
+
+          <div class="selskab_menu_item">
+              <div class="selskab_menu_item_name">
+                  <span class="selskab_menu_item_fontstyle"> Lammeryg</span>
+                  <p>Med grøntsager og kartofler</p>
+              </div>
+              <div class="selskab_menu_item_price">
+                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 210,-</span>
+              </div>
+          </div>
+
+          <div class="selskab_menu_item">
+              <div class="selskab_menu_item_name">
+                  <span class="selskab_menu_item_fontstyle"> Andesteg</span>
+                  <p>Med rødkål, svesker, hvide og brune kartofler</p>
+              </div>
+              <div class="selskab_menu_item_price">
+                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 135,-</span>
+              </div>
+          </div>
+
+          <div class="selskab_menu_item">
+              <div class="selskab_menu_item_name">
+                  <span class="selskab_menu_item_fontstyle"> Dyreryg</span>
+                  <p>Med waldorffsalat, hvide og brune kartofler</p>
+              </div>
+              <div class="selskab_menu_item_price">
+                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 225,-</span>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="selskab_menu_overskrift">
+          <h3 class="header-centertext"> Desserter </h3><br>
+      </div>
+          <div class="bg_dark">
+              <div class="container">
+                <div class="selskab_menu_item">
+                    <div class="selskab_menu_item_name">
+                        <span class="selskab_menu_item_fontstyle"> Hjemmelavet vanilje-is</span>
+                        <p>Med jordbærsauce</p>
+                    </div>
+                    <div class="selskab_menu_item_price">
+                        <span class="selskab_menu_item_fontstyle">- per couv. kr. 52,-</span>
+                    </div>
+                </div>
+
+                <div class="selskab_menu_item">
+                    <div class="selskab_menu_item_name">
+                        <span class="selskab_menu_item_fontstyle"> Isbombe a la'  Frederiksberg</span>
+                        <p>Med marcipan, chokolade og nødder</p>
+                    </div>
+                    <div class="selskab_menu_item_price">
+                        <span class="selskab_menu_item_fontstyle">- per couv. kr. 55,-</span>
+                    </div>
+                </div>
+
+                <div class="selskab_menu_item">
+                    <div class="selskab_menu_item_name">
+                        <span class="selskab_menu_item_fontstyle"> Chokoladeskål</span>
+                        <p>Med friske frugter og pistacie-is</p>
+                    </div>
+                    <div class="selskab_menu_item_price">
+                        <span class="selskab_menu_item_fontstyle">- per couv. kr. 62,-</span>
+                    </div>
+                </div>
+
+                <div class="selskab_menu_item">
+                    <div class="selskab_menu_item_name">
+                        <span class="selskab_menu_item_fontstyle"> Valnødde-is</span>
+                        <p>med kandiserede valnødder og sorbet</p>
+                    </div>
+                    <div class="selskab_menu_item_price">
+                        <span class="selskab_menu_item_fontstyle">- per couv. kr. 55,-</span>
+                    </div>
+                </div>
+
+                <div class="selskab_menu_item">
+                    <div class="selskab_menu_item_name">
+                        <span class="selskab_menu_item_fontstyle"> En halv ananas</span>
+                        <p>Med friske frugter og soft ice</p>
+                    </div>
+                    <div class="selskab_menu_item_price">
+                        <span class="selskab_menu_item_fontstyle">- per couv. kr. 62,-</span>
+                    </div>
+                </div>
+
+                <div class="selskab_menu_item">
+                    <div class="selskab_menu_item_name">
+                        <span class="selskab_menu_item_fontstyle"> Hjemmebagt amerikansk chokoladekage</span>
+                        <p>Med Soft ice</p>
+                    </div>
+                    <div class="selskab_menu_item_price">
+                        <span class="selskab_menu_item_fontstyle">- per couv. kr. 62,-</span>
+                    </div>
+                </div>
+
+                <div class="selskab_menu_item">
+                    <div class="selskab_menu_item_name">
+                        <span class="selskab_menu_item_fontstyle"> Frisk frugtsalat</span>
+                        <p>Med Soft ice</p>
+                    </div>
+                    <div class="selskab_menu_item_price">
+                        <span class="selskab_menu_item_fontstyle">- per couv. kr. 55,-</span>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="selskab_menu_overskrift">
+                <h3 class="header-centertext"> Natmad </h3><br>
+                <h5 class="header-centertext"> - en go' afslutning på din fest</h5><br>
+            </div>
+                <div class="bg_dark">
+                    <div class="container">
+                      <div class="selskab_menu_item">
+                          <div class="selskab_menu_item_name">
+                              <span class="selskab_menu_item_fontstyle"> klar suppe</span>
+                              <p>Med boller og flütes</p>
+                          </div>
+                          <div class="selskab_menu_item_price">
+                              <span class="selskab_menu_item_fontstyle">- per couv. kr. 49,-</span>
+                          </div>
+                      </div>
+
+                      <div class="selskab_menu_item">
+                          <div class="selskab_menu_item_name">
+                              <span class="selskab_menu_item_fontstyle"> karrysuppe</span>
+                              <p>Med flütes</p>
+                          </div>
+                          <div class="selskab_menu_item_price">
+                              <span class="selskab_menu_item_fontstyle">- per couv. kr. 49,-</span>
+                          </div>
+                      </div>
+
+                      <div class="selskab_menu_item">
+                          <div class="selskab_menu_item_name">
+                              <span class="selskab_menu_item_fontstyle"> Flødelegeret aspargessuppe</span>
+                              <p>Med kødboller og flütes</p>
+                          </div>
+                          <div class="selskab_menu_item_price">
+                              <span class="selskab_menu_item_fontstyle">- per couv. kr. 49,-</span>
+                          </div>
+                      </div>
+
+                      <div class="selskab_menu_item">
+                          <div class="selskab_menu_item_name">
+                              <span class="selskab_menu_item_fontstyle"> Frikadeller</span>
+                              <p>Med kartoffelsalat</p>
+                          </div>
+                          <div class="selskab_menu_item_price">
+                              <span class="selskab_menu_item_fontstyle">- per couv. kr. 49,-</span>
+                          </div>
+                      </div>
+
+                      <div class="selskab_menu_item">
+                          <div class="selskab_menu_item_name">
+                              <span class="selskab_menu_item_fontstyle"> Glasseret skinke</span>
+                              <p>Med salat, dressing og flütes</p>
+                          </div>
+                          <div class="selskab_menu_item_price">
+                              <span class="selskab_menu_item_fontstyle">- per couv. kr. 59,-</span>
+                          </div>
+                      </div>
+
+                      <div class="selskab_menu_item">
+                          <div class="selskab_menu_item_name">
+                              <span class="selskab_menu_item_fontstyle"> Skibberlabskovs</span>
+                              <p>Med rugbrød, smør og rødbeder</p>
+                          </div>
+                          <div class="selskab_menu_item_price">
+                              <span class="selskab_menu_item_fontstyle">- per couv. kr. 69,-</span>
+                          </div>
+                      </div>
+
+                      <div class="selskab_menu_item">
+                          <div class="selskab_menu_item_name">
+                              <span class="selskab_menu_item_fontstyle"> Pølsebord</span>
+                              <p>Med 4 slags pålæg, leverpostej og ost</p>
+                          </div>
+                          <div class="selskab_menu_item_price">
+                              <span class="selskab_menu_item_fontstyle">- per couv. kr. 69,-</span>
+                          </div>
+                      </div>
+
+                      <div class="selskab_menu_item">
+                          <div class="selskab_menu_item_name">
+                              <span class="selskab_menu_item_fontstyle"> Hotdogs</span>
+                              <p>Med klassisk tilbehør</p>
+                          </div>
+                          <div class="selskab_menu_item_price">
+                              <span class="selskab_menu_item_fontstyle">- per couv. kr. 45,-</span>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
 
 
 
