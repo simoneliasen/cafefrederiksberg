@@ -335,7 +335,7 @@ Width: 30%;
 .arrangementer{
   position: relative;
   height: 400px;
-  
+
 }
 
 .arrangementer_wrapper{
@@ -353,4 +353,10 @@ Width: 30%;
  margin-left: -3px;
  top: 0;
 margin-top: 100px;
+}
+
+.timelinecontainer {
+margin-top: 200px;
+margin-bottom: 400px;
+
 }
