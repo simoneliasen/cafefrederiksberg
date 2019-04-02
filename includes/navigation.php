@@ -13,16 +13,49 @@
 <a href="/cafefrederiksberg/pages/restaurant.php">Restaurant</a>
 <a href="/cafefrederiksberg/pages/bar.php">Bar</a>
 <a href="/cafefrederiksberg/pages/events.php">Events</a>
-<a href="/cafefrederiksberg/pages/selskaber.php">Selskaber</a>
+
+
+
+<div class="dropdown">
+  <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber</a>
+  <div class="dropdown-content">
+  <a href="/cafefrederiksberg/pages/selskaber/buffet.php">Buffet</a>
+  <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php">Arrangementer</a>
+  <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
+  </div>
+</div>
+
 <a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
 </div>
-  <hr id="headerline">
 
-  </nav>
+
+<hr id="headerline">
+
+</nav>
 
 </div>
 
+
+
 <style>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 130px;
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
 .navigationbar {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
@@ -46,7 +79,7 @@
 .navigationmenu > p {
   display: inline;
 }
-.navigationmenu > a {
+.navigationmenu > a, .dropdown a {
   padding-left: 3.2rem;
   font-family: "Poppins";
   text-decoration: none;
@@ -57,6 +90,24 @@
 }
 #headerline {
   margin: 0;
+}
+
+/* CSS for dropdown funktion */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 130px;
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 </style>

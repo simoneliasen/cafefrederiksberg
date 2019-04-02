@@ -16,7 +16,7 @@ E. GENEREL
 6.   KONTAKT
 7.  RESTAURANT
 8.  SELSKABER
-
+9.  TIDSLINJE
 COLORS
 -----------
 GULD          #CCB380
@@ -356,7 +356,7 @@ Width: 30%;
 
 .arrangementer{
   position: relative;
-  height: 400 px;
+  height: 400px;
 }
 
 .arrangementer_wrapper{
@@ -364,4 +364,14 @@ Width: 30%;
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
   width: 100%;
+}
+/*.............................................9.0 TIDSLINJE */
+.middleline {
+ border-left: 4px solid grey;
+ height: 2000px;
+ position: absolute;
+ left: 50%;
+ margin-left: -3px;
+ top: 0;
+margin-top: 100px;
 }
