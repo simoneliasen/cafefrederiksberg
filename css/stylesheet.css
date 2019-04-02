@@ -233,6 +233,14 @@ hr{
 
 /*..............................................7 RESTAURANT */
 /*..............................................8 SELSKABER */
+
+.selskab_button{
+  border-style: solid;
+  border-color white;
+  border-radius: 25px;
+  background-color: gray;
+}
+
 /* .............................................8.1 SELSKABSMENU */
 .header-centertext{
   text-align: center;
@@ -250,16 +258,13 @@ hr{
 .selskab_menu_item_fontstyle{
 font-family: 'Playfair Display';
 font-weight: 400;
-font-size: 2rem;
+font-size: 1rem;
 }
 
 .selskab_menu_item_name{
   float: left;
-
-
+  width: 70%;
   height: 100px;
-  width: 200px;
-
 }
 
 .selskab_menu_item_price{
