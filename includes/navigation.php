@@ -46,9 +46,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: black;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 130px;
   padding: 12px 16px;
   z-index: 1;
 }
@@ -56,11 +54,6 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-
-
-
-
 
 
 .navigationbar {
@@ -86,7 +79,7 @@
 .navigationmenu > p {
   display: inline;
 }
-.navigationmenu > a {
+.navigationmenu > a, .dropdown a {
   padding-left: 3.2rem;
   font-family: "Poppins";
   text-decoration: none;
@@ -97,6 +90,24 @@
 }
 #headerline {
   margin: 0;
+}
+
+/* CSS for dropdown funktion */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 130px;
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 </style>
