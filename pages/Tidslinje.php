@@ -24,25 +24,38 @@
 <body>
 
 
-
   <!--Indsætter navigationsbar fra filen includes/navigation.php-->
-  <?php include '../includes/navigation.php'; ?>
 
 
 
 
 
-    <h2> Tidslinje </h2>
+      <h2> Tidslinje </h2>
 
-      <div class="one-half column">
-        <p>1900</p>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="five columns timeline_column" style="background-color: blue; height: 200px;">
       </div>
-<div class="middleline">
-</div>
-      <div class="one-half column">
 
-        <p>2006</p>
-          </div>
+      <div class="two columns">
+        <div class="middleline"></div>
+        <div class="line_item">
+          <h2>1900</h2>
+        </div>
+      </div>
+
+      <div class="five columns" style="background-color: red; height: 400px;">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
 
 
 
@@ -51,6 +64,7 @@
 
 <!--Indrag footer fra filen includes/footer.php-->
 <?php include '../includes/footer.php'; ?>
+
 
 </body>
 
