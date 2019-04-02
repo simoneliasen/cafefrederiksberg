@@ -9,7 +9,7 @@
   <!--Side titel  -->
   <title>Café Frederiksberg</title>
 
-  
+
 
   <!--Standard stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
@@ -74,6 +74,7 @@
     <h6>Kommende Events</h6>
   </div>
 
+<div class='sk-fb-event' data-embed-id='22281'></div><script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
   <div class="row events">
     <div class="eight columns">
       <div class="events_date">
