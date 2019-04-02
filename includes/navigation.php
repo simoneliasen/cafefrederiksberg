@@ -13,27 +13,79 @@
 <a href="/cafefrederiksberg/pages/restaurant.php">Restaurant</a>
 <a href="/cafefrederiksberg/pages/bar.php">Bar</a>
 <a href="/cafefrederiksberg/pages/events.php">Events</a>
-<a href="/cafefrederiksberg/pages/selskaber.php">Selskaber</a>
+
+
+
+<div class="dropdown">
+  <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber</a>
+  <div class="dropdown-content">
+  <a href="/cafefrederiksberg/pages/selskaber/buffet.php">Buffet</a>
+  <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php">Arrangementer</a>
+  <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
+  </div>
+</div>
+
 <a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
 </div>
-  <hr id="headerline">
 
-  </nav>
+
+<hr id="headerline">
+
+</nav>
 
 </div>
 
-<style>
 
+
+<style>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+
+.navigationbar {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  z-index: 1;  /*puts header in front of content*/
+  }
+.logo {
+  display: inline;
+}
 #logo {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+  display: inline;
 }
-
 .navigationmenu {
   margin-top: 1.3rem;
   margin-bottom: 0.5rem;
+  display: inline;
+  float: right;
 }
-
+.navigationmenu > p {
+  display: inline;
+}
 .navigationmenu > a {
   padding-left: 3.2rem;
   font-family: "Poppins";
@@ -45,8 +97,6 @@
 }
 #headerline {
   margin: 0;
-  background-color: #E2E2E2;
-  color: #E2E2E2;
-  border-color: #E2E2E2;
 }
+
 </style>
