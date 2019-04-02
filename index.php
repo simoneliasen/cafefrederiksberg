@@ -39,18 +39,18 @@
   <div class="wrapper onlineBestilling">
     <div class="container onlineBestilling">
       <div class="row onlineBestilling">
-        <div class="six columns">
+        <div class="six columns bestilonline">
           <div class="Bestil_onlineindex">
             <h2 id ="bestilonlineheader">Bestil online:</h2>
           </div>
         </div>
-        <div class="two columns">
+        <div class="two columns bestilonline">
           <a class="button button-primary bestil" href="pages/booking.php">Bord</a>
         </div>
-        <div class="two columns">
+        <div class="two columns bestilonline">
           <a class="button button-primary bestil" href="pages/booking.php">Biletter</a>
         </div>
-        <div class="two columns">
+        <div class="two columns bestilonline">
           <a class="button button-primary bestil" href="pages/booking.php">Take-away</a>
         </div>
       </div>
@@ -60,24 +60,24 @@
 
 <!--Css til online Bestilling  -->
 <style>
+/*Baggrundsfarve for sektion  */
 .wrapper.onlineBestilling {
 background-color: #343434;
 }
-#bestilonline {
-  display: inline;
-}
+/*Overskriftsstørrelse  */
 #bestilonlineheader {
-  margin-top: 4.9rem;
-  margin-bottom: 4.9rem;
   font-size: 30px;
   font-weight: bold;
 }
-/*Knapper  */
+/*Knappers farve  */
 .button.button-primary.bestil{
-  margin-top: 4.3rem;
-  margin-bottom: 4.3rem;
   background-color: #CCB380;
   border-color: #CCB380;
+}
+/*Placering  */
+.two.columns.bestilonline, .six.columns.bestilonline {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
 }
 </style>
 
