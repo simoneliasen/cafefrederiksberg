@@ -34,34 +34,42 @@
 <div class="wrapper buffet-menu">
   <!--Indhold centreret i wrapper-->
   <div class="container buffet_info_menu">
-    <div class="row menulinje_buffet">
-    <div class="twelve columns">
-      <div class="menulinje-buffet">
-      <ul>
-        <li>Buffet 1</li>
-        <li>|</li>
-        <li>Buffet 2</li>
-        <li>|</li>
-        <li>Buffet 3</li>
-        <li>|</li>
-        <li>Buffet 4</li>
-        <li>|</li>
-        <li>USA buffet</li>
-        <li>|</li>
-        <li>Italiensk Buffet</li>
-        <li>|</li>
-        <li>Øko buffet</li>
-        <li>|</li>
-      </ul>
-    </div>
-  </div>
-  <div class="twelve columns">
+    <div class="row infotekst_buffet">
+  <div class="six columns">
     <div class="buffet_infooverskrift">
       <h2>Café Frederiksberg har et udvalg af lækre buffeter</h2>
     </div>
       <p>eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <P>Vi er stolte over at kunne fremvise 5 elite smileys - <a href="https://www.findsmiley.dk/25727" target="_blank"><img src="../../img/kontrolrapport.JPEG" width="50" height="25" border="0"></a>
+      <p id="allergy">Allegiker/vegetar menu kan bestilles mod tillæg i prisen</p>
   </div>
+  <div class="six columns">
+    <div class="buffetmenu_placeholder_img_right"></div>
+  </div>
+    </div>
+
+  <div class="row menulinje_buffet">
+  <div class="twelve columns">
+    <div class="menulinje-buffet">
+    <ul>
+      <li>|</li>
+      <li>Buffet 1</li>
+      <li>|</li>
+      <li>Buffet 2</li>
+      <li>|</li>
+      <li>Buffet 3</li>
+      <li>|</li>
+      <li>Buffet 4</li>
+      <li>|</li>
+      <li>USA buffet</li>
+      <li>|</li>
+      <li>Italiensk Buffet</li>
+      <li>|</li>
+      <li>Øko buffet</li>
+      <li>|</li>
+    </ul>
+  </div>
+</div>
   </div>
   </div>
 
@@ -144,7 +152,7 @@
   <div class="row buffet_even">
 
     <div class="six columns">
-      <div class="buffet_placeholder_img_right"></div>
+      <div class="buffet_placeholder_img_left"></div>
     </div>
 
     <div class="six columns">
@@ -287,7 +295,7 @@
   <div class="row buffet_even">
 
         <div class="six columns">
-          <div class="buffet_placeholder_img_right"></div>
+          <div class="buffet_placeholder_img_left"></div>
         </div>
 
     <div class="six columns">
@@ -399,7 +407,7 @@
   <div class="row buffet_even">
 
         <div class="six columns">
-          <div class="buffet_placeholder_img_right"></div>
+          <div class="buffet_placeholder_img_left"></div>
         </div>
 
     <div class="six columns">

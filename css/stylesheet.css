@@ -289,6 +289,12 @@ Width: 30%;
   padding: 1rem 1rem;
   }
 
+  #allergy{
+    font-family: "poppins";
+    font-style: italic;
+    font-weight: 700;
+  }
+
 .buffet_odd li{
   list-style-type: none;
 
@@ -342,10 +348,17 @@ Width: 30%;
 .buffet_price{
   padding-bottom: 2.5rem;
 }
-
+.buffetmenu_placeholder_img_right{
+  height: 290px;
+  width: 100%;
+  background-image: url("../img/bg_img_placeholder.jpg");
+  background-size: 482px 440px;
+  float: right;
+  margin-top: 0.5rem;
+}
 .buffet_placeholder_img_left{
-  height: 482px;
-  width: 482px;
+  height: 745px;
+  width: 100%;
   background-image: url("../img/bg_img_placeholder.jpg");
   background-size: 482px 440px;
   float: left;
