@@ -27,6 +27,8 @@
 
     <?php include '../../includes/header.php'; ?>
 
+    <br>
+
     <div class="container">
         <h2 class="header-centertext">Sammensæt din egen menu...<h2>
                 <hr>

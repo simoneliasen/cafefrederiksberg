@@ -239,6 +239,11 @@ hr{
   border-color white;
   border-radius: 25px;
   background-color: gray;
+  font-size: 1.8rem;
+}
+
+.selskab_button_position{
+  margin: 0px auto;
 }
 
 /* .............................................8.1 SELSKABSMENU */
@@ -258,7 +263,7 @@ hr{
 .selskab_menu_item_fontstyle{
 font-family: 'Playfair Display';
 font-weight: 400;
-font-size: 1rem;
+font-size: 1.25rem;
 }
 
 .selskab_menu_item_name{

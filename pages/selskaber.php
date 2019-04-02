@@ -28,23 +28,27 @@
 <?php include '../includes/header.php'; ?>
 
 
-
+<br>
 
 
 <div class="container">
- <div class="header-centertext">
-    <div class="four columns">
-      <h5 class="selskab_button">Selskabsmenu</h5>
-    </div>
+  <div class="header-centertext">
+    <div class="selskab_button_position">
 
-    <div class="four columns">
-      <h5 class="selskab_button">Buffets</h5>
-    </div>
+      <div class="four columns">
+        <span class="selskab_button">Selskabsmenu</span>
+      </div>
 
-    <div class="four columns">
-      <h5 class="selskab_button">Arrangementer</h5>
+      <div class="four columns">
+        <span class="selskab_button">Buffets</span>
+      </div>
+
+      <div class="four columns">
+        <span class="selskab_button">Arrangementer</span>
+      </div>
+
     </div>
- </div>
+  </div>
 </div>
 
 <div class="bg_dark">
