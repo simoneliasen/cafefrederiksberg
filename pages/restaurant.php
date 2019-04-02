@@ -8,13 +8,12 @@
 
   <!--Side titel  -->
   <title>Café Frederiksberg</title>
+  
   <!--Standard stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
-  <!-- Skeleton stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
-  <!-- Normalize stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-  <!-- Includer Google Fonts -->
+
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
 
 </head>
