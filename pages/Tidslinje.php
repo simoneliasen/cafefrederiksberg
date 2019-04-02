@@ -24,25 +24,26 @@
 <body>
 
 
-
   <!--Indsætter navigationsbar fra filen includes/navigation.php-->
   <?php include '../includes/navigation.php'; ?>
 
 
 
+  <div class="timelinecontainer">
+
 
 
     <h2> Tidslinje </h2>
 
-      <div class="one-half column">
-        <p>1900</p>
-      </div>
-<div class="middleline">
-</div>
-      <div class="one-half column">
 
-        <p>2006</p>
-          </div>
+
+
+  <div class="middleline">
+
+  </div>
+</div>
+
+
 
 
 
@@ -51,6 +52,7 @@
 
 <!--Indrag footer fra filen includes/footer.php-->
 <?php include '../includes/footer.php'; ?>
+
 
 </body>
 
