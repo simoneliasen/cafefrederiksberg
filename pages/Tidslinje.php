@@ -19,7 +19,32 @@
 
 </head>
 
+
+
 <body>
+
+
+
+  <!--Indsætter navigationsbar fra filen includes/navigation.php-->
+  <?php include '../includes/navigation.php'; ?>
+
+
+
+
+
+    <h2> Tidslinje </h2>
+
+      <div class="one-half column">
+        <p>1900</p>
+      </div>
+<div class="middleline">
+</div>
+      <div class="one-half column">
+
+        <p>2006</p>
+          </div>
+
+
 
 
 
