@@ -5,17 +5,30 @@
 
   <!--Kontakt column  -->
   <div class="four columns kontaktos">
+
     <ul>Kontakt os </ul>
-    <li><strong>Adresse</strong></li>
-    <li>Hadsundvej 1B</li>
-    <li>9000 Aalborg</li>
-    <li>Danmark</li>
-    <li><strong>Telefon:</strong></li>
-    <li>(+45) 98 12 03 83</li>
-    <li><strong>E-mail </strong></li>
-    <li>cafefrederiksberg@gmail.com</li>
-    <li>Instagram</li>
-    <li>facebook</li>
+
+<div class="kontaktleft">
+<li><strong>Adresse</strong></li><br><br><br><br>
+<li><strong>Telefon:</strong></li><br>
+<li><strong>E-mail </strong></li><br><br>
+  <li><img src="/cafefrederiksberg/img/instagram.png">Instagram</li><br>
+  <li><img src="/cafefrederiksberg/img/facebook.png">facebook</li><br>
+</div>
+
+
+<div class="kontaktright">
+<li>Hadsundvej 1B</li><br>
+  <li>9000 Aalborg</li><br>
+  <li>Danmark</li><br>
+ <li>(+45) 98 12 03 83</li><br>
+  <li>cafefrederiksberg@gmail.com</li><br>
+
+
+</div>
+
+
+
   </div>
 
     <!--åbningstider  -->
@@ -37,7 +50,7 @@
   <div class="four columns links">
     <ul>Links</ul>
     <li><a href="http://www.orlando-florida.dk/">Feriehus Florida</a></li>
-    <li>Sport</li>
+
     <li><a href="https://www.findsmiley.dk/25727">Kontrol Rapport</a></li>
 <!--Vedrørende fest/selskaber  -->
     <ul> Vedrørende fest</ul>
@@ -84,4 +97,28 @@
   list-style-type: none;
 }
 
+
+
+
+
+
+/* Placement of footer material additional */
+.kontaktleft {
+  display: inline;
+  width: 50%;
+  float: left;
+
+}
+
+.kontaktleft > li {
+  display: inline-block;
+}
+.kontaktright > li {
+  display: inline-block;
+}
+.kontaktright{
+  display: inline;
+  width: 50%;
+    float: right;
+}
 </style>
