@@ -57,7 +57,7 @@
         <p> TEST </p>
       </div>
       <div class="six columns">
-        <img src=""
+        <img src="../img/Happyfish.jpg" alt="Placeholder fish" height="300px" width="200px">
       </div>
 
     </div>
