@@ -25,23 +25,35 @@
 
 
   <!--Indsætter navigationsbar fra filen includes/navigation.php-->
-  <?php include '../includes/navigation.php'; ?>
-
-
-
-  <div class="timelinecontainer">
-
-
-
-    <h2> Tidslinje </h2>
 
 
 
 
-  <div class="middleline">
 
+      <h2> Tidslinje </h2>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="five columns timeline_column" style="background-color: blue; height: 200px;">
+      </div>
+
+      <div class="two columns">
+        <div class="middleline"></div>
+        <div class="line_item">
+          <h2>1900</h2>
+        </div>
+      </div>
+
+      <div class="five columns" style="background-color: red; height: 400px;">
+      </div>
+    </div>
   </div>
-</div>
+
+
+
+
 
 
 

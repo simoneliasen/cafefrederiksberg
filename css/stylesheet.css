@@ -378,17 +378,30 @@ Width: 30%;
 }
 /*.............................................9.0 TIDSLINJE */
 .middleline {
- border-left: 4px solid grey;
+  width: 0px;
  height: 2000px;
- position: absolute;
- left: 50%;
- margin-left: -3px;
- top: 0;
-margin-top: 100px;
+ margin: auto;
+ border-left: 3px dashed green;
+}
+
+.line_item{
+  height: 3px;
+  border-bottom: 3px dashed green;
+  width: 50%;
+  position: absolute;
+  right: 50%;
+  top: 150px;
+}
+
+.timeline_column{
+  margin-top: 150px;
+}
+
+.line_item h2{
+  margin-top: -50px;
 }
 
 .timelinecontainer {
 margin-top: 200px;
-margin-bottom: 400px;
 
 }
