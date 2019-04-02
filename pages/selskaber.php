@@ -53,6 +53,12 @@
 
 <div class="bg_dark">
     <div class="container">
+      <div class="six columns">
+        <p> TEST </p>
+      </div>
+      <div class="six columns">
+        <img src=""
+      </div>
 
     </div>
 </div>
