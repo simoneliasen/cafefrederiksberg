@@ -27,6 +27,8 @@
 
     <?php include '../../includes/header.php'; ?>
 
+    <br>
+
     <div class="container">
         <h2 class="header-centertext">Sammensæt din egen menu...<h2>
                 <hr>
@@ -379,7 +381,7 @@
 
                       <div class="selskab_menu_item">
                           <div class="selskab_menu_item_name">
-                              <span class="selskab_menu_item_fontstyle"> Glasseret skinke</span>
+                              <span class="selskab_menu_item_fontstyle"> Glaseret skinke</span>
                               <p>Med salat, dressing og flütes</p>
                           </div>
                           <div class="selskab_menu_item_price">
