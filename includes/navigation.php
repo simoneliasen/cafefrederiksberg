@@ -36,7 +36,7 @@
 <a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
 </div>
 <!--Line to sepperate content  -->
-<hr id="headerline">
+
 
 </nav>
 
@@ -103,6 +103,6 @@
 <script>
 var $nav = $('.navigationbar');
 $(document).scroll(function() {
-    $nav.css({background: $(this).scrollTop() > 100? "black":"transparent"});
+    $nav.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.8)":"transparent"});
 });
 </script>
