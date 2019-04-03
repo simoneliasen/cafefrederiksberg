@@ -94,7 +94,98 @@ p {
 
 /*..............................................1 INDEX */
 
+/*Baggrundsfarve for sektion  */
+.wrapper.onlineBestilling {
+background-color: #343434;
+}
+/*Overskriftsstørrelse  */
+#bestilonlineheader {
+  font-size: 30px;
+  font-weight: bold;
+}
+/*Knappers farve  */
+.button.button-primary.bestil{
+  background-color: #CCB380;
+  border-color: #CCB380;
+}
+/*Placering  */
+.two.columns.bestilonline, .six.columns.bestilonline {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+}
 
+
+.container.introHistorie {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+#introhistoriecaféfrederiksbergheading {
+font-family: "Playfair Display";
+font weight: bold;
+font-size: 32px;
+line-spacing: 32px;
+}
+#introhistoriecaféfrederiksbergsubheading {
+  font-family: "Playfair Display";
+  font weight: regular;
+  font-size: 22px;
+  line-spacing: 30px;
+}
+#introhistoriecaféfrederiksbergtext {
+  margin-top: 16px;
+  font-family: "Poppins";
+  font weight: regular;
+  font-size: 15px;
+  line-spacing: 23px;
+}
+.introHistorie {
+background-color: #101010;
+margin-top: 1rem;
+}
+.six.columns.introHistorie {
+  margin-top: 1rem;
+}
+#butikfront {
+  margin-top: 2rem;
+  width: 32.832rem;
+  height: 20.952rem;
+}
+
+
+.indholdsoversigt {
+  background-color: #343434;
+}
+.three.columns.indholdsoversigt > img{
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 12.3rem;
+  height: 12.3rem;
+  margin-top: 3rem;
+}
+.three.columns.indholdsoversigt > h2{
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 1.2rem;
+
+}
+.three.columns.indholdsoversigt > p{
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.button.alleeventsforside {
+  margin: 0 auto;
+  margin-bottom: 4.2rem;
+  margin-top: 2.2rem;
+  text-align: center;
+}
 /*..............................................2 ADMIN */
 
 /*..............................................3 BAR */
