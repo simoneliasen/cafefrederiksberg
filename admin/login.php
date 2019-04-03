@@ -23,32 +23,37 @@
 <body>
 
 <!--Background farve  -->
-<div class="loginbackground">
 
 
+<!--Tilbage til forsiden  -->
   <div class="loginbacktoindex">
-    <p>-- Tilbage til Forsiden </p>
+    <a href="/cafefrederiksberg/index.php"><p>-- Tilbage til Forsiden </p></a>
 </div>
 
 
-    <div class="loginform">
 
 
-  <!--Logo  -->
+
+  <!-- Container til logo og login-sektion  -->
+  <div class="container loginpage">
 <div class="loginlogo">
   <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" width="500rem" height="auto"></a>
 </div>
 
+
+
+<div class="form">
 <form action="action_page.php">
-  <div class="imgcontainer">
-  </div>
+    <label for="username"><b>Brugernavn</b></label>
+    <input type="text" placeholder="Indsæt Brugernavn" name="username" required>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+<br>
+<br>
+    <label for="password"><b>Kodeord</b></label>
+    <input type="password" placeholder="Indsæt Kodeord" name="password" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+<br>
+<br>
 
     <button type="submit">Login</button>
     <label>
@@ -56,18 +61,12 @@
     </label>
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
 </form>
-
-
-
-
-
-
 </div>
+
+
+
+
 </div>
 
 
@@ -75,19 +74,24 @@
 <style>
 
 
+.form {
+  text-align: center;
 
+}
 
-.loginform {
-  margin-top: 10rem;
+.container.loginpage {
+  margin-top: 5rem;
 }
 
 .loginbacktoindex {
-  float: left;
+
 }
 
 .loginlogo {
   text-align: center;
 }
+
+
 
 </style>
 
