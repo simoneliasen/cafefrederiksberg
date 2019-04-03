@@ -22,8 +22,14 @@
 
 <body>
 
-<!--Background farve  -->
+<!-- Fede tunes  -->
+<audio id="my_audio" src="../img/2005-2007 RuneScape Login Music.mp3" loop="loop"></audio>
 
+<script>
+window.onload = function() {
+    document.getElementById("my_audio").play();
+}
+</script>
 
 <!--Tilbage til forsiden  -->
   <div class="loginbacktoindex">

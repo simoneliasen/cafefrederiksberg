@@ -28,6 +28,8 @@
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include 'includes/header.php'; ?>
 
+
+
   <!--Online bestilling  -->
   <div class="wrapper onlineBestilling">
     <div class="container onlineBestilling">
@@ -145,7 +147,6 @@
     </div>
   </div>
 
-
   <!--Events: Facebook implementering  -->
   <div class="container">
     <div class='sk-fb-event' data-embed-id='22281'></div>
@@ -157,6 +158,12 @@
   </center>
   </div>
 
+<!--Fjerner link til widget  -->
+  <style>
+  body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4) > a {
+    display: none;
+  }
+  </style>
 
 
   <!--Google maps placeholder  -->
@@ -181,9 +188,6 @@
       </style>
     </div>
   </center>
-
-
-
 
   <!--Inddrager footer fra "includes/footer.php"-->
   <?php include 'includes/footer.php'; ?>
