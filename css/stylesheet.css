@@ -277,7 +277,7 @@ float: right;
 Width: 30%;
 }
 /* .............................................8.2 BUFFET */
-/* 297 er lim til 300 */
+/* Buffet menulinje */
 
 .menulinje-buffet li{
   list-style-type: none;
@@ -288,22 +288,49 @@ Width: 30%;
   font-family: "Playfair Display";
   padding: 1rem 1rem;
   }
+.menulinje-buffet a{
+  text-decoration: none;
+  color: #CCB380;
 
-  #allergy{
-    font-family: "poppins";
-    font-style: italic;
-    font-weight: 700;
-  }
+}
+.menulinje-buffet a:hover{
+  text-decoration: none;
+  color: red;
 
+}
+
+#allergy{
+  font-family: "poppins";
+  font-style: italic;
+  font-weight: 700;
+}
+.buffetmenu_placeholder_img_right{
+  height: 290px;
+  width: 100%;
+  background-image: url("../img/bg_img_placeholder.jpg");
+  background-size: 482px 440px;
+  float: right;
+  margin-top: 0.5rem;
+}
+/* Buffet odd numbers */
 .buffet_odd li{
   list-style-type: none;
 
 }
 .row.buffet_odd{
   background-color: #1E1D20;
-  padding-left: 0.1rem;
+  padding: 0.1rem 0;
 }
 
+.buffet_placeholder_img_right{
+  height: 745px;
+  width: 100%;
+  background-image: url("../img/bg_img_placeholder.jpg");
+  background-size: 482px 440px;
+  float: right;
+}
+
+/* Buffet even numbers */
 .buffet_even li{
   list-style-type: none;
   font: "Poppins"
@@ -313,6 +340,16 @@ Width: 30%;
   padding-top: 01rem;
   padding-bottom: 01rem;
 }
+
+.buffet_placeholder_img_left{
+  height: 745px;
+  width: 100%;
+  background-image: url("../img/bg_img_placeholder.jpg");
+  background-size: 482px 440px;
+  float: left;
+}
+
+/* Buffet priser */
 .buffet_priser_info{
   display: inline;
   font-size: 20px;
@@ -348,29 +385,10 @@ Width: 30%;
 .buffet_price{
   padding-bottom: 2.5rem;
 }
-.buffetmenu_placeholder_img_right{
-  height: 290px;
-  width: 100%;
-  background-image: url("../img/bg_img_placeholder.jpg");
-  background-size: 482px 440px;
-  float: right;
-  margin-top: 0.5rem;
-}
-.buffet_placeholder_img_left{
-  height: 745px;
-  width: 100%;
-  background-image: url("../img/bg_img_placeholder.jpg");
-  background-size: 482px 440px;
-  float: left;
-}
 
-.buffet_placeholder_img_right{
-  height: 745px;
-  width: 100%;
-  background-image: url("../img/bg_img_placeholder.jpg");
-  background-size: 482px 440px;
-  float: right;
-}
+
+
+
 /* .............................................8.3 ARRANGEMENTER */
 
 .arrangementer{
