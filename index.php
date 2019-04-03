@@ -28,72 +28,39 @@
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include 'includes/header.php'; ?>
 
-
-
-
-
-
-
-
   <!--Online bestilling  -->
   <div class="wrapper onlineBestilling">
     <div class="container onlineBestilling">
       <div class="row onlineBestilling">
+        <!-- Bestil online tekst  -->
         <div class="six columns bestilonline">
           <div class="Bestil_onlineindex">
-            <h2 id ="bestilonlineheader">Bestil online:</h2>
+            <h2 id="bestilonlineheader">Bestil online:</h2>
           </div>
         </div>
+        <!-- Bestil bord online knap  -->
         <div class="two columns bestilonline">
           <a class="button button-primary bestil" href="pages/booking.php">Bord</a>
         </div>
+        <!-- Bestil Biletter online knap  -->
         <div class="two columns bestilonline">
           <a class="button button-primary bestil" href="pages/booking.php">Biletter</a>
         </div>
+        <!-- Bestil Take-away online knap  -->
         <div class="two columns bestilonline">
           <a class="button button-primary bestil" href="pages/booking.php">Take-away</a>
         </div>
+
       </div>
     </div>
   </div>
-
-
-<!--Css til online Bestilling  -->
-<style>
-/*Baggrundsfarve for sektion  */
-.wrapper.onlineBestilling {
-background-color: #343434;
-}
-/*Overskriftsstørrelse  */
-#bestilonlineheader {
-  font-size: 30px;
-  font-weight: bold;
-}
-/*Knappers farve  */
-.button.button-primary.bestil{
-  background-color: #CCB380;
-  border-color: #CCB380;
-}
-/*Placering  */
-.two.columns.bestilonline, .six.columns.bestilonline {
-  margin-top: 1rem;
-  margin-bottom: 0rem;
-}
-</style>
-
-
-
-
-
-
-
-
 
   <!-- introHistorie -->
   <div class="wrapper introHistorie">
     <!--Indhold centreret i wrapper-->
     <div class="container introHistorie">
 
+      <!--Intro-tekst  -->
       <div class="six columns introHistorie">
         <h2 id="introhistoriecaféfrederiksbergheading"> Café Frederiksberg </h2>
         <h4 id="introhistoriecaféfrederiksbergsubheading"> Siden år 1900</h4>
@@ -101,67 +68,18 @@ background-color: #343434;
           Morbi bibendum nunc ut posuere tempor. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
           Proin vel mauris sagittis. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
           Proin vel mauris sagittis Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
-           sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
-          </p>
-          <a class="button introhistorie" href="pages/tidslinje.php">Se hele Café Frederikbergs historie <u>her</u></a>
+          sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
+        </p>
+        <!--se Café frederiksbergs tidlinje knap  -->
+        <a class="button introhistorie" href="pages/tidslinje.php">Se hele Café Frederikbergs historie <u>her</u></a>
       </div>
+      <!--Billede af butiksfront  -->
       <div class="six columns">
-        <img src="img/Butikfront.png" id="butikfront" >
+        <img src="img/Butikfront.png" id="butikfront">
       </div>
+
     </div>
   </div>
-
-
-<!-- CSS til introhistorie  -->
-<style>
-.container.introHistorie {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-#introhistoriecaféfrederiksbergheading {
-font-family: "Playfair Display";
-font weight: bold;
-font-size: 32px;
-line-spacing: 32px;
-}
-#introhistoriecaféfrederiksbergsubheading {
-  font-family: "Playfair Display";
-  font weight: regular;
-  font-size: 22px;
-  line-spacing: 30px;
-}
-#introhistoriecaféfrederiksbergtext {
-  margin-top: 16px;
-  font-family: "Poppins";
-  font weight: regular;
-  font-size: 15px;
-  line-spacing: 23px;
-}
-.introHistorie {
-background-color: #101010;
-margin-top: 1rem;
-}
-.six.columns.introHistorie {
-  margin-top: 1rem;
-}
-#butikfront {
-  margin-top: 2rem;
-  width: 32.832rem;
-  height: 20.952rem;
-}
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
 
   <!-- Wrapper til indholdsoversigt -->
   <div class="wrapper indholdsoversigt">
@@ -169,141 +87,106 @@ margin-top: 1rem;
     <div class="container indholdsoversigt">
       <!-- opretter række, som elementer let kan placeres i-->
       <div class="row indholdsoversigt">
-        <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
+
+        <!--Restaurant Genvej  -->
         <div class="three columns indholdsoversigt">
           <img src="img/RestaurantIconTest.png">
           <h2>Restaurant</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
         </div>
+        <!--Bar Genvej  -->
         <div class="three columns indholdsoversigt">
           <img src="img/RestaurantIconTest.png">
           <h2>Bar</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
         </div>
+        <!--Events Genvej  -->
         <div class="three columns indholdsoversigt">
           <img src="img/RestaurantIconTest.png">
           <h2>Events</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
         </div>
+        <!--Selskaber Genvej  -->
         <div class="three columns indholdsoversigt">
           <img src="img/RestaurantIconTest.png">
           <h2>Selskaber</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
-
-<!-- CSS til indholdsoversigt -->
-<style>
-.indholdsoversigt {
-  background-color: #343434;
-}
-.three.columns.indholdsoversigt > img{
-  margin: 0 auto;
-  text-align: center;
-  display: block;
-  width: 12.3rem;
-  height: 12.3rem;
-  margin-top: 3rem;
-}
-.three.columns.indholdsoversigt > h2{
-  margin: 0 auto;
-  text-align: center;
-  display: block;
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 1.2rem;
-
-}
-.three.columns.indholdsoversigt > p{
-  margin: 0 auto;
-  text-align: center;
-  display: block;
-  margin-top: 0.5rem;
-  margin-bottom: 3rem;
-}
-</style>
-
-
-
-
-
 
   <!-- Katalog (Kopi af Katalog under Events)  -->
   <div class="bg_dark">
     <div class="container">
       <div class="row">
+        <!-- Billede af katalog  -->
         <div class="one-half column frede_live_katalog">
-
           <a href="#">
             <div class="frede_live_katalog_img">
             </div>
           </a>
-
         </div>
+        <!--Tekst til katalog  -->
         <div class="one-half column frede_live_katalog_text">
-
+          <!--Appetizer tekst til katalog  -->
           <div class="frede_live_katalog_text_container">
             <h2>Frede Live</h2>
             <h6>Livemusik og events</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <!-- Link til katalog  -->
             <a class="button" href="#">Se vores Magsin <u>her</u></a>
           </div>
-
         </div>
+
       </div>
     </div>
   </div>
 
 
-
-
-
-
-
-<div class="container">
-  <div class='sk-fb-event' data-embed-id='22281'></div><script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
-</div>
-<!-- Midlertidigt <center> tag -->
-    <center>
+  <!--Events: Facebook implementering  -->
+  <div class="container">
+    <div class='sk-fb-event' data-embed-id='22281'></div>
+    <script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
+  </div>
+  <!-- Midlertidigt <center> tag -->
+  <center>
     <a class="button alleeventsforside" href="pages/events.php">Se alle kommende events <u>her</u></a>
-</center>
+  </center>
   </div>
 
-<!--Css til events specifikt til forside  -->
-<style>
-.button.alleeventsforside {
-  margin: 0 auto;
-  margin-bottom: 4.2rem;
-  margin-top: 2.2rem;
-  text-align: center;
-}
-</style>
+
+
+  <!--Google maps placeholder  -->
+  <center>
+    <div class="mapouter">
+      <div class="gmap_canvas"><iframe width="1920" height="575" id="gmap_canvas" src="https://maps.google.com/maps?q=Caf%C3%A9%20Frederiksberg%20Aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
+          marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div>
+      <style>
+        .mapouter {
+          position: relative;
+          text-align: right;
+          height: 575px;
+          width: 1920px;
+        }
+
+        .gmap_canvas {
+          overflow: hidden;
+          background: none !important;
+          height: 575px;
+          width: 1920px;
+        }
+      </style>
+    </div>
+  </center>
 
 
 
 
-
-
-    <!--Google maps placeholder  -->
-
-      <center>
-<div class="mapouter"><div class="gmap_canvas"><iframe width="1920" height="575" id="gmap_canvas" src="https://maps.google.com/maps?q=Caf%C3%A9%20Frederiksberg%20Aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;height:575px;width:1920px;}.gmap_canvas {overflow:hidden;background:none!important;height:575px;width:1920px;}</style></div></center>
-
-
-
-
-
-
-
-
-
-
-
-    <!--Inddrager footer fra "includes/footer.php"-->
-    <?php include 'includes/footer.php'; ?>
+  <!--Inddrager footer fra "includes/footer.php"-->
+  <?php include 'includes/footer.php'; ?>
 
 
 </body>
