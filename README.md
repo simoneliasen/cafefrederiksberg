@@ -11,9 +11,11 @@ Opsæt statisk layout for hele siden
 - Arangementer (Daniel
 - Selskabsmenu (Victor)
 - Kontakt (Lasse)
-- selskaber
-- Buffet
+- Buffet (Lasse)
+- Selskaber (Victor)
+
 - Side for kunstnere der vil spille
+- Login til adminpanel
 - Adminpanel
 - Bookingsystem
 
