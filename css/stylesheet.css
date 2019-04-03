@@ -117,7 +117,6 @@ p {
 /*..............................................C HEADER */
 
 .bg_img{
-  background-image: url("../img/bg_img_placeholder.jpg");
   width: 100%;
   height: 75vh;
   background-size: cover;
@@ -136,6 +135,19 @@ p {
 
 .header_text h1, .header_text h6{
   text-shadow: 0px 0px 50px rgba(0,0,0,0.5)
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-position: center;
+  object-fit: cover;
 }
 
 /*..............................................D FOOTER */
