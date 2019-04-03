@@ -8,7 +8,7 @@
 
   <!--Side titel  -->
   <title>Café Frederiksberg</title>
-  
+
   <!--Standard stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
   <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
@@ -23,38 +23,34 @@
 
 <!--Indsætter navigationsbar fra filen includes/navigation.php-->
 <?php include '../includes/navigation.php'; ?>
+<?php include '../includes/header.php'; ?>
 
-<!-- Indsætter slider  -->
-<div class="content slider">
-  <h1> her kommer der til at være en slider </h1>
-</div>
-</div>
-
-
-<!--Eksempel m. 3-delt container og overskrift  -->
-<div class="wrapper indholdsoversigt">
-  <!--Indhold centreret i wrapper-->
-  <div class="container indholdsoversigt">
-    <h1> Her kommer der til at være en indholdsoversigt </h1>
-    <!-- opretter række, som elementer let kan placeres i-->
-    <div class="row indholdsoversigt">
-      <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
-      <div class="three columns">
-        <h2>RESTAURANT</h2>
-      </div>
-      <div class="three columns">
-        <h2>BAR</h2>
-      </div>
-      <div class="three columns">
-        <h2>EVENTS</h2>
-      </div>
-      <div class="three columns">
-        <h2>SELSKABER</h2>
+<div class="wrapper onlineBestilling">
+    <div class="container onlineBestilling">
+      <div class="row onlineBestilling">
+        <div class="six columns bestilonline">
+          <div class="Bestil_onlineindex">
+            <h2 id="bestilonlineheader">Bestil online:</h2>
+          </div>
+        </div>
+        <div class="two columns bestilonline">
+          <a class="button button-primary bestil" href="pages/booking.php">Bord</a>
+        </div>
+        <div class="two columns bestilonline">
+          <a class="button button-primary bestil" href="pages/booking.php">Biletter</a>
+        </div>
+        <div class="two columns bestilonline">
+          <a class="button button-primary bestil" href="pages/booking.php">Take-away</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
+<div class="container">
+
+<h2 id="restaurant_overskrift">Menukort</h2>
+
+</div>
 
 
 <!--Indrag footer fra filen includes/footer.php-->
