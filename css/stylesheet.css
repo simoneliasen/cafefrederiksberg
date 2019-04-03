@@ -174,33 +174,7 @@ p {
 }
 
 .events_overskrift{
-  padding: 5rem 0;
-}
-
-.events{
-  margin-bottom: ;
-}
-
-.events_date{
-  width:20%;
-  height:100%;
-  position: relative;
-  float: left;
-}
-
-.events_info{
-  width:80%;
-  height:100%;
-  float: right;
-  position: relative;
-}
-
-.events_img{
-  height: 200px;
-}
-
-hr{
-  border-color: #444444;
+  padding: 3rem 0 1rem 0;
 }
 
 /*..............................................6 KONTAKT */
