@@ -351,16 +351,55 @@ margin-top: 1rem;
 
 /*..............................................7 RESTAURANT */
 
+#restaurant_overskrift {
+  text-align: center;
+  padding-top: 5rem;
+  color: #CCB380;
+  }
 
 
+  .menu-item {
+    margin: 35px 0;
+    }
+
+  .menu-item-name{
+    font-weight: bold;
+    width:90%;
+  }
 
 
+  .menu-item-price{
+    float: right;
+    margin-top: -22px;
+    font-style:italic;
+    text-align:right;
+    color:#CCB380;
+    width:10%;
+  }
+
+  .menu-item-description{
+    font-size: .9em;
+    line-height: 1.5em;
+    width:75%;
+  }
 
 
+.container.restaurant{
 
+}
 
+.row.restaurant {
+text-align: center;
 
+}
 
+.one-third.column.restaurant{
+display: inline-block;
+}
+
+.Kontrolrapport_restaurant{
+margin:0 auto;
+}
 
 
 
@@ -382,12 +421,26 @@ margin-top: 1rem;
 .selskab_button_text{
   font-size: 1.5rem;
   font-weight: bold;
-
 }
 
 .selskab_button_position{
   margin-bottom: 1px;
+}
 
+.selskab_text_position{
+  display: inline-block;
+  text-align: left;
+  width: 80%;
+}
+
+.selskab_text_atttributes{
+  font-size: 0.8rem;
+  width: 75%;
+}
+
+.selskab_img_position{
+  display: inline-block;
+  /*margin-left: 100px;*/
 }
 
 /* .............................................8.1 SELSKABSMENU */
@@ -400,7 +453,8 @@ padding-top: 20px;
 }
 
 .selskab_menu_overskrift_forretter{
-
+color: white;
+margin-top: 15px;
 }
 
 .selskab_menu_itemlist_padding{
@@ -581,7 +635,7 @@ Width: 30%;
 
 .middleline {
   width: 0px;
-  height: 1500px;
+  height: 2500px;
   margin: 50%;
   margin-top: 123px;
   border-left: 3px dashed grey;
@@ -594,6 +648,10 @@ Width: 30%;
   border-bottom: 3px dashed grey;
   width: 50%;
   position: absolute;
+  margin-top: 120px;
+}
+
+.timeline_line_first{
   margin-top: 120px;
 }
 
