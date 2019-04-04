@@ -153,7 +153,70 @@ video {
 }
 
 /*..............................................D FOOTER */
+/*Adresse  */
+.row.adresse-wrapper {
+  display: block;
+}
+.adresseleft {
+  display: inline;
+  float: left;
+}
+.adresseright {
+    display: inline;
+      float: right;
+        text-align: right;
+}
+/*Telefon  */
+.row.telefon-wrapper {
+  display: block
+margin-top: 1.3rem;
+}
+.telefonleft {
+  display: inline;
+  float: left;
+}
+.telefonright {
+  display: inline;
+  float: right;
+  text-align: right;
+}
+/*E-mail */
+.row.e-mail-wrapper {
+  display: block;
+margin-top: 1rem;
+}
+.e-mailleft {
+  display: inline;
+    float: left;
+}
+.e-mailright {
+    display: inline;
+  float: right;
+  text-align: right;
+}
 
+/*Mindre skrift til selskaber  */
+.tilselskaber {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.four.columns.åbningstider ul,.four.columns.links ul ,.four.columns.kontaktos ul {
+  font-size: 30px;
+  font-family: "Poppins";
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.four.columns.kontaktos ul,.four.columns.kontaktos li, .four.columns.åbningstider ul,.four.columns.åbningstider li,.four.columns.links ul,.four.columns.links li {
+  text-align: center;
+  list-style-type: none;
+}
+
+#instagramtext,#facebooktext {
+  display: inline;
+  margin-left: 1rem;
+}
 /*..............................................1 INDEX */
 
 /*Baggrundsfarve for sektion  */
