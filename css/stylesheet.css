@@ -481,22 +481,25 @@ Width: 30%;
   margin-top: 0.5rem;
 }
 /* Buffet odd numbers */
+.row.buffet_odd{
+  background-color: #1E1D20;
+  padding: 4% 0;
+}
+
 .buffet_odd li{
   list-style-type: none;
 
 }
-.row.buffet_odd{
-  background-color: #1E1D20;
-  padding: 0.1rem 0;
-}
+
 
 .buffet_placeholder_img_right{
-  height: 745px;
-  width: 100%;
-  background-image: url("../img/bg_img_placeholder.jpg");
-  background-size: 482px 440px;
+  margin: 7% 0;
+  width: 400px;
+  height: 500px;
+  background-image: url("../img/buffet_placeholder.png.jpg");
+  background-size: 400px 500px;
   float: right;
-}
+  }
 
 /* Buffet even numbers */
 .buffet_even li{
@@ -505,17 +508,17 @@ Width: 30%;
 
 }
 .row.buffet_even{
-  padding-top: 01rem;
-  padding-bottom: 01rem;
+  padding: 4% 0;
 }
 
 .buffet_placeholder_img_left{
-  height: 745px;
-  width: 100%;
-  background-image: url("../img/bg_img_placeholder.jpg");
-  background-size: 482px 440px;
+  margin: 7% 0;
+  width: 400px;
+  height: 500px;
+  background-image: url("../img/buffet_placeholder.png.jpg");
+  background-size: 400px 500px;
   float: left;
-}
+  }
 
 /* Buffet priser */
 .buffet_price_overskrift p{
