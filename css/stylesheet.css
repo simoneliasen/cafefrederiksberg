@@ -375,12 +375,23 @@ margin-top: 1rem;
   border-style: solid;
   border-color white;
   border-radius: 25px;
-  background-color: gray;
-  font-size: 1.8rem;
+  background-color: #171619;
+  width: 70%;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.selskab_button_text{
+  font-size: 1.5rem;
+  font-weight: bold;
+
 }
 
 .selskab_button_position{
-  margin: 0px auto;
+  margin-bottom: 1px;
+
 }
 
 /* .............................................8.1 SELSKABSMENU */
@@ -390,6 +401,10 @@ margin-top: 1rem;
 
 .selskab_menu_overskrift{
 padding-top: 20px;
+}
+
+.selskab_menu_overskrift_forretter{
+
 }
 
 .selskab_menu_itemlist_padding{
@@ -416,6 +431,13 @@ font-size: 1.25rem;
 .selskab_menu_item_price{
 float: right;
 Width: 30%;
+}
+
+.selskab_menu_allergiker{
+  margin: 0px auto;
+  font-style: italic;
+  padding-bottom: 35px;
+  text-align: center;
 }
 /* .............................................8.2 BUFFET */
 /* Buffet menulinje */

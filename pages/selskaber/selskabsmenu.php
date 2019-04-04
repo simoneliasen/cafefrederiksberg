@@ -32,8 +32,8 @@
     <div class="container">
         <h2 class="header-centertext">Sammensæt din egen menu...<h2>
                 <hr>
-          <div class="selskab_menu_overskrift">
-              <h2 class="header-centertext"> Forretter </h2><br>
+          <div class="selskab_menu_overskrift_forretter">
+              <h3 class="header-centertext"> Forretter </h3><br>
           </div>
 
     </div>
@@ -341,9 +341,10 @@
                 <h3 class="header-centertext"> Natmad </h3><br>
                 <h5 class="header-centertext"> - en go' afslutning på din fest</h5><br>
             </div>
-              <div class="bg_dark">
-                  <div class="container">
-                    <div class="selskab_menu_itemlist_padding">
+
+            <div class="bg_dark">
+                <div class="container">
+                  <div class="selskab_menu_itemlist_padding">
 
                       <div class="selskab_menu_item">
                           <div class="selskab_menu_item_name">
@@ -425,6 +426,15 @@
                           </div>
                       </div>
                     </div>
+                    <br>
+
+                    <div class="twelve columns">
+                      <div class="selskab_menu_allergiker">
+                      (Allergiker/vegetar menu kan bestilles mod tillæg i prisen)
+                      </div>
+                    </div>
+
+
                   </div>
                 </div>
 
