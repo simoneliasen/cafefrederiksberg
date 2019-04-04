@@ -36,7 +36,7 @@
       <h2 style="margin-bottom: 1rem;"> Barnedåb </h2>
       <div class="row">
         <div class="one-half column">
-          <img src="../../img/butikfront.png" width="400rem" height="auto">
+          <img src="../../img/Butikfront.png" width="400rem" height="auto">
         </div>
 
         <div class="one-half column">

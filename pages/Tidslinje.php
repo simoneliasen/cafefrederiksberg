@@ -30,41 +30,56 @@
 
 
 
-      <h2> Tidslinje </h2>
+      <h2 "style="text-align: center";> Tidslinje </h2>
 
 
 
   <div class="container">
     <div class="row">
-      <div class="five columns timeline_column" style="background-color: blue; height: 200px; top: 200px">
+      <div class="five columns timeline_column" style="background-color: blue; height: 200px; top: 200px;">
+
       </div>
+
+
       <div class="two columns">
+
         <div class="middleline"></div>
-        <div class="line_item">
-          <h2>1900</h2>
 
-        </div>
 
-        <div class="line_item1">
-          <h2>1900</h2>
-        </div>
 
-        <div class="line_item2">
-          <h2>1909</h2>
-        </div>
+              <div class="line_item1">
+                <h2>1900</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+              </div>
 
-        <div class="line_item3">
-          <h2>1930</h2>
-        </div>
+              <div class="line_item2">
+                <h2>1909</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+              </div>
 
-        <div class="line_item4">
-          <h2>1950</h2>
-        </div>
+              <div class="line_item3">
+                <h2>1930</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+              </div>
 
+              <div class="line_item4">
+                <h2>1950</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+              </div>
+
+              <div class="line_item5">
+                <h2>1973</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+              </div>
+
+              <div class="line_item6">
+                <h2>2006</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+              </div>
 
       </div>
 
-      <div class="five columns" style="background-color: red; height: 400px;">
+      <div class="five columns" style="background-color: red; height: 200px; margin-top: 300px;">
       </div>
     </div>
   </div>
