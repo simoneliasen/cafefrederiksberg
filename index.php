@@ -28,8 +28,6 @@
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include 'includes/header.php'; ?>
 
-
-
   <!--Online bestilling  -->
   <div class="wrapper onlineBestilling">
     <div class="container onlineBestilling">
@@ -152,42 +150,17 @@
     <div class='sk-fb-event' data-embed-id='22281'></div>
     <script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
   </div>
-  <!-- Midlertidigt <center> tag -->
-  <center>
-    <a class="button alleeventsforside" href="pages/events.php">Se alle kommende events <u>her</u></a>
-  </center>
-  </div>
 
-<!--Fjerner link til widget  -->
-  <style>
-  body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4) > a {
-    display: none;
-  }
-  </style>
+<!--Knap til alle events  -->
+<div class="row alleeventsforside">
+  <a class="button alleeventsforside" href="pages/events.php">Se alle kommende events <u>her</u></a>
+</div>
 
-
-  <!--Google maps placeholder  -->
-  <center>
+  <!--Google maps  -->
     <div class="mapouter">
-      <div class="gmap_canvas"><iframe width="1920" height="575" id="gmap_canvas" src="https://maps.google.com/maps?q=Caf%C3%A9%20Frederiksberg%20Aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
+      <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Caf%C3%A9%20Frederiksberg%20Aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
           marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div>
-      <style>
-        .mapouter {
-          position: relative;
-          text-align: right;
-          height: 575px;
-          width: 1920px;
-        }
-
-        .gmap_canvas {
-          overflow: hidden;
-          background: none !important;
-          height: 575px;
-          width: 1920px;
-        }
-      </style>
-    </div>
-  </center>
+  </div>
 
   <!--Inddrager footer fra "includes/footer.php"-->
   <?php include 'includes/footer.php'; ?>
