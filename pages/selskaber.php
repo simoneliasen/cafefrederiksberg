@@ -28,40 +28,49 @@
 <?php include '../includes/header.php'; ?>
 
 
-<br>
+<div class="bg_dark">
+  <div class="container">
+   <div class="header-centertext">
+     <div class="selskab_button_position">
 
-
-<div class="container">
-  <div class="header-centertext">
-    <div class="selskab_button_position">
-
-      <div class="four columns">
-        <span class="selskab_button">Selskabsmenu</span>
+        <div class="four columns">
+          <div class="selskab_button">
+          <span class="selskab_button_text">Selskabsmenu</span>
+        </div>
       </div>
 
-      <div class="four columns">
-        <span class="selskab_button">Buffets</span>
+        <div class="four columns">
+          <div class="selskab_button">
+          <span class="selskab_button_text">Buffets</span>
+        </div>
       </div>
 
-      <div class="four columns">
-        <span class="selskab_button">Arrangementer</span>
+        <div class="four columns">
+          <div class="selskab_button">
+          <span class="selskab_button_text">Arrangementer</span>
+        </div>
       </div>
 
+      </div>
     </div>
   </div>
 </div>
 
-<div class="bg_dark">
-    <div class="container">
-      <div class="six columns">
-        <p> TEST </p>
-      </div>
-      <div class="six columns">
-        <img src="img/Happyfish.jpg" alt="Placeholder fish" height="300px" width="200px">
-      </div>
-
+<div class="container">
+  <div>
+    <div class="six columns">
+      <p> TEST </p>
     </div>
+  </div>
+  
+  <div>
+    <div class="six columns">
+      <img src="img/Happyfish.jpg" alt="Placeholder fish" height="150px" width="100px">
+    </div>
+  </div>
+
 </div>
+
 
 
 

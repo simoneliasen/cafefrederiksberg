@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <!--Side titel  -->
-  <title>Café Frederiksberg</title>
+  <title>Login</title>
   <!--Standard stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
   <!-- Skeleton stylesheet  -->
@@ -22,85 +22,97 @@
 
 <body>
 
-<!-- Fede tunes  -->
-<audio id="my_audio" src="../img/2005-2007 RuneScape Login Music.mp3" loop="loop"></audio>
-
-<script>
-window.onload = function() {
-    document.getElementById("my_audio").play();
-}
-</script>
-
-<!--Tilbage til forsiden  -->
+  <!--Tilbage til forsiden  -->
   <div class="loginbacktoindex">
-    <a href="/cafefrederiksberg/index.php"><p>-- Tilbage til Forsiden </p></a>
-</div>
-
-
-
-
-
-  <!-- Container til logo og login-sektion  -->
-  <div class="container loginpage">
-<div class="loginlogo">
-  <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" width="500rem" height="auto"></a>
-</div>
-
-
-
-<div class="form">
-<form action="action_page.php">
-    <label for="username"><b>Brugernavn</b></label>
-    <input type="text" placeholder="Indsæt Brugernavn" name="username" required>
-
-<br>
-<br>
-    <label for="password"><b>Kodeord</b></label>
-    <input type="password" placeholder="Indsæt Kodeord" name="password" required>
-
-<br>
-<br>
-
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+    <a href="/cafefrederiksberg/index.php" id="backtofrontpage">
+      <p>Tilbage til Forsiden </p>
+    </a>
   </div>
 
-</form>
-</div>
+  <!-- Container til indhold på siden -->
+  <div class="container loginpage">
 
+    <!--Logo  -->
+    <div class="logologin">
+      <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="500rem" height="auto">
+    </div>
 
+    <!--Centrere Form  -->
+    <div class="formcenter">
 
+      <!--Form  -->
+      <form action="action_page.php">
 
-</div>
+        <!--Brugernavn  -->
+        <div class="brugernavn">
+          <label for="username"><b>Brugernavn</b></label>
+          <input type="text" placeholder="Indsæt Brugernavn" name="username" required>
+        </div>
 
+        <!--Kodeord  -->
+        <div class="kodeord">
+          <label for="password"><b>Kodeord</b></label>
+          <input type="password" placeholder="Indsæt Kodeord" name="password" required>
+        </div>
 
+        <!--Login knap  -->
+        <button type="submit" id="loginknap">Login</button>
 
-<style>
+        <!--Husk mig på denne computer  -->
+        <div class="huskmig">
+          <input type="checkbox" checked="checked" name="remember"> Husk mig på denne computer
+        </div>
 
+    </div>
 
-.form {
-  text-align: center;
+    </form>
+  </div>
 
-}
+  </div>
 
-.container.loginpage {
-  margin-top: 5rem;
-}
+  <style>
 
-.loginbacktoindex {
+    /*Link til forsiden  */
+    #backtofrontpage {
+      text-decoration: none;
+      color: white;
+    }
+    #backtofrontpage:hover {
+      color: grey;
+    }
+    /*Centering af content  */
+    .formcenter {
+      text-align: center;
+    }
+    /* container   */
+    .container.loginpage {
+      margin-top: 5rem;
+    }
+    #loginknap {
+      margin-top: 1rem;
+    }
+    .logologin {
+      text-align: center;
+    }
+    .kodeord {
+      margin-top: 1rem;
+    }
+    #loginknap {
+      margin-top: 1rem;
+    }
+    .huskmig {
+      margin-top: 1rem;
+    }
+    /* Farve på input */
+    input,
+    select,
+    textarea {
+      color: black;
+    }
 
-}
-
-.loginlogo {
-  text-align: center;
-}
-
-
-
-</style>
+  </style>
 
 
 </body>
+
 </html>
