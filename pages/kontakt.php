@@ -54,85 +54,9 @@
     </div>
   </div>
 
-  <!-- Kontakt info -->
-  <div class="container opening_times">
-    <div class="row">
-        <div class="six columns">
-          <h2>Åbningstider:</h2>
-
-
-            <div class="opening_day">
-              Mandag
-            </div>
-            <div class="opening_times">
-              Kl. 10.00-00.00
-            </div>
-
-
-          <div class="buffet_price">
-            <div class="buffet_price_info">
-              Tirsdag
-            </div>
-            <div class="buffet_price_price">
-              Kl. 10.00-00.00
-            </div>
-          </div>
-
-          <div class="buffet_price">
-            <div class="buffet_price_info">
-              Onsdag
-            </div>
-            <div class="buffet_price_price">
-              Kl. 10.00-00.00
-            </div>
-          </div>
-
-          <div class="buffet_price">
-            <div class="buffet_price_info">
-              Torsdag
-            </div>
-            <div class="buffet_price_price">
-              Kl. 10.00-03.00
-            </div>
-          </div>
-
-          <div class="buffet_price">
-            <div class="buffet_price_info">
-              Fredag
-            </div>
-            <div class="buffet_price_price">
-              Kl. 10.00-03.00
-            </div>
-          </div>
-
-          <div class="buffet_price">
-            <div class="buffet_price_info">
-              Lørdag
-            </div>
-            <div class="buffet_price_price">
-              Kl. 08.00-03.00
-            </div>
-          </div>
-
-          <div class="buffet_price">
-            <div class="buffet_price_info">
-              Søndag
-            </div>
-            <div class="buffet_price_price">
-              Kl. 08.00-00.00
-            </div>
-          </div>
-
-        </div>
-
-
-      <div class="six columns">
-        <div class="buffet_placeholder_img_right"></div>
-      </div>
-
-    </div>
-  </div>
+    <div class="container opening_info"
 </div>
+
 <!--Google maps placeholder  -->
 <center>
   <div class="mapouter">
