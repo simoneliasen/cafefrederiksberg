@@ -441,32 +441,59 @@ Width: 30%;
 }
 /* .............................................8.2 BUFFET */
 /* Buffet menulinje */
-
-.menulinje-buffet li{
-  list-style-type: none;
-  font-size: 16px;
+.buffet_infooverskrift{
+  margin-top: 2rem;
   text-align: center;
-  display: inline;
-  color: #CCB380;
-  font-family: "Playfair Display";
-  padding: 1rem 1rem;
-  }
-.menulinje-buffet a{
-  text-decoration: none;
-  color: #CCB380;
-
 }
-.menulinje-buffet a:hover{
-  text-decoration: none;
-  color: red;
 
+.buffet_allegener_smiley{
+  text-align: center;
+}
+
+.buffet_allegener_smiley img{
+  vertical-align: middle;
+  margin-left: 1rem;
 }
 
 #allergy{
-  font-family: "poppins";
   font-style: italic;
+  color: #ccc;
+  font-size: 0.8rem;
+}
+
+.buffet_infotekst{
+  margin: 2rem 0;
+}
+
+.menulinje-buffet ul{
+  width: 100%;
+  padding: 2rem 0rem;
+}
+
+.menulinje-buffet ul li{
+  width: 100px;
+}
+
+.menulinje-buffet ul li{
+  width: 14.28%;
+  list-style-type: none;
+  display: inline;
+  margin: 0px;
+  text-align: center;
+  font-size: 16px;
+  float: left;
   font-weight: 700;
 }
+
+.menulinje-buffet ul li a{
+  padding: 0.6rem 1rem;
+  word-wrap: break-word;
+}
+
+.menulinje-buffet a{
+  text-decoration: none;
+}
+
 .buffetmenu_placeholder_img_right{
   height: 290px;
   width: 100%;
@@ -555,12 +582,12 @@ Width: 30%;
   width: 0px;
  height: 2000px;
  margin: auto;
- border-left: 3px dashed green;
+ border-left: 3px dashed grey;
 }
 
 .line_item1{
   height: 3px;
-  border-bottom: 3px dashed green;
+  border-bottom: 3px dashed grey;
   width: 50%;
   position: absolute;
   right: 50%;
@@ -568,29 +595,44 @@ Width: 30%;
 }
 .line_item2{
   height: 3px;
-  border-bottom: 3px dashed green;
+  border-bottom: 3px dashed grey;
   width: 50%;
   position: absolute;
   left: 50%;
-  top: 300px;
+  top: 450px;
 }
 .line_item3{
   height: 3px;
-  border-bottom: 3px dashed green;
+  border-bottom: 3px dashed grey;
   width: 50%;
   position: absolute;
   right: 50%;
-  top: 450px;
+  top: 750px;
 }
 .line_item4{
   height: 3px;
-  border-bottom: 3px dashed green;
+  border-bottom: 3px dashed grey;
   width: 50%;
   position: absolute;
   left: 50%;
-  top: 600px;
+  top: 1050px;
 }
-
+.line_item5{
+  height: 3px;
+  border-bottom: 3px dashed grey;
+  width: 50%;
+  position: absolute;
+  right: 50%;
+  top: 1350px;
+}
+.line_item6{
+  height: 3px;
+  border-bottom: 3px dashed grey;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 1650px;
+}
 .timeline_column{
   margin-top: 150px;
 }
