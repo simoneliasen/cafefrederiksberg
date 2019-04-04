@@ -36,14 +36,32 @@
 
   <div class="container">
     <div class="row">
-      <div class="five columns timeline_column" style="background-color: blue; height: 200px;">
+      <div class="five columns timeline_column" style="background-color: blue; height: 200px; top: 200px">
       </div>
-
       <div class="two columns">
         <div class="middleline"></div>
         <div class="line_item">
           <h2>1900</h2>
+
         </div>
+
+        <div class="line_item1">
+          <h2>1900</h2>
+        </div>
+
+        <div class="line_item2">
+          <h2>1909</h2>
+        </div>
+
+        <div class="line_item3">
+          <h2>1930</h2>
+        </div>
+
+        <div class="line_item4">
+          <h2>1950</h2>
+        </div>
+
+
       </div>
 
       <div class="five columns" style="background-color: red; height: 400px;">
