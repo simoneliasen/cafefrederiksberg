@@ -38,16 +38,12 @@
             <h2 id="bestilonlineheader">Bestil online</h2>
           </div>
         </div>
-        <!-- Bestil bord online knap  -->
-        <div class="two columns bestilonline">
+        <div class="six columns bestilonline knapper">
+            <!-- Bestil bord online knap  -->
           <a class="button button-primary bestil" href="pages/booking.php">Bord</a>
-        </div>
         <!-- Bestil Biletter online knap  -->
-        <div class="two columns bestilonline">
           <a class="button button-primary bestil" href="pages/booking.php">Biletter</a>
-        </div>
         <!-- Bestil Take-away online knap  -->
-        <div class="two columns bestilonline">
           <a class="button button-primary bestil" href="pages/booking.php">Take-away</a>
         </div>
 

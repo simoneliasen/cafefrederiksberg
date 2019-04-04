@@ -219,18 +219,18 @@ margin-top: 1rem;
 }
 /*..............................................1 INDEX */
 
-/*Baggrundsfarve for sektion  */
+/*Baggrundsfarve for Bestil online sektion  */
 .wrapper.onlineBestilling {
 background-color: #101010;
 }
-/*Overskriftsstørrelse  */
+/*Bestil online overskrift  */
 #bestilonlineheader {
   font-size: 1.8rem;
   color: white;
   font-family: 'Inter var';
 }
 
-/*Knapper   */
+/*Bestil online knapper   */
 .button.button-primary.bestil{
   background-color: transparent;
   border-radius: 0.5rem;
@@ -240,13 +240,19 @@ background-color: #101010;
   background-color: #CCB380;
 }
 
-.six.columns.bestilonline {
+/*Opsætning af venstre sektion  */
+ .six.columns.bestilonline {
   margin-top: 1rem;
 }
-.two.columns.bestilonline {
-  margin-top: 0.8rem;
+.six.columns.bestilonline.knapper {
+  padding-left: 2rem;
+}
+.six.columns.bestilonline.knapper > a {
+  margin-left: 1rem;
+
 }
 
+/* Introhistorie  */
 .wrapper.introHistorie {
   background-color: #1E1D20;
 }
@@ -286,6 +292,7 @@ padding-top: 0.4rem;
   height: 20.952rem;
 }
 
+/*Indholdsoversigt over siden  */
 .indholdsoversigt {
   background-color: #101010;
 }
@@ -304,7 +311,6 @@ padding-top: 0.4rem;
   font-size: 24px;
   font-weight: bold;
   margin-top: 1.2rem;
-
 }
 .three.columns.indholdsoversigt > p{
   margin: 0 auto;
@@ -313,18 +319,18 @@ padding-top: 0.4rem;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
-
+/*"Alle events knap" fører til event-side  */
 .row.alleeventsforside {
   text-align: center;
 }
 .button.alleeventsforside {
   margin: 0 auto;
   margin-bottom: 2rem;
-
 }
 .row.alleeventsforside {
   text-align: center;
 }
+/*Google maps  */
 .mapouter {
   position: relative;
   text-align: right;
