@@ -379,13 +379,37 @@ Width: 30%;
  border-left: 3px dashed green;
 }
 
-.line_item{
+.line_item1{
   height: 3px;
   border-bottom: 3px dashed green;
   width: 50%;
   position: absolute;
   right: 50%;
   top: 150px;
+}
+.line_item2{
+  height: 3px;
+  border-bottom: 3px dashed green;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 300px;
+}
+.line_item3{
+  height: 3px;
+  border-bottom: 3px dashed green;
+  width: 50%;
+  position: absolute;
+  right: 50%;
+  top: 450px;
+}
+.line_item4{
+  height: 3px;
+  border-bottom: 3px dashed green;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 600px;
 }
 
 .timeline_column{
