@@ -11,19 +11,18 @@ Opsæt statisk layout for hele siden
 - Arangementer (Daniel
 - Selskabsmenu (Victor)
 - Kontakt (Lasse)
-- selskaber
-- Buffet
-- Side for kunstnere der vil spille
+- Buffet (Lasse)
+- Selskaber (Victor)
+- Login til adminpanel (Simon)
+- Side for kunstnere der vil spille (måske bare en tekst med opfordring til henvendelse pr. mail)
 - Adminpanel
-- Bookingsystem
 
 Hovedfunktioner
-- Opstæning af database
+- Opsætning af database
 - Integrer events m. facebook API (Frederik)
 - Opsæt adminpanels funktionalitet
-- Lav bookingsystem
 - opsæt slider-funktion
-- Google maps integration (Simon)
+- Google maps integration (Simon (skal optimeres til mobil))
 
 Ekstra funktioner
 - gør siden SEO-venlig
