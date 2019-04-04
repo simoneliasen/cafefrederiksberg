@@ -58,6 +58,7 @@
 
 <div class="container">
   <div>
+<<<<<<< HEAD
 
     <div class="five columns">
       <div class="selskab_text_position">
@@ -83,16 +84,20 @@
 
 
 
-  <div>
-    <div class="four columns">
-      <div class="selskab_img_position">
-        <img src="img/Happyfish.jpg" alt="Placeholder fish" height="250px" width="300px">
-      </div>
+=======
+    <div class="six columns">
+      <p> TEST </p>
     </div>
   </div>
-</div>
-<br>
+  
+>>>>>>> 00251b96d39a7e2cc9fa4a1826af6c880502af54
+  <div>
+    <div class="six columns">
+      <img src="img/Happyfish.jpg" alt="Placeholder fish" height="150px" width="100px">
+    </div>
+  </div>
 
+<<<<<<< HEAD
 <div class="bg_dark">
   <div class="container">
     <div class="four columns">
@@ -120,7 +125,10 @@
   fringilla. Viverra ipsum nunc aliquet bibendum. <span>
   </div>
  </div>
+=======
+>>>>>>> 00251b96d39a7e2cc9fa4a1826af6c880502af54
 </div>
+
 
 
 
