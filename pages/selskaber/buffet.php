@@ -156,14 +156,14 @@
 </div>
 
 <!-- Buffet 2 -->
-
+<div id="Buffet_2">
 <div class="container buffet_2">
   <div class="row buffet_even">
 
     <div class="six columns">
       <div class="buffet_placeholder_img_left"></div>
     </div>
-  <div id="Buffet_2">
+
     <div class="six columns">
       <h2>Buffet 2</h2>
 
@@ -222,10 +222,10 @@
       </div>
 
     </div>
-  </div>
+
   </div>
 </div>
-
+</div>
 <!-- Buffet 3 -->
 <div id="Buffet_3">
 <div class="bg_dark">
