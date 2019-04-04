@@ -54,85 +54,162 @@
     </div>
   </div>
 
-  <!-- Kontakt info -->
-  <div class="container opening_times">
-    <div class="row">
+    <div class="container opening_info">
+      <div class="row opening_information">
         <div class="six columns">
-          <h2>Åbningstider:</h2>
+          <h2 class="opening_headline">Åbningstider:</h2>
+
+            <div class="opening_time_day">
+              <div class="opening_day">
+                Mandag
+              </div>
+              <div class="opening_time">
+                Kl. 10.00-00.00
+              </div>
+            </div>
 
 
-            <div class="opening_day">
-              Mandag
-            </div>
-            <div class="opening_times">
-              Kl. 10.00-00.00
-            </div>
-
-
-          <div class="buffet_price">
-            <div class="buffet_price_info">
-              Tirsdag
-            </div>
-            <div class="buffet_price_price">
-              Kl. 10.00-00.00
-            </div>
+        <div class="opening_time_day">
+          <div class="opening_day">
+            Tirsdag
           </div>
-
-          <div class="buffet_price">
-            <div class="buffet_price_info">
-              Onsdag
-            </div>
-            <div class="buffet_price_price">
-              Kl. 10.00-00.00
-            </div>
+          <div class="opening_time">
+            Kl. 10.00-00.00
           </div>
-
-          <div class="buffet_price">
-            <div class="buffet_price_info">
-              Torsdag
-            </div>
-            <div class="buffet_price_price">
-              Kl. 10.00-03.00
-            </div>
-          </div>
-
-          <div class="buffet_price">
-            <div class="buffet_price_info">
-              Fredag
-            </div>
-            <div class="buffet_price_price">
-              Kl. 10.00-03.00
-            </div>
-          </div>
-
-          <div class="buffet_price">
-            <div class="buffet_price_info">
-              Lørdag
-            </div>
-            <div class="buffet_price_price">
-              Kl. 08.00-03.00
-            </div>
-          </div>
-
-          <div class="buffet_price">
-            <div class="buffet_price_info">
-              Søndag
-            </div>
-            <div class="buffet_price_price">
-              Kl. 08.00-00.00
-            </div>
-          </div>
-
         </div>
 
+    <div class="opening_time_day">
+      <div class="opening_day">
+        Onsdag
+      </div>
+      <div class="opening_time">
+        Kl. 10.00-00.00
+      </div>
+    </div>
 
-      <div class="six columns">
-        <div class="buffet_placeholder_img_right"></div>
+    <div class="opening_time_day">
+      <div class="opening_day">
+        Torsdag
+      </div>
+      <div class="opening_time">
+        Kl. 10.00-03.00
+      </div>
+    </div>
+
+    <div class="opening_time_day">
+      <div class="opening_day">
+        Fredag
+      </div>
+      <div class="opening_time">
+        Kl. 10.00-03.00
+      </div>
+    </div>
+
+    <div class="opening_time_day">
+      <div class="opening_day">
+        Lørdag
+      </div>
+      <div class="opening_time">
+        Kl. 08.00-03.00
+      </div>
+    </div>
+
+    <div class="opening_time_day">
+      <div class="opening_day">
+        Søndag
+      </div>
+      <div class="opening_time">
+        Kl. 08.00-00.00
+      </div>
+    </div>
+
+  </div>
+
+
+
+    <div class="six columns">
+      <h2 class="opening_headline">Kontakt informationer:</h2>
+
+      <div class="opening_time_day">
+        <div class="opening_day_party">
+          Adresse
+        </div>
+        <div class="opening_time_right">
+          Hadsundvej 1B
+        </div>
+      </div>
+
+      <div class="opening_time_day">
+        <div class="opening_day_party">
+          By
+        </div>
+        <div class="opening_time_right">
+          9000 Aalborg, Danmark
+        </div>
+      </div>
+
+      <div class="opening_time_day">
+        <div class="opening_day_party">
+          Telefon
+        </div>
+        <div class="opening_time_right">
+          (+45) 98 12 03 83
+        </div>
+      </div>
+
+      <div class="opening_time_day">
+        <div class="opening_day_party">
+          E-mail
+        </div>
+        <div class="opening_time_right">
+          cafefrederiksberg@gmail.com
+        </div>
       </div>
 
     </div>
   </div>
+  <div class="row kitchen_and_party">
+    <div class="six columns">
+      <h2 class="opening_headline">Køkken:</h2>
+
+      <div class="contact_info_party">
+        <div class="opening_day">
+          Hver dag
+        </div>
+        <div class="opening_time">
+          Kl. 12.00-14.00 <br> Kl. 17.00-20.00
+        </div>
+      </div>
+
+    </div>
+
+    <div class="six columns">
+
+      <h2 class="opening_headline">Vedrørende fest:</h2>
+
+      <div class="contact_info_party">
+        <div class="opening_day_party">
+          Telefon
+        </div>
+        <div class="opening_time_right">
+          (+45) 22 42 43 00
+        </div>
+      </div>
+
+      <div class="contact_info_party">
+        <div class="opening_day_party">
+          E-mail
+        </div>
+        <div class="opening_time_right">
+          Frederiksbergselskaber@gmail.com
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </div>
+
 <!--Google maps placeholder  -->
 <center>
   <div class="mapouter">

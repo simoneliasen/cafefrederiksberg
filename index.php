@@ -28,8 +28,6 @@
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include 'includes/header.php'; ?>
 
-
-
   <!--Online bestilling  -->
   <div class="wrapper onlineBestilling">
     <div class="container onlineBestilling">
@@ -37,19 +35,15 @@
         <!-- Bestil online tekst  -->
         <div class="six columns bestilonline">
           <div class="Bestil_onlineindex">
-            <h2 id="bestilonlineheader">Bestil online:</h2>
+            <h2 id="bestilonlineheader">Bestil online</h2>
           </div>
         </div>
-        <!-- Bestil bord online knap  -->
-        <div class="two columns bestilonline">
+        <div class="six columns bestilonline knapper">
+            <!-- Bestil bord online knap  -->
           <a class="button button-primary bestil" href="pages/booking.php">Bord</a>
-        </div>
         <!-- Bestil Biletter online knap  -->
-        <div class="two columns bestilonline">
           <a class="button button-primary bestil" href="pages/booking.php">Biletter</a>
-        </div>
         <!-- Bestil Take-away online knap  -->
-        <div class="two columns bestilonline">
           <a class="button button-primary bestil" href="pages/booking.php">Take-away</a>
         </div>
 
@@ -68,8 +62,8 @@
         <h4 id="introhistoriecaféfrederiksbergsubheading"> Siden år 1900</h4>
         <p id="introhistoriecaféfrederiksbergtext"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis neque in nunc varius fringilla.
           Morbi bibendum nunc ut posuere tempor. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
-          Proin vel mauris sagittis. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
-          Proin vel mauris sagittis Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
+          Proin vel mauris sagittis. Donec sit amet elementum purus.  ProinProinProin vel mauoin vel mauris Donec sit amet  Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
+          Proin vel mauris sagittis Donec sit amet elementum purus. Maecenas eleifendimentum.
           sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
         </p>
         <!--se Café frederiksbergs tidlinje knap  -->
@@ -122,6 +116,7 @@
   <!-- Katalog (Kopi af Katalog under Events)  -->
   <div class="bg_dark">
     <div class="container">
+
       <div class="row">
         <!-- Billede af katalog  -->
         <div class="one-half column frede_live_katalog">
@@ -149,45 +144,24 @@
 
   <!--Events: Facebook implementering  -->
   <div class="container">
+    <div class="events_overskrift">
+      <h2>Frede Live</h2>
+      <h6>Kommende Events</h6>
+    </div>
     <div class='sk-fb-event' data-embed-id='22281'></div>
     <script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
   </div>
-  <!-- Midlertidigt <center> tag -->
-  <center>
-    <a class="button alleeventsforside" href="pages/events.php">Se alle kommende events <u>her</u></a>
-  </center>
-  </div>
 
-<!--Fjerner link til widget  -->
-  <style>
-  body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4) > a {
-    display: none;
-  }
-  </style>
+<!--Knap til alle events  -->
+<div class="row alleeventsforside">
+  <a class="button alleeventsforside" href="pages/events.php">Se alle kommende events <u>her</u></a>
+</div>
 
-
-  <!--Google maps placeholder  -->
-  <center>
+  <!--Google maps  -->
     <div class="mapouter">
-      <div class="gmap_canvas"><iframe width="1920" height="575" id="gmap_canvas" src="https://maps.google.com/maps?q=Caf%C3%A9%20Frederiksberg%20Aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
+      <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Caf%C3%A9%20Frederiksberg%20Aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
           marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div>
-      <style>
-        .mapouter {
-          position: relative;
-          text-align: right;
-          height: 575px;
-          width: 1920px;
-        }
-
-        .gmap_canvas {
-          overflow: hidden;
-          background: none !important;
-          height: 575px;
-          width: 1920px;
-        }
-      </style>
-    </div>
-  </center>
+  </div>
 
   <!--Inddrager footer fra "includes/footer.php"-->
   <?php include 'includes/footer.php'; ?>

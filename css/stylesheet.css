@@ -16,6 +16,9 @@ E. GENEREL
 6.   KONTAKT
 7.  RESTAURANT
 8.  SELSKABER
+8.1 SELSKABSMENU
+8.2 BUFFET
+8.3 ARRANGEMENER
 9.  TIDSLINJE
 COLORS
 -----------
@@ -150,32 +153,112 @@ video {
 }
 
 /*..............................................D FOOTER */
+/*Adresse  */
+.row.adresse-wrapper {
+  display: block;
+}
+.adresseleft {
+  display: inline;
+  float: left;
+}
+.adresseright {
+    display: inline;
+      float: right;
+        text-align: right;
+}
+/*Telefon  */
+.row.telefon-wrapper {
+  display: block
+margin-top: 1.3rem;
+}
+.telefonleft {
+  display: inline;
+  float: left;
+}
+.telefonright {
+  display: inline;
+  float: right;
+  text-align: right;
+}
+/*E-mail */
+.row.e-mail-wrapper {
+  display: block;
+margin-top: 1rem;
+}
+.e-mailleft {
+  display: inline;
+    float: left;
+}
+.e-mailright {
+    display: inline;
+  float: right;
+  text-align: right;
+}
 
+/*Mindre skrift til selskaber  */
+.tilselskaber {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.four.columns.åbningstider ul,.four.columns.links ul ,.four.columns.kontaktos ul {
+  font-size: 30px;
+  font-family: "Poppins";
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.four.columns.kontaktos ul,.four.columns.kontaktos li, .four.columns.åbningstider ul,.four.columns.åbningstider li,.four.columns.links ul,.four.columns.links li {
+  text-align: center;
+  list-style-type: none;
+}
+
+#instagramtext,#facebooktext {
+  display: inline;
+  margin-left: 1rem;
+}
 /*..............................................1 INDEX */
 
-/*Baggrundsfarve for sektion  */
+/*Baggrundsfarve for Bestil online sektion  */
 .wrapper.onlineBestilling {
-background-color: #343434;
+background-color: #101010;
 }
-/*Overskriftsstørrelse  */
+/*Bestil online overskrift  */
 #bestilonlineheader {
-  font-size: 30px;
-  font-weight: bold;
-}
-/*Knappers farve  */
-.button.button-primary.bestil{
-  background-color: #CCB380;
-  border-color: #CCB380;
-}
-/*Placering  */
-.two.columns.bestilonline, .six.columns.bestilonline {
-  margin-top: 1rem;
-  margin-bottom: 0rem;
+  font-size: 1.8rem;
+  color: white;
+  font-family: 'Inter var';
 }
 
+/*Bestil online knapper   */
+.button.button-primary.bestil{
+  background-color: transparent;
+  border-radius: 0.5rem;
+  border-color: #CCB380;
+}
+.button.button-primary.bestil:hover{
+  background-color: #CCB380;
+}
+
+/*Opsætning af venstre sektion  */
+ .six.columns.bestilonline {
+  margin-top: 1rem;
+}
+.six.columns.bestilonline.knapper {
+  padding-left: 2rem;
+}
+.six.columns.bestilonline.knapper > a {
+  margin-left: 1rem;
+
+}
+
+/* Introhistorie  */
+.wrapper.introHistorie {
+  background-color: #1E1D20;
+}
 .container.introHistorie {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
+  background-color: #1E1D20;
 }
 #introhistoriecaféfrederiksbergheading {
 font-family: "Playfair Display";
@@ -197,8 +280,8 @@ line-spacing: 32px;
   line-spacing: 23px;
 }
 .introHistorie {
-background-color: #101010;
-margin-top: 1rem;
+padding-bottom: 0.4rem;
+padding-top: 0.4rem;
 }
 .six.columns.introHistorie {
   margin-top: 1rem;
@@ -209,8 +292,9 @@ margin-top: 1rem;
   height: 20.952rem;
 }
 
+/*Indholdsoversigt over siden  */
 .indholdsoversigt {
-  background-color: #343434;
+  background-color: #101010;
 }
 .three.columns.indholdsoversigt > img{
   margin: 0 auto;
@@ -227,7 +311,6 @@ margin-top: 1rem;
   font-size: 24px;
   font-weight: bold;
   margin-top: 1.2rem;
-
 }
 .three.columns.indholdsoversigt > p{
   margin: 0 auto;
@@ -236,12 +319,35 @@ margin-top: 1rem;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
-
+/*"Alle events knap" fører til event-side  */
+.row.alleeventsforside {
+  text-align: center;
+}
 .button.alleeventsforside {
   margin: 0 auto;
-  margin-bottom: 4.2rem;
-  margin-top: 2.2rem;
+  margin-bottom: 2rem;
+}
+.row.alleeventsforside {
   text-align: center;
+  margin-top: -1.2rem;
+    margin-bottom: 1rem;
+}
+/*Google maps  */
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 35rem;
+  width: 100%;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 100%;
+        }
+/*Fjerner link til facebook widget  */
+body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4) > a {
+  display: none;
 }
 /*..............................................2 ADMIN */
 
@@ -326,27 +432,47 @@ margin-top: 1rem;
 }
 
 /*..............................................6 KONTAKT */
-.buffet_price_overskrift p{
-  font-style: italic;
-  font-size: 1.1rem;
-  color: #ccc;
+.opening_headline{
+  padding: 1rem 0;
+  margin-bottom: 2.5rem 0;
+}
+.opening_time_day{
+  padding-bottom: 2.3rem;
 }
 
 .opening_day{
-  width: 80%;
+  width: 50%;
   float: left;
+  font-weight: bold;
 }
 
-.opening_times{
-  width: 20%;
-
-  font-family: 'Playfair display';
-  color: #CCB380;
+.opening_day_party{
+  width: 25%;
+  float: left;
   font-weight: 700;
 }
 
-.buffet_price{
-  padding-bottom: 2.5rem;
+.opening_time{
+  width: 50%;
+  float: right;
+
+  font-weight: 700;
+}
+.opening_time_right{
+  width: 85%;
+  float: middle;
+
+  font-weight: 700;
+}
+
+.contact_info{
+padding-bottom: 3rem;
+margin-bottom: 2.5rem;
+}
+
+.contact_info_party{
+padding-bottom: 1rem;
+margin-bottom: 2.5rem;
 }
 
 /*..............................................7 RESTAURANT */
@@ -384,18 +510,6 @@ margin-top: 1rem;
   }
 
 
-.container.restaurant{
-
-}
-
-.row.restaurant {
-text-align: center;
-
-}
-
-.one-third.column.restaurant{
-display: inline-block;
-}
 
 .Kontrolrapport_restaurant{
 margin:0 auto;
@@ -431,6 +545,12 @@ margin:0 auto;
   display: inline-block;
   text-align: left;
   width: 80%;
+}
+
+.selskab_text_title{
+  color: #CCB380;
+  font-family: 'Playfair Display';
+  width: 100%;
 }
 
 .selskab_text_atttributes{
