@@ -492,19 +492,6 @@ Width: 30%;
 }
 
 /* Buffet priser */
-.buffet_priser_info{
-  display: inline;
-  font-size: 20px;
-  color: white;
-  font-family: "Poppins"
-}
-.buffet_pris{
-  display: inline;
-  font-family: "Playfair Display";
-  font-size: 18px;
-  color: #CCB380;
-}
-
 .buffet_price_overskrift p{
   font-style: italic;
   font-size: 1.1rem;
@@ -527,9 +514,6 @@ Width: 30%;
 .buffet_price{
   padding-bottom: 2.5rem;
 }
-
-
-
 
 /* .............................................8.3 ARRANGEMENTER */
 
