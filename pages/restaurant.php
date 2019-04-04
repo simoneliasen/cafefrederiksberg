@@ -45,13 +45,13 @@
 
 <div class="container restaurant">
 
-<h2 id="restaurant_overskrift">Menukort</h2>
-
-</div>
-
 <div class="row restaurant">
 
-<div class="one-third column restaurant">
+<div class="one-third column restaurant offset-by-three">
+
+  <h2 id="restaurant_overskrift">Menukort</h2>
+
+
           <!-- Item starts -->
           <div class="menu-item">
             <div class="menu-item-name">
@@ -272,7 +272,7 @@
 
 
       </div>
-
+</div>
       <a class="Kontrolrapport_restaurant" href="https://www.findsmiley.dk/25727" target="_blank"><img src="../img/kontrolrapport.jpeg" width="80" height="40" border="0"></a>
 
 
