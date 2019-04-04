@@ -429,7 +429,6 @@ margin:0 auto;
 .selskab_button_position{
   margin-bottom: 1px;
 }
-<<<<<<< HEAD
 
 .selskab_text_position{
   display: inline-block;
@@ -441,22 +440,6 @@ margin:0 auto;
   color: #CCB380;
   font-family: 'Playfair Display';
   width: 100%;
-}
-
-.selskab_text_atttributes{
-  font-size: 0.8rem;
-  width: 75%;
-  padding-top: 50px;
-  margin-top: 50px;
-
-}
-=======
->>>>>>> ab7746ad46d8b6c5f253b23842a2af418385b0e9
-
-.selskab_text_position{
-  display: inline-block;
-  text-align: left;
-  width: 80%;
 }
 
 .selskab_text_atttributes{
