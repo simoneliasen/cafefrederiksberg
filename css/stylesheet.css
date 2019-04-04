@@ -158,17 +158,23 @@ video {
 
 /*Baggrundsfarve for sektion  */
 .wrapper.onlineBestilling {
-background-color: #343434;
+background-color: #1E1D20;
 }
 /*Overskriftsstørrelse  */
 #bestilonlineheader {
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 1.8rem;
+  color: white;
+  font-family: 'Inter var';
 }
 /*Knappers farve  */
 .button.button-primary.bestil{
-  background-color: #CCB380;
+  background-color: transparent;
+  border-radius: 0.5rem;
   border-color: #CCB380;
+}
+
+.button.button-primary.bestil:hover{
+  background-color: #CCB380;
 }
 /*Placering  */
 .two.columns.bestilonline, .six.columns.bestilonline {

@@ -35,7 +35,7 @@
         <!-- Bestil online tekst  -->
         <div class="six columns bestilonline">
           <div class="Bestil_onlineindex">
-            <h2 id="bestilonlineheader">Bestil online:</h2>
+            <h2 id="bestilonlineheader">Bestil online</h2>
           </div>
         </div>
         <!-- Bestil bord online knap  -->
