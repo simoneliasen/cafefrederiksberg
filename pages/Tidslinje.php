@@ -36,7 +36,7 @@
 
   <div class="container">
     <div class="row">
-      <div class="five columns timeline_column" style="background-color: blue; height: 200px; top: 200px;">
+      <div class="five columns timeline_column" style="height: 200px; top: 200px;">
 
       </div>
 
@@ -50,7 +50,7 @@
               <div class="line_item1">
                 <h2>1900</h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-              <img src="../../img/Butikfront.png" width="400rem" height="auto">
+              <img src="../Butikfront.png" width="400rem" height="auto">
               </div>
 
               <div class="line_item2">
@@ -80,7 +80,7 @@
 
       </div>
 
-      <div class="five columns" style="background-color: red; height: 200px; margin-top: 300px;">
+      <div class="five columns" style=" height: 200px; margin-top: 300px;">
       </div>
     </div>
   </div>
