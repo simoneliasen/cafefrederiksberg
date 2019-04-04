@@ -177,7 +177,13 @@ background-color: #1E1D20;
   background-color: #CCB380;
 }
 /*Placering  */
-.two.columns.bestilonline, .six.columns.bestilonline {
+
+.six.columns.bestilonline {
+  margin-top: 1.2rem;
+}
+
+
+.two.columns.bestilonline {
   margin-top: 1rem;
   margin-bottom: 0rem;
 }
