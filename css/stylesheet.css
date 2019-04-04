@@ -16,6 +16,9 @@ E. GENEREL
 6.   KONTAKT
 7.  RESTAURANT
 8.  SELSKABER
+8.1 SELSKABSMENU
+8.2 BUFFET
+8.3 ARRANGEMENER
 9.  TIDSLINJE
 COLORS
 -----------
@@ -398,9 +401,18 @@ margin-top: 1rem;
   width: 80%;
 }
 
+.selskab_text_title{
+  color: #CCB380;
+  font-family: 'Playfair Display';
+  width: 100%;
+}
+
 .selskab_text_atttributes{
   font-size: 0.8rem;
   width: 75%;
+  padding-top: 50px;
+  margin-top: 50px;
+
 }
 
 .selskab_img_position{

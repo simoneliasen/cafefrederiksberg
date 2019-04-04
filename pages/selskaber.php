@@ -58,12 +58,14 @@
 
 <div class="container">
   <div>
-    <div class="one columns">
 
-    </div>
-    <div class="seven columns">
+    <div class="five columns">
       <div class="selskab_text_position">
-      <span class="selskab_text_atttributes">Lorem ipsum dolor sit amet,
+        <span class="selskab_text_title">
+          Test tittlele
+        </span><br>
+      <span class="selskab_text_atttributes">
+        Lorem ipsum dolor sit amet,
         consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Morbi tempus iaculis urna id.
         Nulla porttitor massa id neque aliquam vestibulum morbi blandit. Non
@@ -93,12 +95,15 @@
 
 <div class="bg_dark">
   <div class="container">
-    <div class="five columns">
+    <div class="four columns">
       <div class="selskab_img_position">
         <img src="img/Happyfish.jpg" alt="Placeholder fish" height="250px" width="300px">
       </div>
     </div>
-   <div class="seven columns">
+   <div class="five columns">
+     <span class="selskab_text_title">
+       Test tittlele
+     </span><br>
      <span class="selskab_text_atttributes">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan
