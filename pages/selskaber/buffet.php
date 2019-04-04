@@ -47,7 +47,7 @@
       <div class="six columns">
         <p>Når du holder fest, kan det godt løbe løbsk inden regningen kommer - bare ikke hos os!</p>
         <p>Vi hylder nemlig princippet om at man kender udgifterne på forhånd. Selvfølgelig serverer vi da gerne drinks og spiritus, men kun efter forudgående aftale, så du selv ved hvad du har sagt ja til. og uanset hvor mange øl Onkel Hans kan drikke, bliver regningen den samme.</p>
-        <P>Vi er stolte over at kunne fremvise 5 elite smileys - <a href="https://www.findsmiley.dk/25727" target="_blank"><img src="../../img/kontrolrapport.JPEG" width="60" height="30" border="0"></a>
+        <P>Vi er stolte over at kunne fremvise 5 elite smileys - <a href="https://www.findsmiley.dk/25727" target="_blank"><img src="img/kontrolrapport.JPEG" width="60" height="30" border="0"></a>
 
       </div>
       <div class="six columns">

@@ -33,13 +33,14 @@
         <h2 class="header-centertext">Sammensæt din egen menu...<h2>
                 <hr>
           <div class="selskab_menu_overskrift">
-              <h3 class="header-centertext"> Forretter </h3><br>
+              <h2 class="header-centertext"> Forretter </h2><br>
           </div>
 
     </div>
 
     <div class="bg_dark">
         <div class="container">
+          <div class="selskab_menu_itemlist_padding">
             <!-- Her tilføjes hver enkelt ret samt pris -->
             <div class="selskab_menu_item">
                 <div class="selskab_menu_item_name">
@@ -152,18 +153,17 @@
                 </div>
             </div>
 
-
         </div>
-
-
-    </div>
+      </div>
+  </div>
 
     <!-- Hoved retter-------------------->
     <div class="selskab_menu_overskrift">
         <h3 class="header-centertext"> Hovedretter </h3><br>
     </div>
-    <div class="bg_dark">
-        <div class="container">
+  <div class="bg_dark">
+      <div class="container">
+        <div class="selskab_menu_itemlist_padding">
           <div class="selskab_menu_item">
               <div class="selskab_menu_item_name">
                   <span class="selskab_menu_item_fontstyle"> Svinekam</span>
@@ -255,12 +255,14 @@
           </div>
         </div>
       </div>
+    </div>
 
       <div class="selskab_menu_overskrift">
           <h3 class="header-centertext"> Desserter </h3><br>
       </div>
-          <div class="bg_dark">
-              <div class="container">
+        <div class="bg_dark">
+            <div class="container">
+              <div class="selskab_menu_itemlist_padding">
                 <div class="selskab_menu_item">
                     <div class="selskab_menu_item_name">
                         <span class="selskab_menu_item_fontstyle"> Hjemmelavet vanilje-is</span>
@@ -330,15 +332,19 @@
                         <span class="selskab_menu_item_fontstyle">- per couv. kr. 55,-</span>
                     </div>
                 </div>
+
               </div>
             </div>
+          </div>
 
             <div class="selskab_menu_overskrift">
                 <h3 class="header-centertext"> Natmad </h3><br>
                 <h5 class="header-centertext"> - en go' afslutning på din fest</h5><br>
             </div>
-                <div class="bg_dark">
-                    <div class="container">
+              <div class="bg_dark">
+                  <div class="container">
+                    <div class="selskab_menu_itemlist_padding">
+
                       <div class="selskab_menu_item">
                           <div class="selskab_menu_item_name">
                               <span class="selskab_menu_item_fontstyle"> klar suppe</span>
@@ -420,6 +426,7 @@
                       </div>
                     </div>
                   </div>
+                </div>
 
 
 

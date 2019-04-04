@@ -116,11 +116,12 @@ p {
 }
 /*..............................................C HEADER */
 
-.bg_img{
+.header_bg_img{
   width: 100%;
   height: 75vh;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .header_text{
@@ -142,9 +143,7 @@ video {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  min-width: 100%;
-  min-height: 100%;
+  height: 75vh;
   z-index: -1;
   object-position: center;
   object-fit: cover;
@@ -390,7 +389,11 @@ margin-top: 1rem;
 }
 
 .selskab_menu_overskrift{
+padding-top: 20px;
+}
 
+.selskab_menu_itemlist_padding{
+  padding-top: 35px;
 }
 
 .selskab_menu_item{
@@ -488,19 +491,6 @@ Width: 30%;
 }
 
 /* Buffet priser */
-.buffet_priser_info{
-  display: inline;
-  font-size: 20px;
-  color: white;
-  font-family: "Poppins"
-}
-.buffet_pris{
-  display: inline;
-  font-family: "Playfair Display";
-  font-size: 18px;
-  color: #CCB380;
-}
-
 .buffet_price_overskrift p{
   font-style: italic;
   font-size: 1.1rem;
@@ -523,9 +513,6 @@ Width: 30%;
 .buffet_price{
   padding-bottom: 2.5rem;
 }
-
-
-
 
 /* .............................................8.3 ARRANGEMENTER */
 
