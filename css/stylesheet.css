@@ -550,7 +550,7 @@ Width: 30%;
   width: 50%;
   position: absolute;
   left: 50%;
-  top: 300px;
+  top: 450px;
 }
 .line_item3{
   height: 3px;
@@ -558,7 +558,7 @@ Width: 30%;
   width: 50%;
   position: absolute;
   right: 50%;
-  top: 450px;
+  top: 750px;
 }
 .line_item4{
   height: 3px;
@@ -566,7 +566,7 @@ Width: 30%;
   width: 50%;
   position: absolute;
   left: 50%;
-  top: 600px;
+  top: 1050px;
 }
 .line_item5{
   height: 3px;
@@ -574,7 +574,7 @@ Width: 30%;
   width: 50%;
   position: absolute;
   right: 50%;
-  top: 750px;
+  top: 1350px;
 }
 .line_item6{
   height: 3px;
@@ -582,7 +582,7 @@ Width: 30%;
   width: 50%;
   position: absolute;
   left: 50%;
-  top: 900px;
+  top: 1650px;
 }
 .timeline_column{
   margin-top: 150px;
