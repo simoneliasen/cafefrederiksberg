@@ -221,7 +221,7 @@ margin-top: 1rem;
 
 /*Baggrundsfarve for sektion  */
 .wrapper.onlineBestilling {
-background-color: #1E1D20;
+background-color: #101010;
 }
 /*Overskriftsstørrelse  */
 #bestilonlineheader {
@@ -229,31 +229,30 @@ background-color: #1E1D20;
   color: white;
   font-family: 'Inter var';
 }
-/*Knappers farve  */
+
+/*Knapper   */
 .button.button-primary.bestil{
   background-color: transparent;
   border-radius: 0.5rem;
   border-color: #CCB380;
 }
-
 .button.button-primary.bestil:hover{
   background-color: #CCB380;
 }
-/*Placering  */
 
 .six.columns.bestilonline {
-  margin-top: 1.2rem;
-}
-
-
-.two.columns.bestilonline {
   margin-top: 1rem;
-  margin-bottom: 0rem;
+}
+.two.columns.bestilonline {
+  margin-top: 0.8rem;
 }
 
+.wrapper.introHistorie {
+  background-color: #1E1D20;
+}
 .container.introHistorie {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
+  background-color: #1E1D20;
 }
 #introhistoriecaféfrederiksbergheading {
 font-family: "Playfair Display";
@@ -275,8 +274,8 @@ line-spacing: 32px;
   line-spacing: 23px;
 }
 .introHistorie {
-background-color: #101010;
-margin-top: 1rem;
+padding-bottom: 0.4rem;
+padding-top: 0.4rem;
 }
 .six.columns.introHistorie {
   margin-top: 1rem;
@@ -288,7 +287,7 @@ margin-top: 1rem;
 }
 
 .indholdsoversigt {
-  background-color: #343434;
+  background-color: #101010;
 }
 .three.columns.indholdsoversigt > img{
   margin: 0 auto;

@@ -66,8 +66,8 @@
         <h4 id="introhistoriecaféfrederiksbergsubheading"> Siden år 1900</h4>
         <p id="introhistoriecaféfrederiksbergtext"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis neque in nunc varius fringilla.
           Morbi bibendum nunc ut posuere tempor. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
-          Proin vel mauris sagittis. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
-          Proin vel mauris sagittis Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
+          Proin vel mauris sagittis. Donec sit amet elementum purus.  ProinProinProin vel mauoin vel mauris Donec sit amet  Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
+          Proin vel mauris sagittis Donec sit amet elementum purus. Maecenas eleifendimentum.
           sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
         </p>
         <!--se Café frederiksbergs tidlinje knap  -->
@@ -120,6 +120,7 @@
   <!-- Katalog (Kopi af Katalog under Events)  -->
   <div class="bg_dark">
     <div class="container">
+
       <div class="row">
         <!-- Billede af katalog  -->
         <div class="one-half column frede_live_katalog">
@@ -147,6 +148,10 @@
 
   <!--Events: Facebook implementering  -->
   <div class="container">
+    <div class="events_overskrift">
+      <h2>Frede Live</h2>
+      <h6>Kommende Events</h6>
+    </div>
     <div class='sk-fb-event' data-embed-id='22281'></div>
     <script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
   </div>
