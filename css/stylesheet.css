@@ -390,7 +390,11 @@ margin-top: 1rem;
 }
 
 .selskab_menu_overskrift{
+padding-top: 20px;
+}
 
+.selskab_menu_itemlist_padding{
+  padding-top: 35px;
 }
 
 .selskab_menu_item{
