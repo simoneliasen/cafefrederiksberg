@@ -28,39 +28,93 @@
 <?php include '../includes/header.php'; ?>
 
 
-<br>
+<div class="bg_dark">
+  <div class="container">
+   <div class="header-centertext">
+     <div class="selskab_button_position">
 
-
-<div class="container">
-  <div class="header-centertext">
-    <div class="selskab_button_position">
-
-      <div class="four columns">
-        <span class="selskab_button">Selskabsmenu</span>
+        <div class="four columns">
+          <div class="selskab_button">
+          <span class="selskab_button_text">Selskabsmenu</span>
+        </div>
       </div>
 
-      <div class="four columns">
-        <span class="selskab_button">Buffets</span>
+        <div class="four columns">
+          <div class="selskab_button">
+          <span class="selskab_button_text">Buffets</span>
+        </div>
       </div>
 
-      <div class="four columns">
-        <span class="selskab_button">Arrangementer</span>
+        <div class="four columns">
+          <div class="selskab_button">
+          <span class="selskab_button_text">Arrangementer</span>
+        </div>
       </div>
 
+      </div>
     </div>
   </div>
 </div>
 
-<div class="bg_dark">
-    <div class="container">
-      <div class="six columns">
-        <p> TEST </p>
-      </div>
-      <div class="six columns">
-        <img src="../img/Happyfish.jpg" alt="Placeholder fish" height="300px" width="200px">
-      </div>
+<div class="container">
+  <div>
+    <div class="one columns">
 
     </div>
+    <div class="seven columns">
+      <div class="selskab_text_position">
+      <span class="selskab_text_atttributes">Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Morbi tempus iaculis urna id.
+        Nulla porttitor massa id neque aliquam vestibulum morbi blandit. Non
+        quam lacus suspendisse faucibus interdum. Turpis cursus in hac habitasse
+        platea dictumst quisque sagittis. Pellentesque elit ullamcorper
+        dignissim cras tincidunt lobortis. Eu facilisis sed odio morbi.
+        Lacinia at quis risus sed vulputate odio. A erat nam at lectus.
+        Pretium quam vulputate dignissim suspendisse in est ante. Neque vitae
+        tempus quam pellentesque nec. Id diam vel quam elementum. Faucibus nisl
+        tincidunt eget nullam. Morbi non arcu risus quis varius quam. Malesuada
+        nunc vel risus commodo viverra.</span>
+     </div>
+   </div>
+ </div>
+
+
+
+  <div>
+    <div class="four columns">
+      <div class="selskab_img_position">
+        <img src="img/Happyfish.jpg" alt="Placeholder fish" height="250px" width="300px">
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="bg_dark">
+  <div class="container">
+    <div class="five columns">
+      <div class="selskab_img_position">
+        <img src="img/Happyfish.jpg" alt="Placeholder fish" height="250px" width="300px">
+      </div>
+    </div>
+   <div class="seven columns">
+     <span class="selskab_text_atttributes">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan
+  in nisl nisi scelerisque eu. Mauris a diam maecenas sed enim ut sem viverra.
+  Molestie a iaculis at erat pellentesque adipiscing commodo elit at. Viverra
+  suspendisse potenti nullam ac tortor vitae purus. Tortor vitae purus faucibus
+  ornare. Duis convallis convallis tellus id interdum velit laoreet id donec.
+  Netus et malesuada fames ac turpis egestas maecenas. Elit eget gravida cum
+  sociis natoque penatibus. Euismod lacinia at quis risus sed vulputate odio.
+  Elit eget gravida cum sociis natoque penatibus et magnis dis. Purus ut
+  faucibus pulvinar elementum. Eget duis at tellus at urna condimentum mattis
+  pellentesque id. Metus dictum at tempor commodo ullamcorper a lacus.
+  In egestas erat imperdiet sed euismod. Luctus venenatis lectus magna
+  fringilla. Viverra ipsum nunc aliquet bibendum. <span>
+  </div>
+ </div>
 </div>
 
 

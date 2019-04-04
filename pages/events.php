@@ -58,13 +58,13 @@
   </div>
 </div>
 
+
 <div class="container">
   <div class="events_overskrift">
     <h2>Frede Live</h2>
     <h6>Kommende Events</h6>
   </div>
-  <div class='sk-fb-event' data-embed-id='22281'></div><script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
-
+<div class='sk-fb-event' data-embed-id='22281'></div><script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
 </div>
 
 <div class="bg_dark">
