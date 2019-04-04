@@ -65,13 +65,13 @@
 
         <div class="menulinje-buffet">
           <ul>
-            <li><a href="#Buffet_1">Buffet 1</a></li>
-            <li><a href="#Buffet_2">Buffet 2</a></li>
-            <li><a href="#Buffet_3">Buffet 3</a></li>
-            <li><a href="#Buffet_4">Buffet 4</a></li>
-            <li><a href="#USA_buffet">USA buffet</a></li>
-            <li><a href="#Italiensk_buffet">Italiensk Buffet</a></li>
-            <li><a href="#Øko_buffet">Øko buffet</a></li>
+            <li><a href="pages/selskaber/buffet.php#Buffet_1">Buffet 1</a></li>
+            <li><a href="pages/selskaber/buffet.php#Buffet_2">Buffet 2</a></li>
+            <li><a href="pages/selskaber/buffet.php#Buffet_3">Buffet 3</a></li>
+            <li><a href="pages/selskaber/buffet.php#Buffet_4">Buffet 4</a></li>
+            <li><a href="pages/selskaber/buffet.php#USA_buffet">USA buffet</a></li>
+            <li><a href="pages/selskaber/buffet.php#Italiensk_buffet">Italiensk Buffet</a></li>
+            <li><a href="pages/selskaber/buffet.php#Øko_buffet">Øko buffet</a></li>
           </ul>
         </div>
       </div>
@@ -81,11 +81,10 @@
   </div>
 
 <!-- Buffet 1 -->
-
+<div id="Buffet_1">
 <div class="bg_dark">
   <div class="container buffet_1">
     <div class="row buffet_odd">
-      <div id="Buffet_1">
         <div class="six columns">
           <h2>Buffet 1</h2>
 
@@ -145,7 +144,7 @@
           </div>
 
         </div>
-      </div>
+
 
       <div class="six columns">
         <div class="buffet_placeholder_img_right"></div>
@@ -153,6 +152,7 @@
 
     </div>
   </div>
+</div>
 </div>
 
 <!-- Buffet 2 -->
@@ -227,11 +227,10 @@
 </div>
 
 <!-- Buffet 3 -->
-
+<div id="Buffet_3">
 <div class="bg_dark">
   <div class="container buffet_3">
     <div class="row buffet_odd">
-      <div id="Buffet_3">
         <div class="six columns">
           <h2>Buffet 3</h2>
 
@@ -290,7 +289,7 @@
           </div>
 
         </div>
-      </div>
+
 
       <div class="six columns">
         <div class="buffet_placeholder_img_right"></div>
@@ -299,16 +298,17 @@
     </div>
   </div>
 </div>
+</div>
 
 <!-- Buffet 4 -->
-
+<div id="Buffet_4">
 <div class="container buffet_4">
   <div class="row buffet_even">
 
         <div class="six columns">
           <div class="buffet_placeholder_img_left"></div>
         </div>
-    <div id="Buffet_4">
+
       <div class="six columns">
         <h2>Buffet 4</h2>
 
@@ -347,17 +347,17 @@
         </div>
 
       </div>
-    </div>
+
 
   </div>
 </div>
+</div>
 
 <!-- USA buffet -->
-
+<div id="USA_buffet">
 <div class="bg_dark">
   <div class="container USA_buffet">
     <div class="row buffet_odd">
-      <div id="USA_buffet">
         <div class="six columns">
           <h2>USA buffet</h2>
 
@@ -405,7 +405,7 @@
           </div>
 
         </div>
-      </div>
+
 
       <div class="six columns">
         <div class="buffet_placeholder_img_right"></div>
@@ -414,16 +414,16 @@
     </div>
   </div>
 </div>
-
+</div>
 <!-- Italiensk buffet -->
-
+<div id="Italiensk_buffet">
 <div class="container Italiensk_buffet">
   <div class="row buffet_even">
 
         <div class="six columns">
           <div class="buffet_placeholder_img_left"></div>
         </div>
-    <div id="Italiensk_buffet">
+
       <div class="six columns">
         <h2>Italiensk buffet</h2>
 
@@ -464,17 +464,17 @@
         </div>
 
       </div>
-    </div>
+
 
   </div>
 </div>
-
+</div>
 <!-- Øko buffet -->
-
+<div id="Øko_buffet">
 <div class="bg_dark">
   <div class="container buffet_1">
     <div class="row buffet_odd">
-      <div id="Øko_buffet">
+
         <div class="six columns">
           <h2>Øko buffet</h2>
 
@@ -524,7 +524,7 @@
           </div>
 
         </div>
-      </div>
+
 
       <div class="six columns">
         <div class="buffet_placeholder_img_right"></div>
@@ -535,7 +535,7 @@
 </div>
 
 </div>
-
+</div>
 
 
 <!--Indrag footer fra filen includes/footer.php-->
