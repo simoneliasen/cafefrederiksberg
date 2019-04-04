@@ -1,45 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+
+  <!--Side titel  -->
+  <title>Login</title>
+  <!--Standard stylesheet  -->
+  <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+  <!-- Skeleton stylesheet  -->
+  <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
+  <!-- Normalize stylesheet  -->
+  <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+  <!-- Includer Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
 </head>
+
 <body>
 
-<!--Background farve  -->
-<div class="loginbackground">
+  <!--Tilbage til forsiden  -->
   <div class="loginbacktoindex">
-    <p>-- Tilbage til Forsiden </p>
-  <!--Logo  -->
-<div class="loginlogo">
-  <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" width="150rem" height="auto"></a>
-</div>
+    <a href="/cafefrederiksberg/index.php" id="backtofrontpage">
+      <p>Tilbage til Forsiden </p>
+    </a>
+  </div>
 
-</div>
-</div>
+  <!-- Container til indhold på siden -->
+  <div class="container loginpage">
 
-<style>
+    <!--Logo  -->
+    <div class="logologin">
+      <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="500rem" height="auto">
+    </div>
 
+    <!--Centrere Form  -->
+    <div class="formcenter">
 
-.loginbackground {
-  width: 100%
-  height: 100%;
-  background-color: #1E1D20;
-}
+      <!--Form  -->
+      <form action="action_page.php">
 
+        <!--Brugernavn  -->
+        <div class="brugernavn">
+          <label for="username"><b>Brugernavn</b></label>
+          <input type="text" placeholder="Indsæt Brugernavn" name="username" required>
+        </div>
 
-.loginbacktoindex {
-  float: left;
-}
+        <!--Kodeord  -->
+        <div class="kodeord">
+          <label for="password"><b>Kodeord</b></label>
+          <input type="password" placeholder="Indsæt Kodeord" name="password" required>
+        </div>
 
-.loginlogo {
-  text-align: center;
-}
+        <!--Login knap  -->
+        <button type="submit" id="loginknap">Login</button>
 
-</style>
+        <!--Husk mig på denne computer  -->
+        <div class="huskmig">
+          <input type="checkbox" checked="checked" name="remember"> Husk mig på denne computer
+        </div>
+
+    </div>
+
+    </form>
+  </div>
+
+  </div>
+
+  <style>
+
+    /*Link til forsiden  */
+    #backtofrontpage {
+      text-decoration: none;
+      color: white;
+    }
+    #backtofrontpage:hover {
+      color: grey;
+    }
+    /*Centering af content  */
+    .formcenter {
+      text-align: center;
+    }
+    /* container   */
+    .container.loginpage {
+      margin-top: 5rem;
+    }
+    #loginknap {
+      margin-top: 1rem;
+    }
+    .logologin {
+      text-align: center;
+    }
+    .kodeord {
+      margin-top: 1rem;
+    }
+    #loginknap {
+      margin-top: 1rem;
+    }
+    .huskmig {
+      margin-top: 1rem;
+    }
+    /* Farve på input */
+    input,
+    select,
+    textarea {
+      color: black;
+    }
+
+  </style>
 
 
 </body>
+
 </html>

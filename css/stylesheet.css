@@ -65,15 +65,63 @@ p {
   margin-top: 0; }
 
 /*..............................................B NAVIATIONSBAR */
-
+.navigationbar {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  z-index: 1;  /*puts header in front of content*/
+  background: transparent;
+  }
+.logo {
+  display: inline;
+}
+#logo {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  display: inline;
+}
+.navigationmenu {
+  margin-top: 1.3rem;
+  margin-bottom: 0.5rem;
+  display: inline;
+  float: right;
+}
+.navigationmenu > p {
+  display: inline;
+}
+.navigationmenu > a, .dropdown a {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  font-family: "Poppins";
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.navigationmenu > a:hover, .dropdown a:hover {
+  color: #9A9A9A;
+}
+/* CSS for dropdown funktion */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 130px;
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 /*..............................................C HEADER */
 
-.bg_img{
-  background-image: url("../img/bg_img_placeholder.jpg");
+.header_bg_img{
   width: 100%;
   height: 75vh;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .header_text{
@@ -88,6 +136,17 @@ p {
 
 .header_text h1, .header_text h6{
   text-shadow: 0px 0px 50px rgba(0,0,0,0.5)
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75vh;
+  z-index: -1;
+  object-position: center;
+  object-fit: cover;
 }
 
 /*..............................................D FOOTER */
@@ -113,7 +172,6 @@ background-color: #343434;
   margin-top: 1rem;
   margin-bottom: 0rem;
 }
-
 
 .container.introHistorie {
   margin-top: 4rem;
@@ -151,7 +209,6 @@ margin-top: 1rem;
   height: 20.952rem;
 }
 
-
 .indholdsoversigt {
   background-color: #343434;
 }
@@ -159,9 +216,9 @@ margin-top: 1rem;
   margin: 0 auto;
   text-align: center;
   display: block;
-  width: 12.3rem;
-  height: 12.3rem;
-  margin-top: 3rem;
+  width: 9rem;
+  height: 9rem;
+  margin-top: 2rem;
 }
 .three.columns.indholdsoversigt > h2{
   margin: 0 auto;
@@ -177,7 +234,7 @@ margin-top: 1rem;
   text-align: center;
   display: block;
   margin-top: 0.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .button.alleeventsforside {
@@ -357,12 +414,37 @@ margin:0 auto;
   border-style: solid;
   border-color white;
   border-radius: 25px;
-  background-color: gray;
-  font-size: 1.8rem;
+  background-color: #171619;
+  width: 70%;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.selskab_button_text{
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .selskab_button_position{
-  margin: 0px auto;
+  margin-bottom: 1px;
+}
+
+.selskab_text_position{
+  display: inline-block;
+  text-align: left;
+  width: 80%;
+}
+
+.selskab_text_atttributes{
+  font-size: 0.8rem;
+  width: 75%;
+}
+
+.selskab_img_position{
+  display: inline-block;
+  /*margin-left: 100px;*/
 }
 
 /* .............................................8.1 SELSKABSMENU */
@@ -371,7 +453,16 @@ margin:0 auto;
 }
 
 .selskab_menu_overskrift{
+padding-top: 20px;
+}
 
+.selskab_menu_overskrift_forretter{
+color: white;
+margin-top: 15px;
+}
+
+.selskab_menu_itemlist_padding{
+  padding-top: 35px;
 }
 
 .selskab_menu_item{
@@ -395,34 +486,68 @@ font-size: 1.25rem;
 float: right;
 Width: 30%;
 }
+
+.selskab_menu_allergiker{
+  margin: 0px auto;
+  font-style: italic;
+  padding-bottom: 35px;
+  text-align: center;
+}
 /* .............................................8.2 BUFFET */
 /* Buffet menulinje */
-
-.menulinje-buffet li{
-  list-style-type: none;
-  font-size: 16px;
+.buffet_infooverskrift{
+  margin-top: 2rem;
   text-align: center;
-  display: inline;
-  color: #CCB380;
-  font-family: "Playfair Display";
-  padding: 1rem 1rem;
-  }
-.menulinje-buffet a{
-  text-decoration: none;
-  color: #CCB380;
-
 }
-.menulinje-buffet a:hover{
-  text-decoration: none;
-  color: red;
 
+.buffet_allegener_smiley{
+  text-align: center;
+}
+
+.buffet_allegener_smiley img{
+  vertical-align: middle;
+  margin-left: 1rem;
 }
 
 #allergy{
-  font-family: "poppins";
   font-style: italic;
+  color: #ccc;
+  font-size: 0.8rem;
+}
+
+.buffet_infotekst{
+  margin: 2rem 0;
+}
+
+.menulinje-buffet ul{
+  width: 100%;
+  padding: 2rem 0rem;
+}
+
+.menulinje-buffet ul li{
+  width: 100px;
+}
+
+.menulinje-buffet ul li{
+  width: 14.28%;
+  list-style-type: none;
+  display: inline;
+  margin: 0px;
+  text-align: center;
+  font-size: 16px;
+  float: left;
   font-weight: 700;
 }
+
+.menulinje-buffet ul li a{
+  padding: 0.6rem 1rem;
+  word-wrap: break-word;
+}
+
+.menulinje-buffet a{
+  text-decoration: none;
+}
+
 .buffetmenu_placeholder_img_right{
   height: 290px;
   width: 100%;
@@ -432,22 +557,25 @@ Width: 30%;
   margin-top: 0.5rem;
 }
 /* Buffet odd numbers */
+.row.buffet_odd{
+  background-color: #1E1D20;
+  padding: 4% 0;
+}
+
 .buffet_odd li{
   list-style-type: none;
 
 }
-.row.buffet_odd{
-  background-color: #1E1D20;
-  padding: 0.1rem 0;
-}
+
 
 .buffet_placeholder_img_right{
-  height: 745px;
-  width: 100%;
-  background-image: url("../img/bg_img_placeholder.jpg");
-  background-size: 482px 440px;
+  margin: 7% 0;
+  width: 400px;
+  height: 500px;
+  background-image: url("../img/buffet_placeholder.png.jpg");
+  background-size: 400px 500px;
   float: right;
-}
+  }
 
 /* Buffet even numbers */
 .buffet_even li{
@@ -456,32 +584,19 @@ Width: 30%;
 
 }
 .row.buffet_even{
-  padding-top: 01rem;
-  padding-bottom: 01rem;
+  padding: 4% 0;
 }
 
 .buffet_placeholder_img_left{
-  height: 745px;
-  width: 100%;
-  background-image: url("../img/bg_img_placeholder.jpg");
-  background-size: 482px 440px;
+  margin: 7% 0;
+  width: 400px;
+  height: 500px;
+  background-image: url("../img/buffet_placeholder.png.jpg");
+  background-size: 400px 500px;
   float: left;
-}
+  }
 
 /* Buffet priser */
-.buffet_priser_info{
-  display: inline;
-  font-size: 20px;
-  color: white;
-  font-family: "Poppins"
-}
-.buffet_pris{
-  display: inline;
-  font-family: "Playfair Display";
-  font-size: 18px;
-  color: #CCB380;
-}
-
 .buffet_price_overskrift p{
   font-style: italic;
   font-size: 1.1rem;
@@ -505,9 +620,6 @@ Width: 30%;
   padding-bottom: 2.5rem;
 }
 
-
-
-
 /* .............................................8.3 ARRANGEMENTER */
 
 .arrangementer{
@@ -523,22 +635,109 @@ Width: 30%;
   width: 100%;
 }
 /*.............................................9.0 TIDSLINJE */
+
+
 .middleline {
   width: 0px;
- height: 2000px;
- margin: auto;
- border-left: 3px dashed green;
+  height: 2500px;
+  margin: 50%;
+  margin-top: 123px;
+  border-left: 3px dashed grey;
+  position: absolute;
+  z-index: 50;
 }
 
-.line_item{
+.timeline_line{
   height: 3px;
-  border-bottom: 3px dashed green;
+  border-bottom: 3px dashed grey;
+  width: 50%;
+  position: absolute;
+  margin-top: 120px;
+}
+
+.timeline_line_first{
+  margin-top: 120px;
+}
+
+.timeline_spacer{
+  height: 300px;
+}
+
+.timeline_line_left{
+  right: 50%;
+}
+
+/* margin-top = spacer height + timeline_line height  */
+.timeline_line_right{
+  margin-top: 420px;
+  left: 50%;
+}
+
+.timeline_item{
+  margin-top: 70px;
+}
+
+
+.timeline_img{
+  background-image: url("../img/Butikfront.png");
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+/* .lineitemleft{
+  right: 50%;
+  top: 300px;
+}
+
+.line_item_right{
+  left: 50%;
+} */
+
+
+.line_item2{
+  height: 3px;
+  border-bottom: 3px dashed grey;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 450px;
+}
+.line_item3{
+  height: 3px;
+  border-bottom: 3px dashed grey;
   width: 50%;
   position: absolute;
   right: 50%;
-  top: 150px;
+  top: 750px;
 }
-
+.line_item4{
+  height: 3px;
+  border-bottom: 3px dashed grey;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 1050px;
+}
+.line_item5{
+  height: 3px;
+  border-bottom: 3px dashed grey;
+  width: 50%;
+  position: absolute;
+  right: 50%;
+  top: 1350px;
+}
+.line_item6{
+  height: 3px;
+  border-bottom: 3px dashed grey;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 1650px;
+}
 .timeline_column{
   margin-top: 150px;
 }
