@@ -577,21 +577,65 @@ Width: 30%;
   width: 100%;
 }
 /*.............................................9.0 TIDSLINJE */
+
+
 .middleline {
   width: 0px;
- height: 2000px;
- margin: auto;
- border-left: 3px dashed grey;
+  height: 1500px;
+  margin: 50%;
+  margin-top: 123px;
+  border-left: 3px dashed grey;
+  position: absolute;
+  z-index: 50;
 }
 
-.line_item1{
+.timeline_line{
   height: 3px;
   border-bottom: 3px dashed grey;
   width: 50%;
   position: absolute;
-  right: 50%;
-  top: 150px;
+  margin-top: 120px;
 }
+
+.timeline_spacer{
+  height: 300px;
+}
+
+.timeline_line_left{
+  right: 50%;
+}
+
+/* margin-top = spacer height + timeline_line height  */
+.timeline_line_right{
+  margin-top: 420px;
+  left: 50%;
+}
+
+.timeline_item{
+  margin-top: 70px;
+}
+
+
+.timeline_img{
+  background-image: url("../img/Butikfront.png");
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+/* .lineitemleft{
+  right: 50%;
+  top: 300px;
+}
+
+.line_item_right{
+  left: 50%;
+} */
+
+
 .line_item2{
   height: 3px;
   border-bottom: 3px dashed grey;

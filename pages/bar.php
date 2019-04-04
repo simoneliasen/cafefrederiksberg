@@ -43,10 +43,10 @@
             Fyraftensøl
           </div>
           <div class="bar-item-price">
-            lorem ipsum
+            10,-
           </div>
           <div class="bar-item-description">
-            lorem ipsum
+            Alle hverdage mellem kl. 16.00 - 18.00.
           </div>
         </div>
         <!-- Item ends -->
