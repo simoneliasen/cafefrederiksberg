@@ -298,16 +298,55 @@ margin-top: 1rem;
 
 /*..............................................7 RESTAURANT */
 
+#restaurant_overskrift {
+  text-align: center;
+  padding-top: 5rem;
+  color: #CCB380;
+  }
 
 
+  .menu-item {
+    margin: 35px 0;
+    }
+
+  .menu-item-name{
+    font-weight: bold;
+    width:90%;
+  }
 
 
+  .menu-item-price{
+    float: right;
+    margin-top: -22px;
+    font-style:italic;
+    text-align:right;
+    color:#CCB380;
+    width:10%;
+  }
+
+  .menu-item-description{
+    font-size: .9em;
+    line-height: 1.5em;
+    width:75%;
+  }
 
 
+.container.restaurant{
 
+}
 
+.row.restaurant {
+text-align: center;
 
+}
 
+.one-third.column.restaurant{
+display: inline-block;
+}
+
+.Kontrolrapport_restaurant{
+margin:0 auto;
+}
 
 
 
