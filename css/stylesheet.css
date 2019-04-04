@@ -386,12 +386,26 @@ margin-top: 1rem;
 .selskab_button_text{
   font-size: 1.5rem;
   font-weight: bold;
-
 }
 
 .selskab_button_position{
   margin-bottom: 1px;
+}
 
+.selskab_text_position{
+  display: inline-block;
+  text-align: left;
+  width: 80%;
+}
+
+.selskab_text_atttributes{
+  font-size: 0.8rem;
+  width: 75%;
+}
+
+.selskab_img_position{
+  display: inline-block;
+  /*margin-left: 100px;*/
 }
 
 /* .............................................8.1 SELSKABSMENU */
@@ -404,7 +418,8 @@ padding-top: 20px;
 }
 
 .selskab_menu_overskrift_forretter{
-
+color: white;
+margin-top: 15px;
 }
 
 .selskab_menu_itemlist_padding{
