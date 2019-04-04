@@ -329,6 +329,9 @@ padding-top: 0.4rem;
 }
 .row.alleeventsforside {
   text-align: center;
+  margin-top: -1.2rem;
+    margin-bottom: 1rem;
+}
 }
 /*Google maps  */
 .mapouter {
