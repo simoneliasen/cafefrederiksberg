@@ -34,50 +34,49 @@
 <div class="wrapper buffet-menu">
   <!--Indhold centreret i wrapper-->
   <div class="container buffet_info_menu">
-    <div class="row infotekst_buffet">
-
-      <div class="twelve columns">
-        <div class="buffet_infooverskrift">
-          <h2>Café Frederiksberg har et udvalg af lækre buffeter</h2>
-        </div>
-
-      </div>
+    <div class="buffet_infooverskrift">
+      <h2>Café Frederiksberg har et udvalg af lækre buffeter</h2>
     </div>
+
     <div class="row buffet_infotekst">
       <div class="six columns">
         <p>Når du holder fest, kan det godt løbe løbsk inden regningen kommer - bare ikke hos os!</p>
         <p>Vi hylder nemlig princippet om at man kender udgifterne på forhånd. Selvfølgelig serverer vi da gerne drinks og spiritus, men kun efter forudgående aftale, så du selv ved hvad du har sagt ja til. og uanset hvor mange øl Onkel Hans kan drikke, bliver regningen den samme.</p>
-        <P>Vi er stolte over at kunne fremvise 5 elite smileys - <a href="https://www.findsmiley.dk/25727" target="_blank"><img src="img/kontrolrapport.JPEG" width="60" height="30" border="0"></a>
 
       </div>
       <div class="six columns">
         <p>Vore selskabslokaer er hele tiden booket op, og det skyldes ikke mindst, at kunderne kender prisen på forhånd, og at den samtidig er overkommelig. Vi har byens bedste og mest konkurrencedygtige priser på en færdigpakket fest, og det er uanset om Tante Oda holder 70 års.</p>
-        <p id="allergy">Allegiker/vegetar menu kan bestilles mod tillæg i prisen</p>
+
       </div>
     </div>
 
-    <div class="row menulinje_buffet">
+
+    <div class="row buffet_allegener_smiley">
+      <P style="margin-bottom: 0.2rem;">Vi er stolte over at kunne fremvise 5 elite smileys <a href="https://www.findsmiley.dk/25727" target="_blank"><img src="img/kontrolrapport.JPEG" width="100" border="0"></a></p>
+      <p id="allergy">Allegiker/vegetar menu kan bestilles mod tillæg i prisen</p>
+    </div>
+
+
+  </div>
+  <hr>
+  <div class="container">
+    <div class="row">
       <div class="twelve columns">
+
         <div class="menulinje-buffet">
           <ul>
-            <li>|</li>
             <li><a href="#Buffet_1">Buffet 1</a></li>
-            <li>|</li>
             <li><a href="#Buffet_2">Buffet 2</a></li>
-            <li>|</li>
             <li><a href="#Buffet_3">Buffet 3</a></li>
-            <li>|</li>
             <li><a href="#Buffet_4">Buffet 4</a></li>
-            <li>|</li>
             <li><a href="#USA_buffet">USA buffet</a></li>
-            <li>|</li>
             <li><a href="#Italiensk_buffet">Italiensk Buffet</a></li>
-            <li>|</li>
             <li><a href="#Øko_buffet">Øko buffet</a></li>
-            <li>|</li>
           </ul>
         </div>
       </div>
+
+
     </div>
   </div>
 

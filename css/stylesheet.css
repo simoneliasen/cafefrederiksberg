@@ -419,32 +419,59 @@ Width: 30%;
 }
 /* .............................................8.2 BUFFET */
 /* Buffet menulinje */
-
-.menulinje-buffet li{
-  list-style-type: none;
-  font-size: 16px;
+.buffet_infooverskrift{
+  margin-top: 2rem;
   text-align: center;
-  display: inline;
-  color: #CCB380;
-  font-family: "Playfair Display";
-  padding: 1rem 1rem;
-  }
-.menulinje-buffet a{
-  text-decoration: none;
-  color: #CCB380;
-
 }
-.menulinje-buffet a:hover{
-  text-decoration: none;
-  color: red;
 
+.buffet_allegener_smiley{
+  text-align: center;
+}
+
+.buffet_allegener_smiley img{
+  vertical-align: middle;
+  margin-left: 1rem;
 }
 
 #allergy{
-  font-family: "poppins";
   font-style: italic;
+  color: #ccc;
+  font-size: 0.8rem;
+}
+
+.buffet_infotekst{
+  margin: 2rem 0;
+}
+
+.menulinje-buffet ul{
+  width: 100%;
+  padding: 2rem 0rem;
+}
+
+.menulinje-buffet ul li{
+  width: 100px;
+}
+
+.menulinje-buffet ul li{
+  width: 14.28%;
+  list-style-type: none;
+  display: inline;
+  margin: 0px;
+  text-align: center;
+  font-size: 16px;
+  float: left;
   font-weight: 700;
 }
+
+.menulinje-buffet ul li a{
+  padding: 0.6rem 1rem;
+  word-wrap: break-word;
+}
+
+.menulinje-buffet a{
+  text-decoration: none;
+}
+
 .buffetmenu_placeholder_img_right{
   height: 290px;
   width: 100%;
