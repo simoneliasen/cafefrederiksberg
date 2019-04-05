@@ -37,12 +37,13 @@
 </div>
 
 </nav>
+
 </div>
 
 <!-- Jquery Script that changes the color of the header on scroll (+opacity)  -->
 <script>
 var $nav = $('.navigationbar');
 $(document).scroll(function() {
-    $nav.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.8)":"transparent"});
+    $nav.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
 });
 </script>
