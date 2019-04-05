@@ -74,6 +74,7 @@ p {
   width: 100%;
   z-index: 1;  /*puts header in front of content*/
   background: transparent;
+  transition: background-color 0.5s ease;
   }
 .logo {
   display: inline;
