@@ -421,13 +421,24 @@ margin:0 auto;
   margin-top: 30px;
 }
 
+.selskab_button_section{
+  border-style: solid;
+  border-color white;
+  border-radius: 25px;
+  background-color: #171619;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
 .selskab_button_text{
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 .selskab_button_position{
-  margin-bottom: 1px;
+  margin-top: 50px;
 }
 
 .selskab_text_position{

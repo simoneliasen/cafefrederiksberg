@@ -60,6 +60,7 @@
   <div>
 
     <div class="five columns">
+
       <div class="selskab_text_position">
         <span class="selskab_text_title">
           Test tittlele
@@ -90,10 +91,10 @@
       </div>
     </div>
   </div>
-
-  <div>
-
-  </div>
+</div>
+<div class="selskab_button_section">
+  <!--indsætte link til selskabsmenu her-->
+<a class="selskab_button_text" href="../pages/selskaber/selskabsmenu.php"> Selskabsmenu</a>
 </div>
 <br>
 
@@ -104,6 +105,7 @@
         <img src="img/Happyfish.jpg" alt="Placeholder fish" height="250px" width="300px">
       </div>
     </div>
+
    <div class="five columns">
      <span class="selskab_text_title">
        Test tittlele
