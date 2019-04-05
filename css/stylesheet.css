@@ -479,7 +479,8 @@ margin-bottom: 2.5rem;
 
 #restaurant_overskrift {
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
   color: #CCB380;
   }
 
@@ -493,6 +494,7 @@ margin-bottom: 2.5rem;
     width:90%;
   }
 
+  .menu-item-name p{text-align: left;}
 
   .menu-item-price{
     float: right;
@@ -511,9 +513,8 @@ margin-bottom: 2.5rem;
 
 
 
-.Kontrolrapport_restaurant{
-margin:0 auto;
-}
+.Kontrolrapport_restaurant{display: block;
+margin: 0 auto;}
 
 
 
