@@ -32,24 +32,25 @@
 
 
 <div class="wrapper kontakt">
-  <div class="bg_dark">
-    <div class="container kontakt_info">
-      <div class="kontakt_info_buttons">
-        <div class="row kontakt_info">
-          <!--Opsætter kolonner der hver fylder 3 ud af 12 bredde (tjek hjemmeside skeletons hjemmeside)  -->
-          <div class="six columns">
-            <div class="Bestil_online"><h2>Bestil online:</h2></div>
-          </div>
-          <div class="two columns">
-            <a class="button button-primary bestil" href="#">Bord</a>
-          </div>
-          <div class="two columns">
-            <a class="button button-primary bestil" href="#">Biletter</a>
-          </div>
-          <div class="two columns">
-            <a class="button button-primary bestil" href="#">Take-away</a>
+  <!--Online bestilling  -->
+  <div class="wrapper onlineBestilling" style="background-color: #1E1D20;">
+    <div class="container onlineBestilling">
+      <div class="row onlineBestilling">
+        <!-- Bestil online tekst  -->
+        <div class="six columns bestilonline">
+          <div class="Bestil_onlineindex">
+            <h2 id="bestilonlineheader">Bestil online</h2>
           </div>
         </div>
+        <div class="six columns bestilonline knapper">
+            <!-- Bestil bord online knap  -->
+          <a class="button button-primary bestil" href="pages/booking.php">Bord</a>
+        <!-- Bestil Biletter online knap  -->
+          <a class="button button-primary bestil" href="pages/booking.php">Biletter</a>
+        <!-- Bestil Take-away online knap  -->
+          <a class="button button-primary bestil" href="pages/booking.php">Take-away</a>
+        </div>
+
       </div>
     </div>
   </div>
@@ -210,28 +211,11 @@
 
 </div>
 
-<!--Google maps placeholder  -->
-<center>
+<!--Google maps  -->
   <div class="mapouter">
-    <div class="gmap_canvas"><iframe width="1920" height="575" id="gmap_canvas" src="https://maps.google.com/maps?q=Caf%C3%A9%20Frederiksberg%20Aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
+    <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Caf%C3%A9%20Frederiksberg%20Aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
         marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div>
-    <style>
-      .mapouter {
-        position: relative;
-        text-align: right;
-        height: 575px;
-        width: 1920px;
-      }
-
-      .gmap_canvas {
-        overflow: hidden;
-        background: none !important;
-        height: 575px;
-        width: 1920px;
-      }
-    </style>
-  </div>
-</center>
+</div>
 
 
 <!--Indrag footer fra filen includes/footer.php-->
