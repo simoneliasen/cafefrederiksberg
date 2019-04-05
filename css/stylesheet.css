@@ -749,6 +749,17 @@ Width: 30%;
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
   width: 100%;
+
+  }
+
+.container.info{
+  margin-top: 2rem;
+}
+.arrheader {
+ text-align: center;
+ padding-bottom:2rem;
+ padding-top: 1rem;
+ color: #CCB380;
 }
 /*.............................................9.0 TIDSLINJE */
 
