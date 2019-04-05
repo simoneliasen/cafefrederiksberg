@@ -291,6 +291,12 @@ padding-top: 0.4rem;
   width: 32.832rem;
   height: 20.952rem;
 }
+.button.introhistorie {
+  color: white;
+}
+.button.introhistorie:hover {
+  color: grey;
+}
 
 /*Indholdsoversigt over siden  */
 .indholdsoversigt {
@@ -319,6 +325,15 @@ padding-top: 0.4rem;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
+
+/*Magasin knap  */
+.button.magasin{
+  color: white;
+}
+.button.magasin:hover {
+  color: grey;
+}
+
 /*"Alle events knap" fører til event-side  */
 .row.alleeventsforside {
   text-align: center;
@@ -331,6 +346,12 @@ padding-top: 0.4rem;
   text-align: center;
   margin-top: -1.2rem;
     margin-bottom: 1rem;
+}
+.button.alleeventsforside{
+  color:white;
+}
+.button.alleeventsforside:hover {
+  color: grey;
 }
 /*Google maps  */
 .mapouter {
@@ -479,7 +500,8 @@ margin-bottom: 2.5rem;
 
 #restaurant_overskrift {
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
   color: #CCB380;
   }
 
@@ -493,6 +515,7 @@ margin-bottom: 2.5rem;
     width:90%;
   }
 
+  .menu-item-name p{text-align: left;}
 
   .menu-item-price{
     float: right;
@@ -511,9 +534,8 @@ margin-bottom: 2.5rem;
 
 
 
-.Kontrolrapport_restaurant{
-margin:0 auto;
-}
+.Kontrolrapport_restaurant{display: block;
+margin: 0 auto;}
 
 
 
