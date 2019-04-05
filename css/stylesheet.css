@@ -334,6 +334,18 @@ padding-top: 0.4rem;
   color: grey;
 }
 
+/*Events  */
+.events_overskrift_leftalign {
+  display: inline;
+}
+.events_overskrift_rightalign{
+  display:inline-block;
+  margin-left: 1rem;
+}
+.events_overskrift_rightalign h2{
+  display:inline;
+}
+
 /*"Alle events knap" fører til event-side  */
 .row.alleeventsforside {
   text-align: center;
