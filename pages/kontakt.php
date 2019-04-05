@@ -26,9 +26,9 @@
 <?php include '../includes/navigation.php'; ?>
 
 <!-- Indsætter slider  -->
-<div class="content slider">
+
   <?php include '../includes/header.php'; ?>
-</div>
+
 
 
 <div class="wrapper kontakt">
