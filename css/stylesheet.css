@@ -537,18 +537,20 @@ margin:0 auto;
   border-color white;
   border-radius: 25px;
   background-color: #171619;
+  Margin: 0 auto;
   text-align: center;
-  display: inline-block;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  width: 15rem;
+  margin-bottom: 3rem;
 }
 
 .selskab_button_text{
   font-size: 1.5rem;
   font-weight: bold;
+  text-decoration: none;
+  text-align: center;
 }
 
-.selskab_button_position{
+.selskab_item_positions{
   margin-top: 50px;
 }
 
@@ -561,7 +563,8 @@ margin:0 auto;
 .selskab_text_title{
   color: #CCB380;
   font-family: 'Playfair Display';
-  width: 100%;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .selskab_text_atttributes{
@@ -572,6 +575,7 @@ margin:0 auto;
 .selskab_img_position{
   display: inline-block;
   /*margin-left: 100px;*/
+  margin: 0px auto;
 }
 
 /* .............................................8.1 SELSKABSMENU */

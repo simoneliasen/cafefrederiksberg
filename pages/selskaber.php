@@ -26,28 +26,145 @@
 <?php include '../includes/navigation.php'; ?>
 
 <?php include '../includes/header.php'; ?>
-
-
+<!--top knapper på siden-->
 <div class="bg_dark">
   <div class="container">
    <div class="header-centertext">
-     <div class="selskab_button_position">
+     <div>
 
         <div class="four columns">
           <div class="selskab_button">
-          <span class="selskab_button_text">Selskabsmenu</span>
+          <a class="selskab_button_text" href="pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
         </div>
       </div>
 
         <div class="four columns">
           <div class="selskab_button">
-          <span class="selskab_button_text">Buffets</span>
+          <a class="selskab_button_text" href="pages/selskaber/buffet.php">Buffet</a>
         </div>
       </div>
 
         <div class="four columns">
           <div class="selskab_button">
-          <span class="selskab_button_text">Arrangementer</span>
+          <a class="selskab_button_text" href="pages/selskaber/arrangementer.php">Arrangementer</a>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--selskabsmenu row-->
+<div class="wrapper">
+  <div class="container arrangementer">
+    <div class="arrangementer_wrapper">
+
+      <div class="row">
+        <div class="one-half column">
+          <img src="img/Butikfront.png" width="400rem" height="auto">
+        </div>
+
+        <div class="one-half column">
+          <span class="selskab_text_title">
+            Test tittlele
+          </span><br>
+          <p style="width: 400px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <br>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="selskab_button_section">
+  <a class="selskab_button_text" href="pages/selskaber/selskabsmenu.php"> Selskabsmenu</a>
+</div>
+
+<!--Buffet row-->
+<div class="bg_dark">
+  <div class="container arrangementer">
+    <div class="arrangementer_wrapper">
+      <div class="row">
+        <div class="one-half column">
+          <span class="selskab_text_title">
+            Test tittlele
+          </span><br>
+          <p style="width: 400px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <br>
+
+        </div>
+
+        <div class="one-half column">
+          <img src="img/butikfront.png" width="400rem" height="auto">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="selskab_button_section">
+    <a class="selskab_button_text" href="pages/selskaber/buffet.php"> Se vores Buffets</a>
+  </div>
+</div>
+
+
+<!--Arrengementer row-->
+  <div class="wrapper">
+    <div class="container arrangementer">
+      <div class="arrangementer_wrapper">
+
+        <div class="row">
+          <div class="one-half column">
+            <img src="img/butikfront.png" width="400rem" height="auto">
+          </div>
+
+          <div class="one-half column">
+            <span class="selskab_text_title">
+              Test tittlele
+            </span><br>
+            <p style="width: 400px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="selskab_button_section">
+      <a class="selskab_button_text" href="pages/selskaber/arrengementer.php"> Arrengementer</a>
+    </div>
+</div>
+
+<hr>
+
+
+
+
+<!--
+<div class="bg_dark">
+  <div class="container">
+   <div class="header-centertext">
+     <div>
+
+        <div class="four columns">
+          <div class="selskab_button">
+          <a class="selskab_button_text" href="pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
+        </div>
+      </div>
+
+        <div class="four columns">
+          <div class="selskab_button">
+          <a class="selskab_button_text" href="pages/selskaber/buffet.php">Buffet</a>
+        </div>
+      </div>
+
+        <div class="four columns">
+          <div class="selskab_button">
+          <a class="selskab_button_text" href="pages/selskaber/arrangementer.php">Arrangementer</a>
         </div>
       </div>
 
@@ -57,15 +174,15 @@
 </div>
 
 <div class="container">
-  <div>
+  <div class="selskab_item_positions">
+
+    <span class="selskab_text_title">
+      Test tittlele
+    </span><br>
 
     <div class="five columns">
-
       <div class="selskab_text_position">
-        <span class="selskab_text_title">
-          Test tittlele
-        </span><br>
-      <span class="selskab_text_atttributes">
+       <span class="selskab_text_atttributes">
         Lorem ipsum dolor sit amet,
         consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Morbi tempus iaculis urna id.
@@ -80,22 +197,19 @@
         nunc vel risus commodo viverra.</span>
      </div>
    </div>
- </div>
 
-
-
-  <div>
-    <div class="four columns">
-      <div class="selskab_img_position">
-        <img src="img/Happyfish.jpg" alt="Placeholder fish" height="250px" width="300px">
+      <div class="four columns">
+        <div class="selskab_img_position">
+          <img src="img/Happyfish.jpg" alt="Placeholder fish" height="250px" width="300px">
+        </div>
       </div>
-    </div>
+
+   </div>
+</div>
+
+  <div class="selskab_button_section">
+    <a class="selskab_button_text" href="pages/selskaber/selskabsmenu.php"> Selskabsmenu</a>
   </div>
-</div>
-<div class="selskab_button_section">
-  <!--indsætte link til selskabsmenu her-->
-<a class="selskab_button_text" href="../pages/selskaber/selskabsmenu.php"> Selskabsmenu</a>
-</div>
 <br>
 
 <div class="bg_dark">
@@ -127,7 +241,7 @@
   </div>
  </div>
 </div>
-
+-->
 
 
 
