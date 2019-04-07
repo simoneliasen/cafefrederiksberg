@@ -14,8 +14,12 @@ Opsæt statisk layout for hele siden
 - Buffet (Lasse)
 - Selskaber (Victor)
 - Login til adminpanel (Simon)
+- Adminpanel (Simon)
+
+Mangler:
 - Side for kunstnere der vil spille (måske bare en tekst med opfordring til henvendelse pr. mail)
-- Adminpanel
+- Klub frede sektion
+- Dropdown i kontakt side (så den inkludere "historie" / tidslinje")
 
 Hovedfunktioner
 - Opsætning af database
