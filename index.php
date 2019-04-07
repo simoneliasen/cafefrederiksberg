@@ -40,11 +40,11 @@
         </div>
         <div class="six columns bestilonline knapper">
             <!-- Bestil bord online knap  -->
-          <a class="button button-primary bestil" href="pages/booking.php">Bord</a>
+          <a class="button button-primary bestil bord" href="pages/booking.php">Bord</a>
         <!-- Bestil Biletter online knap  -->
-          <a class="button button-primary bestil" href="pages/booking.php">Biletter</a>
+          <a class="button button-primary bestil biletter" href="pages/booking.php">Biletter</a>
         <!-- Bestil Take-away online knap  -->
-          <a class="button button-primary bestil" href="pages/booking.php">Take-away</a>
+          <a class="button button-primary bestil take-away" href="pages/booking.php">Take-away</a>
         </div>
 
       </div>
