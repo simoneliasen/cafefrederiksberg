@@ -565,43 +565,22 @@ margin: 0 auto;}
 /*..............................................8 SELSKABER */
 
 .selskab_button{
-  border-style: solid;
-  border-color white;
-  border-radius: 25px;
-  background-color: #171619;
   width: 70%;
   text-align: center;
   display: inline-block;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 0.6rem;
+  margin-top: 2rem;
 }
 
 .selskab_button_section{
-  border-style: solid;
-  border-color white;
-  border-radius: 25px;
-  background-color: #171619;
   Margin: 0 auto;
   text-align: center;
   width: 15rem;
-  margin-bottom: 3rem;
-}
-
-.selskab_button_text{
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .selskab_item_positions{
   margin-top: 50px;
-}
-
-.selskab_text_position{
-  display: inline-block;
-  text-align: left;
-  width: 80%;
 }
 
 .selskab_text_title{
@@ -621,6 +600,25 @@ margin: 0 auto;}
   /*margin-left: 100px;*/
   margin: 0px auto;
 }
+
+.arrangementer{
+  position: relative;
+  height: 400px;
+
+}
+
+.selskaber_wrapper{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+
+  }
+
+.container.info{
+  margin-top: 2rem;
+}
+
 
 /* .............................................8.1 SELSKABSMENU */
 .header-centertext{

@@ -29,24 +29,24 @@
 <!--top knapper på siden-->
 <div class="bg_dark">
   <div class="container">
-   <div class="header-centertext">
-     <div>
+   <div style="text-align:center;">
+     <div style="width:80%; display: inline-block;">
 
         <div class="four columns">
           <div class="selskab_button">
-          <a class="selskab_button_text" href="pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
+          <a class="button button-primary bestil" href="pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
         </div>
       </div>
 
         <div class="four columns">
           <div class="selskab_button">
-          <a class="selskab_button_text" href="pages/selskaber/buffet.php">Buffet</a>
+          <a class="button button-primary bestil" href="pages/selskaber/buffet.php">Buffet</a>
         </div>
       </div>
 
         <div class="four columns">
           <div class="selskab_button">
-          <a class="selskab_button_text" href="pages/selskaber/arrangementer.php">Arrangementer</a>
+          <a class="button button-primary bestil" href="pages/selskaber/arrangementer.php">Arrangementer</a>
         </div>
       </div>
 
@@ -56,9 +56,9 @@
 </div>
 
 <!--selskabsmenu row-->
-<div class="wrapper">
+
   <div class="container arrangementer">
-    <div class="arrangementer_wrapper">
+    <div class="selskaber_wrapper">
 
       <div class="row">
         <div class="one-half column">
@@ -67,32 +67,32 @@
 
         <div class="one-half column">
           <span class="selskab_text_title">
-            Test tittlele
+          Café Frederiksberg udlejer lokaler til fest og andet selskab
           </span><br>
           <p style="width: 400px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <br>
-
-
         </div>
       </div>
     </div>
   </div>
 
 
-</div>
+
 
 <div class="selskab_button_section">
-  <a class="selskab_button_text" href="pages/selskaber/selskabsmenu.php"> Selskabsmenu</a>
+  <a class="button button-primary bestil" href="pages/selskaber/selskabsmenu.php"> Selskabsmenu</a>
 </div>
 
 <!--Buffet row-->
 <div class="bg_dark">
-  <div class="container arrangementer">
-    <div class="arrangementer_wrapper">
+  <div style="padding-top: 3rem;">
+   <div class="container arrangementer">
+    <div class="selskaber_wrapper">
       <div class="row">
         <div class="one-half column">
           <span class="selskab_text_title">
-            Test tittlele
+            En buffet for enhver smag
+
           </span><br>
           <p style="width: 400px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <br>
@@ -104,19 +104,18 @@
 
         </div>
       </div>
+      <div class="selskab_button_section">
+        <a class="button button-primary bestil" href="pages/selskaber/buffet.php"> Se vores Buffets</a>
+      </div>
     </div>
-
+   </div>
   </div>
-  <div class="selskab_button_section">
-    <a class="selskab_button_text" href="pages/selskaber/buffet.php"> Se vores Buffets</a>
-  </div>
-</div>
+ </div>
 
 
-<!--Arrengementer row-->
-  <div class="wrapper">
+<!--Arrangementer row-->
     <div class="container arrangementer">
-      <div class="arrangementer_wrapper">
+      <div class="selskaber_wrapper">
 
         <div class="row">
           <div class="one-half column">
@@ -125,7 +124,8 @@
 
           <div class="one-half column">
             <span class="selskab_text_title">
-              Test tittlele
+              Arrangementer vi tilbyder
+
             </span><br>
             <p style="width: 400px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <br>
@@ -135,9 +135,9 @@
       </div>
     </div>
     <div class="selskab_button_section">
-      <a class="selskab_button_text" href="pages/selskaber/arrengementer.php"> Arrengementer</a>
+      <a class="button button-primary bestil" href="pages/selskaber/arrengementer.php"> Arrangementer</a>
     </div>
-</div>
+
 
 <hr>
 

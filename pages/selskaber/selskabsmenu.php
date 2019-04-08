@@ -48,7 +48,7 @@
                     <p>Med boller og flütes</p>
                 </div>
                 <div class="selskab_menu_item_price">
-                    <span class="selskab_menu_item_fontstyle">- per couv. kr. 52,-</span>
+                    <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 52,-</span>
                 </div>
             </div>
 
@@ -58,7 +58,7 @@
                     <p>Med kødboller og flutes</p>
                 </div>
                 <div class="selskab_menu_item_price">
-                    <span class="selskab_menu_item_fontstyle">- per couv. kr. 52,-</span>
+                    <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 52,-</span>
                 </div>
             </div>
 
@@ -68,7 +68,7 @@
                     <p>Med ris, hønskekød, og flutes</p>
                 </div>
                 <div class="selskab_menu_item_price">
-                    <span class="selskab_menu_item_fontstyle">- per couv. kr. 52,-</span>
+                    <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 52,-</span>
                 </div>
             </div>
 
@@ -78,7 +78,7 @@
                     <p>På ananasring og flutes</p>
                 </div>
                 <div class="selskab_menu_item_price">
-                    <span class="selskab_menu_item_fontstyle">- per couv. kr. 52,-</span>
+                    <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 52,-</span>
                 </div>
             </div>
 
@@ -88,7 +88,7 @@
                     <p>Med høns og asparges</p>
                 </div>
                 <div class="selskab_menu_item_price">
-                    <span class="selskab_menu_item_fontstyle">- per couv. kr. 52,-</span>
+                    <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 52,-</span>
                 </div>
             </div>
 
@@ -99,7 +99,7 @@
                     </p>
                 </div>
                 <div class="selskab_menu_item_price">
-                    <span class="selskab_menu_item_fontstyle">- per couv. kr. 68,-</span>
+                    <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 68,-</span>
                 </div>
             </div>
 
@@ -109,7 +109,7 @@
                     <p>Med håndpillede rejer, kaviar, dressing og flutes</p>
                 </div>
                 <div class="selskab_menu_item_price">
-                    <span class="selskab_menu_item_fontstyle">- per couv. kr. 68,-</span>
+                    <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 68,-</span>
                 </div>
             </div>
 
@@ -119,7 +119,7 @@
                     <p>Med håndpillede rejer, kaviar, dressing og flutes</p>
                 </div>
                 <div class="selskab_menu_item_price">
-                    <span class="selskab_menu_item_fontstyle">- per couv. kr. 72,-</span>
+                    <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 72,-</span>
                 </div>
             </div>
 
@@ -129,7 +129,7 @@
                     <p>Med håndpillede rejer, dressing og flutes</p>
                 </div>
                 <div class="selskab_menu_item_price">
-                    <span class="selskab_menu_item_fontstyle">- per couv. kr. 68,-</span>
+                    <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 68,-</span>
                 </div>
             </div>
 
@@ -139,7 +139,7 @@
                     <p>Med flødestuvet spinat, asparges og flutes</p>
                 </div>
                 <div class="selskab_menu_item_price">
-                    <span class="selskab_menu_item_fontstyle">- per couv. kr. 68,-</span>
+                    <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 68,-</span>
                 </div>
             </div>
 
@@ -149,7 +149,7 @@
                     <p>Fersk dampet hummer med garniture</p>
                 </div>
                 <div class="selskab_menu_item_price">
-                    <span class="selskab_menu_item_fontstyle">- per couv. kr. 215,-</span>
+                    <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 215,-</span>
                 </div>
             </div>
 
@@ -170,7 +170,7 @@
                   <p>Med svesker, rødkål, asier, hvide og brune kartofler</p>
               </div>
               <div class="selskab_menu_item_price">
-                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 110,-</span>
+                  <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 110,-</span>
               </div>
           </div>
 
@@ -180,7 +180,7 @@
                   <p>Med waldorffsalat, gelé, hvide og brune kartofler</p>
               </div>
               <div class="selskab_menu_item_price">
-                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 120,-</span>
+                  <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 120,-</span>
               </div>
           </div>
 
@@ -190,7 +190,7 @@
                   <p>Med grøntsager, kartofler og portvinssauce</p>
               </div>
               <div class="selskab_menu_item_price">
-                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 130,-</span>
+                  <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 130,-</span>
               </div>
           </div>
 
@@ -200,7 +200,7 @@
                   <p>Med waldorffsalat, gelé, hvide og brune kartofler</p>
               </div>
               <div class="selskab_menu_item_price">
-                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 130,-</span>
+                  <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 130,-</span>
               </div>
           </div>
 
@@ -210,7 +210,7 @@
                   <p>Med bønner, glasserede løg og hvide kartofler</p>
               </div>
               <div class="selskab_menu_item_price">
-                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 120,-</span>
+                  <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 120,-</span>
               </div>
           </div>
 
@@ -220,7 +220,7 @@
                   <p>Med grøntsager og smørstegte kartofler</p>
               </div>
               <div class="selskab_menu_item_price">
-                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 175,-</span>
+                  <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 175,-</span>
               </div>
           </div>
 
@@ -230,7 +230,7 @@
                   <p>Med grøntsager og kartofler</p>
               </div>
               <div class="selskab_menu_item_price">
-                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 210,-</span>
+                  <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 210,-</span>
               </div>
           </div>
 
@@ -240,7 +240,7 @@
                   <p>Med rødkål, svesker, hvide og brune kartofler</p>
               </div>
               <div class="selskab_menu_item_price">
-                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 135,-</span>
+                  <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 135,-</span>
               </div>
           </div>
 
@@ -250,7 +250,7 @@
                   <p>Med waldorffsalat, hvide og brune kartofler</p>
               </div>
               <div class="selskab_menu_item_price">
-                  <span class="selskab_menu_item_fontstyle">- per couv. kr. 225,-</span>
+                  <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 225,-</span>
               </div>
           </div>
         </div>
@@ -269,7 +269,7 @@
                         <p>Med jordbærsauce</p>
                     </div>
                     <div class="selskab_menu_item_price">
-                        <span class="selskab_menu_item_fontstyle">- per couv. kr. 52,-</span>
+                        <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 52,-</span>
                     </div>
                 </div>
 
@@ -279,7 +279,7 @@
                         <p>Med marcipan, chokolade og nødder</p>
                     </div>
                     <div class="selskab_menu_item_price">
-                        <span class="selskab_menu_item_fontstyle">- per couv. kr. 55,-</span>
+                        <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 55,-</span>
                     </div>
                 </div>
 
@@ -289,7 +289,7 @@
                         <p>Med friske frugter og pistacie-is</p>
                     </div>
                     <div class="selskab_menu_item_price">
-                        <span class="selskab_menu_item_fontstyle">- per couv. kr. 62,-</span>
+                        <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 62,-</span>
                     </div>
                 </div>
 
@@ -299,7 +299,7 @@
                         <p>med kandiserede valnødder og sorbet</p>
                     </div>
                     <div class="selskab_menu_item_price">
-                        <span class="selskab_menu_item_fontstyle">- per couv. kr. 55,-</span>
+                        <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 55,-</span>
                     </div>
                 </div>
 
@@ -309,7 +309,7 @@
                         <p>Med friske frugter og soft ice</p>
                     </div>
                     <div class="selskab_menu_item_price">
-                        <span class="selskab_menu_item_fontstyle">- per couv. kr. 62,-</span>
+                        <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 62,-</span>
                     </div>
                 </div>
 
@@ -319,7 +319,7 @@
                         <p>Med Soft ice</p>
                     </div>
                     <div class="selskab_menu_item_price">
-                        <span class="selskab_menu_item_fontstyle">- per couv. kr. 62,-</span>
+                        <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 62,-</span>
                     </div>
                 </div>
 
@@ -329,7 +329,7 @@
                         <p>Med Soft ice</p>
                     </div>
                     <div class="selskab_menu_item_price">
-                        <span class="selskab_menu_item_fontstyle">- per couv. kr. 55,-</span>
+                        <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 55,-</span>
                     </div>
                 </div>
 
@@ -352,7 +352,7 @@
                               <p>Med boller og flütes</p>
                           </div>
                           <div class="selskab_menu_item_price">
-                              <span class="selskab_menu_item_fontstyle">- per couv. kr. 49,-</span>
+                              <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 49,-</span>
                           </div>
                       </div>
 
@@ -362,7 +362,7 @@
                               <p>Med flütes</p>
                           </div>
                           <div class="selskab_menu_item_price">
-                              <span class="selskab_menu_item_fontstyle">- per couv. kr. 49,-</span>
+                              <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 49,-</span>
                           </div>
                       </div>
 
@@ -372,7 +372,7 @@
                               <p>Med kødboller og flütes</p>
                           </div>
                           <div class="selskab_menu_item_price">
-                              <span class="selskab_menu_item_fontstyle">- per couv. kr. 49,-</span>
+                              <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 49,-</span>
                           </div>
                       </div>
 
@@ -382,7 +382,7 @@
                               <p>Med kartoffelsalat</p>
                           </div>
                           <div class="selskab_menu_item_price">
-                              <span class="selskab_menu_item_fontstyle">- per couv. kr. 49,-</span>
+                              <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 49,-</span>
                           </div>
                       </div>
 
@@ -392,7 +392,7 @@
                               <p>Med salat, dressing og flütes</p>
                           </div>
                           <div class="selskab_menu_item_price">
-                              <span class="selskab_menu_item_fontstyle">- per couv. kr. 59,-</span>
+                              <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 59,-</span>
                           </div>
                       </div>
 
@@ -402,7 +402,7 @@
                               <p>Med rugbrød, smør og rødbeder</p>
                           </div>
                           <div class="selskab_menu_item_price">
-                              <span class="selskab_menu_item_fontstyle">- per couv. kr. 69,-</span>
+                              <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 69,-</span>
                           </div>
                       </div>
 
@@ -412,7 +412,7 @@
                               <p>Med 4 slags pålæg, leverpostej og ost</p>
                           </div>
                           <div class="selskab_menu_item_price">
-                              <span class="selskab_menu_item_fontstyle">- per couv. kr. 69,-</span>
+                              <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 69,-</span>
                           </div>
                       </div>
 
@@ -422,7 +422,7 @@
                               <p>Med klassisk tilbehør</p>
                           </div>
                           <div class="selskab_menu_item_price">
-                              <span class="selskab_menu_item_fontstyle">- per couv. kr. 45,-</span>
+                              <span class="selskab_menu_item_fontstyle">- pr. couv. kr. 45,-</span>
                           </div>
                       </div>
                     </div>
