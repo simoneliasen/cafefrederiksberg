@@ -71,7 +71,6 @@
   </div>
 
   <style>
-
     /*Link til forsiden  */
     #backtofrontpage {
       text-decoration: none;
