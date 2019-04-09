@@ -24,6 +24,10 @@
 
 <body>
 
+  <!--Lav check for om du er registreret som admin (eller moderator)  -->
+
+  <!--Lav Mulighed for at tilføje brugere  -->
+  <!--Lav mulighed for at slette brugere  -->
 
 <!--Centrere adminpael  -->
 <div class="container adminpanel">
