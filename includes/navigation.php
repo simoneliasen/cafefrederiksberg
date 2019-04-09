@@ -57,7 +57,7 @@ $(document).scroll(function() {
 
 <style>
 .dropdown-content {
-  padding-left: 0;
+
   padding-right: 0;
   background-color: transparent;
 }
