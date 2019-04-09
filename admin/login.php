@@ -14,7 +14,7 @@
   <!-- Normalize stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
   <!-- Admin stylesheet  -->
-  <link rel="stylesheet" type="text/css" href="admin.css">
+  <link rel="stylesheet" type="text/css" href="css/admin.css">
   <!-- Inkludere Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">

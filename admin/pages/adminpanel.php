@@ -14,6 +14,8 @@
   <link rel="stylesheet" type="text/css" href="../../css/skeleton.css">
   <!-- Normalize stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+  <!-- Admin CSS  -->
+  <link rel="stylesheet" type="text/css" href="../css/admin.css">
   <!-- Includer Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
