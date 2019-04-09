@@ -1,0 +1,59 @@
+/* CAFÉ FREDERIKSBERG STYLESHEET */
+/*
+    AALBORG UNIVERSITET GRUPPE B267A BAIT INF 2019
+*/
+/*
+A. LOGINPAGE
+B. WELCOMEPAGE
+C. ADMININDEX
+
+COLORS
+-----------
+GULD          #CCB380
+SORT-ISH      #101010
+MØRKEGRÅ-ISH  #1E1D20
+*/
+
+/*..............................................A LOGINPAGE */
+
+/*Link til forsiden  */
+#backtofrontpage {
+  text-decoration: none;
+  color: white;
+}
+#backtofrontpage:hover {
+  color: grey;
+}
+/*Centering af content  */
+.formcenter {
+  text-align: center;
+}
+/* container   */
+.container.loginpage {
+  margin-top: 5rem;
+}
+#loginknap {
+  margin-top: 1rem;
+}
+.logologin {
+  text-align: center;
+}
+.kodeord {
+  margin-top: 1rem;
+}
+#loginknap {
+  margin-top: 1rem;
+}
+.huskmig {
+  margin-top: 1rem;
+}
+/* Farve på input */
+input,
+select,
+textarea {
+  color: black;
+}
+
+/*..............................................A WELCOMEPAGE */
+
+/*..............................................C ADMININDEX */

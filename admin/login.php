@@ -14,6 +14,8 @@
   <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
   <!-- Normalize stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+  <!-- Admin stylesheet  -->
+  <link rel="stylesheet" type="text/css" href="admin.css">
   <!-- Includer Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -69,48 +71,6 @@
   </div>
 
   </div>
-
-  <style>
-    /*Link til forsiden  */
-    #backtofrontpage {
-      text-decoration: none;
-      color: white;
-    }
-    #backtofrontpage:hover {
-      color: grey;
-    }
-    /*Centering af content  */
-    .formcenter {
-      text-align: center;
-    }
-    /* container   */
-    .container.loginpage {
-      margin-top: 5rem;
-    }
-    #loginknap {
-      margin-top: 1rem;
-    }
-    .logologin {
-      text-align: center;
-    }
-    .kodeord {
-      margin-top: 1rem;
-    }
-    #loginknap {
-      margin-top: 1rem;
-    }
-    .huskmig {
-      margin-top: 1rem;
-    }
-    /* Farve på input */
-    input,
-    select,
-    textarea {
-      color: black;
-    }
-
-  </style>
-
 
 </body>
 
