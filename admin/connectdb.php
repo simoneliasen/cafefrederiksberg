@@ -8,7 +8,7 @@ $password = "password";
 // Connects to Database
 $connection = mysqli_connect('localhost','root','','contactsapp');
 
-// Displays error if connectionis unavaliable
+// Displays error if connection is unavaliable
 if(!$connection){
    die("cannot connect to database".mysqli_connect_error());
 }

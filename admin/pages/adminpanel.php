@@ -47,7 +47,7 @@
 
 <!--Row til Editable contante  -->
 <div class="row">
- 
+
 <!--row 1 m. editable content  -->
   <div class="twelve columns editcontent">
     <h6>Slideshow</h6>
