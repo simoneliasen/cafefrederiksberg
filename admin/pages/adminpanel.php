@@ -74,39 +74,6 @@
 
 </div>
 
-
-  <style>
-
-
-  .container.adminpanel {
-    margin-top: 3rem;
-  }
-    .row.adminoversigt {
-      text-align: center;
-      background-color: #1E1D20;
-      border: 0.01rem solid #CCB380;
-      margin-top: 1rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-    }
-    .row.adminoversigt > a {
-      margin-left: 0.3rem;
-      margin-right: 0.3rem;
-      text-decoration: none;
-        font-weight: bold;
-    }
-
-
-
-    .twelve.columns.editcontent {
-      margin: 0;
-    margin-top: 2rem;
-    background-color: #1E1D20;
-    border: 0.01rem solid #CCB380;
-    padding: 0.5rem;
-    }
-  </style>
-
 </body>
 
 </html>
