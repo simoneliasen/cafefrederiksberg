@@ -54,7 +54,7 @@ $sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$myp
          header("location: pages/adminpanel.php"); // Hvis overstående var succesfuldt går den til adminpanel.php
       }else {
         // Hvis ikke succesfuld, viser den error-message
-         $error = "Dit indtastede brugernavn eller kodeord er forkert";
+         $error = "Det indtastede brugernavn eller kodeord er forkert";
       }
     }
  ?>
@@ -101,7 +101,8 @@ $sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$myp
         </div>
 
 <!--Viser error-code hvis brugernavn eller kodeord er forkert  -->
-    <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
+    <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo isset($error) ? $error: ''; ?></div>
+
     </div>
 
     </form>
