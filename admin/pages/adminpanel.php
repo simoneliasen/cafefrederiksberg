@@ -30,7 +30,7 @@
 <div class="nav">
   <ul>
     <li><a href="about.asp">Google analytics</a></li>
-    <li><a href="default.asp">Video</a></li>
+    <li><a href="default.asp">Forside</a></li>
     <li><a href="news.asp">Katalog</a></li>
     <li><a href="contact.asp">(kommende events)</a></li>
     <li><a href="about.asp">Menukort</a></li>
@@ -44,11 +44,14 @@
 <div class="container">
   <div class="content">
     <div class="heading">
-      <h1>Overskrift</h1>
+      <!-- DYNAMISK, overskriften skal ændre sig så den passer til menu-punktet -->
+      <h1>Admin-panel <span style="font-weight: 400;">Café Frederiksberg</span></h1>
       <div class="logout">
-        <a class="button2 button_logout">log ud</a>
+        <a class="button2 button_logout" href="#">log ud</a>
       </div>
     </div>
+
+
 
 
 
