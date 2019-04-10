@@ -37,6 +37,8 @@ body{
 /* container   */
 .container.loginpage {
   margin-top: 5rem;
+  background-color: #101010;
+  float: inherit;
 }
 #loginknap {
   margin-top: 1rem;
