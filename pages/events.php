@@ -39,7 +39,7 @@
   <div class="container">
     <div class="row">
       <div class="one-half column frede_live_katalog">
-        <a href="#">
+        <a href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">
           <div class="frede_live_katalog_img">
           </div>
         </a>
@@ -51,7 +51,8 @@
           <h6>Livemusik og events</h6>
           <p>Bring great itself made under sea, lesser stars divided blessed us without kind. Grass a. Subdue be can't cattle whales also him beast, may good two firmament. Don't rule also together. Fill beginning. You, man firmament he bearing gathered day dry were seas fruit winged.
           Form. Seas herb darkness set also us creepeth them thing may give third likeness. Male them. Abundantly Bearing Divided face light Isn't and you i to seas.
-          And Living man likeness midst in seasons divide behold fifth be divide thing fifth she'd place morning fill isn't herb whales in air gathered all divide. Second heaven.</p>          <a class="button" href="#">Se vores Magasin <u>her</u></a>
+          And Living man likeness midst in seasons divide behold fifth be divide thing fifth she'd place morning fill isn't herb whales in air gathered all divide. Second heaven.</p>
+          <a class="button" href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">Se vores Magasin <u>her</u></a>
         </div>
       </div>
     </div>

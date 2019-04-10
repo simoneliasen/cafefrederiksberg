@@ -44,10 +44,23 @@
   <div class="content">
     <div class="heading">
       <!-- DYNAMISK, overskriften skal ændre sig så den passer til menu-punktet -->
-      <h1>Admin-panel <span style="font-weight: 400;">Café Frederiksberg</span></h1>
+      <h1>Hjælp<span style="font-weight: 400;"></span></h1>
       <div class="logout">
         <a class="button2 button_logout" href="../logout.php">log ud</a>
       </div>
+    </div>
+
+    <div class="task_wrapper">
+
+      <h1 class="task_heading">Sådan bruges admin-panelet</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis purus sit amet volutpat consequat mauris nunc congue nisi. Felis eget velit aliquet sagittis id. Convallis convallis tellus id interdum velit. Nunc vel risus commodo viverra maecenas accumsan. Mi quis hendrerit dolor magna eget est lorem ipsum. Placerat orci nulla pellentesque dignissim enim sit. Pellentesque id nibh tortor id aliquet lectus proin nibh. Faucibus nisl tincidunt eget nullam non. Consectetur adipiscing elit pellentesque habitant morbi. Quis varius quam quisque id diam vel.</p>
+
+      <h1 class="task_heading">En overskrift mere der fortæller noget om noget</h1>
+      <div class="img_center">
+        <img src="/cafefrederiksberg/img/logo.svg" id="" width="auto" height="auto">
+      </div>
+
+
     </div>
 
 
