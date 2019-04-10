@@ -30,33 +30,36 @@ session_start();
 
   if($_SERVER["REQUEST_METHOD"] == "POST") {
 
-// Sanitizer input fra 'username' og 'password' så vi ikke får MySql injections
+// Sanitizer input fra 'username' og 'password' (Kan måske forbedres med XXS og yderligere)
 $myusername = mysqli_real_escape_string($db,$_POST['username']);
 $mypassword = mysqli_real_escape_string($db,$_POST['password']);
 
 // Tager ID fra ADMIN hvor 'username' i input indsættes som username i form (tilsvarende for password)
 $sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$mypassword'";
 // Tager data fra input og tjekker det imod databasene
-      $result = mysqli_query($db,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
-      // $active = $row['active'];
 
-      $count = mysqli_num_rows($result);
+ $result = mysqli_query($db,$sql);
+ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
-      // If result matched $myusername and $mypassword, table row must be 1 row
-      if($count == 1) {
-         $myusername = $_SESSION['myusername'];
-         // session_register("myusername");
-         $_SESSION['login_user'] = $myusername;
+ // Tjekker kolonne kaldet active?
+ // $active = $row["active"];
 
-         // Hvis overstående var succesfuldt går den til adminpanel.php
-         header("location: pages/adminpanel.php"); // Hvis overstående var succesfuldt går den til adminpanel.php
-      }else {
-        // Hvis ikke succesfuld, viser den error-message
-         $error = "Det indtastede brugernavn eller kodeord er forkert";
-      }
-    }
+ $count = mysqli_num_rows($result);
+
+ // If result matched $myusername and $mypassword, table row must be 1 row
+ if($count == 1) {
+
+$_SESSION['myusername'] = $myusername;
+
+    $_SESSION['login_user'] = $myusername;
+
+    header("location: pages/adminpanel.php");
+ }else {
+   // Error kode ved forkert brugernavn/kode
+    $error = "Det indtastede brugernavn eller kodeord var forkert";
+ }
+}
  ?>
 
 
@@ -96,12 +99,12 @@ $sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$myp
         <button type="submit" id="loginknap">Login</button>
 
         <!--Husk mig på denne computer (ingen funktionalitet her endnu) -->
-        <div class="huskmig">
+        <!-- <div class="huskmig">
           <input type="checkbox" checked="checked" name="remember"> Husk mig på denne computer
-        </div>
+        </div> -->
 
 <!--Viser error-code hvis brugernavn eller kodeord er forkert  -->
-    <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo isset($error) ? $error: ''; ?></div>
+    <div style = "font-size:10px; color:#cc0000; margin-top:10px"><?php echo isset($error) ? $error: ''; ?></div>
 
     </div>
 

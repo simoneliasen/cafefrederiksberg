@@ -18,7 +18,12 @@
 
 <body>
 
-  <!--Lav check for om du er registreret som admin (eller moderator)  -->
+  <!--Lav check for om du er logget ind  -->
+<?php
+include('../session.php');
+
+
+?>
 
   <!--Lav Mulighed for at tilføje brugere  -->
   <!--Lav mulighed for at slette brugere  -->
