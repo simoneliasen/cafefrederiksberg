@@ -52,7 +52,9 @@
   <h2 id="restaurant_overskrift">Menukort</h2>
 
 
+
           <!-- Item starts -->
+
           <div class="menu-item">
             <div class="menu-item-name">
               Rejecocktail
@@ -268,9 +270,42 @@
             </div>
           </div>
           <!-- Item ends -->
-            <a class="Kontrolrapport_restaurant" href="https://www.findsmiley.dk/25727" target="_blank"><img src="img/kontrolrapport.jpeg" width="80" height="40" border="0"></a>
-        </div>
+          <!-- Item starts -->
+          <div class="menu-item">
+            <div id="Allergener_header">
+              Allergener
+            </div>
+            <div id="Allergener_description">
+              Gæster kan få oplysninger om allergerner ved at henvende sig til personalet
+            </div>
+          </div>
+          <!-- Item ends -->
+          <!-- Item starts -->
+          <div class="menu-item">
+            <div id="Serveringtider_header">
+              Serveringstider
+            </div>
+            <div id="Serveringtider_description">
+              Vi serverer mad dagligt kl. 12:00 - 14:00 og kl. 17:00 - 20:00
+OBS: Fredag og Lørdag er der travlt, derfor burde bord bestilles I god tid
+            </div>
+          </div>
+            <!-- Item ends -->
 
+
+
+
+
+
+
+
+          <div class="sixteen columns">
+  <div class="four columns offset-by-four">
+
+      <a class="Kontrolrapport_restaurant" href="https://www.findsmiley.dk/25727" target="_blank"><img src="img/kontrolrapport.jpeg" width="80" height="40" border="0"></a>
+
+
+  </div>
 
       </div>
 </div>
