@@ -39,11 +39,14 @@ $sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$myp
 // Tager data fra input og tjekker det imod databasene
       $result = mysqli_query($db,$sql);
 
-
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+
+
       $active = $row['active'];
 
       $count = mysqli_num_rows($result);
+
+
 
       // If result matched $myusername and $mypassword, table row must be 1 row
       if($count == 1) {
@@ -54,7 +57,6 @@ $sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$myp
       }else {
          $error = "Your Login Name or Password is invalid"; // Hvis ikke succesfuld, viser den error-message
       }
-   }
  ?>
 
 
