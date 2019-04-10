@@ -121,8 +121,8 @@ h1{
 
 .content{
   width: 95%;
-  margin: auto;
-  height: 95vh;
+  margin: 2% auto 2% auto;
+  height: 90vh;
   background-color: #fff;
   -webkit-box-shadow: 0px 10px 49px -6px rgba(207,207,207,1);
   -moz-box-shadow: 0px 10px 49px -6px rgba(207,207,207,1);
@@ -131,7 +131,44 @@ h1{
 
 .heading{
   height: 100px;
-  line-height: 100px;
   border-bottom: solid 1px #DFDFDF;
+  line-height: 100px;
+}
+
+.heading h1{
+  margin: 0;
   padding-left: 25px;
+  float: left;
+}
+
+.logout{
+  float: right;
+  padding-right: 25px;
+}
+
+.button{
+  padding: 9px 35px;
+  background-color: #43b25b;
+  border-radius: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.button2{
+  font-weight: 600;
+  padding: 9px 35px;
+  background-color: ;
+  border-radius: 12px;
+  border: 1px solid #8e1b1b;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.button2:hover{
+  background-color: #8e1b1b;
+  color: #fff;
 }

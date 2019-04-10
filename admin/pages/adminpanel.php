@@ -23,18 +23,21 @@
   <!--Lav Mulighed for at tilføje brugere  -->
   <!--Lav mulighed for at slette brugere  -->
 
-<!--Centrere adminpael  -->
-
 <div class="logo">
   <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="180px">
 </div>
 
 <div class="nav">
   <ul>
-    <li><a href="default.asp">Home</a></li>
-    <li><a href="news.asp">News</a></li>
-    <li><a href="contact.asp">Contact</a></li>
-    <li><a href="about.asp">About</a></li>
+    <li><a href="about.asp">Google analytics</a></li>
+    <li><a href="default.asp">Video</a></li>
+    <li><a href="news.asp">Katalog</a></li>
+    <li><a href="contact.asp">(kommende events)</a></li>
+    <li><a href="about.asp">Menukort</a></li>
+    <li><a href="about.asp">Barkort</a></li>
+    <li><a href="about.asp">Buffeter</a></li>
+    <li><a href="about.asp">Arrangementer</a></li>
+    <li><a href="about.asp">Selskabsmenu</a></li>
   </ul>
 </div>
 
@@ -42,11 +45,12 @@
   <div class="content">
     <div class="heading">
       <h1>Overskrift</h1>
+      <div class="logout">
+        <a class="button2 button_logout">log ud</a>
+      </div>
     </div>
 
-    <div class="login">
-      <!-- indsæt noget med login -->
-    </div>
+
 
 
   </div>
