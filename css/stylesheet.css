@@ -558,6 +558,42 @@ margin-bottom: 2.5rem;
 
 .Kontrolrapport_restaurant{display: block;
 margin: 0 auto;}
+{padding-top: 4rem;}
+
+#Allergener_header
+{  font-weight: bold;
+  width:90%;
+  color:#CCB380;
+text-align: left;
+padding-top: 4rem;}
+
+
+
+
+#Allergener_description
+{font-size: .9em;
+line-height: 1.5em;
+width:75%;
+padding-top: 1rem;
+text-align: left;
+}
+
+#Serveringtider_header
+{  font-weight: bold;
+  width:90%;
+  color:#CCB380;
+text-align: left;
+padding-top: 2rem;}
+
+#Serveringtider_description
+{font-size: .9em;
+line-height: 1.5em;
+width:75%;
+padding-top: 1rem;
+padding-bottom: 3rem;
+text-align: left;
+}
+
 
 
 

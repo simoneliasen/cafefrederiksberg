@@ -22,6 +22,42 @@
 
 <body>
 
+<?php
+// Inkludere database, så input kan sammenlignes med database
+include('config.php');
+
+// Starter en Session (Kontrollere om brugeren er brugeren (skal jeg lige have dobbeltcheckeet))
+session_start();
+
+// Sanitizer input fra 'username' og 'password' så vi ikke får MySql injections (Håber jeg)
+$myusername = mysqli_real_escape_string($db,$_POST['username']);
+$mypassword = mysqli_real_escape_string($db,$_POST['password']);
+
+// Tager ID fra ADMIN hvor 'username' i input indsættes som username i form (tilsvarende for password)
+$sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$mypassword'";
+
+// Tager data fra input og tjekker det imod databasene
+      $result = mysqli_query($db,$sql);
+
+
+      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+      $active = $row['active'];
+
+      $count = mysqli_num_rows($result);
+
+      // If result matched $myusername and $mypassword, table row must be 1 row
+      if($count == 1) {
+         session_register("myusername");
+         $_SESSION['login_user'] = $myusername;
+
+         header("location: pages/adminpanel.php"); // Hvis overstående var succesfuldt går den til adminpanel.php
+      }else {
+         $error = "Your Login Name or Password is invalid"; // Hvis ikke succesfuld, viser den error-message
+      }
+   }
+ ?>
+
+
   <!--Tilbage til forsiden  -->
   <div class="loginbacktoindex">
     <a href="/cafefrederiksberg/index.php" id="backtofrontpage">
@@ -41,13 +77,13 @@
     <div class="formcenter">
 
       <!--Form  -->
-      <form action="action_page.php">
+      <form action="action_page.php" method="post">
 
         <!--Brugernavn  -->
         <div class="brugernavn">
           <label for="username"><b>Brugernavn</b></label>
           <input type="text" placeholder="Indsæt Brugernavn" name="username" required>
-        </div>
+        </div
 
         <!--Kodeord  -->
         <div class="kodeord">
