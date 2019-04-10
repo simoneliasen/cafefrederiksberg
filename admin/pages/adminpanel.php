@@ -8,17 +8,11 @@
 
   <!--Side titel  -->
   <title>Login</title>
-  <!--Standard stylesheet  -->
-  <link rel="stylesheet" type="text/css" href="../../css/stylesheet.css">
-  <!-- Skeleton stylesheet  -->
-  <link rel="stylesheet" type="text/css" href="../../css/skeleton.css">
-  <!-- Normalize stylesheet  -->
-  <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
-  <!-- Admin CSS  -->
+
   <link rel="stylesheet" type="text/css" href="../css/admin.css">
+  <link rel="stylesheet" type="text/css" href="../css/normalize.css">
   <!-- Includer Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
 
 </head>
 
@@ -30,52 +24,32 @@
   <!--Lav mulighed for at slette brugere  -->
 
 <!--Centrere adminpael  -->
-<div class="container adminpanel">
+
+<div class="logo">
+  <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="180px">
+</div>
+
+<div class="nav">
+  <ul>
+    <li><a href="default.asp">Home</a></li>
+    <li><a href="news.asp">News</a></li>
+    <li><a href="contact.asp">Contact</a></li>
+    <li><a href="about.asp">About</a></li>
+  </ul>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="heading">
+      <h1>Overskrift</h1>
+    </div>
+
+    <div class="login">
+      <!-- indsæt noget med login -->
+    </div>
 
 
-<!--Logo  -->
-<img src="/cafefrederiksberg/img/logo.svg" width="200rem" height="auto">
-
-  <!--Menu oversigt  -->
-  <div class="row adminoversigt">
-  <a href="/cafefrederiksberg/admin/pages/forside.php">Forside</a>
-  <a href="/cafefrederiksberg/admin/pages/restaurant.php">Restaurant</a>
-  <a href="/cafefrederiksberg/admin/pages/events.php">Events</a>
-  <a href="/cafefrederiksberg/admin/pages/selskaber.php">Selskaber</a>
-  <a href="/cafefrederiksberg/admin/pages/buffet.php">Buffet</a>
-  <a href="/cafefrederiksberg/admin/pages/arrangementer.php">Arrangementer</a>
-  <a href="/cafefrederiksberg/admin/pages/selskabsmenu.php">Selskabsmenu</a>
-  <a href="/cafefrederiksberg/admin/pages/kontakt.php">Kontakt</a>
-  <a href="/cafefrederiksberg/admin/pages/tidslinje.php">Tidslinje</a>
-  <a href="/cafefrederiksberg/admin/pages/header.php">Header</a>
-  <a href="/cafefrederiksberg/admin/pages/footer.php">Footer</a>
   </div>
-
-<!--Row til Editable contante  -->
-<div class="row">
-
-<!--row 1 m. editable content  -->
-  <div class="twelve columns editcontent">
-    <h6>Slideshow</h6>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia, augue non commodo aliquet, augue eros tincidunt ex, eu pulvinar tortor diam in odio. Integer a eleifend risus. Cras ornare, metus et egestas finibus, ligula nunc cursus elit, sed sodales diam ante et leo. Vivamus accumsan nulla massa, non commodo turpis imperdiet ut. Pellentesque at enim magna. Quisque non dui vitae nunc luctus venenatis eu in justo. Nullam quis mi rhoncus, molestie sem quis, lacinia nisi. Nam vitae porta nisi. Curabitur in ornare quam, ut venenatis sapien. Phasellus posuere ultricies pretium.
-    </p>
-  </div>
-
-<!--row 2 m. editable content  -->
-  <div class="twelve columns editcontent">
-    <h6>Introhistorie</h6>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia, augue non commodo aliquet, augue eros tincidunt ex, eu pulvinar tortor diam in odio. Integer a eleifend risus. Cras ornare, metus et egestas finibus, ligula nunc cursus elit, sed sodales diam ante et leo. Vivamus accumsan nulla massa, non commodo turpis imperdiet ut. Pellentesque at enim magna. Quisque non dui vitae nunc luctus venenatis eu in justo. Nullam quis mi rhoncus, molestie sem quis, lacinia nisi. Nam vitae porta nisi. Curabitur in ornare quam, ut venenatis sapien. Phasellus posuere ultricies pretium.
-    </p>
-  </div>
-
-
-<!--row 3 m. editable content  -->
-  <div class="twelve columns editcontent">
-    <h6>Slideshow</h6>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia, augue non commodo aliquet, augue eros tincidunt ex, eu pulvinar tortor diam in odio. Integer a eleifend risus. Cras ornare, metus et egestas finibus, ligula nunc cursus elit, sed sodales diam ante et leo. Vivamus accumsan nulla massa, non commodo turpis imperdiet ut. Pellentesque at enim magna. Quisque non dui vitae nunc luctus venenatis eu in justo. Nullam quis mi rhoncus, molestie sem quis, lacinia nisi. Nam vitae porta nisi. Curabitur in ornare quam, ut venenatis sapien. Phasellus posuere ultricies pretium.
-    </p>
-  </div>
-
 </div>
 
 </body>

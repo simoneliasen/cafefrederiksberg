@@ -14,6 +14,12 @@ SORT-ISH      #101010
 MØRKEGRÅ-ISH  #1E1D20
 */
 
+@import url('https://rsms.me/inter/inter.css');
+
+body{
+  font-family: 'inter';
+}
+
 /*..............................................A LOGINPAGE */
 
 /*Link til forsiden  */
@@ -56,30 +62,76 @@ textarea {
 
 /*..............................................B ADMINPANEL */
 
-.container.adminpanel {
-  margin-top: 3rem;
+h1{
+  color: #131313;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
-  .row.adminoversigt {
-    text-align: center;
-    background-color: #1E1D20;
-    border: 0.01rem solid #CCB380;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  .row.adminoversigt > a {
-    margin-left: 0.3rem;
-    margin-right: 0.3rem;
-    text-decoration: none;
-      font-weight: bold;
-  }
 
+.logo{
+  position: fixed;
+  z-index: 1;
+  top: 40px;
+  left: 2%;
+}
 
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 120px 0 0 0;
+  width: 18%;
+  background-color: #303030;
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
 
-  .twelve.columns.editcontent {
-    margin: 0;
-  margin-top: 2rem;
-  background-color: #1E1D20;
-  border: 0.01rem solid #CCB380;
-  padding: 0.5rem;
-  }
+.nav li a {
+  display: block;
+  color: #EEEEEE;
+  padding: 18px 8px 18px 12%;
+  text-decoration: none;
+  border-bottom: solid 1px #414141;
+  font-weight: 500;
+}
+
+/* Change the link color on hover */
+.nav li a:hover {
+  background-color: #202020;
+  color: white;
+}
+
+.top_bar{
+  width: 82%;
+  float: right;
+  height: 90px;
+  background-color: #fff;
+}
+
+.top_bar h1{
+  color: #CCB380;
+}
+
+.container{
+  width: 82%;
+  height: 100vh;
+  float: right;
+  background-color: #F1F1F1;
+}
+
+.content{
+  width: 95%;
+  margin: auto;
+  height: 95vh;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 10px 49px -6px rgba(207,207,207,1);
+  -moz-box-shadow: 0px 10px 49px -6px rgba(207,207,207,1);
+  box-shadow: 0px 10px 49px -6px rgba(207,207,207,1);
+}
+
+.heading{
+  height: 100px;
+  line-height: 100px;
+  border-bottom: solid 1px #DFDFDF;
+  padding-left: 25px;
+}
