@@ -1,0 +1,85 @@
+/* CAFÉ FREDERIKSBERG STYLESHEET */
+/*
+    AALBORG UNIVERSITET GRUPPE B267A BAIT INF 2019
+*/
+/*
+A. LOGINPAGE
+B. WELCOMEPAGE
+C. ADMINPANEL
+
+COLORS
+-----------
+GULD          #CCB380
+SORT-ISH      #101010
+MØRKEGRÅ-ISH  #1E1D20
+*/
+
+/*..............................................A LOGINPAGE */
+
+/*Link til forsiden  */
+#backtofrontpage {
+  text-decoration: none;
+  color: white;
+}
+#backtofrontpage:hover {
+  color: grey;
+}
+/*Centering af content  */
+.formcenter {
+  text-align: center;
+}
+/* container   */
+.container.loginpage {
+  margin-top: 5rem;
+}
+#loginknap {
+  margin-top: 1rem;
+}
+.logologin {
+  text-align: center;
+}
+.kodeord {
+  margin-top: 1rem;
+}
+#loginknap {
+  margin-top: 1rem;
+}
+.huskmig {
+  margin-top: 1rem;
+}
+/* Farve på input */
+input,
+select,
+textarea {
+  color: black;
+}
+
+/*..............................................B ADMINPANEL */
+
+.container.adminpanel {
+  margin-top: 3rem;
+}
+  .row.adminoversigt {
+    text-align: center;
+    background-color: #1E1D20;
+    border: 0.01rem solid #CCB380;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .row.adminoversigt > a {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    text-decoration: none;
+      font-weight: bold;
+  }
+
+
+
+  .twelve.columns.editcontent {
+    margin: 0;
+  margin-top: 2rem;
+  background-color: #1E1D20;
+  border: 0.01rem solid #CCB380;
+  padding: 0.5rem;
+  }

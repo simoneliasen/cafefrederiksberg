@@ -40,11 +40,11 @@
         </div>
         <div class="six columns bestilonline knapper">
             <!-- Bestil bord online knap  -->
-          <a class="button button-primary bestil" href="pages/booking.php">Bord</a>
+          <a class="button button-primary bestil bord" href="pages/booking.php">Bord</a>
         <!-- Bestil Biletter online knap  -->
-          <a class="button button-primary bestil" href="pages/booking.php">Biletter</a>
+          <a class="button button-primary bestil biletter" href="pages/booking.php">Biletter</a>
         <!-- Bestil Take-away online knap  -->
-          <a class="button button-primary bestil" href="pages/booking.php">Take-away</a>
+          <a class="button button-primary bestil take-away" href="pages/booking.php">Take-away</a>
         </div>
 
       </div>
@@ -145,12 +145,21 @@
   <!--Events: Facebook implementering  -->
   <div class="container">
     <div class="events_overskrift">
+<!--Overskrift logo  -->
+      <div class="events_overskrift_leftalign">
+    <img src="/cafefrederiksberg/img/fredelivelogo.svg" id="eventlogo" width="60rem" height="auto">
+    </div>
+<!-- Overskrift tekst  -->
+      <div class="events_overskrift_rightalign">
       <h2>Frede Live</h2>
       <h6>Kommende Events</h6>
+    </div>
+<!--Facebook widget  -->
     </div>
     <div class='sk-fb-event' data-embed-id='22281'></div>
     <script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
   </div>
+
 
 <!--Knap til alle events  -->
 <div class="row alleeventsforside">

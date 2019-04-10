@@ -74,6 +74,7 @@ p {
   width: 100%;
   z-index: 1;  /*puts header in front of content*/
   background: transparent;
+  transition: background-color 0.5s ease;
   }
 .logo {
   display: inline;
@@ -229,27 +230,26 @@ background-color: #101010;
   color: white;
   font-family: 'Inter var';
 }
-
 /*Bestil online knapper   */
 .button.button-primary.bestil{
   background-color: transparent;
   border-radius: 0.5rem;
-  border-color: #CCB380;
 }
+/*On hover  */
 .button.button-primary.bestil:hover{
   background-color: #CCB380;
 }
-
 /*Opsætning af venstre sektion  */
  .six.columns.bestilonline {
-  margin-top: 1rem;
-}
-.six.columns.bestilonline.knapper {
-  padding-left: 2rem;
-}
-.six.columns.bestilonline.knapper > a {
-  margin-left: 1rem;
+  margin-top: 1.1rem;
 
+}
+.button.button-primary.bestil.bord{
+  margin-left: 1.5rem;
+}
+/*Placering af knapper  */
+.button.button-primary.bestil.take-away, .button.button-primary.bestil.biletter {
+  margin-left: 3rem;
 }
 
 /* Introhistorie  */
@@ -260,18 +260,21 @@ background-color: #101010;
   margin-bottom: 1rem;
   background-color: #1E1D20;
 }
+/*Heading styling  */
 #introhistoriecaféfrederiksbergheading {
 font-family: "Playfair Display";
 font weight: bold;
 font-size: 32px;
 line-spacing: 32px;
 }
+/*Subheading styling  */
 #introhistoriecaféfrederiksbergsubheading {
   font-family: "Playfair Display";
   font weight: regular;
   font-size: 22px;
   line-spacing: 30px;
 }
+/*Text styling  */
 #introhistoriecaféfrederiksbergtext {
   margin-top: 16px;
   font-family: "Poppins";
@@ -279,18 +282,22 @@ line-spacing: 32px;
   font-size: 15px;
   line-spacing: 23px;
 }
+/*Alle introhistorie elementer  */
 .introHistorie {
 padding-bottom: 0.4rem;
 padding-top: 0.4rem;
 }
+/*Venstre sektion styling  */
 .six.columns.introHistorie {
   margin-top: 1rem;
 }
+/*Billede styling  */
 #butikfront {
   margin-top: 2rem;
   width: 32.832rem;
   height: 20.952rem;
 }
+/*Knap styling  */
 .button.introhistorie {
   color: white;
 }
@@ -302,6 +309,7 @@ padding-top: 0.4rem;
 .indholdsoversigt {
   background-color: #101010;
 }
+/*Bilelde elementer  */
 .three.columns.indholdsoversigt > img{
   margin: 0 auto;
   text-align: center;
@@ -310,6 +318,7 @@ padding-top: 0.4rem;
   height: 9rem;
   margin-top: 2rem;
 }
+/*h2 elementer  */
 .three.columns.indholdsoversigt > h2{
   margin: 0 auto;
   text-align: center;
@@ -318,6 +327,7 @@ padding-top: 0.4rem;
   font-weight: bold;
   margin-top: 1.2rem;
 }
+/*text elementer */
 .three.columns.indholdsoversigt > p{
   margin: 0 auto;
   text-align: center;
@@ -334,6 +344,17 @@ padding-top: 0.4rem;
   color: grey;
 }
 
+/*Events  */
+.events_overskrift_leftalign {
+  display: inline;
+}
+.events_overskrift_rightalign{
+  display:inline-block;
+  margin-left: 1rem;
+}
+.events_overskrift_rightalign h2{
+  display:inline;
+}
 /*"Alle events knap" fører til event-side  */
 .row.alleeventsforside {
   text-align: center;
@@ -353,6 +374,7 @@ padding-top: 0.4rem;
 .button.alleeventsforside:hover {
   color: grey;
 }
+
 /*Google maps  */
 .mapouter {
   position: relative;
@@ -579,36 +601,29 @@ text-align: left;
 /*..............................................8 SELSKABER */
 
 .selskab_button{
-  border-style: solid;
-  border-color white;
-  border-radius: 25px;
-  background-color: #171619;
   width: 70%;
   text-align: center;
   display: inline-block;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 0.6rem;
+  margin-top: 2rem;
 }
 
-.selskab_button_text{
-  font-size: 1.5rem;
-  font-weight: bold;
+.selskab_button_section{
+  Margin: 0 auto;
+  text-align: center;
+  width: 15rem;
+  margin-bottom: 2rem;
 }
 
-.selskab_button_position{
-  margin-bottom: 1px;
-}
-
-.selskab_text_position{
-  display: inline-block;
-  text-align: left;
-  width: 80%;
+.selskab_item_positions{
+  margin-top: 50px;
 }
 
 .selskab_text_title{
   color: #CCB380;
   font-family: 'Playfair Display';
-  width: 100%;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .selskab_text_atttributes{
@@ -619,7 +634,27 @@ text-align: left;
 .selskab_img_position{
   display: inline-block;
   /*margin-left: 100px;*/
+  margin: 0px auto;
 }
+
+.arrangementer{
+  position: relative;
+  height: 400px;
+
+}
+
+.selskaber_wrapper{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+
+  }
+
+.container.info{
+  margin-top: 2rem;
+}
+
 
 /* .............................................8.1 SELSKABSMENU */
 .header-centertext{
@@ -807,6 +842,17 @@ Width: 30%;
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
   width: 100%;
+
+  }
+
+.container.info{
+  margin-top: 2rem;
+}
+.arrheader {
+ text-align: center;
+ padding-bottom:2rem;
+ padding-top: 1rem;
+ color: #CCB380;
 }
 /*.............................................9.0 TIDSLINJE */
 

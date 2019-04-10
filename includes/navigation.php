@@ -47,3 +47,24 @@ $(document).scroll(function() {
     $nav.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
 });
 </script>
+
+<script>
+var $dropdown = $('.dropdown-content');
+$(document).scroll(function() {
+    $dropdown.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
+});
+</script>
+
+<style>
+.dropdown-content {
+
+  padding-right: 0;
+  background-color: transparent;
+}
+.dropdown-content a {
+  padding-left: 0.8rem;
+  padding-right: 0.5rem;
+  background-color: transparent;
+}
+
+</style>

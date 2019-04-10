@@ -14,6 +14,8 @@
   <link rel="stylesheet" type="text/css" href="../../css/skeleton.css">
   <!-- Normalize stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+  <!-- Admin CSS  -->
+  <link rel="stylesheet" type="text/css" href="../css/admin.css">
   <!-- Includer Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -22,6 +24,10 @@
 
 <body>
 
+  <!--Lav check for om du er registreret som admin (eller moderator)  -->
+
+  <!--Lav Mulighed for at tilføje brugere  -->
+  <!--Lav mulighed for at slette brugere  -->
 
 <!--Centrere adminpael  -->
 <div class="container adminpanel">
@@ -47,7 +53,7 @@
 
 <!--Row til Editable contante  -->
 <div class="row">
- 
+
 <!--row 1 m. editable content  -->
   <div class="twelve columns editcontent">
     <h6>Slideshow</h6>
@@ -71,39 +77,6 @@
   </div>
 
 </div>
-
-
-  <style>
-
-
-  .container.adminpanel {
-    margin-top: 3rem;
-  }
-    .row.adminoversigt {
-      text-align: center;
-      background-color: #1E1D20;
-      border: 0.01rem solid #CCB380;
-      margin-top: 1rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-    }
-    .row.adminoversigt > a {
-      margin-left: 0.3rem;
-      margin-right: 0.3rem;
-      text-decoration: none;
-        font-weight: bold;
-    }
-
-
-
-    .twelve.columns.editcontent {
-      margin: 0;
-    margin-top: 2rem;
-    background-color: #1E1D20;
-    border: 0.01rem solid #CCB380;
-    padding: 0.5rem;
-    }
-  </style>
 
 </body>
 

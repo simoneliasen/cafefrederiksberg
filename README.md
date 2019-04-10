@@ -20,6 +20,9 @@ Mangler:
 - Side for kunstnere der vil spille (måske bare en tekst med opfordring til henvendelse pr. mail)
 - Klub frede sektion
 - Dropdown i kontakt side (så den inkludere "historie" / tidslinje")
+- DJ
+- Julefrokostmenu
+- Kaffebordmenu
 
 Hovedfunktioner
 - Opsætning af database
@@ -29,6 +32,12 @@ Hovedfunktioner
 - Google maps integration (Simon (skal optimeres til mobil))
 
 Ekstra funktioner
-- gør siden SEO-venlig
+- gør siden SEO-venlig 
+- Meta-description for SEO
 - Opsæt SSL certifikat (gøres først på egentlige domæne, café frederiksberg skal introduceres for det)
 - Opsætning for adgang fra mobil
+
+Tænk over:
+- GDPR
+- Sikkerhed
+
