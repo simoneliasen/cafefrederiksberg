@@ -138,10 +138,6 @@ p {
   transform: translate(-50%, -50%);
 }
 
-.header_text h1, .header_text h6{
-  text-shadow: 0px 0px 50px rgba(0,0,0,0.5)
-}
-
 video {
   position: absolute;
   top: 0;
