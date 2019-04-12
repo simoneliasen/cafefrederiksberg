@@ -35,7 +35,7 @@ $myusername = mysqli_real_escape_string($db,$_POST['username']);
 $mypassword = mysqli_real_escape_string($db,$_POST['password']);
 
 // Tager ID fra ADMIN hvor 'username' i input indsættes som username i form (tilsvarende for password)
-$sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$mypassword'";
+$sql = "SELECT id FROM admin WHERE username = '$myusername' and password = '$mypassword'";
 // Tager data fra input og tjekker det imod databasene
 
 
@@ -43,7 +43,7 @@ $sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$myp
  $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
  // Tjekker kolonne kaldet active?
- // $active = $row["active"];
+  //$active = $row["active"];
 
  $count = mysqli_num_rows($result);
 
