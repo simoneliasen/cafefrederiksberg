@@ -77,25 +77,33 @@
 
 <div class="bg_dark">
   <div class="container">
-    <h2>Klub Frede</h2>
-    <h6>Bliv medlem i Klub Frede og spar penge</h6>
-    <div class="row klub_frede">
-      <div class="one-half column">
+    <div class="row">
 
-      </div>
-
-      <div class="one-half column">
-        <div class="events_overskrift_leftalign">
-          <img src="/cafefrederiksberg/img/fredelivelogo.svg" id="eventlogo" width="auto" height="100px">
+      <div class="one-half column frede_live_katalog_text">
+        <div class="frede_live_katalog_text_container">
+          <h2>Klub Frede</h2>
+          <h6>Bliv medlem og spar penge</h6>
+          <p> </p>
+          <a class="button" href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">Se vores Magasin <u>her</u></a>
         </div>
       </div>
+
+
+      <div class="one-half column frede_live_katalog">
+        <a href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">
+          <div class="frede_live_katalog_img">
+          </div>
+        </a>
+      </div>
+
+
     </div>
   </div>
 </div>
 
 <div class="container" style="padding-bottom: 2rem;">
   <div class="events_overskrift">
-    <h2>Følg os på Instagram</h2>
+    <h2>Find os på Instagram</h2>
     <h6>Nyheder og billeder fra Frede</h6>
   </div>
   <script src="https://snapwidget.com/js/snapwidget.js"></script>

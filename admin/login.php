@@ -25,6 +25,7 @@
 <?php
 // Inkludere database, så input kan sammenlignes med database
 include('config.php');
+
 // Starter en Session (Kontrollere om brugeren er brugeren (skal jeg lige have dobbeltcheckeet))
 session_start();
 
@@ -50,8 +51,8 @@ $sql = "SELECT id FROM admin WHERE username = '$myusername' and password = '$myp
  // If result matched $myusername and $mypassword, table row must be 1 row
  if($count == 1) {
 
-$_SESSION['myusername'] = $myusername;
 
+$_SESSION['myusername'] = $myusername;
     $_SESSION['login_user'] = $myusername;
 
     header("location: pages/adminpanel.php");
