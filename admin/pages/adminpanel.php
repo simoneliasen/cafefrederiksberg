@@ -17,6 +17,10 @@
 </head>
 
 <body>
+  <?php
+  // Inkludere config.php der opretter forbindelse til MySql database
+  include('../session.php');
+  ?>
 
   <!--Lav check for om du er registreret som admin (eller moderator)  -->
 
@@ -47,7 +51,7 @@
       <!-- DYNAMISK, overskriften skal ændre sig så den passer til menu-punktet -->
       <h1>Admin-panel <span style="font-weight: 400;">Café Frederiksberg</span></h1>
       <div class="logout">
-        <a class="button2 button_logout" href="#">log ud</a>
+        <a class="button2 button_logout" href="../logout.php">log ud</a>
       </div>
     </div>
 

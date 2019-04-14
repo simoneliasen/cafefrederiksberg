@@ -23,41 +23,35 @@
 <body>
 
 <?php
-// Inkludere database, så input kan sammenlignes med database
+// Inkludere config.php der opretter forbindelse til MySql database
 include('config.php');
 
-// Starter en Session (Kontrollere om brugeren er brugeren (skal jeg lige have dobbeltcheckeet))
+// Starter en Session (checks if the user is already logged in)
 session_start();
 
-  if($_SERVER["REQUEST_METHOD"] == "POST") {
+// Processes form data when form is submitted
+if($_SERVER["REQUEST_METHOD"] == "POST") {
 
 // Sanitizer input fra 'username' og 'password' (Kan måske forbedres med XXS og yderligere)
 $myusername = mysqli_real_escape_string($db,$_POST['username']);
 $mypassword = mysqli_real_escape_string($db,$_POST['password']);
 
-// Tager ID fra ADMIN hvor 'username' i input indsættes som username i form (tilsvarende for password)
+// Retrieves ID from admin where username = $myusername(input) & password =$mypassword(input)
 $sql = "SELECT id FROM admin WHERE username = '$myusername' and password = '$mypassword'";
-// Tager data fra input og tjekker det imod databasene
+//retrieves data from database
+$result = mysqli_query($db,$sql);
+// Retrieves the number of rows with username and password
+$count = mysqli_num_rows($result);
 
-
- $result = mysqli_query($db,$sql);
- $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-
- // Tjekker kolonne kaldet active?
-  //$active = $row["active"];
-
- $count = mysqli_num_rows($result);
-
- // If result matched $myusername and $mypassword, table row must be 1 row
- if($count == 1) {
-
-
-$_SESSION['myusername'] = $myusername;
-    $_SESSION['login_user'] = $myusername;
-
+// if 1 row with both username and password exists, store session variable and go to adminpanel.php
+if($count == 1) {
+// Stores data in session variable
+  $_SESSION['myusername'] = $myusername;
+  $_SESSION['login_user'] = $myusername;
+// Redirects user to adminpanel.php if logged in sucessfull
     header("location: pages/adminpanel.php");
  }else {
-   // Error kode ved forkert brugernavn/kode
+// Error code if wrong username/password
     $error = "Det indtastede brugernavn eller kodeord var forkert";
  }
 }
