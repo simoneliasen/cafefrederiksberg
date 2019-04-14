@@ -1,43 +1,27 @@
-Opsæt statisk layout for hele siden
-- forside(index) (Simon)
-- Header (Simon)
-- Footer (Simon)
-- Restaurant (Bogi)
-- Bar (Emil)
-- Events (Frederik)
-- Slider (Frederik)
-- Stylesheet (Frederik)
-- Tidslinje (Daniel)
-- Arangementer (Daniel
-- Selskabsmenu (Victor)
-- Kontakt (Lasse)
-- Buffet (Lasse)
-- Selskaber (Victor)
-- Login til adminpanel (Simon)
-- Adminpanel (Simon)
-
-Mangler:
-- Side for kunstnere der vil spille (måske bare en tekst med opfordring til henvendelse pr. mail)
-- Klub frede sektion
-- Dropdown i kontakt side (så den inkludere "historie" / tidslinje")
+Stuff to do
+- Færdigør siders opsætning via css
+- Inkluder tekst for kunstnere der vil spille
+- klub frede sektion
+- Tidslinje (skal ikke gå ned over footer)
+- forside (indholdsoversigts-funktion)
 - DJ
-- Julefrokostmenu
-- Kaffebordmenu
+- Julefrokost.pdf & kaffemenu.pdf på arrangement side
+- Dropdown i kontakt side (om os istedet m. kontakt os og tidslinje som dropdown)
+
 
 Hovedfunktioner
+- Login system
 - Opsætning af database
-- Integrer events m. facebook API (Frederik)
 - Opsæt adminpanels funktionalitet
-- opsæt slider-funktion
-- Google maps integration (Simon (skal optimeres til mobil))
+- opsæt slider-funktion (+ upload af billede/video)
 
 Ekstra funktioner
 - gør siden SEO-venlig 
 - Meta-description for SEO
 - Opsæt SSL certifikat (gøres først på egentlige domæne, café frederiksberg skal introduceres for det)
 - Opsætning for adgang fra mobil
+- Sanitize input for Mysql og XSS
 
 Tænk over:
 - GDPR
-- Sikkerhed
 
