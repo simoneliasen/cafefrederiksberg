@@ -25,7 +25,6 @@
 <?php
 // Inkludere config.php der opretter forbindelse til MySql database
 include('config.php');
-
 // Starter en Session (checks if the user is already logged in)
 session_start();
 

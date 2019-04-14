@@ -18,14 +18,9 @@
 
 <body>
   <?php
-  // Inkludere config.php der opretter forbindelse til MySql database
+  //Opretter forbindelse via config.php, og tjekker om du er logget ind via session.php
   include('../session.php');
   ?>
-
-  <!--Lav check for om du er registreret som admin (eller moderator)  -->
-
-  <!--Lav Mulighed for at tilføje brugere  -->
-  <!--Lav mulighed for at slette brugere  -->
 
 <div class="logo">
   <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="180px">
@@ -33,15 +28,15 @@
 
 <div class="nav">
   <ul>
-    <li><a href="about.asp">Google analytics</a></li>
-    <li><a href="default.asp">Forside</a></li>
-    <li><a href="news.asp">Katalog</a></li>
-    <li><a href="contact.asp">(kommende events)</a></li>
-    <li><a href="about.asp">Menukort</a></li>
-    <li><a href="about.asp">Barkort</a></li>
-    <li><a href="about.asp">Buffeter</a></li>
-    <li><a href="about.asp">Arrangementer</a></li>
-    <li><a href="about.asp">Selskabsmenu</a></li>
+    <li><a href="about.php">Google analytics</a></li>
+    <li><a href="forside.php">Forside</a></li>
+    <li><a href="news.php">Katalog</a></li>
+    <li><a href="contact.php">(kommende events)</a></li>
+    <li><a href="about.php">Menukort</a></li>
+    <li><a href="about.php">Barkort</a></li>
+    <li><a href="about.php">Buffeter</a></li>
+    <li><a href="about.php">Arrangementer</a></li>
+    <li><a href="about.php">Selskabsmenu</a></li>
   </ul>
 </div>
 
@@ -51,6 +46,7 @@
       <!-- DYNAMISK, overskriften skal ændre sig så den passer til menu-punktet -->
       <h1>Admin-panel <span style="font-weight: 400;">Café Frederiksberg</span></h1>
       <div class="logout">
+        <!--Logger dig ud ved at linke til logout.php som ender ens session og sender dig til login.php  -->
         <a class="button2 button_logout" href="../logout.php">log ud</a>
       </div>
     </div>
