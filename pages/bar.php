@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Vi har noget til enhver smag, billige Fyraftensøl, whiskey, gin, champagne, rom, irish coffee alt hvad hjertet og halsen begærer, skål!"/>
+  <link rel="icon" type="image/png" href="img/favicon.ico">
 
   <!--Side titel  -->
   <title>Café Frederiksberg</title>
