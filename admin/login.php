@@ -31,7 +31,8 @@ session_start();
 // Processes form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
-// Sanitizer input fra 'username' og 'password' (Kan måske forbedres med XXS og yderligere)
+// Sætter input fra form til variabel ($mypassword(input) = password(database))
+// Escapes characters that could make an SQL injections (as ASCII, NUL\n, \r, \, ', ",)
 $myusername = mysqli_real_escape_string($db,$_POST['username']);
 $mypassword = mysqli_real_escape_string($db,$_POST['password']);
 
@@ -55,7 +56,6 @@ if($count == 1) {
  }
 }
  ?>
-
 
   <!--Tilbage til forsiden  -->
   <div class="loginbacktoindex">
@@ -91,11 +91,6 @@ if($count == 1) {
 
         <!--Login knap  -->
         <button type="submit" id="loginknap">Login</button>
-
-        <!--Husk mig på denne computer (ingen funktionalitet her endnu) -->
-        <!-- <div class="huskmig">
-          <input type="checkbox" checked="checked" name="remember"> Husk mig på denne computer
-        </div> -->
 
 <!--Viser error-code hvis brugernavn eller kodeord er forkert  -->
     <div style = "font-size:10px; color:#cc0000; margin-top:10px"><?php echo isset($error) ? $error: ''; ?></div>
