@@ -35,16 +35,16 @@
         <!-- Bestil online tekst  -->
         <div class="six columns bestilonline">
           <div class="Bestil_onlineindex">
-            <h2 id="bestilonlineheader">Bestil online</h2>
+            <h2 id="bestilonlineheader">Bestil Online</h2>
           </div>
         </div>
         <div class="six columns bestilonline knapper">
             <!-- Bestil bord online knap  -->
           <a class="button button-primary bestil bord" href="pages/booking.php">Bord</a>
         <!-- Bestil Biletter online knap  -->
-          <a class="button button-primary bestil biletter" href="pages/booking.php">Biletter</a>
+          <a class="button button-primary bestil biletter" href="pages/booking.php">Billetter</a>
         <!-- Bestil Take-away online knap  -->
-          <a class="button button-primary bestil take-away" href="pages/booking.php">Take-away</a>
+          <a class="button button-primary bestil take-away" href="pages/booking.php">Take Away</a>
         </div>
 
       </div>
