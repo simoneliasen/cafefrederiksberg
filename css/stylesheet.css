@@ -394,41 +394,33 @@ body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4)
 
 .bar-title{
   text-align:center;
+  padding: 2rem 0;
 }
 
-.bar-item {
-  margin: 35px 0;
+.bar-item{
+  min-height: 25px;
+  margin-bottom: 30px;
 }
 
 .bar-item-name{
+  float: left;
   font-weight: bold;
   width:90%;
 }
 
 .bar-item-description{
-  font-size: .9em;
   line-height: 1.5em;
   width:75%;
 }
 
 .bar-item-price{
   float: right;
-  margin-top: -22px;
   font-style:italic;
   text-align:right;
   width:10%;
 }
 
-.barcentergin{
-  text-align:center;
-  padding-top:3rem;
-  margin-bottom:-2rem;
-}
-
-.barcentergintext{
-  text-align:center;
-  margin-top:3rem;
-  margin-bottom:-2rem;
+.bar-title p{
   font-style:italic;
   color:#CCB380;
 }

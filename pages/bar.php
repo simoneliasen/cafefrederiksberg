@@ -35,16 +35,12 @@
     <div class="row">
 
       <!-- SECTION START: 1 -->
-      <div class="six columns" style="margin-top: 3%;">
+      <div class="six columns">
         <h2 class="bar-title">ØL & VAND</h2>
         <!-- Item starts -->
         <div class="bar-item">
-          <div class="bar-item-name">
-            Fyraftensøl
-          </div>
-          <div class="bar-item-price">
-            10,-
-          </div>
+          <div class="bar-item-name">Fyraftensøl</div>
+          <div class="bar-item-price">10,-</div>
           <div class="bar-item-description">
             Alle hverdage mellem kl. 16.00 - 18.00.
           </div>
@@ -105,7 +101,7 @@
       <!-- SECTION END: 1 -->
 
       <!-- SECTION START: 2 -->
-      <div class="six columns" style="margin-top: 3%;">
+      <div class="six columns">
         <h2 class="bar-title">VARME DRIKKE</h2>
         <!-- Item starts -->
         <div class="bar-item">
@@ -182,35 +178,26 @@
 
   <div class="bg_dark">
     <div class="container">
-
-      <h2 class="barcentergin" style="padding-top:3%;">GIN</h2>
-      <p class="barcentergintext" style="padding-bottom:3%;">Aalborgs bedste Ginkort med over 40 lækre gins <br>Prisen er for 2 cl</p>
+      <div class="bar-title">
+        <h2>GIN</h2>
+        <p>Aalborgs bedste Ginkort med over 40 lækre gins <br>Prisen er for 2 cl</p>
+      </div>
 
       <!-- row begins-->
       <div class="row">
         <!-- SECTION STARTS: 1-->
         <div class="one-third column">
-          <!-- Item starts -->
+
           <div class="bar-item">
-            <div class="bar-item-name">
-              Finsbury
-            </div>
-            <div class="bar-item-price">
-              19,-
-            </div>
+            <div class="bar-item-name">Finsbury</div>
+            <div class="bar-item-price">19,-</div>
           </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
+
           <div class="bar-item">
-            <div class="bar-item-name">
-              Beefeater
-            </div>
-            <div class="bar-item-price">
-              19,-
-            </div>
+            <div class="bar-item-name">Beefeater</div>
+            <div class="bar-item-price">19,-</div>
           </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
+
           <div class="bar-item">
             <div class="bar-item-name">
               Gordon's
@@ -619,9 +606,10 @@
 
   <!-- CHAMPAGNE BEGINS -->
   <div class="container">
-
-    <h2 class="barcentergin" style="padding-top:3%;"">CHAMPAGNE</h2>
-    <p class=" barcentergintext" style="padding-bottom:3%;">Champagne - Cava - Mousserende</p>
+    <div class="bar-title">
+      <h2>CHAMPAGNE</h2>
+      <p>Champagne - Cava - Mousserende</p>
+    </div>
 
       <div class="row">
         <!-- SECTION START: 1 -->
@@ -754,9 +742,10 @@
   <!-- ROM -->
   <div class="bg_dark">
     <div class="container">
-
-      <h2 class="barcentergin" style="padding-top:3%;"">ROM</h2>
-      <p class=" barcentergintext" style="padding-bottom:3%;">Over 40 lækre rom - spørg bare, vi får løbende!<br>Prisen er for 2 cl</p>
+      <div class="bar-title">
+        <h2>ROM</h2>
+        <p>Over 40 lækre rom - spørg bare, vi får løbende!<br>Prisen er for 2 cl</p>
+      </div>
 
         <!-- row begins-->
         <div class="row">

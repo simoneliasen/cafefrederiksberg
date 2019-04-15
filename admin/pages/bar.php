@@ -50,7 +50,228 @@
       </div>
     </div>
 
-  </div>
+    <div class="task_wrapper">
+      <h1 class="task_heading">Rediger bar-kortet</h1>
+      <p>Tilføj slet og opdater bar-kortet</p>
+    </div>
+      <hr>
+      <div class="task_wrapper">
+      <h2 class="task_heading">Øl og Vand</h2>
+      <a class="button green" href="#">Tilføj</a>
+      <br><br>
+      <table>
+        <tr>
+          <th>Indeks</th>
+          <th>Pris</th>
+          <th>Navn</th>
+          <th>Beskrivelse</th>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+      </table>
+    </div>
+
+    <hr>
+
+    <div class="task_wrapper">
+      <h2 class="task_heading">Varme Drikke</h2>
+      <a class="button green" href="#">Tilføj</a>
+      <br><br>
+      <table>
+        <tr>
+          <th>Indeks</th>
+          <th>Pris</th>
+          <th>Navn</th>
+          <th>Beskrivelse</th>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+      </table>
+    </div>
+
+    <hr>
+
+    <div class="task_wrapper">
+      <h2 class="task_heading">Gin</h2>
+      <a class="button green" href="#">Tilføj</a>
+      <br><br>
+      <table>
+        <tr>
+          <th>Indeks</th>
+          <th>Pris</th>
+          <th>Navn</th>
+          <th>Beskrivelse</th>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+      </table>
+    </div>
+
+    <hr>
+
+    <div class="task_wrapper">
+      <h2 class="task_heading">Champagne</h2>
+      <a class="button green" href="#">Tilføj</a>
+      <br><br>
+      <table>
+        <tr>
+          <th>Indeks</th>
+          <th>Pris</th>
+          <th>Navn</th>
+          <th>Beskrivelse</th>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+      </table>
+    </div>
+
+    <hr>
+
+    <div class="task_wrapper">
+      <h2 class="task_heading">Rom</h2>
+      <a class="button green" href="#">Tilføj</a>
+      <br><br>
+      <table>
+        <tr>
+          <th>Indeks</th>
+          <th>Pris</th>
+          <th>Navn</th>
+          <th>Beskrivelse</th>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="menu_item_price">49</div></td>
+          <td><div class="menu_item_name">Pils</div></td>
+          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+      </table>
+    </div>
   <div class="spacer" style="height:200px;"></div>
 </div>
 </div>

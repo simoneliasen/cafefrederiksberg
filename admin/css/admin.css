@@ -115,7 +115,6 @@ h1{
   float: right;
   height: 90px;
   background-color: #fff;
-  position: fixed;
 }
 
 .top_bar h1{
@@ -210,6 +209,12 @@ h1{
 .task_wrapper{
   padding: 0 25px;
 }
+.task_heading{
+  padding: 5px 0;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
 
 .img_center{
   width: 70%;
@@ -260,3 +265,27 @@ table tr td:first-child{ width: 50px; }
 table tr .table_buttons{ float: right; width: 178px; }
 table tr .table_buttons .button{ float: right; margin-left: 4px; }
 tr:nth-child(even) {background-color: #f2f2f2;}
+
+ul.leaders {
+    max-width: 80%;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders li:after {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+    background: white}
+ul.leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: white;
+    position: relative;
+    z-index: 1}

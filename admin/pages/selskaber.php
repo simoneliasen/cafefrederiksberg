@@ -50,9 +50,186 @@
       </div>
     </div>
 
+    <div class="task_wrapper">
+      <h1 class="task_heading">Selskaber</h1>
+      <p>Tilføj slet og rediger <b>buffet, arrangementer og selskabsmenuen</b></p>
+    </div>
+    <hr>
+
+    <div class="task_wrapper">
+      <h1 class="task_heading">Buffet</h1>
+      <a class="button green" href="#">Tilføj</a>
+    </div>
+    <hr>
+    <div class="task_wrapper">
+      <h2 class="task_heading">Buffet 1</h2>
+      <table>
+        <tr>
+          <th>indeks</th>
+          <th>menupunkt</th>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="">fissefilet med det hele</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="">fissefilet med det hele</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="">fissefilet med det hele</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+      </table>
+      <br>
+      <table>
+        <tr>
+          <th>indeks</th>
+          <th>beskrivelse</th>
+          <th>pris</th>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="">For 4 timer - min. 20 personer</div></td>
+          <td><div class="menu_item_price">299</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="">For 4 timer - under 20 personer</div></td>
+          <td><div class="menu_item_price">399</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="">For 5 timer - min. 20 personer</div></td>
+          <td><div class="menu_item_price">329</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="">For 5 timer - under 20 personer</div></td>
+          <td><div class="menu_item_price">429</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+      </table>
+      <p>Nuværende billede: <!-- INDSÆT VIDEO-NAVN --> </p>
+      <p>Upload nyt</p>
+      <input type="file" name="file" id="file" class="inputfile" />
+      <br><br>
+      <a class="button red">Annuller</a>
+      <a class="button green" href="#">Gem</a>
+
+    </div>
+    <hr>
+    <div class="task_wrapper">
+      <h2 class="task_heading">Buffet 2</h2>
+      <table>
+        <tr>
+          <th>indeks</th>
+          <th>menupunkt</th>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="">fissefilet med det hele</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="">fissefilet med det hele</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="">fissefilet med det hele</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+      </table>
+      <br>
+      <table>
+        <tr>
+          <th>indeks</th>
+          <th>beskrivelse</th>
+          <th>pris</th>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="">For 4 timer - min. 20 personer</div></td>
+          <td><div class="menu_item_price">299</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="">fissefilet med det hele</div></td>
+          <td><div class="menu_item_price">69</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+        <tr>
+          <td><div class="menu_item_index">1</div></td>
+          <td><div class="">fissefilet med det hele</div></td>
+          <td><div class="menu_item_price">69</div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+        </tr>
+      </table>
+
+    </div>
+    <hr>  <div class="task_wrapper">
+        <h2 class="task_heading">Buffet 3</h2>
+        <table>
+          <tr>
+            <th>indeks</th>
+            <th>menupunkt</th>
+          </tr>
+          <tr>
+            <td><div class="menu_item_index">1</div></td>
+            <td><div class="">fissefilet med det hele</div></td>
+            <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+          </tr>
+          <tr>
+            <td><div class="menu_item_index">1</div></td>
+            <td><div class="">fissefilet med det hele</div></td>
+            <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+          </tr>
+          <tr>
+            <td><div class="menu_item_index">1</div></td>
+            <td><div class="">fissefilet med det hele</div></td>
+            <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+          </tr>
+        </table>
+        <br>
+        <table>
+          <tr>
+            <th>indeks</th>
+            <th>beskrivelse</th>
+            <th>pris</th>
+          </tr>
+          <tr>
+            <td><div class="menu_item_index">1</div></td>
+            <td><div class="">For 4 timer - min. 20 personer</div></td>
+            <td><div class="menu_item_price">299</div></td>
+            <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+          </tr>
+          <tr>
+            <td><div class="menu_item_index">1</div></td>
+            <td><div class="">fissefilet med det hele</div></td>
+            <td><div class="menu_item_price">69</div></td>
+            <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+          </tr>
+          <tr>
+            <td><div class="menu_item_index">1</div></td>
+            <td><div class="">fissefilet med det hele</div></td>
+            <td><div class="menu_item_price">69</div></td>
+            <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
+          </tr>
+        </table>
+
+      </div>
+      <hr>
+    <div class="spacer" style="height:200px;"></div>
   </div>
-  <div class="spacer" style="height:200px;"></div>
-</div>
 </div>
 
 </body>
