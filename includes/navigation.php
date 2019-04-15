@@ -13,7 +13,7 @@
 
     <!--Logo  -->
     <div class="logo">
-    <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" width="150rem" height="auto"></a>
+    <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
     </div>
 
 <!--Navigationsmenu(root skal  hedde caffrederiksberg, før den virker (ændres når den tages online)) -->
@@ -57,7 +57,6 @@ $(document).scroll(function() {
 
 <style>
 .dropdown-content {
-
   padding-right: 0;
   background-color: transparent;
 }
