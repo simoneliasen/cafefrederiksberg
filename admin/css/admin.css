@@ -214,6 +214,7 @@ h1{
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  background-color: #fff;
 }
 
 .img_center{
