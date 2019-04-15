@@ -93,7 +93,7 @@ if($count == 1) {
         <button type="submit" id="loginknap">Login</button>
 
 <!--Viser error-code hvis brugernavn eller kodeord er forkert  -->
-    <div style = "font-size:10px; color:#cc0000; margin-top:10px"><?php echo isset($error) ? $error: ''; ?></div>
+    <div style = "font-size:16px; color:#cc0000; margin-top:16px"><?php echo isset($error) ? $error: ''; ?></div>
 
     </div>
 
