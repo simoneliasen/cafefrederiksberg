@@ -72,7 +72,7 @@
       </div>
       <!--Billede af butiksfront  -->
       <div class="six columns">
-        <img src="img/Butikfront.png" id="butikfront">
+        <img src="img/Butikfront.png" alt="billede af butikfront" id="butikfront">
       </div>
 
     </div>
@@ -87,25 +87,25 @@
 
         <!--Restaurant Genvej  -->
         <div class="three columns indholdsoversigt">
-          <img src="img/RestaurantIconTest.png">
+          <img src="img/RestaurantIconTest.png" alt="Genvej til restaurant indhold">
           <h2>Restaurant</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
         </div>
         <!--Bar Genvej  -->
         <div class="three columns indholdsoversigt">
-          <img src="img/RestaurantIconTest.png">
+          <img src="img/RestaurantIconTest.png" alt="Genvej til bar indhold">
           <h2>Bar</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
         </div>
         <!--Events Genvej  -->
         <div class="three columns indholdsoversigt">
-          <img src="img/RestaurantIconTest.png">
+          <img src="img/RestaurantIconTest.png" alt="Genvej til events indhold">
           <h2>Events</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
         </div>
         <!--Selskaber Genvej  -->
         <div class="three columns indholdsoversigt">
-          <img src="img/RestaurantIconTest.png">
+          <img src="img/RestaurantIconTest.png" alt="Genvej til selskaber indhold">
           <h2>Selskaber</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
         </div>
