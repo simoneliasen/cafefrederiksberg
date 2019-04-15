@@ -46,7 +46,7 @@
       <!-- DYNAMISK, overskriften skal ændre sig så den passer til menu-punktet -->
       <h1>Forside<span style="font-weight: 400;"></span></h1>
       <div class="logout">
-        <a class="button2 button_logout" href="../logout.php">log ud</a>
+        <a class="button red" href="../logout.php">log ud</a>
       </div>
     </div>
 
@@ -55,7 +55,7 @@
     <div class="task_wrapper">
       <h1 class="task_heading">Rediger menu-kortet</h1>
       <p>Tilføj slet og opdater menukortet</p>
-      <a class="button">Tilføj</a>
+      <a class="button green" href="#">Tilføj</a>
       <br><br>
       <table>
         <tr>
@@ -69,28 +69,28 @@
           <td><div class="menu_item_price">69</div></td>
           <td><div class="menu_item_name">Kyllingenuggets</div></td>
           <td><div class="menu_item_description">serveres m. pommes frites</div></td>
-          <td><div class="menu_item_button"><button>Rediger</button><br><a class="button2">slet</a></div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
         </tr>
         <tr>
           <td><div class="menu_item_index">1</div></td>
           <td><div class="menu_item_price">69</div></td>
           <td><div class="menu_item_name">Kyllingenuggets</div></td>
           <td><div class="menu_item_description">serveres m. pommes frites</div></td>
-          <td><div class="menu_item_button"><button>Rediger</button><br><a class="button2">slet</a></div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
         </tr>
         <tr>
           <td><div class="menu_item_index">1</div></td>
           <td><div class="menu_item_price">69</div></td>
           <td><div class="menu_item_name">Kyllingenuggets</div></td>
           <td><div class="menu_item_description">serveres m. pommes frites</div></td>
-          <td><div class="menu_item_button"><button>Rediger</button><br><a class="button2">slet</a></div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
         </tr>
         <tr>
           <td><div class="menu_item_index">1</div></td>
           <td><div class="menu_item_price">69</div></td>
           <td><div class="menu_item_name">Kyllingenuggets</div></td>
           <td><div class="menu_item_description">serveres m. pommes frites</div></td>
-          <td><div class="menu_item_button"><button>Rediger</button><br><a class="button2">slet</a></div></td>
+          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
         </tr>
       </table>
 

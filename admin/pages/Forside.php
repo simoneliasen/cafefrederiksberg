@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
   <!-- Includer Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
+  <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|s)no-js(s|$)/,"$1js$2")})(document,window,0);</script>
 
 </head>
 
@@ -46,35 +47,60 @@
       <!-- DYNAMISK, overskriften skal ændre sig så den passer til menu-punktet -->
       <h1>Forside<span style="font-weight: 400;"></span></h1>
       <div class="logout">
-        <a class="button2 button_logout" href="../logout.php">log ud</a>
+        <a class="button red" href="../logout.php">log ud</a>
       </div>
     </div>
+
+    <div class="task_wrapper">
+      <h1 class="task_heading">Announcement bar</h1>
+      <p>Opdater announcement baren med vigtige meddelelser eller gode tilbud.</p>
+      <br>
+      <input class="text_input" type="text"></input>
+      <br><br>
+      <input type="radio" value="male">Ingen udløbsdato<br>
+      <input type="radio" value="male">Vælg udløbsdato
+      <br><br>
+      <input class="date_input" type="date" placeholder="_">
+      <br><br>
+      <a class="button red" href="#">Annuller</a>
+      <a class="button green" href="#">Gem</a>
+    </div>
+
+    <hr>
 
     <div class="task_wrapper">
       <h1 class="task_heading">Præsentationsvideo / Billeder</h1>
       <p>Vælg om der skal gøres brug af video eller billeder</p>
       <input type="radio" name="gender" value="male" checked>Video
+      <br>
       <input type="radio" name="gender" value="male">Billeder
       <!-- INDHOLD SKAL SELVFØLGELIG ÆNDRE SIG ALT EFTER OM DET ER VIDEO ELLER BILLEDER -->
-      <p>Nuværende video: <!-- INDSÆT VIDEO-NAVN --> </p><img src="noget">
+      <p>Nuværende video: <!-- INDSÆT VIDEO-NAVN --> </p>
       <p>Upload ny</p>
-      <button>Vælg Video</button>
-      <a class="button" href="#">Upload</a>
+      <input type="file" name="file" id="file" class="inputfile" />
+      <br><br>
+      <a class="button red">Annuller</a>
+      <a class="button green" href="#">Gem</a>
     </div>
+
     <hr>
+
     <div class="task_wrapper">
       <h1 class="task_heading">Katalog & Katalog tekst</h1>
-      <p>Opdater event-magasinet</p>
-      <p>Rediger link</p><input type="text"></input>
+      <p>Opdatering af event-magasinet</p>
+      <p><b>Rediger link</b></p><input class="text_input" type="text"></input>
       <br><br>
-      <button>submit</button>
-      <a class="button2">Annuller</a>
+      <a class="button red">Annuller</a>
+      <a class="button green">Gem</a>
+
       <br><br><br>
-      <p>Rediger den tilhørende tekst</p>
-      <textarea rows="10" cols="50"></textarea>
+      <p><b>Rediger den tilhørende tekst</b></p>
+      <textarea></textarea>
       <br><br>
-      <button>submit</button>
-      <a class="button2">Annuller</a>
+      <a class="button red">Annuller</a>
+      <a class="button green">Gem</a>
+
+
 
 
     </div>
