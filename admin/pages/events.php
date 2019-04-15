@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <!--Side titel  -->
-  <title>Login</title>
+  <title>Admin-dashboard</title>
 
   <link rel="stylesheet" type="text/css" href="../css/admin.css">
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
@@ -17,14 +17,14 @@
 </head>
 
 <body>
-  
+
   <?php
   //Opretter forbindelse via config.php, og tjekker om du er logget ind via session.php
   include('../session.php');
   ?>
 
 <div class="logo">
-  <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="180px">
+  <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="100%">
 </div>
 
 <div class="nav">
@@ -33,7 +33,7 @@
     <li><a href="forside.php">Forside</a></li>
     <li><a href="restaurant.php">Restaurant</a></li>
     <li><a href="bar.php">Bar</a></li>
-    <li><a href="events.php">Events</a></li>
+    <li><a href="events.php" class="active">Events</a></li>
     <li><a href="selskaber.php">Selskaber</a></li>
     <li><a href="kontakt.php">Kontakt</a></li>
     <li><a href="hjælp.php">Hjælp</a></li>
@@ -44,17 +44,15 @@
   <div class="content">
     <div class="heading">
       <!-- DYNAMISK, overskriften skal ændre sig så den passer til menu-punktet -->
-      <h1>Admin-panel <span style="font-weight: 400;">Café Frederiksberg</span></h1>
+      <h1>Events<span style="font-weight: 400;"></span></h1>
       <div class="logout">
-        <!--Logger dig ud ved at linke til logout.php som ender ens session og sender dig til login.php  -->
         <a class="button2 button_logout" href="../logout.php">log ud</a>
       </div>
     </div>
 
-
-
-
   </div>
+  <div class="spacer" style="height:200px;"></div>
+</div>
 </div>
 
 </body>
