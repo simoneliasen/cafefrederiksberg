@@ -18,10 +18,10 @@
 
 <body>
 
-  <!--Lav check for om du er registreret som admin (eller moderator)  -->
-
-  <!--Lav Mulighed for at tilføje brugere  -->
-  <!--Lav mulighed for at slette brugere  -->
+  <?php
+  //Opretter forbindelse via config.php, og tjekker om du er logget ind via session.php
+  include('../session.php');
+  ?>
 
 <div class="logo">
   <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="100%">

@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  
   <?php
   //Opretter forbindelse via config.php, og tjekker om du er logget ind via session.php
   include('../session.php');
