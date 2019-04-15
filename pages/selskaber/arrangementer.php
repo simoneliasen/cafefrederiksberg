@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Café Frederiksberg sørger både for barnedåb, konfirmation, bryllup, kaffebord, Julefrokost og nytårsaften, altsammen i nogle af aalborgs hyggeligste lokaler"/>
+  <link rel="icon" type="image/png" href="img/favicon.ico">
 
   <!--Side titel  -->
   <title>Café Frederiksberg</title>
