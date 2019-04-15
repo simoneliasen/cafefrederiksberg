@@ -30,14 +30,14 @@
       <div class="row onlineBestilling">
         <div class="six columns bestilonline">
           <div class="Bestil_onlineindex">
-            <h2 id="bestilonlineheader">Bestil online:</h2>
+            <h2 id="bestilonlineheader">Bestil Online</h2>
           </div>
         </div>
         <div class="two columns bestilonline">
           <a class="button button-primary bestil" href="pages/booking.php">Bord</a>
         </div>
         <div class="two columns bestilonline">
-          <a class="button button-primary bestil" href="pages/booking.php">Take-away</a>
+          <a class="button button-primary bestil" href="pages/booking.php">Take Away</a>
         </div>
       </div>
     </div>
@@ -51,10 +51,7 @@
 
   <h2 id="restaurant_overskrift">Menukort</h2>
 
-
-
           <!-- Item starts -->
-
           <div class="menu-item">
             <div class="menu-item-name">
               Rejecocktail
@@ -291,14 +288,6 @@ OBS: Fredag og Lørdag er der travlt, derfor burde bord bestilles I god tid
             </div>
           </div>
             <!-- Item ends -->
-
-
-
-
-
-
-
-
           <div class="sixteen columns">
   <div class="four columns offset-by-four">
 

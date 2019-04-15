@@ -38,7 +38,7 @@
         <!-- Bestil online tekst  -->
         <div class="six columns bestilonline">
           <div class="Bestil_onlineindex">
-            <h2 id="bestilonlineheader">Bestil online</h2>
+            <h2 id="bestilonlineheader">Bestil Online</h2>
           </div>
         </div>
         <div class="six columns bestilonline knapper">
@@ -58,7 +58,7 @@
     <div class="container opening_info">
       <div class="row opening_information">
         <div class="six columns">
-          <h2 class="opening_headline">Åbningstider:</h2>
+          <h2 class="opening_headline">Åbningstider</h2>
 
             <div class="opening_time_day">
               <div class="opening_day">
@@ -129,7 +129,7 @@
 
 
     <div class="six columns">
-      <h2 class="opening_headline">Kontakt informationer:</h2>
+      <h2 class="opening_headline">Kontaktinformationer</h2>
 
       <div class="opening_time_day">
         <div class="opening_day_party">
