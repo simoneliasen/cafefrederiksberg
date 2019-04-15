@@ -148,7 +148,7 @@
     <div class="events_overskrift">
 <!--Overskrift logo  -->
       <div class="events_overskrift_leftalign">
-    <img src="/cafefrederiksberg/img/fredelivelogo.svg" id="eventlogo" width="60rem" height="auto">
+    <img src="/cafefrederiksberg/img/fredelivelogo.svg" id="eventlogo" width="60rem" height="auto" alt="Frede live logo til events">
     </div>
 <!-- Overskrift tekst  -->
       <div class="events_overskrift_rightalign">

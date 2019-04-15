@@ -71,8 +71,8 @@
 <ul> Links </ul>
 <li><a href="http://www.orlando-florida.dk/">Feriehus Florida</a></li>
 <li><a href="https://www.findsmiley.dk/25727">Kontrol Rapport</a></li>
-<li><a href="https://www.instagram.com/cafefrederiksberg/"><img src="/cafefrederiksberg/img/instagram.png" width="30px" heigth="auto"><p id="instagramtext" alt="Genvej til instagram med ikon">Instagram</p></a>
-<li><a href="https://www.facebook.com/Fredelive/"><img src="/cafefrederiksberg/img/facebook.png" width="30px" heigth="auto"><p id="facebooktext" alt="Genvej til facebook med ikon>Facebook</p></a>
+<li><a href="https://www.instagram.com/cafefrederiksberg/"><img src="/cafefrederiksberg/img/instagram.png" width="30px" heigth="auto" alt="Genvej til instagram"><p id="instagramtext">Instagram</p></a>
+<li><a href="https://www.facebook.com/Fredelive/"><img src="/cafefrederiksberg/img/facebook.png" width="30px" heigth="auto" alt="Genvej til facebook"><p id="facebooktext">Facebook</p></a>
   </div>
 
 </div>
