@@ -121,7 +121,7 @@
       <div class="row">
         <!-- Billede af katalog  -->
         <div class="one-half column frede_live_katalog">
-          <a href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">
+          <a rel="noopener" aria-label="Se Frede live katalog" href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">
             <div class="frede_live_katalog_img">
             </div>
           </a>
@@ -135,7 +135,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <!-- Link til katalog  -->
-          <a class="button" href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">Se vores Magasin <u>her</u></a>
+          <a class="button" rel="noopener" aria-label="Se Frede live katalog" href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">Se vores Magasin <u>her</u></a>
           </div>
         </div>
 
@@ -170,7 +170,7 @@
   <!--Google maps  -->
     <div class="mapouter">
       <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" title="google maps location" src="https://maps.google.com/maps?q=Caf%C3%A9%20Frederiksberg%20Aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
-          marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div>
+          marginwidth="0"></iframe></div>
   </div>
 
   <!--Inddrager footer fra "includes/footer.php"-->
