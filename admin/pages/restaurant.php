@@ -31,7 +31,7 @@
   <ul>
     <li><a href="analytics.php">Google analytics</a></li>
     <li><a href="forside.php">Forside</a></li>
-    <li><a href="restaurant.php">Restaurant</a></li>
+    <li><a href="restaurant.php" class="active">Restaurant</a></li>
     <li><a href="bar.php">Bar</a></li>
     <li><a href="events.php">Events</a></li>
     <li><a href="selskaber.php">Selskaber</a></li>

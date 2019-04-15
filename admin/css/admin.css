@@ -105,6 +105,11 @@ h1{
   transition: 0.1s;
 }
 
+.active {
+  border-left: 5px solid #3374dd;
+  color: #fff;
+}
+
 .top_bar{
   width: 82%;
   float: right;

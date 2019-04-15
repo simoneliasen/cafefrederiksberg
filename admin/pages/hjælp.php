@@ -29,14 +29,14 @@
 
 <div class="nav">
   <ul>
-    <li><a href="about.asp">Google analytics</a></li>
-    <li><a href="default.asp">Forside</a></li>
-    <li><a href="news.asp">Restaurant</a></li>
-    <li><a href="contact.asp">Bar</a></li>
-    <li><a href="about.asp">Events</a></li>
-    <li><a href="about.asp">Selskaber</a></li>
-    <li><a href="about.asp">Kontakt</a></li>
-    <li><a href="hjælp.php">Hjælp</a></li>
+    <li><a href="analytics.php">Google analytics</a></li>
+    <li><a href="forside.php">Forside</a></li>
+    <li><a href="restaurant.php">Restaurant</a></li>
+    <li><a href="bar.php">Bar</a></li>
+    <li><a href="events.php">Events</a></li>
+    <li><a href="selskaber.php">Selskaber</a></li>
+    <li><a href="kontakt.php">Kontakt</a></li>
+    <li><a href="hjælp.php" class="active">Hjælp</a></li>
   </ul>
 </div>
 
