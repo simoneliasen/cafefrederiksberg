@@ -48,8 +48,6 @@
 
 <div class="bg_dark">
   <div class="menu_kort_spacer"></div>
-  <div class="menu_kort_spacer"></div>
-  <div class="menu_kort_spacer"></div>
 <div class="container">
   <div class="row">
     <div class="menu_kort">
@@ -74,7 +72,7 @@
       </div>
 
         <p class="menu_allergener">*Gæster kan få oplysninger om allergerner ved at henvende sig til personalet</p>
-        <p>Vi serverer mad dagligt kl. 12:00 - 14:00 og kl. 17:00 - 20:00</p>
+        <p>Vi serverer mad dagligt kl. <b>12:00 - 14:00</b> og <b>kl. 17:00 - 20:00</b></p>
         <p><b>OBS:</b> Fredag og Lørdag er der travlt, derfor burde bord bestilles I god tid.</p>
         <p style="text-align: center">Bestil bord <a target="_blank" href="pages/booking.php"><u><b>her</b></u></a></p>
         <div class="menu_kontrolrapport">
