@@ -24,11 +24,10 @@
 
 
 <body>
-
+  <!--Tilføjer mulighed for announcementbar  -->
+  <?php include '../includes/announcement.php'; ?>
+  <!--Inddrager navigationsbar fra "includes/navigation.php"-->
   <?php include '../includes/navigation.php'; ?>
-
-  <!--Indsætter navigationsbar fra filen includes/navigation.php-->
-
 
 
 

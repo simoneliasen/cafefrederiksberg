@@ -22,12 +22,12 @@
 </head>
 
 <body>
-
-
-    <!--Indsætter navigationsbar fra filen includes/navigation.php-->
-    <?php include '../../includes/navigation.php'; ?>
-
-    <?php include '../../includes/header.php'; ?>
+  <!--Tilføjer mulighed for announcementbar  -->
+  <?php include '../../includes/announcement.php'; ?>
+  <!--Inddrager navigationsbar fra "includes/navigation.php"-->
+  <?php include '../../includes/navigation.php'; ?>
+  <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
+  <?php include '../../includes/header.php'; ?>
 
     <br>
 
