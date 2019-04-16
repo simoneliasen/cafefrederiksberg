@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Café Frederiksberg har eksisteret siden år 1900, og er det ældste værtshus på samme beliggenhed i Aalborg. Vi byder dog også velkommen i vores restaurant, til selskaber eller til vores events!"/>
   <link rel="icon" type="image/png" href="img/favicon.ico">
+
   <!--Side titel  -->
   <title>Café Frederiksberg</title>
 
@@ -85,35 +86,54 @@
       <!-- opretter række, som elementer let kan placeres i-->
       <div class="row indholdsoversigt">
 
+
+
+
+
         <!--Restaurant Genvej  -->
+        <a href="pages/restaurant.php">
         <div class="three columns indholdsoversigt">
-          <img src="img/inholdsoversigtrestaurant.png" alt="Genvej til restaurant indhold">
+          <img src="img/inholdsoversigtrestaurant.png" width="144px" height="auto" alt="Genvej til restaurant indhold">
           <h2>Restaurant</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
-        </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi
+        </div></a>
+
+
         <!--Bar Genvej  -->
+        <a href="pages/bar.php">
         <div class="three columns indholdsoversigt">
-          <img src="img/inholdsoversigtbar.png" alt="Genvej til bar indhold">
+          <img src="img/inholdsoversigtbar.png" width="144px" height="auto" alt="Genvej til bar indhold">
           <h2>Bar</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
-        </div>
+        </div></a>
+
+
+
         <!--Events Genvej  -->
+        <a href="pages/events.php">
         <div class="three columns indholdsoversigt">
-          <img src="img/inholdsoversigtevents.png" alt="Genvej til events indhold">
+          <img src="img/inholdsoversigtevents.png" width="144px" height="auto" alt="Genvej til events indhold">
           <h2>Events</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
-        </div>
+        </div></a>
+
+
+
         <!--Selskaber Genvej  -->
+        <a href="pages/selskaber.php">
         <div class="three columns indholdsoversigt">
-          <img src="img/inholdsoversigtselskaber.png" alt="Genvej til selskaber indhold">
+          <img src="img/inholdsoversigtselskaber.png" width="144px" height="auto" alt="Genvej til selskaber indhold">
           <h2>Selskaber</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
-        </div>
+        </div></a>
+
+
+
+
 
       </div>
     </div>
   </div>
-
 
 
   <!-- Katalog (Kopi af Katalog under Events)  -->

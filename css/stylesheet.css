@@ -304,7 +304,14 @@ padding-top: 0.4rem;
 /*Indholdsoversigt over siden  */
 .indholdsoversigt {
   background-color: #101010;
+
 }
+
+.row.indholdsoversigt {
+  margin-left: 5rem;
+}
+
+
 /*Bilelde elementer  */
 .three.columns.indholdsoversigt > img{
   margin: 0 auto;
@@ -314,6 +321,14 @@ padding-top: 0.4rem;
   height: 9rem;
   margin-top: 2rem;
 }
+
+.three.columns.indholdsoversigt > img:hover{
+  -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
+   filter: blur(1px);
+      transition: filter 1s;
+}
+
+
 /*h2 elementer  */
 .three.columns.indholdsoversigt > h2{
   margin: 0 auto;
@@ -433,6 +448,10 @@ body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4)
   background-color: #1E1D20;
 }
 
+.frede_live_katalog{
+  height: 600px;
+}
+
 .frede_live_katalog_img{
   margin-top: 30px;
   height: 540px;
@@ -519,7 +538,7 @@ margin-bottom: 2.5rem;
 }
 
 .menu_kort_spacer{
-  height: 4rem;
+  height: 1rem;
   width: 100%;
 }
 
@@ -622,18 +641,6 @@ margin-bottom: 2.5rem;
 
 
 /* .............................................8.1 SELSKABSMENU */
-
-.selskab_present{
-  padding: 4rem; 0;
-}
-
-.selskab_present_img{
-  background-image: url("../img/selskab_present_img.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-}
-
 .header-centertext{
   text-align: center;
 }
