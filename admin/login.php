@@ -23,34 +23,27 @@
 <body>
 
 <?php
-// includes config.php which connects to the MySQL database "admin"
+// includes config.php and checks if user is logged in
 include('config.php');
-// Starts a session (checks if the user is already logged in)
 session_start();
 
 // Processes form data when form is submitted via POST-method
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
-// Sets input from form to variable ($mypassword(input) = password(database))
-// Escapes characters that could make an SQL injections (as ASCII, NUL\n, \r, \, ', ",)
+// Sets input to variable and escapes charachters (as ASCII, NUL\n, \r, \, ', ",)
 $myusername = mysqli_real_escape_string($db,$_POST['username']);
 $mypassword = mysqli_real_escape_string($db,$_POST['password']);
 
-// Retrieves ID from admin where username = $myusername(input) & password =$mypassword(input)
+// Retrieves ID from table, where data corresponds,retrieves as number of corresponding rows
 $sql = "SELECT id FROM admin WHERE username = '$myusername' and password = '$mypassword'";
-//retrieves data from database
 $result = mysqli_query($db,$sql);
-// Retrieves the number of rows with username and password
 $count = mysqli_num_rows($result);
 
-// if 1 and only 1 row with both username and password exists, store session variable and go to adminpanel.php
+// check result count, store session if there is only 1 result else throw error
 if($count == 1) {
-// Stores data in session variable
   $_SESSION['login_user'] = $myusername;
-// Redirects user to adminpanel.php if logged in sucessfull
     header("location: pages/adminpanel.php");
  }else {
-// Error code if wrong username/password
     $error = "Det indtastede brugernavn eller kodeord var forkert";
  }
 }
@@ -71,24 +64,17 @@ if($count == 1) {
       <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="500rem" height="auto">
     </div>
 
-    <!--Centrere Form  -->
+    <!--Form  -->
     <div class="formcenter">
-      <!--Form  -->
       <form action="" method="post">
-
-        <!--Brugernavn  -->
         <div class="brugernavn">
           <label for="username"><b>Brugernavn</b></label>
           <input type="text" placeholder="Indsæt Brugernavn" name="username" required>
         </div>
-
-      <!-- Kodeord -->
         <div class="kodeord">
           <label for="password"><b>Kodeord</b></label>
           <input type="password" placeholder="Indsæt Kodeord" name="password" required>
         </div>
-
-        <!--Login knap  -->
         <button type="submit" id="loginknap">Login</button>
 
 <!--Viser error-code hvis brugernavn eller kodeord er forkert  -->
