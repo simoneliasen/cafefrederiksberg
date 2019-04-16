@@ -87,32 +87,34 @@
 
         <!--Restaurant Genvej  -->
         <div class="three columns indholdsoversigt">
-          <img src="img/RestaurantIconTest.png" alt="Genvej til restaurant indhold">
+          <img src="img/inholdsoversigtrestaurant.png" alt="Genvej til restaurant indhold">
           <h2>Restaurant</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
         </div>
         <!--Bar Genvej  -->
         <div class="three columns indholdsoversigt">
-          <img src="img/RestaurantIconTest.png" alt="Genvej til bar indhold">
+          <img src="img/inholdsoversigtbar.png" alt="Genvej til bar indhold">
           <h2>Bar</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
         </div>
         <!--Events Genvej  -->
         <div class="three columns indholdsoversigt">
-          <img src="img/RestaurantIconTest.png" alt="Genvej til events indhold">
+          <img src="img/inholdsoversigtevents.png" alt="Genvej til events indhold">
           <h2>Events</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
         </div>
         <!--Selskaber Genvej  -->
         <div class="three columns indholdsoversigt">
-          <img src="img/RestaurantIconTest.png" alt="Genvej til selskaber indhold">
+          <img src="img/inholdsoversigtselskaber.png" alt="Genvej til selskaber indhold">
           <h2>Selskaber</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
         </div>
 
       </div>
     </div>
   </div>
+
+
 
   <!-- Katalog (Kopi af Katalog under Events)  -->
   <div class="bg_dark">
