@@ -46,7 +46,6 @@ $count = mysqli_num_rows($result);
 // if 1 row with both username and password exists, store session variable and go to adminpanel.php
 if($count == 1) {
 // Stores data in session variable
-  $_SESSION['myusername'] = $myusername;
   $_SESSION['login_user'] = $myusername;
 // Redirects user to adminpanel.php if logged in sucessfull
     header("location: pages/adminpanel.php");
