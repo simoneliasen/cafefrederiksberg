@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <?php include 'includes/announcementbar.php'; ?>
+  <?php include 'includes/announcement.php'; ?>
   <!--Inddrager navigationsbar fra "includes/navigation.php"-->
   <?php include 'includes/navigation.php'; ?>
 

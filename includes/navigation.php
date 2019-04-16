@@ -48,12 +48,15 @@ $(document).scroll(function() {
 });
 </script>
 
+<!--Does the same as above, just for The dropdown menu  -->
 <script>
 var $dropdown = $('.dropdown-content');
 $(document).scroll(function() {
     $dropdown.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
 });
 </script>
+
+
 
 <style>
 .dropdown-content {
