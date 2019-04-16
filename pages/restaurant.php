@@ -45,260 +45,48 @@
     </div>
   </div>
 
-<div class="container restaurant">
 
-<div class="row restaurant">
+<div class="bg_dark">
+  <div class="menu_kort_spacer"></div>
+  <div class="menu_kort_spacer"></div>
+  <div class="menu_kort_spacer"></div>
+<div class="container">
+  <div class="row">
+    <div class="menu_kort">
+      <h2 class="menu_kort_overskrift">Menukort</h2>
 
-<div class="seven columns restaurant offset-by-three">
-
-  <h2 id="restaurant_overskrift">Menukort</h2>
-
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div class="menu-item-name">
-              Rejecocktail
-            </div>
-            <div class="menu-item-price">
-              45,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div class="menu-item-name">
-              Stjerneskud
-            </div>
-            <div class="menu-item-price">
-              59,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div class="menu-item-name">
-              Kæmpe stjerneskud
-            </div>
-            <div class="menu-item-price">
-              79,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div class="menu-item-name">
-              Fiskefilet
-            </div>
-            <div class="menu-item-price">
-              69,-
-            </div>
-            <div class="menu-item-description">
-              serveres m. pommes frites
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div class="menu-item-name">
-              Kyllingenuggets
-            </div>
-            <div class="menu-item-price">
-              69,-
-            </div>
-            <div class="menu-item-description">
-              serveres m. pommes frites
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div class="menu-item-name">
-              Hotwings
-            </div>
-            <div class="menu-item-price">
-              69,-
-            </div>
-            <div class="menu-item-description">
-              serveres m. pommes frites
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div class="menu-item-name">
-              Black Angus Burger
-            </div>
-            <div class="menu-item-price">
-              69,-
-            </div>
-            <div class="menu-item-description">
-              serveres m. pommes frites
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div class="menu-item-name">
-              Black Angus Cheeseburger
-            </div>
-            <div class="menu-item-price">
-              72,-
-            </div>
-            <div class="menu-item-description">
-              serveres m. pommes frites
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div class="menu-item-name">
-              Bøfsandwich
-            </div>
-            <div class="menu-item-price">
-              69,-
-            </div>
-            <div class="menu-item-description">
-              serveres m. pommes frites
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div class="menu-item-name">
-              Bøfsandwich
-            </div>
-            <div class="menu-item-price">
-              75,-
-            </div>
-            <div class="menu-item-description">
-              serveres m. sauce og pommes frites
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div class="menu-item-name">
-              Omelet
-            </div>
-            <div class="menu-item-price">
-              69,-
-            </div>
-            <div class="menu-item-description">
-              serveres m. bacon, tomat, purløg og grøn salat
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div class="menu-item-name">
-              Herregårdsbøf
-            </div>
-            <div class="menu-item-price">
-              89,-
-            </div>
-            <div class="menu-item-description">
-              serveres m. løg, ærter, bearnaisesauce, grilltomat og pommes frites
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div class="menu-item-name">
-              Marineret sild
-            </div>
-            <div class="menu-item-price">
-              45,-
-            </div>
-            <div class="menu-item-description">
-              på rugbrød m. karrysalat
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div class="menu-item-name">
-              2 lune frikadeller
-            </div>
-            <div class="menu-item-price">
-              45,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div class="menu-item-name">
-              1 stk. Smørrebrød
-            </div>
-            <div class="menu-item-price">
-              28,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div class="menu-item-name">
-              3 stk. Smørrebrød
-            </div>
-            <div class="menu-item-price">
-              79,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div class="menu-item-name">
-              Pariserbøf
-            </div>
-            <div class="menu-item-price">
-              89,-
-            </div>
-            <div class="menu-item-description">
-              klassisk m. tilbehør
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div class="menu-item-name">
-              Nachos
-            </div>
-            <div class="menu-item-price">
-              39,-
-            </div>
-            <div class="menu-item-description">
-              serveres m. smelted ost og dip
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div id="Allergener_header">
-              Allergener
-            </div>
-            <div id="Allergener_description">
-              Gæster kan få oplysninger om allergerner ved at henvende sig til personalet
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="menu-item">
-            <div id="Serveringtider_header">
-              Serveringstider
-            </div>
-            <div id="Serveringtider_description">
-              Vi serverer mad dagligt kl. 12:00 - 14:00 og kl. 17:00 - 20:00
-OBS: Fredag og Lørdag er der travlt, derfor burde bord bestilles I god tid
-            </div>
-          </div>
-            <!-- Item ends -->
-          <div class="sixteen columns">
-  <div class="four columns offset-by-four">
-
-      <a class="Kontrolrapport_restaurant" href="https://www.findsmiley.dk/25727" target="_blank"><img src="img/kontrolrapport.jpeg" width="80" height="40" border="0"></a>
-
-
-  </div>
-
+      <div class="menu_item" style="margin-top: 2rem;">
+        <div class="menu_item_name">Rejecocktail</div>
+        <div class="menu_item_price">45,-</div>
+        <div class="menu_item_description"></div>
       </div>
+
+      <div class="menu_item">
+        <div class="menu_item_name">Rejecocktail</div>
+        <div class="menu_item_price">45,-</div>
+        <div class="menu_item_description">En beskrivende text til retten</div>
+      </div>
+
+      <div class="menu_item">
+        <div class="menu_item_name">Rejecocktail</div>
+        <div class="menu_item_price">45,-</div>
+        <div class="menu_item_description"></div>
+      </div>
+
+        <p class="menu_allergener">*Gæster kan få oplysninger om allergerner ved at henvende sig til personalet</p>
+        <p>Vi serverer mad dagligt kl. 12:00 - 14:00 og kl. 17:00 - 20:00</p>
+        <p><b>OBS:</b> Fredag og Lørdag er der travlt, derfor burde bord bestilles I god tid.</p>
+        <p style="text-align: center">Bestil bord <a target="_blank" href="pages/booking.php"><u><b>her</b></u></a></p>
+        <div class="menu_kontrolrapport">
+          <p>Se vores kontrolrapport: </p>
+          <a href="https://www.findsmiley.dk/25727" target="_blank">
+            <img src="img/kontrolrapport.jpeg" width="80px;" border="0">
+          </a>
+        </div>
+
+    </div>
+  </div>
+</div>
 </div>
 
 

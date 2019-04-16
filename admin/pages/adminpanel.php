@@ -51,19 +51,6 @@
       </div>
     </div>
 
-    <ul class=leaders>
-    <li><span>Salmon Ravioli</span>
-    <span>7.95</span>
-    <li><span>Fried Calamari</span>
-    <span>8.95</span>
-    <li><span>Almond Prawn Cocktail</span>
-    <span>7.95</span>
-    <li><span>Bruschetta</span>
-    <span>5.25</span>
-    <li><span>Margherita Pizza</span>
-    <span>10.95</span>
-    </ul>
-
 
   </div>
 </div>

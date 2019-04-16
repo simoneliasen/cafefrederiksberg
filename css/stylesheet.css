@@ -508,81 +508,62 @@ margin-bottom: 2.5rem;
 
 /*..............................................7 RESTAURANT */
 
-#restaurant_overskrift {
+.menu_kort{
+  width: 60%;
+  margin: 0rem auto 4rem auto;
+  padding: 2rem;
+  background-color: #1E1D20;
+  border: 1px solid #CCB380;
+}
+
+.menu_kort_overskrift{
   text-align: center;
-  padding-top: 4rem;
-  padding-bottom: 5rem;
-  color: #CCB380;
-  }
-
-
-  .menu-item {
-    margin: 35px 0;
-    }
-
-  .menu-item-name{
-    font-weight: bold;
-    width:90%;
-  }
-
-  .menu-item-name p{text-align: left;}
-
-  .menu-item-price{
-    float: right;
-    margin-top: -22px;
-    font-style:italic;
-    text-align:right;
-    color:#CCB380;
-    width:10%;
-  }
-
-  .menu-item-description{
-    font-size: .9em;
-    line-height: 1.5em;
-    width:75%;
-  }
-
-
-
-.Kontrolrapport_restaurant{display: block;
-margin: 0 auto;}
-{padding-top: 4rem;}
-
-#Allergener_header
-{  font-weight: bold;
-  width:90%;
-  color:#CCB380;
-text-align: left;
-padding-top: 4rem;}
-
-
-
-
-#Allergener_description
-{font-size: .9em;
-line-height: 1.5em;
-width:75%;
-padding-top: 1rem;
-text-align: left;
+  border-bottom: 1px solid #CCB380;
+  padding-bottom: 20px;
 }
 
-#Serveringtider_header
-{  font-weight: bold;
-  width:90%;
-  color:#CCB380;
-text-align: left;
-padding-top: 2rem;}
-
-#Serveringtider_description
-{font-size: .9em;
-line-height: 1.5em;
-width:75%;
-padding-top: 1rem;
-padding-bottom: 3rem;
-text-align: left;
+.menu_kort_spacer{
+  height: 1rem;
+  width: 100%;
 }
 
+.menu_item{
+  width: 100%;
+  margin: 20px 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #474747;
+}
 
+.menu_item_name{
+  width: 90%;
+  font-weight: 700;
+  height: 25px;
+  float: left;
+  font-size: 1.2rem;
+}
+
+.menu_item_description{
+  width: 90%;
+  min-height: 25px;
+}
+
+.menu_item_price{
+  width: 10%;
+  float: right;
+  text-align: right;
+  height: 25px;
+}
+
+.menu_allergener{
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #d3d3d3;
+}
+
+.menu_kontrolrapport{
+  text-align: center;
+  padding-top: 2rem;
+}
 
 
 
