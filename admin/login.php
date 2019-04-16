@@ -23,15 +23,15 @@
 <body>
 
 <?php
-// Inkludere config.php der opretter forbindelse til MySql database
+// includes config.php which connects to the MySQL database "admin"
 include('config.php');
-// Starter en Session (checks if the user is already logged in)
+// Starts a session (checks if the user is already logged in)
 session_start();
 
-// Processes form data when form is submitted
+// Processes form data when form is submitted via POST-method
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
-// Sætter input fra form til variabel ($mypassword(input) = password(database))
+// Sets input from form to variable ($mypassword(input) = password(database))
 // Escapes characters that could make an SQL injections (as ASCII, NUL\n, \r, \, ', ",)
 $myusername = mysqli_real_escape_string($db,$_POST['username']);
 $mypassword = mysqli_real_escape_string($db,$_POST['password']);
@@ -43,7 +43,7 @@ $result = mysqli_query($db,$sql);
 // Retrieves the number of rows with username and password
 $count = mysqli_num_rows($result);
 
-// if 1 row with both username and password exists, store session variable and go to adminpanel.php
+// if 1 and only 1 row with both username and password exists, store session variable and go to adminpanel.php
 if($count == 1) {
 // Stores data in session variable
   $_SESSION['login_user'] = $myusername;
