@@ -24,13 +24,10 @@
 
 
 <body>
-
+  <!--Tilføjer mulighed for announcementbar  -->
+  <?php include '../includes/announcement.php'; ?>
+  <!--Inddrager navigationsbar fra "includes/navigation.php"-->
   <?php include '../includes/navigation.php'; ?>
-
-  <!--Indsætter navigationsbar fra filen includes/navigation.php-->
-
-
-
 
 
   <h2 style="text-align: center; margin: 4rem 0 2rem 0">Tidslinje</h2>
