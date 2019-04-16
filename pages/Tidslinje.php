@@ -30,8 +30,6 @@
   <?php include '../includes/navigation.php'; ?>
 
 
-
-
   <h2 style="text-align: center; margin: 4rem 0 2rem 0">Tidslinje</h2>
 
 
