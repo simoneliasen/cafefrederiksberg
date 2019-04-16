@@ -42,11 +42,11 @@
         </div>
         <div class="six columns bestilonline knapper">
             <!-- Bestil bord online knap  -->
-          <a class="button button-primary bestil bord" href="pages/booking.php">Bord</a>
+          <a class="button button-primary bestil bord" href="https://cafefrederiksberg.azurewebsites.net/">Bord</a>
         <!-- Bestil Biletter online knap  -->
-          <a class="button button-primary bestil biletter" href="pages/booking.php">Billetter</a>
+          <a class="button button-primary bestil biletter" href="https://cafefrederiksberg.azurewebsites.net/">Billetter</a>
         <!-- Bestil Take-away online knap  -->
-          <a class="button button-primary bestil take-away" href="pages/booking.php">Take Away</a>
+          <a class="button button-primary bestil take-away" href="https://cafefrederiksberg.azurewebsites.net/">Take Away</a>
         </div>
 
       </div>

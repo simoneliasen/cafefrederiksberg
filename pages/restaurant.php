@@ -37,10 +37,10 @@
           </div>
         </div>
         <div class="two columns bestilonline">
-          <a class="button button-primary bestil" href="pages/booking.php">Bord</a>
+          <a class="button button-primary bestil" href="https://cafefrederiksberg.azurewebsites.net/">Bord</a>
         </div>
         <div class="two columns bestilonline">
-          <a class="button button-primary bestil" href="pages/booking.php">Take Away</a>
+          <a class="button button-primary bestil" href="https://cafefrederiksberg.azurewebsites.net/">Take Away</a>
         </div>
       </div>
     </div>
