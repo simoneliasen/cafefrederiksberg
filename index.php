@@ -27,8 +27,11 @@
   <?php include 'includes/announcement.php'; ?>
   <!--Inddrager navigationsbar fra "includes/navigation.php"-->
   <?php include 'includes/navigation.php'; ?>
-  <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
+  <!--Bileldeslider-->
+  <?php // include 'includes/slider.php'; ?>
+  <!--Videoslider -->
   <?php include 'includes/header.php'; ?>
+
 
   <!--Online bestilling  -->
   <div class="wrapper onlineBestilling">
