@@ -1,18 +1,18 @@
 <?php
-require_once 'connection.php';
+  require_once 'connection.php';
 
   $menu_item_name = htmlentities($_POST['menu_item_name']);
   $menu_item_description = htmlentities($_POST['menu_item_description']);
   $menu_item_price = htmlspecialchars($_POST['menu_item_price']);
+  $id = $_GET['id'];
 
-  $query = "INSERT INTO menu VALUES(
-    '',/* ID ligger først i tablet og autoincrementes, derfor lades denne være blank */
-    '$menu_item_name',
-    '$menu_item_description',
-    '$menu_item_price'
-  )";
+  $query = "UPDATE menu SET
+    name = '$menu_item_name',
+    description ='$menu_item_description',
+    price = '$menu_item_price'
+  WHERE id = $id";
+
   $results = mysqli_query($connection, $query);
-
 
 
   if($results){
@@ -25,6 +25,6 @@ require_once 'connection.php';
 
 
 
-mysqli_close($connection);
+  mysqli_close($connection);
 
-?>
+ ?>

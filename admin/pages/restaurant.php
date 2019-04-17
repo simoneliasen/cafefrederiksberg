@@ -110,13 +110,17 @@ if(!$results){
         ?>
 
         <tr id="itm<?= $row[0] ?>">
-          <form method="post" name="post" action="php_process/process_menu_input.php" enctype="multipart/form-data">
-          <td><input name="menu_item_name" type="text" value="<?= $row[0] ?>" required maxlength="10" /></td>
-          <td class="menu_item_price"><input name="menu_item_name" type="text" value="<?= $row[3] ?>" required maxlength="10" /></td>
-          <td><input name="menu_item_name" type="text" value="<?= $row[1] ?>" required maxlength="100" /></td>
-          <td><input name="menu_item_name" type="text" value="<?= $row[2] ?>" required maxlength="170" /></td>
-          <td class="table_buttons">
+          <form method="post" name="post" action="php_process/process_menu_edit.php?id=<?=$id?>" enctype="multipart/form-data">
 
+          <td><input name="menu_item_index" type="text" value="<?= $row[0] ?>" required maxlength="10" /></td>
+
+          <td class="menu_item_price"><input name="menu_item_price" type="text" value="<?= $row[3] ?>" required maxlength="10" /></td>
+
+          <td><input name="menu_item_name" type="text" value="<?= $row[1] ?>" required maxlength="100" /></td>
+
+          <td><input name="menu_item_description" type="text" value="<?= $row[2] ?>" maxlength="170" /></td>
+
+          <td class="table_buttons">
 
             <input class="button green" type="submit" value="Gem">
 
@@ -139,7 +143,7 @@ if(!$results){
               <input class="button grey" type="submit" value="Rediger">
             </a>
 
-            <form class="table_buttons" method="post">
+            <form class="table_buttons" method="post" name="post" action="php_process/process_menu_delete.php?id=<?=$row[0]?>" enctype="multipart/form-data">
               <input id="<?=$row[0]?>" class="button red" type="submit" value="Slet">
             </form>
 
