@@ -1,27 +1,35 @@
-Stuff to do
-- Færdigør siders opsætning via css
-- Inkluder tekst for kunstnere der vil spille
-- klub frede sektion
-- Tidslinje (skal ikke gå ned over footer)
-- forside (indholdsoversigts-funktion)
-- DJ
-- Julefrokost.pdf & kaffemenu.pdf på arrangement side
-- Dropdown i kontakt side (om os istedet m. kontakt os og tidslinje som dropdown)
+Generelt
+- navigationsstruktur skal rettes (virker ikke på web)
+- SSL-certifikat
+- Thumbnail-billede v. link sharing
+- Google analytics
+
+Front-end
+- Réel Tekst på siden
+- selskabs-side, ryd lidt op
+- dobbelt-opacity navigations-bar
+- kontakt, dropdown?
+- tekst til klub frede-sektion
+- Tekst til kunstnere der vil spille
+- Dj option
+- inkluder .pdf'er for julefrokost, kaffe menu etc.
+- SEO på enkelete sider
+- Lav Jquery om til Javascript
 
 
-Hovedfunktioner
-- Login system
-- Opsætning af database
-- Opsæt adminpanels funktionalitet
-- opsæt slider-funktion (+ upload af billede/video)
+Back-end
+- Opsætning af html, css.
+- Sanitize Input (Sql injections & XSS)
+- Upload af billeder til billedslider
+- Upload af video til videoslider
+- Katalog + katalogtekst
+- Barmenu
+- Kode for at tilføje hele sektion (arrangement, buffet etc.)
 
-Ekstra funktioner
-- gør siden SEO-venlig 
-- Meta-description for SEO
-- Opsæt SSL certifikat (gøres først på egentlige domæne, café frederiksberg skal introduceres for det)
-- Opsætning for adgang fra mobil
-- Sanitize input for Mysql og XSS
+Mobil
+- Mobiloptimering
+- mobilmenu
+
 
 Tænk over:
 - GDPR
-
