@@ -1,9 +1,3 @@
-Generelt
-- navigationsstruktur skal rettes (virker ikke på web)
-- SSL-certifikat
-- Thumbnail-billede v. link sharing
-- Google analytics
-
 Front-end
 - Réel Tekst på siden
 - selskabs-side, ryd lidt op
@@ -22,14 +16,28 @@ Back-end
 - Sanitize Input (Sql injections & XSS)
 - Upload af billeder til billedslider
 - Upload af video til videoslider
-- Katalog + katalogtekst
-- Barmenu
+- Opsæt Katalog + katalogtekst
+- Opsæt Barmenu
+- Opsæt Buffet
+- Opsæt Arrangementer
+- Opsæt selskabsmenu
+- Opsæt Kontaktinformation
+- Opsæt åbningstider
+- Opsæt tidslinje??
+- Opsæt Klub frede tekst
+- Opsæt selskabs-side
 - Kode for at tilføje hele sektion (arrangement, buffet etc.)
+
 
 Mobil
 - Mobiloptimering
 - mobilmenu
 
+Generelt
+- navigationsstruktur skal rettes (virker ikke på web)
+- SSL-certifikat
+- Thumbnail-billede v. link sharing
+- Google analytics
 
 Tænk over:
 - GDPR
