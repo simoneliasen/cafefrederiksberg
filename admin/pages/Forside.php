@@ -19,10 +19,7 @@
 
 <body>
 
-  <?php
-  //Opretter forbindelse via config.php, og tjekker om du er logget ind via session.php
-  include('../session.php');
-  ?>
+    <?php  include('../session.php'); ?>
 
 <div class="logo">
   <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="100%">
@@ -51,20 +48,42 @@
       </div>
     </div>
 
-    <div class="task_wrapper">
-      <h1 class="task_heading">Announcement bar</h1>
-      <p>Opdater announcement baren med vigtige meddelelser eller gode tilbud.</p>
-      <br>
-      <input class="text_input" type="text"></input>
-      <br><br>
-      <input type="radio" value="male">Ingen udløbsdato<br>
-      <input type="radio" value="male">Vælg udløbsdato
-      <br><br>
-      <input class="date_input" type="date" placeholder="_">
-      <br><br>
-      <a class="button red" href="#">Annuller</a>
-      <a class="button green" href="#">Gem</a>
-    </div>
+<div class="task_wrapper">
+  <h1 class="task_heading">Announcement bar</h1>
+  <p>Opdater announcement baren med vigtige meddelelser eller gode tilbud.</p>
+  <br>
+
+  <form method="post" name="post" action="php_process/process_announcement_edit.php" enctype="multipart/form-data"  id="announcementform">
+    <input class="text_input" type="text" name="announcement">
+    </br><br>
+
+    <input type="radio" name="expiration" id="noexpiration" value="male" onclick="myFunction()" >Ingen udløbsdato<br>
+    <input type="radio" name="expiration" id="expiration" value="male" onclick="myFunction()" >Vælg udløbsdato
+    <br><br>
+
+    <input type="date"  style="display:none" id="date" type="date" placeholder="_" name="date" value="<?php echo date('Y-m-d'); ?>" />
+    <br><br>
+
+    <a class="button red" type="reset" href="#">Annuller</a>
+    <input class="button green" type="submit" value="Gem">
+  </form>
+</div>
+
+<!-- Hides date per default; shows calendar when clicking radio-buttons -->
+    <script>
+    function myFunction() {
+      var checkBox = document.getElementById("expiration");
+      var text = document.getElementById("date");
+      if (checkBox.checked == true){
+        text.style.display = "block";
+      } else {
+         text.style.display = "none";
+      }
+      if (checkBox.checked == false){
+        text.style.display = "none";
+      }
+    }
+    </script>
 
     <hr>
 
@@ -99,9 +118,6 @@
       <br><br>
       <a class="button red">Annuller</a>
       <a class="button green">Gem</a>
-
-
-
 
     </div>
     <hr>

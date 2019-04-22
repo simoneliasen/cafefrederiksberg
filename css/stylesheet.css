@@ -70,7 +70,7 @@ p {
 /*..............................................B NAVIATIONSBAR */
 .navigationbar {
   position: fixed; /* Set the navbar to fixed position */
-  top: 25; /* Position the navbar at the top of the page */
+  top: 25; /* Position the navbar 25px at the top of the page */
   width: 100%;
   z-index: 1;  /*puts header in front of content*/
   background: transparent;
@@ -323,9 +323,8 @@ padding-top: 0.4rem;
 }
 
 .three.columns.indholdsoversigt > img:hover{
-  -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
-   filter: blur(1px);
-      transition: filter 1s;
+   transform: scale(1.2);
+   transition: transform 0.4s;
 }
 
 
