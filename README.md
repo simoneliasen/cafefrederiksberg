@@ -1,5 +1,6 @@
 Front-end
 - Réel Tekst på siden
+- Rigtige billeder på siden
 - selskabs-side, ryd lidt op
 - dobbelt-opacity navigations-bar
 - kontakt, dropdown?
@@ -7,13 +8,12 @@ Front-end
 - Tekst til kunstnere der vil spille
 - Dj option
 - inkluder .pdf'er for julefrokost, kaffe menu etc.
-- SEO på enkelete sider
 - Lav Jquery om til Javascript
 
 
 Back-end
 - Opsætning af html, css.
-- Sanitize Input (Sql injections & XSS)
+- Sanitize Input (Sql injections & XSS) (login)
 - Upload af billeder til billedslider
 - Upload af video til videoslider
 - Opsæt Katalog + katalogtekst
