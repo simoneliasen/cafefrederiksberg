@@ -22,7 +22,10 @@ require_once 'connection.php';
     die("could not query the database");
   }
 
+  $query ="SELECT * FROM menu";
 
+  var_dump($results);
+  var_dump($query);
 
 
 mysqli_close($connection);
