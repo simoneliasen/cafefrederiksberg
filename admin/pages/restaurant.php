@@ -28,7 +28,7 @@ if(!$connection){
   die("Cannot connect to the database".mysqli_connect_error());
 }
 
-$query ="SELECT * FROM menu";
+$query ="SELECT * FROM menu ORDER BY menu_index ASC;";
 $results = mysqli_query($connection,$query);
 
 if(!$results){
@@ -94,6 +94,7 @@ if(!$results){
       <hr>
 
       <table>
+        <p><b>Redigér i menuen</b></p>
         <tr>
           <th>Indeks</th>
           <th>Pris</th>
@@ -102,65 +103,64 @@ if(!$results){
         </tr>
 
         <?php
-        $id =$_GET['id'];
-
         while($row = mysqli_fetch_row($results)):
-          if($id == $row[0]){
+        if(isset($_GET['id'])){
+          $id = $_GET['id'];
+            if($id == $row[0]){
 
-        ?>
+              ?>
+              <tr id="itm<?= $row[0] ?>">
+                <form method="post" name="post" action="php_process/process_menu_edit.php?id=<?=$id?>" enctype="multipart/form-data">
+                  <td><input name="menu_item_index" type="text" value="<?= $row[4] ?>" required maxlength="10" /></td>
+                  <td class="menu_item_price"><input name="menu_item_price" type="text" value="<?= $row[3] ?>" required maxlength="10" /></td>
+                  <td><input name="menu_item_name" type="text" value="<?= $row[1] ?>" required maxlength="100" /></td>
+                  <td><input name="menu_item_description" type="text" value="<?= $row[2] ?>" maxlength="170" /></td>
+                  <td class="table_buttons">
+                    <input class="button green" type="submit" value="Gem">
+                    <a class="button grey" href="restaurant.php#restaurant_table">Fortryd</a>
+                    </input>
+                  </td>
+                </form>
+              <?php
+            }else{ ?>
+              <tr>
+                <td><?= $row[4] ?></td>
+                <td><?= $row[3] ?></td>
+                <td><?= $row[1] ?></td>
+                <td><?= $row[2] ?></td>
+                <td class="table_buttons">
+              </tr>
+          <?php  }
 
-        <tr id="itm<?= $row[0] ?>">
-          <form method="post" name="post" action="php_process/process_menu_edit.php?id=<?=$id?>" enctype="multipart/form-data">
+        }else{ ?>
+          <tr id="restaurant_table">
+            <td><?= $row[4] ?></td>
+            <td><?= $row[3] ?></td>
+            <td><?= $row[1] ?></td>
+            <td><?= $row[2] ?></td>
+            <td class="table_buttons">
+              <a href="restaurant.php?id=<?=$row[0]?>#itm<?= $row[0] ?>">
+                <input class="button grey" type="submit" value="Rediger">
+              </a>
 
-          <td><input name="menu_item_index" type="text" value="<?= $row[0] ?>" required maxlength="10" /></td>
-
-          <td class="menu_item_price"><input name="menu_item_price" type="text" value="<?= $row[3] ?>" required maxlength="10" /></td>
-
-          <td><input name="menu_item_name" type="text" value="<?= $row[1] ?>" required maxlength="100" /></td>
-
-          <td><input name="menu_item_description" type="text" value="<?= $row[2] ?>" maxlength="170" /></td>
-
-          <td class="table_buttons">
-
-            <input class="button green" type="submit" value="Gem">
-
-            <a href="restaurant.php">
-              <input id="<?=$row[0]?>" class="button grey" type="reset" value="Fortryd">
-            </a>
-
-          </td>
-        </form>
-      <?php }else{ ?>
-
-        <tr>
-          <td><?= $row[0] ?></td>
-          <td><?= $row[3] ?></td>
-          <td><?= $row[1] ?></td>
-          <td><?= $row[2] ?></td>
-          <td class="table_buttons">
-
-            <a href="restaurant.php?id=<?=$row[0]?>#itm<?= $row[0] ?>">
-              <input class="button grey" type="submit" value="Rediger">
-            </a>
-
-            <form class="table_buttons" method="post" name="post" action="php_process/process_menu_delete.php?id=<?=$row[0]?>" enctype="multipart/form-data">
+              <form class="table_buttons" method="post" name="post" action="php_process/process_menu_delete.php?id=<?=$row[0]?>" enctype="multipart/form-data">
               <input id="<?=$row[0]?>" class="button red" type="submit" value="Slet">
-            </form>
+              </form>
+            </td>
+          </tr>
 
-          </td>
-        </tr>
-      <?php } endwhile; mysqli_close($connection); ?>
-      </table>
+        <?php } endwhile; mysqli_close($connection); ?>
+        </table>
 
 
+      </div>
+      <div style="width:100px; margin:auto; padding-top: 2rem;">
+        <a class="button grey" href="restaurant.php#restaurant_table">Tilbage</a>
+      </div>
+      <div class="spacer" style="height:200px;"></div>
     </div>
-    <div style="width:100px; margin:auto; padding-top: 2rem;">
-      <a class="button grey" href="restaurant.php">Tilbage</a>
-    </div>
-    <div class="spacer" style="height:200px;"></div>
   </div>
-</div>
 
-</body>
+  </body>
 
-</html>
+  </html>
