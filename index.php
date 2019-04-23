@@ -98,27 +98,20 @@
   ?>
 
   <!--Online bestilling  -->
-  <div class="wrapper onlineBestilling">
-    <div class="container onlineBestilling">
-      <div class="row onlineBestilling">
-        <!-- Bestil online tekst  -->
-        <div class="six columns bestilonline">
-          <div class="Bestil_onlineindex">
-            <h2 id="bestilonlineheader">Bestil Online</h2>
-          </div>
-        </div>
-        <div class="six columns bestilonline knapper">
-            <!-- Bestil bord online knap  -->
-          <a class="button button-primary bestil bord" href="https://cafefrederiksberg.azurewebsites.net/">Bord</a>
-        <!-- Bestil Biletter online knap  -->
-          <a class="button button-primary bestil biletter" href="https://cafefrederiksberg.azurewebsites.net/">Billetter</a>
-        <!-- Bestil Take-away online knap  -->
-          <a class="button button-primary bestil take-away" href="https://cafefrederiksberg.azurewebsites.net/">Take Away</a>
-        </div>
 
+  <div class="container">
+    <div class="bestil_online">
+      <h2 class="bestil_online_overskrift">Bestil Online</h2>
+
+      <div class="bestil_online_knapper">
+        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Bord</a>
+        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Billetter</a>
+        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Take Away</a>
       </div>
+
     </div>
   </div>
+
 
   <!-- introHistorie -->
   <div class="wrapper introHistorie">

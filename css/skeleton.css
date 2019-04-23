@@ -136,7 +136,7 @@ input[type="button"] {
   padding: 0 30px;
   color: #dddddd;
   text-align: center;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   line-height: 38px;
   letter-spacing: .1rem;
@@ -158,10 +158,11 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #a8a8a8;
-  border-color: #888;
+  color: #fff;
+  border-color: #fff;
   outline: 0;
-  background-color: #;}
+  background: rgb(16,16,16);
+  background: linear-gradient(180deg, rgba(16,16,16,0) 66%, rgba(37,0,59,1) 100%);}
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,

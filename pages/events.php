@@ -86,28 +86,27 @@
       <h6>Kommende Events</h6>
     </div>
   </div>
-<div class='sk-fb-event' data-embed-id='22281'></div><script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
+  <div class='sk-fb-event' data-embed-id='22281'></div><script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
 </div>
 
 <div class="bg_dark">
   <div class="container">
     <div class="row">
 
-      <div class="one-half column frede_live_katalog_text">
-        <div class="frede_live_katalog_text_container">
-          <h2>Klub Frede</h2>
-          <h6>Bliv medlem og spar penge</h6>
-          <p> </p>
-          <a class="button" href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">Se vores Magasin <u>her</u></a>
-        </div>
-      </div>
-
-
       <div class="one-half column frede_live_katalog">
         <a href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">
           <div class="frede_live_katalog_img">
           </div>
         </a>
+      </div>
+
+      <div class="one-half column frede_live_katalog_text">
+        <div class="frede_live_katalog_text_container">
+          <h2>Klub Frede</h2>
+          <h6>Bliv medlem og spar penge</h6>
+          <p>Med et medlemskab i Klub Frede får du "indæst noget her"</p>
+          <a class="button" href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">Se vores Magasin <u>her</u></a>
+        </div>
       </div>
 
 
