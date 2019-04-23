@@ -33,10 +33,9 @@
 
 <!--Om os dropdown  -->
 <div class="dropdown">
-  <a href="/cafefrederiksberg/pages/selskaber.php">Om os</a>
+  <a href="/cafefrederiksberg/pages/tidslinje.php">Om os</a>
   <div class="dropdown-content">
-  <a href="/cafefrederiksberg/pages/selskaber/kontakt.php">Kontakt</a>
-  <a href="/cafefrederiksberg/pages/selskaber/tidslinje.php">Tidslinje</a>
+  <a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
   </div>
 </div>
 </div>
