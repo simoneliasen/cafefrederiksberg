@@ -103,14 +103,14 @@
     <div class="task_wrapper">
       <h1 class="task_heading">Katalog & Katalog tekst</h1>
       <form method="post" name="post" action="php_process/process_katalog_edit.php" enctype="multipart/form-data"  id="katalogform">
-        <p><b>link</b></p>
+        <p><b>Link</b></p>
       <input class="text_input" type="text" name="link">
         <p><b>Overskrift </b></p>
       <input class="text_input" type="text" name="header">
         <p><b>Underoverskrift</b></p>
       <input class="text_input" type="text" name="subheader">
         <p><b>Tekst</b></p>
-      <input class="text_input" id="katalogtext" type="text" name="text">
+      <textarea class="text_input" id="katalogtext" type="text" cols="10" rows="6" name="text"></textarea>
       <br><br>
       <input class="button green" type="submit" value="Gem">
         </form>
