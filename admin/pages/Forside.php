@@ -52,24 +52,20 @@
   <h1 class="task_heading">Announcement bar</h1>
   <p>Opdater announcement baren med vigtige meddelelser eller gode tilbud.</p>
   <br>
-
   <form method="post" name="post" action="php_process/process_announcement_edit.php" enctype="multipart/form-data"  id="announcementform">
     <input class="text_input" type="text" name="announcement">
     </br><br>
-
     <input type="radio" name="expiration" id="noexpiration" value="male" onclick="myFunction()" >Ingen udløbsdato<br>
     <input type="radio" name="expiration" id="expiration" value="male" onclick="myFunction()" >Vælg udløbsdato
     <br><br>
-
     <input type="date"  style="display:none" id="date" type="date" placeholder="_" name="date" value="<?php echo date('Y-m-d'); ?>" />
     <br><br>
-
     <a class="button red" type="reset" href="#">Annuller</a>
     <input class="button green" type="submit" value="Gem">
   </form>
 </div>
 
-<!-- Hides date per default; shows calendar when clicking radio-buttons -->
+<!-- Gemmer dato pr. default, viser dato, når der trykks "vælg udløbsdato" -->
     <script>
     function myFunction() {
       var checkBox = document.getElementById("expiration");
@@ -106,20 +102,20 @@
 
     <div class="task_wrapper">
       <h1 class="task_heading">Katalog & Katalog tekst</h1>
-      <p>Opdatering af event-magasinet</p>
-      <p><b>Rediger link</b></p><input class="text_input" type="text"></input>
+      <form method="post" name="post" action="php_process/process_katalog_edit.php" enctype="multipart/form-data"  id="katalogform">
+        <p><b>Link</b></p>
+      <input class="text_input" type="text" name="link">
+        <p><b>Overskrift </b></p>
+      <input class="text_input" type="text" name="header">
+        <p><b>Underoverskrift</b></p>
+      <input class="text_input" type="text" name="subheader">
+        <p><b>Tekst</b></p>
+      <textarea class="text_input" id="katalogtext" type="text" cols="10" rows="6" name="text"></textarea>
       <br><br>
-      <a class="button red">Annuller</a>
-      <a class="button green">Gem</a>
-
-      <br><br><br>
-      <p><b>Rediger den tilhørende tekst</b></p>
-      <textarea></textarea>
-      <br><br>
-      <a class="button red">Annuller</a>
-      <a class="button green">Gem</a>
-
+      <input class="button green" type="submit" value="Gem">
+        </form>
     </div>
+
     <hr>
     <div class="spacer" style="height:200px;"></div>
   </div>
