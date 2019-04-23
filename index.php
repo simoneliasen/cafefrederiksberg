@@ -82,61 +82,44 @@
     </div>
   </div>
 
-  <!-- Wrapper til indholdsoversigt -->
-  <div class="wrapper indholdsoversigt">
-    <!--Indhold centreret i wrapper-->
-    <div class="container indholdsoversigt">
-      <!-- opretter række, som elementer let kan placeres i-->
-      <div class="row indholdsoversigt">
+  <div class="container">
+    <div class="row">
 
-
-
-
-
-        <!--Restaurant Genvej  -->
+      <div class="three columns indholdsoversigt">
         <a href="pages/restaurant.php">
-        <div class="three columns indholdsoversigt">
-          <img src="img/inholdsoversigtrestaurant.png" width="144px" height="auto" alt="Genvej til restaurant indhold">
-          <h2>Restaurant</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi
-        </div></a>
-
-
-        <!--Bar Genvej  -->
-        <a href="pages/bar.php">
-        <div class="three columns indholdsoversigt">
-          <img src="img/inholdsoversigtbar.png" width="144px" height="auto" alt="Genvej til bar indhold">
-          <h2>Bar</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
-        </div></a>
-
-
-
-        <!--Events Genvej  -->
-        <a href="pages/events.php">
-        <div class="three columns indholdsoversigt">
-          <img src="img/inholdsoversigtevents.png" width="144px" height="auto" alt="Genvej til events indhold">
-          <h2>Events</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
-        </div></a>
-
-
-
-        <!--Selskaber Genvej  -->
-        <a href="pages/selskaber.php">
-        <div class="three columns indholdsoversigt">
-          <img src="img/inholdsoversigtselskaber.png" width="144px" height="auto" alt="Genvej til selskaber indhold">
-          <h2>Selskaber</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
-        </div></a>
-
-
-
-
-
+          <img src="img/inholdsoversigtrestaurant.png" width="175px" height="auto" alt="Genvej til restaurant indhold">
+          <h5>Restaurant</h5>
+          <p>Se vores menukort og bestil take-away</p>
+        </a>
       </div>
+
+      <div class="three columns indholdsoversigt">
+        <a href="pages/bar.php">
+          <img src="img/inholdsoversigtbar.png" width="175px" height="auto" alt="Genvej til bar indhold">
+          <h5>Bar</h5>
+          <p>Se vores store bar-kort med Aalborgs største Gin udvalg</p>
+        </a>
+      </div>
+
+      <div class="three columns indholdsoversigt">
+        <a href="pages/events.php">
+          <img src="img/inholdsoversigtevents.png" width="175px" height="auto" alt="Genvej til events indhold">
+          <h5>Events</h5>
+          <p>Se vores mange live-events på Klub Frede</p>
+        </a>
+      </div>
+
+      <div class="three columns indholdsoversigt">
+        <a href="pages/selskaber.php">
+          <img src="img/inholdsoversigtselskaber.png" width="175px" height="auto" alt="Genvej til selskaber indhold">
+          <h5>Selskaber</h5>
+          <p>Se vores mange muligheder for selskaber</p>
+        </a>
+      </div>
+
     </div>
   </div>
+
 
 
   <!-- Katalog (Kopi af Katalog under Events)  -->
@@ -161,6 +144,7 @@
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <!-- Link til katalog  -->
           <a class="button" rel="noopener" aria-label="Se Frede live katalog" href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">Se vores Magasin <u>her</u></a>
+          <a style="color: #CCB380;" class="button" rel="noopener" aria-label="Se Frede live katalog" href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">Bestil biletter</a>
           </div>
         </div>
 

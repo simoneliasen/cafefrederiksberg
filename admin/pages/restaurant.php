@@ -28,7 +28,7 @@ if(!$connection){
   die("Cannot connect to the database".mysqli_connect_error());
 }
 
-$query ="SELECT * FROM menu ORDER BY menu_index ASC;";
+$query ="SELECT * FROM menu;";
 $results = mysqli_query($connection,$query);
 
 if(!$results){
@@ -70,7 +70,7 @@ if(!$results){
       <h1 class="task_heading">Rediger menu-kortet</h1>
 
       <p><b>Tilføj ret til menuen</b></p>
-      <form method="post" name="post" action="php_process/process_menu_input.php" enctype="multipart/form-data">
+      <form class="restaurant_form" method="post" name="post" action="php_process/process_menu_input.php" enctype="multipart/form-data">
 
         <label for="menu_item_name_input">Navn på ret</label>
         <input name="menu_item_name" type="text" placeholder="Angiv navn" required maxlength="100" />
@@ -111,7 +111,7 @@ if(!$results){
               ?>
               <tr id="itm<?= $row[0] ?>">
                 <form method="post" name="post" action="php_process/process_menu_edit.php?id=<?=$id?>" enctype="multipart/form-data">
-                  <td><input name="menu_item_index" type="text" value="<?= $row[4] ?>" required maxlength="10" /></td>
+                  <td><input name="menu_item_index" type="text" value="<?= $row[0] ?>" required maxlength="10" /></td>
                   <td class="menu_item_price"><input name="menu_item_price" type="text" value="<?= $row[3] ?>" required maxlength="10" /></td>
                   <td><input name="menu_item_name" type="text" value="<?= $row[1] ?>" required maxlength="100" /></td>
                   <td><input name="menu_item_description" type="text" value="<?= $row[2] ?>" maxlength="170" /></td>
@@ -124,7 +124,7 @@ if(!$results){
               <?php
             }else{ ?>
               <tr>
-                <td><?= $row[4] ?></td>
+                <td><?= $row[0] ?></td>
                 <td><?= $row[3] ?></td>
                 <td><?= $row[1] ?></td>
                 <td><?= $row[2] ?></td>
@@ -134,18 +134,18 @@ if(!$results){
 
         }else{ ?>
           <tr id="restaurant_table">
-            <td><?= $row[4] ?></td>
+            <td><?= $row[0] ?></td>
             <td><?= $row[3] ?></td>
             <td><?= $row[1] ?></td>
             <td><?= $row[2] ?></td>
             <td class="table_buttons">
-              <a href="restaurant.php?id=<?=$row[0]?>#itm<?= $row[0] ?>">
-                <input class="button grey" type="submit" value="Rediger">
-              </a>
-
               <form class="table_buttons" method="post" name="post" action="php_process/process_menu_delete.php?id=<?=$row[0]?>" enctype="multipart/form-data">
               <input id="<?=$row[0]?>" class="button red" type="submit" value="Slet">
               </form>
+
+              <a href="restaurant.php?id=<?=$row[0]?>#itm<?= $row[0] ?>">
+                <input class="button grey" type="submit" value="Rediger">
+              </a>
             </td>
           </tr>
 
