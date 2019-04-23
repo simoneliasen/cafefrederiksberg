@@ -52,24 +52,20 @@
   <h1 class="task_heading">Announcement bar</h1>
   <p>Opdater announcement baren med vigtige meddelelser eller gode tilbud.</p>
   <br>
-
   <form method="post" name="post" action="php_process/process_announcement_edit.php" enctype="multipart/form-data"  id="announcementform">
     <input class="text_input" type="text" name="announcement">
     </br><br>
-
     <input type="radio" name="expiration" id="noexpiration" value="male" onclick="myFunction()" >Ingen udløbsdato<br>
     <input type="radio" name="expiration" id="expiration" value="male" onclick="myFunction()" >Vælg udløbsdato
     <br><br>
-
     <input type="date"  style="display:none" id="date" type="date" placeholder="_" name="date" value="<?php echo date('Y-m-d'); ?>" />
     <br><br>
-
     <a class="button red" type="reset" href="#">Annuller</a>
     <input class="button green" type="submit" value="Gem">
   </form>
 </div>
 
-<!-- Gemer dato pr. default, viser dato, når der trykks "vælg udløbsdato" -->
+<!-- Gemmer dato pr. default, viser dato, når der trykks "vælg udløbsdato" -->
     <script>
     function myFunction() {
       var checkBox = document.getElementById("expiration");
@@ -106,9 +102,8 @@
 
     <div class="task_wrapper">
       <h1 class="task_heading">Katalog & Katalog tekst</h1>
-
       <form method="post" name="post" action="php_process/process_katalog_edit.php" enctype="multipart/form-data"  id="katalogform">
-        <p><b>Rediger link</b></p>
+        <p><b>link</b></p>
       <input class="text_input" type="text" name="link">
         <p><b>Overskrift </b></p>
       <input class="text_input" type="text" name="header">
