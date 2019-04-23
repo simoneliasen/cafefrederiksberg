@@ -1,80 +1,62 @@
 
-<div class="fullWidthFooter">
- <footer class="container">
+
+<footer class="container">
   <div class="row">
 
-  <!--Kontakt column  -->
-<div class="four columns kontaktos">
-    <ul>Kontakt os </ul>
-
-<!--Wrapper  -->
-    <div class="row adresse-wrapper">
-<!--Left  -->
-      <div class="adresseleft">
-        <p><strong>Adresse:</strong></p>
+    <div class="four columns" style="text-align: center;">
+      <h3 class="footer_h3">Kontakt os</h3>
+      <div class="footer_element">
+        <strong>Adresse:</strong><br>
+        Hadsundvej 1B<br>9000 Aalborg<br>Danmark
+          Adresse:
       </div>
-<!--Right  -->
-      <div class="adresseright">
-        <p>Hadsundvej 1B </p>
-        <p>9000 Aalborg </p>
-        <p>Danmark </p>
+
+      <div class="footer_element">
+        <strong>Telefon:</strong><br>
+          <p>(+45) 98 12 03 83</p>
+      </div>
+
+      <div class="footer_element">
+        <strong>Telefon selskaber:</strong><br>
+        <p>(+45) 22 42 43 00</p>
+      </div>
+
+      <div class="footer_element">
+        <strong>Email:</strong><br>
+        <a href="mailto:cafefrederiksberg@gmail.com"><p>cafefrederiksberg@gmail.com</p></a>
+      </div>
+
+      <div class="footer_element">
+        <strong>Email selskaber:</strong><br>
+        <a href="mailto:frederiksbergselskaber@gmail.com"><p>frederiksbergselskaber@gmail.com</p></a>
+      </div>
+
+    </div>
+
+    <div class="four columns">
+      <h3 class="footer_h3">Åbningstider</h3>
+      <div class="footer_element" style="text-align: center;">
+        <p><strong>Mandag</strong> kl. 10.00-00.00</p>
+        <p><strong>Tirsdag</strong> kl. 10.00-00.00</p>
+        <p><strong>Onsdag</strong> kl. 10.00-00.00</p>
+        <p><strong>Torsdag</strong> kl. 10.00-00.00</p>
+        <p><strong>Fredag</strong> kl. 10.00-00.00</p>
+        <p><strong>Lørdag</strong> kl. 10.00-00.00</p>
+        <p><strong>Søndag</strong> kl. 10.00-00.00</p>
+        <p>Køkkenet har åbent <br><strong>12.00 - 14.00</strong> & <strong>17.00 - 20.00</strong>
       </div>
     </div>
 
-<!--Wrapper  -->
-    <div class="row telefon-wrapper">
-<!--Left  -->
-      <div class="telefonleft">
-      <p><strong>Telefon:</strong></p>
-      <p class="tilselskaber">(Til selskaber)</p>
+
+    <div class="four columns">
+      <h3 class="footer_h3">Links</h3>
+      <div class="footer_element" style="text-align: center;">
+        <a href="http://www.orlando-florida.dk/"><p>Feriehus Florida</p></a>
+        <a href="https://www.findsmiley.dk/25727"><p>Kontrol Rapport</p></a>
+        <a href="https://www.instagram.com/cafefrederiksberg/"><img src="/cafefrederiksberg/img/instagram.png" width="30px" heigth="auto" alt="Genvej til instagram"><p id="instagramtext">Instagram</p></a><br><br>
+        <a href="https://www.facebook.com/Fredelive/"><img src="/cafefrederiksberg/img/facebook.png" width="30px" heigth="auto" alt="Genvej til facebook"><p id="facebooktext">Facebook</p></a>
       </div>
-<!--Right  -->
-      <div class="telefonright">
-        <p>(+45) 98 12 03 83 </p>
-        <p class="tilselskaber">(+45) 98 12 03 83 </p>
-      </div>
+
     </div>
-
-    <!--Wrapper  -->
-        <div class="row e-mail-wrapper">
-    <!--Left  -->
-          <div class="e-mailleft">
-            <p><strong>E-mail:</strong></p>
-            <p class="tilselskaber">(Til selskaber)</p>
-          </div>
-    <!--Right  -->
-          <div class="e-mailright">
-            <p>cafefrederiksberg@gmail.com </p>
-            <p class="tilselskaber">frederiksbergselskaber@gmail.com</p>
-          </div>
-        </div>
   </div>
-
-    <!--Middle section  -->
-  <div class="four columns åbningstider">
-    <ul>Åbningstider</ul>
-    <li><strong>Mandag:</strong>  kl. 10.00-00.00</li>
-    <li><strong>Tirsdag:</strong> kl. 10.00-00.00</li>
-    <li><strong>Onsdag:</strong>  Kl. 10.00-00.00</li>
-    <li><strong>Torsdag:</strong> Kl. 10.00-03.00</li>
-    <li><strong>Fredag:</strong>  Kl. 10.00-03.00</li>
-    <li><strong>Lørdag:</strong>  Kl. 08.00-03.00</li>
-    <li><strong>Søndag:</strong>  Kl. 08.00-00.00</li>
-  </div>
-
-<!-- Right section  -->
-  <div class="four columns links">
-      <!--Køkkens åbningstider  -->
-    <ul>Køkken</ul>
-<li> Kl. 12.00-14.00 & 17.00-20.00</li>
-  <!--Links  -->
-<ul> Links </ul>
-<li><a href="http://www.orlando-florida.dk/">Feriehus Florida</a></li>
-<li><a href="https://www.findsmiley.dk/25727">Kontrol Rapport</a></li>
-<li><a href="https://www.instagram.com/cafefrederiksberg/"><img src="/cafefrederiksberg/img/instagram.png" width="30px" heigth="auto" alt="Genvej til instagram"><p id="instagramtext">Instagram</p></a>
-<li><a href="https://www.facebook.com/Fredelive/"><img src="/cafefrederiksberg/img/facebook.png" width="30px" heigth="auto" alt="Genvej til facebook"><p id="facebooktext">Facebook</p></a>
-  </div>
-
-</div>
-</footer>
 </div>

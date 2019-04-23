@@ -150,10 +150,21 @@ video {
 }
 
 /*..............................................D FOOTER */
+.footer_element{
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.footer_h3{
+  margin-top: 2rem;
+  text-align: center;
+}
+
 /*Adresse  */
 .row.adresse-wrapper {
   display: block;
 }
+
 .adresseleft {
   display: inline;
   float: left;
