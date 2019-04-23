@@ -40,8 +40,6 @@
   }
   ?>
 
-
-
   <!--Online bestilling  -->
   <div class="wrapper onlineBestilling">
     <div class="container onlineBestilling">
@@ -130,8 +128,6 @@
   </div>
 
   <?php
-
-
   $query ="SELECT * FROM katalog";
   $results = mysqli_query($connection,$query);
   if(!$results){
@@ -140,17 +136,7 @@
 
   // Konventere queery ind til array
   $row = mysqli_fetch_row($results);
-
 ?>
-
-
-
-
-
-
-
-
-
 
   <!-- Katalog (Kopi af Katalog under Events)  -->
   <div class="bg_dark">
@@ -182,7 +168,6 @@
 
 <?php
   mysqli_close($connection);
-
   ?>
 
   <!--Events: Facebook implementering  -->
