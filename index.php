@@ -32,6 +32,15 @@
   <!--Videoslider -->
   <?php include 'includes/header.php'; ?>
 
+  <?php
+  //Opretter forbindelse via config.php, og tjekker om du er logget ind via session.php
+  $connection = mysqli_connect('localhost','root','','admin');
+  if(!$connection){
+    die("Cannot connect to the database" . mysqli_connect_error());
+  }
+  ?>
+
+
 
   <!--Online bestilling  -->
   <div class="wrapper onlineBestilling">
@@ -138,6 +147,27 @@
     </div>
   </div>
 
+  <?php
+
+
+  $query ="SELECT * FROM katalog";
+  $results = mysqli_query($connection,$query);
+  if(!$results){
+    die("could not query the database" .mysqli_error());
+  }
+
+  // Konventere queery ind til array
+  $row = mysqli_fetch_row($results);
+
+?>
+
+
+
+
+
+
+
+
 
   <!-- Katalog (Kopi af Katalog under Events)  -->
   <div class="bg_dark">
@@ -146,7 +176,7 @@
       <div class="row">
         <!-- Billede af katalog  -->
         <div class="one-half column frede_live_katalog">
-          <a rel="noopener" aria-label="Se Frede live katalog" href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">
+          <a rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">
             <div class="frede_live_katalog_img">
             </div>
           </a>
@@ -155,18 +185,22 @@
         <div class="one-half column frede_live_katalog_text">
           <!--Appetizer tekst til katalog  -->
           <div class="frede_live_katalog_text_container">
-            <h2>Frede Live</h2>
-            <h6>Livemusik og events</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2><?php echo $row[2]; ?></h2>
+            <h6><?php echo $row[3]; ?></h6>
+            <p><?php echo $row[4]; ?></p>
             <!-- Link til katalog  -->
-          <a class="button" rel="noopener" aria-label="Se Frede live katalog" href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">Se vores Magasin <u>her</u></a>
+          <a class="button" rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">Se vores Magasin <u>her</u></a>
           </div>
         </div>
 
       </div>
     </div>
   </div>
+
+<?php
+  mysqli_close($connection);
+
+  ?>
 
   <!--Events: Facebook implementering  -->
   <div class="container">

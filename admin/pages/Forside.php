@@ -69,7 +69,7 @@
   </form>
 </div>
 
-<!-- Hides date per default; shows calendar when clicking radio-buttons -->
+<!-- Gemer dato pr. default, viser dato, når der trykks "vælg udløbsdato" -->
     <script>
     function myFunction() {
       var checkBox = document.getElementById("expiration");
@@ -106,20 +106,21 @@
 
     <div class="task_wrapper">
       <h1 class="task_heading">Katalog & Katalog tekst</h1>
-      <p>Opdatering af event-magasinet</p>
-      <p><b>Rediger link</b></p><input class="text_input" type="text"></input>
-      <br><br>
-      <a class="button red">Annuller</a>
-      <a class="button green">Gem</a>
 
-      <br><br><br>
-      <p><b>Rediger den tilhørende tekst</b></p>
-      <textarea></textarea>
+      <form method="post" name="post" action="php_process/process_katalog_edit.php" enctype="multipart/form-data"  id="katalogform">
+        <p><b>Rediger link</b></p>
+      <input class="text_input" type="text" name="link">
+        <p><b>Overskrift </b></p>
+      <input class="text_input" type="text" name="header">
+        <p><b>Underoverskrift</b></p>
+      <input class="text_input" type="text" name="subheader">
+        <p><b>Tekst</b></p>
+      <input class="text_input" id="katalogtext" type="text" name="text">
       <br><br>
-      <a class="button red">Annuller</a>
-      <a class="button green">Gem</a>
-
+      <input class="button green" type="submit" value="Gem">
+        </form>
     </div>
+
     <hr>
     <div class="spacer" style="height:200px;"></div>
   </div>
