@@ -118,6 +118,16 @@ p {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.dropdown-content {
+  padding-right: 0;
+  background-color: transparent;
+}
+.dropdown-content a {
+  padding-left: 0.8rem;
+  padding-right: 0.5rem;
+  background-color: transparent;
+}
 /*..............................................C HEADER */
 
 .header_bg_img{
