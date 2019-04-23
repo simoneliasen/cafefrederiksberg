@@ -85,6 +85,7 @@
 
   <!--Billedslider-->
   <?php // include 'includes/slider.php'; ?>
+
   <!--Videoslider -->
   <?php include 'includes/header.php'; ?>
 
