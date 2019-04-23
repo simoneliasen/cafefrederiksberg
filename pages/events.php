@@ -39,19 +39,17 @@
   if(!$connection){
     die("Cannot connect to the database" . mysqli_connect_error());
   }
-  ?>
 
-
-
-  <?php
+  // Tager data fra katalog table
   $query ="SELECT * FROM katalog";
   $results = mysqli_query($connection,$query);
   if(!$results){
     die("could not query the database" .mysqli_error());
   }
-  // Konventere queery ind til array
+  
   $row = mysqli_fetch_row($results);
   ?>
+
 <div class="bg_dark">
   <div class="container">
     <div class="row">

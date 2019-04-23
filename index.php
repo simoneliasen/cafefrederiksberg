@@ -133,7 +133,6 @@
   if(!$results){
     die("could not query the database" .mysqli_error());
   }
-  // Konventere queery ind til array
   $row = mysqli_fetch_row($results);
 ?>
   <!-- Katalog  -->
