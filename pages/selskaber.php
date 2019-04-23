@@ -29,37 +29,6 @@
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include '../includes/header.php'; ?>
 
-<!--top knapper på siden-->
-<div class="bg_dark">
-  <div class="container">
-   <div style="text-align:center;">
-     <div style="width:80%; display: inline-block;">
-
-        <div class="four columns">
-          <div class="selskab_button">
-          <a class="button button-primary bestil" href="pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
-        </div>
-      </div>
-
-        <div class="four columns">
-          <div class="selskab_button">
-          <a class="button button-primary bestil" href="pages/selskaber/buffet.php">Buffet</a>
-        </div>
-      </div>
-
-        <div class="four columns">
-          <div class="selskab_button">
-          <a class="button button-primary bestil" href="pages/selskaber/arrangementer.php">Arrangementer</a>
-        </div>
-      </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--selskabsmenu row-->
-
   <div class="container arrangementer">
     <div class="selskaber_wrapper">
 
@@ -85,6 +54,24 @@
       </div>
     </div>
   </div>
+
+<!--top knapper på siden-->
+<div class="container">
+  <div class="bestil_online">
+    <h2 class="bestil_online_overskrift">Bestil Online</h2>
+
+    <div class="bestil_online_knapper">
+      <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Bord</a>
+      <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Billetter</a>
+      <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Take Away</a>
+    </div>
+
+  </div>
+</div>
+
+<!--selskabsmenu row-->
+
+
 
 
 
@@ -148,7 +135,7 @@
               adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
               exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.Duis aute irure dolor in reprehenderit in voluptate 
+              consequat.Duis aute irure dolor in reprehenderit in voluptate
               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
               occaecat cupidatat non proident, sunt in culpa qui officia
               deserunt mollit anim id est laborum.</p>
