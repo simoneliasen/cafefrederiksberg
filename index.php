@@ -133,39 +133,30 @@
   if(!$results){
     die("could not query the database" .mysqli_error());
   }
-
   // Konventere queery ind til array
   $row = mysqli_fetch_row($results);
 ?>
-
-  <!-- Katalog (Kopi af Katalog under Events)  -->
+  <!-- Katalog  -->
   <div class="bg_dark">
     <div class="container">
-
       <div class="row">
-        <!-- Billede af katalog  -->
         <div class="one-half column frede_live_katalog">
           <a rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">
             <div class="frede_live_katalog_img">
             </div>
           </a>
         </div>
-        <!--Tekst til katalog  -->
         <div class="one-half column frede_live_katalog_text">
-          <!--Appetizer tekst til katalog  -->
           <div class="frede_live_katalog_text_container">
             <h2><?php echo $row[2]; ?></h2>
             <h6><?php echo $row[3]; ?></h6>
             <p><?php echo $row[4]; ?></p>
-            <!-- Link til katalog  -->
-          <a class="button" rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">Se vores Magasin <u>her</u></a>
+            <a class="button" rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">Se vores Magasin <u>her</u></a>
           </div>
         </div>
-
       </div>
     </div>
   </div>
-
 <?php
   mysqli_close($connection);
   ?>
