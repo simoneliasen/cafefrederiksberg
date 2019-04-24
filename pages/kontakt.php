@@ -29,6 +29,12 @@
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include '../includes/header.php'; ?>
 
+  <?php
+          $connection = mysqli_connect('localhost','root','','admin');
+          if(!$connection){
+            die("Cannot connect to the database" . mysqli_connect_error());
+          }
+          ?>
 
 
 <!--Online bestilling  -->
@@ -51,70 +57,22 @@
       <div class="six columns">
         <h2 class="opening_headline">Åbningstider</h2>
 
-          <div class="opening_time_day">
-            <div class="opening_day">
-              Mandag
+        <?php
+            $query ="SELECT * FROM aabningstider";
+            $results = mysqli_query($connection,$query);
+            if(!$results){
+              die("could not query the database" .mysqli_error());
+            }
+
+            while($row = mysqli_fetch_row($results)): ?>
+            <div class="opening_time_day">
+              <div class="opening_day"><?= $row[1] ?></div>
+              <div class="opening_time"><?= $row[2] ?></div>
             </div>
-            <div class="opening_time">
-              Kl. 10.00-00.00
-            </div>
-          </div>
 
-
-      <div class="opening_time_day">
-        <div class="opening_day">
-          Tirsdag
-        </div>
-        <div class="opening_time">
-          Kl. 10.00-00.00
-        </div>
-      </div>
-
-  <div class="opening_time_day">
-    <div class="opening_day">
-      Onsdag
-    </div>
-    <div class="opening_time">
-      Kl. 10.00-00.00
-    </div>
-  </div>
-
-  <div class="opening_time_day">
-    <div class="opening_day">
-      Torsdag
-    </div>
-    <div class="opening_time">
-      Kl. 10.00-03.00
-    </div>
-  </div>
-
-  <div class="opening_time_day">
-    <div class="opening_day">
-      Fredag
-    </div>
-    <div class="opening_time">
-      Kl. 10.00-03.00
-    </div>
-  </div>
-
-  <div class="opening_time_day">
-    <div class="opening_day">
-      Lørdag
-    </div>
-    <div class="opening_time">
-      Kl. 08.00-03.00
-    </div>
-  </div>
-
-  <div class="opening_time_day">
-    <div class="opening_day">
-      Søndag
-    </div>
-    <div class="opening_time">
-      Kl. 08.00-00.00
-    </div>
-  </div>
-
+          <?php endwhile;
+          mysqli_close($connection);
+          ?>
 </div>
 
 
