@@ -401,6 +401,7 @@ body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4)
 /*..............................................3 BAR */
 
 .bar-title{
+  text-transform: uppercase;
   text-align:center;
   padding: 2rem 0;
 }
@@ -408,6 +409,7 @@ body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4)
 .bar-item{
   min-height: 25px;
   margin-bottom: 30px;
+  border-bottom: 1px solid #353535;
 }
 
 .bar-item-name{

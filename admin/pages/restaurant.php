@@ -58,7 +58,7 @@ if(!$results){
   <div class="content">
     <div class="heading">
       <!-- DYNAMISK, overskriften skal ændre sig så den passer til menu-punktet -->
-      <h1>Forside<span style="font-weight: 400;"></span></h1>
+      <h1>Restautrant<span style="font-weight: 400;"></span></h1>
       <div class="logout">
         <a class="button red" href="../logout.php">log ud</a>
       </div>

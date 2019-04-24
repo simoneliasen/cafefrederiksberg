@@ -10,170 +10,72 @@
 
   <!--Side titel  -->
   <title>Café Frederiksberg</title>
-  <!--Standard stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
-  <!-- Skeleton stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
-  <!-- Normalize stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-  <!-- Includer Google Fonts -->
+
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-
-
 </head>
 
 <body>
-  <!--Tilføjer mulighed for announcementbar  -->
-  <?php include '../includes/announcement.php'; ?>
-  <!--Inddrager navigationsbar fra "includes/navigation.php"-->
-  <?php include '../includes/navigation.php'; ?>
-  <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
-  <?php include '../includes/header.php'; ?>
+  <?php
+  include '../includes/announcement.php';
+  include '../includes/navigation.php';
+  include '../includes/header.php';
+  ?>
+
+  <?php
+  $connection = mysqli_connect('localhost', 'root', '', 'admin');
+  if(!$connection){
+    die("Cannot connect to the database".mysqli_connect_error());
+  }
+
+  $query ="SELECT * FROM barmenu";
+  $results = mysqli_query($connection,$query);
+  if(!$results){
+    die("could not query the database" .mysqli_error());
+  }
+
+  $category1 = 'ol_vand';
+  $category2 = 'varme drikke';
+  $category3 = 'gin';
+  $category4 = 'champagne';
+  $category5 = 'rom';
+  ?>
 
   <!-- ØL & VAND -->
   <div class="container">
     <div class="row">
 
-      <!-- SECTION START: 1 -->
       <div class="six columns">
-        <h2 class="bar-title">ØL & VAND</h2>
-        <!-- Item starts -->
-        <div class="bar-item">
-          <div class="bar-item-name">Fyraftensøl</div>
-          <div class="bar-item-price">10,-</div>
-          <div class="bar-item-description">Alle hverdage mellem kl. 16.00 - 18.00</div>
-        </div>
-        <!-- Item ends -->
-        <!-- Item starts -->
-        <div class="bar-item">
-          <div class="bar-item-name">
-            lorem ipsum
-          </div>
-          <div class="bar-item-price">
-            lorem ipsum
-          </div>
-          <div class="bar-item-description">
-            lorem ipsum
-          </div>
-        </div>
-        <!-- Item ends -->
-        <!-- Item starts -->
-        <div class="bar-item">
-          <div class="bar-item-name">
-            lorem ipsum
-          </div>
-          <div class="bar-item-price">
-            lorem ipsum
-          </div>
-          <div class="bar-item-description">
-            lorem ipsum
-          </div>
-        </div>
-        <!-- Item ends -->
-        <!-- Item starts -->
-        <div class="bar-item">
-          <div class="bar-item-name">
-            lorem ipsum
-          </div>
-          <div class="bar-item-price">
-            lorem ipsum
-          </div>
-          <div class="bar-item-description">
-            lorem ipsum
-          </div>
-        </div>
-        <!-- Item ends -->
-        <!-- Item starts -->
-        <div class="bar-item">
-          <div class="bar-item-name">
-            lorem ipsum
-          </div>
-          <div class="bar-item-price">
-            lorem ipsum
-          </div>
-          <div class="bar-item-description">
-            lorem ipsum
-          </div>
-        </div>
-      </div>
-      <!-- SECTION END: 1 -->
+        <h2 class="bar-title"><?= $category1 ?></h2>
 
-      <!-- SECTION START: 2 -->
+        <?php while($row = mysqli_fetch_row($results)):
+          if($row[1] == $category1){ ?>
+        <div class="bar-item">
+          <div class="bar-item-name"><?= $row[2] ?>,-</div>
+          <div class="bar-item-price"><?= $row[4] ?>,-</div>
+          <div class="bar-item-description"><?= $row[3] ?>,-</div>
+        </div>
+      <?php }endwhile;?>
+
+      </div>
+
       <div class="six columns">
         <h2 class="bar-title">VARME DRIKKE</h2>
-        <!-- Item starts -->
-        <div class="bar-item">
-          <div class="bar-item-name">
-            Irish Coffee
-          </div>
-          <div class="bar-item-price">
-            19,-
-          </div>
-          <div class="bar-item-description">
-            Kaffe med irsk whiskey, flødeskum og brun farin.
-          </div>
-        </div>
-        <!-- Item ends -->
-        <!-- Item starts -->
-        <div class="bar-item">
-          <div class="bar-item-name">
-            lorem ipsum
-          </div>
-          <div class="bar-item-price">
-            lorem ipsum
-          </div>
-          <div class="bar-item-description">
-            lorem ipsum
-          </div>
-        </div>
-        <!-- Item ends -->
-        <!-- Item starts -->
-        <div class="bar-item">
-          <div class="bar-item-name">
-            lorem ipsum
-          </div>
-          <div class="bar-item-price">
-            lorem ipsum
-          </div>
-          <div class="bar-item-description">
-            lorem ipsum
-          </div>
-        </div>
-        <!-- Item ends -->
-        <!-- Item starts -->
-        <div class="bar-item">
-          <div class="bar-item-name">
-            lorem ipsum
-          </div>
-          <div class="bar-item-price">
-            lorem ipsum
-          </div>
-          <div class="bar-item-description">
-            lorem ipsum
-          </div>
-        </div>
-        <!-- Item ends -->
-        <!-- Item starts -->
-        <div class="bar-item">
-          <div class="bar-item-name">
-            lorem ipsum
-          </div>
-          <div class="bar-item-price">
-            lorem ipsum
-          </div>
-          <div class="bar-item-description">
-            lorem ipsum
-          </div>
-        </div>
-      </div>
-      <!-- SECTION ENDS: 2 -->
-    </div>
-    <!-- row ends -->
-  </div>
-  <!-- container ends -->
+        <?php while($row = mysqli_fetch_row($results)):
+          if($row[1] == $category2){ ?>
 
-  <!--GIN -->
+        <div class="bar-item">
+          <div class="bar-item-name"></div>
+          <div class="bar-item-price">  </div>
+          <div class="bar-item-description"></div>
+        </div>
+        <?php }endwhile;?>
+      </div>
+    </div>
+  </div>
 
   <div class="bg_dark">
     <div class="container">
@@ -182,424 +84,37 @@
         <p>Aalborgs bedste Ginkort med over 40 lækre gins <br>Prisen er for 2 cl</p>
       </div>
 
-      <!-- row begins-->
       <div class="row">
-        <!-- SECTION STARTS: 1-->
+        <?php
+          /* For at kunne "fetch_row", skal pointeren i sql sættes til at starte ved 0 */
+          mysqli_data_seek($results, 0);
+          /* counter tæller til 3. Hvis counter = 3, skal der indsættes nyt row */
+          /* På denne måde, er der lige mange drinks i hver column på hjemmesiden */
+          $counter = 0;
+          while($row = mysqli_fetch_row($results)):
+            /* hvis $row[1] = den rigtige kategori (her: GIN), skal dataen indsættes */
+            if($row[1]==$category3){
+              /* Counter++ ligger 1 til counter hvergang et element passer med kategorien GIN */
+              $counter++;
+        ?>
         <div class="one-third column">
-
           <div class="bar-item">
-            <div class="bar-item-name">Finsbury</div>
-            <div class="bar-item-price">19,-</div>
+            <div class="bar-item-name"><?= $row[2] ?></div>
+            <div class="bar-item-price"><?= $row[4] ?>,-</div>
           </div>
-
-          <div class="bar-item">
-            <div class="bar-item-name">Beefeater</div>
-            <div class="bar-item-price">19,-</div>
-          </div>
-
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Gordon's
-            </div>
-            <div class="bar-item-price">
-              19,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Gordon's Premium Pink
-            </div>
-            <div class="bar-item-price">
-              20,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Tanqueray
-            </div>
-            <div class="bar-item-price">
-              20,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Tanqueray Rangpur
-            </div>
-            <div class="bar-item-price">
-              25,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Tanqueray NO. 10
-            </div>
-            <div class="bar-item-price">
-              35,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Bombay Sapphire
-            </div>
-            <div class="bar-item-price">
-              20,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Bombay Dry Gin
-            </div>
-            <div class="bar-item-price">
-              20,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Star of Bombay
-            </div>
-            <div class="bar-item-price">
-              35,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Hayman's Sloe Gin
-            </div>
-            <div class="bar-item-price">
-              25,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Foxdenton Sloe Gin
-            </div>
-            <div class="bar-item-price">
-              30,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Foxdenton Original 48
-            </div>
-            <div class="bar-item-price">
-              30,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Penderyn Brecon
-            </div>
-            <div class="bar-item-price">
-              25,-
-            </div>
-          </div>
-          <!-- Item ends -->
         </div>
-        <!-- SECTION ENDS: 1 -->
 
-
-        <!-- SECTION STARTS: 2 -->
-        <div class="one-third column">
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Penderyn Brecon Special
-            </div>
-            <div class="bar-item-price">
-              30,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Hernö Swedish Excellence
-            </div>
-            <div class="bar-item-price">
-              30,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Hernö Navy Strength 57%
-            </div>
-            <div class="bar-item-price">
-              35,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Four Pillars
-            </div>
-            <div class="bar-item-price">
-              30,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Ferdinand's
-            </div>
-            <div class="bar-item-price">
-              30,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Skin Gin
-            </div>
-            <div class="bar-item-price">
-              35,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Gin Mare
-            </div>
-            <div class="bar-item-price">
-              30,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Langley's NO. 8
-            </div>
-            <div class="bar-item-price">
-              25,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Ungava
-            </div>
-            <div class="bar-item-price">
-              25,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Edgerton Pink Gin
-            </div>
-            <div class="bar-item-price">
-              25,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Silent Pool
-            </div>
-            <div class="bar-item-price">
-              30,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Loca Lab Minus -33
-            </div>
-            <div class="bar-item-price">
-              30,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Barrister Old Tom
-            </div>
-            <div class="bar-item-price">
-              25,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Barrister Dry Gin
-            </div>
-            <div class="bar-item-price">
-              20,-
-            </div>
-          </div>
-          <!-- Item ends -->
-        </div>
-        <!-- SECTION END: 2 -->
-
-        <!-- SECTION STARTS: 3 -->
-        <div class="one-third column">
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Staethearn Heater Rose
-            </div>
-            <div class="bar-item-price">
-              25,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Indian Summer
-            </div>
-            <div class="bar-item-price">
-              25,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Foxdenton Winslow Plum
-            </div>
-            <div class="bar-item-price">
-              25,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Damson Gin
-            </div>
-            <div class="bar-item-price">
-              25,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Raspberry Gin
-            </div>
-            <div class="bar-item-price">
-              25,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Hendrick's
-            </div>
-            <div class="bar-item-price">
-              25,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Caorunn
-            </div>
-            <div class="bar-item-price">
-              25,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              London NO. 1
-            </div>
-            <div class="bar-item-price">
-              30,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Bulldog
-            </div>
-            <div class="bar-item-price">
-              25,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Blind Tiger
-            </div>
-            <div class="bar-item-price">
-              35,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Tarquins
-            </div>
-            <div class="bar-item-price">
-              35,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Master's Dry Gin
-            </div>
-            <div class="bar-item-price">
-              30,-
-            </div>
-          </div>
-          <!-- Item ends -->
-          <!-- Item starts -->
-          <div class="bar-item">
-            <div class="bar-item-name">
-              Djøn Økologisk Gin
-            </div>
-            <div class="bar-item-price">
-              25,-
-            </div>
-          </div>
-          <!-- Item ends -->
-        </div>
-        <!-- SECTION END: 3 -->
+        <?php
+          /* hvis counter = 3, skal der indættes nyt row */
+          if($counter == 3){
+            $counter = 0;
+        ?>
       </div>
+      <div class="row">
+      <?php
+        }
+      } endwhile;
+      ?>
     </div>
   </div>
 
@@ -1179,7 +694,9 @@
 
 
   <!--Indrag footer fra filen includes/footer.php-->
-  <?php include '../includes/footer.php'; ?>
+  <?php include '../includes/footer.php';
+    mysqli_close($connection);
+  ?>
 
 </body>
 
