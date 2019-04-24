@@ -9,7 +9,7 @@ if(!$connection){
 
 <footer class="container">
   <div class="row">
-
+    <!--Kontaktoplysninger -->
     <div class="four columns" style="text-align: center;">
       <h3 class="footer_h3">Kontakt os</h3>
       <div class="footer_element">
@@ -17,65 +17,55 @@ if(!$connection){
         Hadsundvej 1B<br>9000 Aalborg<br>Danmark
           Adresse:
       </div>
-
       <div class="footer_element">
         <strong>Telefon:</strong><br>
           <p>(+45) 98 12 03 83</p>
       </div>
-
       <div class="footer_element">
         <strong>Telefon selskaber:</strong><br>
         <p>(+45) 22 42 43 00</p>
       </div>
-
       <div class="footer_element">
         <strong>Email:</strong><br>
         <a href="mailto:cafefrederiksberg@gmail.com"><p>cafefrederiksberg@gmail.com</p></a>
       </div>
-
       <div class="footer_element">
         <strong>Email selskaber:</strong><br>
         <a href="mailto:frederiksbergselskaber@gmail.com"><p>frederiksbergselskaber@gmail.com</p></a>
       </div>
-
     </div>
 
-
-
-
-
-
-
+<!--åbningstider  -->
     <div class="four columns">
       <h3 class="footer_h3">Åbningstider</h3>
       <div class="footer_element" style="text-align: center;">
+        <!--Dages åbningstider  -->
         <?php
-
-            $query ="SELECT * FROM aabningstider";
+            $query ="SELECT * FROM aabningstider ORDER BY id ASC LIMIT 7;";
             $results = mysqli_query($connection,$query);
             if(!$results){
               die("could not query the database" .mysqli_error());
             }
-
             while($row = mysqli_fetch_row($results)): ?>
-
             <p><strong><?= $row[1] ?></strong> <?=$row[2] ?></p>
-
-
-          <?php endwhile;
+          <?php endwhile;?>
+          <!--Køkkenets åbningstider  -->
+          <?php
+          $query ="SELECT * FROM aabningstider ORDER BY id DESC LIMIT 1;";
+          $results = mysqli_query($connection,$query);
+          if(!$results){
+            die("could not query the database" .mysqli_error());
+          }
+          $row = mysqli_fetch_row($results)?>
+        <p><strong>Køkkenet:</strong><br><strong><?= $row[1] . '</strong> ' . $row[2] ?>
+          <!--luk forbindelse til db-->
+          <?php
           mysqli_close($connection);
-          ?>
-
-
-
-        <p>Køkkenet har åbent <br><strong>12.00 - 14.00</strong> & <strong>17.00 - 20.00</strong>
+            ?>
       </div>
     </div>
 
-
-
-
-
+    <!--Links   -->
     <div class="four columns">
       <h3 class="footer_h3">Links</h3>
       <div class="footer_element" style="text-align: center;">

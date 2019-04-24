@@ -29,25 +29,23 @@
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include '../includes/header.php'; ?>
 
+<!-- Opretter forbindelse til database  -->
   <?php
-          $connection = mysqli_connect('localhost','root','','admin');
-          if(!$connection){
-            die("Cannot connect to the database" . mysqli_connect_error());
-          }
-          ?>
-
+  $connection = mysqli_connect('localhost','root','','admin');
+  if(!$connection){
+    die("Cannot connect to the database" . mysqli_connect_error());
+  }
+?>
 
 <!--Online bestilling  -->
 <div class="container">
   <div class="bestil_online">
     <h2 class="bestil_online_overskrift">Bestil Online</h2>
-
     <div class="bestil_online_knapper">
       <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Bord</a>
       <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Billetter</a>
       <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Take Away</a>
     </div>
-
   </div>
 </div>
 
@@ -57,29 +55,23 @@
       <div class="six columns">
         <h2 class="opening_headline">Åbningstider</h2>
 
+        <!--Vis første 7 entries i sql-table (ugedages åbningstider)  -->
         <?php
-            $query ="SELECT * FROM aabningstider";
+            $query ="SELECT * FROM aabningstider ORDER BY id ASC LIMIT 7;";
             $results = mysqli_query($connection,$query);
             if(!$results){
               die("could not query the database" .mysqli_error());
             }
-
             while($row = mysqli_fetch_row($results)): ?>
             <div class="opening_time_day">
               <div class="opening_day"><?= $row[1] ?></div>
               <div class="opening_time"><?= $row[2] ?></div>
             </div>
+          <?php endwhile;?>
 
-          <?php endwhile;
-          mysqli_close($connection);
-          ?>
-</div>
-
-
-
+    </div>
   <div class="six columns">
     <h2 class="opening_headline">Kontaktinformationer</h2>
-
     <div class="opening_time_day">
       <div class="opening_day_party">
         Adresse
@@ -88,7 +80,6 @@
         Hadsundvej 1B
       </div>
     </div>
-
     <div class="opening_time_day">
       <div class="opening_day_party">
         By
@@ -97,7 +88,6 @@
         9000 Aalborg, Danmark
       </div>
     </div>
-
     <div class="opening_time_day">
       <div class="opening_day_party">
         Telefon
@@ -106,7 +96,6 @@
         (+45) 98 12 03 83
       </div>
     </div>
-
     <div class="opening_time_day">
       <div class="opening_day_party">
         E-mail
@@ -115,28 +104,31 @@
         cafefrederiksberg@gmail.com
       </div>
     </div>
-
   </div>
 </div>
+
+<!--Printer sidste værdi i aabningstider table (Køkkens åbningstider)  -->
+<?php
+$query ="SELECT * FROM aabningstider ORDER BY id DESC LIMIT 1;";
+$results = mysqli_query($connection,$query);
+if(!$results){
+  die("could not query the database" .mysqli_error());
+}
+$row = mysqli_fetch_row($results)
+?>
+
 <div class="row kitchen_and_party">
   <div class="six columns">
     <h2 class="opening_headline">Køkken:</h2>
-
     <div class="contact_info_party">
-      <div class="opening_day">
-        Hver dag
-      </div>
-      <div class="opening_time">
-        Kl. 12.00-14.00 <br> Kl. 17.00-20.00
-      </div>
+      <div class="opening_day"><?= $row[1];?></div>
+      <div class="opening_time"><?= $row[2];?></div>
     </div>
-
   </div>
 
+<?php mysqli_close($connection);?>
   <div class="six columns">
-
     <h2 class="opening_headline">Vedrørende fest:</h2>
-
     <div class="contact_info_party">
       <div class="opening_day_party">
         Telefon
@@ -145,7 +137,6 @@
         (+45) 22 42 43 00
       </div>
     </div>
-
     <div class="contact_info_party">
       <div class="opening_day_party">
         E-mail
@@ -154,11 +145,9 @@
         Frederiksbergselskaber@gmail.com
       </div>
     </div>
-
   </div>
 </div>
 </div>
-
 </div>
 
 <!--Google maps  -->
@@ -167,12 +156,8 @@
     marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div>
 </div>
 
-
 <!--Indrag footer fra filen includes/footer.php-->
 <?php include '../includes/footer.php'; ?>
 
-
-
 </body>
-
 </html>
