@@ -19,10 +19,6 @@
 
 
 
-
-
-
-
   if($results){
     header("Location: ../restaurant.php");
     exit();
