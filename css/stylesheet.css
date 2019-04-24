@@ -98,7 +98,6 @@ p {
   padding-right: 1.6rem;
   font-family: "Poppins";
   text-decoration: none;
-  color: #FFFFFF;
 }
 .navigationmenu > a:hover, .dropdown a:hover {
   color: #9A9A9A;
@@ -127,6 +126,11 @@ p {
   padding-left: 0.8rem;
   padding-right: 0.5rem;
   background-color: transparent;
+}
+
+.active.nav {
+  color: #CCB380;
+  font-weight: bold;
 }
 /*..............................................C HEADER */
 
