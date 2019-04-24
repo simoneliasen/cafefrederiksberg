@@ -1,4 +1,11 @@
 
+<?php
+
+$connection = mysqli_connect('localhost','root','','admin');
+if(!$connection){
+  die("Cannot connect to the database" . mysqli_connect_error());
+}
+?>
 
 <footer class="container">
   <div class="row">
@@ -33,16 +40,28 @@
 
     </div>
 
+<?php
+    $query ="SELECT * FROM aabningstider";
+    $results = mysqli_query($connection,$query);
+    if(!$results){
+      die("could not query the database" .mysqli_error());
+    }
+
+    // Konventere queery ind til array
+    $row = mysqli_fetch_row($results);
+    var_dump($row);
+     ?>
+
     <div class="four columns">
       <h3 class="footer_h3">Åbningstider</h3>
       <div class="footer_element" style="text-align: center;">
-        <p><strong>Mandag</strong> kl. 10.00-00.00</p>
-        <p><strong>Tirsdag</strong> kl. 10.00-00.00</p>
-        <p><strong>Onsdag</strong> kl. 10.00-00.00</p>
-        <p><strong>Torsdag</strong> kl. 10.00-00.00</p>
-        <p><strong>Fredag</strong> kl. 10.00-00.00</p>
-        <p><strong>Lørdag</strong> kl. 10.00-00.00</p>
-        <p><strong>Søndag</strong> kl. 10.00-00.00</p>
+        <p><strong> <?php echo  $row[1]; ?></strong>  <?php echo  $row[2]; ?></p>
+        <p><strong> <?php echo  $row[1]; ?></strong>  <?php echo  $row[2]; ?></p>
+        <p><strong> <?php echo  $row[1]; ?></strong> <?php echo  $row[2]; ?></p>
+        <p><strong> <?php echo  $row[1]; ?></strong> <?php echo  $row[2]; ?></p>
+        <p><strong> <?php echo  $row[1]; ?></strong> <?php echo  $row[2]; ?></p>
+        <p><strong><?php echo  $row[1]; ?></strong> <?php echo  $row[2]; ?></p>
+        <p><strong><?php echo  $row[1]; ?></strong> <?php echo  $row[2]; ?></p>
         <p>Køkkenet har åbent <br><strong>12.00 - 14.00</strong> & <strong>17.00 - 20.00</strong>
       </div>
     </div>
