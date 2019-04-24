@@ -65,11 +65,8 @@
       <div class="six columns introHistorie">
         <h2 id="introhistoriecaféfrederiksbergheading"> Café Frederiksberg </h2>
         <h4 id="introhistoriecaféfrederiksbergsubheading"> Siden år 1900</h4>
-        <p id="introhistoriecaféfrederiksbergtext"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis neque in nunc varius fringilla.
-          Morbi bibendum nunc ut posuere tempor. Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
-          Proin vel mauris sagittis. Donec sit amet elementum purus.  ProinProinProin vel mauoin vel mauris Donec sit amet  Donec sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
-          Proin vel mauris sagittis Donec sit amet elementum purus. Maecenas eleifendimentum.
-          sit amet elementum purus. Maecenas eleifend nec dolor vitae condimentum.
+        <p id="introhistoriecaféfrederiksbergtext">
+Café Frederiksberg har budt gæster velkommen siden 1900. Café Frederiksberg har eksisteret siden 1900, og er dermed Aalborgs ældste værtshus på samme beliggenhed – men også Aalborgs største værtshus. Et værtshus der fra første åbningsdag for 119 år siden, og har kun haft 3 forskellige ejere gange gennem alle årene. Kært barn har mange navne, og Café Frederiksberg blev før i tiden kaldt for “Bergen” eller “Berg” – nu om dage er det mest navnet “Frede” som gæsterne ynder at burge, og derfor har Café Frederiksbergs musikmagasin også fået navnet FREDE LIVE.
         </p>
         <!--se Café frederiksbergs tidlinje knap  -->
         <a class="button introhistorie" href="pages/tidslinje.php">Se hele Café Frederikbergs historie <u>her</u></a>
@@ -140,8 +137,9 @@
           <div class="frede_live_katalog_text_container">
             <h2>Frede Live</h2>
             <h6>Livemusik og events</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+              Hos Café Frederiksberg har vi en masse forskellige live events der behager enhver smag. 
+            </p>
             <!-- Link til katalog  -->
           <a class="button" rel="noopener" aria-label="Se Frede live katalog" href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">Se vores Magasin <u>her</u></a>
           <a style="color: #CCB380;" class="button" rel="noopener" aria-label="Se Frede live katalog" href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">Bestil biletter</a>
