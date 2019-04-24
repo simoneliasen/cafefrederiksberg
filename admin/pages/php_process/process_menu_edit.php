@@ -12,7 +12,7 @@
   $menu_item_index = htmlspecialchars($_POST['menu_item_index']);
 
 
-  $query = "UPDATE menu SET name = '$menu_item_name', description ='$menu_item_description', price = '$menu_item_price', menu_index = '$menu_item_index' WHERE id = '$id'";
+  $query = "UPDATE menu SET name = '$menu_item_name', description ='$menu_item_description', price = '$menu_item_price' WHERE id = '$id'";
 
   $results = mysqli_query($connection, $query);
 

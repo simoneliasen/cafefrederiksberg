@@ -26,35 +26,92 @@
   <!--Tilføjer mulighed for announcementbar  -->
   <?php include 'includes/announcement.php'; ?>
   <!--Inddrager navigationsbar fra "includes/navigation.php"-->
-  <?php include 'includes/navigation.php'; ?>
-  <!--Bileldeslider-->
+
+  <!--Henter Jquery Script via CDN  -->
+  <script
+    src="https://code.jquery.com/jquery-1.12.4.js"
+    integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+    crossorigin="anonymous"></script>
+
+  <!--main navigationsbar  -->
+  <div class="navigationbar">
+  <!--Container der centrere content i navigationsmenu  -->
+    <nav class="container">
+
+  <!--Logo  -->
+  <div class="logo">
+    <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
+  </div>
+
+  <!-- Menu  -->
+  <div class="navigationmenu">
+  <a href="/cafefrederiksberg/pages/restaurant.php">Restaurant</a>
+  <a href="/cafefrederiksberg/pages/bar.php">Bar</a>
+  <a href="/cafefrederiksberg/pages/events.php">Events</a>
+
+  <!--Selskaber dropdown  -->
+  <div class="dropdown">
+    <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber</a>
+    <div class="dropdown-content">
+    <a href="/cafefrederiksberg/pages/selskaber/buffet.php">Buffet</a>
+    <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php">Arrangementer</a>
+    <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
+    </div>
+  </div>
+
+  <!--Om os dropdown  -->
+  <div class="dropdown">
+    <a href="/cafefrederiksberg/pages/tidslinje.php">Om os</a>
+    <div class="dropdown-content">
+    <a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
+    </div>
+  </div>
+  </div>
+  </nav>
+  </div>
+
+  <!-- Jquery Script that changes the color of the header on scroll (+opacity)  -->
+  <script>
+  var $nav = $('.navigationbar');
+  $(document).scroll(function() {
+      $nav.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
+  });
+  // Does the same as above, just for The dropdown menu
+  var $dropdown = $('.dropdown-content');
+  $(document).scroll(function() {
+      $dropdown.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
+  });
+  </script>
+
+  <!--Billedslider-->
   <?php // include 'includes/slider.php'; ?>
+
   <!--Videoslider -->
   <?php include 'includes/header.php'; ?>
 
+  <?php
+  //Opretter forbindelse via config.php, og tjekker om du er logget ind via session.php
+  $connection = mysqli_connect('localhost','root','','admin');
+  if(!$connection){
+    die("Cannot connect to the database" . mysqli_connect_error());
+  }
+  ?>
 
   <!--Online bestilling  -->
-  <div class="wrapper onlineBestilling">
-    <div class="container onlineBestilling">
-      <div class="row onlineBestilling">
-        <!-- Bestil online tekst  -->
-        <div class="six columns bestilonline">
-          <div class="Bestil_onlineindex">
-            <h2 id="bestilonlineheader">Bestil Online</h2>
-          </div>
-        </div>
-        <div class="six columns bestilonline knapper">
-            <!-- Bestil bord online knap  -->
-          <a class="button button-primary bestil bord" href="https://cafefrederiksberg.azurewebsites.net/">Bord</a>
-        <!-- Bestil Biletter online knap  -->
-          <a class="button button-primary bestil biletter" href="https://cafefrederiksberg.azurewebsites.net/">Billetter</a>
-        <!-- Bestil Take-away online knap  -->
-          <a class="button button-primary bestil take-away" href="https://cafefrederiksberg.azurewebsites.net/">Take Away</a>
-        </div>
 
+  <div class="container">
+    <div class="bestil_online">
+      <h2 class="bestil_online_overskrift">Bestil Online</h2>
+
+      <div class="bestil_online_knapper">
+        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Bord</a>
+        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Billetter</a>
+        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Take Away</a>
       </div>
+
     </div>
   </div>
+
 
   <!-- introHistorie -->
   <div class="wrapper introHistorie">
@@ -117,24 +174,27 @@ Café Frederiksberg har budt gæster velkommen siden 1900. Café Frederiksberg h
     </div>
   </div>
 
-
-
-  <!-- Katalog (Kopi af Katalog under Events)  -->
+  <?php
+  $query ="SELECT * FROM katalog";
+  $results = mysqli_query($connection,$query);
+  if(!$results){
+    die("could not query the database" .mysqli_error());
+  }
+  $row = mysqli_fetch_row($results);
+?>
+  <!-- Katalog  -->
   <div class="bg_dark">
     <div class="container">
-
       <div class="row">
-        <!-- Billede af katalog  -->
         <div class="one-half column frede_live_katalog">
-          <a rel="noopener" aria-label="Se Frede live katalog" href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">
+          <a rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">
             <div class="frede_live_katalog_img">
             </div>
           </a>
         </div>
-        <!--Tekst til katalog  -->
         <div class="one-half column frede_live_katalog_text">
-          <!--Appetizer tekst til katalog  -->
           <div class="frede_live_katalog_text_container">
+<<<<<<< HEAD
             <h2>Frede Live</h2>
             <h6>Livemusik og events</h6>
             <p>
@@ -143,12 +203,20 @@ Café Frederiksberg har budt gæster velkommen siden 1900. Café Frederiksberg h
             <!-- Link til katalog  -->
           <a class="button" rel="noopener" aria-label="Se Frede live katalog" href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">Se vores Magasin <u>her</u></a>
           <a style="color: #CCB380;" class="button" rel="noopener" aria-label="Se Frede live katalog" href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">Bestil biletter</a>
+=======
+            <h2><?php echo $row[2]; ?></h2>
+            <h6><?php echo $row[3]; ?></h6>
+            <p><?php echo $row[4]; ?></p>
+            <a class="button" rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">Se vores Magasin <u>her</u></a>
+>>>>>>> bd68b1414e4cdc6da24012efd510ff1787e8d95c
           </div>
         </div>
-
       </div>
     </div>
   </div>
+<?php
+  mysqli_close($connection);
+  ?>
 
   <!--Events: Facebook implementering  -->
   <div class="container">
