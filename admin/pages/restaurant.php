@@ -106,6 +106,7 @@ if(!$results){
         while($row = mysqli_fetch_row($results)):
         if(isset($_GET['id'])){
           $id = $_GET['id'];
+          var_dump($id);
             if($id == $row[0]){
 
               ?>
@@ -128,7 +129,7 @@ if(!$results){
                 <td><?= $row[3] ?></td>
                 <td><?= $row[1] ?></td>
                 <td><?= $row[2] ?></td>
-                <td class="table_buttons">
+                <td class="table_buttons"></td>
               </tr>
           <?php  }
 
