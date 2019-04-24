@@ -36,7 +36,7 @@
   }
 
   $category1 = array("ol_vand", "øl & vand");
-  $category2 = 'varme drikke';
+  $category2 = array("varme_drikke", "varme drikke");
   $category3 = 'gin';
   $category4 = 'champagne';
   $category5 = 'rom';
@@ -86,6 +86,7 @@
           <th>Beskrivelse</th>
         </tr>
         <?php
+        mysqli_data_seek($results, 0);
         while($row = mysqli_fetch_row($results)):
           if($row[1] == $category1[0]){
         ?>
@@ -103,7 +104,7 @@
     <hr>
 
     <div class="task_wrapper">
-      <h2 class="task_heading"><?= $category1[1] ?></h2>
+      <h2 class="task_heading"><?= $category2[1] ?></h2>
       <a class="button green" href="#">Tilføj</a>
       <br><br>
       <table>
@@ -116,7 +117,7 @@
         <?php
         mysqli_data_seek($results, 0);
         while($row = mysqli_fetch_row($results)):
-          if($row[1] == $category3){
+          if($row[1] == $category2[0]){
         ?>
         <tr>
           <td><div class="menu_item_index"><?= $row[0] ?></div></td>
@@ -132,134 +133,90 @@
     <hr>
 
     <div class="task_wrapper">
-      <h2 class="task_heading">Gin</h2>
-      <a class="button green" href="#">Tilføj</a>
-      <br><br>
-      <table>
-        <tr>
-          <th>Indeks</th>
-          <th>Pris</th>
-          <th>Navn</th>
-          <th>Beskrivelse</th>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
+    <h2 class="task_heading"><?= $category3; ?></h2>
+    <a class="button green" href="#">Tilføj</a>
+    <br><br>
+    <table>
+      <tr>
+        <th>Indeks</th>
+        <th>Pris</th>
+        <th>Navn</th>
+        <th>Beskrivelse</th>
+      </tr>
+      <?php
+      mysqli_data_seek($results, 0);
+      while($row = mysqli_fetch_row($results)):
+        if($row[1] == $category3){
+      ?>
+      <tr>
+        <td><div class="menu_item_index"><?= $row[0] ?></div></td>
+        <td><div class="menu_item_price"><?= $row[4] ?></div></td>
+        <td><div class="menu_item_name"><?= $row[2] ?></div></td>
+        <td><div class="menu_item_description"><?= $row[3] ?></div></td>
+        <td class="table_buttons"><div class="menu_item_button"><a class="button red" href="#">slet</a><a class="button grey" href="#">Rediger</a></div></td>
+      </tr>
+      <?php } endwhile ?>
       </table>
     </div>
 
     <hr>
 
     <div class="task_wrapper">
-      <h2 class="task_heading">Champagne</h2>
-      <a class="button green" href="#">Tilføj</a>
-      <br><br>
-      <table>
-        <tr>
-          <th>Indeks</th>
-          <th>Pris</th>
-          <th>Navn</th>
-          <th>Beskrivelse</th>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
+    <h2 class="task_heading"><?= $category4; ?></h2>
+    <a class="button green" href="#">Tilføj</a>
+    <br><br>
+    <table>
+      <tr>
+        <th>Indeks</th>
+        <th>Pris</th>
+        <th>Navn</th>
+        <th>Beskrivelse</th>
+      </tr>
+      <?php
+      mysqli_data_seek($results, 0);
+      while($row = mysqli_fetch_row($results)):
+        if($row[1] == $category4){
+      ?>
+      <tr>
+        <td><div class="menu_item_index"><?= $row[0] ?></div></td>
+        <td><div class="menu_item_price"><?= $row[4] ?></div></td>
+        <td><div class="menu_item_name"><?= $row[2] ?></div></td>
+        <td><div class="menu_item_description"><?= $row[3] ?></div></td>
+        <td class="table_buttons"><div class="menu_item_button"><a class="button red" href="#">slet</a><a class="button grey" href="#">Rediger</a></div></td>
+      </tr>
+      <?php } endwhile ?>
       </table>
     </div>
 
     <hr>
 
     <div class="task_wrapper">
-      <h2 class="task_heading">Rom</h2>
-      <a class="button green" href="#">Tilføj</a>
-      <br><br>
-      <table>
-        <tr>
-          <th>Indeks</th>
-          <th>Pris</th>
-          <th>Navn</th>
-          <th>Beskrivelse</th>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
+    <h2 class="task_heading"><?= $category5; ?></h2>
+    <a class="button green" href="#">Tilføj</a>
+    <br><br>
+    <table>
+      <tr>
+        <th>Indeks</th>
+        <th>Pris</th>
+        <th>Navn</th>
+        <th>Beskrivelse</th>
+      </tr>
+      <?php
+      mysqli_data_seek($results, 0);
+      while($row = mysqli_fetch_row($results)):
+        if($row[1] == $category5){
+      ?>
+      <tr>
+        <td><div class="menu_item_index"><?= $row[0] ?></div></td>
+        <td><div class="menu_item_price"><?= $row[4] ?></div></td>
+        <td><div class="menu_item_name"><?= $row[2] ?></div></td>
+        <td><div class="menu_item_description"><?= $row[3] ?></div></td>
+        <td class="table_buttons"><div class="menu_item_button"><a class="button red" href="#">slet</a><a class="button grey" href="#">Rediger</a></div></td>
+      </tr>
+      <?php } endwhile ?>
       </table>
     </div>
+
   <div class="spacer" style="height:200px;"></div>
 </div>
 </div>

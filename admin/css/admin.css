@@ -216,6 +216,7 @@ h1{
   position: sticky;
   top: 0;
   background-color: #fff;
+  text-transform: capitalize;
 }
 
 .img_center{
