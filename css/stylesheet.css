@@ -616,20 +616,17 @@ margin-bottom: 2.5rem;
 
 .selskab_img_position{
   display: inline-block;
-  /*margin-left: 100px;*/
   margin: 0px auto;
 }
 
 .arrangementer{
   position: relative;
-  height: 400px;
-
 }
 
 .selskaber_wrapper{
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%,-50%);
+  position: relative;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   width: 100%;
 
   }
@@ -826,7 +823,7 @@ Width: 30%;
 
 .arrangementer{
   position: relative;
-  height: 400px;
+
 
 }
 
