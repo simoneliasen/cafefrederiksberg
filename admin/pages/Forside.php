@@ -89,13 +89,14 @@
       <input type="radio" name="gender" value="male" checked>Video
       <br>
       <input type="radio" name="gender" value="male">Billeder
-      <!-- INDHOLD SKAL SELVFØLGELIG ÆNDRE SIG ALT EFTER OM DET ER VIDEO ELLER BILLEDER -->
       <p>Nuværende video: <!-- INDSÆT VIDEO-NAVN --> </p>
       <p>Upload ny</p>
-      <input type="file" name="file" id="file" class="inputfile" />
-      <br><br>
-      <a class="button red">Annuller</a>
-      <a class="button green" href="#">Gem</a>
+        <form method="post" name="post" action="php_process/process_header_upload.php" enctype="multipart/form-data">
+          <input type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)" width='150px' height='150px'>
+        <br><br>
+        <a class="button red">Annuller</a>
+        <input class="button green" type="submit" value="Upload">
+      </form>
     </div>
 
     <hr>

@@ -242,7 +242,7 @@
 <base href="http://localhost/cafefrederiksberg/index.php">
 
 <div class="header_bg_img">
-  <video autoplay muted loop src="video/header_bg_video.mp4" height="75vh"></video>
+  <video autoplay muted loop src="video/header_bg_video3.mp4" height="75vh"></video>
   <div class="header_text">
     <h1>Aalborgs Hyggeligste</h1>
   <div class="slider">
@@ -261,7 +261,7 @@
           <div class="quote"><h1>Festlokaler</h1></div>
         </li>
         <li class="anim5">
-          <div class="quote"><h1>din mor</h1></div>
+          <div class="quote"><h1>Stemning</h1></div>
         </li>
       </ul>
     </div>
