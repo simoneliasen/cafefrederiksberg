@@ -46,7 +46,7 @@ Hos Café Frederiksberg tilbyder vi en lang række arrangementer. Ring til os, o
       <h2 style="margin-bottom: 1rem;"> Barnedåb </h2>
       <div class="row">
         <div class="one-half column">
-          <img src="img/Butikfront.png" width="400rem" height="auto">
+          <img src="img/Barnedåb.jpg" width="400rem" height="auto">
         </div>
 
         <div class="one-half column">
@@ -81,7 +81,7 @@ Hos Café Frederiksberg tilbyder vi en lang række arrangementer. Ring til os, o
         </div>
 
         <div class="one-half column">
-          <img src="img/butikfront.png" width="400rem" height="auto">
+          <img src="img/Konfirmation.jpg" width="400rem" height="auto">
 
         </div>
       </div>
@@ -97,7 +97,7 @@ Hos Café Frederiksberg tilbyder vi en lang række arrangementer. Ring til os, o
         <h2 style="margin-bottom: 1rem;"> Bryllup </h2>
         <div class="row">
           <div class="one-half column">
-            <img src="img/butikfront.png" width="400rem" height="auto">
+            <img src="img/Bryllup.jpg" width="400rem" height="auto">
           </div>
               <div class="one-half column">
                 <p style="width: 500px;">
@@ -130,7 +130,7 @@ Hos Café Frederiksberg tilbyder vi en lang række arrangementer. Ring til os, o
         </div>
 
         <div class="one-half column">
-          <img src="img/butikfront.png" width="400rem" height="auto">
+          <img src="img/Kaffebord.jpg" width="400rem" height="auto">
 
         </div>
       </div>
@@ -144,7 +144,7 @@ Hos Café Frederiksberg tilbyder vi en lang række arrangementer. Ring til os, o
         <h2 style="margin-bottom: 1rem;"> Julefrokost </h2>
         <div class="row">
           <div class="one-half column">
-            <img src="img/butikfront.png" width="400rem" height="auto">
+            <img src="img/Julefrokost.jpg" width="400rem" height="auto">
           </div>
 
           <div class="one-half column">
