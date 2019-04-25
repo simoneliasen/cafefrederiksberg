@@ -21,6 +21,31 @@
   <?php
   //Opretter forbindelse via config.php, og tjekker om du er logget ind via session.php
   include('../session.php');
+
+  $connection = mysqli_connect('localhost', 'root', '', 'admin');
+
+  if(!$connection){
+    die("Cannot connect to the database".mysqli_connect_error());
+  }
+
+  $query ="SELECT * FROM barmenu;";
+  $results = mysqli_query($connection,$query);
+
+  if(!$results){
+    die("could not query the database" .mysqli_error());
+  }
+
+  $category1 = array("ol_vand", "øl & vand");
+  $category2 = array("varme_drikke", "varme drikke");
+  $category3 = array("gin", "gin");
+  $category4 = array("champagne", "champagne");
+  $category5 = array("rom", "rom");
+
+  if(isset($_GET['id'])){
+    $id = $_GET['id'];
+  }else{
+    $id = 0;
+  }
   ?>
 
 <div class="logo">
@@ -43,10 +68,9 @@
 <div class="container">
   <div class="content">
     <div class="heading">
-      <!-- DYNAMISK, overskriften skal ændre sig så den passer til menu-punktet -->
       <h1>Bar<span style="font-weight: 400;"></span></h1>
       <div class="logout">
-        <a class="button2 button_logout" href="../logout.php">log ud</a>
+        <a class="button red" href="../logout.php">log ud</a>
       </div>
     </div>
 
@@ -54,224 +78,469 @@
       <h1 class="task_heading">Rediger bar-kortet</h1>
       <p>Tilføj slet og opdater bar-kortet</p>
     </div>
-      <hr>
-      <div class="task_wrapper">
-      <h2 class="task_heading">Øl og Vand</h2>
-      <a class="button green" href="#">Tilføj</a>
-      <br><br>
-      <table>
-        <tr>
-          <th>Indeks</th>
-          <th>Pris</th>
-          <th>Navn</th>
-          <th>Beskrivelse</th>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-      </table>
-    </div>
 
     <hr>
 
-    <div class="task_wrapper">
-      <h2 class="task_heading">Varme Drikke</h2>
-      <a class="button green" href="#">Tilføj</a>
+    <div class="task_wrapper" id="category_<?= $category1[0] ?>">
+    <h2 class="task_heading"><?= $category1[1]; ?></h2>
+
+    <?php if($id === $category1[0]){ ?>
+
+    <form class="restaurant_form" method="post" name="post" action="php_process/process_barmenu_input.php?id=<?=$_GET['id']?>" enctype="multipart/form-data">
+      <label for="menu_item_name_input">Navn på drikkevare</label>
+      <input name="menu_item_name" type="text" placeholder="Angiv navn" required maxlength="100" />
       <br><br>
-      <table>
-        <tr>
-          <th>Indeks</th>
-          <th>Pris</th>
-          <th>Navn</th>
-          <th>Beskrivelse</th>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-      </table>
-    </div>
-
-    <hr>
-
-    <div class="task_wrapper">
-      <h2 class="task_heading">Gin</h2>
-      <a class="button green" href="#">Tilføj</a>
+      <label for="menu_item_name_input">Beskrivelse (valgfri)</label>
+      <input name="menu_item_description" type="text" placeholder="Angiv en beskrivelse" maxlength="170" />
       <br><br>
-      <table>
-        <tr>
-          <th>Indeks</th>
-          <th>Pris</th>
-          <th>Navn</th>
-          <th>Beskrivelse</th>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-      </table>
-    </div>
-
-    <hr>
-
-    <div class="task_wrapper">
-      <h2 class="task_heading">Champagne</h2>
-      <a class="button green" href="#">Tilføj</a>
+      <label for="menu_item_name_input">Pris</label>
+      <input name="menu_item_price"type="text" placeholder="Angiv pris" required maxlength="10" />
       <br><br>
-      <table>
-        <tr>
-          <th>Indeks</th>
-          <th>Pris</th>
-          <th>Navn</th>
-          <th>Beskrivelse</th>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-      </table>
-    </div>
+      <a class="button red" href="bar.php?#category_<?=$category1[0]?>">Fortryd</a>
+      <input class="button green" type="submit" value="Tilføj">
+      <input type="hidden" name="hidden_category" value="<?= $category1[0] ?>">
+    </form>
 
-    <hr>
+    <?php }else{ ?>
 
-    <div class="task_wrapper">
-      <h2 class="task_heading">Rom</h2>
-      <a class="button green" href="#">Tilføj</a>
-      <br><br>
-      <table>
-        <tr>
-          <th>Indeks</th>
-          <th>Pris</th>
-          <th>Navn</th>
-          <th>Beskrivelse</th>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-        <tr>
-          <td><div class="menu_item_index">1</div></td>
-          <td><div class="menu_item_price">49</div></td>
-          <td><div class="menu_item_name">Pils</div></td>
-          <td><div class="menu_item_description">Forfriskende tubs med 4.5% så du bliver så dejlig bimset</div></td>
-          <td class="table_buttons"><div class="menu_item_button"><a class="button grey" href="#">Rediger</a><a class="button red" href="#">slet</a></div></td>
-        </tr>
-      </table>
-    </div>
+    <form method="post" name="post" action="bar.php?id=<?= $category1[0] ?>#category_<?=$category1[0]?>" enctype="multipart/form-data">
+      <input class="button green" type="submit" value="Tilføj">
+    </form>
+
+    <?php } ?>
+
+    <table>
+      <tr>
+        <th>Indeks</th>
+        <th>Pris</th>
+        <th>Navn</th>
+        <th>Beskrivelse</th>
+      </tr>
+
+      <?php
+      mysqli_data_seek($results, 0);
+      while($row = mysqli_fetch_row($results)):
+        if($row[1] == $category1[0]){
+          if($id == $row[0]){
+      ?>
+
+      <tr>
+        <form method="post" name="post" action="php_process/process_barmenu_edit.php?id=<?=$id?>" enctype="multipart/form-data">
+          <td><input name="menu_item_index" type="text" value="<?= $row[0] ?>" required maxlength="10" /></td>
+          <td class="menu_item_price"><input name="menu_item_price" type="text" value="<?= $row[4] ?>" required maxlength="10" /></td>
+          <td><input name="menu_item_name" type="text" value="<?= $row[2] ?>" required maxlength="100" /></td>
+          <td><input name="menu_item_description" type="text" value="<?= $row[3] ?>" maxlength="170" /></td>
+          <input type="hidden" name="hidden_category" value="<?= $category1[0] ?>">
+          <td class="table_buttons">
+            <input class="button green" type="submit" value="Gem">
+            <a class="button grey" href="bar.php#category_<?=$category1[0]?>">Fortryd</a>
+            </input>
+          </td>
+        </form>
+      </tr>
+
+      <?php }elseif($id === 0){ ?>
+
+      <tr>
+        <td><div class="menu_item_index"><?= $row[0] ?></div></td>
+        <td><div class="menu_item_price"><?= $row[4] ?></div></td>
+        <td><div class="menu_item_name"><?= $row[2] ?></div></td>
+        <td><div class="menu_item_description"><?= $row[3] ?></div></td>
+        <td class="table_buttons">
+          <form class="table_buttons" method="post" name="post" action="php_process/process_barmenu_delete.php?id=<?=$row[0]?>" enctype="multipart/form-data">
+            <input id="<?=$row[0]?>" class="button red" type="submit" value="Slet">
+          </form>
+          <a href="bar.php?id=<?=$row[0]?>#category_<?=$category1[0]?>">
+            <input class="button grey" type="submit" value="Rediger">
+          </a>
+        </td>
+      </tr>
+
+      <?php }else{ ?>
+
+      <tr>
+        <td><div class="menu_item_index"><?= $row[0] ?></div></td>
+        <td><div class="menu_item_price"><?= $row[4] ?></div></td>
+        <td><div class="menu_item_name"><?= $row[2] ?></div></td>
+        <td><div class="menu_item_description"><?= $row[3] ?></div></td>
+        <td class="table_buttons"></td>
+      </tr>
+
+      <?php } } endwhile; ?>
+
+    </table>
+  </div>
+
+  <hr>
+
+  <div class="task_wrapper" id="category_<?= $category2[0] ?>">
+  <h2 class="task_heading"><?= $category2[1]; ?></h2>
+
+  <?php if($id === $category2[0]){ ?>
+
+  <form class="restaurant_form" method="post" name="post" action="php_process/process_barmenu_input.php?id=<?=$_GET['id']?>" enctype="multipart/form-data">
+    <label for="menu_item_name_input">Navn på drikkevare</label>
+    <input name="menu_item_name" type="text" placeholder="Angiv navn" required maxlength="100" />
+    <br><br>
+    <label for="menu_item_name_input">Beskrivelse (valgfri)</label>
+    <input name="menu_item_description" type="text" placeholder="Angiv en beskrivelse" maxlength="170" />
+    <br><br>
+    <label for="menu_item_name_input">Pris</label>
+    <input name="menu_item_price"type="text" placeholder="Angiv pris" required maxlength="10" />
+    <br><br>
+    <a class="button red" href="bar.php?#category_<?=$category2[0]?>">Fortryd</a>
+    <input class="button green" type="submit" value="Tilføj">
+    <input type="hidden" name="hidden_category" value="<?= $category2[0] ?>">
+  </form>
+
+  <?php }else{ ?>
+
+  <form method="post" name="post" action="bar.php?id=<?= $category2[0] ?>#category_<?=$category2[0]?>" enctype="multipart/form-data">
+    <input class="button green" type="submit" value="Tilføj">
+  </form>
+
+  <?php } ?>
+
+  <table>
+    <tr>
+      <th>Indeks</th>
+      <th>Pris</th>
+      <th>Navn</th>
+      <th>Beskrivelse</th>
+    </tr>
+
+    <?php
+    mysqli_data_seek($results, 0);
+    while($row = mysqli_fetch_row($results)):
+      if($row[1] == $category2[0]){
+        if($id == $row[0]){
+    ?>
+
+    <tr>
+      <form method="post" name="post" action="php_process/process_barmenu_edit.php?id=<?=$id?>" enctype="multipart/form-data">
+        <td><input name="menu_item_index" type="text" value="<?= $row[0] ?>" required maxlength="10" /></td>
+        <td class="menu_item_price"><input name="menu_item_price" type="text" value="<?= $row[4] ?>" required maxlength="10" /></td>
+        <td><input name="menu_item_name" type="text" value="<?= $row[2] ?>" required maxlength="100" /></td>
+        <td><input name="menu_item_description" type="text" value="<?= $row[3] ?>" maxlength="170" /></td>
+        <input type="hidden" name="hidden_category" value="<?= $category2[0] ?>">
+        <td class="table_buttons">
+          <input class="button green" type="submit" value="Gem">
+          <a class="button grey" href="bar.php#category_<?=$category2[0]?>">Fortryd</a>
+          </input>
+        </td>
+      </form>
+    </tr>
+
+    <?php }elseif($id === 0){ ?>
+
+    <tr>
+      <td><div class="menu_item_index"><?= $row[0] ?></div></td>
+      <td><div class="menu_item_price"><?= $row[4] ?></div></td>
+      <td><div class="menu_item_name"><?= $row[2] ?></div></td>
+      <td><div class="menu_item_description"><?= $row[3] ?></div></td>
+      <td class="table_buttons">
+        <form class="table_buttons" method="post" name="post" action="php_process/process_barmenu_delete.php?id=<?=$row[0]?>" enctype="multipart/form-data">
+          <input id="<?=$row[0]?>" class="button red" type="submit" value="Slet">
+        </form>
+        <a href="bar.php?id=<?=$row[0]?>#category_<?=$category2[0]?>">
+          <input class="button grey" type="submit" value="Rediger">
+        </a>
+      </td>
+    </tr>
+
+    <?php }else{ ?>
+
+    <tr>
+      <td><div class="menu_item_index"><?= $row[0] ?></div></td>
+      <td><div class="menu_item_price"><?= $row[4] ?></div></td>
+      <td><div class="menu_item_name"><?= $row[2] ?></div></td>
+      <td><div class="menu_item_description"><?= $row[3] ?></div></td>
+      <td class="table_buttons"></td>
+    </tr>
+
+    <?php } } endwhile; ?>
+
+  </table>
+</div>
+
+<hr>
+
+<div class="task_wrapper" id="category_<?= $category3[0] ?>">
+<h2 class="task_heading"><?= $category3[1]; ?></h2>
+
+<?php if($id === $category3[0]){ ?>
+
+<form class="restaurant_form" method="post" name="post" action="php_process/process_barmenu_input.php?id=<?=$_GET['id']?>" enctype="multipart/form-data">
+  <label for="menu_item_name_input">Navn på drikkevare</label>
+  <input name="menu_item_name" type="text" placeholder="Angiv navn" required maxlength="100" />
+  <br><br>
+  <label for="menu_item_name_input">Beskrivelse (valgfri)</label>
+  <input name="menu_item_description" type="text" placeholder="Angiv en beskrivelse" maxlength="170" />
+  <br><br>
+  <label for="menu_item_name_input">Pris</label>
+  <input name="menu_item_price"type="text" placeholder="Angiv pris" required maxlength="10" />
+  <br><br>
+  <a class="button red" href="bar.php?#category_<?=$category3[0]?>">Fortryd</a>
+  <input class="button green" type="submit" value="Tilføj">
+  <input type="hidden" name="hidden_category" value="<?= $category3[0] ?>">
+</form>
+
+<?php }else{ ?>
+
+<form method="post" name="post" action="bar.php?id=<?= $category3[0] ?>#category_<?=$category3[0]?>" enctype="multipart/form-data">
+  <input class="button green" type="submit" value="Tilføj">
+</form>
+
+<?php } ?>
+
+<table>
+  <tr>
+    <th>Indeks</th>
+    <th>Pris</th>
+    <th>Navn</th>
+    <th>Beskrivelse</th>
+  </tr>
+
+  <?php
+  mysqli_data_seek($results, 0);
+  while($row = mysqli_fetch_row($results)):
+    if($row[1] == $category3[0]){
+      if($id == $row[0]){
+  ?>
+
+  <tr>
+    <form method="post" name="post" action="php_process/process_barmenu_edit.php?id=<?=$id?>" enctype="multipart/form-data">
+      <td><input name="menu_item_index" type="text" value="<?= $row[0] ?>" required maxlength="10" /></td>
+      <td class="menu_item_price"><input name="menu_item_price" type="text" value="<?= $row[4] ?>" required maxlength="10" /></td>
+      <td><input name="menu_item_name" type="text" value="<?= $row[2] ?>" required maxlength="100" /></td>
+      <td><input name="menu_item_description" type="text" value="<?= $row[3] ?>" maxlength="170" /></td>
+      <input type="hidden" name="hidden_category" value="<?= $category3[0] ?>">
+      <td class="table_buttons">
+        <input class="button green" type="submit" value="Gem">
+        <a class="button grey" href="bar.php#category_<?=$category3[0]?>">Fortryd</a>
+        </input>
+      </td>
+    </form>
+  </tr>
+
+  <?php }elseif($id === 0){ ?>
+
+  <tr>
+    <td><div class="menu_item_index"><?= $row[0] ?></div></td>
+    <td><div class="menu_item_price"><?= $row[4] ?></div></td>
+    <td><div class="menu_item_name"><?= $row[2] ?></div></td>
+    <td><div class="menu_item_description"><?= $row[3] ?></div></td>
+    <td class="table_buttons">
+      <form class="table_buttons" method="post" name="post" action="php_process/process_barmenu_delete.php?id=<?=$row[0]?>" enctype="multipart/form-data">
+        <input id="<?=$row[0]?>" class="button red" type="submit" value="Slet">
+      </form>
+      <a href="bar.php?id=<?=$row[0]?>#category_<?=$category3[0]?>">
+        <input class="button grey" type="submit" value="Rediger">
+      </a>
+    </td>
+  </tr>
+
+  <?php }else{ ?>
+
+  <tr>
+    <td><div class="menu_item_index"><?= $row[0] ?></div></td>
+    <td><div class="menu_item_price"><?= $row[4] ?></div></td>
+    <td><div class="menu_item_name"><?= $row[2] ?></div></td>
+    <td><div class="menu_item_description"><?= $row[3] ?></div></td>
+    <td class="table_buttons"></td>
+  </tr>
+
+  <?php } } endwhile; ?>
+
+</table>
+</div>
+
+<hr>
+
+<div class="task_wrapper" id="category_<?= $category4[0] ?>">
+<h2 class="task_heading"><?= $category4[1]; ?></h2>
+
+<?php if($id === $category4[0]){ ?>
+
+<form class="restaurant_form" method="post" name="post" action="php_process/process_barmenu_input.php?id=<?=$_GET['id']?>" enctype="multipart/form-data">
+  <label for="menu_item_name_input">Navn på drikkevare</label>
+  <input name="menu_item_name" type="text" placeholder="Angiv navn" required maxlength="100" />
+  <br><br>
+  <label for="menu_item_name_input">Beskrivelse (valgfri)</label>
+  <input name="menu_item_description" type="text" placeholder="Angiv en beskrivelse" maxlength="170" />
+  <br><br>
+  <label for="menu_item_name_input">Pris</label>
+  <input name="menu_item_price"type="text" placeholder="Angiv pris" required maxlength="10" />
+  <br><br>
+  <a class="button red" href="bar.php?#category_<?=$category4[0]?>">Fortryd</a>
+  <input class="button green" type="submit" value="Tilføj">
+  <input type="hidden" name="hidden_category" value="<?= $category4[0] ?>">
+</form>
+
+<?php }else{ ?>
+
+<form method="post" name="post" action="bar.php?id=<?= $category4[0] ?>#category_<?=$category4[0]?>" enctype="multipart/form-data">
+  <input class="button green" type="submit" value="Tilføj">
+</form>
+
+<?php } ?>
+
+<table>
+  <tr>
+    <th>Indeks</th>
+    <th>Pris</th>
+    <th>Navn</th>
+    <th>Beskrivelse</th>
+  </tr>
+
+  <?php
+  mysqli_data_seek($results, 0);
+  while($row = mysqli_fetch_row($results)):
+    if($row[1] == $category4[0]){
+      if($id == $row[0]){
+  ?>
+
+  <tr>
+    <form method="post" name="post" action="php_process/process_barmenu_edit.php?id=<?=$id?>" enctype="multipart/form-data">
+      <td><input name="menu_item_index" type="text" value="<?= $row[0] ?>" required maxlength="10" /></td>
+      <td class="menu_item_price"><input name="menu_item_price" type="text" value="<?= $row[4] ?>" required maxlength="10" /></td>
+      <td><input name="menu_item_name" type="text" value="<?= $row[2] ?>" required maxlength="100" /></td>
+      <td><input name="menu_item_description" type="text" value="<?= $row[3] ?>" maxlength="170" /></td>
+      <input type="hidden" name="hidden_category" value="<?= $category4[0] ?>">
+      <td class="table_buttons">
+        <input class="button green" type="submit" value="Gem">
+        <a class="button grey" href="bar.php#category_<?=$category4[0]?>">Fortryd</a>
+        </input>
+      </td>
+    </form>
+  </tr>
+
+  <?php }elseif($id === 0){ ?>
+
+  <tr>
+    <td><div class="menu_item_index"><?= $row[0] ?></div></td>
+    <td><div class="menu_item_price"><?= $row[4] ?></div></td>
+    <td><div class="menu_item_name"><?= $row[2] ?></div></td>
+    <td><div class="menu_item_description"><?= $row[3] ?></div></td>
+    <td class="table_buttons">
+      <form class="table_buttons" method="post" name="post" action="php_process/process_barmenu_delete.php?id=<?=$row[0]?>" enctype="multipart/form-data">
+        <input id="<?=$row[0]?>" class="button red" type="submit" value="Slet">
+      </form>
+      <a href="bar.php?id=<?=$row[0]?>#category_<?=$category4[0]?>">
+        <input class="button grey" type="submit" value="Rediger">
+      </a>
+    </td>
+  </tr>
+
+  <?php }else{ ?>
+
+  <tr>
+    <td><div class="menu_item_index"><?= $row[0] ?></div></td>
+    <td><div class="menu_item_price"><?= $row[4] ?></div></td>
+    <td><div class="menu_item_name"><?= $row[2] ?></div></td>
+    <td><div class="menu_item_description"><?= $row[3] ?></div></td>
+    <td class="table_buttons"></td>
+  </tr>
+
+  <?php } } endwhile; ?>
+
+</table>
+</div>
+
+<hr>
+
+<div class="task_wrapper" id="category_<?= $category5[0] ?>">
+<h2 class="task_heading"><?= $category5[1]; ?></h2>
+
+<?php if($id === $category5[0]){ ?>
+
+<form class="restaurant_form" method="post" name="post" action="php_process/process_barmenu_input.php?id=<?=$_GET['id']?>" enctype="multipart/form-data">
+  <label for="menu_item_name_input">Navn på drikkevare</label>
+  <input name="menu_item_name" type="text" placeholder="Angiv navn" required maxlength="100" />
+  <br><br>
+  <label for="menu_item_name_input">Beskrivelse (valgfri)</label>
+  <input name="menu_item_description" type="text" placeholder="Angiv en beskrivelse" maxlength="170" />
+  <br><br>
+  <label for="menu_item_name_input">Pris</label>
+  <input name="menu_item_price"type="text" placeholder="Angiv pris" required maxlength="10" />
+  <br><br>
+  <a class="button red" href="bar.php?#category_<?=$category5[0]?>">Fortryd</a>
+  <input class="button green" type="submit" value="Tilføj">
+  <input type="hidden" name="hidden_category" value="<?= $category5[0] ?>">
+</form>
+
+<?php }else{ ?>
+
+<form method="post" name="post" action="bar.php?id=<?= $category5[0] ?>#category_<?=$category5[0]?>" enctype="multipart/form-data">
+  <input class="button green" type="submit" value="Tilføj">
+</form>
+
+<?php } ?>
+
+<table>
+  <tr>
+    <th>Indeks</th>
+    <th>Pris</th>
+    <th>Navn</th>
+    <th>Beskrivelse</th>
+  </tr>
+
+  <?php
+  mysqli_data_seek($results, 0);
+  while($row = mysqli_fetch_row($results)):
+    if($row[1] == $category5[0]){
+      if($id == $row[0]){
+  ?>
+
+  <tr>
+    <form method="post" name="post" action="php_process/process_barmenu_edit.php?id=<?=$id?>" enctype="multipart/form-data">
+      <td><input name="menu_item_index" type="text" value="<?= $row[0] ?>" required maxlength="10" /></td>
+      <td class="menu_item_price"><input name="menu_item_price" type="text" value="<?= $row[4] ?>" required maxlength="10" /></td>
+      <td><input name="menu_item_name" type="text" value="<?= $row[2] ?>" required maxlength="100" /></td>
+      <td><input name="menu_item_description" type="text" value="<?= $row[3] ?>" maxlength="170" /></td>
+      <input type="hidden" name="hidden_category" value="<?= $category5[0] ?>">
+      <td class="table_buttons">
+        <input class="button green" type="submit" value="Gem">
+        <a class="button grey" href="bar.php#category_<?=$category5[0]?>">Fortryd</a>
+        </input>
+      </td>
+    </form>
+  </tr>
+
+  <?php }elseif($id === 0){ ?>
+
+  <tr>
+    <td><div class="menu_item_index"><?= $row[0] ?></div></td>
+    <td><div class="menu_item_price"><?= $row[4] ?></div></td>
+    <td><div class="menu_item_name"><?= $row[2] ?></div></td>
+    <td><div class="menu_item_description"><?= $row[3] ?></div></td>
+    <td class="table_buttons">
+      <form class="table_buttons" method="post" name="post" action="php_process/process_barmenu_delete.php?id=<?=$row[0]?>" enctype="multipart/form-data">
+        <input id="<?=$row[0]?>" class="button red" type="submit" value="Slet">
+      </form>
+      <a href="bar.php?id=<?=$row[0]?>#category_<?=$category5[0]?>">
+        <input class="button grey" type="submit" value="Rediger">
+      </a>
+    </td>
+  </tr>
+
+  <?php }else{ ?>
+
+  <tr>
+    <td><div class="menu_item_index"><?= $row[0] ?></div></td>
+    <td><div class="menu_item_price"><?= $row[4] ?></div></td>
+    <td><div class="menu_item_name"><?= $row[2] ?></div></td>
+    <td><div class="menu_item_description"><?= $row[3] ?></div></td>
+    <td class="table_buttons"></td>
+  </tr>
+
+  <?php } } endwhile; ?>
+
+</table>
+</div>
+
+<hr>
+
   <div class="spacer" style="height:200px;"></div>
 </div>
 </div>

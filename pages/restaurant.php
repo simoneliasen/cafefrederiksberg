@@ -21,26 +21,22 @@
 </head>
 
 <body>
-  <!--Tilføjer mulighed for announcementbar  -->
   <?php include '../includes/announcement.php'; ?>
-  <!--Inddrager navigationsbar fra "includes/navigation.php"-->
   <?php include '../includes/navigation.php'; ?>
-  <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include '../includes/header.php'; ?>
 
   <?php
   $connection = mysqli_connect('localhost', 'root', '', 'admin');
-
   if(!$connection){
     die("Cannot connect to the database".mysqli_connect_error());
   }
 
   $query ="SELECT * FROM menu";
   $results = mysqli_query($connection,$query);
-
   if(!$results){
     die("could not query the database" .mysqli_error());
   }
+
   ?>
 
   <div class="container">

@@ -31,12 +31,10 @@
 
   <div class="container arrangementer">
     <div class="selskaber_wrapper">
-
       <div class="row">
         <div class="one-half column">
           <img src="img/Butikfront.png" width="400rem" height="auto">
         </div>
-
         <div class="one-half column">
           <span class="selskab_text_title">
           Café Frederiksberg udlejer lokaler til fest og andet selskab
@@ -54,30 +52,16 @@
       </div>
     </div>
   </div>
-
 <!--top knapper på siden-->
 <div class="container">
   <div class="bestil_online">
     <h2 class="bestil_online_overskrift">Bestil Online</h2>
-
     <div class="bestil_online_knapper">
       <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Bord</a>
       <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Billetter</a>
       <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Take Away</a>
     </div>
-
   </div>
-</div>
-
-<!--selskabsmenu row-->
-
-
-
-
-
-
-<div class="selskab_button_section">
-  <a class="button button-primary bestil" href="pages/selskaber/selskabsmenu.php"> Selskabsmenu</a>
 </div>
 
 <!--Buffet row-->
@@ -89,7 +73,6 @@
         <div class="one-half column">
           <span class="selskab_text_title">
             En buffet for enhver smag
-
           </span><br>
           <p style="width: 400px;">Lorem ipsum dolor sit amet, consectetur
             adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -100,16 +83,10 @@
             occaecat cupidatat non proident, sunt in culpa qui officia
             deserunt mollit anim id est laborum.</p>
           <br>
-
         </div>
-
         <div class="one-half column">
           <img src="img/butikfront.png" width="400rem" height="auto">
-
         </div>
-      </div>
-      <div class="selskab_button_section">
-        <a class="button button-primary bestil" href="pages/selskaber/buffet.php"> Se vores Buffets</a>
       </div>
     </div>
    </div>
@@ -145,11 +122,6 @@
         </div>
       </div>
     </div>
-    <div class="selskab_button_section">
-      <a class="button button-primary bestil" href="pages/selskaber/arrengementer.php"> Arrangementer</a>
-    </div>
-
-
 <hr>
 
 

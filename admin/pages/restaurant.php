@@ -58,7 +58,7 @@ if(!$results){
   <div class="content">
     <div class="heading">
       <!-- DYNAMISK, overskriften skal ændre sig så den passer til menu-punktet -->
-      <h1>Forside<span style="font-weight: 400;"></span></h1>
+      <h1>Restautrant<span style="font-weight: 400;"></span></h1>
       <div class="logout">
         <a class="button red" href="../logout.php">log ud</a>
       </div>
@@ -106,6 +106,7 @@ if(!$results){
         while($row = mysqli_fetch_row($results)):
         if(isset($_GET['id'])){
           $id = $_GET['id'];
+          var_dump($id);
             if($id == $row[0]){
 
               ?>
@@ -128,7 +129,7 @@ if(!$results){
                 <td><?= $row[3] ?></td>
                 <td><?= $row[1] ?></td>
                 <td><?= $row[2] ?></td>
-                <td class="table_buttons">
+                <td class="table_buttons"></td>
               </tr>
           <?php  }
 
