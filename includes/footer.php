@@ -1,12 +1,10 @@
-
+<!-- Connect til database  -->
 <?php
-
 $connection = mysqli_connect('localhost','root','','admin');
 if(!$connection){
   die("Cannot connect to the database" . mysqli_connect_error());
 }
 ?>
-
 <footer class="container">
   <div class="row">
     <!--Kontaktoplysninger -->
@@ -34,12 +32,11 @@ if(!$connection){
         <a href="mailto:frederiksbergselskaber@gmail.com"><p>frederiksbergselskaber@gmail.com</p></a>
       </div>
     </div>
-
-<!--åbningstider  -->
+<!--Åbningstider  -->
     <div class="four columns">
       <h3 class="footer_h3">Åbningstider</h3>
       <div class="footer_element" style="text-align: center;">
-        <!--Dages åbningstider  -->
+        <!--Ugedages åbningstider  -->
         <?php
             $query ="SELECT * FROM aabningstider ORDER BY id ASC LIMIT 7;";
             $results = mysqli_query($connection,$query);
@@ -49,6 +46,7 @@ if(!$connection){
             while($row = mysqli_fetch_row($results)): ?>
             <p><strong><?= $row[1] ?></strong> <?=$row[2] ?></p>
           <?php endwhile;?>
+
           <!--Køkkenets åbningstider  -->
           <?php
           $query ="SELECT * FROM aabningstider ORDER BY id DESC LIMIT 1;";
@@ -58,13 +56,12 @@ if(!$connection){
           }
           $row = mysqli_fetch_row($results)?>
         <p><strong>Køkkenet:</strong><br><strong><?= $row[1] . '</strong> ' . $row[2] ?>
-          <!--luk forbindelse til db-->
+          <!--luk forbindelse til database-->
           <?php
           mysqli_close($connection);
             ?>
       </div>
     </div>
-
     <!--Links   -->
     <div class="four columns">
       <h3 class="footer_h3">Links</h3>
@@ -74,7 +71,6 @@ if(!$connection){
         <a href="https://www.instagram.com/cafefrederiksberg/"><img src="/cafefrederiksberg/img/instagram.png" width="30px" heigth="auto" alt="Genvej til instagram"><p id="instagramtext">Instagram</p></a><br><br>
         <a href="https://www.facebook.com/Fredelive/"><img src="/cafefrederiksberg/img/facebook.png" width="30px" heigth="auto" alt="Genvej til facebook"><p id="facebooktext">Facebook</p></a>
       </div>
-
     </div>
   </div>
 </div>
