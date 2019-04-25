@@ -92,7 +92,7 @@
       <p>Nuværende video: <!-- INDSÆT VIDEO-NAVN --> </p>
       <p>Upload ny</p>
         <form method="post" name="post" action="php_process/process_header_upload.php" enctype="multipart/form-data">
-          <input type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)" width='150px' height='150px'>
+          <input type="file" name="fileToUpload" id="fileToUpload" width='150px' height='150px'>
         <br><br>
         <a class="button red">Annuller</a>
         <input class="button green" type="submit" value="Upload">

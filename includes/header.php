@@ -238,11 +238,16 @@
 }
 
 </style>
-
+<!-- for at opdatere videonen når den bliver ændret -->
+<script>
+function myFunction() {
+    location.reload();
+}
+</script>
 <base href="http://localhost/cafefrederiksberg/index.php">
 
 <div class="header_bg_img">
-  <video autoplay muted loop src="video/header_bg_video3.mp4" height="75vh"></video>
+  <video autoplay muted loop src="video/header_bg_video.mp4" height="75vh"></video>
   <div class="header_text">
     <h1>Aalborgs Hyggeligste</h1>
   <div class="slider">
