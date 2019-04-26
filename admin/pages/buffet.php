@@ -19,16 +19,11 @@
 <body>
 
   <?php
-  //Opretter forbindelse via config.php, og tjekker om du er logget ind via session.php
+  // Tjekker om du er logget ind + opretter forbindelse til database
   include('../session.php');
 
-  $connection = mysqli_connect('localhost', 'root', '', 'admin');
-  if(!$connection){
-    die("Cannot connect to the database".mysqli_connect_error());
-  }
   $query ="SELECT * FROM buffet;";
-  $results = mysqli_query($connection,$query);
-
+  $results = mysqli_query($db,$query);
   if(!$results){
     die("could not query the database" .mysqli_error());
   }
@@ -41,7 +36,6 @@
     $category6 = array("BuffetItaly", "Italiensk Buffet");
     $category7 = array("BuffetOekologi", "Økologisk Buffet");
     $category8 = array("BuffetJul", "Julefrokost");
-
 
   if(isset($_GET['id'])){
     $id = $_GET['id'];
@@ -81,6 +75,7 @@
     </div>
     <hr>
 
+<!--BUFFET 1  -->
     <div class="task_wrapper" id="category_<?= $category1[0] ?>">
     <h2 class="task_heading"><?= $category1[1]; ?></h2>
 
@@ -156,6 +151,7 @@
 
   <hr>
 
+<!--BUFFET 2 -->
   <div class="task_wrapper" id="category_<?= $category2[0] ?>">
   <h2 class="task_heading"><?= $category2[1]; ?></h2>
 
@@ -231,9 +227,9 @@
 
   </table>
 </div>
-
 <hr>
 
+<!--BUFFET 3  -->
 <div class="task_wrapper" id="category_<?= $category3[0] ?>">
 <h2 class="task_heading"><?= $category3[1]; ?></h2>
 
@@ -242,9 +238,6 @@
 <form class="restaurant_form" method="post" name="post" action="php_process/process_buffet_input.php?id=<?=$_GET['id']?>" enctype="multipart/form-data">
   <label for="menu_item_name_input">Navn på drikkevare</label>
   <input name="menu_item_name" type="text" placeholder="Angiv navn" required maxlength="100" />
-  <br><br>
-
-
   <br><br>
   <a class="button red" href="buffet.php?#category_<?=$category3[0]?>">Fortryd</a>
   <input class="button green" type="submit" value="Tilføj">
@@ -262,9 +255,7 @@
 <table>
   <tr>
     <th>Indeks</th>
-
     <th>Navn</th>
-
   </tr>
 
   <?php
@@ -314,9 +305,9 @@
 
 </table>
 </div>
-
 <hr>
 
+<!--BUFFET 4  -->
 <div class="task_wrapper" id="category_<?= $category4[0] ?>">
 <h2 class="task_heading"><?= $category4[1]; ?></h2>
 
@@ -325,9 +316,6 @@
 <form class="restaurant_form" method="post" name="post" action="php_process/process_buffet_input.php?id=<?=$_GET['id']?>" enctype="multipart/form-data">
   <label for="menu_item_name_input">Navn på drikkevare</label>
   <input name="menu_item_name" type="text" placeholder="Angiv navn" required maxlength="100" />
-  <br><br>
-
-
   <br><br>
   <a class="button red" href="buffet.php?#category_<?=$category4[0]?>">Fortryd</a>
   <input class="button green" type="submit" value="Tilføj">
@@ -345,9 +333,7 @@
 <table>
   <tr>
     <th>Indeks</th>
-
     <th>Navn</th>
-
   </tr>
 
   <?php
@@ -399,21 +385,7 @@
 </table>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- USA BUFFET  -->
   <div class="task_wrapper" id="category_<?= $category5[0] ?>">
   <h2 class="task_heading"><?= $category5[1]; ?></h2>
 
@@ -478,32 +450,20 @@
     </tr>
 
     <?php }else{ ?>
+
     <tr>
       <td><div class="menu_item_index"><?= $row[0] ?></div></td>
       <td><div class="menu_item_name"><?= $row[1] ?></div></td>
       <td class="table_buttons"></td>
     </tr>
+
     <?php } } endwhile; ?>
+
   </table>
 </div>
-
 <hr>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--BUFFET ITALIENSK -->
 <div class="task_wrapper" id="category_<?= $category6[0] ?>">
 <h2 class="task_heading"><?= $category6[1]; ?></h2>
 
@@ -554,6 +514,7 @@
   </tr>
 
   <?php }elseif($id === 0){ ?>
+
   <tr>
     <td><div class="menu_item_index"><?= $row[0] ?></div></td>
     <td><div class="menu_item_name"><?= $row[1] ?></div></td>
@@ -568,31 +529,20 @@
   </tr>
 
   <?php }else{ ?>
+
   <tr>
     <td><div class="menu_item_index"><?= $row[0] ?></div></td>
     <td><div class="menu_item_name"><?= $row[1] ?></div></td>
     <td class="table_buttons"></td>
   </tr>
+
   <?php } } endwhile; ?>
+
 </table>
 </div>
-
 <hr>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--BUFFET ØKOLOGISK  -->
 <div class="task_wrapper" id="category_<?= $category7[0] ?>">
 <h2 class="task_heading"><?= $category7[1]; ?></h2>
 
@@ -643,6 +593,7 @@
   </tr>
 
   <?php }elseif($id === 0){ ?>
+
   <tr>
     <td><div class="menu_item_index"><?= $row[0] ?></div></td>
     <td><div class="menu_item_name"><?= $row[1] ?></div></td>
@@ -657,26 +608,20 @@
   </tr>
 
   <?php }else{ ?>
+
   <tr>
     <td><div class="menu_item_index"><?= $row[0] ?></div></td>
     <td><div class="menu_item_name"><?= $row[1] ?></div></td>
     <td class="table_buttons"></td>
   </tr>
+
   <?php } } endwhile; ?>
+
 </table>
 </div>
-
 <hr>
 
-
-
-
-
-
-
-
-
-
+<!--BUFFET JULEFROKOST  -->
 <div class="task_wrapper" id="category_<?= $category8[0] ?>">
 <h2 class="task_heading"><?= $category8[1]; ?></h2>
 
@@ -751,11 +696,6 @@
 </div>
 
 <hr>
-
-
-
-
-
 
     <div class="spacer" style="height:200px;"></div>
   </div>
