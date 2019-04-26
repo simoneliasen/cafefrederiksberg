@@ -95,14 +95,14 @@
       <label for="menu_item_name_input">Pris</label>
       <input name="menu_item_price"type="text" placeholder="Angiv pris" required maxlength="10" />
       <br><br>
-      <a class="button red" href="bar.php?#category_<?=$category1[0]?>">Fortryd</a>
+      <a class="button red" href="buffet.php?#category_<?=$category1[0]?>">Fortryd</a>
       <input class="button green" type="submit" value="Tilføj">
       <input type="hidden" name="hidden_category" value="<?= $category1[0] ?>">
     </form>
 
     <?php }else{ ?>
 
-    <form method="post" name="post" action="bar.php?id=<?= $category1[0] ?>#category_<?=$category1[0]?>" enctype="multipart/form-data">
+    <form method="post" name="post" action="buffet.php?id=<?= $category1[0] ?>#category_<?=$category1[0]?>" enctype="multipart/form-data">
       <input class="button green" type="submit" value="Tilføj">
     </form>
 
