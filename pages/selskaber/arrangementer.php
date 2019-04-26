@@ -172,11 +172,13 @@ Hos Café Frederiksberg tilbyder vi en lang række arrangementer. Ring til os, o
             Hvert år holder vi et brag af en fest når det bliver nytårstid. Kom til en komplet aften hvor der er sørget for alt. Oplev en kæmpe fest med en luksus nytårsmenu, fri bar, champagne og kransekage og meget mere.
           </p>
           <br>
+        <h6>Ring på tlf: (+45) 22 42 43 00</h6>
+        <h6>frederiksbergselskaber@gmail.com</h6>
 
         </div>
 
         <div class="one-half column">
-          <img src="img/butikfront.png" width="400rem" height="auto">
+          <img src="img/nytaarsaften.jpg" width="400rem" height="auto">
 
         </div>
       </div>
