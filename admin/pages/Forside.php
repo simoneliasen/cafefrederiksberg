@@ -24,12 +24,7 @@
     if(!$connection){
       die("Cannot connect to the database".mysqli_connect_error());
     }
-
-    $query = "SELECT filename FROM header WHERE type ='video';";
-    $results = mysqli_query($connection, $query);
-    $row = mysqli_fetch_assoc($results);
-
-     ?>
+    ?>
 
 <div class="logo">
   <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="100%">
@@ -97,18 +92,62 @@
     <div class="task_wrapper" id="præsentationsvideo">
       <h1 class="task_heading">Præsentationsvideo / Billeder</h1>
       <p>Vælg om der skal køre en video eller en serie af billeder på starten af siden</p>
+      <?php
+      $query = "SELECT filename FROM header WHERE type ='video';";
+      $results = mysqli_query($connection, $query);
+      $row_filename = mysqli_fetch_assoc($results);
+
+      $query ="SELECT type FROM header WHERE id='1'";
+      $results = mysqli_query($connection, $query);
+      $header_choice = mysqli_fetch_assoc($results);
+
+      if($header_choice['type'] == "video_choice"){
+        $query = "SELECT filename FROM header WHERE type ='video'";
+        $results = mysqli_query($connection, $query);
+        $row = mysqli_fetch_assoc($results);
+      ?>
       <form method="post" name="post" action="php_process/process_header_choice.php" enctype="multipart/form-data">
-        <input type="radio" name="type" value="video_choice">Video
+        <input type="radio" name="type" value="video_choice" checked>Video
         <br>
         <input type="radio" name="type" value="billede_choice">Billeder
         <br>
         <input class="button green" type="submit" value="Gem">
       </form>
-      <p><strong>Nuværende video:</strong> <?= $row['filename'] ?> </p>
-      <video autoplay muted loop src="../../video/<?= $row['filename'] ?>" height="100px"></video>
+
+
+      <p><strong>Nuværende video:</strong> <?= $row_filename['filename'] ?> </p>
+      <video autoplay muted loop src="../../video/<?= $row_filename['filename'] ?>" height="100px"></video>
       <p><strong>Upload ny:</strong></p>
+      <?php }else{
+
+      $query ="SELECT filename FROM header WHERE type ='billede'";
+      $results = mysqli_query($connection,$query);
+      $row_filename = mysqli_fetch_assoc($results);
+
+      ?>
+
+      <form method="post" name="post" action="php_process/process_header_choice.php" enctype="multipart/form-data">
+        <input type="radio" name="type" value="video_choice">Video
+        <br>
+        <input type="radio" name="type" value="billede_choice" checked>Billeder
+        <br>
+        <input class="button green" type="submit" value="Gem">
+      </form>
+      <p><strong>Nuværende billeder:</strong></p>
+
+      <?php while($row = mysqli_fetch_row($results)): ?>
+        
+      <p><?= $row_filename['filename'] ?> </p>
+      <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="150px">
+      <form method="post" name="post" action="php_process/process_header_choice.php" enctype="multipart/form-data">
+        <input class="button red" type="submit" value="slet">
+      </form>
+      <br>
+
+      <?php endwhile; }; ?>
+
       <form method="post" name="post" action="php_process/process_header_upload.php" enctype="multipart/form-data">
-        <input type="file" name="fileToUpload" id="fileToUpload" width='150px' height='150px'>
+        <input type="file" name="fileToUpload" id="fileToUpload" width='150px' height='150px' multiple="multiple">
         <br><br>
         <input class="button green" type="submit" value="Upload">
       </form>
