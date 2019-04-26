@@ -36,7 +36,6 @@
     <li><a href="forside.php" class="active">Forside</a></li>
     <li><a href="restaurant.php">Restaurant</a></li>
     <li><a href="bar.php">Bar</a></li>
-    <li><a href="events.php">Events</a></li>
     <li><a href="selskabsmenu.php">Selskabsmenu</a></li>
     <li><a href="buffet.php">Buffet</a></li>
     <li><a href="kontakt.php">Kontakt</a></li>
@@ -136,7 +135,7 @@
       <p><strong>Nuværende billeder:</strong></p>
 
       <?php while($row = mysqli_fetch_row($results)): ?>
-        
+
       <p><?= $row_filename['filename'] ?> </p>
       <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="150px">
       <form method="post" name="post" action="php_process/process_header_choice.php" enctype="multipart/form-data">

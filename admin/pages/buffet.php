@@ -59,7 +59,6 @@
     <li><a href="forside.php">Forside</a></li>
     <li><a href="restaurant.php">Restaurant</a></li>
     <li><a href="bar.php">Bar</a></li>
-    <li><a href="events.php">Events</a></li>
     <li><a href="selskabsmenu.php">Selskabsmenu</a></li>
     <li><a href="buffet.php" class="active">Buffet</a></li>
     <li><a href="kontakt.php">Kontakt</a></li>

@@ -28,7 +28,6 @@
     <li><a href="forside.php">Forside</a></li>
     <li><a href="restaurant.php">Restaurant</a></li>
     <li><a href="bar.php">Bar</a></li>
-    <li><a href="events.php">Events</a></li>
     <li><a href="selskabsmenu.php">Selskabsmenu</a></li>
     <li><a href="buffet.php">Buffet</a></li>
     <li><a href="kontakt.php" class="active">Kontakt</a></li>
@@ -124,6 +123,7 @@
 
 
   </div>
+</div>
   <div class="spacer" style="height:200px;"></div>
 </div>
 </div>

@@ -7,7 +7,6 @@ require_once 'connection.php';
 
   $query = "INSERT INTO buffet VALUES(
     '$id',/* ID ligger først i tablet og autoincrementes, derfor lades denne være blank */
-
     '$menu_item_name',
     '$category'
   )";
