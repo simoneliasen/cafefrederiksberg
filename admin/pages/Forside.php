@@ -19,7 +19,17 @@
 
 <body>
 
-    <?php  include('../session.php'); ?>
+    <?php  include('../session.php');
+    $connection = mysqli_connect('localhost', 'root', '', 'admin');
+    if(!$connection){
+      die("Cannot connect to the database".mysqli_connect_error());
+    }
+
+    $query = "SELECT filename FROM header WHERE type ='video';";
+    $results = mysqli_query($connection, $query);
+    $row = mysqli_fetch_assoc($results);
+
+     ?>
 
 <div class="logo">
   <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="100%">
@@ -49,7 +59,7 @@
       </div>
     </div>
 
-<div class="task_wrapper">
+<div class="task_wrapper" >
   <h1 class="task_heading">Announcement bar</h1>
   <p>Opdater announcement baren med vigtige meddelelser eller gode tilbud.</p>
   <br>
@@ -84,18 +94,22 @@
 
     <hr>
 
-    <div class="task_wrapper">
+    <div class="task_wrapper" id="præsentationsvideo">
       <h1 class="task_heading">Præsentationsvideo / Billeder</h1>
-      <p>Vælg om der skal gøres brug af video eller billeder</p>
-      <input type="radio" name="gender" value="male" checked>Video
-      <br>
-      <input type="radio" name="gender" value="male">Billeder
-      <p>Nuværende video: <!-- INDSÆT VIDEO-NAVN --> </p>
-      <p>Upload ny</p>
-        <form method="post" name="post" action="php_process/process_header_upload.php" enctype="multipart/form-data">
-          <input type="file" name="fileToUpload" id="fileToUpload" width='150px' height='150px'>
+      <p>Vælg om der skal køre en video eller en serie af billeder på starten af siden</p>
+      <form method="post" name="post" action="php_process/process_header_choice.php" enctype="multipart/form-data">
+        <input type="radio" name="type" value="video_choice">Video
+        <br>
+        <input type="radio" name="type" value="billede_choice">Billeder
+        <br>
+        <input class="button green" type="submit" value="Gem">
+      </form>
+      <p><strong>Nuværende video:</strong> <?= $row['filename'] ?> </p>
+      <video autoplay muted loop src="../../video/<?= $row['filename'] ?>" height="100px"></video>
+      <p><strong>Upload ny:</strong></p>
+      <form method="post" name="post" action="php_process/process_header_upload.php" enctype="multipart/form-data">
+        <input type="file" name="fileToUpload" id="fileToUpload" width='150px' height='150px'>
         <br><br>
-        <a class="button red">Annuller</a>
         <input class="button green" type="submit" value="Upload">
       </form>
     </div>
