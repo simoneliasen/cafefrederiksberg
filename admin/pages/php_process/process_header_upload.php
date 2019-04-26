@@ -2,9 +2,7 @@
   require_once 'connection.php';
 
   $temp = explode(".", $_FILES["fileToUpload"]["name"]);
-  // $newFileName =  "00000_" . round(microtime(true)) . '.' . end($temp);
-
-  $newFileName =  "header_bg_video" . '.' . end($temp);
+  $newFileName =  "00000_" . round(microtime(true)) . '.' . end($temp);
   $fileType = end($temp);
   $target_dir = "../../../video/";
   $target_file = $target_dir . "$newFileName";
@@ -42,6 +40,7 @@
       $query = "INSERT INTO header VALUES ('','$fileType','$newFileName')";
       $results = mysqli_query($connection, $query);
       echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+
     } else {
       echo "Sorry, there was an error uploading your file.";
     }

@@ -238,16 +238,24 @@
 }
 
 </style>
-<!-- for at opdatere videonen når den bliver ændret -->
-<script>
-function myFunction() {
-    location.reload();
+
+<?php
+
+$connection = mysqli_connect('localhost', 'root', '', 'admin');
+if(!$connection){
+  die("Cannot connect to the database".mysqli_connect_error());
 }
-</script>
+
+$query = "SELECT filename FROM header;";
+$results = mysqli_query($connection, $query);
+$row = mysqli_fetch_assoc($results);
+
+ ?>
+
 <base href="http://localhost/cafefrederiksberg/index.php">
 
 <div class="header_bg_img">
-  <video autoplay muted loop src="video/header_bg_video.mp4" height="75vh"></video>
+  <video autoplay muted loop src="video/<?= $row['filename'] ?>" height="75vh"></video>
   <div class="header_text">
     <h1>Aalborgs Hyggeligste</h1>
   <div class="slider">
@@ -273,3 +281,5 @@ function myFunction() {
   </div>
   </div>
 </div>
+
+<?php mysqli_close($connection); ?>
