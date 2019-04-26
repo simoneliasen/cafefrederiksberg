@@ -8,24 +8,26 @@
   $target_file = $target_dir . "$newFileName";
   $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
   $uploadOk = 1;
+  $type = "";
 
-  // Check if image file is a actual image or fake image
-  if(isset($_POST["submit"])) {
-      $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-      if($check !== false) {
-          echo "File is an image - " . $check["mime"] . ".";
-          $uploadOk = 1;
-      } else {
-          echo "File is not an image.";
-          $uploadOk = 0;
-      }
+  if ($_FILES["fileToUpload"]["size"] > 100000000) {
+    echo "Filen er for stor";
+    $uploadOk = 0;
   }
 
-
+  if($fileType == "mp4" or $fileType == "mpeg" or $fileType == "avi" or $fileType == "mov"){
+    $type = "video";
+  }elseif($imageFileType == "jpg" or $imageFileType == "png" or $imageFileType == "jpeg"
+  or $imageFileType == "gif" ){
+    $type = "billede";
+  }else{
+    $uploadOk = 0;
+    echo "Kun video filer af typen mp4, mpeg, avi og mov er tilladt" . "<br>" . "Kun billede filer af typen jpg, png, jpeg og gif er tilladt" . "<br>";
+  }
 
   // Check if $uploadOk is set to 0 by an error
   if ($uploadOk == 0) {
-      echo "Sorry, your file was not uploaded.";
+      echo "Filen blev ikke uploaded"  . "<br>";
   } else {
     //Sletter indholdet i video-mappen
     $files = glob('../../../video/*'); // get all file names
@@ -34,31 +36,26 @@
         unlink($file); // delete file
     }
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-      $query = "DELETE FROM header";
-      $results = mysqli_query($connection, $query);
+      if($type == 'video'){
+        $query = "DELETE FROM header WHERE type = 'video'";
+        $results = mysqli_query($connection, $query);
+      }
 
-      $query = "INSERT INTO header VALUES ('','$fileType','$newFileName')";
+      $query = "INSERT INTO header VALUES ('','$fileType','$newFileName','$type')";
       $results = mysqli_query($connection, $query);
-      echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+      echo "Filen ". basename( $_FILES["fileToUpload"]["name"]). " er blevet uploaded.";
 
     } else {
-      echo "Sorry, there was an error uploading your file.";
+      echo "Der var et problem med at uploade filen";
     }
   }
 
-
-    if ($uploadOk == 1){
-      header("Location: ../forside.php");
-      exit();
-    }else {
-      die("could not query the database");
-    }
-
-
-
-
-
-
+  if ($uploadOk == 1){
+    header("Location: ../forside.php#præsentationsvideo");
+    exit();
+  }else {
+    die("Kunne ikke forbinde til databasen");
+  }
   mysqli_close($connection);
 
  ?>
