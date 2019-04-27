@@ -311,3 +311,10 @@ table tr .menu_item_price{ width: 50px; }
 table tr .table_buttons{ float: right;}
 table tr .table_buttons .button{ float: right; margin-left: 4px; }
 tr:nth-child(even) {background-color: #f2f2f2;}
+
+.slide_img_wrapper{
+  float: left;
+  min-width: 150px;
+  margin: 20px;
+  height: 400px;
+}

@@ -4,7 +4,7 @@
 
   $header_choice = htmlentities($_POST['type']);
 
-  $query = "UPDATE header SET type = '$header_choice' WHERE filename = 'header_choice';";
+  $query = "UPDATE header SET type = '$header_choice' WHERE id = '1';";
   $results = mysqli_query($connection, $query);
 
   if($results){
