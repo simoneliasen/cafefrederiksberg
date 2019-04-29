@@ -222,14 +222,14 @@ Café Frederiksberg har budt gæster velkommen siden 1900. Café Frederiksberg h
     </div>
 <!--Facebook widget  -->
     </div>
-    <div class='sk-fb-event' data-embed-id='22281'></div>
-    <script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
+    <div class='sk-fb-event' data-embed-id='23329'>
+    </div><script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
   </div>
 
 
 <!--Knap til alle events  -->
 <div class="row alleeventsforside">
-  <a class="button alleeventsforside" href="pages/events.php">Se alle kommende events <u>her</u></a>
+  <a class="button alleeventsforside" href="pages/events.php#event_oversigt">Se alle kommende events <u>her</u></a>
 </div>
 
   <!--Google maps  -->
