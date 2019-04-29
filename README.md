@@ -1,15 +1,10 @@
 Front-end
-- Lidt mindre voldsom hover-effekt på "indholdsoversigt"
 - Billede til Klub frede sektion
-- Fjern lilla hover element ved knapper
 - Indsæt Øl/vand og varme drikke i bar menu
 - Tekst til selskabsside + billede
 - Billeder til buffet-side
 - Indsæt Julefrokost på buffetside
-- Bredere billeder på arrangement-side?
-- bredere menu på Restaurant og Selskabsmenu-side?
-- Tekst på tidslinjeside + Billeder
-- Margin nederst på tidslinje-side?
+- Tekst til tidslinjeside + Billeder
 - Tekst til kunstnere der vil spille
 - DJ??
 
@@ -37,3 +32,6 @@ Implementering
 Tænk over:
 - GDPR
 - Sikkerhed (sql injections + xss + csfr + debug mode + Global error catching)
+
+Andet:
+- Tilbudsbanner til Bar-side?
