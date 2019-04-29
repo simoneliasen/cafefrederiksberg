@@ -176,7 +176,7 @@ Hos Café Frederiksberg tilbyder vi en lang række arrangementer. Ring til os, o
         </div>
 
         <div class="one-half column">
-          <img src="img/butikfront.png" width="400rem" height="auto">
+          <img src="img/Nytårsaften.jpg" width="400rem" height="auto">
 
         </div>
       </div>
