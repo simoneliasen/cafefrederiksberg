@@ -159,22 +159,33 @@
 
     <hr>
 
+<!-- Indsætter nuværende katalog elementer som placeholders for tekstbokse -->
+<?php
+    $query ="SELECT * FROM katalog WHERE id='1'";
+    $results = mysqli_query($connection, $query);
+    if(!$results){
+      die("could not query the database" .mysqli_error());
+    }
+    $row = mysqli_fetch_row($results);
+?>
+
+
     <div class="task_wrapper">
       <h1 class="task_heading">Katalog & Katalog tekst</h1>
       <p>Opdater et, eller flere felter</p>
       <form method="post" name="post" action="php_process/process_katalog_edit.php" enctype="multipart/form-data"  id="katalogform">
 
         <p><b>Link</b></p>
-      <input class="text_input" type="text" name="link">
+      <input class="text_input" type="text" name="link" placeholder="<?php  echo $row[1]; ?>">
 
         <p><b>Overskrift </b></p>
-      <input class="text_input" type="text" name="header">
+      <input class="text_input" type="text" name="header" placeholder="<?php  echo $row[2]; ?>">
 
         <p><b>Underoverskrift</b></p>
-      <input class="text_input" type="text" name="subheader">
+      <input class="text_input" type="text" name="subheader" placeholder="<?php  echo $row[3]; ?>">
 
         <p><b>Tekst</b></p>
-      <textarea class="text_input" id="katalogtext" type="text" cols="10" rows="6" name="text"></textarea>
+      <textarea class="text_input" id="katalogtext" type="text" cols="10" rows="6" name="text" placeholder="<?php  echo $row[4]; ?>"></textarea>
       <br><br>
 
       <input class="button green" type="submit" value="Gem">
