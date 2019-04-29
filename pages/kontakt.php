@@ -119,7 +119,7 @@ $row = mysqli_fetch_row($results)
 
 <div class="row kitchen_and_party">
   <div class="six columns">
-    <h2 class="opening_headline">Køkken:</h2>
+    <h2 class="opening_headline">Køkken</h2>
     <div class="contact_info_party">
       <div class="opening_day"><?= $row[1];?></div>
       <div class="opening_time"><?= $row[2];?></div>
@@ -128,7 +128,7 @@ $row = mysqli_fetch_row($results)
 
 <?php mysqli_close($connection);?>
   <div class="six columns">
-    <h2 class="opening_headline">Vedrørende fest:</h2>
+    <h2 class="opening_headline">Vedrørende fest</h2>
     <div class="contact_info_party">
       <div class="opening_day_party">
         Telefon
@@ -148,6 +148,10 @@ $row = mysqli_fetch_row($results)
   </div>
 </div>
 </div>
+<div class="container" style="text-align: center;">
+  <p><i>Vi træffes bedst på telefon kl. <strong>10.00-11.30</strong>, kl. <strong>14.30-16.30</strong> samt efter kl. <strong>20.30</strong></i></p>
+</div>
+
 </div>
 
 <!--Google maps  -->
