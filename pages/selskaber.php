@@ -29,16 +29,16 @@
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include '../includes/header.php'; ?>
 
+<div class="selskaber_wrapper">
   <div class="container arrangementer">
-    <div class="selskaber_wrapper">
+
+
       <div class="row">
         <div class="one-half column">
-          <img src="img/Butikfront.png" width="400rem" height="auto">
+          <img src="img/buffet_placeholder.png.jpg" width="370rem" height="auto">
         </div>
         <div class="one-half column">
-          <span class="selskab_text_title">
-          Café Frederiksberg udlejer lokaler til fest og andet selskab
-          </span><br>
+          <span class="selskab_text_title"> Vi byder på lokaler til selskaber, arrangementer og lækre buffeter!</span><br>
           <p style="width: 400px;">Lorem ipsum dolor sit amet, consectetur
              adipisicing elit, sed do eiusmod tempor incididunt ut labore et
              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -47,185 +47,20 @@
              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
              occaecat cupidatat non proident, sunt in culpa qui officia
              deserunt mollit anim id est laborum.</p>
-          <br>
+
+          <p style="font-size: 1.2rem;"><strong> Se vores udvalg her </strong></p>
+              <a class="button" href="pages/selskaber/buffet.php">Buffet</a>
+              <a class="button" href="pages/selskaber/arrangementer.php">Arrangementer</a>
+              <a class="button" href="pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
+              <p> Eller kontakt os på telefon eller mail for at høre mere. </p>
+              <p> <strong>Telefon:</strong> 23603949 </p>
+              <p> <strong>Mail:</strong> Cafefrede@live.dk </p>
         </div>
-      </div>
-    </div>
-  </div>
-<!--top knapper på siden-->
-<div class="container">
-  <div class="bestil_online">
-    <h2 class="bestil_online_overskrift">Bestil Online</h2>
-    <div class="bestil_online_knapper">
-      <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Bord</a>
-      <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Billetter</a>
-      <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Take Away</a>
-    </div>
-  </div>
-</div>
-
-<!--Buffet row-->
-<div class="bg_dark">
-  <div style="padding-top: 3rem;">
-   <div class="container arrangementer">
-    <div class="selskaber_wrapper">
-      <div class="row">
-        <div class="one-half column">
-          <span class="selskab_text_title">
-            En buffet for enhver smag
-          </span><br>
-          <p style="width: 400px;">Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.</p>
-          <br>
         </div>
-        <div class="one-half column">
-          <img src="img/butikfront.png" width="400rem" height="auto">
-        </div>
-      </div>
-    </div>
-   </div>
-  </div>
- </div>
 
-
-<!--Arrangementer row-->
-    <div class="container arrangementer">
-      <div class="selskaber_wrapper">
-
-        <div class="row">
-          <div class="one-half column">
-            <img src="img/butikfront.png" width="400rem" height="auto">
-          </div>
-
-          <div class="one-half column">
-            <span class="selskab_text_title">
-              Arrangementer vi tilbyder
-
-            </span><br>
-            <p style="width: 400px;">Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.</p>
-            <br>
-
-          </div>
-        </div>
-      </div>
-    </div>
-<hr>
-
-
-
-
-<!--
-<div class="bg_dark">
-  <div class="container">
-   <div class="header-centertext">
-     <div>
-
-        <div class="four columns">
-          <div class="selskab_button">
-          <a class="selskab_button_text" href="pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
-        </div>
-      </div>
-
-        <div class="four columns">
-          <div class="selskab_button">
-          <a class="selskab_button_text" href="pages/selskaber/buffet.php">Buffet</a>
-        </div>
-      </div>
-
-        <div class="four columns">
-          <div class="selskab_button">
-          <a class="selskab_button_text" href="pages/selskaber/arrangementer.php">Arrangementer</a>
-        </div>
-      </div>
 
       </div>
     </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="selskab_item_positions">
-
-    <span class="selskab_text_title">
-      Test tittlele
-    </span><br>
-
-    <div class="five columns">
-      <div class="selskab_text_position">
-       <span class="selskab_text_atttributes">
-        Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Morbi tempus iaculis urna id.
-        Nulla porttitor massa id neque aliquam vestibulum morbi blandit. Non
-        quam lacus suspendisse faucibus interdum. Turpis cursus in hac habitasse
-        platea dictumst quisque sagittis. Pellentesque elit ullamcorper
-        dignissim cras tincidunt lobortis. Eu facilisis sed odio morbi.
-        Lacinia at quis risus sed vulputate odio. A erat nam at lectus.
-        Pretium quam vulputate dignissim suspendisse in est ante. Neque vitae
-        tempus quam pellentesque nec. Id diam vel quam elementum. Faucibus nisl
-        tincidunt eget nullam. Morbi non arcu risus quis varius quam. Malesuada
-        nunc vel risus commodo viverra.</span>
-     </div>
-   </div>
-
-      <div class="four columns">
-        <div class="selskab_img_position">
-          <img src="img/Happyfish.jpg" alt="Placeholder fish" height="250px" width="300px">
-        </div>
-      </div>
-
-   </div>
-</div>
-
-  <div class="selskab_button_section">
-    <a class="selskab_button_text" href="pages/selskaber/selskabsmenu.php"> Selskabsmenu</a>
-  </div>
-<br>
-
-<div class="bg_dark">
-  <div class="container">
-    <div class="four columns">
-      <div class="selskab_img_position">
-        <img src="img/Happyfish.jpg" alt="Placeholder fish" height="250px" width="300px">
-      </div>
-    </div>
-
-   <div class="five columns">
-     <span class="selskab_text_title">
-       Test tittlele
-     </span><br>
-     <span class="selskab_text_atttributes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan
-  in nisl nisi scelerisque eu. Mauris a diam maecenas sed enim ut sem viverra.
-  Molestie a iaculis at erat pellentesque adipiscing commodo elit at. Viverra
-  suspendisse potenti nullam ac tortor vitae purus. Tortor vitae purus faucibus
-  ornare. Duis convallis convallis tellus id interdum velit laoreet id donec.
-  Netus et malesuada fames ac turpis egestas maecenas. Elit eget gravida cum
-  sociis natoque penatibus. Euismod lacinia at quis risus sed vulputate odio.
-  Elit eget gravida cum sociis natoque penatibus et magnis dis. Purus ut
-  faucibus pulvinar elementum. Eget duis at tellus at urna condimentum mattis
-  pellentesque id. Metus dictum at tempor commodo ullamcorper a lacus.
-  In egestas erat imperdiet sed euismod. Luctus venenatis lectus magna
-  fringilla. Viverra ipsum nunc aliquet bibendum. <span>
-  </div>
- </div>
-</div>
--->
-
 
 
 

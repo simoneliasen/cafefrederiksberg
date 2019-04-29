@@ -29,6 +29,14 @@
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include '../../includes/header.php'; ?>
 
+  <!--Opret forbindelse til database  -->
+  <?php
+  $connection = mysqli_connect('localhost', 'root', '', 'admin');
+  if(!$connection){
+    die("Cannot connect to the database".mysqli_connect_error());
+  }
+  ?>
+
   <div class="container">
     <div class="row selskab_present">
       <div class="one-half column selskab_present_img">
@@ -51,86 +59,75 @@
     <div class="container">
       <div class="row">
         <div class="menu_kort">
+
+          <!--FORETTER-->
           <h2 class="menu_kort_overskrift">Foretter</h2>
+          <?php
+          $query ="SELECT * FROM selskabsmenu WHERE category='forret';";
+          $results = mysqli_query($connection,$query);
+          if(!$results){
+            die("could not query the database" .mysqli_error());
+          }
+          while($row = mysqli_fetch_row($results)): ?>
+            <div class="menu_item">
+              <div class="menu_item_name"><?= $row[2] ?></div>
+              <div class="menu_item_price"><?=$row[4] ?></div>
+              <div class="menu_item_description"><?=$row[3] ?></div>
+            </div>
+        <?php endwhile;?>
 
-          <div class="menu_item" style="margin-top: 2rem;">
-            <div class="menu_item_name">Rejecocktail</div>
-            <div class="menu_item_price">45,-</div>
-            <div class="menu_item_description"></div>
-          </div>
+          <!--HOVEDRETTER-->
+          <h2 class="menu_kort_overskrift" style="margin-top: 6rem;">Hovedretter</h2>
+          <?php
+          $query ="SELECT * FROM selskabsmenu WHERE category='hovedret';";
+          $results = mysqli_query($connection,$query);
+          if(!$results){
+            die("could not query the database" .mysqli_error());
+          }
+          while($row = mysqli_fetch_row($results)): ?>
+            <div class="menu_item">
+              <div class="menu_item_name"><?= $row[2] ?></div>
+              <div class="menu_item_price"><?=$row[4] ?></div>
+              <div class="menu_item_description"><?=$row[3] ?></div>
+            </div>
+        <?php endwhile;?>
 
-          <div class="menu_item">
-            <div class="menu_item_name">Rejecocktail</div>
-            <div class="menu_item_price">45,-</div>
-            <div class="menu_item_description">En beskrivende text til retten</div>
-          </div>
-
-          <div class="menu_item">
-            <div class="menu_item_name">Rejecocktail</div>
-            <div class="menu_item_price">45,-</div>
-            <div class="menu_item_description"></div>
-          </div>
-
-          <h2 class="menu_kort_overskrift" style="margin-top: 6rem;">hovedretter</h2>
-
-          <div class="menu_item" style="margin-top: 2rem;">
-            <div class="menu_item_name">Rejecocktail</div>
-            <div class="menu_item_price">45,-</div>
-            <div class="menu_item_description"></div>
-          </div>
-
-          <div class="menu_item">
-            <div class="menu_item_name">Rejecocktail</div>
-            <div class="menu_item_price">45,-</div>
-            <div class="menu_item_description">En beskrivende text til retten</div>
-          </div>
-
-          <div class="menu_item">
-            <div class="menu_item_name">Rejecocktail</div>
-            <div class="menu_item_price">45,-</div>
-            <div class="menu_item_description"></div>
-          </div>
-
+          <!--DESSERTER-->
           <h2 class="menu_kort_overskrift" style="margin-top: 6rem;">Desserter</h2>
+          <?php
+          $query ="SELECT * FROM selskabsmenu WHERE category='dessert';";
+          $results = mysqli_query($connection,$query);
+          if(!$results){
+            die("could not query the database" .mysqli_error());
+          }
+          while($row = mysqli_fetch_row($results)): ?>
+            <div class="menu_item">
+              <div class="menu_item_name"><?= $row[2] ?></div>
+              <div class="menu_item_price"><?=$row[4] ?></div>
+              <div class="menu_item_description"><?=$row[3] ?></div>
+            </div>
+        <?php endwhile;?>
 
-          <div class="menu_item" style="margin-top: 2rem;">
-            <div class="menu_item_name">Rejecocktail</div>
-            <div class="menu_item_price">45,-</div>
-            <div class="menu_item_description"></div>
-          </div>
 
-          <div class="menu_item">
-            <div class="menu_item_name">Rejecocktail</div>
-            <div class="menu_item_price">45,-</div>
-            <div class="menu_item_description">En beskrivende text til retten</div>
-          </div>
-
-          <div class="menu_item">
-            <div class="menu_item_name">Rejecocktail</div>
-            <div class="menu_item_price">45,-</div>
-            <div class="menu_item_description"></div>
-          </div>
-
+          <!--NATMAD-->
           <h2 class="menu_kort_overskrift" style="margin-top: 6rem;">Natmad</h2>
+          <!-- Laver query fra table hvor katergorien er angivet som hovedret  -->
+          <?php
+          $query ="SELECT * FROM selskabsmenu WHERE category='natmad';";
+          $results = mysqli_query($connection,$query);
+          if(!$results){
+            die("could not query the database" .mysqli_error());
+          }
+          while($row = mysqli_fetch_row($results)): ?>
+            <div class="menu_item">
+              <div class="menu_item_name"><?= $row[2] ?></div>
+              <div class="menu_item_price"><?=$row[4] ?></div>
+              <div class="menu_item_description"><?=$row[3] ?></div>
+            </div>
+        <?php endwhile;
+         mysqli_close($connection);?>
 
-          <div class="menu_item" style="margin-top: 2rem;">
-            <div class="menu_item_name">Rejecocktail</div>
-            <div class="menu_item_price">45,-</div>
-            <div class="menu_item_description"></div>
-          </div>
-
-          <div class="menu_item">
-            <div class="menu_item_name">Rejecocktail</div>
-            <div class="menu_item_price">45,-</div>
-            <div class="menu_item_description">En beskrivende text til retten</div>
-          </div>
-
-          <div class="menu_item">
-            <div class="menu_item_name">Rejecocktail</div>
-            <div class="menu_item_price">45,-</div>
-            <div class="menu_item_description"></div>
-          </div>
-
+          <!--EKSTRA INFO-->
           <p class="menu_allergener" style="margin-top:6rem; text-align: center;">*Gæster kan få oplysninger om allergerner ved at henvende sig til personalet</p>
           <div class="menu_kontrolrapport">
             <p>Se vores kontrolrapport: </p>
@@ -144,11 +141,7 @@
     </div>
   </div>
 
+<?php include '../../includes/footer.php'; ?>
 
-
-
-    <?php
-    include '../../includes/footer.php'; ?>
 </body>
-
 </html>

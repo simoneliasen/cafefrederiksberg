@@ -69,11 +69,11 @@ if($count == 1) {
       <form action="" method="post">
         <div class="brugernavn">
           <label for="username"><b>Brugernavn</b></label>
-          <input type="text" placeholder="Indsæt Brugernavn" name="username" required>
+          <input type="text" style="width:11rem; text-align: center;" placeholder="Indsæt Brugernavn" name="username" required>
         </div>
         <div class="kodeord">
           <label for="password"><b>Kodeord</b></label>
-          <input type="password" placeholder="Indsæt Kodeord" name="password" required>
+          <input type="password" style="width:11rem; text-align: center;" placeholder="Indsæt Kodeord" name="password" required>
         </div>
         <button type="submit" id="loginknap">Login</button>
 

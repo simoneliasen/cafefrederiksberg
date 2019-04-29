@@ -208,9 +208,7 @@
 
 
   <!--Indrag footer fra filen includes/footer.php-->
-  <?php include '../includes/footer.php';
-    mysqli_close($connection);
-  ?>
+  <?php include '../includes/footer.php'; ?>
 
 </body>
 

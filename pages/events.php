@@ -46,7 +46,7 @@
   if(!$results){
     die("could not query the database" .mysqli_error());
   }
-  
+
   $row = mysqli_fetch_row($results);
   ?>
 
@@ -86,7 +86,7 @@
       <h6>Kommende Events</h6>
     </div>
   </div>
-  <div class='sk-fb-event' data-embed-id='22281'></div><script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
+  <div id="event_oversigt" class='sk-fb-event' data-embed-id='23329'></div><script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
 </div>
 
 <div class="bg_dark">

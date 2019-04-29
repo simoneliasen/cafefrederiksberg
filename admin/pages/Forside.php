@@ -19,7 +19,12 @@
 
 <body>
 
-    <?php  include('../session.php'); ?>
+    <?php  include('../session.php');
+    $connection = mysqli_connect('localhost', 'root', '', 'admin');
+    if(!$connection){
+      die("Cannot connect to the database".mysqli_connect_error());
+    }
+    ?>
 
 <div class="logo">
   <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="100%">
@@ -31,8 +36,8 @@
     <li><a href="forside.php" class="active">Forside</a></li>
     <li><a href="restaurant.php">Restaurant</a></li>
     <li><a href="bar.php">Bar</a></li>
-    <li><a href="events.php">Events</a></li>
-    <li><a href="selskaber.php">Selskaber</a></li>
+    <li><a href="selskabsmenu.php">Selskabsmenu</a></li>
+    <li><a href="buffet.php">Buffet</a></li>
     <li><a href="kontakt.php">Kontakt</a></li>
     <li><a href="hjælp.php">Hjælp</a></li>
   </ul>
@@ -48,7 +53,7 @@
       </div>
     </div>
 
-<div class="task_wrapper">
+<div class="task_wrapper" >
   <h1 class="task_heading">Announcement bar</h1>
   <p>Opdater announcement baren med vigtige meddelelser eller gode tilbud.</p>
   <br>
@@ -83,19 +88,73 @@
 
     <hr>
 
-    <div class="task_wrapper">
+    <div class="task_wrapper" id="præsentationsvideo">
       <h1 class="task_heading">Præsentationsvideo / Billeder</h1>
-      <p>Vælg om der skal gøres brug af video eller billeder</p>
-      <input type="radio" name="gender" value="male" checked>Video
-      <br>
-      <input type="radio" name="gender" value="male">Billeder
-      <!-- INDHOLD SKAL SELVFØLGELIG ÆNDRE SIG ALT EFTER OM DET ER VIDEO ELLER BILLEDER -->
-      <p>Nuværende video: <!-- INDSÆT VIDEO-NAVN --> </p>
-      <p>Upload ny</p>
-      <input type="file" name="file" id="file" class="inputfile" />
+      <p>Vælg om der skal køre en video eller en serie af billeder på starten af siden</p>
+      <?php
+      $query ="SELECT type FROM header WHERE id='1'";
+      $results = mysqli_query($connection, $query);
+      $header_choice = mysqli_fetch_assoc($results);
+
+      if($header_choice['type'] == "video_choice"){
+        $uploadType = "Upload ny video";
+        $query = "SELECT filename FROM header WHERE type ='video';";
+        $results = mysqli_query($connection, $query);
+        $row_filename = mysqli_fetch_assoc($results);
+      ?>
+      <form method="post" name="post" action="php_process/process_header_choice.php" enctype="multipart/form-data">
+        <input type="radio" name="type" value="video_choice" checked>Video
+        <br>
+        <input type="radio" name="type" value="billede_choice">Billeder
+        <br>
+        <input class="button green" type="submit" value="Gem">
+      </form>
+
+      <p><strong>Nuværende video:</strong> <?= $row_filename['filename'] ?> </p>
+      <video autoplay muted loop src="../../video/<?= $row_filename['filename'] ?>" height="100px"></video>
+
+    <?php }elseif($header_choice['type'] == "billede_choice"){
+      $uploadType = "upload nye billeder";
+      $query ="SELECT * FROM header WHERE type = 'billede'";
+      $results = mysqli_query($connection,$query);
+      ?>
+
+      <form method="post" name="post" action="php_process/process_header_choice.php" enctype="multipart/form-data">
+        <input type="radio" name="type" value="video_choice">Video
+        <br>
+        <input type="radio" name="type" value="billede_choice" checked>Billeder
+        <br>
+        <input class="button green" type="submit" value="Gem">
+      </form>
+
+      <p><strong>Nuværende billeder:</strong></p>
+
+
+
+      <table>
+        <tr>
+          <th>navn</th>
+          <th>billede</th>
+          <th>slet</th>
+        </tr>
+        <?php while($row = mysqli_fetch_row($results)):?>
+        <tr>
+          <td><?= $row[2] ?></td>
+          <td><img src="../../header_slide/<?= $row[2] ?>" id="logo" height="100px"></td>
+          <td>
+            <form method="post" name="post" action="php_process/process_header_delete.php?id=<?=$row[0]?>" enctype="multipart/form-data">
+              <input class="button red" type="submit" value="slet">
+            </form>
+          </td>
+        </tr>
+        <?php endwhile; }else{ echo "der er sket en fejl, der er hverken valgt billede eller video";}; ?>
+      </table>
       <br><br>
-      <a class="button red">Annuller</a>
-      <a class="button green" href="#">Gem</a>
+      <p><strong><?=$uploadType ?>:</strong></p>
+      <form method="post" name="post" action="php_process/process_header_upload.php" enctype="multipart/form-data">
+        <input type="file" name="fileToUpload" id="fileToUpload" width='150px' height='150px'>
+        <input class="button green" type="submit" value="Upload">
+      </form>
     </div>
 
     <hr>

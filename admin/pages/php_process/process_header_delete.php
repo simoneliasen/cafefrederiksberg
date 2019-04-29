@@ -1,22 +1,25 @@
 <?php
 require_once 'connection.php';
 
-
   $id = $_GET['id'];
 
   $query = "SELECT * FROM header WHERE id ='$id'";
   $results = mysqli_query($connection, $query);
-  echo "hello";
-  unlink('../../../header_slide/asd.jpg');
+  $fileNameArray = mysqli_fetch_assoc($results);
+  $fileName = $fileNameArray['filename'];
+
+  unlink("../../../header_slide/$fileName");
 
 
-  $query = "DELETE FROM barmenu WHERE id = '$id'";
+  $query = "DELETE FROM header WHERE id = '$id'";
+
   $results = mysqli_query($connection, $query);
 
 
+
   if($results){
-    // header("Location: ../bar.php?");
-    // exit();
+    header("Location: ../forside.php#præsentationsvideo");
+    exit();
   }else {
     die("could not query the database");
   }

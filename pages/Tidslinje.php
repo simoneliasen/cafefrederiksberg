@@ -30,7 +30,7 @@
   <?php include '../includes/navigation.php'; ?>
 
 
-  <h2 style="text-align: center; margin: 4rem 0 2rem 0">Tidslinje</h2>
+  <h2 style="text-align: center; padding: 4.5rem 0 2rem 0">Tidslinje</h2>
 
 
 <div class="bg_dark">
