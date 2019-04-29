@@ -53,12 +53,21 @@
       </div>
     </div>
 
+<!-- Indsætter nuværende nyhedsbjælke som placeholders for tekstbokse -->
+<?php
+    $query ="SELECT * FROM announcements";
+    $results = mysqli_query($connection,$query);
+    if(!$results){
+      die("could not query the database" .mysqli_error());
+    }
+    $row = mysqli_fetch_row($results);
+?>
 <div class="task_wrapper" >
   <h1 class="task_heading">Nyhedsbjælke</h1>
   <p>Opdater Nyhedsbjælken med vigtige meddelelser eller gode tilbud.</p>
   <br>
   <form method="post" name="post" action="php_process/process_announcement_edit.php" enctype="multipart/form-data"  id="announcementform">
-    <input class="text_input" type="text" name="announcement">
+    <input class="text_input" type="text" name="announcement" placeholder="<?=$row[1]?>">
     </br><br>
     <input type="radio" name="expiration" id="noexpiration" value="male" onclick="myFunction()" >Ingen udløbsdato<br>
     <input type="radio" name="expiration" id="expiration" value="male" onclick="myFunction()" >Vælg udløbsdato
@@ -130,7 +139,6 @@
       <p><strong>Nuværende billeder:</strong></p>
 
 
-
       <table>
         <tr>
           <th>navn</th>
@@ -168,7 +176,6 @@
     }
     $row = mysqli_fetch_row($results);
 ?>
-
 
     <div class="task_wrapper">
       <h1 class="task_heading">Katalog & Katalog tekst</h1>
