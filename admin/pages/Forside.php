@@ -54,8 +54,8 @@
     </div>
 
 <div class="task_wrapper" >
-  <h1 class="task_heading">Announcement bar</h1>
-  <p>Opdater announcement baren med vigtige meddelelser eller gode tilbud.</p>
+  <h1 class="task_heading">Nyhedsbjælke</h1>
+  <p>Opdater Nyhedsbjælken med vigtige meddelelser eller gode tilbud.</p>
   <br>
   <form method="post" name="post" action="php_process/process_announcement_edit.php" enctype="multipart/form-data"  id="announcementform">
     <input class="text_input" type="text" name="announcement">
