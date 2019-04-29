@@ -104,7 +104,7 @@
         <div class="frede_live_katalog_text_container">
           <h2>Klub Frede</h2>
           <h6>Bliv medlem og spar penge</h6>
-          <p>Med et medlemskab i Klub Frede får du "indæst noget her"</p>
+          <p>Med et medlemskab i Klub Frede er du garanteret eksklusive tilbud til de mange spændende live koncerter, samt andre begivenheder som Café Frederiksberg har at byde på. Derudover er der også særlig deciderede bar og menu tilbud til alle medlemmer af Klub Frede. </p>
           <a class="button" href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">Se vores Magasin <u>her</u></a>
         </div>
       </div>
