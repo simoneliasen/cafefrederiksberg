@@ -154,6 +154,7 @@
 }
 
 </style>
+<base href="http://localhost/cafefrederiksberg/index.php">
 <?php
 
 $connection = mysqli_connect('localhost', 'root', '', 'admin');
@@ -171,12 +172,6 @@ if($header_choice['type'] == "video_choice"){
   $row = mysqli_fetch_assoc($results);
   ?>
 
-
-
-
-
-
-  <base href="http://localhost/cafefrederiksberg/index.php">
 
   <div class="header_bg_img">
     <video autoplay muted loop src="video/<?= $row['filename'] ?>" height="75vh"></video>
@@ -204,7 +199,7 @@ if($header_choice['type'] == "video_choice"){
         </div>
       </div>
     </div>
-    <video autoplay muted loop src="video/<?= $row['filename'] ?>" height="75vh"></video>
+    <video autoplay muted loop src="/video/<?= $row['filename'] ?>" height="75vh"></video>
   </div>
   <?php }else{
     $query = "SELECT filename FROM header WHERE type ='billede'";
