@@ -162,7 +162,9 @@ input[type="button"]:focus {
   border-color: #fff;
   outline: 0;
   background: rgb(16,16,16);
-  background: linear-gradient(180deg, rgba(16,16,16,0) 66%, rgba(37,0,59,1) 100%);}
+  /*Lilla linear gradient ved hoved: (fjernet)  */
+  /* background: linear-gradient(180deg, rgba(16,16,16,0) 66%, rgba(37,0,59,1) 100%); */
+  }
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
