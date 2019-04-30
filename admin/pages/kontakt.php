@@ -50,6 +50,7 @@
       <h1 class="task_heading">Åbningstider</h1>
 
       <?php
+      //Opretter forbindelse til databaser og ser om bruger er logget ind
       include('../session.php');
 
       $query ="SELECT * FROM aabningstider;";

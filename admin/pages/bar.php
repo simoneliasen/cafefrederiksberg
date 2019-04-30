@@ -19,17 +19,11 @@
 <body>
 
   <?php
-  //Opretter forbindelse via config.php, og tjekker om du er logget ind via session.php
+  //Opretter forbindelse til databaser og ser om bruger er logget ind
   include('../session.php');
 
-  $connection = mysqli_connect('localhost', 'root', '', 'admin');
-
-  if(!$connection){
-    die("Cannot connect to the database".mysqli_connect_error());
-  }
-
   $query ="SELECT * FROM barmenu;";
-  $results = mysqli_query($connection,$query);
+  $results = mysqli_query($db,$query);
 
   if(!$results){
     die("could not query the database" .mysqli_error());
