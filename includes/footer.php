@@ -1,9 +1,11 @@
 <!-- Connect til database  -->
 <?php
-$connection = mysqli_connect('localhost','root','','admin');
-if(!$connection){
+//Opretter forbindelse manelt kontra include, da de ellers er duplikeret i main-content
+$db = mysqli_connect('localhost','root','','admin');
+if(!$db){
   die("Cannot connect to the database" . mysqli_connect_error());
 }
+mysqli_set_charset($db,"utf8");
 ?>
 <footer class="container">
   <div class="row">
@@ -39,7 +41,7 @@ if(!$connection){
         <!--Ugedages åbningstider  -->
         <?php
             $query ="SELECT * FROM aabningstider ORDER BY id ASC LIMIT 7;";
-            $results = mysqli_query($connection,$query);
+            $results = mysqli_query($db,$query);
             if(!$results){
               die("could not query the database" .mysqli_error());
             }
@@ -50,7 +52,7 @@ if(!$connection){
           <!--Køkkenets åbningstider  -->
           <?php
           $query ="SELECT * FROM aabningstider ORDER BY id DESC LIMIT 1;";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -58,7 +60,7 @@ if(!$connection){
         <p><strong>Køkkenet:</strong><br><strong><?= $row[1] . '</strong> ' . $row[2] ?>
           <!--luk forbindelse til database-->
           <?php
-          mysqli_close($connection);
+          mysqli_close($db);
             ?>
       </div>
     </div>

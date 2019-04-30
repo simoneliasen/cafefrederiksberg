@@ -157,18 +157,20 @@
 <base href="http://localhost/cafefrederiksberg/index.php">
 <?php
 
-$connection = mysqli_connect('localhost', 'root', '', 'admin');
-if(!$connection){
-  die("Cannot connect to the database".mysqli_connect_error());
+//Opretter forbindelse manelt kontra include, da de ellers er duplikeret i main-content
+$db = mysqli_connect('localhost','root','','admin');
+if(!$db){
+  die("Cannot connect to the database" . mysqli_connect_error());
 }
+mysqli_set_charset($db,"utf8");
 
 $query ="SELECT type FROM header WHERE id='1'";
-$results = mysqli_query($connection, $query);
+$results = mysqli_query($db, $query);
 $header_choice = mysqli_fetch_assoc($results);
 
 if($header_choice['type'] == "video_choice"){
   $query = "SELECT filename FROM header WHERE type ='video'";
-  $results = mysqli_query($connection, $query);
+  $results = mysqli_query($db, $query);
   $row = mysqli_fetch_assoc($results);
   ?>
 
@@ -203,7 +205,7 @@ if($header_choice['type'] == "video_choice"){
   </div>
   <?php }else{
     $query = "SELECT filename FROM header WHERE type ='billede'";
-    $results = mysqli_query($connection, $query);
+    $results = mysqli_query($db, $query);
     ?>
 
     <!-- Slideshow container -->
@@ -273,4 +275,4 @@ if($header_choice['type'] == "video_choice"){
 
 
 
-<?php mysqli_close($connection); ?>
+<?php mysqli_close($db); ?>

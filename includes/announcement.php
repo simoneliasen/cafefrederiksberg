@@ -2,14 +2,15 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
 
 <?php
-//Opretter forbindelse via config.php, og tjekker om du er logget ind via session.php
-$connection = mysqli_connect('localhost','root','','admin');
-if(!$connection){
+//Opretter forbindelse manelt kontra include, da de ellers er duplikeret i main-content
+$db = mysqli_connect('localhost','root','','admin');
+if(!$db){
   die("Cannot connect to the database" . mysqli_connect_error());
 }
+mysqli_set_charset($db,"utf8");
 
 $query ="SELECT * FROM announcements";
-$results = mysqli_query($connection,$query);
+$results = mysqli_query($db,$query);
 if(!$results){
   die("could not query the database" .mysqli_error());
 }
@@ -50,5 +51,5 @@ $row = mysqli_fetch_row($results);
 
 };
 
-mysqli_close($connection);
+mysqli_close($db);
 ?>
