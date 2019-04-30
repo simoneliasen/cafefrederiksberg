@@ -24,19 +24,15 @@
   <?php include '../includes/announcement.php'; ?>
   <?php include '../includes/navigation.php'; ?>
   <?php include '../includes/header.php'; ?>
+  <!--Connects to database  -->
+  <?php include '../admin/config.php';?>
 
   <?php
-  $connection = mysqli_connect('localhost', 'root', '', 'admin');
-  if(!$connection){
-    die("Cannot connect to the database".mysqli_connect_error());
-  }
-
   $query ="SELECT * FROM menu";
-  $results = mysqli_query($connection,$query);
+  $results = mysqli_query($db,$query);
   if(!$results){
     die("could not query the database" .mysqli_error());
   }
-
   ?>
 
   <div class="container">

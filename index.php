@@ -25,30 +25,26 @@
 <body>
   <!--Tilføjer mulighed for announcementbar  -->
   <?php include 'includes/announcement.php'; ?>
-  <!--Inddrager navigationsbar fra "includes/navigation.php"-->
 
+<!--Navigations-bar  -->
   <!--Henter Jquery Script via CDN  -->
   <script
     src="https://code.jquery.com/jquery-1.12.4.js"
     integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
     crossorigin="anonymous"></script>
-
   <!--main navigationsbar  -->
   <div class="navigationbar">
   <!--Container der centrere content i navigationsmenu  -->
     <nav class="container">
-
   <!--Logo  -->
   <div class="logo">
     <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
   </div>
-
   <!-- Menu  -->
   <div class="navigationmenu">
   <a href="/cafefrederiksberg/pages/restaurant.php">Restaurant</a>
   <a href="/cafefrederiksberg/pages/bar.php">Bar</a>
   <a href="/cafefrederiksberg/pages/events.php">Events</a>
-
   <!--Selskaber dropdown  -->
   <div class="dropdown">
     <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber</a>
@@ -58,7 +54,6 @@
     <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
     </div>
   </div>
-
   <!--Om os dropdown  -->
   <div class="dropdown">
     <a href="/cafefrederiksberg/pages/tidslinje.php">Om os</a>
@@ -69,7 +64,6 @@
   </div>
   </nav>
   </div>
-
   <!-- Jquery Script that changes the color of the header on scroll (+opacity)  -->
   <script>
   var $nav = $('.navigationbar');
@@ -83,19 +77,12 @@
   });
   </script>
 
-  <!--Billedslider-->
-  <?php // include 'includes/slider.php'; ?>
-
   <!--Videoslider -->
   <?php include 'includes/header.php'; ?>
 
-  <?php
-  //Opretter forbindelse via config.php, og tjekker om du er logget ind via session.php
-  $connection = mysqli_connect('localhost','root','','admin');
-  if(!$connection){
-    die("Cannot connect to the database" . mysqli_connect_error());
-  }
-  ?>
+  <!--Connects to database  -->
+  <?php include 'admin/config.php';?>
+
 
   <!--Online bestilling  -->
 
@@ -176,7 +163,7 @@ Café Frederiksberg har budt gæster velkommen siden 1900. Café Frederiksberg h
 
   <?php
   $query ="SELECT * FROM katalog";
-  $results = mysqli_query($connection,$query);
+  $results = mysqli_query($db,$query);
   if(!$results){
     die("could not query the database" .mysqli_error());
   }
@@ -205,7 +192,7 @@ Café Frederiksberg har budt gæster velkommen siden 1900. Café Frederiksberg h
     </div>
   </div>
 <?php
-  mysqli_close($connection);
+  mysqli_close($db);
   ?>
 
   <!--Events: Facebook implementering  -->

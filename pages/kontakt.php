@@ -28,14 +28,9 @@
   <?php include '../includes/navigation.php'; ?>
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include '../includes/header.php'; ?>
+  <!--Connects to database  -->
+  <?php include '../admin/config.php';?>
 
-<!-- Opretter forbindelse til database  -->
-  <?php
-  $connection = mysqli_connect('localhost','root','','admin');
-  if(!$connection){
-    die("Cannot connect to the database" . mysqli_connect_error());
-  }
-?>
 
 <!--Online bestilling  -->
 <div class="container">
@@ -58,7 +53,7 @@
         <!--Vis første 7 entries i sql-table (ugedages åbningstider)  -->
         <?php
             $query ="SELECT * FROM aabningstider ORDER BY id ASC LIMIT 7;";
-            $results = mysqli_query($connection,$query);
+            $results = mysqli_query($db,$query);
             if(!$results){
               die("could not query the database" .mysqli_error());
             }
@@ -110,7 +105,7 @@
 <!--Printer sidste værdi i aabningstider table (Køkkens åbningstider)  -->
 <?php
 $query ="SELECT * FROM aabningstider ORDER BY id DESC LIMIT 1;";
-$results = mysqli_query($connection,$query);
+$results = mysqli_query($db,$query);
 if(!$results){
   die("could not query the database" .mysqli_error());
 }
@@ -126,7 +121,7 @@ $row = mysqli_fetch_row($results)
     </div>
   </div>
 
-<?php mysqli_close($connection);?>
+<?php mysqli_close($db);?>
   <div class="six columns">
     <h2 class="opening_headline">Vedrørende fest</h2>
     <div class="contact_info_party">

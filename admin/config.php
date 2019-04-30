@@ -14,4 +14,5 @@ if(!$db){
    die("cannot connect to database".mysqli_connect_error());
 }
 
+mysqli_set_charset($db,"utf8");
  ?>

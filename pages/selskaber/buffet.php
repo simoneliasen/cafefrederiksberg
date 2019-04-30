@@ -27,14 +27,8 @@
   <?php include '../../includes/navigation.php'; ?>
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include '../../includes/header.php'; ?>
-
-  <!--Opret forbindelse til database  -->
-  <?php
-  $connection = mysqli_connect('localhost', 'root', '', 'admin');
-  if(!$connection){
-    die("Cannot connect to the database".mysqli_connect_error());
-  }
-  ?>
+  <!--Connects to database  -->
+  <?php include '../../admin/config.php';?>
 
 <div class="wrapper buffet-menu">
   <!--Indhold centreret i wrapper-->
@@ -84,7 +78,7 @@
             <h2>Buffet 1</h2>
           <?php
           $query ="SELECT * FROM buffet WHERE category='Buffet1';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -99,7 +93,7 @@
           </div>
           <?php
           $query ="SELECT * FROM buffetpriser WHERE category='Buffet1';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -133,7 +127,7 @@
       <h2>Buffet 2</h2>
       <?php
       $query ="SELECT * FROM buffet WHERE category='Buffet2';";
-      $results = mysqli_query($connection,$query);
+      $results = mysqli_query($db,$query);
       if(!$results){
         die("could not query the database" .mysqli_error());
       }
@@ -148,7 +142,7 @@
       </div>
       <?php
       $query ="SELECT * FROM buffetpriser WHERE category='Buffet2';";
-      $results = mysqli_query($connection,$query);
+      $results = mysqli_query($db,$query);
       if(!$results){
         die("could not query the database" .mysqli_error());
       }
@@ -176,7 +170,7 @@
           <h2>Buffet 3</h2>
           <?php
           $query ="SELECT * FROM buffet WHERE category='Buffet3';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -191,7 +185,7 @@
           </div>
           <?php
           $query ="SELECT * FROM buffetpriser WHERE category='Buffet3';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -225,7 +219,7 @@
         <h2>Buffet 4</h2>
         <?php
         $query ="SELECT * FROM buffet WHERE category='Buffet4';";
-        $results = mysqli_query($connection,$query);
+        $results = mysqli_query($db,$query);
         if(!$results){
           die("could not query the database" .mysqli_error());
         }
@@ -240,7 +234,7 @@
         </div>
         <?php
         $query ="SELECT * FROM buffetpriser WHERE category='Buffet3';";
-        $results = mysqli_query($connection,$query);
+        $results = mysqli_query($db,$query);
         if(!$results){
           die("could not query the database" .mysqli_error());
         }
@@ -268,7 +262,7 @@
           <h2>USA buffet</h2>
           <?php
           $query ="SELECT * FROM buffet WHERE category='BuffetUSA';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -283,7 +277,7 @@
           </div>
           <?php
           $query ="SELECT * FROM buffetpriser WHERE category='Buffet4';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -321,7 +315,7 @@
         <h2>Italiensk buffet</h2>
         <?php
         $query ="SELECT * FROM buffet WHERE category='BuffetItaly';";
-        $results = mysqli_query($connection,$query);
+        $results = mysqli_query($db,$query);
         if(!$results){
           die("could not query the database" .mysqli_error());
         }
@@ -336,7 +330,7 @@
         </div>
         <?php
         $query ="SELECT * FROM buffetpriser WHERE category='BuffetItaly';";
-        $results = mysqli_query($connection,$query);
+        $results = mysqli_query($db,$query);
         if(!$results){
           die("could not query the database" .mysqli_error());
         }
@@ -364,7 +358,7 @@
           <h2>Øko buffet</h2>
           <?php
           $query ="SELECT * FROM buffet WHERE category='BuffetOekologi';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -379,7 +373,7 @@
           </div>
           <?php
           $query ="SELECT * FROM buffetpriser WHERE category='BuffetOekologi';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -403,7 +397,7 @@
 </div>
 </div>
 </div>
-<?php mysqli_close($connection);?>
+<?php mysqli_close($db);?>
 <?php include '../../includes/footer.php'; ?>
 </body>
 </html>

@@ -28,14 +28,9 @@
   <?php include '../../includes/navigation.php'; ?>
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include '../../includes/header.php'; ?>
+  <!--Connects to database  -->
+  <?php include '../../admin/config.php';?>
 
-  <!--Opret forbindelse til database  -->
-  <?php
-  $connection = mysqli_connect('localhost', 'root', '', 'admin');
-  if(!$connection){
-    die("Cannot connect to the database".mysqli_connect_error());
-  }
-  ?>
 
   <div class="container">
     <div class="row selskab_present">
@@ -64,7 +59,7 @@
           <h2 class="menu_kort_overskrift">Foretter</h2>
           <?php
           $query ="SELECT * FROM selskabsmenu WHERE category='forret';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -80,7 +75,7 @@
           <h2 class="menu_kort_overskrift" style="margin-top: 6rem;">Hovedretter</h2>
           <?php
           $query ="SELECT * FROM selskabsmenu WHERE category='hovedret';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -96,7 +91,7 @@
           <h2 class="menu_kort_overskrift" style="margin-top: 6rem;">Desserter</h2>
           <?php
           $query ="SELECT * FROM selskabsmenu WHERE category='dessert';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -114,7 +109,7 @@
           <!-- Laver query fra table hvor katergorien er angivet som hovedret  -->
           <?php
           $query ="SELECT * FROM selskabsmenu WHERE category='natmad';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -125,7 +120,7 @@
               <div class="menu_item_description"><?=$row[3] ?></div>
             </div>
         <?php endwhile;
-         mysqli_close($connection);?>
+         mysqli_close($db);?>
 
           <!--EKSTRA INFO-->
           <p class="menu_allergener" style="margin-top:6rem; text-align: center;">*Gæster kan få oplysninger om allergerner ved at henvende sig til personalet</p>
