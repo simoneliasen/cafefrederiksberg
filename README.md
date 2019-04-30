@@ -1,19 +1,10 @@
 Front-end
-- Tekst til Frede live appetizer (Bogi)
-- Lidt mindre voldsom hover-effekt på "indholdsoversigt"
-- Tekst til klub frede + billede
-- Fjern lilla hover element ved knapper
-- Centering af tekst til slideshow
-- Indsæt bar-menu
-- Opsæt Eventfeeed + instagram feed
+- Billede til Klub frede sektion
+- Indsæt Øl/vand og varme drikke i bar menu
 - Tekst til selskabsside + billede
 - Billeder til buffet-side
-- Links på buffetoversigt
 - Indsæt Julefrokost på buffetside
-- Bredere billeder på arrangement-side?
-- bredere menu på Restaurant og Selskabsmenu-side?
-- Tekst på tidslinjeside + Billeder
-- Margin nederst på tidslinje-side?
+- Tekst til tidslinjeside + Billeder
 - Tekst til kunstnere der vil spille
 - DJ??
 
@@ -21,9 +12,10 @@ Back-end
 - Gør import af ÆØÅ fra database muligt
 - Opsæt Buffetpriser til database (redigering deraf)
 - Kode til at indsætte data midt ind i tabeller
-- Kode for at tilføje hele sektion (arrangement, buffet etc.)
-- Mulighed for at tilføje announcementbar uden udløbsdato
-- lidt mere logisk opsætning af video/billed slider
+- Kode for at tilføje hele sektioner (arrangement, buffet etc.)
+- Mulighed for at tilføje announcementbar uden udløbsdato 
+(+ vis nuværende + ikke vær afhængig af antal i database + mulighed for at fjerne)
+- lidt mere logisk opsætning af video/billed slider ( "gem" ved blot at trykke på radio-button)
 
 Mobil
 - Mobiloptimering på side
@@ -35,7 +27,11 @@ Implementering
 - Events ($$ + sæt op med facebook)
 - Thumbnail-billede v. link sharing (relativt simpelt)
 - Google analytics
+- Opsæt Eventfeeed (m. widget + deres facebook) + instagram feed
 
 Tænk over:
 - GDPR
 - Sikkerhed (sql injections + xss + csfr + debug mode + Global error catching)
+
+Andet:
+- Tilbudsbanner til Bar-side?
