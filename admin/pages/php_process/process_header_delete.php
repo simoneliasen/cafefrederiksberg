@@ -14,7 +14,7 @@ require_once '../../config.php';
   $results = mysqli_query($db, $query);
 
   if($results){
-    header("Location: ../forside.php#præsentationsvideo");
+    header("Location: ../generelt.php#præsentationsvideo");
     exit();
   }else {
     die("could not query the database");

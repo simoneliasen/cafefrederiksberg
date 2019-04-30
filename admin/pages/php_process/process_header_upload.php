@@ -13,7 +13,7 @@
   if ($_FILES["fileToUpload"]["size"] == 0){
     $uploadOk = 0;
     echo "der er ikke valgt en fil til upload";
-    header("Location: ../forside.php#præsentationsvideo");
+    header("Location: ../generelt.php#præsentationsvideo");
     exit();
   }
 
@@ -77,7 +77,7 @@
   }
 
   if ($uploadOk == 1){
-    header("Location: ../forside.php#præsentationsvideo");
+    header("Location: ../generelt.php#præsentationsvideo");
     exit();
   }else {
     die("Kunne ikke forbinde til databasen");

@@ -8,7 +8,7 @@
   $results = mysqli_query($db, $query);
 
  if($results){
-   header("location: ../forside.php");
+   header("location: ../generelt.php");
    exit();
  }else {
    die("could not query the database");

@@ -22,7 +22,7 @@ if(!empty($text)) {
 $textquery = "UPDATE katalog SET text='$text' WHERE id=1;";
 $textresults = mysqli_query($db, $textquery);}
 
-header("location: ../forside.php");
+header("location: ../generelt.php");
 
 mysqli_close($db);
 
