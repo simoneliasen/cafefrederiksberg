@@ -113,6 +113,7 @@
             <li><a href="pages/selskaber/buffet.php#USA_buffet">USA buffet</a></li>
             <li><a href="pages/selskaber/buffet.php#Italiensk_buffet">Italiensk Buffet</a></li>
             <li><a href="pages/selskaber/buffet.php#Øko_buffet">Øko buffet</a></li>
+            <li><a href="pages/selskaber/buffet.php#BuffetJul">Jule Buffet</a></li>
           </ul>
         </div>
       </div>
@@ -446,6 +447,53 @@
   </div>
 </div>
 </div>
+
+<!-- Italiensk buffet -->
+<div id="BuffetJul">
+<div class="container BuffetJul">
+  <div class="row buffet_even">
+        <div class="six columns">
+          <div class="buffet_placeholder_img_left"></div>
+        </div>
+      <div class="six columns">
+        <h2>Jule-Buffet</h2>
+        <?php
+        $query ="SELECT * FROM buffet WHERE category='BuffetJul';";
+        $results = mysqli_query($db,$query);
+        if(!$results){
+          die("could not query the database" .mysqli_error());
+        }
+        while($row = mysqli_fetch_row($results)): ?>
+        <ul>
+          <li> <?= $row[1] ?> </li>
+        </ul>
+        <?php endwhile;?>
+        <div class="buffet_price_overskrift">
+          <h2>Priser</h2>
+          <p>inkl. fri øl, vin og vand</p>
+        </div>
+        <?php
+        $query ="SELECT * FROM buffetpriser WHERE category='BuffetJul';";
+        $results = mysqli_query($db,$query);
+        if(!$results){
+          die("could not query the database" .mysqli_error());
+        }
+        while($row = mysqli_fetch_row($results)): ?>
+        <div class="buffet_price">
+          <div class="buffet_price_info">
+            <?= $row[1] ?>
+          </div>
+          <div class="buffet_price_price">
+            <?= $row[2] ?>,-
+          </div>
+        </div>
+        <?php endwhile;?>
+      </div>
+  </div>
+</div>
+</div>
+
+
 </div>
 <?php mysqli_close($db);?>
 <?php include '../../includes/footer.php'; ?>
