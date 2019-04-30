@@ -114,21 +114,27 @@
   </div>
 </div>
 
-<div class="container" style="padding-bottom: 2rem;">
-  <div class="events_overskrift">
-    <h2>Find os på Instagram</h2>
-    <h6>Nyheder og billeder fra Frede</h6>
-  </div>
-  <script src="https://snapwidget.com/js/snapwidget.js"></script>
-  <iframe src="https://snapwidget.com/embed/678509" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
-  <div style="font:10px/14px 'Roboto','Helvetica Neue',Arial,Helvetica,sans-serif;font-weight:400;width:100%;text-align:right"><a href="https://snapwidget.com" style="color:#777;text-decoration:none;">SnapWidget · Instagram Widget</a></div>
-</div>
-
-<div class="bg_dark">
-  <div class="container">
+  <div class="container" style="padding-bottom: 2rem;">
+    <div class="events_overskrift">
+      <h2>Følg os på facebook</h2>
+      <h6>Se de seneste opdateringer direkte fra Facebook</h6>
+    </div>
     <div class='sk-ww-facebook-feed' data-embed-id='23381'></div><script src='https://www.sociablekit.com/app/embed/facebook-feed/widget.js'></script>
   </div>
+
+<div class="bg_dark">
+  <div class="container" style="padding-bottom: 2rem;">
+    <div class="events_overskrift">
+      <h2>Find os på Instagram</h2>
+      <h6>Nyheder og billeder fra Frede</h6>
+    </div>
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+    <iframe src="https://snapwidget.com/embed/678509" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+    <div style="font:10px/14px 'Roboto','Helvetica Neue',Arial,Helvetica,sans-serif;font-weight:400;width:100%;text-align:right"><a href="https://snapwidget.com" style="color:#777;text-decoration:none;">SnapWidget · Instagram Widget</a></div>
+  </div>
 </div>
+
+
 <?php include '../includes/footer.php'; ?>
 
 
