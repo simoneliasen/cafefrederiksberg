@@ -15,8 +15,8 @@ require_once 'connection.php';
 
 
   if($results){
-    // header("Location: ../bar.php?");
-    // exit();
+    header("Location: ../bar.php?");
+    exit();
   }else {
     die("could not query the database");
   }

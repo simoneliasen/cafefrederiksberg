@@ -61,8 +61,8 @@
       </div>
       <div class="one-half column frede_live_katalog_text">
         <div class="frede_live_katalog_text_container">
-          <h2><?php echo $row[2]; ?></h2>
-          <h6><?php echo $row[3]; ?></h6>
+          <h2>Frede LIVE</h2>
+          <h6>Live musik og events</h6>
           <p><?php echo $row[4]; ?></p>
           <a class="button" rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">Se vores Magasin <u>her</u></a>
         </div>
@@ -104,7 +104,7 @@
         <div class="frede_live_katalog_text_container">
           <h2>Klub Frede</h2>
           <h6>Bliv medlem og spar penge</h6>
-          <p>Med et medlemskab i Klub Frede får du "indæst noget her"</p>
+          <p>Med et medlemskab i Klub Frede er du garanteret eksklusive tilbud til de mange spændende live koncerter, samt andre begivenheder som Café Frederiksberg har at byde på. Derudover er der også særlige tilbud i baren til alle medlemmer af Klub Frede. </p>
           <a class="button" href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">Se vores Magasin <u>her</u></a>
         </div>
       </div>
@@ -114,15 +114,26 @@
   </div>
 </div>
 
-<div class="container" style="padding-bottom: 2rem;">
-  <div class="events_overskrift">
-    <h2>Find os på Instagram</h2>
-    <h6>Nyheder og billeder fra Frede</h6>
+  <div class="container" style="padding-bottom: 2rem;">
+    <div class="events_overskrift">
+      <h2>Følg os på facebook</h2>
+      <h6>Se de seneste opdateringer direkte fra Facebook</h6>
+    </div>
+    <div class='sk-ww-facebook-feed' data-embed-id='23381'></div><script src='https://www.sociablekit.com/app/embed/facebook-feed/widget.js'></script>
   </div>
-  <script src="https://snapwidget.com/js/snapwidget.js"></script>
-  <iframe src="https://snapwidget.com/embed/678509" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
-  <div style="font:10px/14px 'Roboto','Helvetica Neue',Arial,Helvetica,sans-serif;font-weight:400;width:100%;text-align:right"><a href="https://snapwidget.com" style="color:#777;text-decoration:none;">SnapWidget · Instagram Widget</a></div>
+
+<div class="bg_dark">
+  <div class="container" style="padding-bottom: 2rem;">
+    <div class="events_overskrift">
+      <h2>Find os på Instagram</h2>
+      <h6>Nyheder og billeder fra Frede</h6>
+    </div>
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+    <iframe src="https://snapwidget.com/embed/678509" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+    <div style="font:10px/14px 'Roboto','Helvetica Neue',Arial,Helvetica,sans-serif;font-weight:400;width:100%;text-align:right"><a href="https://snapwidget.com" style="color:#777;text-decoration:none;">SnapWidget · Instagram Widget</a></div>
+  </div>
 </div>
+
 
 <?php include '../includes/footer.php'; ?>
 

@@ -178,7 +178,12 @@ Hos Café Frederiksberg tilbyder vi en lang række arrangementer. Ring til os, o
         </div>
 
         <div class="one-half column">
+<<<<<<< HEAD
           <img src="img/Nytårsaften.jpg" width="400rem" height="auto">
+=======
+
+          <img src="img/nytaarsaften.jpg" width="400rem" height="auto">
+>>>>>>> 3a976f11e03d1be37b2c77a24981ad36ade21c52
 
         </div>
       </div>

@@ -1,5 +1,8 @@
 <?php
   require_once 'connection.php';
+  $query ="SELECT type FROM header WHERE id='1'";
+  $results = mysqli_query($connection, $query);
+  $header_choice = mysqli_fetch_assoc($results);
 
   $temp = explode(".", $_FILES["fileToUpload"]["name"]);
   $uploadOk = 1;
@@ -19,21 +22,29 @@
     $uploadOk = 0;
   }
 
+
+
   //tjekker om det er billede eller video fil i accepterede formater
-  if($fileType == "mp4" or $fileType == "mpeg" or $fileType == "avi" or $fileType == "mov"){
+  if($header_choice['type'] == 'video_choice' && $fileType == "mp4" or $fileType == "mpeg" or $fileType == "avi" or $fileType == "mov"){
     $target_dir = "../../../video/"; //sætter filstien for upload
     $type = "video"; //sætter typen til video
-    $newFileName =  "00000_" . round(microtime(true)) . '.' . $fileType;
+    $newFileName =  "0_" . round(microtime(true)) . '.' . $fileType;
 
-  }elseif($fileType == "jpg" or $fileType == "png" or $fileType == "jpeg"
+  }elseif($header_choice['type'] == 'billede_choice' && $fileType == "jpg" or $fileType == "png" or $fileType == "jpeg"
   or $fileType == "gif" ){
     $target_dir = "../../../header_slide/";
     $type = "billede";
-    $newFileName = reset($temp) . "." . $fileType;
+    $newFileName =  "0_" . round(microtime(true)) . '.' . $fileType;
+
   }else{
     $uploadOk = 0; //hvis det ikke er accepterede filformater skal uploadOK være 0
-    echo "Kun video filer af typen mp4, mpeg, avi og mov er tilladt" . "<br>" . "Kun billede filer af typen jpg, png, jpeg og gif er tilladt" . "<br>";
-    //fejlkode for brugeren.
+    if($header_choice['type'] == 'billede_choice'){
+      echo "<h1>Kun billede filer af typen jpg, png, jpeg og gif er tilladt</h1>";
+    }elseif($header_choice['type'] == 'video_choice'){
+      echo "<h1>Kun video filer af typen mp4, mpeg, avi og mov er tilladt</h1>";
+    }else{
+      echo "Der skete en fejl i forsøget på at uploade filen.";
+    }
   }
 
   //definerer filstien og det nye filnavn
