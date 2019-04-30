@@ -124,6 +124,11 @@
   <div style="font:10px/14px 'Roboto','Helvetica Neue',Arial,Helvetica,sans-serif;font-weight:400;width:100%;text-align:right"><a href="https://snapwidget.com" style="color:#777;text-decoration:none;">SnapWidget · Instagram Widget</a></div>
 </div>
 
+<div class="bg_dark">
+  <div class="container">
+    <div class='sk-ww-facebook-feed' data-embed-id='23381'></div><script src='https://www.sociablekit.com/app/embed/facebook-feed/widget.js'></script>
+  </div>
+</div>
 <?php include '../includes/footer.php'; ?>
 
 

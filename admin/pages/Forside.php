@@ -99,7 +99,7 @@
 
     <div class="task_wrapper" id="præsentationsvideo">
       <h1 class="task_heading">Præsentationsvideo / Billeder</h1>
-      <p>Vælg om der skal køre en video eller en serie af billeder på starten af siden</p>
+      <p><strong>Vælg om der skal køre en video eller en serie af billeder på starten af siden</strong></p>
       <?php
       $query ="SELECT type FROM header WHERE id='1'";
       $results = mysqli_query($connection, $query);
@@ -112,11 +112,9 @@
         $row_filename = mysqli_fetch_assoc($results);
       ?>
       <form method="post" name="post" action="php_process/process_header_choice.php" enctype="multipart/form-data">
-        <input type="radio" name="type" value="video_choice" checked>Video
+        <input type="radio" onchange='this.form.submit();' name="type" value="video_choice" checked>Video
         <br>
-        <input type="radio" name="type" value="billede_choice">Billeder
-        <br>
-        <input class="button green" type="submit" value="Gem">
+        <input type="radio" onchange='this.form.submit();' name="type" value="billede_choice">Billeder
       </form>
 
       <p><strong>Nuværende video:</strong> <?= $row_filename['filename'] ?> </p>
@@ -129,11 +127,9 @@
       ?>
 
       <form method="post" name="post" action="php_process/process_header_choice.php" enctype="multipart/form-data">
-        <input type="radio" name="type" value="video_choice">Video
+        <input type="radio" onchange='this.form.submit();' name="type" value="video_choice">Video
         <br>
-        <input type="radio" name="type" value="billede_choice" checked>Billeder
-        <br>
-        <input class="button green" type="submit" value="Gem">
+        <input type="radio" onchange='this.form.submit();' name="type" value="billede_choice" checked>Billeder
       </form>
 
       <p><strong>Nuværende billeder:</strong></p>
