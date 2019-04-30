@@ -1,8 +1,5 @@
 <?php
-
-  require_once 'connection.php';
-
-
+  require_once '../../config.php';
 
   $id = $_GET['id'];
 
@@ -13,11 +10,7 @@
   $category = htmlspecialchars($_POST['hidden_category']);
 
   $query = "UPDATE barmenu SET name = '$menu_item_name', description ='$menu_item_description', price = '$menu_item_price' WHERE id = '$id'";
-
-  $results = mysqli_query($connection, $query);
-
-
-
+  $results = mysqli_query($db, $query);
 
   if($results){
     header("Location: ../bar.php#category_$category");
@@ -26,9 +19,5 @@
     die("could not query the database");
   }
 
-
-
-
-  mysqli_close($connection);
-
+  mysqli_close($db);
  ?>

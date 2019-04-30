@@ -1,9 +1,9 @@
 <?php
-require_once 'connection.php';
+require_once '../../config.php';
 
   $id = $_GET['id'];
   $query = "DELETE FROM selskabsmenu WHERE id = '$id'";
-  $results = mysqli_query($connection, $query);
+  $results = mysqli_query($db, $query);
 
   if($results){
     header("Location: ../selskabsmenu.php?");
@@ -12,6 +12,6 @@ require_once 'connection.php';
     die("could not query the database");
   }
 
-mysqli_close($connection);
+mysqli_close($db);
 
 ?>
