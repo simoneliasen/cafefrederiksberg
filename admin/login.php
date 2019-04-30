@@ -23,14 +23,14 @@
 <body>
 
 <?php
-// includes config.php and checks if user is logged in
+// Opretter forbindelse til database
 include('config.php');
 session_start();
 
-// Processes form data when form is submitted via POST-method
+// Benytter POST-metoden, når formen sendes/submites
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
-// Sets input to variable and escapes charachters (as ASCII, NUL\n, \r, \, ', ",)
+// Omdanner input til variabler og fjerner "farlige karaktere", som kan bruges til SQL injections(ASCII, NUL\n, \r, \, ', ",)
 $myusername = mysqli_real_escape_string($db,$_POST['username']);
 $mypassword = mysqli_real_escape_string($db,$_POST['password']);
 
@@ -42,7 +42,7 @@ $count = mysqli_num_rows($result);
 // check result count, store session if there is only 1 result else throw error
 if($count == 1) {
   $_SESSION['login_user'] = $myusername;
-    header("location: pages/adminpanel.php");
+    header("location: pages/generelt.php");
  }else {
     $error = "Det indtastede brugernavn eller kodeord var forkert";
  }
@@ -58,12 +58,10 @@ if($count == 1) {
 
   <!-- Container til indhold på siden -->
   <div class="container loginpage">
-
     <!--Logo  -->
     <div class="logologin">
       <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="500rem" height="auto">
     </div>
-
     <!--Form  -->
     <div class="formcenter">
       <form action="" method="post">
@@ -76,17 +74,11 @@ if($count == 1) {
           <input type="password" style="width:11rem; text-align: center;" placeholder="Indsæt Kodeord" name="password" required>
         </div>
         <button type="submit" id="loginknap">Login</button>
-
 <!--Viser error-code hvis brugernavn eller kodeord er forkert  -->
     <div style = "font-size:16px; color:#cc0000; margin-top:16px"><?php echo isset($error) ? $error: ''; ?></div>
-
     </div>
-
     </form>
   </div>
-
   </div>
-
 </body>
-
 </html>
