@@ -476,6 +476,14 @@ body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4)
   padding: 3rem 0 1rem 0;
 }
 
+/*Fjerner "by socialkit" widget  */
+body > div:nth-child(13) > div.sk-ww-facebook-feed > div:nth-child(6) > a {
+  display: none;
+}
+/*Fjerner "by widget" v. instagram  */
+body > div:nth-child(14) > div > div:nth-child(4) > a {
+  display:none;
+}
 /*..............................................6 KONTAKT */
 .opening_headline{
   padding: 1rem 0;
