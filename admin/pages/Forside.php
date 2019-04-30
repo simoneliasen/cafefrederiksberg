@@ -67,12 +67,12 @@
   <p>Opdater Nyhedsbjælken med vigtige meddelelser eller gode tilbud.</p>
   <br>
   <form method="post" name="post" action="php_process/process_announcement_edit.php" enctype="multipart/form-data"  id="announcementform">
-    <input class="text_input" type="text" name="announcement" placeholder="<?=$row[1]?>">
+    <input class="text_input" type="text" name="announcement" value="<?=$row[1]?>">
     </br><br>
     <input type="radio" name="expiration" id="noexpiration" value="male" onclick="myFunction()" >Ingen udløbsdato<br>
     <input type="radio" name="expiration" id="expiration" value="male" onclick="myFunction()" >Vælg udløbsdato
     <br><br>
-    <input type="date"  style="display:none" id="date" type="date" placeholder="_" name="date" value="<?php echo date('Y-m-d'); ?>" />
+    <input type="date"  style="display:none" id="date" type="date" ="_" name="date" value="<?php echo date('Y-m-d'); ?>" />
     <br><br>
     <a class="button red" type="reset" href="#">Annuller</a>
     <input class="button green" type="submit" value="Gem">
@@ -183,16 +183,16 @@
       <form method="post" name="post" action="php_process/process_katalog_edit.php" enctype="multipart/form-data"  id="katalogform">
 
         <p><b>Link</b></p>
-      <input class="text_input" type="text" name="link" placeholder="<?php  echo $row[1]; ?>">
+      <input class="text_input" type="text" name="link" value="<?php  echo $row[1]; ?>">
 
         <p><b>Overskrift </b></p>
-      <input class="text_input" type="text" name="header" placeholder="<?php  echo $row[2]; ?>">
+      <input class="text_input" type="text" name="header" value="<?php  echo $row[2]; ?>">
 
         <p><b>Underoverskrift</b></p>
-      <input class="text_input" type="text" name="subheader" placeholder="<?php  echo $row[3]; ?>">
+      <input class="text_input" type="text" name="subheader" value="<?php  echo $row[3]; ?>">
 
         <p><b>Tekst</b></p>
-      <textarea class="text_input" id="katalogtext" type="text" cols="10" rows="6" name="text" placeholder="<?php  echo $row[4]; ?>"></textarea>
+      <textarea class="text_input" id="katalogtext" type="text" cols="10" rows="6" name="text"><?php  echo $row[4]; ?></textarea>
       <br><br>
 
       <input class="button green" type="submit" value="Gem">
