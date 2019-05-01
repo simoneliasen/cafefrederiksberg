@@ -1,7 +1,7 @@
 <?php
-  require_once 'connection.php';
+  require_once '../../config.php';
   $query ="SELECT type FROM header WHERE id='1'";
-  $results = mysqli_query($connection, $query);
+  $results = mysqli_query($db, $query);
   $header_choice = mysqli_fetch_assoc($results);
 
   $temp = explode(".", $_FILES["fileToUpload"]["name"]);
@@ -13,7 +13,7 @@
   if ($_FILES["fileToUpload"]["size"] == 0){
     $uploadOk = 0;
     echo "der er ikke valgt en fil til upload";
-    header("Location: ../forside.php#præsentationsvideo");
+    header("Location: ../generelt.php#præsentationsvideo");
     exit();
   }
 
@@ -21,8 +21,6 @@
     echo "Filen er for stor";
     $uploadOk = 0;
   }
-
-
 
   //tjekker om det er billede eller video fil i accepterede formater
   if($header_choice['type'] == 'video_choice' && $fileType == "mp4" or $fileType == "mpeg" or $fileType == "avi" or $fileType == "mov"){
@@ -66,11 +64,11 @@
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
       if($type == 'video'){
         $query = "DELETE FROM header WHERE type = 'video'";
-        $results = mysqli_query($connection, $query);
+        $results = mysqli_query($db, $query);
       }
 
       $query = "INSERT INTO header VALUES ('','$fileType','$newFileName','$type')";
-      $results = mysqli_query($connection, $query);
+      $results = mysqli_query($db, $query);
       echo "Filen ". basename($_FILES["fileToUpload"]["name"]). " er blevet uploaded.";
 
     } else {
@@ -79,11 +77,11 @@
   }
 
   if ($uploadOk == 1){
-    header("Location: ../forside.php#præsentationsvideo");
+    header("Location: ../generelt.php#præsentationsvideo");
     exit();
   }else {
     die("Kunne ikke forbinde til databasen");
   }
-  mysqli_close($connection);
+  mysqli_close($db);
 
  ?>

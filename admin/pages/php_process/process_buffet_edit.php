@@ -1,6 +1,5 @@
 <?php
-
-  require_once 'connection.php';
+  require_once '../../config.php';
 
   $id = $_GET['id'];
 
@@ -8,7 +7,7 @@
   $category = htmlspecialchars($_POST['hidden_category']);
 
   $query = "UPDATE buffet SET name = '$menu_item_name' WHERE id = '$id'";
-  $results = mysqli_query($connection, $query);
+  $results = mysqli_query($db, $query);
 
   if($results){
     header("Location: ../buffet.php#category_$category");
@@ -17,5 +16,5 @@
     die("could not query the database");
   }
 
-  mysqli_close($connection);
+  mysqli_close($db);
  ?>

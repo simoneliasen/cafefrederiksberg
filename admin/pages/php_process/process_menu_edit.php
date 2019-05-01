@@ -1,8 +1,5 @@
 <?php
-
-  require_once 'connection.php';
-
-
+  require_once '../../config.php';
 
   $id = $_GET['id'];
 
@@ -11,13 +8,8 @@
   $menu_item_price = htmlspecialchars($_POST['menu_item_price']);
   $menu_item_index = htmlspecialchars($_POST['menu_item_index']);
 
-
   $query = "UPDATE menu SET name = '$menu_item_name', description ='$menu_item_description', price = '$menu_item_price' WHERE id = '$id'";
-
-  $results = mysqli_query($connection, $query);
-
-
-
+  $results = mysqli_query($db, $query);
 
   if($results){
     header("Location: ../restaurant.php");
@@ -26,9 +18,5 @@
     die("could not query the database");
   }
 
-
-
-
-  mysqli_close($connection);
-
+  mysqli_close($db);
  ?>

@@ -1,5 +1,5 @@
 <?php
-require_once 'connection.php';
+require_once '../../config.php';
 
   $menu_item_name = htmlentities($_POST['menu_item_name']);
   $id=$_GET['id'];
@@ -10,7 +10,7 @@ require_once 'connection.php';
     '$menu_item_name',
     '$category'
   )";
-  $results = mysqli_query($connection, $query);
+  $results = mysqli_query($db, $query);
 
   if($results){
     header("Location: ../buffet.php#category_$category");
@@ -19,6 +19,6 @@ require_once 'connection.php';
     die("could not query the database");
   }
 
-mysqli_close($connection);
+mysqli_close($db);
 
 ?>
