@@ -755,14 +755,10 @@ Width: 30%;
   text-decoration: none;
 }
 
-.buffetmenu_placeholder_img_right{
-  height: 290px;
-  width: 100%;
-  background-image: url("../img/bg_img_placeholder.jpg");
-  background-size: 482px 440px;
-  float: right;
-  margin-top: 0.5rem;
-}
+
+
+
+
 /* Buffet odd numbers */
 .row.buffet_odd{
   background-color: #1E1D20;
@@ -779,7 +775,7 @@ Width: 30%;
   margin: 7% 0;
   width: 400px;
   height: 500px;
-  background-image: url("../img/buffet_placeholder.png.jpg");
+  background-image: url("../img/Buffet1.png");
   background-size: 400px 500px;
   float: right;
   }
