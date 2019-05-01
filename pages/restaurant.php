@@ -114,7 +114,7 @@
       </div>
 
       <?php endwhile;
-      mysqli_close($connection);
+      mysqli_close($db);
       ?>
 
         <p class="menu_allergener">*Gæster kan få oplysninger om allergerner ved at henvende sig til personalet</p>
