@@ -1,5 +1,5 @@
 <?php
-require_once 'connection.php';
+require_once '../../config.php';
 
   $menu_item_name = htmlentities($_POST['menu_item_name']);
   $menu_item_description = htmlentities($_POST['menu_item_description']);
@@ -11,9 +11,7 @@ require_once 'connection.php';
     '$menu_item_description',
     '$menu_item_price'
   )";
-  $results = mysqli_query($connection, $query);
-
-
+  $results = mysqli_query($db, $query);
 
   if($results){
     header("Location: ../restaurant.php");
@@ -27,7 +25,6 @@ require_once 'connection.php';
   var_dump($results);
   var_dump($query);
 
-
-mysqli_close($connection);
+mysqli_close($db);
 
 ?>

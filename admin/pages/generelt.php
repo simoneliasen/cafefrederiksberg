@@ -19,11 +19,9 @@
 
 <body>
 
-    <?php  include('../session.php');
-    $connection = mysqli_connect('localhost', 'root', '', 'admin');
-    if(!$connection){
-      die("Cannot connect to the database".mysqli_connect_error());
-    }
+    <?php  
+    //Opretter forbindelse til databaser og ser om bruger er logget ind
+    include('../session.php');
     ?>
 
 <div class="logo">
@@ -56,7 +54,7 @@
 <!-- Indsætter nuværende nyhedsbjælke som placeholders for tekstbokse -->
 <?php
     $query ="SELECT * FROM announcements";
-    $results = mysqli_query($connection,$query);
+    $results = mysqli_query($db,$query);
     if(!$results){
       die("could not query the database" .mysqli_error());
     }
@@ -102,13 +100,13 @@
       <p><strong>Vælg om der skal køre en video eller en serie af billeder på starten af siden</strong></p>
       <?php
       $query ="SELECT type FROM header WHERE id='1'";
-      $results = mysqli_query($connection, $query);
+      $results = mysqli_query($db, $query);
       $header_choice = mysqli_fetch_assoc($results);
 
       if($header_choice['type'] == "video_choice"){
         $uploadType = "Upload ny video";
         $query = "SELECT filename FROM header WHERE type ='video';";
-        $results = mysqli_query($connection, $query);
+        $results = mysqli_query($db, $query);
         $row_filename = mysqli_fetch_assoc($results);
       ?>
       <form method="post" name="post" action="php_process/process_header_choice.php" enctype="multipart/form-data">
@@ -123,7 +121,7 @@
     <?php }elseif($header_choice['type'] == "billede_choice"){
       $uploadType = "upload nye billeder";
       $query ="SELECT * FROM header WHERE type = 'billede'";
-      $results = mysqli_query($connection,$query);
+      $results = mysqli_query($db,$query);
       ?>
 
       <form method="post" name="post" action="php_process/process_header_choice.php" enctype="multipart/form-data">
@@ -166,7 +164,7 @@
 <!-- Indsætter nuværende katalog elementer som placeholders for tekstbokse -->
 <?php
     $query ="SELECT * FROM katalog WHERE id='1'";
-    $results = mysqli_query($connection, $query);
+    $results = mysqli_query($db, $query);
     if(!$results){
       die("could not query the database" .mysqli_error());
     }

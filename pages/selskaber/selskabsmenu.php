@@ -24,18 +24,63 @@
 <body>
   <!--Tilføjer mulighed for announcementbar  -->
   <?php include '../../includes/announcement.php'; ?>
-  <!--Inddrager navigationsbar fra "includes/navigation.php"-->
-  <?php include '../../includes/navigation.php'; ?>
+
+  <!--Navigations-bar  -->
+    <!--Henter Jquery Script via CDN  -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.js"
+      integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+      crossorigin="anonymous"></script>
+    <!--main navigationsbar  -->
+    <div class="navigationbar">
+    <!--Container der centrere content i navigationsmenu  -->
+      <nav class="container">
+    <!--Logo  -->
+    <div class="logo">
+      <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
+    </div>
+    <!-- Menu  -->
+    <div class="navigationmenu">
+    <a href="/cafefrederiksberg/pages/restaurant.php">Restaurant</a>
+    <a href="/cafefrederiksberg/pages/bar.php">Bar</a>
+    <a href="/cafefrederiksberg/pages/events.php">Events</a>
+    <!--Selskaber dropdown  -->
+    <div class="dropdown">
+      <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber</a>
+      <div class="dropdown-content">
+      <a href="/cafefrederiksberg/pages/selskaber/buffet.php">Buffet</a>
+      <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php">Arrangementer</a>
+      <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php" class="active nav">Selskabsmenu</a>
+      </div>
+    </div>
+    <!--Om os dropdown  -->
+    <div class="dropdown">
+      <a href="/cafefrederiksberg/pages/tidslinje.php">Om os</a>
+      <div class="dropdown-content">
+      <a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
+      </div>
+    </div>
+    </div>
+    </nav>
+    </div>
+    <!-- Jquery Script that changes the color of the header on scroll (+opacity)  -->
+    <script>
+    var $nav = $('.navigationbar');
+    $(document).scroll(function() {
+        $nav.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
+    });
+    // Does the same as above, just for The dropdown menu
+    var $dropdown = $('.dropdown-content');
+    $(document).scroll(function() {
+        $dropdown.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
+    });
+    </script>
+
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include '../../includes/header.php'; ?>
+  <!--Connects to database  -->
+  <?php include '../../admin/config.php';?>
 
-  <!--Opret forbindelse til database  -->
-  <?php
-  $connection = mysqli_connect('localhost', 'root', '', 'admin');
-  if(!$connection){
-    die("Cannot connect to the database".mysqli_connect_error());
-  }
-  ?>
 
   <div class="container">
     <div class="row selskab_present">
@@ -64,13 +109,13 @@
           <h2 class="menu_kort_overskrift">Foretter</h2>
           <?php
           $query ="SELECT * FROM selskabsmenu WHERE category='forret';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
           while($row = mysqli_fetch_row($results)): ?>
             <div class="menu_item">
-              <div class="menu_item_name"><?= $row[2] ?></div>
+              <div class="menu_item_name" style="font-weight:400;"><?= $row[2] ?></div>
               <div class="menu_item_price"><?=$row[4] ?></div>
               <div class="menu_item_description"><?=$row[3] ?></div>
             </div>
@@ -80,13 +125,13 @@
           <h2 class="menu_kort_overskrift" style="margin-top: 6rem;">Hovedretter</h2>
           <?php
           $query ="SELECT * FROM selskabsmenu WHERE category='hovedret';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
           while($row = mysqli_fetch_row($results)): ?>
             <div class="menu_item">
-              <div class="menu_item_name"><?= $row[2] ?></div>
+              <div class="menu_item_name" style="font-weight:400;"><?= $row[2] ?></div>
               <div class="menu_item_price"><?=$row[4] ?></div>
               <div class="menu_item_description"><?=$row[3] ?></div>
             </div>
@@ -96,13 +141,13 @@
           <h2 class="menu_kort_overskrift" style="margin-top: 6rem;">Desserter</h2>
           <?php
           $query ="SELECT * FROM selskabsmenu WHERE category='dessert';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
           while($row = mysqli_fetch_row($results)): ?>
             <div class="menu_item">
-              <div class="menu_item_name"><?= $row[2] ?></div>
+              <div class="menu_item_name" style="font-weight:400;"><?= $row[2] ?></div>
               <div class="menu_item_price"><?=$row[4] ?></div>
               <div class="menu_item_description"><?=$row[3] ?></div>
             </div>
@@ -114,18 +159,18 @@
           <!-- Laver query fra table hvor katergorien er angivet som hovedret  -->
           <?php
           $query ="SELECT * FROM selskabsmenu WHERE category='natmad';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
           while($row = mysqli_fetch_row($results)): ?>
             <div class="menu_item">
-              <div class="menu_item_name"><?= $row[2] ?></div>
+              <div class="menu_item_name" style="font-weight:400;"><?= $row[2] ?></div>
               <div class="menu_item_price"><?=$row[4] ?></div>
               <div class="menu_item_description"><?=$row[3] ?></div>
             </div>
         <?php endwhile;
-         mysqli_close($connection);?>
+         mysqli_close($db);?>
 
           <!--EKSTRA INFO-->
           <p class="menu_allergener" style="margin-top:6rem; text-align: center;">*Gæster kan få oplysninger om allergerner ved at henvende sig til personalet</p>

@@ -1,17 +1,17 @@
 <?php
-require_once 'connection.php';
+require_once '../../config.php';
 
 
   $id = $_GET['id'];
 
   $query = "SELECT * FROM header WHERE id ='$id'";
-  $results = mysqli_query($connection, $query);
+  $results = mysqli_query($db, $query);
   echo "hello";
   unlink('../../../header_slide/asd.jpg');
 
 
   $query = "DELETE FROM barmenu WHERE id = '$id'";
-  $results = mysqli_query($connection, $query);
+  $results = mysqli_query($db, $query);
 
 
   if($results){
@@ -24,6 +24,6 @@ require_once 'connection.php';
 
 
 
-mysqli_close($connection);
+mysqli_close($db);
 
 ?>

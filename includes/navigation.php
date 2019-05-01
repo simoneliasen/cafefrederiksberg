@@ -54,5 +54,3 @@ $(document).scroll(function() {
     $dropdown.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
 });
 </script>
-
-

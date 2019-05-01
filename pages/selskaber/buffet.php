@@ -23,18 +23,62 @@
 <body>
   <!--Tilføjer mulighed for announcementbar  -->
   <?php include '../../includes/announcement.php'; ?>
-  <!--Inddrager navigationsbar fra "includes/navigation.php"-->
-  <?php include '../../includes/navigation.php'; ?>
+
+  <!--Navigations-bar  -->
+    <!--Henter Jquery Script via CDN  -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.js"
+      integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+      crossorigin="anonymous"></script>
+    <!--main navigationsbar  -->
+    <div class="navigationbar">
+    <!--Container der centrere content i navigationsmenu  -->
+      <nav class="container">
+    <!--Logo  -->
+    <div class="logo">
+      <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
+    </div>
+    <!-- Menu  -->
+    <div class="navigationmenu">
+    <a href="/cafefrederiksberg/pages/restaurant.php">Restaurant</a>
+    <a href="/cafefrederiksberg/pages/bar.php">Bar</a>
+    <a href="/cafefrederiksberg/pages/events.php">Events</a>
+    <!--Selskaber dropdown  -->
+    <div class="dropdown">
+      <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber</a>
+      <div class="dropdown-content">
+      <a href="/cafefrederiksberg/pages/selskaber/buffet.php" class="active nav">Buffet</a>
+      <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php">Arrangementer</a>
+      <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
+      </div>
+    </div>
+    <!--Om os dropdown  -->
+    <div class="dropdown">
+      <a href="/cafefrederiksberg/pages/tidslinje.php">Om os</a>
+      <div class="dropdown-content">
+      <a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
+      </div>
+    </div>
+    </div>
+    </nav>
+    </div>
+    <!-- Jquery Script that changes the color of the header on scroll (+opacity)  -->
+    <script>
+    var $nav = $('.navigationbar');
+    $(document).scroll(function() {
+        $nav.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
+    });
+    // Does the same as above, just for The dropdown menu
+    var $dropdown = $('.dropdown-content');
+    $(document).scroll(function() {
+        $dropdown.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
+    });
+    </script>
+
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include '../../includes/header.php'; ?>
-
-  <!--Opret forbindelse til database  -->
-  <?php
-  $connection = mysqli_connect('localhost', 'root', '', 'admin');
-  if(!$connection){
-    die("Cannot connect to the database".mysqli_connect_error());
-  }
-  ?>
+  <!--Connects to database  -->
+  <?php include '../../admin/config.php';?>
 
 <div class="wrapper buffet-menu">
   <!--Indhold centreret i wrapper-->
@@ -69,6 +113,7 @@
             <li><a href="pages/selskaber/buffet.php#USA_buffet">USA buffet</a></li>
             <li><a href="pages/selskaber/buffet.php#Italiensk_buffet">Italiensk Buffet</a></li>
             <li><a href="pages/selskaber/buffet.php#Øko_buffet">Øko buffet</a></li>
+            <li><a href="pages/selskaber/buffet.php#BuffetJul">Jule Buffet</a></li>
           </ul>
         </div>
       </div>
@@ -84,7 +129,7 @@
             <h2>Buffet 1</h2>
           <?php
           $query ="SELECT * FROM buffet WHERE category='Buffet1';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -99,7 +144,7 @@
           </div>
           <?php
           $query ="SELECT * FROM buffetpriser WHERE category='Buffet1';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -133,7 +178,7 @@
       <h2>Buffet 2</h2>
       <?php
       $query ="SELECT * FROM buffet WHERE category='Buffet2';";
-      $results = mysqli_query($connection,$query);
+      $results = mysqli_query($db,$query);
       if(!$results){
         die("could not query the database" .mysqli_error());
       }
@@ -148,7 +193,7 @@
       </div>
       <?php
       $query ="SELECT * FROM buffetpriser WHERE category='Buffet2';";
-      $results = mysqli_query($connection,$query);
+      $results = mysqli_query($db,$query);
       if(!$results){
         die("could not query the database" .mysqli_error());
       }
@@ -176,7 +221,7 @@
           <h2>Buffet 3</h2>
           <?php
           $query ="SELECT * FROM buffet WHERE category='Buffet3';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -191,7 +236,7 @@
           </div>
           <?php
           $query ="SELECT * FROM buffetpriser WHERE category='Buffet3';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -225,7 +270,7 @@
         <h2>Buffet 4</h2>
         <?php
         $query ="SELECT * FROM buffet WHERE category='Buffet4';";
-        $results = mysqli_query($connection,$query);
+        $results = mysqli_query($db,$query);
         if(!$results){
           die("could not query the database" .mysqli_error());
         }
@@ -240,7 +285,7 @@
         </div>
         <?php
         $query ="SELECT * FROM buffetpriser WHERE category='Buffet3';";
-        $results = mysqli_query($connection,$query);
+        $results = mysqli_query($db,$query);
         if(!$results){
           die("could not query the database" .mysqli_error());
         }
@@ -268,7 +313,7 @@
           <h2>USA buffet</h2>
           <?php
           $query ="SELECT * FROM buffet WHERE category='BuffetUSA';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -283,7 +328,7 @@
           </div>
           <?php
           $query ="SELECT * FROM buffetpriser WHERE category='Buffet4';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -321,7 +366,7 @@
         <h2>Italiensk buffet</h2>
         <?php
         $query ="SELECT * FROM buffet WHERE category='BuffetItaly';";
-        $results = mysqli_query($connection,$query);
+        $results = mysqli_query($db,$query);
         if(!$results){
           die("could not query the database" .mysqli_error());
         }
@@ -336,7 +381,7 @@
         </div>
         <?php
         $query ="SELECT * FROM buffetpriser WHERE category='BuffetItaly';";
-        $results = mysqli_query($connection,$query);
+        $results = mysqli_query($db,$query);
         if(!$results){
           die("could not query the database" .mysqli_error());
         }
@@ -364,7 +409,7 @@
           <h2>Øko buffet</h2>
           <?php
           $query ="SELECT * FROM buffet WHERE category='BuffetOekologi';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -379,7 +424,7 @@
           </div>
           <?php
           $query ="SELECT * FROM buffetpriser WHERE category='BuffetOekologi';";
-          $results = mysqli_query($connection,$query);
+          $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
@@ -402,8 +447,55 @@
   </div>
 </div>
 </div>
+
+<!-- Italiensk buffet -->
+<div id="BuffetJul">
+<div class="container BuffetJul">
+  <div class="row buffet_even">
+        <div class="six columns">
+          <div class="buffet_placeholder_img_left"></div>
+        </div>
+      <div class="six columns">
+        <h2>Jule-Buffet</h2>
+        <?php
+        $query ="SELECT * FROM buffet WHERE category='BuffetJul';";
+        $results = mysqli_query($db,$query);
+        if(!$results){
+          die("could not query the database" .mysqli_error());
+        }
+        while($row = mysqli_fetch_row($results)): ?>
+        <ul>
+          <li> <?= $row[1] ?> </li>
+        </ul>
+        <?php endwhile;?>
+        <div class="buffet_price_overskrift">
+          <h2>Priser</h2>
+          <p>inkl. fri øl, vin og vand</p>
+        </div>
+        <?php
+        $query ="SELECT * FROM buffetpriser WHERE category='BuffetJul';";
+        $results = mysqli_query($db,$query);
+        if(!$results){
+          die("could not query the database" .mysqli_error());
+        }
+        while($row = mysqli_fetch_row($results)): ?>
+        <div class="buffet_price">
+          <div class="buffet_price_info">
+            <?= $row[1] ?>
+          </div>
+          <div class="buffet_price_price">
+            <?= $row[2] ?>,-
+          </div>
+        </div>
+        <?php endwhile;?>
+      </div>
+  </div>
 </div>
-<?php mysqli_close($connection);?>
+</div>
+
+
+</div>
+<?php mysqli_close($db);?>
 <?php include '../../includes/footer.php'; ?>
 </body>
 </html>
