@@ -76,7 +76,12 @@ if(!$results){
         <br><br>
 
         <label for="menu_item_name_input">Pris</label>
-        <input name="menu_item_price"type="text" placeholder="Angiv pris" required maxlength="10" />
+        <input name="menu_item_price" type="number" placeholder="Angiv pris" required maxlength="10" />
+        <br><br>
+
+        <label for="menu_item_name_input">indeks</label>
+        Vælg hvilken placering på menukortet som retten skal have.
+        <input name="menu_item_indeks" type="number" placeholder="Angiv indeks" required maxlength="10" />
         <br><br>
 
         <input class="button red" type="reset" value="Fortryd">
@@ -104,12 +109,12 @@ if(!$results){
             if($id == $row[0]){
 
               ?>
-              <tr id="itm<?= $row[0] ?>">
+              <tr id="itm<?= $row[1] ?>">
                 <form method="post" name="post" action="php_process/process_menu_edit.php?id=<?=$id?>" enctype="multipart/form-data">
-                  <td><input name="menu_item_index" type="text" value="<?= $row[0] ?>" required maxlength="10" /></td>
-                  <td class="menu_item_price"><input name="menu_item_price" type="text" value="<?= $row[3] ?>" required maxlength="10" /></td>
-                  <td><input name="menu_item_name" type="text" value="<?= $row[1] ?>" required maxlength="100" /></td>
-                  <td><input name="menu_item_description" type="text" value="<?= $row[2] ?>" maxlength="170" /></td>
+                  <td><input name="menu_item_index" type="text" value="<?= $row[1] ?>" required maxlength="10" /></td>
+                  <td class="menu_item_price"><input name="menu_item_price" type="text" value="<?= $row[4] ?>" required maxlength="10" /></td>
+                  <td><input name="menu_item_name" type="text" value="<?= $row[2] ?>" required maxlength="100" /></td>
+                  <td><input name="menu_item_description" type="text" value="<?= $row[3] ?>" maxlength="170" /></td>
                   <td class="table_buttons">
                     <input class="button green" type="submit" value="Gem">
                     <a class="button grey" href="restaurant.php#restaurant_table">Fortryd</a>
@@ -119,20 +124,20 @@ if(!$results){
               <?php
             }else{ ?>
               <tr>
-                <td><?= $row[0] ?></td>
-                <td><?= $row[3] ?></td>
                 <td><?= $row[1] ?></td>
+                <td><?= $row[4] ?></td>
                 <td><?= $row[2] ?></td>
+                <td><?= $row[3] ?></td>
                 <td class="table_buttons"></td>
               </tr>
           <?php  }
 
         }else{ ?>
           <tr id="restaurant_table">
-            <td><?= $row[0] ?></td>
-            <td><?= $row[3] ?></td>
             <td><?= $row[1] ?></td>
+            <td><?= $row[4] ?></td>
             <td><?= $row[2] ?></td>
+            <td><?= $row[3] ?></td>
             <td class="table_buttons">
               <form class="table_buttons" method="post" name="post" action="php_process/process_menu_delete.php?id=<?=$row[0]?>" enctype="multipart/form-data">
               <input id="<?=$row[0]?>" class="button red" type="submit" value="Slet">
