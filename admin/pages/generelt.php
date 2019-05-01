@@ -19,7 +19,7 @@
 
 <body>
 
-    <?php  
+    <?php
     //Opretter forbindelse til databaser og ser om bruger er logget ind
     include('../session.php');
     ?>
@@ -64,7 +64,7 @@
   <h1 class="task_heading">Nyhedsbjælke</h1>
   <p>Opdater Nyhedsbjælken med vigtige meddelelser eller gode tilbud.</p>
   <br>
-  <form method="post" name="post" action="php_process/process_announcement_edit.php" enctype="multipart/form-data"  id="announcementform">
+  <form method="post" name="post" action="php_process/process_announcement_edit.php" enctype="multipart/form-data"  id="announcementform" style="width: 60%;">
     <input class="text_input" type="text" name="announcement" value="<?=$row[1]?>">
     </br><br>
     <input type="radio" name="expiration" id="noexpiration" value="male" onclick="myFunction()" >Ingen udløbsdato<br>
@@ -174,7 +174,7 @@
     <div class="task_wrapper">
       <h1 class="task_heading">Katalog & Katalog tekst</h1>
       <p>Opdater et, eller flere felter</p>
-      <form method="post" name="post" action="php_process/process_katalog_edit.php" enctype="multipart/form-data"  id="katalogform">
+      <form method="post" name="post" action="php_process/process_katalog_edit.php" enctype="multipart/form-data"  id="katalogform" style="width: 60%;">
 
         <p><b>Link</b></p>
       <input class="text_input" type="text" name="link" value="<?php  echo $row[1]; ?>">
