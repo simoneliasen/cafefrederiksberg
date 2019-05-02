@@ -16,8 +16,34 @@ require_once '../../config.php';
   $results = mysqli_query($db, $query);
 
 
-  $query = "";
-  $results = mysqli_query($db, $query);
+  $query ="SELECT * FROM menu;";
+  $results = mysqli_query($db,$query);
+  $i = 1;
+
+  while($row = mysqli_fetch_row($results)):
+    if($row[1] < $menu_item_indeks){
+      $query = "UPDATE menu SET indeks = '$i' where id = '$row[0]'";
+      $indeks_results = mysqli_query($db, $query);
+      $i++;
+    }
+
+    if($row[1] == $menu_item_indeks){
+      $query = "UPDATE menu SET indeks = '$i' where id = '$row[0]'";
+      $indeks_results = mysqli_query($db, $query);
+      $i+= 2;
+    }
+
+    if($row[1] > $menu_item_indeks){
+      $i++;
+      $query = "UPDATE menu SET indeks = '$i' where id = '$row[0]'";
+      $indeks_results = mysqli_query($db, $query);
+    }
+
+
+
+    echo "$i ";
+
+  endwhile;
 
 
   if($results){
@@ -27,8 +53,7 @@ require_once '../../config.php';
     die("could not query the database");
   }
 
-  $query ="SELECT * FROM menu";
-
 mysqli_close($db);
+
 
 ?>
