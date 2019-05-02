@@ -39,7 +39,7 @@
     </div>
     <!-- Menu  -->
     <div class="navigationmenu">
-    <a href="/cafefrederiksberg/pages/restaurant.php" class="active nav">Restaurant</a>
+    <a href="/cafefrederiksberg/pages/restaurant.php" class="active nav">Restaurant Menu</a>
     <a href="/cafefrederiksberg/pages/bar.php">Bar</a>
     <a href="/cafefrederiksberg/pages/events.php">Events</a>
     <!--Selskaber dropdown  -->
