@@ -67,21 +67,21 @@ if(!$results){
       <form class="restaurant_form" method="post" name="post" action="php_process/process_menu_input.php" enctype="multipart/form-data">
 
         <label for="menu_item_name_input">Navn på ret</label>
-        <input name="menu_item_name" type="text" placeholder="Angiv navn" required maxlength="100" />
+        <input name="item" type="text" placeholder="Angiv navn" required maxlength="100" />
         <br><br>
 
 
         <label for="menu_item_name_input">Beskrivelse (valgfri)</label>
-        <input name="menu_item_description" type="text" placeholder="Angiv en beskrivelse" maxlength="170" />
+        <input name="item_desc" type="text" placeholder="Angiv en beskrivelse" maxlength="170" />
         <br><br>
 
         <label for="menu_item_name_input">Pris</label>
-        <input name="menu_item_price" type="number" placeholder="Angiv pris" required maxlength="10" />
+        <input name="item_price" type="number" placeholder="Angiv pris" required maxlength="10" />
         <br><br>
 
         <label for="menu_item_name_input">indeks</label>
         Vælg hvilken placering på menukortet som retten skal have.
-        <input name="menu_item_indeks" type="number" placeholder="Angiv indeks" required maxlength="10" />
+        <input name="item_pos" type="number" placeholder="Angiv position" maxlength="10" />
         <br><br>
 
         <input class="button red" type="reset" value="Fortryd">
@@ -111,7 +111,7 @@ if(!$results){
               ?>
               <tr id="itm<?= $row[1] ?>">
                 <form method="post" name="post" action="php_process/process_menu_edit.php?id=<?=$id?>" enctype="multipart/form-data">
-                  <td><input name="menu_item_index" type="text" value="<?= $row[1] ?>" required maxlength="10" /></td>
+                  <td><input name="menu_item_position" type="text" value="<?= $row[1] ?>" required maxlength="10" /></td>
                   <td class="menu_item_price"><input name="menu_item_price" type="text" value="<?= $row[4] ?>" required maxlength="10" /></td>
                   <td><input name="menu_item_name" type="text" value="<?= $row[2] ?>" required maxlength="100" /></td>
                   <td><input name="menu_item_description" type="text" value="<?= $row[3] ?>" maxlength="170" /></td>

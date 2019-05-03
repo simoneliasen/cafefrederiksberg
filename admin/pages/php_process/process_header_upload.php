@@ -23,7 +23,7 @@
   }
 
   //tjekker om det er billede eller video fil i accepterede formater
-  if($header_choice['type'] == 'video_choice' && $fileType == "mp4" or $fileType == "mpeg" or $fileType == "avi" or $fileType == "mov"){
+  if($header_choice['type'] == 'video_choice' && $fileType == "mp4" or $fileType == "mpeg" or $fileType == "avi" or $fileType == "mov" or $fileType == "flv"){
     $target_dir = "../../../video/"; //sætter filstien for upload
     $type = "video"; //sætter typen til video
     $newFileName =  "0_" . round(microtime(true)) . '.' . $fileType;
