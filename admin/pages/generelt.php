@@ -62,23 +62,32 @@
 ?>
 <div class="task_wrapper" >
   <h1 class="task_heading">Nyhedsbjælke</h1>
-  <p>Opdater Nyhedsbjælken med vigtige meddelelser eller gode tilbud.</p>
-  <br>
+<i><strong>Opdater Nyhedsbjælken med vigtige meddelelser eller gode tilbud.</strong></i><br><br>
+
   <form method="post" name="post" action="php_process/process_announcement_edit.php" enctype="multipart/form-data"  id="announcementform" style="width: 60%;">
     <input class="text_input" type="text" name="announcement" value="<?=$row[1]?>">
-    </br><br>
-    <input type="radio" name="expiration" id="noexpiration" value="male" onclick="myFunction()" >Ingen udløbsdato<br>
-    <input type="radio" name="expiration" id="expiration" value="male" onclick="myFunction()" >Vælg udløbsdato
+
+    <!-- <input type="radio" name="expiration" id="noexpiration" value="male" onclick="myFunction()" >Ingen udløbsdato<br> -->
+    <!-- <input type="radio" name="expiration" id="expiration" value="male" onclick="myFunction()" >Vælg udløbsdato -->
     <br><br>
-    <input type="date"  style="display:none" id="date" type="date" ="_" name="date" value="<?php echo date('Y-m-d'); ?>" />
+    <strong>Vælg udløbsdato</strong><br><br>
+    <input type="date"   id="date" type="date" ="_" name="date" value="<?php echo date('Y-m-d'); ?>" />
     <br><br>
-    <a class="button red" type="reset" href="#">Annuller</a>
     <input class="button green" type="submit" value="Gem">
+
+
   </form>
+  <br>
+  <!--Fjern nyhedsbjælke  -->
+    <form method="post" name="post" action="php_process/process_announcement_delete.php" enctype="multipart/form-data"  id="announcementform" style="width: 60%;">
+        <input class="button red" type="submit" value="Fjern nyhedsbjælke">
+</form>
 </div>
 
+
+
 <!-- Gemmer dato pr. default, viser dato, når der trykks "vælg udløbsdato" -->
-    <script>
+    <!-- <script>
     function myFunction() {
       var checkBox = document.getElementById("expiration");
       var text = document.getElementById("date");
@@ -91,7 +100,7 @@
         text.style.display = "none";
       }
     }
-    </script>
+    </script> -->
 
     <hr>
 
