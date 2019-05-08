@@ -771,14 +771,68 @@ Width: 30%;
 }
 
 
-.buffet_placeholder_img_right{
+.buffet1Picture,.buffet2Picture,.buffet3Picture,.buffet4Picture,.buffet5Picture,.buffet6Picture,.buffet7Picture,.buffet8Picture{
+  margin: 7% 0;
+  width: 400px;
+  height: 500px;
+  background-size: 400px 500px;
+
+}
+
+.buffet1Picture{
+  background-image: url("../img/Buffet1.jpg");
+  float: right;
+}
+.buffet2Picture{
+  background-image: url("../img/Buffet2.jpg");
+  float: left;
+}
+.buffet3Picture{
+  background-image: url("../img/Buffet3.jpg");
+  float: right;
+}
+.buffet4Picture{
+  background-image: url("../img/Buffet4.jpg");
+  float: left;
+}
+.buffet5Picture{
+  background-image: url("../img/usabuffet.jpg");
+  float: right;
+}
+.buffet6Picture{
+  background-image: url("../img/italienskbuffet.jpg");
+  float: left;
+}
+.buffet7Picture{
+  background-image: url("../img/økobuffet.jpg");
+  float: right;
+}
+.buffet8Picture{
+  background-image: url("../img/Julefrokost.jpg");
+  float: left;
+}
+
+
+
+
+
+/* .buffet_placeholder_img_right{
   margin: 7% 0;
   width: 400px;
   height: 500px;
   background-image: url("../img/Buffet1.png");
   background-size: 400px 500px;
   float: right;
-  }
+  } */
+
+  /* .buffet_placeholder_img_left{
+    margin: 7% 0;
+    width: 400px;
+    height: 500px;
+    background-image: url("../img/buffet_placeholder.png.jpg");
+    background-size: 400px 500px;
+    float: left;
+    } */
 
 /* Buffet even numbers */
 .buffet_even li{
@@ -790,14 +844,7 @@ Width: 30%;
   padding: 4% 0;
 }
 
-.buffet_placeholder_img_left{
-  margin: 7% 0;
-  width: 400px;
-  height: 500px;
-  background-image: url("../img/buffet_placeholder.png.jpg");
-  background-size: 400px 500px;
-  float: left;
-  }
+
 
 /* Buffet priser */
 .buffet_price_overskrift p{

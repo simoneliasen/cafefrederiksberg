@@ -160,7 +160,7 @@
           <?php endwhile;?>
         </div>
       <div class="six columns">
-        <div class="buffet_placeholder_img_right"></div>
+        <div class="buffet1Picture"></div>
       </div>
     </div>
   </div>
@@ -172,7 +172,7 @@
 <div class="container buffet_2">
   <div class="row buffet_even">
     <div class="six columns">
-      <div class="buffet_placeholder_img_left"></div>
+      <div class="buffet2Picture"></div>
     </div>
     <div class="six columns">
       <h2>Buffet 2</h2>
@@ -252,7 +252,7 @@
           <?php endwhile;?>
         </div>
       <div class="six columns">
-        <div class="buffet_placeholder_img_right"></div>
+        <div class="buffet3Picture"></div>
       </div>
     </div>
   </div>
@@ -264,7 +264,7 @@
 <div class="container buffet_4">
   <div class="row buffet_even">
         <div class="six columns">
-          <div class="buffet_placeholder_img_left"></div>
+          <div class="buffet4Picture"></div>
         </div>
       <div class="six columns">
         <h2>Buffet 4</h2>
@@ -342,13 +342,11 @@
             </div>
           </div>
           <?php endwhile;?>
-          <!--
-              Per ekstra time af fri øl, vin og vand pr. person
-              Kun 50 ,-
-           -->
+              <i style="font-size: 12px">Per ekstra time af fri øl, vin og vand pr. person
+              Kun 50 ,-</i>
         </div>
       <div class="six columns">
-        <div class="buffet_placeholder_img_right"></div>
+        <div class="buffet5Picture"></div>
       </div>
     </div>
   </div>
@@ -360,7 +358,7 @@
 <div class="container Italiensk_buffet">
   <div class="row buffet_even">
         <div class="six columns">
-          <div class="buffet_placeholder_img_left"></div>
+          <div class="buffet6Picture"></div>
         </div>
       <div class="six columns">
         <h2>Italiensk buffet</h2>
@@ -438,22 +436,23 @@
             </div>
           </div>
           <?php endwhile;?>
-          <!-- Per ekstra time af fri øl, vin og vand pr. person, Kun 50 ,-   -->
+          <i style="font-size: 12px">Per ekstra time af fri øl, vin og vand pr. person
+          Kun 50 ,-</i>
         </div>
       <div class="six columns">
-        <div class="buffet_placeholder_img_right"></div>
+        <div class="buffet7Picture"></div>
       </div>
     </div>
   </div>
 </div>
 </div>
 
-<!-- Italiensk buffet -->
+<!-- Jule buffet -->
 <div id="BuffetJul">
 <div class="container BuffetJul">
   <div class="row buffet_even">
         <div class="six columns">
-          <div class="buffet_placeholder_img_left"></div>
+          <div class="buffet8Picture"></div>
         </div>
       <div class="six columns">
         <h2>Jule-Buffet</h2>
