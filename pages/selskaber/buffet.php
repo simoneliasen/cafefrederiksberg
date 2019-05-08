@@ -89,10 +89,10 @@
     <div class="row buffet_infotekst">
       <div class="six columns">
         <p>Når du holder fest, kan det godt løbe løbsk inden regningen kommer - bare ikke hos os!</p>
-        <p>Vi hylder nemlig princippet om at man kender udgifterne på forhånd. Selvfølgelig serverer vi da gerne drinks og spiritus, men kun efter forudgående aftale, så du selv ved hvad du har sagt ja til. og uanset hvor mange øl Onkel Hans kan drikke, bliver regningen den samme.</p>
+        <p>Vi hylder nemlig princippet om, at man kender udgifterne på forhånd. Vi serverer selvfølgelig gerne drinks og spiritus, men kun efter forudgående aftale, så du selv ved hvad du har sagt ja til. Uanset hvor mange øl Onkel Hans kan drikke, bliver regningen den samme.</p>
       </div>
       <div class="six columns">
-        <p>Vore selskabslokaer er hele tiden booket op, og det skyldes ikke mindst, at kunderne kender prisen på forhånd, og at den samtidig er overkommelig. Vi har byens bedste og mest konkurrencedygtige priser på en færdigpakket fest, og det er uanset om Tante Oda holder 70 års.</p>
+        <p>Vores selskabslokaler er hele tiden booket op og det skyldes ikke mindst, at kunderne kender prisen på forhånd, og at den samtidig er overkommelig. Vi har byens bedste og mest konkurrencedygtige priser på en færdigpakket fest, og det er uanset om Tante Oda holder 70 års.</p>
       </div>
     </div>
     <div class="row buffet_allegener_smiley">

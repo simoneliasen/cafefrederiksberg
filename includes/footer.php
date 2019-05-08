@@ -13,24 +13,23 @@ mysqli_set_charset($db,"utf8");
     <div class="four columns" style="text-align: center;">
       <h3 class="footer_h3">Kontakt os</h3>
       <div class="footer_element">
-        <strong>Adresse:</strong><br>
-        Hadsundvej 1B<br>9000 Aalborg<br>Danmark
-          Adresse:
+        <strong>Adresse</strong><br>
+        Hadsundvej 1B<br>9000 Aalborg<br>
       </div>
       <div class="footer_element">
-        <strong>Telefon:</strong><br>
-          <p>(+45) 98 12 03 83</p>
+        <strong>Telefon</strong><br>
+          <p>+45 98 12 03 83</p>
       </div>
       <div class="footer_element">
-        <strong>Telefon selskaber:</strong><br>
-        <p>(+45) 22 42 43 00</p>
+        <strong>Telefon til selskaber</strong><br>
+        <p>+45 22 42 43 00</p>
       </div>
       <div class="footer_element">
-        <strong>Email:</strong><br>
+        <strong>E-mail</strong><br>
         <a href="mailto:cafefrederiksberg@gmail.com"><p>cafefrederiksberg@gmail.com</p></a>
       </div>
       <div class="footer_element">
-        <strong>Email selskaber:</strong><br>
+        <strong>E-mail til selskaber</strong><br>
         <a href="mailto:frederiksbergselskaber@gmail.com"><p>frederiksbergselskaber@gmail.com</p></a>
       </div>
     </div>
@@ -57,7 +56,7 @@ mysqli_set_charset($db,"utf8");
             die("could not query the database" .mysqli_error());
           }
           $row = mysqli_fetch_row($results)?>
-        <p><strong>Køkkenet:</strong><br><strong><?= $row[1] . '</strong> ' . $row[2] ?>
+        <p><strong>Køkkenet</strong><br><strong><?= $row[1] . '</strong> ' . $row[2] ?>
           <!--luk forbindelse til database-->
           <?php
           mysqli_close($db);
