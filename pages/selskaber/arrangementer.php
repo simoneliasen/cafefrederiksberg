@@ -46,7 +46,7 @@
     <a href="/cafefrederiksberg/pages/events.php">Events</a>
     <!--Selskaber dropdown  -->
     <div class="dropdown">
-      <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber</a>
+      <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown"></i></a>
       <div class="dropdown-content">
       <a href="/cafefrederiksberg/pages/selskaber/buffet.php">Buffet</a>
       <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php" class="active nav">Arrangementer</a>
@@ -55,7 +55,7 @@
     </div>
     <!--Om os dropdown  -->
     <div class="dropdown">
-      <a href="/cafefrederiksberg/pages/tidslinje.php">Om os</a>
+      <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown"></i></a>
       <div class="dropdown-content">
       <a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
       </div>
