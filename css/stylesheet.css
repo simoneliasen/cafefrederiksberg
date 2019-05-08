@@ -76,37 +76,44 @@ p {
   background: transparent;
   transition: background-color 0.5s ease;
   }
+
 .logo {
   display: inline;
 }
+
 #logo {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   display: inline;
 }
+
 .navigationmenu {
   margin-top: 1.3rem;
   margin-bottom: 0.5rem;
   display: inline;
   float: right;
 }
+
 .navigationmenu > p {
   display: inline;
 }
+
 .navigationmenu > a, .dropdown a {
   padding-left: 1.6rem;
   padding-right: 1.6rem;
   font-family: "Poppins";
   text-decoration: none;
 }
+
 .navigationmenu > a:hover, .dropdown a:hover {
   color: #9A9A9A;
 }
-/* CSS for dropdown funktion */
-.dropdown {
+
+.dropdown { /* CSS for dropdown funktion */
   position: relative;
   display: inline-block;
 }
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -114,6 +121,7 @@ p {
   padding: 12px 16px;
   z-index: 1;
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -122,6 +130,7 @@ p {
   padding-right: 0;
   background-color: transparent;
 }
+
 .dropdown-content a {
   padding-left: 0.8rem;
   padding-right: 0.5rem;
@@ -183,34 +192,41 @@ video {
   display: inline;
   float: left;
 }
+
 .adresseright {
     display: inline;
       float: right;
         text-align: right;
 }
+
 /*Telefon  */
 .row.telefon-wrapper {
   display: block
 margin-top: 1.3rem;
 }
+
 .telefonleft {
   display: inline;
   float: left;
 }
+
 .telefonright {
   display: inline;
   float: right;
   text-align: right;
 }
+
 /*E-mail */
 .row.e-mail-wrapper {
   display: block;
 margin-top: 1rem;
 }
+
 .e-mailleft {
   display: inline;
     float: left;
 }
+
 .e-mailright {
     display: inline;
   float: right;
@@ -241,8 +257,6 @@ margin-top: 1rem;
 }
 /*..............................................1 INDEX */
 
-/*Baggrundsfarve for Bestil online sektion  */
-
 /*Bestil online overskrift  */
 .bestil_online{
   height: 50px;
@@ -262,7 +276,6 @@ margin-top: 1rem;
 .bestil_online_knapper{
   width: 700px;
   margin-top: 0.4rem;
-
 }
 
 .bestil_online_knapper a{
@@ -274,10 +287,12 @@ margin-top: 1rem;
 .wrapper.introHistorie {
   background-color: #1E1D20;
 }
+
 .container.introHistorie {
   margin-bottom: 1rem;
   background-color: #1E1D20;
 }
+
 /*Heading styling  */
 #introhistoriecaféfrederiksbergheading {
 font-family: "Playfair Display";
@@ -285,6 +300,7 @@ font weight: bold;
 font-size: 32px;
 line-spacing: 32px;
 }
+
 /*Subheading styling  */
 #introhistoriecaféfrederiksbergsubheading {
   font-family: "Playfair Display";
@@ -292,6 +308,7 @@ line-spacing: 32px;
   font-size: 22px;
   line-spacing: 30px;
 }
+
 /*Text styling  */
 #introhistoriecaféfrederiksbergtext {
   margin-top: 16px;
@@ -299,22 +316,24 @@ line-spacing: 32px;
   font-size: 15px;
   line-spacing: 23px;
 }
+
 /*Alle introhistorie elementer  */
 .introHistorie {
 padding-bottom: 0.4rem;
 padding-top: 0.4rem;
 }
+
 /*Venstre sektion styling  */
 .six.columns.introHistorie {
   margin-top: 1rem;
 }
+
 /*Billede styling  */
 #butikfront {
   margin-top: 2rem;
   width: 32.832rem;
   height: 20.952rem;
 }
-
 
 /*Indholdsoversigt over siden  */
 .indholdsoversigt{
@@ -356,29 +375,36 @@ padding-top: 0.4rem;
 .events_overskrift_leftalign {
   display: inline;
 }
+
 .events_overskrift_rightalign{
   display:inline-block;
   margin-left: 1rem;
 }
+
 .events_overskrift_rightalign h2{
   display:inline;
 }
+
 /*"Alle events knap" fører til event-side  */
 .row.alleeventsforside {
   text-align: center;
 }
+
 .button.alleeventsforside {
   margin: 0 auto;
   margin-bottom: 2rem;
 }
+
 .row.alleeventsforside {
   text-align: center;
   margin-top: -1.2rem;
     margin-bottom: 1rem;
 }
+
 .button.alleeventsforside{
   color:white;
 }
+
 .button.alleeventsforside:hover {
   color: grey;
 }
@@ -390,6 +416,7 @@ padding-top: 0.4rem;
   height: 35rem;
   width: 100%;
 }
+
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
@@ -489,6 +516,7 @@ body > div:nth-child(14) > div > div:nth-child(4) > a {
   padding: 1rem 0;
   margin-bottom: 2.5rem 0;
 }
+
 .opening_time_day{
   padding-bottom: 2.3rem;
 }
@@ -508,13 +536,11 @@ body > div:nth-child(14) > div > div:nth-child(4) > a {
 .opening_time{
   width: 50%;
   float: right;
-
   font-weight: 700;
 }
 .opening_time_right{
   width: 85%;
   float: middle;
-
   font-weight: 700;
 }
 
@@ -636,12 +662,12 @@ margin-bottom: 2.5rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
   width: 100%;
-
-  }
+}
 
 .container.info{
   margin-top: 2rem;
 }
+
 .selskab_present{
   padding: 4rem; 0;
 }
@@ -652,7 +678,6 @@ margin-bottom: 2.5rem;
   width: 100%;
   height: 300px;
 }
-
 
 /* .............................................8.1 SELSKABSMENU */
 .header-centertext{
@@ -700,7 +725,9 @@ Width: 30%;
   padding-bottom: 35px;
   text-align: center;
 }
+
 /* .............................................8.2 BUFFET */
+
 /* Buffet menulinje */
 .buffet_infooverskrift{
   margin-top: 2rem;
@@ -755,10 +782,6 @@ Width: 30%;
   text-decoration: none;
 }
 
-
-
-
-
 /* Buffet odd numbers */
 .row.buffet_odd{
   background-color: #1E1D20;
@@ -767,16 +790,13 @@ Width: 30%;
 
 .buffet_odd li{
   list-style-type: none;
-
 }
-
 
 .buffet1Picture,.buffet2Picture,.buffet3Picture,.buffet4Picture,.buffet5Picture,.buffet6Picture,.buffet7Picture,.buffet8Picture{
   margin: 7% 0;
   width: 400px;
   height: 500px;
   background-size: 400px 500px;
-
 }
 
 .buffet1Picture{
@@ -812,28 +832,6 @@ Width: 30%;
   float: left;
 }
 
-
-
-
-
-/* .buffet_placeholder_img_right{
-  margin: 7% 0;
-  width: 400px;
-  height: 500px;
-  background-image: url("../img/Buffet1.png");
-  background-size: 400px 500px;
-  float: right;
-  } */
-
-  /* .buffet_placeholder_img_left{
-    margin: 7% 0;
-    width: 400px;
-    height: 500px;
-    background-image: url("../img/buffet_placeholder.png.jpg");
-    background-size: 400px 500px;
-    float: left;
-    } */
-
 /* Buffet even numbers */
 .buffet_even li{
   list-style-type: none;
@@ -843,8 +841,6 @@ Width: 30%;
 .row.buffet_even{
   padding: 4% 0;
 }
-
-
 
 /* Buffet priser */
 .buffet_price_overskrift p{
@@ -875,7 +871,6 @@ Width: 30%;
 .arrangementer{
   position: relative;
   height: 400px;
-
 }
 
 .arrangementer_wrapper{
@@ -883,7 +878,6 @@ Width: 30%;
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
   width: 100%;
-
   }
 
 
@@ -893,8 +887,8 @@ Width: 30%;
  padding-top: 1rem;
  color: #CCB380;
 }
-/*.............................................9.0 TIDSLINJE */
 
+/*.............................................9.0 TIDSLINJE */
 
 .middleline {
   width: 0px;
@@ -936,7 +930,6 @@ Width: 30%;
   margin-top: 70px;
 }
 
-
 .timeline_img{
   background-image: url("../img/Butikfront.png");
   height: 300px;
@@ -945,7 +938,6 @@ Width: 30%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-
 
 /* .lineitemleft{
   right: 50%;
@@ -956,7 +948,6 @@ Width: 30%;
   left: 50%;
 } */
 
-
 .line_item2{
   height: 3px;
   border-bottom: 3px dashed grey;
@@ -965,6 +956,7 @@ Width: 30%;
   left: 50%;
   top: 450px;
 }
+
 .line_item3{
   height: 3px;
   border-bottom: 3px dashed grey;
@@ -973,6 +965,7 @@ Width: 30%;
   right: 50%;
   top: 750px;
 }
+
 .line_item4{
   height: 3px;
   border-bottom: 3px dashed grey;
@@ -981,6 +974,7 @@ Width: 30%;
   left: 50%;
   top: 1050px;
 }
+
 .line_item5{
   height: 3px;
   border-bottom: 3px dashed grey;
@@ -989,6 +983,7 @@ Width: 30%;
   right: 50%;
   top: 1350px;
 }
+
 .line_item6{
   height: 3px;
   border-bottom: 3px dashed grey;
@@ -997,6 +992,7 @@ Width: 30%;
   left: 50%;
   top: 1650px;
 }
+
 .timeline_column{
   margin-top: 150px;
 }
@@ -1007,5 +1003,4 @@ Width: 30%;
 
 .timelinecontainer {
 margin-top: 200px;
-
 }
