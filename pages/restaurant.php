@@ -124,7 +124,7 @@
         <div class="menu_kontrolrapport">
           <p>Se vores kontrolrapport: </p>
           <a href="https://www.findsmiley.dk/25727" target="_blank">
-            <img src="img/kontrolrapport.jpeg" width="80px;" border="0">
+            <img src="img/kontrolrapport.JPEG" width="80px;" border="0">
           </a>
         </div>
 

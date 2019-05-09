@@ -82,7 +82,7 @@
       <div class="container arrangementer">
 
         <div class="one-half column">
-          <img src="img/buffet_placeholder.png.jpg" width="370rem" height="auto">
+          <img src="img/selskaber.jpg" width="370rem" height="auto">
         </div>
         <div class="one-half column">
           <span class="selskab_text_title"> Vi byder på lokaler til selskaber, arrangementer og lækre buffeter!</span><br>
