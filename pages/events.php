@@ -134,7 +134,7 @@
     <div class="row">
 
       <div class="one-half column frede_live_katalog">
-        <a href="https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/" target="_blank">
+        <a href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">
           <div class="frede_live_katalog_img">
           </div>
         </a>
@@ -156,7 +156,7 @@
 
   <div class="container" style="padding-bottom: 2rem;">
     <div class="events_overskrift">
-      <h2>Følg os på facebook</h2>
+      <h2>Følg os på Facebook</h2>
       <h6>Se de seneste opdateringer direkte fra Facebook</h6>
     </div>
     <div class='sk-ww-facebook-feed' data-embed-id='23381'></div><script src='https://www.sociablekit.com/app/embed/facebook-feed/widget.js'></script>
