@@ -97,9 +97,9 @@
               <a class="button" href="pages/selskaber/buffet.php">Buffet</a>
               <a class="button" href="pages/selskaber/arrangementer.php">Arrangementer</a>
               <a class="button" href="pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
-              <p> Eller kontakt os på telefon eller mail for at høre mere. </p>
-              <p> <strong>Telefon:</strong> 23603949 </p>
-              <p> <strong>Mail:</strong> Cafefrede@live.dk </p>
+              <p><i> Eller kontakt os på telefon eller mail for at høre mere.</i> </p>
+              <p> <strong>Telefon:</strong> +45 22 42 43 00 </p>
+              <p> <strong>Mail:</strong> frederiksbergselskaber@gmail.com </p>
         </div>
 
       </div>
