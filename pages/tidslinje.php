@@ -93,7 +93,7 @@
         <div class="timeline_item">
           <h2 style="margin-bottom: 1rem;">1900</h2>
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-          <div class="timeline_img"></div>
+          <div class="timeline_img1"></div>
         </div>
       </div>
 
@@ -105,21 +105,21 @@
         <div class="timeline_line timeline_line_right"></div>
         <div class="timeline_spacer"></div>
         <div class="timeline_item">
-          <h2 style="margin-bottom: 1rem;">1900</h2>
+          <h2 style="margin-bottom: 1rem;">1925</h2>
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-          <div class="timeline_img"></div>
+          <div class="timeline_img2"></div>
         </div>
       </div>
 
     </div>
-    <div class="row">
+    <div class="row last">
 
       <div class="five columns">
         <div class="timeline_line timeline_line_left"></div>
         <div class="timeline_item">
-          <h2 style="margin-bottom: 1rem;">1950</h2>
+          <h2 style="margin-bottom: 1rem;">1936</h2>
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-          <div class="timeline_img"></div>
+          <div class="timeline_img3"></div>
         </div>
       </div>
 
@@ -130,9 +130,9 @@
         <div class="timeline_line timeline_line_right"></div>
         <div class="timeline_spacer"></div>
         <div class="timeline_item">
-          <h2 style="margin-bottom: 1rem;">1900</h2>
+          <h2 style="margin-bottom: 1rem;">2019</h2>
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-          <div class="timeline_img"></div>
+          <div class="timeline_img4"></div>
         </div>
       </div>
     </div>

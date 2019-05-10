@@ -945,7 +945,7 @@ Width: 30%;
 }
 
 .timeline_spacer{
-  height: 300px;
+  height: 370px;
 }
 
 .timeline_line_left{
@@ -962,14 +962,45 @@ Width: 30%;
   margin-top: 70px;
 }
 
-.timeline_img{
-  background-image: url("../img/Butikfront.png");
+.timeline_img1{
+  background-image: url("../img/tidslinje1.jpg");
   height: 300px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
+.timeline_img2{
+  background-image: url("../img/tidslinje2.jpg");
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.timeline_img3{
+  background-image: url("../img/tidslinje3.jpg");
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.timeline_img4{
+  background-image: url("../img/tidslinje4.jpg");
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.row.last {
+  margin-bottom: 40px;
+}
+
 
 /* .lineitemleft{
   right: 50%;
