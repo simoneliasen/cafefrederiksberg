@@ -93,39 +93,39 @@
   ?>
 
   <!-- ØL & VAND -->
-  <div class="container">
-    <div class="row">
+  <!-- <div class="container">
+    <div class="row"> -->
 
-      <div class="six columns">
-        <h2 class="bar-title"><?= $category1[1] ?></h2>
+      <!-- <div class="six columns"> -->
+        <!-- <h2 class="bar-title"><?= $category1[1] ?></h2> -->
 
         <?php while($row = mysqli_fetch_row($results)):
           if($row[1] == $category1[0]){ ?>
-        <div class="bar-item">
+        <!-- <div class="bar-item">
           <div class="bar-item-name"><?= $row[2] ?></div>
           <div class="bar-item-price"><?= $row[4] ?>,-</div>
           <div class="bar-item-description"><?= $row[3] ?></div>
-        </div>
+        </div> -->
       <?php }endwhile;?>
 
       </div>
 
-      <div class="six columns">
-        <h2 class="bar-title"><?= $category2[1] ?></h2>
+      <!-- <div class="six columns">
+        <h2 class="bar-title"><?= $category2[1] ?></h2> -->
         <?php
-        mysqli_data_seek($results, 0);
-        while($row = mysqli_fetch_row($results)):
-          if($row[1] == $category2[0]){
+        // mysqli_data_seek($results, 0);
+        // while($row = mysqli_fetch_row($results)):
+        //   if($row[1] == $category2[0]){
         ?>
-        <div class="bar-item">
+        <!-- <div class="bar-item">
           <div class="bar-item-name"><?= $row[2] ?></div>
           <div class="bar-item-price"><?= $row[4] ?>,-</div>
           <div class="bar-item-description"><?= $row[3] ?></div>
-        </div>
-        <?php }endwhile;?>
-      </div>
+        </div> -->
+        <?php //}endwhile;?>
+      <!-- </div>
     </div>
-  </div>
+  </div> -->
 
 <div class="bg_dark">
   <div class="container">
