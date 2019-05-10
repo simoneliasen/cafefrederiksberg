@@ -1,7 +1,5 @@
 Front-end
 - Billede til Klub frede sektion 
-- Indsæt Øl/vand og varme drikke i bar menu (fjern? eller skriv tekst istedet?)
-- Tekst til tidslinjeside + Billeder
 - Tekst til kunstnere der vil spille (kontakt eller event-side)
 - DJ?? (info om lejning af dj)
 - Thumbnail-billede v. link sharing (relativt simpelt)
