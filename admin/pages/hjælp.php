@@ -37,6 +37,7 @@
     <li><a href="buffet.php">Buffet</a></li>
     <li><a href="kontakt.php">Kontakt</a></li>
     <li><a href="hjælp.php" class="active">Hjælp</a></li>
+    <li id="backtopage"><a href="../backtopage.php" style="color: #CCB380;"> Tilbage til siden </a></li>
   </ul>
 </div>
 

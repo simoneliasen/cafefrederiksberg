@@ -38,6 +38,7 @@
     <li><a href="buffet.php">Buffet</a></li>
     <li><a href="kontakt.php">Kontakt</a></li>
     <li><a href="hjælp.php">Hjælp</a></li>
+    <li id="backtopage"><a href="../backtopage.php" style="color: #CCB380;"> Tilbage til siden </a></li>
   </ul>
 </div>
 
@@ -60,47 +61,24 @@
     }
     $row = mysqli_fetch_row($results);
 ?>
+
 <div class="task_wrapper" >
   <h1 class="task_heading">Nyhedsbjælke</h1>
 <i><strong>Opdater Nyhedsbjælken med vigtige meddelelser eller gode tilbud.</strong></i><br><br>
-
   <form method="post" name="post" action="php_process/process_announcement_edit.php" enctype="multipart/form-data"  id="announcementform" style="width: 60%;">
     <input class="text_input" type="text" name="announcement" value="<?=$row[1]?>">
-
-    <!-- <input type="radio" name="expiration" id="noexpiration" value="male" onclick="myFunction()" >Ingen udløbsdato<br> -->
-    <!-- <input type="radio" name="expiration" id="expiration" value="male" onclick="myFunction()" >Vælg udløbsdato -->
     <br><br>
     <strong>Vælg udløbsdato</strong><br><br>
     <input type="date"   id="date" type="date" ="_" name="date" value="<?php echo date('Y-m-d'); ?>" />
     <br><br>
     <input class="button green" type="submit" value="Gem">
-
-
   </form>
   <br>
-  <!--Fjern nyhedsbjælke  -->
+  <!--Fjerner nyhedsbjælke  -->
     <form method="post" name="post" action="php_process/process_announcement_delete.php" enctype="multipart/form-data"  id="announcementform" style="width: 60%;">
         <input class="button red" type="submit" value="Fjern nyhedsbjælke">
 </form>
 </div>
-
-
-
-<!-- Gemmer dato pr. default, viser dato, når der trykks "vælg udløbsdato" -->
-    <!-- <script>
-    function myFunction() {
-      var checkBox = document.getElementById("expiration");
-      var text = document.getElementById("date");
-      if (checkBox.checked == true){
-        text.style.display = "block";
-      } else {
-         text.style.display = "none";
-      }
-      if (checkBox.checked == false){
-        text.style.display = "none";
-      }
-    }
-    </script> -->
 
     <hr>
 
@@ -140,7 +118,6 @@
       </form>
 
       <p><strong>Nuværende billeder:</strong></p>
-
 
       <table>
         <tr>
@@ -184,30 +161,24 @@
       <h1 class="task_heading">Katalog & Katalog tekst</h1>
       <p>Opdater et, eller flere felter</p>
       <form method="post" name="post" action="php_process/process_katalog_edit.php" enctype="multipart/form-data"  id="katalogform" style="width: 60%;">
-
         <p><b>Link</b></p>
       <input class="text_input" type="text" name="link" value="<?php  echo $row[1]; ?>">
-
         <p><b>Overskrift </b></p>
       <input class="text_input" type="text" name="header" value="<?php  echo $row[2]; ?>">
-
         <p><b>Underoverskrift</b></p>
       <input class="text_input" type="text" name="subheader" value="<?php  echo $row[3]; ?>">
-
         <p><b>Tekst</b></p>
       <textarea class="text_input" id="katalogtext" type="text" cols="10" rows="6" name="text"><?php  echo $row[4]; ?></textarea>
       <br><br>
-
       <input class="button green" type="submit" value="Gem">
         </form>
-
     </div>
 
     <hr>
+
     <div class="spacer" style="height:200px;"></div>
   </div>
 </div>
 
 </body>
-
 </html>
