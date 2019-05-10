@@ -771,6 +771,12 @@ Width: 30%;
 .buffet_infotekst{
   margin: 2rem 0;
 }
+/*  testsersr*/
+.menulinje-buffet{
+  margin: 0 auto;
+  text-align: center;
+}
+
 
 .menulinje-buffet ul{
   width: 100%;
@@ -782,19 +788,26 @@ Width: 30%;
 }
 
 .menulinje-buffet ul li{
-  width: 14.28%;
+  width: 12.5%;
   list-style-type: none;
   display: inline;
   margin: 0px;
   text-align: center;
-  font-size: 16px;
-  float: left;
+  font-size: 17px;
+  /* float: left; */
   font-weight: 700;
 }
 
 .menulinje-buffet ul li a{
   padding: 0.6rem 1rem;
-  word-wrap: break-word;
+  /* word-wrap: break-word; */
+  color: #CCB380;
+}
+
+.menulinje-buffet ul li a:hover{
+
+  /* word-wrap: break-word; */
+  color: grey;
 }
 
 .menulinje-buffet a{
