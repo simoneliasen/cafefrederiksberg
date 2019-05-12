@@ -2,11 +2,7 @@ Front-end
 - Billede til Klub frede sektion 
 - Tekst til kunstnere der vil spille (kontakt eller event-side)
 - DJ?? (info om lejning af dj)
-- Thumbnail-billede v. link sharing (relativt simpelt)
 - Tekst til tidslinjeside + Billeder
-- Tilbage til hjemmeside på login-side
-- Skygge på items i navigationsbaren
-- Fjern prev og next ikoner på slider (eller tilføj funktionalitet)
 
 Back-end
 - Gør det muligt at redigere buffetpriser i adminpanel
@@ -26,5 +22,5 @@ Implementering
 Idéer
 - Mere kontrast til "bestil knapper?"
 - Tilbudsbanner på bar-siden, m. drinks tilbud eller fyraftensølpris mm.
-
+- Thumbnail-billede v. link sharing (relativt simpelt)
 

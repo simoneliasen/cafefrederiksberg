@@ -109,32 +109,6 @@
   overflow: hidden;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -173,7 +147,6 @@ if($header_choice['type'] == "video_choice"){
   $results = mysqli_query($db, $query);
   $row = mysqli_fetch_assoc($results);
   ?>
-
 
   <div class="header_bg_img">
     <video autoplay muted loop src="video/<?= $row['filename'] ?>" height="75vh"></video>
@@ -218,7 +191,6 @@ if($header_choice['type'] == "video_choice"){
       </div>
       <?php endwhile ?>
 
-
       <div class="header_text">
         <h1>Aalborgs Hyggeligste</h1>
         <div class="slider">
@@ -244,12 +216,7 @@ if($header_choice['type'] == "video_choice"){
         </div>
       </div>
 
-
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
     </div>
-
 
     <script>
     var slideIndex = 0;
@@ -266,13 +233,8 @@ if($header_choice['type'] == "video_choice"){
       slides[slideIndex-1].style.display = "block";
       setTimeout(showSlides, 4000); // Change image every 2 seconds
     }
-
     </script>
 
-
-
 <?php }; ?>
-
-
 
 <?php mysqli_close($db); ?>
