@@ -841,6 +841,11 @@ Width: 30%;
   background-size: 400px 500px;
 }
 
+.buffet_list{
+  margin-bottom: 8px;
+  border-bottom: 1px solid #353535;
+}
+
 .buffet1Picture{
   background-image: url("../img/Buffet1.jpg");
   background-size: cover;

@@ -133,11 +133,13 @@
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
-          while($row = mysqli_fetch_row($results)): ?>
+          ?>
           <ul>
-            <li> <?= $row[1] ?> </li>
-          </ul>
+          <?php
+          while($row = mysqli_fetch_row($results)): ?>
+            <li class="buffet_list"> <?= $row[1] ?> </li>
           <?php endwhile;?>
+          </ul>
           <div class="buffet_price_overskrift">
             <h2>Priser</h2>
             <p>inkl. fri øl, vin og vand</p>
@@ -182,11 +184,13 @@
       if(!$results){
         die("could not query the database" .mysqli_error());
       }
-      while($row = mysqli_fetch_row($results)): ?>
+      ?>
       <ul>
-        <li> <?= $row[1] ?> </li>
-      </ul>
+      <?php
+      while($row = mysqli_fetch_row($results)): ?>
+        <li class="buffet_list"> <?= $row[1] ?> </li>
       <?php endwhile;?>
+      </ul>
       <div class="buffet_price_overskrift">
         <h2>Priser</h2>
         <p>inkl. fri øl, vin og vand</p>
@@ -225,11 +229,13 @@
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
-          while($row = mysqli_fetch_row($results)): ?>
+          ?>
           <ul>
-            <li> <?= $row[1] ?> </li>
-          </ul>
+          <?php
+          while($row = mysqli_fetch_row($results)): ?>
+            <li class="buffet_list"> <?= $row[1] ?> </li>
           <?php endwhile;?>
+          </ul>
           <div class="buffet_price_overskrift">
             <h2>Priser</h2>
             <p>inkl. fri øl, vin og vand</p>
@@ -274,11 +280,13 @@
         if(!$results){
           die("could not query the database" .mysqli_error());
         }
-        while($row = mysqli_fetch_row($results)): ?>
+        ?>
         <ul>
-          <li> <?= $row[1] ?> </li>
-        </ul>
+        <?php
+        while($row = mysqli_fetch_row($results)): ?>
+          <li class="buffet_list"> <?= $row[1] ?> </li>
         <?php endwhile;?>
+        </ul>
         <div class="buffet_price_overskrift">
           <h2>Priser</h2>
           <p>inkl. fri øl, vin og vand</p>
@@ -317,11 +325,13 @@
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
-          while($row = mysqli_fetch_row($results)): ?>
+          ?>
           <ul>
-            <li> <?= $row[1] ?> </li>
-          </ul>
+          <?php
+          while($row = mysqli_fetch_row($results)): ?>
+            <li class="buffet_list"> <?= $row[1] ?> </li>
           <?php endwhile;?>
+          </ul>
           <div class="buffet_price_overskrift">
             <h2>Priser</h2>
             <p>inkl. fri øl, vin og vand</p>
@@ -368,11 +378,13 @@
         if(!$results){
           die("could not query the database" .mysqli_error());
         }
-        while($row = mysqli_fetch_row($results)): ?>
+        ?>
         <ul>
-          <li> <?= $row[1] ?> </li>
-        </ul>
+        <?php
+        while($row = mysqli_fetch_row($results)): ?>
+          <li class="buffet_list"> <?= $row[1] ?> </li>
         <?php endwhile;?>
+        </ul>
         <div class="buffet_price_overskrift">
           <h2>Priser</h2>
           <p>inkl. fri øl, vin og vand</p>
@@ -411,11 +423,13 @@
           if(!$results){
             die("could not query the database" .mysqli_error());
           }
-          while($row = mysqli_fetch_row($results)): ?>
+          ?>
           <ul>
-            <li> <?= $row[1] ?> </li>
-          </ul>
+          <?php
+          while($row = mysqli_fetch_row($results)): ?>
+            <li class="buffet_list"> <?= $row[1] ?> </li>
           <?php endwhile;?>
+          </ul>
           <div class="buffet_price_overskrift">
             <h2>Priser</h2>
             <p>inkl. fri øl, vin og vand</p>
@@ -462,11 +476,13 @@
         if(!$results){
           die("could not query the database" .mysqli_error());
         }
-        while($row = mysqli_fetch_row($results)): ?>
+        ?>
         <ul>
-          <li> <?= $row[1] ?> </li>
-        </ul>
+        <?php
+        while($row = mysqli_fetch_row($results)): ?>
+          <li class="buffet_list"> <?= $row[1] ?> </li>
         <?php endwhile;?>
+        </ul>
         <div class="buffet_price_overskrift">
           <h2>Priser</h2>
           <p>inkl. fri øl, vin og vand</p>
