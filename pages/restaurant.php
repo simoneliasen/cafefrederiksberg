@@ -108,9 +108,9 @@
       <?php while($row = mysqli_fetch_row($results)): ?>
 
       <div class="menu_item" style="margin-top: 2rem;">
-        <div class="menu_item_name"><?= $row[1] ?></div>
-        <div class="menu_item_price"><?= $row[3] ?>,-</div>
-        <div class="menu_item_description"><?= $row[2] ?></div>
+        <div class="menu_item_name"><?= $row[2] ?></div>
+        <div class="menu_item_price"><?= $row[4] ?>,-</div>
+        <div class="menu_item_description"><?= $row[3] ?></div>
       </div>
 
       <?php endwhile;

@@ -22,7 +22,7 @@
 //Opretter forbindelse til databaser og ser om bruger er logget ind
 include('../session.php');
 
-$query ="SELECT * FROM menu;";
+$query ="SELECT * FROM menu  ORDER BY m_pos;";
 $results = mysqli_query($db,$query);
 
 if(!$results){
@@ -67,20 +67,23 @@ if(!$results){
       <p><b>Tilføj ret til menuen</b></p>
       <form class="restaurant_form" method="post" name="post" action="php_process/process_menu_input.php" enctype="multipart/form-data">
 
-        <label for="menu_item_name_input">Navn på ret</label>
-        <input name="menu_item_name" type="text" placeholder="Angiv navn" required maxlength="100" />
+        <label>Navn på ret</label>
+        <input name="m_name" type="text" placeholder="Angiv navn" required maxlength="100" />
         <br><br>
 
-
-        <label for="menu_item_name_input">Beskrivelse (valgfri)</label>
-        <input name="menu_item_description" type="text" placeholder="Angiv en beskrivelse" maxlength="170" />
+        <label>Beskrivelse (valgfri)</label>
+        <input name="m_desc" type="text" placeholder="Angiv en beskrivelse" maxlength="170" />
         <br><br>
 
-        <label for="menu_item_name_input">Pris</label>
-        <input name="menu_item_price"type="text" placeholder="Angiv pris" required maxlength="10" />
+        <label>Pris</label>
+        <input name="m_price"type="text" placeholder="Angiv pris" required maxlength="10" />
         <br><br>
 
-        <input class="button red" type="reset" value="Fortryd">
+        <label>postion (hvorhenne på menukortet skal retten indsættes?)</label>
+        <input name="m_pos"type="text" placeholder="Angiv position" required maxlength="10" />
+        <br><br>
+
+        <input class="button red"   type="reset"  value="Fortryd">
         <input class="button green" type="submit" value="Tilføj">
 
 
@@ -89,9 +92,9 @@ if(!$results){
       <hr>
 
       <table>
-        <p><b>Redigér i menuen</b></p>
+        <p><b>Redigér i menuen</b><br><i>(Hvis to menuer har samme positionsnummer, vises de efter hinanden)</i></p>
         <tr>
-          <th>Indeks</th>
+          <th>Position</th>
           <th>Pris</th>
           <th>Navn</th>
           <th>Beskrivelse</th>
@@ -100,40 +103,40 @@ if(!$results){
         <?php
         while($row = mysqli_fetch_row($results)):
         if(isset($_GET['id'])){
+          /* hvis der er sat et id, skal der et sted være en form hvor menupunktet kan redigeres */
           $id = $_GET['id'];
-          var_dump($id);
-            if($id == $row[0]){
-
-              ?>
-              <tr id="itm<?= $row[0] ?>">
-                <form method="post" name="post" action="php_process/process_menu_edit.php?id=<?=$id?>" enctype="multipart/form-data">
-                  <td><input name="menu_item_index" type="text" value="<?= $row[0] ?>" required maxlength="10" /></td>
-                  <td class="menu_item_price"><input name="menu_item_price" type="text" value="<?= $row[3] ?>" required maxlength="10" /></td>
-                  <td><input name="menu_item_name" type="text" value="<?= $row[1] ?>" required maxlength="100" /></td>
-                  <td><input name="menu_item_description" type="text" value="<?= $row[2] ?>" maxlength="170" /></td>
-                  <td class="table_buttons">
-                    <input class="button green" type="submit" value="Gem">
-                    <a class="button grey" href="restaurant.php#restaurant_table">Fortryd</a>
-                    </input>
-                  </td>
-                </form>
-              <?php
-            }else{ ?>
+          /*hvis id = row nummeret når der bliver loopet igennem databasen, skal dette felt være det felt der kan redigeres */
+          if($id == $row[0]){
+          ?>
+            <tr id="itm<?= $row[0] ?>">
+              <form method="post" name="post" action="php_process/process_menu_edit.php?id=<?=$id?>" enctype="multipart/form-data">
+                <td><input name="m_pos"   type="text" value="<?= $row[1] ?>" required maxlength="10" /></td>
+                <td><input name="m_price"  type="text" value="<?= $row[4] ?>" required maxlength="10" /></td>
+                <td><input name="m_name"  type="text" value="<?= $row[2] ?>" required maxlength="100" /></td>
+                <td><input name="m_desc" type="text" value="<?= $row[3] ?>" maxlength="170" /></td>
+                <td class="table_buttons">
+                  <input class="button green" type="submit" value="Gem">
+                  <a class="button grey" href="restaurant.php#restaurant_table">Fortryd</a>
+                  </input>
+                </td>
+              </form>
+            <?php /* hvis id =/= nummeret der bliver loopet igennem, skal tablet blot udfyldes normalt */
+          }else{ ?>
               <tr>
-                <td><?= $row[0] ?></td>
-                <td><?= $row[3] ?></td>
                 <td><?= $row[1] ?></td>
+                <td><?= $row[4] ?></td>
                 <td><?= $row[2] ?></td>
+                <td><?= $row[3] ?></td>
                 <td class="table_buttons"></td>
               </tr>
           <?php  }
 
-        }else{ ?>
+        }else{ /*Hvis der ikke er sat noget id skal tablet bare udfyldes normalt. */?>
           <tr id="restaurant_table">
-            <td><?= $row[0] ?></td>
-            <td><?= $row[3] ?></td>
             <td><?= $row[1] ?></td>
+            <td><?= $row[4] ?></td>
             <td><?= $row[2] ?></td>
+            <td><?= $row[3] ?></td>
             <td class="table_buttons">
               <form class="table_buttons" method="post" name="post" action="php_process/process_menu_delete.php?id=<?=$row[0]?>" enctype="multipart/form-data">
               <input id="<?=$row[0]?>" class="button red" type="submit" value="Slet">

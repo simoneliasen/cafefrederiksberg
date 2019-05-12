@@ -3,12 +3,12 @@
 
   $id = $_GET['id'];
 
-  $menu_item_name = htmlentities($_POST['menu_item_name']);
-  $menu_item_description = htmlentities($_POST['menu_item_description']);
-  $menu_item_price = htmlspecialchars($_POST['menu_item_price']);
-  $menu_item_index = htmlspecialchars($_POST['menu_item_index']);
+  $m_pos = htmlentities($_POST['m_pos']);
+  $m_name = htmlentities($_POST['m_name']);
+  $m_desc = htmlentities($_POST['m_desc']);
+  $m_price = htmlspecialchars($_POST['m_price']);
 
-  $query = "UPDATE menu SET name = '$menu_item_name', description ='$menu_item_description', price = '$menu_item_price' WHERE id = '$id'";
+  $query = "UPDATE menu SET m_pos = '$m_pos', m_name = '$m_name', m_desc ='$m_desc', m_price = '$m_price' WHERE id = '$id'";
   $results = mysqli_query($db, $query);
 
   if($results){

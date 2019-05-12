@@ -1,16 +1,18 @@
 <?php
 require_once '../../config.php';
 
-  $menu_item_name = htmlentities($_POST['menu_item_name']);
-  $menu_item_description = htmlentities($_POST['menu_item_description']);
-  $menu_item_price = htmlspecialchars($_POST['menu_item_price']);
+  $m_pos = htmlentities($_POST['m_pos']);
+  $m_name = htmlentities($_POST['m_name']);
+  $m_desc = htmlentities($_POST['m_desc']);
+  $m_price = htmlspecialchars($_POST['m_price']);
 
-  $query = "INSERT INTO menu VALUES(
-    '',/* ID ligger først i tablet og autoincrementes, derfor lades denne være blank */
-    '$menu_item_name',
-    '$menu_item_description',
-    '$menu_item_price'
+  $query = "INSERT INTO menu (m_pos, m_name, m_desc, m_price) VALUES(
+    '$m_pos',
+    '$m_name',
+    '$m_desc',
+    '$m_price'
   )";
+
   $results = mysqli_query($db, $query);
 
   if($results){
