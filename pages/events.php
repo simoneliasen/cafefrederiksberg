@@ -135,7 +135,7 @@
 
       <div class="one-half column frede_live_katalog">
         <a href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">
-          <div class="frede_live_katalog_img">
+          <div class="klub_frede_img">
           </div>
         </a>
       </div>

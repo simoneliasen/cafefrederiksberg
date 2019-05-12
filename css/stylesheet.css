@@ -506,6 +506,15 @@ body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4)
   float: right;
 }
 
+.klub_frede_img{
+  margin-top: 30px;
+  height: 540px;
+  width: 382px;
+  background-image: url("../img/fredelivelogo.svg");
+  background-size: 382px 540px;
+  float: right;
+}
+
 .frede_live_katalog_text{
   position: relative;
   height: 600px;
@@ -833,34 +842,42 @@ Width: 30%;
 
 .buffet1Picture{
   background-image: url("../img/Buffet1.jpg");
+  background-size: cover;
   float: right;
 }
 .buffet2Picture{
   background-image: url("../img/Buffet2.jpg");
+  background-size: cover;
   float: left;
 }
 .buffet3Picture{
   background-image: url("../img/Buffet3.jpg");
+  background-size: cover;
   float: right;
 }
 .buffet4Picture{
   background-image: url("../img/Buffet4.jpg");
+  background-size: cover;
   float: left;
 }
 .buffet5Picture{
   background-image: url("../img/usabuffet.jpg");
+  background-size: cover;
   float: right;
 }
 .buffet6Picture{
   background-image: url("../img/italienskbuffet.jpg");
+  background-size: cover;
   float: left;
 }
 .buffet7Picture{
   background-image: url("../img/økobuffet.jpg");
+  background-size: cover;
   float: right;
 }
 .buffet8Picture{
   background-image: url("../img/Julefrokost.jpg");
+  background-size: cover;
   float: left;
 }
 
