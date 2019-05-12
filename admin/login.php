@@ -49,13 +49,6 @@ if($count == 1) {
 }
  ?>
 
-  <!--Tilbage til forsiden  -->
-  <div class="loginbacktoindex">
-    <a href="/cafefrederiksberg/index.php" id="backtofrontpage">
-      <p>Tilbage til Forsiden </p>
-    </a>
-  </div>
-
   <!-- Container til indhold på siden -->
   <div class="container loginpage">
     <!--Logo  -->
@@ -73,7 +66,9 @@ if($count == 1) {
           <label for="password"><b>Kodeord</b></label>
           <input type="password" style="width:11rem; text-align: center;" placeholder="Indsæt Kodeord" name="password" required>
         </div>
-        <button type="submit" id="loginknap">Login</button>
+        <br>
+        <button><a href="/cafefrederiksberg/index.php" style="text-decoration:none;">Tilbage</a></button>
+        <button type="submit" id="loginknap"  style="color:#CCB380; border-color:#CCB380; margin-left: 1rem;">Login</button>
 <!--Viser error-code hvis brugernavn eller kodeord er forkert  -->
     <div style = "font-size:16px; color:#cc0000; margin-top:16px"><?php echo isset($error) ? $error: ''; ?></div>
     </div>
