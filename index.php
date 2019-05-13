@@ -209,8 +209,7 @@ Café Frederiksberg har budt gæster velkommen siden 1900. Café Frederiksberg h
     </div>
 <!--Facebook widget  -->
     </div>
-    <div class='sk-fb-event' data-embed-id='23329'>
-    </div><script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
+    <div id="event_oversigt" class='sk-fb-event' data-embed-id='23826'></div><script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
   </div>
 
 
