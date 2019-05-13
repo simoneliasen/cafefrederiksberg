@@ -308,7 +308,7 @@ table tr td .menu_item_index{ padding-left: 10px; font-weight: 700;}
 table tr td:first-child{ width: 50px; }
 table tr td input{padding: 2px 3px;}
 table tr .menu_item_price{ width: 50px; }
-table tr .table_buttons{ float: right;}
+table tr .table_buttons{ width: 180px;}
 table tr .table_buttons .button{ float: right; margin-left: 4px; }
 tr:nth-child(even) {background-color: #f2f2f2;}
 

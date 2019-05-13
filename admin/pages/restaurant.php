@@ -22,7 +22,7 @@
 //Opretter forbindelse til databaser og ser om bruger er logget ind
 include('../session.php');
 
-$query ="SELECT * FROM menu  ORDER BY m_pos;";
+$query ="SELECT * FROM menu ORDER BY m_pos;";
 $results = mysqli_query($db,$query);
 
 if(!$results){
@@ -79,7 +79,7 @@ if(!$results){
         <input name="m_price"type="text" placeholder="Angiv pris" required maxlength="10" />
         <br><br>
 
-        <label>postion (hvorhenne på menukortet skal retten indsættes?)</label>
+        <label>position (hvorhenne på menukortet skal retten indsættes?)</label>
         <input name="m_pos"type="text" placeholder="Angiv position" required maxlength="10" />
         <br><br>
 

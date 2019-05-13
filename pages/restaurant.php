@@ -79,7 +79,7 @@
   <?php include '../admin/config.php';?>
 
   <?php
-  $query ="SELECT * FROM menu";
+  $query ="SELECT * FROM menu ORDER BY m_pos  ";
   $results = mysqli_query($db,$query);
   if(!$results){
     die("could not query the database" .mysqli_error());
