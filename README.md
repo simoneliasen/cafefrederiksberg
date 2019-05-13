@@ -1,8 +1,7 @@
 Front-end
-- Billede til Klub frede sektion 
 - Tekst til kunstnere der vil spille (kontakt eller event-side)
 - DJ?? (info om lejning af dj)
-- Tekst til tidslinjeside + Billeder
+- Tekst til tidslinjeside + Billeder (usability)
 
 Back-end
 - Gør det muligt at redigere buffetpriser i adminpanel
