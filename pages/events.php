@@ -161,7 +161,7 @@
       <h6>Se de seneste opdateringer direkte fra Facebook</h6>
     </div>
   <!--Facebook widget page evens  -->
-
+<div class='sk-ww-facebook-feed' data-embed-id='23827'></div><script src='https://www.sociablekit.com/app/embed/facebook-feed/widget.js'></script>
 <div class="bg_dark">
   <div class="container" style="padding-bottom: 2rem;">
     <div class="events_overskrift">
