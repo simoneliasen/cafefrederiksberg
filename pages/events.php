@@ -126,7 +126,8 @@
       <h6>Kommende Events</h6>
     </div>
   </div>
-  <div id="event_oversigt" class='sk-fb-event' data-embed-id='23329'></div><script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
+<!--Facebook page events  -->
+  <div id="event_oversigt" class='sk-fb-event' data-embed-id='23826'></div><script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
 </div>
 
 <div class="bg_dark">
@@ -159,8 +160,7 @@
       <h2>Følg os på Facebook</h2>
       <h6>Se de seneste opdateringer direkte fra Facebook</h6>
     </div>
-    <div class='sk-ww-facebook-feed' data-embed-id='23381'></div><script src='https://www.sociablekit.com/app/embed/facebook-feed/widget.js'></script>
-  </div>
+  <!--Facebook widget page evens  -->
 
 <div class="bg_dark">
   <div class="container" style="padding-bottom: 2rem;">
