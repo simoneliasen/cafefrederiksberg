@@ -52,4 +52,13 @@ $row = mysqli_fetch_row($results);
 };
 
 mysqli_close($db);
+
+
 ?>
+
+<style>
+.announcementwrapper {
+  background-color: #CCB380;
+  color: black;
+}
+</style>
