@@ -96,8 +96,17 @@
 
 <div class="bg_dark">
   <div class="container opening_info">
+<br>
+    <div class="container" style="text-align: center;">
+      <p><i>Vi træffes bedst på telefon kl. <strong>10.00-11.30</strong>, kl. <strong>14.30-16.30</strong> samt efter kl. <strong>20.30</strong></i></p>
+    </div>
+
     <div class="row opening_information">
+
       <div class="six columns">
+
+
+
         <h2 class="opening_headline">Åbningstider</h2>
 
         <!--Vis første 7 entries i sql-table (ugedages åbningstider)  -->
@@ -192,9 +201,6 @@ $row = mysqli_fetch_row($results)
     </div>
   </div>
 </div>
-</div>
-<div class="container" style="text-align: center;">
-  <p><i>Vi træffes bedst på telefon kl. <strong>10.00-11.30</strong>, kl. <strong>14.30-16.30</strong> samt efter kl. <strong>20.30</strong></i></p>
 </div>
 
 </div>
