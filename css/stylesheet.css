@@ -18,8 +18,9 @@ E. GENEREL
 8.  SELSKABER
 8.1 SELSKABSMENU
 8.2 BUFFET
-8.3 ARRANGEMENER
+8.3 ARRANGEMENTER
 9.  TIDSLINJE
+
 COLORS
 -----------
 GULD          #CCB380
@@ -103,7 +104,7 @@ p {
   padding-right: 1.6rem;
   font-family: "Poppins";
   text-decoration: none;
-text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 1);
 }
 
 .navigationmenu > a:hover, .dropdown a:hover {

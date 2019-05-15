@@ -58,7 +58,7 @@ mysqli_close($db);
 
 <style>
 .announcementwrapper {
-  background-color: #CCB380;
-  color: black;
+  
+  font-weight: 700;
 }
 </style>
