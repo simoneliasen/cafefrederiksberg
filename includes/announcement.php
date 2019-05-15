@@ -58,7 +58,6 @@ mysqli_close($db);
 
 <style>
 .announcementwrapper {
-  
   font-weight: 700;
 }
 </style>
