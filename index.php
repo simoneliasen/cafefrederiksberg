@@ -89,11 +89,10 @@
   <div class="container">
     <div class="bestil_online">
       <h2 class="bestil_online_overskrift">Bestil Online</h2>
-
       <div class="bestil_online_knapper">
-        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Bord</a>
-        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Billetter</a>
-        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/">Take Away</a>
+        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bord</a>
+        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Billetter</a>
+        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Take Away</a>
       </div>
 
     </div>
