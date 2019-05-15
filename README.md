@@ -3,23 +3,18 @@ Front-end
 - DJ?? (info om lejning af dj)
 - Tekst til tidslinjeside + Billeder (usability)
 
-Back-end
-- Gør det muligt at redigere buffetpriser i adminpanel
-- Kode til at indsætte data midt ind i tabeller
-
 Mobil
 - Mobiloptimering på side
 - mobilmenu til mobiler (duh)
 
+Andet
+- - Navigationsstruktur skal rettes (virker ikke på web)
+
 Implementering
-- Navigationsstruktur skal rettes (virker ikke på web)
 - SSL-certifikat (virker på 90 dages basis, skal vi spørge om)
-- Facebook + instagram integrering (Vil de betale for det?)
+- Facebook + instagram integrering 
 - Google analytics
 
-
 Idéer
-- Mere kontrast til "bestil knapper?"
-- Tilbudsbanner på bar-siden, m. drinks tilbud eller fyraftensølpris mm.
 - Thumbnail-billede v. link sharing (relativt simpelt)
 
