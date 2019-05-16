@@ -34,35 +34,34 @@
     crossorigin="anonymous"></script>
   <!--main navigationsbar  -->
   <div class="navigationbar">
-  <!--Container der centrere content i navigationsmenu  -->
     <nav class="container">
-  <!--Logo  -->
-  <div class="logo">
-    <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
-  </div>
-  <!-- Menu  -->
-  <div class="navigationmenu">
-  <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
-  <a href="/cafefrederiksberg/pages/bar.php">Barkort</a>
-  <a href="/cafefrederiksberg/pages/events.php">Events</a>
-  <!--Selskaber dropdown  -->
-  <div class="dropdown">
-    <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown"></i></a>
-    <div class="dropdown-content">
-    <a href="/cafefrederiksberg/pages/selskaber/buffet.php">Buffet</a>
-    <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php">Arrangementer</a>
-    <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
+
+    <div class="logo">
+      <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
     </div>
-  </div>
-  <!--Om os dropdown  -->
-  <div class="dropdown">
-    <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown"></i></a>
-    <div class="dropdown-content">
-    <a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
-    </div>
-  </div>
-  </div>
-  </nav>
+
+      <div class="navigationmenu">
+      <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
+      <a href="/cafefrederiksberg/pages/bar.php">Barkort</a>
+      <a href="/cafefrederiksberg/pages/events.php">Events</a>
+
+        <div class="dropdown">
+          <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown"></i></a>
+          <div class="dropdown-content">
+          <a href="/cafefrederiksberg/pages/selskaber/buffet.php">Buffet</a>
+          <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php">Arrangementer</a>
+          <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown"></i></a>
+          <div class="dropdown-content">
+          <a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
+          </div>
+        </div>
+      </div>
+    </nav>
   </div>
   <!-- Jquery Script that changes the color of the header on scroll (+opacity)  -->
   <script>
@@ -83,40 +82,23 @@
   <!--Connects to database  -->
   <?php include 'admin/config.php';?>
 
-
-  <!--Online bestilling  -->
-  <div class="container">
-    <div class="bestil_online">
-      <h2 class="bestil_online_overskrift">Bestil Online</h2>
-      <div class="bestil_online_knapper">
-        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bord</a>
-        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Billetter</a>
-        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Take Away</a>
-      </div>
-    </div>
-  </div>
-
-
   <!-- introHistorie -->
-  <div class="wrapper introHistorie">
-    <!--Indhold centreret i wrapper-->
-    <div class="container introHistorie">
+  <div class="bg_dark intro_historie">
+    <div class="container">
+      <div class="row">
 
-      <!--Intro-tekst  -->
-      <div class="six columns introHistorie">
-        <h2 id="introhistoriecaféfrederiksbergheading"> Café Frederiksberg </h2>
-        <h4 id="introhistoriecaféfrederiksbergsubheading"> Siden år 1900</h4>
-        <p id="introhistoriecaféfrederiksbergtext">
-Café Frederiksberg har budt gæster velkommen siden 1900. Café Frederiksberg har eksisteret siden 1900, og er dermed Aalborgs ældste værtshus på samme beliggenhed – men også Aalborgs største værtshus. Et værtshus der fra første åbningsdag for 119 år siden, og har kun haft 3 forskellige ejere gange gennem alle årene. Kært barn har mange navne, og Café Frederiksberg blev før i tiden kaldt for “Bergen” eller “Berg” – nu om dage er det mest navnet “Frede” som gæsterne ynder at burge, og derfor har Café Frederiksbergs musikmagasin også fået navnet FREDE LIVE.
-        </p>
-        <!--se Café frederiksbergs tidlinje knap  -->
-        <a class="button introhistorie" href="pages/tidslinje.php">Se hele Café Frederikbergs historie <u>her</u></a>
+        <!--Intro-tekst  -->
+        <div class="six columns">
+          <h2> Café Frederiksberg </h2>
+          <h6> Siden år 1900</h4>
+          <p>Café Frederiksberg har budt gæster velkommen siden 1900 og er dermed Aalborgs ældste værtshus på samme beliggenhed – men også Aalborgs største værtshus. Igennem de 119 år Café Frederiksberg har eksisteret, har der kun være tre ejerskift. Nu om dage er det navnet “Frede” som gæsterne ynder at bruge, og derfor har Café Frederiksbergs musikmagasin også fået navnet FREDE LIVE.</p>
+          <!--se Café frederiksbergs tidlinje knap  -->
+          <a class="button" href="pages/tidslinje.php">Se HUSK MIG<u>her</u></a>
+        </div>
+        <!--Billede af butiksfront  -->
+        <div class="six columns butikfront">
+        </div>
       </div>
-      <!--Billede af butiksfront  -->
-      <div class="six columns">
-        <img src="img/Butikfront.png" alt="billede af butikfront" id="butikfront">
-      </div>
-
     </div>
   </div>
 
@@ -188,7 +170,7 @@ Café Frederiksberg har budt gæster velkommen siden 1900. Café Frederiksberg h
       </div>
     </div>
   </div>
-<?php
+  <?php
   mysqli_close($db);
   ?>
 

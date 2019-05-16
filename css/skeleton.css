@@ -48,8 +48,8 @@
     padding: 0; }
 }
 
-/* For devices larger than 550px */
-@media (min-width: 550px) {
+/* For devices larger than 900px */
+@media (min-width: 900px) {
   .container {
     width: 80%; }
   .column,
@@ -111,10 +111,6 @@
   .offset-by-one-half.columns     { margin-left: 52%; }
 
 }
-
-
-
-
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -187,6 +183,30 @@ input[type="button"].button-primary:focus {
   background-color: #CCB380;
   border-color: #CCB380; }
 
+.button_gold{
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  /* background-color: transparent; */
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #CCB380;
+}
+
+.button_gold:hover{
+  color: #d1d1d1;
+  background-color: #e85c00;
+}
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

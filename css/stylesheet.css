@@ -48,12 +48,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.4rem;
   font-weight: 300; }
 
-h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: .05rem;  font-family: 'Playfair Display', serif; font-weight: 700; color: #fff; }
-h2 { font-size: 3.6rem; line-height: 1.0;  letter-spacing: .05rem;  font-family: 'Playfair Display', serif; font-weight: 700; color: #CCB380; margin-bottom: 0.2rem}
-h3 { font-size: 3.2rem; line-height: 1.3;  letter-spacing: -.1rem;  font-family: 'Inter var', sans-serif; font-weight: 700; margin-bottom: 0.2rem;}
-h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
-h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; font-family: 'Playfair Display', serif; font-weight: 700; color: #CCB380; margin-bottom: 0rem;}
-h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0.0rem;  font-family: 'Playfair Display', serif; font-weight: 700; color: #fff}
+h1 { font-size: 3.0rem; line-height: 1.2;  letter-spacing: .05rem;  font-family: 'Playfair Display', serif; font-weight: 700; color: #fff; }
+h2 { font-size: 2.2rem; line-height: 1.0;  letter-spacing: .05rem;  font-family: 'Playfair Display', serif; font-weight: 700; color: #CCB380; margin-bottom: 0.2rem}
+h3 { font-size: 2.0rem; line-height: 1.3;  letter-spacing: -.1rem;  font-family: 'Inter var', sans-serif; font-weight: 700; margin-bottom: 0.2rem;}
+h4 { font-size: 2.6rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 1.5rem; line-height: 1.5;  letter-spacing: -.05rem; font-family: 'Playfair Display', serif; font-weight: 700; color: #CCB380; margin-bottom: 0rem;}
+h6 { font-size: 1.0rem; line-height: 1.6;  letter-spacing: 0.0rem;  font-family: 'Playfair Display', serif; font-weight: 700; color: #fff}
 
 /* Larger than phablet */
 @media (min-width: 550px) {
@@ -104,7 +104,6 @@ p {
   padding-right: 1.6rem;
   font-family: "Poppins";
   text-decoration: none;
-
 }
 
 .navigationmenu > a:hover, .dropdown a:hover {
@@ -281,7 +280,6 @@ margin-top: 1rem;
 /*Bestil online overskrift  */
 .bestil_online{
   height: 50px;
-  width: 700px;
   padding: 0.4rem;
   margin: auto;
 }
@@ -295,7 +293,6 @@ margin-top: 1rem;
 }
 
 .bestil_online_knapper{
-  width: 700px;
   margin-top: 0.4rem;
 }
 
@@ -304,56 +301,32 @@ margin-top: 1rem;
   float: right;
 }
 
-/* Introhistorie  */
-.wrapper.introHistorie {
-  background-color: #1E1D20;
-}
-
-.container.introHistorie {
-  margin-bottom: 1rem;
-  background-color: #1E1D20;
-}
-
-/*Heading styling  */
-#introhistoriecaféfrederiksbergheading {
-font-family: "Playfair Display";
-font weight: bold;
-font-size: 32px;
-line-spacing: 32px;
-}
-
-/*Subheading styling  */
-#introhistoriecaféfrederiksbergsubheading {
-  font-family: "Playfair Display";
-  font weight: regular;
-  font-size: 22px;
-  line-spacing: 30px;
-}
-
-/*Text styling  */
-#introhistoriecaféfrederiksbergtext {
-  margin-top: 16px;
-  font-family: "Poppins";
-  font-size: 15px;
-  line-spacing: 23px;
-}
-
-/*Alle introhistorie elementer  */
-.introHistorie {
-padding-bottom: 0.4rem;
-padding-top: 0.4rem;
-}
-
-/*Venstre sektion styling  */
-.six.columns.introHistorie {
-  margin-top: 1rem;
-}
-
 /*Billede styling  */
-#butikfront {
+.intro_historie{
+  padding: 2rem 0;
+}
+
+.butikfront {
   margin-top: 2rem;
-  width: 32.832rem;
-  height: 20.952rem;
+  width: 100%;
+  background-image: url("../img/tidslinje4.jpg");
+  height: 350px;
+  background-position: center;
+}
+
+@media (max-width: 900px) {
+  .butikfront {
+    display: none;
+  }
+  .intro_historie{
+    background-image: url("../img/frede_front.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 10%;
+  }
+  .six.columns{
+    width: 100%;
+  }
 }
 
 /*Indholdsoversigt over siden  */
@@ -406,7 +379,6 @@ padding-top: 0.4rem;
   display:inline;
 }
 
-/*"Alle events knap" fører til event-side  */
 .row.alleeventsforside {
   text-align: center;
 }
@@ -504,8 +476,15 @@ body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4)
   height: 540px;
   width: 382px;
   background-image: url("../img/katalog.png");
-  background-size: 382px 540px;
+  background-size: contain;
   float: right;
+}
+
+@media (max-width: 400px) {
+  .frede_live_katalog_img {
+    width: 200px;
+    float: left;
+  }
 }
 
 .klub_frede_img{
