@@ -2,7 +2,6 @@
   require_once '../../config.php';
   $query ="SELECT type FROM header WHERE id='1'";
   $results = mysqli_query($db, $query);
-  $header_choice = mysqli_fetch_assoc($results);
 
   $temp = explode(".", $_FILES["fileToUpload"]["name"]);
   $uploadOk = 1;
@@ -23,16 +22,20 @@
   }
 
   //tjekker om det er billede eller video fil i accepterede formater
-  if($header_choice['type'] == 'video_choice' && $fileType == "mp4" or $fileType == "mpeg" or $fileType == "avi" or $fileType == "mov"){
+  if($fileType == "mp4" or $fileType == "mpeg" or $fileType == "avi" or $fileType == "mov"){
     $target_dir = "../../../video/"; //sætter filstien for upload
     $type = "video"; //sætter typen til video
     $newFileName =  "0_" . round(microtime(true)) . '.' . $fileType;
+    $query = "UPDATE header SET type = 'video_choice' WHERE id = '1';";
+    $results = mysqli_query($db, $query);
 
-  }elseif($header_choice['type'] == 'billede_choice' && $fileType == "jpg" or $fileType == "png" or $fileType == "jpeg"
+  }elseif($fileType == "jpg" or $fileType == "png" or $fileType == "jpeg"
   or $fileType == "gif" ){
     $target_dir = "../../../header_slide/";
     $type = "billede";
     $newFileName =  "0_" . round(microtime(true)) . '.' . $fileType;
+    $query = "UPDATE header SET type = 'billede_choice' WHERE id = '1';";
+    $results = mysqli_query($db, $query);
 
   }else{
     $uploadOk = 0; //hvis det ikke er accepterede filformater skal uploadOK være 0
