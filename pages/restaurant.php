@@ -90,13 +90,24 @@
       </nav>
     </div>
 
+    <!--Henter Jquery Script via CDN  -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.js"
+      integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+      crossorigin="anonymous">
+      </script>
+
     <!-- Tilføjer sort baggrund onscroll -->
     <script>
-    var nav = document.querySelector('.navigationbar');
-        var dropdown = document.querySelector('.dropdown-content');
-        document.onscroll = function() {
-            nav.style.background = dropdown.style.background = document.querySelector('html').scrollTop > 20 ? "rgba(0, 0, 0, 0.4)" : "transparent";
-        }
+    var $nav = $('.navigationbar');
+    $(document).scroll(function() {
+        $nav.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
+    });
+    // Does the same as above, just for The dropdown menu
+    var $dropdown = $('.dropdown-content');
+    $(document).scroll(function() {
+        $dropdown.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
+    });
     </script>
 
   <?php include '../includes/header.php'; ?>
