@@ -26,12 +26,14 @@
   <!-- Hamburger menu + logo  -->
     <div class="container">
     <div class="mobilenav" style="z-index: 100"> <!-- Latterlig z-index pga. widget der har latterligt z-index -->
-      <span onclick="openNav()"><img src="/cafefrederiksberg/img/hamburger.svg" id="hamburger" width="21px" height="auto"></span>
-        <img src="/cafefrederiksberg/img/logo.svg" id="fredelogo" alt="Café frederiksberg logo" width="150rem" color="white" height="auto">
+      <span onclick="openNav()"><img src="img/hamburger.svg" id="hamburger" width="21px" height="auto"></span>
+        <a href="/cafefrederiksberg/index.php">
+          <img src="/cafefrederiksberg/img/logo.svg" id="fredelogo" alt="Café frederiksberg logo" width="150rem" color="white" height="auto">
+        </a>
     </div>
     </div>
 
-  <!--Sidebar on hamburger click  -->
+  <!--Sidebar mobil  -->
     <div id="mySidenav" class="sidenav" style="z-index: 101">  <!-- Latterlig z-index pga. widget der har latterligt z-index -->
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="/cafefrederiksberg/index.php">Forside</a>
@@ -48,24 +50,22 @@
 
   <!-- Script til at vise sidebar, onclick -->
   <script>
-  /* Set the width of the side navigation to 250px */
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
   }
-  /* Set the width of the side navigation to 0 */
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0px";
   }
   </script>
 
-    <!--main navigationsbar  -->
+  <!--Desktop navigation  -->
     <div class="navigationbar">
       <nav class="container">
-  <!--Logo  -->
+
       <div class="logo">
         <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
       </div>
-  <!--Menupunkter  -->
+
         <div class="navigationmenu">
         <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
         <a href="/cafefrederiksberg/pages/bar.php">Barkort</a>
@@ -96,17 +96,14 @@
       integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
       crossorigin="anonymous">
       </script>
+
     <!-- Jquery Script som ændre opacity når der scrolles -->
     <script>
-    var $nav = $('.navigationbar');
-    $(document).scroll(function() {
-        $nav.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
-    });
-    // Does the same as above, just for The dropdown menu
-    var $dropdown = $('.dropdown-content');
-    $(document).scroll(function() {
-        $dropdown.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
-    });
+    var nav = document.querySelector('.navigationbar');
+        var dropdown = document.querySelector('.dropdown-content');
+        document.onscroll = function() {
+            nav.style.background = dropdown.style.background = document.querySelector('html').scrollTop > 20 ? "rgba(0, 0, 0, 0.4)" : "transparent";
+        }
     </script>
 
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
