@@ -42,15 +42,12 @@
       <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
       <a href="/cafefrederiksberg/pages/bar.php">Barkort</a>
       <a href="/cafefrederiksberg/pages/events.php">Events</a>
-      <!--Dropdown menuer  -->
       <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown" width="2px"></i></a>
-      <!-- Tilføjes som dropdown via javascript soon
-      <a href="#">Buffet</a>
-      <a href="#">Arrangementer</a>
-      <a href="#">Selskabsmenu</a> -->
+      <a href="/cafefrederiksberg/pages/selskaber/buffet.php" style="background-color: #1E1D20; ">Buffet</a>
+      <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php" style="background-color: #1E1D20; ">Arrangementer</a>
+      <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php" style="background-color: #1E1D20; ">Selskabsmenu</a>
       <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown" width="2px"></i></a>
-      <!-- Tilføjes som dropdown via javascript soon
-      <a href="#">Kontakt</a> -->
+      <a href="/cafefrederiksberg/pages/kontakt.php" style="background-color: #1E1D20; ">Kontakt</a>
     </div>
 
   <!-- Script til at vise sidebar, onclick -->
