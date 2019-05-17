@@ -22,45 +22,83 @@
   <?php
   include '../includes/announcement.php';  ?>
 
-  <!--Navigations-bar  -->
+  <!-- Hamburger menu + logo  -->
+    <div class="container">
+    <div class="mobilenav" style="z-index: 100"> <!-- Latterlig z-index pga. widget der har latterligt z-index -->
+      <span onclick="openNav()"><img src="/cafefrederiksberg/img/hamburger.svg" id="hamburger" width="21px" height="auto"></span>
+        <img src="/cafefrederiksberg/img/logo.svg" id="fredelogo" alt="Café frederiksberg logo" width="150rem" color="white" height="auto">
+    </div>
+    </div>
+
+  <!--Sidebar on hamburger click  -->
+    <div id="mySidenav" class="sidenav" style="z-index: 101">  <!-- Latterlig z-index pga. widget der har latterligt z-index -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="/cafefrederiksberg/index.php">Forside</a>
+      <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
+      <a href="/cafefrederiksberg/pages/bar.php">Barkort</a>
+      <a href="/cafefrederiksberg/pages/events.php">Events</a>
+      <!--Dropdown menuer  -->
+      <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown" width="2px"></i></a>
+      <!-- Tilføjes som dropdown via javascript soon
+      <a href="#">Buffet</a>
+      <a href="#">Arrangementer</a>
+      <a href="#">Selskabsmenu</a> -->
+      <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown" width="2px"></i></a>
+      <!-- Tilføjes som dropdown via javascript soon
+      <a href="#">Kontakt</a> -->
+    </div>
+
+  <!-- Script til at vise sidebar, onclick -->
+  <script>
+  /* Set the width of the side navigation to 250px */
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0px";
+  }
+  </script>
+
+    <!--main navigationsbar  -->
+    <div class="navigationbar">
+      <nav class="container">
+  <!--Logo  -->
+      <div class="logo">
+        <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
+      </div>
+  <!--Menupunkter  -->
+        <div class="navigationmenu">
+        <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
+        <a href="/cafefrederiksberg/pages/bar.php">Barkort</a>
+        <a href="/cafefrederiksberg/pages/events.php">Events</a>
+  <!--Selskaber dropdown  -->
+          <div class="dropdown">
+            <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown"></i></a>
+            <div class="dropdown-content">
+            <a href="/cafefrederiksberg/pages/selskaber/buffet.php">Buffet</a>
+            <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php">Arrangementer</a>
+            <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
+            </div>
+          </div>
+  <!-- Om os dropdown  -->
+          <div class="dropdown">
+            <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown"></i></a>
+            <div class="dropdown-content">
+            <a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
     <!--Henter Jquery Script via CDN  -->
     <script
       src="https://code.jquery.com/jquery-1.12.4.js"
       integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-      crossorigin="anonymous"></script>
-    <!--main navigationsbar  -->
-    <div class="navigationbar">
-    <!--Container der centrere content i navigationsmenu  -->
-      <nav class="container">
-    <!--Logo  -->
-    <div class="logo">
-      <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
-    </div>
-    <!-- Menu  -->
-    <div class="navigationmenu">
-    <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
-    <a href="/cafefrederiksberg/pages/bar.php" class="active nav">Barkort</a>
-    <a href="/cafefrederiksberg/pages/events.php">Events</a>
-    <!--Selskaber dropdown  -->
-    <div class="dropdown">
-      <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown"></i></a>
-      <div class="dropdown-content">
-      <a href="/cafefrederiksberg/pages/selskaber/buffet.php">Buffet</a>
-      <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php">Arrangementer</a>
-      <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
-      </div>
-    </div>
-    <!--Om os dropdown  -->
-    <div class="dropdown">
-      <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown"></i></a>
-      <div class="dropdown-content">
-      <a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
-      </div>
-    </div>
-    </div>
-    </nav>
-    </div>
-    <!-- Jquery Script that changes the color of the header on scroll (+opacity)  -->
+      crossorigin="anonymous">
+      </script>
+    <!-- Jquery Script som ændre opacity når der scrolles -->
     <script>
     var $nav = $('.navigationbar');
     $(document).scroll(function() {

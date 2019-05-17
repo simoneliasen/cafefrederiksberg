@@ -1,50 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Café Frederiksberg har eksisteret siden år 1900, og er det ældste værtshus på samme beliggenhed i Aalborg. Vi byder dog også velkommen i vores restaurant, til selskaber eller til vores events!"/>
   <link rel="icon" type="image/png" href="img/favicon.ico">
-
   <!--Side titel  -->
   <title>Café Frederiksberg</title>
-
   <!--Stylesheets  -->
   <link rel="stylesheet" type="text/css" href="css/skeleton.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
-
 </head>
 
 <body>
+
   <!--Tilføjer mulighed for announcementbar  -->
   <?php include 'includes/announcement.php'; ?>
 
-<!--Navigations-bar  -->
-  <!--Henter Jquery Script via CDN  -->
-  <script
-    src="https://code.jquery.com/jquery-1.12.4.js"
-    integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-    crossorigin="anonymous"></script>
+<!-- Hamburger menu + logo  -->
+  <div class="container">
+  <div class="mobilenav" style="z-index: 100"> <!-- Latterlig z-index pga. widget der har latterligt z-index -->
+    <span onclick="openNav()"><img src="img/hamburger.svg" id="hamburger" width="21px" height="auto"></span>
+      <img src="/cafefrederiksberg/img/logo.svg" id="fredelogo" alt="Café frederiksberg logo" width="150rem" color="white" height="auto">
+  </div>
+  </div>
+
+<!--Sidebar on hamburger click  -->
+  <div id="mySidenav" class="sidenav" style="z-index: 101">  <!-- Latterlig z-index pga. widget der har latterligt z-index -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/cafefrederiksberg/index.php">Forside</a>
+    <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
+    <a href="/cafefrederiksberg/pages/bar.php">Barkort</a>
+    <a href="/cafefrederiksberg/pages/events.php">Events</a>
+    <!--Dropdown menuer  -->
+    <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown" width="2px"></i></a>
+    <!-- Tilføjes som dropdown via javascript soon
+    <a href="#">Buffet</a>
+    <a href="#">Arrangementer</a>
+    <a href="#">Selskabsmenu</a> -->
+    <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown" width="2px"></i></a>
+    <!-- Tilføjes som dropdown via javascript soon
+    <a href="#">Kontakt</a> -->
+  </div>
+
+<!-- Script til at vise sidebar, onclick -->
+<script>
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0px";
+}
+</script>
+
   <!--main navigationsbar  -->
   <div class="navigationbar">
     <nav class="container">
-
+<!--Logo  -->
     <div class="logo">
       <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
     </div>
-
+<!--Menupunkter  -->
       <div class="navigationmenu">
       <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
       <a href="/cafefrederiksberg/pages/bar.php">Barkort</a>
       <a href="/cafefrederiksberg/pages/events.php">Events</a>
-
+<!--Selskaber dropdown  -->
         <div class="dropdown">
           <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown"></i></a>
           <div class="dropdown-content">
@@ -53,7 +80,7 @@
           <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
           </div>
         </div>
-
+<!-- Om os dropdown  -->
         <div class="dropdown">
           <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown"></i></a>
           <div class="dropdown-content">
@@ -63,7 +90,14 @@
       </div>
     </nav>
   </div>
-  <!-- Jquery Script that changes the color of the header on scroll (+opacity)  -->
+
+  <!--Henter Jquery Script via CDN  -->
+  <script
+    src="https://code.jquery.com/jquery-1.12.4.js"
+    integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+    crossorigin="anonymous">
+    </script>
+  <!-- Jquery Script som ændre opacity når der scrolles -->
   <script>
   var $nav = $('.navigationbar');
   $(document).scroll(function() {
@@ -78,7 +112,6 @@
 
   <!--Videoslider -->
   <?php include 'includes/header.php'; ?>
-
   <!--Connects to database  -->
   <?php include 'admin/config.php';?>
 
@@ -142,9 +175,9 @@
 
   <?php
   $query ="SELECT * FROM katalog";
-  $results = mysqli_query($db,$query);
-  if(!$results){
-    die("could not query the database" .mysqli_error());
+  $results = mysqli_query($db, $query);
+  if (!$results) {
+      die("could not query the database" .mysqli_error());
   }
   $row = mysqli_fetch_row($results);
 ?>
@@ -177,20 +210,22 @@
   <!--Events: Facebook implementering  -->
   <div class="container">
     <div class="events_overskrift">
+
 <!--Overskrift logo  -->
       <div class="events_overskrift_leftalign">
     <img src="/cafefrederiksberg/img/fredelivelogo.svg" id="eventlogo" width="60rem" height="auto" alt="Frede live logo til events">
     </div>
+
 <!-- Overskrift tekst  -->
       <div class="events_overskrift_rightalign">
       <h2>Frede Live</h2>
       <h6>Kommende Events</h6>
     </div>
+
 <!--Facebook widget  -->
     </div>
     <div id="event_oversigt" class='sk-fb-event' data-embed-id='23826'></div><script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
   </div>
-
 
 <!--Knap til alle events  -->
 <div class="row alleeventsforside">
