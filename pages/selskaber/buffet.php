@@ -91,14 +91,7 @@
       </nav>
     </div>
 
-    <!--Henter Jquery Script via CDN  -->
-    <script
-      src="https://code.jquery.com/jquery-1.12.4.js"
-      integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-      crossorigin="anonymous">
-      </script>
-
-    <!-- Jquery Script som ændre opacity når der scrolles -->
+    <!-- Tilføjer sort baggrund onscroll -->
     <script>
     var nav = document.querySelector('.navigationbar');
         var dropdown = document.querySelector('.dropdown-content');
