@@ -1,20 +1,19 @@
-Front-end
+Generelt
 - Tekst til kunstnere der vil spille (kontakt eller event-side)
 - DJ?? (info om lejning af dj)
-- Tekst til tidslinjeside + Billeder (usability)
+- Tekst til tidslinjeside + Billeder
+- text-shadow navigationsbar
 
-Mobil
-- Mobiloptimering på side
-- mobilmenu til mobiler (duh)
+Mobiloptimering
+- Juster placering af mobilmenu ved scroll, når announcementbar er aktiveret
+- Lav dropdown til menupunkter i mobilmenu
+- Generel mobiloptimering af enkelte sider
 
-Andet
-- - Navigationsstruktur skal rettes (virker ikke på web)
 
-Implementering
+Implementering (kan vente)
+- Navigationsstruktur skal rettes (virker ikke på web)
 - SSL-certifikat (virker på 90 dages basis, skal vi spørge om)
 - Facebook + instagram integrering 
 - Google analytics
-
-Idéer
 - Thumbnail-billede v. link sharing (relativt simpelt)
 
