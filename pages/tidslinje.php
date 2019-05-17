@@ -30,7 +30,7 @@
   <!-- Hamburger menu + logo  -->
     <div class="container">
     <div class="mobilenav" style="z-index: 100"> <!-- Latterlig z-index pga. widget der har latterligt z-index -->
-      <span onclick="openNav()"><img src="img/hamburger.svg" id="hamburger" width="21px" height="auto"></span>
+      <span onclick="openNav()"><img src="/cafefrederiksberg/img/hamburger.svg" id="hamburger" width="21px" height="auto"></span>
         <a href="/cafefrederiksberg/index.php">
           <img src="/cafefrederiksberg/img/logo.svg" id="fredelogo" alt="Café frederiksberg logo" width="150rem" color="white" height="auto">
         </a>
@@ -100,7 +100,7 @@
       integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
       crossorigin="anonymous">
       </script>
-  
+
     <!-- Tilføjer sort baggrund onscroll -->
     <script>
     var $nav = $('.navigationbar');
