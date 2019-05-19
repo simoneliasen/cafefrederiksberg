@@ -173,9 +173,10 @@ if($header_choice['type'] == "video_choice"){
           </ul>
         </div>
       </div>
-      Bestil biletter, book bord, bliv medlem:<br>
-      <a class="button_gold" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Book online</a>
-
+      <div style="text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.7);">
+      Take-away, billetter og bordbooking:<br>
+      <a class="button_gold" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bestil online</a>
+      </div>
     </div>
     <video autoplay muted loop src="/video/<?= $row['filename'] ?>" height="90vh"></video>
   </div>
@@ -216,8 +217,10 @@ if($header_choice['type'] == "video_choice"){
               </li>
             </ul>
           </div>
-          Bestil biletter, book bord, bliv medlem:
-          <a class="button_gold" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Book online</a>
+          <div style="text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.7);">
+          Take-away, billetter og bordbooking:<br>
+          <a class="button_gold" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bestil online</a>
+          </div>
         </div>
       </div>
 

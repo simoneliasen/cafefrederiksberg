@@ -47,28 +47,26 @@
   </div>
 
 <!-- Script til at vise sidebar, onclick -->
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0px";
-}
-</script>
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0px";
+  }
+  </script>
 
-<!--Desktop navigation  -->
   <div class="navigationbar">
     <nav class="container">
-
-    <div class="logo">
-      <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
-    </div>
+      <div class="logo">
+        <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
+      </div>
 
       <div class="navigationmenu">
-      <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
-      <a href="/cafefrederiksberg/pages/bar.php">Barkort</a>
-      <a href="/cafefrederiksberg/pages/events.php">Events</a>
-<!--Selskaber dropdown  -->
+        <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
+        <a href="/cafefrederiksberg/pages/bar.php">Barkort</a>
+        <a href="/cafefrederiksberg/pages/events.php">Events</a>
+
         <div class="dropdown">
           <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown"></i></a>
           <div class="dropdown-content">
@@ -77,13 +75,14 @@ function closeNav() {
           <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
           </div>
         </div>
-<!-- Om os dropdown  -->
+
         <div class="dropdown">
           <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown"></i></a>
           <div class="dropdown-content">
-          <a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
+            <a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
           </div>
         </div>
+
       </div>
     </nav>
   </div>
@@ -93,7 +92,7 @@ function closeNav() {
     src="https://code.jquery.com/jquery-1.12.4.js"
     integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
     crossorigin="anonymous">
-    </script>
+  </script>
 
   <!-- Jquery Script som ændre opacity når der scrolles -->
 
@@ -110,24 +109,20 @@ function closeNav() {
   });
   </script>
 
-  <!--Videoslider -->
   <?php include 'includes/header.php'; ?>
-  <!--Connects to database  -->
   <?php include 'admin/config.php';?>
 
-  <!-- introHistorie -->
   <div class="bg_dark intro_historie">
     <div class="container">
       <div class="row">
-        <!--Intro-tekst  -->
         <div class="six columns">
           <h2> Café Frederiksberg </h2>
           <h6> Siden år 1900</h4>
           <p>Café Frederiksberg har budt gæster velkommen siden 1900 og er dermed Aalborgs ældste værtshus på samme beliggenhed – men også Aalborgs største værtshus. Igennem de 119 år Café Frederiksberg har eksisteret, har der kun være tre ejerskift. Nu om dage er det navnet “Frede” som gæsterne ynder at bruge, og derfor har Café Frederiksbergs musikmagasin også fået navnet FREDE LIVE.</p>
-          <!--se Café frederiksbergs tidlinje knap  -->
-          <a class="button" href="pages/tidslinje.php">Se HUSK MIG<u>her</u></a>
+
+          <a class="button" href="pages/tidslinje.php">Læs hele historien <u>her</u></a>
         </div>
-        <!--Billede af butiksfront  -->
+
         <div class="six columns butikfront">
         </div>
       </div>
@@ -179,17 +174,19 @@ function closeNav() {
       die("could not query the database" .mysqli_error());
   }
   $row = mysqli_fetch_row($results);
-?>
-  <!-- Katalog  -->
+  ?>
+
   <div class="bg_dark">
     <div class="container">
       <div class="row">
+
         <div class="one-half column frede_live_katalog">
           <a rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">
             <div class="frede_live_katalog_img">
             </div>
           </a>
         </div>
+
         <div class="one-half column frede_live_katalog_text">
           <div class="frede_live_katalog_text_container">
             <h2><?php echo $row[2]; ?></h2>
@@ -199,6 +196,7 @@ function closeNav() {
             <a style="color: #CCB380;" class="button" rel="noopener" aria-label="Se Frede live katalog" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bestil biletter</a>
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -209,37 +207,33 @@ function closeNav() {
   <!--Events: Facebook implementering  -->
   <div class="container">
     <div class="events_overskrift">
-
-<!--Overskrift logo  -->
       <div class="events_overskrift_leftalign">
-    <img src="/cafefrederiksberg/img/fredelivelogo.svg" id="eventlogo" width="60rem" height="auto" alt="Frede live logo til events">
-    </div>
+        <img src="/cafefrederiksberg/img/fredelivelogo.svg" id="eventlogo" width="60rem" height="auto" alt="Frede live logo til events">
+      </div>
 
-<!-- Overskrift tekst  -->
       <div class="events_overskrift_rightalign">
-      <h2>Frede Live</h2>
-      <h6>Kommende Events</h6>
+        <h2>Frede Live</h2>
+        <h6>Kommende Events</h6>
+      </div>
     </div>
-
-<!--Facebook widget  -->
-    </div>
-    <div id="event_oversigt" class='sk-fb-event' data-embed-id='23826'></div><script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
+    <!--Facebook widget  -->
+    <div id="event_oversigt" class='sk-fb-event' data-embed-id='23826'></div>
+    <script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
   </div>
 
-<!--Knap til alle events  -->
-<div class="row alleeventsforside">
-  <a class="button alleeventsforside" href="pages/events.php#event_oversigt">Se alle kommende events <u>her</u></a>
-</div>
+  <!--Knap til alle events  -->
+  <div class="row alleeventsforside">
+    <a class="button alleeventsforside" href="pages/events.php#event_oversigt">Se alle kommende events <u>her</u></a>
+  </div>
 
   <!--Google maps  -->
-    <div class="mapouter">
-      <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" title="google maps location" src="https://maps.google.com/maps?q=Caf%C3%A9%20Frederiksberg%20Aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
-          marginwidth="0"></iframe></div>
+  <div class="mapouter">
+    <div class="gmap_canvas">
+      <iframe width="100%" height="100%" id="gmap_canvas" title="google maps location" src="https://maps.google.com/maps?q=Caf%C3%A9%20Frederiksberg%20Aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </div>
   </div>
 
-  <!--Inddrager footer fra "includes/footer.php"-->
   <?php include 'includes/footer.php'; ?>
-
 
 </body>
 

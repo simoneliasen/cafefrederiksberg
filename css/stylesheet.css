@@ -106,6 +106,7 @@ p {
   padding-right: 1.6rem;
   font-family: "Poppins";
   text-decoration: none;
+  text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.7);
 }
 
 .navigationmenu > a:hover, .dropdown a:hover {
