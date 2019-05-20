@@ -33,7 +33,6 @@
         </a>
     </div>
     </div>
-
   <!--Sidebar mobil  -->
     <div id="mySidenav" class="sidenav" style="z-index: 101">  <!-- Latterlig z-index pga. widget der har latterligt z-index -->
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -42,13 +41,12 @@
       <a href="/cafefrederiksberg/pages/bar.php">Barkort</a>
       <a href="/cafefrederiksberg/pages/events.php">Events</a>
       <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown" width="2px"></i></a>
-      <a href="/cafefrederiksberg/pages/selskaber/buffet.php" style="background-color: #1E1D20; ">Buffet</a>
-      <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php" style="background-color: #1E1D20; ">Arrangementer</a>
-      <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php" style="background-color: #1E1D20; ">Selskabsmenu</a>
+      <a href="/cafefrederiksberg/pages/selskaber/buffet.php" class="active" id="dropdown">Buffet</a>
+      <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php" id="dropdown">Arrangementer</a>
+      <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php" id="dropdown">Selskabsmenu</a>
       <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown" width="2px"></i></a>
-      <a href="/cafefrederiksberg/pages/kontakt.php" style="background-color: #1E1D20; ">Kontakt</a>
+      <a href="/cafefrederiksberg/pages/kontakt.php" id="dropdown">Kontakt</a>
     </div>
-
   <!-- Script til at vise sidebar, onclick -->
   <script>
   function openNav() {
@@ -58,15 +56,13 @@
     document.getElementById("mySidenav").style.width = "0px";
   }
   </script>
-
+  
   <!--Desktop navigation  -->
     <div class="navigationbar">
       <nav class="container">
-
       <div class="logo">
         <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
       </div>
-
         <div class="navigationmenu">
         <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
         <a href="/cafefrederiksberg/pages/bar.php">Barkort</a>
@@ -75,7 +71,7 @@
           <div class="dropdown">
             <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown"></i></a>
             <div class="dropdown-content">
-            <a href="/cafefrederiksberg/pages/selskaber/buffet.php">Buffet</a>
+            <a href="/cafefrederiksberg/pages/selskaber/buffet.php" class="active">Buffet</a>
             <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php">Arrangementer</a>
             <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
             </div>
@@ -90,14 +86,12 @@
         </div>
       </nav>
     </div>
-
     <!--Henter Jquery Script via CDN  -->
     <script
       src="https://code.jquery.com/jquery-1.12.4.js"
       integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
       crossorigin="anonymous">
       </script>
-
     <!-- Tilføjer sort baggrund onscroll -->
     <script>
     var $nav = $('.navigationbar');
@@ -110,6 +104,7 @@
         $dropdown.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
     });
     </script>
+
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include '../../includes/header.php'; ?>
   <!--Connects to database  -->

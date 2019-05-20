@@ -160,7 +160,7 @@ p {
   -webkit-transform: rotate(45deg);
 }
 
-.active.nav {
+.active {
   color: #CCB380;
   font-weight: bold;
 }
@@ -186,7 +186,10 @@ p {
 #hamburger {
   padding-bottom: 0.40rem;
 }
-
+/* baggrundsfarve til dropdown items */
+#dropdown {
+  background-color: #1E1D20;
+}
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
