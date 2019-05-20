@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Oplev Café Frederiksbergs historie igennem denne tidslinje, og opdag historier udfalde sig på tværs af den nuværende og tidlgiere generationer"/>
   <link rel="icon" type="image/png" href="img/favicon.ico">
-
   <!--Side titel  -->
   <title>Café Frederiksberg</title>
   <!--Standard stylesheet  -->
@@ -18,10 +16,7 @@
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
   <!-- Includer Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
-
 </head>
-
-
 
 <body>
   <!--Tilføjer mulighed for announcementbar  -->
@@ -107,9 +102,7 @@
     });
     </script>
 
-
   <h2 style="text-align: center; padding: 4.5rem 0 2rem 0">Tidslinje</h2>
-
 
 <div class="bg_dark">
   <div class="container">
@@ -169,22 +162,8 @@
 
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
 <!--Indrag footer fra filen includes/footer.php-->
 <?php include '../includes/footer.php'; ?>
 
-
 </body>
-
 </html>

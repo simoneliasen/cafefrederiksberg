@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Sammensæt din helt egen menu, med forret, hovedret, dessert og natmad til dit selskab hos Café Frederiksberg."/>
   <link rel="icon" type="image/png" href="img/favicon.ico">
-
   <!--Side titel  -->
   <title>Café Frederiksberg</title>
   <!--Standard stylesheet  -->
@@ -18,7 +16,6 @@
   <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
   <!-- Includer Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
-
 </head>
 
 <body>
@@ -106,22 +103,10 @@
     });
     </script>
 
-  <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
-  <?php include '../../includes/header.php'; ?>
-  <!--Connects to database  -->
-  <?php include '../../admin/config.php';?>
-
-  <!--Online bestilling  -->
-  <div class="container">
-    <div class="bestil_online">
-      <h2 class="bestil_online_overskrift">Bestil Online</h2>
-      <div class="bestil_online_knapper">
-        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bord</a>
-        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Billetter</a>
-        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Take Away</a>
-      </div>
-    </div>
-  </div>
+  <?php
+  include '../../includes/header.php';
+  include '../../admin/config.php';
+  ?>
 
   <div class="container">
     <div class="row selskab_present">
@@ -193,7 +178,6 @@
               <div class="menu_item_description"><?=$row[3] ?></div>
             </div>
         <?php endwhile;?>
-
 
           <!--NATMAD-->
           <h2 class="menu_kort_overskrift" style="margin-top: 6rem;">Natmad</h2>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -102,32 +101,17 @@
         $dropdown.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
     });
     </script>
-    
-  <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
-  <?php include '../includes/header.php'; ?>
-  <!--Connects to database  -->
-  <?php include '../admin/config.php';?>
-
-  <!--Online bestilling  -->
-  <div class="container">
-    <div class="bestil_online">
-      <h2 class="bestil_online_overskrift">Bestil Online</h2>
-      <div class="bestil_online_knapper">
-        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bord</a>
-        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Billetter</a>
-        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Take Away</a>
-      </div>
-    </div>
-  </div>
 
   <?php
+  include '../includes/header.php';
+  include '../admin/config.php';
+
   // Tager data fra katalog table
   $query ="SELECT * FROM katalog";
   $results = mysqli_query($db,$query);
   if(!$results){
     die("could not query the database" .mysqli_error());
   }
-
   $row = mysqli_fetch_row($results);
   ?>
 
@@ -215,11 +199,7 @@
   </div>
 </div>
 
-
 <?php include '../includes/footer.php'; ?>
 
-
-
 </body>
-
 </html>

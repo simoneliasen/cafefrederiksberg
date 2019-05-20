@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -105,18 +104,6 @@
 
   <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
   <?php include '../includes/header.php'; ?>
-
-  <!--Online bestilling  -->
-  <div class="container">
-    <div class="bestil_online">
-      <h2 class="bestil_online_overskrift">Bestil Online</h2>
-      <div class="bestil_online_knapper">
-        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bord</a>
-        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Billetter</a>
-        <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Take Away</a>
-      </div>
-    </div>
-  </div>
 
 <div class="selskaber_wrapper">
     <div class="row">

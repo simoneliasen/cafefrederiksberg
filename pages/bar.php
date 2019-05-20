@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Vi har noget til enhver smag, billige Fyraftensøl, whiskey, gin, champagne, rom, irish coffee alt hvad hjertet og halsen begærer, skål!"/>
   <link rel="icon" type="image/png" href="img/favicon.ico">
-
-  <!--Side titel  -->
   <title>Café Frederiksberg</title>
   <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
   <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
 
 <body>
-  <?php
-  include '../includes/announcement.php';  ?>
+  <?php include '../includes/announcement.php';  ?>
 
   <!-- Hamburger menu + logo  -->
     <div class="container">
@@ -54,7 +49,7 @@
     document.getElementById("mySidenav").style.width = "0px";
   }
   </script>
-  
+
   <!--Desktop navigation  -->
     <div class="navigationbar">
       <nav class="container">
@@ -103,25 +98,10 @@
     });
     </script>
 
-      <?php
+<?php
   include '../includes/header.php';
-  // Connects to database
   include '../admin/config.php';
 
-?>
-<!--Online bestilling  -->
-<div class="container">
-  <div class="bestil_online">
-    <h2 class="bestil_online_overskrift">Bestil Online</h2>
-    <div class="bestil_online_knapper">
-      <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bord</a>
-      <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Billetter</a>
-      <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Take Away</a>
-    </div>
-  </div>
-</div>
-
-<?php
   $query ="SELECT * FROM barmenu";
   $results = mysqli_query($db,$query);
   if(!$results){

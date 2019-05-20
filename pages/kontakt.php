@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Kontakt os via telefon eller mail, vi er altid klar til at tage imod bestilling eller andre henvendelser, vi glæder os til at høre fra dig!"/>
   <link rel="icon" type="image/png" href="img/favicon.ico">
-
   <!--Side titel  -->
   <title>Café Frederiksberg</title>
   <!--Standard stylesheet  -->
@@ -18,7 +16,6 @@
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
   <!-- Includer Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
-
 </head>
 
 <body>
@@ -110,19 +107,6 @@
   <!--Connects to database  -->
   <?php include '../admin/config.php';?>
 
-
-<!--Online bestilling  -->
-<div class="container">
-  <div class="bestil_online">
-    <h2 class="bestil_online_overskrift">Bestil Online</h2>
-    <div class="bestil_online_knapper">
-      <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bord</a>
-      <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Billetter</a>
-      <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Take Away</a>
-    </div>
-  </div>
-</div>
-
 <div class="bg_dark">
   <div class="container opening_info">
 <br>
@@ -131,13 +115,8 @@
     </div>
 
     <div class="row opening_information">
-
       <div class="six columns">
-
-
-
         <h2 class="opening_headline">Åbningstider</h2>
-
         <!--Vis første 7 entries i sql-table (ugedages åbningstider)  -->
         <?php
             $query ="SELECT * FROM aabningstider ORDER BY id ASC LIMIT 7;";
@@ -151,7 +130,6 @@
               <div class="opening_time"><?= $row[2] ?></div>
             </div>
           <?php endwhile;?>
-
     </div>
   <div class="six columns">
     <h2 class="opening_headline">Kontaktinformationer</h2>
@@ -199,7 +177,6 @@ if(!$results){
 }
 $row = mysqli_fetch_row($results)
 ?>
-
 <div class="row kitchen_and_party">
   <div class="six columns">
     <h2 class="opening_headline">Køkken</h2>
@@ -208,7 +185,6 @@ $row = mysqli_fetch_row($results)
       <div class="opening_time"><?= $row[2];?></div>
     </div>
   </div>
-
 <?php mysqli_close($db);?>
   <div class="six columns">
     <h2 class="opening_headline">Vedrørende fest</h2>
@@ -231,9 +207,7 @@ $row = mysqli_fetch_row($results)
   </div>
 </div>
 </div>
-
 </div>
-
 <!--Google maps  -->
 <div class="mapouter">
 <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" title="google maps location" src="https://maps.google.com/maps?q=Caf%C3%A9%20Frederiksberg%20Aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
