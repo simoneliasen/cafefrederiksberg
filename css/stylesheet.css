@@ -238,7 +238,7 @@ p {
 /*..............................................B.3 RESPONSIVENESS NAVIGATIONSBAR */
 
 /* Show navigationbar on desktops */
-  @media only screen and (min-width: 850px) {
+  @media only screen and (min-width: 950px) {
   /* For desktop: */
   .navigationbar {
     display: inherit;
@@ -248,7 +248,7 @@ p {
   }
 }
 /* Show Mobilenav on phones */
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
 /* For desktop: */
 .navigationbar {
   display: none;
@@ -1166,4 +1166,36 @@ Width: 30%;
 
 .timelinecontainer {
 margin-top: 200px;
+}
+
+/* Changes on Mobile  */
+@media only screen and (max-width: 950px) {
+/* For desktop: */
+.timeline_column {
+  display: none;
+}
+.line_item_right {
+  display: none;
+}
+.line_item_left {
+  display: none;
+}
+.middleline {
+  display: none;
+}
+.timeline_line {
+  display: none;
+}
+.timeline_line_first {
+  display: none;
+}
+.timeline_spacer{
+  display: none;
+}
+.timeline_line_left {
+  display: none;
+}
+.two.columns.tidslinje {
+  display: none;
+}
 }

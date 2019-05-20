@@ -126,7 +126,7 @@
         </div>
       </div>
 
-      <div class="two columns" style="height: 300px;">
+      <div class="two columns tidslinje" style="height: 300px;">
         <!-- <div class="middleline"></div> -->
       </div>
 
@@ -152,7 +152,7 @@
         </div>
       </div>
 
-      <div class="two columns" style="height: 200px;"  >
+      <div class="two columns tidslinje" style="height: 200px;"  >
       </div>
 
       <div class="five columns">
