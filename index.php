@@ -171,10 +171,11 @@
       <div class="row">
 
         <div class="one-half column frede_live_katalog">
-          <a rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">
-            <div class="frede_live_katalog_img">
-            </div>
-          </a>
+          <div class="frede_live_katalog_text_container">
+            <a rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">
+              <div class="frede_live_katalog_img"></div>
+            </a>
+          </div>
         </div>
 
         <div class="one-half column frede_live_katalog_text">

@@ -571,26 +571,19 @@ body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4)
   background-color: #1E1D20;
 }
 
-.frede_live_katalog{
-  height: 600px;
-}
-
 .frede_live_katalog_img{
   margin-top: 30px;
   height: 540px;
   width: 382px;
   background-image: url("../img/katalog.png");
   background-size: contain;
-  float: right;
 }
 
 @media (max-width: 550px) {
   .frede_live_katalog_img {
-    width: 100%;
+    width: 200px;
     margin: auto;
     float: none;
-    height: auto;
-    height: 300px;
     repeat: no-repeat;
   }
 }
@@ -601,12 +594,12 @@ body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4)
   width: 382px;
   background-image: url("../img/fredelivelogo.svg");
   background-size: 382px 540px;
-  float: right;
 }
 
 .frede_live_katalog_text{
   position: relative;
   height: 600px;
+  float: right;
 }
 
 .frede_live_katalog_text_container{
@@ -618,6 +611,13 @@ body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4)
 
 .events_overskrift{
   padding: 3rem 0 1rem 0;
+}
+
+@media (max-width: 900px){
+  .frede_live_katalog_img{
+    height: 389px;
+    width: 275px;
+  }
 }
 
 
