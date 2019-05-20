@@ -42,7 +42,8 @@ body {
   font-weight: 400;
   font-family: 'Inter var', sans-serif;
   color: #FFF;
-  background-color: #101010}
+  background-color: #101010
+}
 
 /*..............................................A FONTS */
 h1, h2, h3, h4, h5, h6 {
@@ -250,12 +251,12 @@ p {
 /* Show Mobilenav on phones */
 @media only screen and (max-width: 950px) {
 /* For desktop: */
-.navigationbar {
-  display: none;
-}
-.mobilenav {
-  display: inherit;
-}
+  .navigationbar {
+    display: none;
+  }
+  .mobilenav {
+    display: inherit;
+  }
 }
 
 /*..............................................C HEADER */
@@ -421,9 +422,6 @@ margin-top: 1rem;
     background-size: cover;
     opacity: 10%;
   }
-  .six.columns{
-    width: 100%;
-  }
 }
 
 /*Indholdsoversigt over siden  */
@@ -439,6 +437,8 @@ margin-top: 1rem;
   margin: 2rem auto 1rem auto;
   transition: transform 0.15s;
   border-radius: 144px;
+  width: 175px;
+  height: auto;
 }
 
 .indholdsoversigt img:hover{
@@ -460,6 +460,13 @@ margin-top: 1rem;
   text-align: center;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .indholdsoversigt img{
+    width: 110px;
+    height: auto;
+  }
 }
 
 /*Events  */
@@ -577,10 +584,14 @@ body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4)
   float: right;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   .frede_live_katalog_img {
-    width: 200px;
-    float: left;
+    width: 100%;
+    margin: auto;
+    float: none;
+    height: auto;
+    height: 300px;
+    repeat: no-repeat;
   }
 }
 
@@ -608,6 +619,8 @@ body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4)
 .events_overskrift{
   padding: 3rem 0 1rem 0;
 }
+
+
 
 /*Fjerner "by socialkit" widget  */
 body > div:nth-child(13) > div.sk-ww-facebook-feed > div:nth-child(6) > a {

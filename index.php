@@ -110,7 +110,6 @@
           <h2> Café Frederiksberg </h2>
           <h6> Siden år 1900</h4>
           <p>Café Frederiksberg har budt gæster velkommen siden 1900 og er dermed Aalborgs ældste værtshus på samme beliggenhed – men også Aalborgs største værtshus. Igennem de 119 år Café Frederiksberg har eksisteret, har der kun være tre ejerskift. Nu om dage er det navnet “Frede” som gæsterne ynder at bruge, og derfor har Café Frederiksbergs musikmagasin også fået navnet FREDE LIVE.</p>
-
           <a class="button" href="pages/tidslinje.php">Læs hele historien <u>her</u></a>
         </div>
 
@@ -125,7 +124,7 @@
 
       <div class="three columns indholdsoversigt">
         <a href="pages/restaurant.php">
-          <img src="img/inholdsoversigtrestaurant.png" width="175px" height="auto" alt="Genvej til restaurant indhold">
+          <img src="img/inholdsoversigtrestaurant.png" alt="Genvej til restaurant indhold">
           <h5>Restaurant</h5>
           <p>Se vores menukort og bestil take-away</p>
         </a>
@@ -133,7 +132,7 @@
 
       <div class="three columns indholdsoversigt">
         <a href="pages/bar.php">
-          <img src="img/inholdsoversigtbar.png" width="175px" height="auto" alt="Genvej til bar indhold">
+          <img src="img/inholdsoversigtbar.png"  alt="Genvej til bar indhold">
           <h5>Bar</h5>
           <p>Se vores store bar-kort med Aalborgs største Gin udvalg</p>
         </a>
@@ -141,7 +140,7 @@
 
       <div class="three columns indholdsoversigt">
         <a href="pages/events.php">
-          <img src="img/inholdsoversigtevents.png" width="175px" height="auto" alt="Genvej til events indhold">
+          <img src="img/inholdsoversigtevents.png"  alt="Genvej til events indhold">
           <h5>Events</h5>
           <p>Se vores mange live-events på Klub Frede</p>
         </a>
@@ -149,7 +148,7 @@
 
       <div class="three columns indholdsoversigt">
         <a href="pages/selskaber.php">
-          <img src="img/inholdsoversigtselskaber.png" width="175px" height="auto" alt="Genvej til selskaber indhold">
+          <img src="img/inholdsoversigtselskaber.png"  alt="Genvej til selskaber indhold">
           <h5>Selskaber</h5>
           <p>Se vores mange muligheder for selskaber</p>
         </a>

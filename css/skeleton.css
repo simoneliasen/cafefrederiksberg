@@ -48,10 +48,10 @@
     padding: 0; }
 }
 
-/* For devices larger than 900px */
-@media (min-width: 900px) {
+/* For devices larger than 550px */
+@media (min-width: 550px) {
   .container {
-    width: 80%; }
+    width: 85%; }
   .column,
   .columns {
     margin-left: 4%; }
@@ -110,6 +110,12 @@
   .offset-by-one-half.column,
   .offset-by-one-half.columns     { margin-left: 52%; }
 
+}
+
+@media (max-width: 900px) {
+  .six.columns{
+    width: 100%;
+  }
 }
 
 /* Links
