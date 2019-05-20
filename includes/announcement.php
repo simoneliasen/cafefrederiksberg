@@ -16,15 +16,12 @@ if(!$results){
 }
 
 // Konventere queery ind til array
-$row = mysqli_fetch_row($results);
-
+  $row = mysqli_fetch_row($results);
  $date = new DateTime($row[2]); //Indtastede dato i database
  $now = new DateTime(); //dags dato
 
+ if($date > $now) { //hvis dags dato er mindre end afsatte tid til announcementbar ?>
 
- if($date > $now) { //hvis dags dato er mindre end afsatte tid til announcementbar
-
-   ?>
    <div class="announcementwrapper">
      <script>
        var $nav = $('.navigationbar');
@@ -33,31 +30,19 @@ $row = mysqli_fetch_row($results);
        });
      </script>
      <div class="announcement">
-       <p style="text-align: center; font-size: 1.1rem; padding: 6px 0; margin:0;"> <?php echo  $row[1]; ?> </p>
+       <p style="text-align: center; font-size: 1.1rem; font-weight: 700; padding: 6px 0; margin:0;"> <?php echo  $row[1]; ?> </p>
      </div>
    </div>
-  <?php
 
-} else { //hvis dags dato er højere end afsatte tid til announcementbar
+<?php } else { //hvis dags dato er højere end afsatte tid til announcementbar ?>
 
-?>
 <script>
   var $nav = $('.navigationbar');
   $(document).scroll(function() {
     $nav.css({top: $(this).scrollTop() > 0? 0:0});
   });
 </script>
+
 <?php
-
-};
-
-mysqli_close($db);
-
-
+}; mysqli_close($db);
 ?>
-
-<style>
-.announcementwrapper {
-  font-weight: 700;
-}
-</style>
