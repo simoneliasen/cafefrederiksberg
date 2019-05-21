@@ -25,7 +25,7 @@
 <?php
 // Opretter forbindelse til database
 include('config.php');
-session_start();
+//session_start();
 
 // Benytter POST-metoden, når formen sendes/submites
 if($_SERVER["REQUEST_METHOD"] == "POST") {
