@@ -40,8 +40,8 @@
     <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown" width="2px"></i></a>
     <a href="/cafefrederiksberg/pages/kontakt.php" id="dropdown">Kontakt</a>
   </div>
-<!-- Script til at vise sidebar, onclick -->
   <script>
+  // Viser sidebar ved click på hamburgermenu
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
   }
@@ -77,8 +77,8 @@
       </div>
     </nav>
   </div>
-  <!-- Tilføjer sort baggrund onscroll -->
   <script>
+  // Sort baggrund onscroll
   var $nav = $('.navigationbar');
   $(document).scroll(function() {
       $nav.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});

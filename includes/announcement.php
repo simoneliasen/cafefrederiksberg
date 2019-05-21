@@ -1,8 +1,8 @@
-<!-- Loads Jquery Library  -->
+
 <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
 
 <?php
-//Opretter forbindelse manelt kontra include, da de ellers er duplikeret i main-content
+//Opretter forbindelse manuelt kontra include, da de ellers er duplikeret i main-content
 $db = mysqli_connect('localhost','root','','admin');
 if(!$db){
   die("Cannot connect to the database" . mysqli_connect_error());
