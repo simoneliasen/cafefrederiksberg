@@ -23,8 +23,8 @@
   <ul>
     <li><a href="analytics.php" class="active">Google analytics</a></li>
     <li><a href="generelt.php">Generelt</a></li>
-    <li><a href="restaurant.php">Restaurant</a></li>
-    <li><a href="bar.php">Bar</a></li>
+    <li><a href="restaurant.php">Menukort</a></li>
+    <li><a href="bar.php">Barkort</a></li>
     <li><a href="selskabsmenu.php">Selskabsmenu</a></li>
     <li><a href="buffet.php">Buffet</a></li>
     <li><a href="kontakt.php">Kontakt</a></li>

@@ -41,8 +41,8 @@
   <ul>
     <li><a href="analytics.php">Google analytics</a></li>
     <li><a href="generelt.php">Generelt</a></li>
-    <li><a href="restaurant.php">Restaurant</a></li>
-    <li><a href="bar.php" class="active">Bar</a></li>
+    <li><a href="restaurant.php">Menukort</a></li>
+    <li><a href="bar.php" class="active">Barkort</a></li>
     <li><a href="selskabsmenu.php">Selskabsmenu</a></li>
     <li><a href="buffet.php">Buffet</a></li>
     <li><a href="kontakt.php">Kontakt</a></li>
@@ -53,7 +53,7 @@
 <div class="container">
   <div class="content">
     <div class="heading">
-      <h1>Bar<span style="font-weight: 400;"></span></h1>
+      <h1>Barkort<span style="font-weight: 400;"></span></h1>
       <div class="logout">
         <a class="button red" href="../logout.php">log ud</a>
       </div>
