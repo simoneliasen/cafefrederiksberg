@@ -25,7 +25,7 @@
 <?php
 // Opretter forbindelse til database
 include('config.php');
-//session_start();
+session_start();
 
 // Benytter POST-metoden, når formen sendes/submites
 if($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -42,7 +42,7 @@ $count = mysqli_num_rows($result);
 // check result count, store session if there is only 1 result else throw error
 if($count == 1) {
   $_SESSION['login_user'] = $myusername;
-    // header("location: pages/generelt.php");
+    header("location: pages/generelt.php");
  }else {
     $error = "Det indtastede brugernavn eller kodeord var forkert";
  }
