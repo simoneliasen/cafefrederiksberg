@@ -14,9 +14,6 @@
 </head>
 <body>
 
-  <?php // Tilføjer mulighed for announcementbar
-  include '../includes/announcement.php'; ?>
-
   <!-- Mobil navigation  -->
     <div class="container">
     <div class="mobilenav">
@@ -26,6 +23,10 @@
         </a>
     </div>
     </div>
+
+    <?php // Tilføjer mulighed for announcementbar
+    include 'includes/announcement.php'; ?>
+
   <!--Sidebar mobil  -->
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -40,8 +41,8 @@
       <a href="/cafefrederiksberg/pages/tidslinje.php" class="active">Om os<i class="arrowdown" width="2px"></i></a>
       <a href="/cafefrederiksberg/pages/kontakt.php" id="dropdown">Kontakt</a>
     </div>
-  <!-- Script til at vise sidebar, onclick -->
   <script>
+  // viser sidebar ved klik på hamburgermenu
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
   }

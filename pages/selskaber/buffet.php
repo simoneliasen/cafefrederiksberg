@@ -14,20 +14,21 @@
 </head>
 <body>
 
-  <?php // Tilføjer mulighed for announcementbar
-  include '../../includes/announcement.php'; ?>
-
   <!-- Mobil navigation -->
     <div class="container">
-    <div class="mobilenav" style="z-index: 100"> <!-- Latterlig z-index pga. widget der har latterligt z-index -->
+    <div class="mobilenav">
       <span onclick="openNav()"><img src="/cafefrederiksberg/img/hamburger.svg" id="hamburger" width="21px" height="auto"></span>
         <a href="/cafefrederiksberg/index.php">
           <img src="/cafefrederiksberg/img/logo.svg" id="fredelogo" alt="Café frederiksberg logo" width="150rem" color="white" height="auto">
         </a>
     </div>
     </div>
+
+    <?php // Tilføjer mulighed for announcementbar
+    include 'includes/announcement.php'; ?>
+
   <!--Sidebar mobil  -->
-    <div id="mySidenav" class="sidenav" style="z-index: 101">  <!-- Latterlig z-index pga. widget der har latterligt z-index -->
+    <div id="mySidenav" class="sidenav"> 
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="/cafefrederiksberg/index.php">Forside</a>
       <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>

@@ -14,9 +14,6 @@
 </head>
 <body>
   
-  <?php // Tilføjer mulighed for announcementbar
-  include '../includes/announcement.php'; ?>
-
   <!-- Mobil navigation -->
     <div class="container">
     <div class="mobilenav">
@@ -26,6 +23,10 @@
         </a>
     </div>
     </div>
+
+    <?php // Tilføjer mulighed for announcementbar
+    include 'includes/announcement.php'; ?>
+
   <!--Sidebar mobil  -->
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
