@@ -7,9 +7,9 @@ A. FONTS
 B. NAVIGATIONSBAR
 B.2 MOBILNAVIGATIONSBAR
 B.3 RESPONSIVENESS NAVIGATIONSBAR
+B.4 ANNOUNCEMENTBAR
 C. HEADER
 D. FOOTER
-E. GENEREL
 1.   INDEX
 NAN.   ADMIN (SE ADMIN CSS)
 3.   BAR
@@ -259,6 +259,18 @@ p {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+/*..............................................B.4 ANNOUNCEMENT BAR */
+
+/*Change styling on mobile  */
+@media only screen and (max-width: 900px) {
+  .announcementwrapper {
+    margin-top: 3.5rem;
+    border-top: 0.5px solid #CCB380;
+    border-bottom: 0.5px solid #CCB380;
+    background-color: #1E1D20;
+  }
 }
 
 /*..............................................C HEADER */

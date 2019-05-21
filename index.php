@@ -14,8 +14,7 @@
 </head>
 <body>
 
-  <?php // Tilføjer mulighed for announcementbar
-  include 'includes/announcement.php'; ?>
+
 
 <!-- Mobil navigation -->
   <div class="container">
@@ -26,6 +25,21 @@
       </a>
   </div>
   </div>
+  
+  <?php // Tilføjer mulighed for announcementbar
+  include 'includes/announcement.php'; ?>
+
+<style>
+@media only screen and (max-width: 900px) {
+  .announcementwrapper {
+    margin-top: 3.5rem;
+    border-top: 0.5px solid #CCB380;
+    border-bottom: 0.5px solid #CCB380;
+    background-color: #1E1D20;
+  }
+}
+</style>
+
 <!--Sidebar mobil  -->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>

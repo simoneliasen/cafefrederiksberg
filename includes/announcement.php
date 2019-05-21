@@ -23,12 +23,15 @@ if(!$results){
  if($date > $now) { //hvis dags dato er mindre end afsatte tid til announcementbar ?>
 
    <div class="announcementwrapper">
+
      <script>
+     // Ændre top-placement til 35, og ændre den til 0 hvis der scrolles 35 px(desktop)
        var $nav = $('.navigationbar');
        $(document).scroll(function() {
          $nav.css({top: $(this).scrollTop() > 35? 0:35});
        });
      </script>
+
      <div class="announcement">
        <p style="text-align: center; font-size: 1.1rem; font-weight: 700; padding: 6px 0; margin:0;"> <?php echo  $row[1]; ?> </p>
      </div>
@@ -37,6 +40,7 @@ if(!$results){
 <?php } else { //hvis dags dato er højere end afsatte tid til announcementbar ?>
 
 <script>
+// Sætter top-placement til 0, hvis der ikke er en nyhedsbjælke
   var $nav = $('.navigationbar');
   $(document).scroll(function() {
     $nav.css({top: $(this).scrollTop() > 0? 0:0});
