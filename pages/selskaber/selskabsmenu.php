@@ -25,7 +25,7 @@
     </div>
 
     <?php // Tilføjer mulighed for announcementbar
-    include 'includes/announcement.php'; ?>
+    include '../../includes/announcement.php'; ?>
 
   <!--Sidebar mobil  -->
     <div id="mySidenav" class="sidenav">
