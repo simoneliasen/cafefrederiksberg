@@ -1,30 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!--Side titel  -->
   <title>Admin-dashboard</title>
-
   <link rel="stylesheet" type="text/css" href="../css/admin.css">
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-  <!-- Includer Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
-
 </head>
-
 <body>
 
-  <?php
-  //Opretter forbindelse til databaser og ser om bruger er logget ind
+  <?php //Opretter forbindelse til databaser og ser om bruger er logget ind
   include('../session.php');
 
   $query ="SELECT * FROM barmenu;";
   $results = mysqli_query($db,$query);
-
   if(!$results){
     die("could not query the database" .mysqli_error());
   }
@@ -55,7 +46,6 @@
     <li><a href="selskabsmenu.php">Selskabsmenu</a></li>
     <li><a href="buffet.php">Buffet</a></li>
     <li><a href="kontakt.php">Kontakt</a></li>
-    <li><a href="hjælp.php">Hjælp</a></li>
     <li id="backtopage"><a href="../backtopage.php" style="color: #CCB380;"> Tilbage til siden </a></li>
   </ul>
 </div>
@@ -541,5 +531,4 @@
 </div>
 
 </body>
-
 </html>

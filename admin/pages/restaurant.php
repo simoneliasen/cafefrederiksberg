@@ -1,34 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!--Side titel  -->
   <title>Admin-dashboard</title>
-
   <link rel="stylesheet" type="text/css" href="../css/admin.css">
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-  <!-- Includer Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
-
 </head>
-
 <body>
 
-<?php
-//Opretter forbindelse til databaser og ser om bruger er logget ind
+<?php //Opretter forbindelse til databaser og ser om bruger er logget ind
 include('../session.php');
 
 $query ="SELECT * FROM menu ORDER BY m_pos;";
 $results = mysqli_query($db,$query);
-
 if(!$results){
   die("could not query the database" .mysqli_error());
 }
-
 ?>
 
 <div class="logo">
@@ -44,49 +34,39 @@ if(!$results){
     <li><a href="selskabsmenu.php">Selskabsmenu</a></li>
     <li><a href="buffet.php">Buffet</a></li>
     <li><a href="kontakt.php">Kontakt</a></li>
-    <li><a href="hjælp.php">Hjælp</a></li>
     <li id="backtopage"><a href="../backtopage.php" style="color: #CCB380;"> Tilbage til siden </a></li>
   </ul>
 </div>
 
 <div class="container">
   <div class="content">
+
     <div class="heading">
-      <!-- DYNAMISK, overskriften skal ændre sig så den passer til menu-punktet -->
       <h1>Restautrant<span style="font-weight: 400;"></span></h1>
       <div class="logout">
         <a class="button red" href="../logout.php">log ud</a>
       </div>
     </div>
 
-
-
     <div class="task_wrapper">
       <h1 class="task_heading">Rediger menu-kortet</h1>
 
       <p><b>Tilføj ret til menuen</b></p>
       <form class="restaurant_form" method="post" name="post" action="php_process/process_menu_input.php" enctype="multipart/form-data">
-
         <label>Navn på ret</label>
         <input name="m_name" type="text" placeholder="Angiv navn" required maxlength="100" />
         <br><br>
-
         <label>Beskrivelse (valgfri)</label>
         <input name="m_desc" type="text" placeholder="Angiv en beskrivelse" maxlength="170" />
         <br><br>
-
         <label>Pris</label>
         <input name="m_price"type="text" placeholder="Angiv pris" required maxlength="10" />
         <br><br>
-
         <label>position (hvorhenne på menukortet skal retten indsættes?)</label>
         <input name="m_pos"type="text" placeholder="Angiv position" required maxlength="10" />
         <br><br>
-
         <input class="button red"   type="reset"  value="Fortryd">
         <input class="button green" type="submit" value="Tilføj">
-
-
       </form>
 
       <hr>
@@ -151,7 +131,6 @@ if(!$results){
         <?php } endwhile; mysqli_close($db); ?>
         </table>
 
-
       </div>
       <div style="width:100px; margin:auto; padding-top: 2rem;">
         <a class="button grey" href="restaurant.php#restaurant_table">Tilbage</a>
@@ -161,5 +140,4 @@ if(!$results){
   </div>
 
   </body>
-
   </html>

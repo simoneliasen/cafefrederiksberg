@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!--Side titel  -->
   <title>Admin-dashboard</title>
-
   <link rel="stylesheet" type="text/css" href="../css/admin.css">
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-  <!-- Includer Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
-
 </head>
-
 <body>
 
 <div class="logo">
@@ -31,11 +24,9 @@
     <li><a href="selskabsmenu.php">Selskabsmenu</a></li>
     <li><a href="buffet.php">Buffet</a></li>
     <li><a href="kontakt.php" class="active">Kontakt</a></li>
-    <li><a href="hjælp.php">Hjælp</a></li>
     <li id="backtopage"><a href="../backtopage.php" style="color: #CCB380;"> Tilbage til siden </a></li>
   </ul>
 </div>
-
 
 <div class="container">
   <div class="content">
@@ -118,18 +109,12 @@
         <?php } endwhile; mysqli_close($db); ?>
         </table>
 
-
       </div>
-
-
-
-
 
   </div>
 </div>
   <div class="spacer" style="height:200px;"></div>
 </div>
 </div>
-
 </body>
 </html>
