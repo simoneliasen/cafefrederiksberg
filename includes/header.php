@@ -128,9 +128,8 @@
 }
 
 </style>
-<base href="http://localhost/cafefrederiksberg/index.php">
-<?php
 
+<?php
 //Opretter forbindelse manelt kontra include, da de ellers er duplikeret i main-content
 $db = mysqli_connect('localhost','root','','admin');
 if(!$db){
