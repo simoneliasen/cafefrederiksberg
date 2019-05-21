@@ -10,15 +10,16 @@
   <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
   <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
 </head>
 <body>
+
   <!--Tilføjer mulighed for announcementbar  -->
   <?php include '../includes/announcement.php'; ?>
-  <!-- Hamburger menu + logo  -->
+
+  <!-- Mobil navigation -->
     <div class="container">
-    <div class="mobilenav" style="z-index: 100"> <!-- Latterlig z-index pga. widget der har latterligt z-index -->
+    <div class="mobilenav">
       <span onclick="openNav()"><img src="/cafefrederiksberg/img/hamburger.svg" id="hamburger" width="21px" height="auto"></span>
         <a href="/cafefrederiksberg/index.php">
           <img src="/cafefrederiksberg/img/logo.svg" id="fredelogo" alt="Café frederiksberg logo" width="150rem" color="white" height="auto">
@@ -26,7 +27,7 @@
     </div>
     </div>
   <!--Sidebar mobil  -->
-    <div id="mySidenav" class="sidenav" style="z-index: 101">  <!-- Latterlig z-index pga. widget der har latterligt z-index -->
+    <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="/cafefrederiksberg/index.php">Forside</a>
       <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
@@ -39,8 +40,8 @@
       <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown" width="2px"></i></a>
       <a href="/cafefrederiksberg/pages/kontakt.php" id="dropdown">Kontakt</a>
     </div>
-  <!-- Script til at vise sidebar, onclick -->
   <script>
+  // vis sidebar ved klik på hamburgermenu
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
   }
@@ -48,6 +49,7 @@
     document.getElementById("mySidenav").style.width = "0px";
   }
   </script>
+
   <!--Desktop navigation  -->
     <div class="navigationbar">
       <nav class="container">
@@ -58,7 +60,6 @@
         <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
         <a href="/cafefrederiksberg/pages/bar.php" class="active">Barkort</a>
         <a href="/cafefrederiksberg/pages/events.php">Events</a>
-  <!--Selskaber dropdown  -->
           <div class="dropdown">
             <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown"></i></a>
             <div class="dropdown-content">
@@ -67,7 +68,6 @@
             <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
             </div>
           </div>
-  <!-- Om os dropdown  -->
           <div class="dropdown">
             <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown"></i></a>
             <div class="dropdown-content">
@@ -77,8 +77,8 @@
         </div>
       </nav>
     </div>
-    <!-- Tilføjer sort baggrund onscroll -->
     <script>
+    // Tilføj sort baggrund ved scroll
     var $nav = $('.navigationbar');
     $(document).scroll(function() {
         $nav.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});

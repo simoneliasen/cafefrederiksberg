@@ -6,20 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Kom forbi og oplev vores menu, bestil online eller benyt dig af Take-away, vi har mad til enhver smag, om det gælder et stjerneskud eller en Black angus burger"/>
   <link rel="icon" type="image/png" href="img/favicon.ico">
-  <!--Side titel  -->
   <title>Café Frederiksberg</title>
-  <!--Standard stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
   <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
 </head>
 <body>
+
   <!--Tilføjer mulighed for announcementbar  -->
   <?php include '../includes/announcement.php'; ?>
-  <!-- Hamburger menu + logo  -->
+
+  <!-- Mobil navigation  -->
     <div class="container">
-    <div class="mobilenav" style="z-index: 100"> <!-- Latterlig z-index pga. widget der har latterligt z-index -->
+    <div class="mobilenav"> <!-- Latterlig z-index pga. widget der har latterligt z-index -->
       <span onclick="openNav()"><img src="/cafefrederiksberg/img/hamburger.svg" id="hamburger" width="21px" height="auto"></span>
         <a href="/cafefrederiksberg/index.php">
           <img src="/cafefrederiksberg/img/logo.svg" id="fredelogo" alt="Café frederiksberg logo" width="150rem" color="white" height="auto">
@@ -27,7 +27,7 @@
     </div>
     </div>
   <!--Sidebar mobil  -->
-    <div id="mySidenav" class="sidenav" style="z-index: 101">  <!-- Latterlig z-index pga. widget der har latterligt z-index -->
+    <div id="mySidenav" class="sidenav">  <!-- Latterlig z-index pga. widget der har latterligt z-index -->
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="/cafefrederiksberg/index.php">Forside</a>
       <a href="/cafefrederiksberg/pages/restaurant.php" class="active">Menukort</a>
@@ -40,8 +40,8 @@
       <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown" width="2px"></i></a>
       <a href="/cafefrederiksberg/pages/kontakt.php" id="dropdown">Kontakt</a>
     </div>
-  <!-- Script til at vise sidebar, onclick -->
   <script>
+  // Vis sidebar ved tryk
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
   }
@@ -49,6 +49,7 @@
     document.getElementById("mySidenav").style.width = "0px";
   }
   </script>
+
   <!--Desktop navigation  -->
     <div class="navigationbar">
       <nav class="container">
@@ -59,7 +60,6 @@
         <a href="/cafefrederiksberg/pages/restaurant.php" class="active">Menukort</a>
         <a href="/cafefrederiksberg/pages/bar.php">Barkort</a>
         <a href="/cafefrederiksberg/pages/events.php">Events</a>
-  <!--Selskaber dropdown  -->
           <div class="dropdown">
             <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown"></i></a>
             <div class="dropdown-content">
@@ -68,7 +68,6 @@
             <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
             </div>
           </div>
-  <!-- Om os dropdown  -->
           <div class="dropdown">
             <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown"></i></a>
             <div class="dropdown-content">
@@ -78,13 +77,13 @@
         </div>
       </nav>
     </div>
-    <!-- Tilføjer sort baggrund onscroll -->
     <script>
+    // Tilføjer sort baggrund onscroll
     var $nav = $('.navigationbar');
     $(document).scroll(function() {
         $nav.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
     });
-    // Does the same as above, just for The dropdown menu
+    // Tilføjer sort baggrund til dropdown items
     var $dropdown = $('.dropdown-content');
     $(document).scroll(function() {
         $dropdown.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});

@@ -6,21 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Café Frederiksberg har eksisteret siden år 1900, og er det ældste værtshus på samme beliggenhed i Aalborg. Vi byder dog også velkommen i vores restaurant, til selskaber eller til vores events!"/>
   <link rel="icon" type="image/png" href="img/favicon.ico">
-  <!--Side titel  -->
   <title>Café Frederiksberg</title>
-  <!--Stylesheets  -->
   <link rel="stylesheet" type="text/css" href="css/skeleton.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
 </head>
 <body>
+
   <!--Tilføjer mulighed for announcementbar  -->
   <?php include 'includes/announcement.php'; ?>
-<!-- Hamburger menu + logo  -->
+
+<!-- Mobil navigation -->
   <div class="container">
-  <div class="mobilenav" style="z-index: 100"> <!-- Latterlig z-index pga. widget der har latterligt z-index -->
+  <div class="mobilenav">
     <span onclick="openNav()"><img src="/cafefrederiksberg/img/hamburger.svg" id="hamburger" width="21px" height="auto"></span>
       <a href="/cafefrederiksberg/index.php">
         <img src="/cafefrederiksberg/img/logo.svg" id="fredelogo" alt="Café frederiksberg logo" width="150rem" color="white" height="auto">
@@ -28,7 +27,7 @@
   </div>
   </div>
 <!--Sidebar mobil  -->
-  <div id="mySidenav" class="sidenav" style="z-index: 101">  <!-- Latterlig z-index pga. widget der har latterligt z-index -->
+  <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="/cafefrederiksberg/index.php" class="active">Forside</a>
     <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
@@ -50,7 +49,8 @@
     document.getElementById("mySidenav").style.width = "0px";
   }
   </script>
-<!--Desktop navigationbar -->
+
+<!--Desktop navigation -->
   <div class="navigationbar">
     <nav class="container">
       <div class="logo">
@@ -83,7 +83,7 @@
   $(document).scroll(function() {
       $nav.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
   });
-  // Does the same as above, just for The dropdown menu
+  // Sort baggrund til dropdown items
   var $dropdown = $('.dropdown-content');
   $(document).scroll(function() {
       $dropdown.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
