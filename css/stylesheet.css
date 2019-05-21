@@ -11,9 +11,9 @@ C. HEADER
 D. FOOTER
 E. GENEREL
 1.   INDEX
-2.   ADMIN
+NAN.   ADMIN (SE ADMIN CSS)
 3.   BAR
-4.   BOOKING
+NAN.   BOOKING
 5.   EVENTS
 6.   KONTAKT
 7.  RESTAURANT
@@ -196,7 +196,6 @@ p {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-
   top: 0; /* Stay at the top */
   left: 0;
   background-color: #111; /* Black*/
@@ -230,11 +229,6 @@ p {
   transition: margin-left .5s;
   padding: 20px;
 }
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 
 /*..............................................B.3 RESPONSIVENESS NAVIGATIONSBAR */
 
@@ -257,6 +251,12 @@ p {
   .mobilenav {
     display: inherit;
   }
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 /*..............................................C HEADER */
@@ -322,12 +322,10 @@ video {
   display: block
 margin-top: 1.3rem;
 }
-
 .telefonleft {
   display: inline;
   float: left;
 }
-
 .telefonright {
   display: inline;
   float: right;
@@ -339,12 +337,10 @@ margin-top: 1.3rem;
   display: block;
 margin-top: 1rem;
 }
-
 .e-mailleft {
   display: inline;
     float: left;
 }
-
 .e-mailright {
     display: inline;
   float: right;
@@ -356,54 +352,27 @@ margin-top: 1rem;
   font-size: 0.8rem;
   font-style: italic;
 }
-
 .four.columns.åbningstider ul,.four.columns.links ul ,.four.columns.kontaktos ul {
   font-size: 30px;
   font-family: "Poppins";
   font-weight: bold;
   margin-top: 1.5rem;
 }
-
 .four.columns.kontaktos ul,.four.columns.kontaktos li, .four.columns.åbningstider ul,.four.columns.åbningstider li,.four.columns.links ul,.four.columns.links li {
   text-align: center;
   list-style-type: none;
 }
 
-#instagramtext,#facebooktext {
+#instagramtext, #facebooktext {
   display: inline;
   margin-left: 1rem;
 }
 /*..............................................1 INDEX */
 
-/*Bestil online overskrift  */
-.bestil_online{
-  height: 50px;
-  padding: 0.4rem;
-  margin: auto;
-}
-
-.bestil_online_overskrift {
-  font-size: 1.8rem;
-  color: white;
-  font-family: 'Inter var';
-  float: left;
-  padding-top: 0.8rem;
-}
-
-.bestil_online_knapper{
-  margin-top: 0.4rem;
-}
-
-.bestil_online_knapper a{
-  margin-left: 0.7rem;
-  float: right;
-}
-
 /*Billede styling  */
 .intro_historie{
   padding: 2rem 0;
 }
-
 .butikfront {
   margin-top: 2rem;
   width: 100%;
@@ -428,11 +397,9 @@ margin-top: 1rem;
 .indholdsoversigt{
   text-align: center;
 }
-
 .indholdsoversigt a{
   text-decoration: none;
 }
-
 .indholdsoversigt img{
   margin: 2rem auto 1rem auto;
   transition: transform 0.15s;
@@ -440,7 +407,6 @@ margin-top: 1rem;
   width: 175px;
   height: auto;
 }
-
 .indholdsoversigt img:hover{
    transform: scale(1.07);
    transition: transform 0.15s;
@@ -448,13 +414,11 @@ margin-top: 1rem;
   -moz-box-shadow: 0px 0px 43px -11px rgba(255,183,0,1);
   box-shadow: 0px 0px 43px -11px rgba(255,183,0,1);
 }
-
 .indholdsoversigt h2{
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
 }
-
 .indholdsoversigt p{
   margin: 0 auto;
   text-align: center;
@@ -473,35 +437,28 @@ margin-top: 1rem;
 .events_overskrift_leftalign {
   display: inline;
 }
-
 .events_overskrift_rightalign{
   display:inline-block;
   margin-left: 1rem;
 }
-
 .events_overskrift_rightalign h2{
   display:inline;
 }
-
 .row.alleeventsforside {
   text-align: center;
 }
-
 .button.alleeventsforside {
   margin: 0 auto;
   margin-bottom: 2rem;
 }
-
 .row.alleeventsforside {
   text-align: center;
   margin-top: -1.2rem;
     margin-bottom: 1rem;
 }
-
 .button.alleeventsforside{
   color:white;
 }
-
 .button.alleeventsforside:hover {
   color: grey;
 }
@@ -513,18 +470,12 @@ margin-top: 1rem;
   height: 35rem;
   width: 100%;
 }
-
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
   width: 100%;
   height: 100%;
         }
-/*Fjerner link til facebook widget  */
-body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4) > a {
-  display: none;
-}
-/*..............................................2 ADMIN */
 
 /*..............................................3 BAR */
 
@@ -563,7 +514,6 @@ body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4)
   color:#CCB380;
 }
 
-/*..............................................4 BOOKING */
 
 /*..............................................5 EVENTS */
 
@@ -620,16 +570,11 @@ body > div.container > div > div.sk-events.sk-upcoming-events > div:nth-child(4)
   }
 }
 
-
-
 /*Fjerner "by socialkit" widget  */
 body > div:nth-child(13) > div.sk-ww-facebook-feed > div:nth-child(6) > a {
   display: none;
 }
-/*Fjerner "by widget" v. instagram  */
-body > div:nth-child(14) > div > div:nth-child(4) > a {
-  display:none;
-}
+
 /*..............................................6 KONTAKT */
 .opening_headline{
   padding: 1rem 0;
