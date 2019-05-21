@@ -69,8 +69,8 @@ mysqli_set_charset($db,"utf8");
       <div class="footer_element" style="text-align: center;">
         <a href="http://www.orlando-florida.dk/"><p>Feriehus Florida</p></a>
         <a href="https://www.findsmiley.dk/25727"><p>Kontrol Rapport</p></a>
-        <a href="https://www.instagram.com/cafefrederiksberg/"><img src="/cafefrederiksberg/img/instagram.png" width="30px" heigth="auto" alt="Genvej til instagram"><p id="instagramtext">Instagram</p></a><br><br>
-        <a href="https://www.facebook.com/Fredelive/"><img src="/cafefrederiksberg/img/facebook.png" width="30px" heigth="auto" alt="Genvej til facebook"><p id="facebooktext">Facebook</p></a>
+        <a href="https://www.instagram.com/cafefrederiksberg/"><img src="./../../img/instagram.png" width="30px" heigth="auto" alt="Genvej til instagram"><p id="instagramtext">Instagram</p></a><br><br>
+        <a href="https://www.facebook.com/Fredelive/"><img src="./../../img/facebook.png" width="30px" heigth="auto" alt="Genvej til facebook"><p id="facebooktext">Facebook</p></a>
       </div>
     </div>
   </div>
