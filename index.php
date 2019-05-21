@@ -100,15 +100,18 @@
   <div class="bg_dark intro_historie">
     <div class="container">
       <div class="row">
+
+        <!--Café frederiksberg kort historie  -->
         <div class="six columns">
           <h2> Café Frederiksberg </h2>
           <h6> Siden år 1900</h4>
           <p>Café Frederiksberg har budt gæster velkommen siden 1900 og er dermed Aalborgs ældste værtshus på samme beliggenhed – men også Aalborgs største værtshus. Igennem de 119 år Café Frederiksberg har eksisteret, har der kun være tre ejerskift. Nu om dage er det navnet “Frede” som gæsterne ynder at bruge, og derfor har Café Frederiksbergs musikmagasin også fået navnet FREDE LIVE.</p>
           <a class="button" href="pages/tidslinje.php">Læs hele historien <u>her</u></a>
         </div>
-
+        <!--Billede af butiksfront  -->
         <div class="six columns butikfront">
         </div>
+
       </div>
     </div>
   </div>
@@ -116,6 +119,7 @@
   <div class="container">
     <div class="row">
 
+      <!--Restaurant genvej  -->
       <div class="three columns indholdsoversigt">
         <a href="pages/restaurant.php">
           <img src="img/inholdsoversigtrestaurant.png" alt="Genvej til restaurant indhold">
@@ -123,7 +127,7 @@
           <p>Se vores menukort og bestil take-away</p>
         </a>
       </div>
-
+      <!--Bar genvej  -->
       <div class="three columns indholdsoversigt">
         <a href="pages/bar.php">
           <img src="img/inholdsoversigtbar.png"  alt="Genvej til bar indhold">
@@ -131,7 +135,7 @@
           <p>Se vores store bar-kort med Aalborgs største Gin udvalg</p>
         </a>
       </div>
-
+      <!--Events genvej  -->
       <div class="three columns indholdsoversigt">
         <a href="pages/events.php">
           <img src="img/inholdsoversigtevents.png"  alt="Genvej til events indhold">
@@ -139,7 +143,7 @@
           <p>Se vores mange live-events på Klub Frede</p>
         </a>
       </div>
-
+      <!--Selskaber genvej  -->
       <div class="three columns indholdsoversigt">
         <a href="pages/selskaber.php">
           <img src="img/inholdsoversigtselskaber.png"  alt="Genvej til selskaber indhold">
@@ -151,7 +155,7 @@
     </div>
   </div>
 
-  <?php
+  <?php //Henter data fra katalog tabel
   $query ="SELECT * FROM katalog";
   $results = mysqli_query($db, $query);
   if (!$results) {
@@ -164,6 +168,7 @@
     <div class="container">
       <div class="row">
 
+        <!--Frede live katalog-billede  -->
         <div class="one-half column frede_live_katalog">
           <div class="frede_live_katalog_text_container">
             <a rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">
@@ -172,6 +177,7 @@
           </div>
         </div>
 
+        <!--Katalog overskrift + underoverskrift + tekst + link   -->
         <div class="one-half column frede_live_katalog_text">
           <div class="frede_live_katalog_text_container">
             <h2><?php echo $row[2]; ?></h2>
@@ -185,27 +191,28 @@
       </div>
     </div>
   </div>
-  <?php
+
+  <?php //lukker forbindelse til database
   mysqli_close($db);
   ?>
 
-  <!--Events: Facebook implementering  -->
+  <!--Events -->
   <div class="container">
     <div class="events_overskrift">
+        <!--Frede live logo  -->
       <div class="events_overskrift_leftalign">
         <img src="/cafefrederiksberg/img/fredelivelogo.svg" id="eventlogo" width="60rem" height="auto" alt="Frede live logo til events">
       </div>
-
+      <!--Frede live - kommende events overskrift  -->
       <div class="events_overskrift_rightalign">
         <h2>Frede Live</h2>
         <h6>Kommende Events</h6>
       </div>
     </div>
-    <!--Facebook widget  -->
+    <!--Facebook widget som viser events  -->
     <div id="event_oversigt" class='sk-fb-event' data-embed-id='23826'></div>
     <script src='https://www.sociablekit.com/app/embed/facebook-events/widget.js'></script>
   </div>
-
   <!--Knap til alle events  -->
   <div class="row alleeventsforside">
     <a class="button alleeventsforside" href="pages/events.php#event_oversigt">Se alle kommende events <u>her</u></a>
@@ -218,8 +225,8 @@
     </div>
   </div>
 
-  <?php include 'includes/footer.php'; ?>
+  <?php //Inkludere footer
+  include 'includes/footer.php'; ?>
 
 </body>
-
 </html>
