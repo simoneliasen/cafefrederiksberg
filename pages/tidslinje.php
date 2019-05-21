@@ -55,7 +55,7 @@
     <div class="navigationbar">
       <nav class="container">
       <div class="logo">
-        <a href="./index.php"><img src="./../img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
+        <a href="../index.php"><img src="./../img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
       </div>
         <div class="navigationmenu">
         <a href="restaurant.php">Menukort</a>
