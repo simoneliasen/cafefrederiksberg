@@ -15,7 +15,7 @@
 <body>
 
   <?php // Tilføjer mulighed for announcementbar
-  include '../includes/announcement.php'; ?>
+  include 'includes/announcement.php'; ?>
 
 <!-- Mobil navigation -->
   <div class="container">
