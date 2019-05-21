@@ -2,11 +2,9 @@ Generelt
 - Tekst til kunstnere der vil spille (kontakt eller event-side)
 - DJ?? (info om lejning af dj)
 - Tekst til tidslinjeside + Billeder
-- text-shadow navigationsbar
 
 Mobiloptimering
 - Juster placering af mobilmenu ved scroll, når announcementbar er aktiveret
-- Lav dropdown til menupunkter i mobilmenu
 - Generel mobiloptimering af enkelte sider
 
 
