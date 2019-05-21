@@ -17,9 +17,9 @@
   <!-- Mobil navigation  -->
     <div class="container">
     <div class="mobilenav">
-      <span onclick="openNav()"><img src="/cafefrederiksberg/img/hamburger.svg" id="hamburger" width="21px" height="auto"></span>
-        <a href="/cafefrederiksberg/index.php">
-          <img src="/cafefrederiksberg/img/logo.svg" id="fredelogo" alt="Café frederiksberg logo" width="150rem" color="white" height="auto">
+      <span onclick="openNav()"><img src="./../img/hamburger.svg" id="hamburger" width="21px" height="auto"></span>
+        <a href="../index.php">
+          <img src="./../img/logo.svg" id="fredelogo" alt="Café frederiksberg logo" width="150rem" color="white" height="auto">
         </a>
     </div>
     </div>
@@ -30,16 +30,16 @@
   <!--Sidebar mobil  -->
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="/cafefrederiksberg/index.php">Forside</a>
-      <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
-      <a href="/cafefrederiksberg/pages/bar.php">Barkort</a>
-      <a href="/cafefrederiksberg/pages/events.php">Events</a>
-      <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown" width="2px"></i></a>
-      <a href="/cafefrederiksberg/pages/selskaber/buffet.php" id="dropdown">Buffet</a>
-      <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php" id="dropdown">Arrangementer</a>
-      <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php" id="dropdown">Selskabsmenu</a>
-      <a href="/cafefrederiksberg/pages/tidslinje.php" class="active">Om os<i class="arrowdown" width="2px"></i></a>
-      <a href="/cafefrederiksberg/pages/kontakt.php" id="dropdown">Kontakt</a>
+      <a href="../index.php">Forside</a>
+      <a href="restaurant.php">Menukort</a>
+      <a href="bar.php">Barkort</a>
+      <a href="events.php">Events</a>
+      <a href="selskaber.php">Selskaber<i class="arrowdown" width="2px"></i></a>
+      <a href="selskaber/buffet.php" id="dropdown">Buffet</a>
+      <a href="selskaber/arrangementer.php" id="dropdown">Arrangementer</a>
+      <a href="selskaber/selskabsmenu.php" id="dropdown">Selskabsmenu</a>
+      <a href="tidslinje.php" class="active">Om os<i class="arrowdown" width="2px"></i></a>
+      <a href="kontakt.php" id="dropdown">Kontakt</a>
     </div>
   <script>
   // viser sidebar ved klik på hamburgermenu
@@ -55,24 +55,24 @@
     <div class="navigationbar">
       <nav class="container">
       <div class="logo">
-        <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
+        <a href="./index.php"><img src="./../img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
       </div>
         <div class="navigationmenu">
-        <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
-        <a href="/cafefrederiksberg/pages/bar.php">Barkort</a>
-        <a href="/cafefrederiksberg/pages/events.php">Events</a>
+        <a href="restaurant.php">Menukort</a>
+        <a href="bar.php">Barkort</a>
+        <a href="events.php">Events</a>
           <div class="dropdown">
-            <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown"></i></a>
+            <a href="selskaber.php">Selskaber<i class="arrowdown"></i></a>
             <div class="dropdown-content">
-            <a href="/cafefrederiksberg/pages/selskaber/buffet.php">Buffet</a>
-            <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php">Arrangementer</a>
-            <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
+            <a href="selskaber/buffet.php">Buffet</a>
+            <a href="selskaber/arrangementer.php">Arrangementer</a>
+            <a href="selskaber/selskabsmenu.php">Selskabsmenu</a>
             </div>
           </div>
           <div class="dropdown">
-            <a href="/cafefrederiksberg/pages/tidslinje.php" class="active">Om os<i class="arrowdown"></i></a>
+            <a href="tidslinje.php" class="active">Om os<i class="arrowdown"></i></a>
             <div class="dropdown-content">
-            <a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
+            <a href="kontakt.php">Kontakt</a>
             </div>
           </div>
         </div>

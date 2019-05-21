@@ -18,9 +18,9 @@
   <!-- Mobil navigation -->
     <div class="container">
     <div class="mobilenav">
-      <span onclick="openNav()"><img src="/cafefrederiksberg/img/hamburger.svg" id="hamburger" width="21px" height="auto"></span>
-        <a href="/cafefrederiksberg/index.php">
-          <img src="/cafefrederiksberg/img/logo.svg" id="fredelogo" alt="Café frederiksberg logo" width="150rem" color="white" height="auto">
+      <span onclick="openNav()"><img src="./../img/hamburger.svg" id="hamburger" width="21px" height="auto"></span>
+        <a href="./index.php">
+          <img src="./../img/logo.svg" id="fredelogo" alt="Café frederiksberg logo" width="150rem" color="white" height="auto">
         </a>
     </div>
     </div>
@@ -31,16 +31,16 @@
   <!--Sidebar mobil  -->
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="/cafefrederiksberg/index.php">Forside</a>
-      <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
-      <a href="/cafefrederiksberg/pages/bar.php">Barkort</a>
-      <a href="/cafefrederiksberg/pages/events.php" class="active">Events</a>
-      <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown" width="2px"></i></a>
-      <a href="/cafefrederiksberg/pages/selskaber/buffet.php" id="dropdown">Buffet</a>
-      <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php" id="dropdown">Arrangementer</a>
-      <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php" id="dropdown">Selskabsmenu</a>
-      <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown" width="2px"></i></a>
-      <a href="/cafefrederiksberg/pages/kontakt.php" id="dropdown">Kontakt</a>
+      <a href="./index.php">Forside</a>
+      <a href="./pages/restaurant.php">Menukort</a>
+      <a href="./pages/bar.php">Barkort</a>
+      <a href="./pages/events.php" class="active">Events</a>
+      <a href="./pages/selskaber.php">Selskaber<i class="arrowdown" width="2px"></i></a>
+      <a href="./pages/selskaber/buffet.php" id="dropdown">Buffet</a>
+      <a href="./pages/selskaber/arrangementer.php" id="dropdown">Arrangementer</a>
+      <a href="./pages/selskaber/selskabsmenu.php" id="dropdown">Selskabsmenu</a>
+      <a href="./pages/tidslinje.php">Om os<i class="arrowdown" width="2px"></i></a>
+      <a href="./pages/kontakt.php" id="dropdown">Kontakt</a>
     </div>
   <script>
   // Vis sidebar onclick
@@ -56,24 +56,24 @@
     <div class="navigationbar">
       <nav class="container">
       <div class="logo">
-        <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
+        <a href="./index.php"><img src="./../img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
       </div>
         <div class="navigationmenu">
-        <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
-        <a href="/cafefrederiksberg/pages/bar.php">Barkort</a>
-        <a href="/cafefrederiksberg/pages/events.php" class="active">Events</a>
+        <a href="./pages/restaurant.php">Menukort</a>
+        <a href="./pages/bar.php">Barkort</a>
+        <a href="./pages/events.php" class="active">Events</a>
           <div class="dropdown">
-            <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown"></i></a>
+            <a href="./pages/selskaber.php">Selskaber<i class="arrowdown"></i></a>
             <div class="dropdown-content">
-            <a href="/cafefrederiksberg/pages/selskaber/buffet.php">Buffet</a>
-            <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php">Arrangementer</a>
-            <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
+            <a href="./pages/selskaber/buffet.php">Buffet</a>
+            <a href="./pages/selskaber/arrangementer.php">Arrangementer</a>
+            <a href="./pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
             </div>
           </div>
           <div class="dropdown">
-            <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown"></i></a>
+            <a href="./pages/tidslinje.php">Om os<i class="arrowdown"></i></a>
             <div class="dropdown-content">
-            <a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
+            <a href="./pages/kontakt.php">Kontakt</a>
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@
   <div class="events_overskrift">
 <!--Overskrift logo  -->
     <div class="events_overskrift_leftalign">
-      <img src="/cafefrederiksberg/img/fredelivelogo.svg" id="eventlogo" width="60rem" height="auto">
+      <img src="./img/fredelivelogo.svg" id="eventlogo" width="60rem" height="auto">
     </div>
 <!-- Overskrift tekst  -->
     <div class="events_overskrift_rightalign">
@@ -152,7 +152,7 @@
     <div class="row">
 
       <div class="one-half column frede_live_katalog">
-        <a href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">
+        <a href="https:/..azurewebsites.net/" target="_blank">
           <div class="klub_frede_img">
           </div>
         </a>
@@ -163,7 +163,7 @@
           <h2>Klub Frede</h2>
           <h6>Bliv medlem og spar penge</h6>
           <p>Med et medlemskab i Klub Frede er du garanteret eksklusive tilbud til de mange spændende live koncerter, samt andre begivenheder som Café Frederiksberg har at byde på. Derudover er der også særlige tilbud i baren til alle medlemmer af Klub Frede. </p>
-          <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank" style="color:#CCB380">BESTIL MEDLEMSKAB</a>
+          <a class="button" href="https:/..azurewebsites.net/" target="_blank" style="color:#CCB380">BESTIL MEDLEMSKAB</a>
         </div>
       </div>
 
