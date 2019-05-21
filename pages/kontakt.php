@@ -17,11 +17,9 @@
   <!-- Includer Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
 </head>
-
 <body>
   <!--Tilføjer mulighed for announcementbar  -->
   <?php include '../includes/announcement.php'; ?>
-
   <!-- Hamburger menu + logo  -->
     <div class="container">
     <div class="mobilenav" style="z-index: 100"> <!-- Latterlig z-index pga. widget der har latterligt z-index -->
@@ -83,12 +81,6 @@
         </div>
       </nav>
     </div>
-    <!--Henter Jquery Script via CDN  -->
-    <script
-      src="https://code.jquery.com/jquery-1.12.4.js"
-      integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-      crossorigin="anonymous">
-      </script>
     <!-- Tilføjer sort baggrund onscroll -->
     <script>
     var $nav = $('.navigationbar');

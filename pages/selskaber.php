@@ -53,7 +53,6 @@
     document.getElementById("mySidenav").style.width = "0px";
   }
   </script>
-
   <!--Desktop navigation  -->
     <div class="navigationbar">
       <nav class="container">
@@ -83,12 +82,6 @@
         </div>
       </nav>
     </div>
-    <!--Henter Jquery Script via CDN  -->
-    <script
-      src="https://code.jquery.com/jquery-1.12.4.js"
-      integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-      crossorigin="anonymous">
-      </script>
     <!-- Tilføjer sort baggrund onscroll -->
     <script>
     var $nav = $('.navigationbar');
