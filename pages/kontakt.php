@@ -14,8 +14,8 @@
 </head>
 <body>
 
-  <!--Tilføjer mulighed for announcementbar  -->
-  <?php include '../includes/announcement.php'; ?>
+  <?php // Tilføjer mulighed for announcementbar
+  include '../includes/announcement.php'; ?>
 
   <!-- Mobil navigation -->
     <div class="container">
@@ -90,10 +90,12 @@
     });
     </script>
 
-  <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
-  <?php include '../includes/header.php'; ?>
-  <!--Connects to database  -->
-  <?php include '../admin/config.php';?>
+<?php
+  // Indsætter video/billede slider
+  include '../includes/header.php';
+  // Opretter forbindelse til database
+  include '../admin/config.php';
+?>
 
 <div class="bg_dark">
   <div class="container opening_info">

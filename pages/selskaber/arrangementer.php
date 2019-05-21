@@ -14,8 +14,8 @@
 </head>
 <body>
 
-  <!--Tilføjer mulighed for announcementbar  -->
-  <?php include '../../includes/announcement.php'; ?>
+  <?php // Tilføjer mulighed for announcementbar
+  include '../includes/announcement.php'; ?>
 
   <!-- Mobil navigation  -->
     <div class="container">
@@ -90,7 +90,7 @@
     });
     </script>
 
-  <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
+  <!-- Indsætter video/billede slider-->
   <?php include '../../includes/header.php'; ?>
 
 <div class="wrapper">

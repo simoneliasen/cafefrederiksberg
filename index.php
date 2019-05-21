@@ -14,8 +14,8 @@
 </head>
 <body>
 
-  <!--Tilføjer mulighed for announcementbar  -->
-  <?php include 'includes/announcement.php'; ?>
+  <?php // Tilføjer mulighed for announcementbar
+  include '../includes/announcement.php'; ?>
 
 <!-- Mobil navigation -->
   <div class="container">
@@ -90,8 +90,11 @@
   });
   </script>
 
-  <?php include 'includes/header.php'; ?>
-  <?php include 'admin/config.php';?>
+  <?php
+  // Indsætter video/billede slider
+  include 'includes/header.php';
+  // Opretter forbindelse til databasen
+   include 'admin/config.php';?>
 
   <div class="bg_dark intro_historie">
     <div class="container">

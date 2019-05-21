@@ -14,8 +14,8 @@
 </head>
 <body>
 
-  <!--Tilføjer mulighed for announcementbar  -->
-  <?php include '../includes/announcement.php'; ?>
+  <?php // Tilføjer mulighed for announcementbar
+  include '../includes/announcement.php'; ?>
 
   <!-- Mobil navigation  -->
     <div class="container">
@@ -90,11 +90,12 @@
     });
     </script>
 
-  <?php include '../includes/header.php'; ?>
-  <!--Connects to database  -->
-  <?php include '../admin/config.php';?>
+    <?php
+      // Indsætter video/billede slider
+      include '../includes/header.php';
+      // Opretter forbindelse til database
+      include '../admin/config.php';
 
-  <?php
   $query ="SELECT * FROM menu ORDER BY m_pos  ";
   $results = mysqli_query($db,$query);
   if(!$results){

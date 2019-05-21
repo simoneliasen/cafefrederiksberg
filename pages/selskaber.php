@@ -13,9 +13,9 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
 </head>
 <body>
-
-  <!--Tilføjer mulighed for announcementbar  -->
-  <?php include '../includes/announcement.php'; ?>
+  
+  <?php // Tilføjer mulighed for announcementbar
+  include '../includes/announcement.php'; ?>
 
   <!-- Mobil navigation -->
     <div class="container">
@@ -90,8 +90,8 @@
     });
     </script>
 
-  <!--Slider (behøver ikke container, da den skal have 100% bredde) -->
-  <?php include '../includes/header.php'; ?>
+  <?php // Indsætter video/billede slider
+  include '../includes/header.php'; ?>
 
 <div class="selskaber_wrapper">
     <div class="row">
