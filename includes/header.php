@@ -128,11 +128,11 @@
 }
 
 </style>
-<base href="http://localhost/cafefrederiksberg/index.php">
+<base href="http://lamkurs.dk/index.php">
 <?php
 
 //Opretter forbindelse manelt kontra include, da de ellers er duplikeret i main-content
-$db = mysqli_connect('localhost','root','','admin');
+$db = mysqli_connect('mysql4.unoeuro.com','korius_dk','qbj23ezn','korius_dk_db');
 if(!$db){
   die("Cannot connect to the database" . mysqli_connect_error());
 }
