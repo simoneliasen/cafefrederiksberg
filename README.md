@@ -1,11 +1,12 @@
 # Quick guide to get the website running on your machine
 
 
-# Set the base href in header.php to your sites domain
+
+1. Set the base href in header.php to your sites index.php location (in root folder)
 ex. base href="http://localhost/cafefrederiksberg/index.php"
 
 
-# Change server connection info
+2. Change server connection info
 ex $db = mysqli_connect('localhost','user','password','admin');
 
 This should be done in the following files
@@ -14,4 +15,4 @@ This should be done in the following files
 - footer.php
 - config.php
 
-# Download the SQL-database (found in branch "database")
+3. Download the SQL-database (found in branch "database")
