@@ -1,3 +1,6 @@
+<?php //Opretter forbindelse til databaser og ser om bruger er logget ind
+include('../session.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,10 +13,6 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
 </head>
 <body>
-
-  <?php //Opretter forbindelse via config.php, og tjekker om du er logget ind via session.php
-  include('../session.php');
-  ?>
 
 <div class="logo">
   <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="100%">

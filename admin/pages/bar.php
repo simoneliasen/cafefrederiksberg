@@ -1,3 +1,6 @@
+<?php //Opretter forbindelse til databaser og ser om bruger er logget ind
+include('../session.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +14,7 @@
 </head>
 <body>
 
-  <?php //Opretter forbindelse til databaser og ser om bruger er logget ind
-  include('../session.php');
-
+  <?php
   $query ="SELECT * FROM barmenu;";
   $results = mysqli_query($db,$query);
   if(!$results){

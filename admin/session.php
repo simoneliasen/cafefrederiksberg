@@ -1,5 +1,4 @@
-<?php
-session_start();
+<?php session_start();
 // Finder og går ind i database
    include('config.php');
 

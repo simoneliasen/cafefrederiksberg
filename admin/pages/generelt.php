@@ -1,3 +1,6 @@
+<?php //Opretter forbindelse til databaser og ser om bruger er logget ind
+include('../session.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +14,6 @@
   <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|s)no-js(s|$)/,"$1js$2")})(document,window,0);</script>
 </head>
 <body>
-
-    <?php //Opretter forbindelse til databaser og ser om bruger er logget ind
-    include('../session.php');
-    ?>
 
 <div class="logo">
   <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="100%">

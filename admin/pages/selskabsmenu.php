@@ -1,3 +1,7 @@
+<?php //Opretter forbindelse til databaser og ser om bruger er logget ind
+include('../session.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +15,7 @@
 </head>
 <body>
 
-  <?php //Opretter forbindelse til databaser og ser om bruger er logget ind
-  include('../session.php');
-
-  // Henter data fra selskabesmenu tabel
+<?php // Henter data fra selskabesmenu tabel
   $query ="SELECT * FROM selskabsmenu;";
   $results = mysqli_query($db,$query);
   if(!$results){

@@ -1,3 +1,6 @@
+<?php //Opretter forbindelse til databaser og ser om bruger er logget ind
+include('../session.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,8 +15,6 @@
 <body>
 
 <?php //Opretter forbindelse til databaser og ser om bruger er logget ind
-include('../session.php');
-
 $query ="SELECT * FROM menu ORDER BY m_pos;";
 $results = mysqli_query($db,$query);
 if(!$results){
