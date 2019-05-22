@@ -1,5 +1,4 @@
 <?php
-
 // Database Credentials for connection
 define('DB_SERVER', 'mysql4.unoeuro.com');
 define('DB_USERNAME', 'korius_dk');
