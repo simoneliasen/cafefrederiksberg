@@ -1,4 +1,25 @@
 <?php session_start(); ?>
+<?php
+// Opretter forbindelse til database
+include('config.php');
+// Benytter POST-metoden, når formen sendes/submites
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+// Omdanner input til variabler og fjerner "farlige karaktere", som kan bruges til SQL injections(ASCII, NUL\n, \r, \, ', ",)
+$myusername = mysqli_real_escape_string($db,$_POST['username']);
+$mypassword = mysqli_real_escape_string($db,$_POST['password']);
+// Retrieves ID from table, where data corresponds,retrieves as number of corresponding rows
+$sql = "SELECT id FROM admin WHERE username = '$myusername' and password = '$mypassword'";
+$result = mysqli_query($db,$sql);
+$count = mysqli_num_rows($result);
+// check result count, store session if there is only 1 result else throw error
+if($count == 1) {
+  $_SESSION['login_user'] = $myusername;
+    header("location: pages/generelt.php");
+ }else {
+    $error = "Det indtastede brugernavn eller kodeord var forkert";
+ }
+}
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,31 +41,6 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
 <body>
-<?php
-// Opretter forbindelse til database
-include('config.php');
-// Benytter POST-metoden, når formen sendes/submites
-if($_SERVER["REQUEST_METHOD"] == "POST") {
-
-// Omdanner input til variabler og fjerner "farlige karaktere", som kan bruges til SQL injections(ASCII, NUL\n, \r, \, ', ",)
-$myusername = mysqli_real_escape_string($db,$_POST['username']);
-$mypassword = mysqli_real_escape_string($db,$_POST['password']);
-
-// Retrieves ID from table, where data corresponds,retrieves as number of corresponding rows
-$sql = "SELECT id FROM admin WHERE username = '$myusername' and password = '$mypassword'";
-$result = mysqli_query($db,$sql);
-$count = mysqli_num_rows($result);
-
-// check result count, store session if there is only 1 result else throw error
-if($count == 1) {
-  $_SESSION['login_user'] = $myusername;
-    header("location: pages/generelt.php");
- }else {
-    $error = "Det indtastede brugernavn eller kodeord var forkert";
- }
-}
- ?>
-
   <!-- Container til indhold på siden -->
   <div class="container loginpage">
     <!--Logo  -->
