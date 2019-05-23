@@ -175,7 +175,7 @@ if($header_choice['type'] == "video_choice"){
       </div>
       <div style="text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.7);">
       <p style="font-weight: 600;">Take-away, billetter og bordbooking:</p>
-      <a class="button_gold" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bestil online</a>
+      <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bestil online</a>
       </div>
     </div>
     <video autoplay muted loop src="/video/<?= $row['filename'] ?>" height="90vh"></video>
@@ -219,7 +219,7 @@ if($header_choice['type'] == "video_choice"){
           </div>
           <div style="text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.7);">
           <p style="font-weight: 600;">Take-away, billetter og bordbooking:</p>
-          <a class="button_gold" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bestil online</a>
+          <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bestil online</a>
           </div>
         </div>
       </div>

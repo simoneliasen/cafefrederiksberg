@@ -480,9 +480,6 @@ margin-top: 1rem;
 .button.alleeventsforside{
   color:white;
 }
-.button.alleeventsforside:hover {
-  color: grey;
-}
 
 /*Google maps  */
 .mapouter {
@@ -594,6 +591,12 @@ margin-top: 1rem;
   padding: 3rem 0 1rem 0;
 }
 
+.klub_frede_text{
+  position: relative;
+  height: 600px;
+  float: right;
+}
+
 .klub_frede_img{
   margin-top: 30px;
   height: 540px;
@@ -602,8 +605,22 @@ margin-top: 1rem;
   background-size: 382px 540px;
 }
 
+@media (max-width: 550px){
+  .klub_frede_img{
+  height: 432px;
+  width: 305px;
+  background-size: 305px 432px;
+  margin: auto;
+  margin-top: 3rem;
+  }
+  .klub_frede_text{
+    height: 350px;
+  }
+}
+
 /*Fjerner "by socialkit" widget  */
-body > div:nth-child(13) > div.sk-ww-facebook-feed > div:nth-child(6) > a {
+body > d
+widthiv:nth-child(13) > div.sk-ww-facebook-feed > div:nth-child(6) > a {
   display: none;
 }
 
@@ -711,6 +728,30 @@ margin-bottom: 2.5rem;
 
 /*..............................................8 SELSKABER */
 
+.selskaber_intro{
+  padding: 2rem 0;
+}
+
+.selskaber_img {
+  width: 100%;
+  background-image: url("../img/selskaber.jpg");
+  height: 700px;
+  background-position: center;
+}
+
+@media (max-width: 900px) {
+  .selskaber_img {
+    display: none;
+  }
+  .selskaber_intro{
+    background-image: url("../img/selskaber_mobile.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 10%;
+    width: 100%;
+  }
+}
+
 /* .............................................8.1 SELSKABSMENU */
 
 .selskab_present{
@@ -796,7 +837,6 @@ margin-bottom: 2.5rem;
 }
 
 .menulinje-buffet ul li a:hover{
-
   /* word-wrap: break-word; */
   color: grey;
 }
@@ -808,7 +848,7 @@ margin-bottom: 2.5rem;
 /* Buffet odd numbers */
 .row.buffet_odd{
   background-color: #1E1D20;
-  padding: 4% 0;
+  padding: 2rem 0;
 }
 
 .buffet_odd li{
@@ -868,14 +908,40 @@ margin-bottom: 2.5rem;
   float: left;
 }
 
+@media (max-width: 900px){
+  .buffet1Picture{
+    display: none;
+  }
+  .buffet2Picture{
+    display: none;
+  }
+  .buffet3Picture{
+    display: none;
+  }
+  .buffet4Picture{
+    display: none;
+  }
+  .buffet5Picture{
+    display: none;
+  }
+  .buffet6Picture{
+    display: none;
+  }
+  .buffet7Picture{
+    display: none;
+  }
+  .buffet8Picture{
+    display: none;
+  }
+}
+
 /* Buffet even numbers */
 .buffet_even li{
   list-style-type: none;
   font: "Poppins"
-
 }
 .row.buffet_even{
-  padding: 4% 0;
+  padding: 2rem 0;
 }
 
 /* Buffet priser */

@@ -96,7 +96,7 @@
   include 'includes/header.php';
   // Opretter forbindelse til databasen
    include 'admin/config.php';?>
-  
+
   <div class="bg_dark intro_historie">
     <div class="container">
       <div class="row">
@@ -184,7 +184,7 @@
             <h6><?php echo $row[3]; ?></h6>
             <p><?php echo $row[4]; ?></p>
             <a class="button" rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">Se vores Magasin <u>her</u></a>
-            <a style="color: #CCB380;" class="button" rel="noopener" aria-label="Se Frede live katalog" href="https:/..azurewebsites.net/" target="_blank">Bestil biletter</a>
+            <a style="border: 1px solid #CCB380; border-bottom: 3px solid #CCB380" class="button" rel="noopener" aria-label="Se Frede live katalog" href="https:/..azurewebsites.net/" target="_blank">Bestil biletter</a>
           </div>
         </div>
 
@@ -215,7 +215,7 @@
   </div>
   <!--Knap til alle events  -->
   <div class="row alleeventsforside">
-    <a class="button alleeventsforside" href="pages/events.php#event_oversigt">Se alle kommende events <u>her</u></a>
+    <a class="button" href="pages/events.php#event_oversigt">Se alle kommende events <u>her</u></a>
   </div>
 
   <!--Google maps  -->

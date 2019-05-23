@@ -94,33 +94,33 @@
   <?php // Indsætter video/billede slider
   include '../includes/header.php'; ?>
 
-<div class="selskaber_wrapper">
+<div class="bg_dark selskaber_intro">
+  <div class="container">
     <div class="row">
-      <div class="container arrangementer">
 
-        <div class="one-half column">
-          <img src="img/selskaber.jpg" width="370rem" height="auto">
-        </div>
-        <div class="one-half column">
-          <span class="selskab_text_title"> Vi byder på lokaler til selskaber, arrangementer og lækre buffeter!</span><br>
-          <p style="width: 400px; margin-top: 1rem;">
-            Café Frederiksberg står til rådighed ved alle lejlighder, om det er formelle omstændigheder.
-            Eller det er en samling af gamle bekendte, så skal vi nok levere om det så enten drejer sig om mad, drikkelse eller blot nogle lækre omgivelser.
-
-            Et udsnit af arrangementerne vi har stået får før, kan du se under vores side "arrangementer",
-            derudover tilbyder vi også en række buffeter og selskabsmenuer, som også kan udforskes.
-
-          <p style="font-size: 1.2rem;"><strong> Se vores udvalg her </strong></p>
-              <a class="button" href="pages/selskaber/buffet.php">Buffet</a>
-              <a class="button" href="pages/selskaber/arrangementer.php">Arrangementer</a>
-              <a class="button" href="pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
-              <p><i> Eller kontakt os på telefon eller mail for at høre mere.</i> </p>
-              <p> <strong>Telefon:</strong> +45 22 42 43 00 </p>
-              <p> <strong>Mail:</strong> frederiksbergselskaber@gmail.com </p>
-        </div>
-
+      <div class="six columns selskaber_img">
       </div>
+
+      <div class="six columns">
+        <h2>Selskaber hos Café Frederiksberg</h2>
+        <h6>Vi byder på lokaler til selskaber, arrangementer og lækre buffeter!</h6>
+        Café Frederiksberg står til rådighed ved alle lejlighder, om det er formelle omstændigheder.
+        Eller det er en samling af gamle bekendte, så skal vi nok levere om det så enten drejer sig om mad, drikkelse eller blot nogle lækre omgivelser.
+
+        Et udsnit af arrangementerne vi har stået får før, kan du se under vores side "arrangementer",
+        derudover tilbyder vi også en række buffeter og selskabsmenuer, som også kan udforskes.
+
+        <p style="font-size: 1.2rem;"><strong> Se vores udvalg her </strong></p>
+          <a class="button" href="pages/selskaber/buffet.php">Buffet</a><br>
+          <a class="button" href="pages/selskaber/arrangementer.php">Arrangementer</a><br>
+          <a class="button" href="pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
+          <p><i> Eller kontakt os på telefon eller mail for at høre mere.</i> </p>
+          <p> <strong>Telefon:</strong> +45 22 42 43 00 </p>
+          <p> <strong>Mail:</strong> frederiksbergselskaber@gmail.com </p>
+      </div>
+
     </div>
+  </div>
 </div>
 
 <!--Indrag footer fra filen includes/footer.php-->

@@ -189,7 +189,7 @@ input[type="button"].button-primary:focus {
   background-color: #CCB380;
   border-color: #CCB380; }
 
-.button_gold{
+.button{
   display: inline-block;
   height: 43px;
   padding: 0 35px;
@@ -212,7 +212,7 @@ input[type="button"].button-primary:focus {
   margin-top: 5px;
 }
 
-.button_gold:hover{
+.button:hover{
   background-color: #CCB380;
   border-color: #CCB380;
   color: #fff;
