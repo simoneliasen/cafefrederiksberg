@@ -170,7 +170,7 @@
 
         <!--Frede live katalog-billede  -->
         <div class="one-half column frede_live_katalog">
-          <div class="frede_live_katalog_text_container">
+          <div class="frede_live_katalog_img_container">
             <a rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">
               <div class="frede_live_katalog_img"></div>
             </a>
@@ -230,15 +230,3 @@
 
 </body>
 </html>
-
-
-
-＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
-　|　Windows　　　　　　　　　　　　　　　　　　　　　　[－][口][×]|
-　|￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣　￣|
-　|　Windows has detect you are really sød and sjov.　       |
-　| 　Is it true?　　　　　　                                 |
-　|　　　　＿＿＿＿＿＿　　　　＿＿＿＿＿＿　　　＿＿＿＿＿ 　　　|
-　| 　　　｜Yes　　　 |　　　｜Yes　　 　｜ 　  |Yes 　 |　 　  |
-　|　　　　￣￣￣￣￣￣　　　　￣￣￣￣￣￣　　　￣￣￣￣￣　　   |
-　　￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣

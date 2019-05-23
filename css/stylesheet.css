@@ -550,27 +550,37 @@ margin-top: 1rem;
   background-size: contain;
 }
 
-@media (max-width: 550px) {
-  .frede_live_katalog_img {
-    width: 200px;
-    margin: auto;
-    float: none;
-    repeat: no-repeat;
+@media (max-width: 900px){
+  .frede_live_katalog_img{
+    height: 389px;
+    width: 275px;
   }
 }
 
-.klub_frede_img{
-  margin-top: 30px;
-  height: 540px;
-  width: 382px;
-  background-image: url("../img/fredelivelogo.svg");
-  background-size: 382px 540px;
+@media (max-width: 550px) {
+  .frede_live_katalog_img {
+    height: 540px;
+    width: 382px;
+    repeat: no-repeat;
+    margin: 0;
+  }
+
+  .frede_live_katalog_img_container{
+    display: none;
+  }
 }
 
 .frede_live_katalog_text{
   position: relative;
   height: 600px;
   float: right;
+}
+
+.frede_live_katalog_img_container{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
 }
 
 .frede_live_katalog_text_container{
@@ -584,11 +594,12 @@ margin-top: 1rem;
   padding: 3rem 0 1rem 0;
 }
 
-@media (max-width: 900px){
-  .frede_live_katalog_img{
-    height: 389px;
-    width: 275px;
-  }
+.klub_frede_img{
+  margin-top: 30px;
+  height: 540px;
+  width: 382px;
+  background-image: url("../img/fredelivelogo.svg");
+  background-size: 382px 540px;
 }
 
 /*Fjerner "by socialkit" widget  */
