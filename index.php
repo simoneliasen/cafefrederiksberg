@@ -96,15 +96,15 @@
   include 'includes/header.php';
   // Opretter forbindelse til databasen
    include 'admin/config.php';?>
-
+  
   <div class="bg_dark intro_historie">
     <div class="container">
       <div class="row">
 
         <!--Café frederiksberg kort historie  -->
         <div class="six columns">
-          <h2> Café Frederiksberg </h2>
-          <h6> Siden år 1900</h4>
+          <h2>Café Frederiksberg</h2>
+          <h6>Siden år 1900</h6>
           <p>Café Frederiksberg har budt gæster velkommen siden 1900 og er dermed Aalborgs ældste værtshus på samme beliggenhed – men også Aalborgs største værtshus. Igennem de 119 år Café Frederiksberg har eksisteret, har der kun være tre ejerskift. Nu om dage er det navnet “Frede” som gæsterne ynder at bruge, og derfor har Café Frederiksbergs musikmagasin også fået navnet FREDE LIVE.</p>
           <a class="button" href="pages/tidslinje.php">Læs hele historien <u>her</u></a>
         </div>

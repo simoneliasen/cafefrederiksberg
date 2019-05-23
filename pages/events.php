@@ -107,27 +107,35 @@
   $row = mysqli_fetch_row($results);
   ?>
 
-<div class="bg_dark">
-  <div class="container">
-    <div class="row">
-      <div class="one-half column frede_live_katalog">
-        <a rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">
-          <div class="frede_live_katalog_img">
+  <div class="bg_dark">
+    <div class="container">
+      <div class="row">
+
+        <!--Frede live katalog-billede  -->
+        <div class="one-half column frede_live_katalog">
+          <div class="frede_live_katalog_img_container">
+            <a rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">
+              <div class="frede_live_katalog_img"></div>
+            </a>
           </div>
-        </a>
-      </div>
-      <div class="one-half column frede_live_katalog_text">
-        <div class="frede_live_katalog_text_container">
-          <h2>Frede LIVE</h2>
-          <h6>Live musik og events</h6>
-          <p><?php echo $row[4]; ?></p>
-          <a class="button" rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">Se vores Magasin <u>her</u></a>
         </div>
+
+        <!--Katalog overskrift + underoverskrift + tekst + link   -->
+        <div class="one-half column frede_live_katalog_text">
+          <div class="frede_live_katalog_text_container">
+            <h2><?php echo $row[2]; ?></h2>
+            <h6><?php echo $row[3]; ?></h6>
+            <p><?php echo $row[4]; ?></p>
+            <a class="button" rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">Se vores Magasin <u>her</u></a>
+            <a style="color: #CCB380;" class="button" rel="noopener" aria-label="Se Frede live katalog" href="https:/..azurewebsites.net/" target="_blank">Bestil biletter</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
-</div>
-<?php
+
+  <?php //lukker forbindelse til database
   mysqli_close($db);
   ?>
 

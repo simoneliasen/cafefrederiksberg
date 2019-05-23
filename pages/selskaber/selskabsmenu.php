@@ -97,21 +97,25 @@
     // Opretter forbindelse til database
     include '../../admin/config.php';
     ?>
-  <div class="container">
-    <div class="row selskab_present">
-      <div class="one-half column selskab_present_img">
-      </div>
+  <div class="selskab_present">
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
+          <h2>Selskabsmenu</h2>
+          <h6>Sammensæt din egen selskabsmenu</h6>
+          <p>Vælg mellem en lang række foretter, hovedretter deserter og natmad. Sammensæt selv en lækker menu hvor du får lige præcis det du kunne tænke dig.<br>
+          Ring og hør mere eller bestil allrede nu!</p>
+          <p>På telefon: (+45) 98 12 03 83</p>
+          <p>Eller send en email: frederiksbergselskaber@gmail.com</p>
+        </div>
 
-      <div class="one-half column">
-        <h2>Selskabsmenu</h2>
-        <h6>Sammensæt din egen selskabsmenu</h2>
-        <p>Vælg mellem en lang række foretter, hovedretter deserter og natmad. Sammensæt selv en lækker menu hvor du får lige præcis det du kunne tænke dig.<br>
-        Ring og hør mere eller bestil allrede nu!</p>
-        <p>På telefon: (+45) 98 12 03 83</p>
-        <p>Eller send en email: frederiksbergselskaber@gmail.com</p>
+        <div class="six columns selskab_present_img">
+        </div>
+
       </div>
     </div>
   </div>
+
 
   <div class="bg_dark">
     <div class="menu_kort_spacer"></div>
@@ -130,7 +134,7 @@
           }
           while($row = mysqli_fetch_row($results)): ?>
             <div class="menu_item">
-              <div class="menu_item_name" style="font-weight:400;"><?= $row[2] ?></div>
+              <div class="menu_item_name"><?= $row[2] ?></div>
               <div class="menu_item_price"><?=$row[4] ?>,-</div>
               <div class="menu_item_description"><?=$row[3] ?></div>
             </div>
@@ -146,7 +150,7 @@
           }
           while($row = mysqli_fetch_row($results)): ?>
             <div class="menu_item">
-              <div class="menu_item_name" style="font-weight:400;"><?= $row[2] ?></div>
+              <div class="menu_item_name"><?= $row[2] ?></div>
               <div class="menu_item_price"><?=$row[4] ?>,-</div>
               <div class="menu_item_description"><?=$row[3] ?></div>
             </div>
@@ -162,7 +166,7 @@
           }
           while($row = mysqli_fetch_row($results)): ?>
             <div class="menu_item">
-              <div class="menu_item_name" style="font-weight:400;"><?= $row[2] ?></div>
+              <div class="menu_item_name"><?= $row[2] ?></div>
               <div class="menu_item_price"><?=$row[4] ?>,-</div>
               <div class="menu_item_description"><?=$row[3] ?></div>
             </div>
@@ -179,7 +183,7 @@
           }
           while($row = mysqli_fetch_row($results)): ?>
             <div class="menu_item">
-              <div class="menu_item_name" style="font-weight:400;"><?= $row[2] ?></div>
+              <div class="menu_item_name"><?= $row[2] ?></div>
               <div class="menu_item_price"><?=$row[4] ?>,-</div>
               <div class="menu_item_description"><?=$row[3] ?></div>
             </div>
