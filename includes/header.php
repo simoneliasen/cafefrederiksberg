@@ -174,7 +174,7 @@ if($header_choice['type'] == "video_choice"){
         </div>
       </div>
       <div style="text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.7);">
-      Take-away, billetter og bordbooking:<br>
+      <p style="font-weight: 600;">Take-away, billetter og bordbooking:</p>
       <a class="button_gold" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bestil online</a>
       </div>
     </div>
@@ -218,7 +218,7 @@ if($header_choice['type'] == "video_choice"){
             </ul>
           </div>
           <div style="text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.7);">
-          Take-away, billetter og bordbooking:<br>
+          <p style="font-weight: 600;">Take-away, billetter og bordbooking:</p>
           <a class="button_gold" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bestil online</a>
           </div>
         </div>
