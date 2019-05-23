@@ -191,13 +191,13 @@ input[type="button"].button-primary:focus {
 
 .button_gold{
   display: inline-block;
-  height: 38px;
-  padding: 0 30px;
+  height: 43px;
+  padding: 0 35px;
   color: #fff;
   text-align: center;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
-  line-height: 38px;
+  line-height: 43px;
   letter-spacing: .1rem;
   text-transform: uppercase;
   text-decoration: none;
