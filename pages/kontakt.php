@@ -199,20 +199,19 @@ $row = mysqli_fetch_row($results)
 </div>
 </div>
 
+<!--Sociale medier  -->
 <br>
 <div class="container socialemedier">
   <h2> Følg os på Sociale medier </h2>
   <p id="socialemediertekst"><i>Hvis du vil have de seneste nyheder, leveret lige til mobilen. Så vær sikker på at du følger os på Facebook og Instagram</i></p>
-
 <div class="row">
   <div class="six columns facebook">
     <h5>Facebook</h5>
-    <img src="./img/facebook.png">
+    <a href="https://www.facebook.com/Fredelive/"><img src="./img/facebook.png"></a>
   </div>
-
   <div class="six columns instagram">
     <h5>Instagram</h5>
-    <img src="./img/instagram.png">
+    <a href="https://www.instagram.com/cafefrederiksberg/"><img src="./img/instagram.png"></a>
   </div>
 </div>
 </div>
