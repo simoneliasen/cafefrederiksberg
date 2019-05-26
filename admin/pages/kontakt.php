@@ -1,3 +1,13 @@
+<?php //Opretter forbindelse til databaser og ser om bruger er logget ind
+include('../session.php');
+
+$query ="SELECT * FROM aabningstider;";
+$results = mysqli_query($db,$query);
+if(!$results){
+  die("could not query the database" .mysqli_error());
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,17 +50,6 @@
 
     <div class="task_wrapper">
       <h1 class="task_heading">Åbningstider</h1>
-
-      <?php
-      //Opretter forbindelse til databaser og ser om bruger er logget ind
-      include('../session.php');
-
-      $query ="SELECT * FROM aabningstider;";
-      $results = mysqli_query($db,$query);
-      if(!$results){
-        die("could not query the database" .mysqli_error());
-      }
-      ?>
 
       <table>
         <p><b>Redigér Åbningstider</b></p>
