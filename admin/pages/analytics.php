@@ -1,3 +1,7 @@
+<?php //Opretter forbindelse via config.php, og tjekker om du er logget ind via session.php
+include('../session.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,14 +15,12 @@
 </head>
 <body>
 
-  <?php //Opretter forbindelse via config.php, og tjekker om du er logget ind via session.php
-  include('../session.php');
-  ?>
-
+<!-- Logo  -->
 <div class="logo">
   <img src="../../img/logo.svg" id="logo" width="100%">
 </div>
 
+<!--Navigationsbar  -->
 <div class="nav">
   <ul>
     <li><a href="analytics.php" class="active">Google analytics</a></li>

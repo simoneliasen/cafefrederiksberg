@@ -20,7 +20,6 @@ if(isset($_GET['id'])){
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,7 +62,7 @@ if(isset($_GET['id'])){
       </div>
     </div>
 
-<!--Suboverskrift  -->
+    <!--Suboverskrift  -->
     <div class="task_wrapper">
       <h1 class="task_heading">Rediger bar-kortet</h1>
       <p>Tilføj slet og opdater bar-kortet</p>
