@@ -1,5 +1,4 @@
 <?php
-
 // Database Credentials for connection
  define('DB_SERVER', 'localhost');
  define('DB_USERNAME', 'root');

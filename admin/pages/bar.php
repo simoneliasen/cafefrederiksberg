@@ -1,3 +1,26 @@
+<?php //Opretter forbindelse til databaser og ser om bruger er logget ind
+include('../session.php');
+
+$query ="SELECT * FROM barmenu;";
+$results = mysqli_query($db,$query);
+if(!$results){
+  die("could not query the database" .mysqli_error());
+}
+
+$category1 = array("ol_vand", "øl & vand");
+$category2 = array("varme_drikke", "varme drikke");
+$category3 = array("gin", "gin");
+$category4 = array("champagne", "champagne");
+$category5 = array("rom", "rom");
+
+if(isset($_GET['id'])){
+  $id = $_GET['id'];
+}else{
+  $id = 0;
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,32 +34,12 @@
 </head>
 <body>
 
-  <?php //Opretter forbindelse til databaser og ser om bruger er logget ind
-  include('../session.php');
-
-  $query ="SELECT * FROM barmenu;";
-  $results = mysqli_query($db,$query);
-  if(!$results){
-    die("could not query the database" .mysqli_error());
-  }
-
-  $category1 = array("ol_vand", "øl & vand");
-  $category2 = array("varme_drikke", "varme drikke");
-  $category3 = array("gin", "gin");
-  $category4 = array("champagne", "champagne");
-  $category5 = array("rom", "rom");
-
-  if(isset($_GET['id'])){
-    $id = $_GET['id'];
-  }else{
-    $id = 0;
-  }
-  ?>
-
+<!--Logo  -->
 <div class="logo">
   <img src="../../img/logo.svg" id="logo" width="100%">
 </div>
 
+<!--Navigationsbar  -->
 <div class="nav">
   <ul>
     <li><a href="analytics.php">Google analytics</a></li>
@@ -50,6 +53,7 @@
   </ul>
 </div>
 
+<!--Overskrift  -->
 <div class="container">
   <div class="content">
     <div class="heading">
@@ -59,6 +63,7 @@
       </div>
     </div>
 
+<!--Suboverskrift  -->
     <div class="task_wrapper">
       <h1 class="task_heading">Rediger bar-kortet</h1>
       <p>Tilføj slet og opdater bar-kortet</p>
