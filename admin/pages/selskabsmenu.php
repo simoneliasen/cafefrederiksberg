@@ -1,3 +1,26 @@
+<?php //Opretter forbindelse til databaser og ser om bruger er logget ind
+include('../session.php');
+
+// Henter data fra selskabesmenu tabel
+$query ="SELECT * FROM selskabsmenu;";
+$results = mysqli_query($db,$query);
+if(!$results){
+  die("could not query the database" .mysqli_error());
+}
+
+  $category1 = array("forret", "forret");
+  $category2 = array("hovedret", "hovedret");
+  $category3 = array("dessert", "dessert");
+  $category4 = array("natmad", "natmad");
+  $category5 = array("yeet", "empty");
+
+if(isset($_GET['id'])){
+  $id = $_GET['id'];
+}else{
+  $id = 0;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,29 +33,6 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
 </head>
 <body>
-
-  <?php //Opretter forbindelse til databaser og ser om bruger er logget ind
-  include('../session.php');
-
-  // Henter data fra selskabesmenu tabel
-  $query ="SELECT * FROM selskabsmenu;";
-  $results = mysqli_query($db,$query);
-  if(!$results){
-    die("could not query the database" .mysqli_error());
-  }
-
-    $category1 = array("forret", "forret");
-    $category2 = array("hovedret", "hovedret");
-    $category3 = array("dessert", "dessert");
-    $category4 = array("natmad", "natmad");
-    $category5 = array("yeet", "empty");
-
-  if(isset($_GET['id'])){
-    $id = $_GET['id'];
-  }else{
-    $id = 0;
-  }
-  ?>
 
 <!--Logo  -->
 <div class="logo">

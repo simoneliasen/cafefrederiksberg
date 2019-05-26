@@ -1,3 +1,13 @@
+<?php //Opretter forbindelse til databaser og ser om bruger er logget ind
+include('../session.php');
+
+$query ="SELECT * FROM menu ORDER BY m_pos;";
+$results = mysqli_query($db,$query);
+if(!$results){
+  die("could not query the database" .mysqli_error());
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,16 +20,6 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
 </head>
 <body>
-
-<?php //Opretter forbindelse til databaser og ser om bruger er logget ind
-include('../session.php');
-
-$query ="SELECT * FROM menu ORDER BY m_pos;";
-$results = mysqli_query($db,$query);
-if(!$results){
-  die("could not query the database" .mysqli_error());
-}
-?>
 
 <div class="logo">
   <img src="../../img/logo.svg" id="logo" width="100%">
