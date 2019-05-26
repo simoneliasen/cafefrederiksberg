@@ -1,4 +1,4 @@
-# Quick guide to getting the website running on your local machine or webhost
+# Quick guide to getting the website running
 
 
 
