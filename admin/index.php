@@ -1,10 +1,4 @@
-
-<!--Redirecter til login.php  -->
-<?php
+<?php //Redirecter til login.php (så side kan tilgås ved cafefrederiksberg/admin kontra caféfrederiksberg.dk/admin/login.php)
 header("Location: login.php");
 die();
  ?>
-
- <!--Gør at Café Frederiksberg bare kan skrive
-caféfrederiksberg.dk/ADMIN
-istedet for caféfrederiksberg.dk/admin/login.php  -->
