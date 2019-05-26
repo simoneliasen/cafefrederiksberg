@@ -101,7 +101,7 @@
 <div class="bg_dark">
   <div class="container opening_info">
 <br>
-    <div class="container" style="text-align: center;">
+    <div class="container traeffetidspunkt" style="text-align: center;">
       <p><i>Vi træffes bedst på telefon kl. <strong>10.00-11.30</strong>, kl. <strong>14.30-16.30</strong> samt efter kl. <strong>20.30</strong></i></p>
     </div>
 

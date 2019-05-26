@@ -127,7 +127,7 @@
             <h6><?php echo $row[3]; ?></h6>
             <p><?php echo $row[4]; ?></p>
             <a class="button" rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">Se vores Magasin <u>her</u></a>
-            <a style="border: 1px solid #CCB380; border-bottom: 3px solid #CCB380" class="button" rel="noopener" aria-label="Se Frede live katalog" href="https:/..azurewebsites.net/" target="_blank">Bestil biletter</a>
+            <a style="border: 1px solid #CCB380; border-bottom: 3px solid #CCB380" class="button" rel="noopener" aria-label="Se Frede live katalog" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bestil biletter</a>
           </div>
         </div>
 

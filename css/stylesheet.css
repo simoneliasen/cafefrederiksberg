@@ -625,6 +625,11 @@ widthiv:nth-child(13) > div.sk-ww-facebook-feed > div:nth-child(6) > a {
 }
 
 /*..............................................6 KONTAKT */
+
+.container.traeffetidspunkt{
+  font-size: 18px;
+}
+
 .opening_headline{
   padding: 1rem 0;
   margin-bottom: 2.5rem 0;
