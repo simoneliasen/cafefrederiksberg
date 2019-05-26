@@ -38,7 +38,7 @@
   ?>
 
 <div class="logo">
-  <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="100%">
+  <img src="../../img/logo.svg" id="logo" width="100%">
 </div>
 
 <div class="nav">

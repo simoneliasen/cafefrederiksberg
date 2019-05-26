@@ -53,7 +53,7 @@ if($count == 1) {
   <div class="container loginpage">
     <!--Logo  -->
     <div class="logologin">
-      <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="500rem" height="auto">
+      <img src="./../img/logo.svg" id="logo" width="500rem" height="auto">
     </div>
     <!--Form  -->
     <div class="formcenter">
