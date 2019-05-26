@@ -672,6 +672,32 @@ padding-bottom: 1rem;
 margin-bottom: 2.5rem;
 }
 
+.container.traeffetidspunkt {
+  text-align: center;
+  padding-right: 7rem;
+  font-size: 18px;
+
+}
+.six.columns.facebook {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+.six.columns.instagram {
+  display: inline;
+  float: right;
+  margin: 0;
+}
+
+.container.socialemedier {
+  text-align: center;
+  padding-right: 7rem;
+  padding-bottom: 3rem;
+}
+#socialemediertekst {
+  padding-top: 4px;
+}
+
 /*..............................................7 RESTAURANT */
 
 .menu_kort{

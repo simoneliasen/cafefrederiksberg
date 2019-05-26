@@ -101,8 +101,8 @@
 <div class="bg_dark">
   <div class="container opening_info">
 <br>
-    <div class="container traeffetidspunkt" style="text-align: center;">
-      <p><i>Vi træffes bedst på telefon kl. <strong>10.00-11.30</strong>, kl. <strong>14.30-16.30</strong> samt efter kl. <strong>20.30</strong></i></p>
+    <div class="container traeffetidspunkt">
+      <p style="text-align: center; font-size: 18px;"><i>Vi træffes bedst på telefon kl. <strong>10.00-11.30</strong>, kl. <strong>14.30-16.30</strong> samt efter kl. <strong>20.30</strong></i></p>
     </div>
 
     <div class="row opening_information">
@@ -198,15 +198,32 @@ $row = mysqli_fetch_row($results)
   </div>
 </div>
 </div>
+
+<br>
+<div class="container socialemedier">
+  <h2> Følg os på Sociale medier </h2>
+  <p id="socialemediertekst"><i>Hvis du vil have de seneste nyheder, leveret lige til mobilen. Så vær sikker på at du følger os på Facebook og Instagram</i></p>
+
+<div class="row">
+  <div class="six columns facebook">
+    <h5>Facebook</h5>
+    <img src="./img/facebook.png">
+  </div>
+
+  <div class="six columns instagram">
+    <h5>Instagram</h5>
+    <img src="./img/instagram.png">
+  </div>
 </div>
+</div>
+<br>
+</div>
+
 <!--Google maps  -->
 <div class="mapouter">
 <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" title="google maps location" src="https://maps.google.com/maps?q=Caf%C3%A9%20Frederiksberg%20Aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
     marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div>
 </div>
-
-<!--Indrag footer fra filen includes/footer.php-->
-<?php include '../includes/footer.php'; ?>
 
 </body>
 </html>
