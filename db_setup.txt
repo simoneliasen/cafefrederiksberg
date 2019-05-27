@@ -1,7 +1,3 @@
-
-cd C:\xampp\mysql\bin
-Mysql -u root -p
-
 CREATE DATABASE admin;
 USE admin;
 
@@ -22,7 +18,7 @@ DROP TABLE selskabsmenu;
 # Opretter database
 CREATE DATABASE admin character set UTF8 collate utf8_bin;
 
-# Vælg database
+# VÃ¦lg database
 USE admin;
 
 # Opretter table til brugere (login-system)
@@ -40,7 +36,7 @@ filename VARCHAR(255) NOT NULL,
 type VARCHAR(255) NOT NULL,
 PRIMARY KEY(id));
 
-# indsætter billede/video i header
+# indsÃ¦tter billede/video i header
 INSERT INTO header VALUES('1','header_choice','','video_choice');
 
 # Opretter table til menu 
@@ -101,14 +97,14 @@ price VARCHAR(255) NOT NULL,
 category VARCHAR(255),
 PRIMARY KEY(id));   
 
-# Opretter table til åbningstider (Denne data bruges både til footer/kontakt-side)
+# Opretter table til Ã¥bningstider (Denne data bruges bÃ¥de til footer/kontakt-side)
 CREATE TABLE aabningstider(
 id INT NOT NULL AUTO_INCREMENT, 
 date VARCHAR(255) NOT NULL, 
 timeframe VARCHAR(255) NOT NULL,
 PRIMARY KEY(id));  
 
-# Opretter table til kontaktinfo (denne data bruges både til footer og kontakt-side)
+# Opretter table til kontaktinfo (denne data bruges bÃ¥de til footer og kontakt-side)
 CREATE TABLE kontaktinfo (
 id INT NOT NULL AUTO_INCREMENT,  
 kontaktform VARCHAR(255) NOT NULL, 
@@ -130,45 +126,45 @@ DELETE FROM selskabsmenu;
 
 
 
-# Indsætter element i bruger-table (laver en bruger)
+# IndsÃ¦tter element i bruger-table (laver en bruger)
 INSERT INTO admin (username, password)
 VALUES ('user', 'password'),
 ('bruger', 'kodeord');
 
-# indsætter element i menu-table
+# indsÃ¦tter element i menu-table
 INSERT INTO menu (m_pos, m_name, m_desc, m_price)
 VALUES ('1','Rejecocktail', '', '45'),
 ('2','Stjerneskud', '', '59'),
-('3','Kæmpe stjerneskud', '', '79'),
+('3','KÃ¦mpe stjerneskud', '', '79'),
 ('4','Fiskefillet', 'med pommes frites', '69'),
 ('5','Kyllingenuggets', 'med pommes frites', '69'),
 ('6','Hotwings', 'med pommes frites', '69'),
 ('7','Black Angus Burger', 'med pommes frites', '69'),
 ('8','Black Angus Cheeseburger', 'med pommes frites', '72'),
-('9','Bøfsandwich', 'med sauce', '69'),
-('10','Bøfsandwich', 'med sauce og pommes frites', '75'),
-('11','Omelet', 'med bacon, tomat, purløg og grøn salat', '69'),
-('12','Herregårdsbøf (håndlavet hakkebøf)', 'med løg, ærter, bernaisesauce, griltomat og pommes frites', '89'),
-('13','Marineret sild', 'på rugbrød med karrysalat', '45'),
-('14','2 lune frikadeller', 'med rugbrød og kål', '45'),
-('15','1 stk. Smørrebrød', '', '28'),
-('16','3 stk. Smørrebrød', '', '79'),
-('17','Pariserbøf', 'klassisk med tilbehør', '89'),
+('9','BÃ¸fsandwich', 'med sauce', '69'),
+('10','BÃ¸fsandwich', 'med sauce og pommes frites', '75'),
+('11','Omelet', 'med bacon, tomat, purlÃ¸g og grÃ¸n salat', '69'),
+('12','HerregÃ¥rdsbÃ¸f (hÃ¥ndlavet hakkebÃ¸f)', 'med lÃ¸g, Ã¦rter, bernaisesauce, griltomat og pommes frites', '89'),
+('13','Marineret sild', 'pÃ¥ rugbrÃ¸d med karrysalat', '45'),
+('14','2 lune frikadeller', 'med rugbrÃ¸d og kÃ¥l', '45'),
+('15','1 stk. SmÃ¸rrebrÃ¸d', '', '28'),
+('16','3 stk. SmÃ¸rrebrÃ¸d', '', '79'),
+('17','PariserbÃ¸f', 'klassisk med tilbehÃ¸r', '89'),
 ('18','Nachos', 'med smeltet ost og dip', '39');
 
- # indsætter element i announcement-table
+ # indsÃ¦tter element i announcement-table
  INSERT INTO announcements (info,removaldate)
-VALUES ('Kæmpe festivitas, kom forbi!','29-05-1997');
+VALUES ('KÃ¦mpe festivitas, kom forbi!','29-05-1997');
 
-# indsætter element i header
+# indsÃ¦tter element i header
 INSERT INTO header (id,filetype,type)
 VALUES ('1', 'video', 'video_choice');
 
-# indsætter element i katalog-table
+# indsÃ¦tter element i katalog-table
 INSERT INTO katalog (link,header,subheader,text)
-VALUES ('https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/','Frede Live','Live Musik og events','Café Frederiksberg er stedet hvor musikken er I højsædet, med koncerter og events året rundt. Café Frederiksberg satser stærkt på livekoncerter som en essentiel del af vores tilbud til vores gæster. Vi byder på ugentlig torsdags og fredags jam, med et hav af spændende musikere og cover bands der hylder nogle af tidernes bedste musikere, og appellerer til enhver musikalsk genre og stil.');
+VALUES ('https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/','Frede Live','Live Musik og events','CafÃ© Frederiksberg er stedet hvor musikken er I hÃ¸jsÃ¦det, med koncerter og events Ã¥ret rundt. CafÃ© Frederiksberg satser stÃ¦rkt pÃ¥ livekoncerter som en essentiel del af vores tilbud til vores gÃ¦ster. Vi byder pÃ¥ ugentlig torsdags og fredags jam, med et hav af spÃ¦ndende musikere og cover bands der hylder nogle af tidernes bedste musikere, og appellerer til enhver musikalsk genre og stil.');
 
-# indsætter element i barmenu-table
+# indsÃ¦tter element i barmenu-table
 INSERT INTO barmenu (category,name,description,price)
 VALUES 
 #ol_vand
@@ -192,8 +188,8 @@ VALUES
 ('gin','Penderyn Brecon','','25'),
 ('gin','Penderyn Brecon Special','','30'),
 ('gin','Penderyn Brecon Botanical','','30'),
-('gin','Hernö Swedish Excellence','','30'),
-('gin','Hernö Navy Strenght 57%','','35'),
+('gin','HernÃ¶ Swedish Excellence','','30'),
+('gin','HernÃ¶ Navy Strenght 57%','','35'),
 ('gin','Four Pillars','','30'),
 ('gin','Ferdinands','','30'),
 ('gin','Skin Gin','','35'),
@@ -217,36 +213,36 @@ VALUES
 ('gin','Blind Tiger','','35'),
 ('gin','Tarquins','','35'),
 ('gin','Masters Dry Gin','','30'),
-('gin','Djøn Økologisk Gin','','25'),
+('gin','DjÃ¸n Ã˜kologisk Gin','','25'),
 #champagne
-('champagne','Champagne Barons de Rothschild Brut Rosé','udsøgt finesse. Fin, livlig, delikat, kompleks og alligevel harmonisk. En fryd for sanserne','850'),
-('champagne','Champagne Barons de Rothschild Extra Brut','Cuvée der fryder enhver vinelsker, som er på udkig efter renhed og modenhed','800'),
-('champagne','Moet & Chandon Imperial Brut','En af verdens mest kendte champagner. Blød velafbalancerende stil','650'),
-('champagne','Charles Mignon Rosé 1. Cru Brut','En herlig frisk rosé Champagne hvor alle druer er fra marker der er klassificeret som 1er Cru.','450'),
-('champagne','Charles Mignon 1. Cru Brut','Smagen er fokuseret med sprød grøn frugt og fornemmelsen af sommer.','425'),
-('champagne','Charles Mignon 1. Cru Brut (37,5 ml.)','Smagen er fokuseret med sprød grøn frugt og fornemmelsen af sommer.','225'),
-('champagne','Charles Mignon 1. Cru Brut(38,75 ml.)','Smagen er fokuseret med sprød grøn frugt og fornemmelsen af sommer.','125'),
-('champagne','Mont Marcal Cava Rosado Brut','Rosé Cava fra mesteren hos Mont Marcal. Intens, liflig og perfekt til at skabe en god stemning','165'),
-('champagne','Castellblanc Cava Brut','En forrygende flot Cava med en lækker og lang eftersmag. Et oplagt alternativ til Champagne','165'),
-('champagne','Contessa di Castiglione Asti Spumante DOCG','Sødmefuld og frisk Asti der byder på noter af honning of citrusfrugter','150'),
+('champagne','Champagne Barons de Rothschild Brut RosÃ©','udsÃ¸gt finesse. Fin, livlig, delikat, kompleks og alligevel harmonisk. En fryd for sanserne','850'),
+('champagne','Champagne Barons de Rothschild Extra Brut','CuvÃ©e der fryder enhver vinelsker, som er pÃ¥ udkig efter renhed og modenhed','800'),
+('champagne','Moet & Chandon Imperial Brut','En af verdens mest kendte champagner. BlÃ¸d velafbalancerende stil','650'),
+('champagne','Charles Mignon RosÃ© 1. Cru Brut','En herlig frisk rosÃ© Champagne hvor alle druer er fra marker der er klassificeret som 1er Cru.','450'),
+('champagne','Charles Mignon 1. Cru Brut','Smagen er fokuseret med sprÃ¸d grÃ¸n frugt og fornemmelsen af sommer.','425'),
+('champagne','Charles Mignon 1. Cru Brut (37,5 ml.)','Smagen er fokuseret med sprÃ¸d grÃ¸n frugt og fornemmelsen af sommer.','225'),
+('champagne','Charles Mignon 1. Cru Brut(38,75 ml.)','Smagen er fokuseret med sprÃ¸d grÃ¸n frugt og fornemmelsen af sommer.','125'),
+('champagne','Mont Marcal Cava Rosado Brut','RosÃ© Cava fra mesteren hos Mont Marcal. Intens, liflig og perfekt til at skabe en god stemning','165'),
+('champagne','Castellblanc Cava Brut','En forrygende flot Cava med en lÃ¦kker og lang eftersmag. Et oplagt alternativ til Champagne','165'),
+('champagne','Contessa di Castiglione Asti Spumante DOCG','SÃ¸dmefuld og frisk Asti der byder pÃ¥ noter af honning of citrusfrugter','150'),
 #rom
 ('rom','Havanna 3 Especial','','20'),
-('rom','Havanna 7 Års','','25'),
+('rom','Havanna 7 Ã…rs','','25'),
 ('rom','Havanna Maestros','','35'),
-('rom','Zacapa 15 Års','','25'),
-('rom','Zacapa 23 Års','','35'),
-('rom','Zacapa 25 Års','','50'),
+('rom','Zacapa 15 Ã…rs','','25'),
+('rom','Zacapa 23 Ã…rs','','35'),
+('rom','Zacapa 25 Ã…rs','','50'),
 ('rom','Matusalem Platino','','20'),
-('rom','Matusalem 15 Års','','30'),
-('rom','El Dorado 8 Års','','25'),
-('rom','El Dorado 15 Års','','35'),
+('rom','Matusalem 15 Ã…rs','','30'),
+('rom','El Dorado 8 Ã…rs','','25'),
+('rom','El Dorado 15 Ã…rs','','35'),
 ('rom','Kraken','','25'),
 ('rom','Chamarel V.S.O.P','','35'),
 ('rom','Skotlander Rum V','','65'),
 ('rom','Skotlander White','','25'),
-('rom','Real Mccoy 3 års','','20'),
-('rom','Real Mccoy 5 års','','25'),
-('rom','Real Mccoy 12 års','','35'),
+('rom','Real Mccoy 3 Ã¥rs','','20'),
+('rom','Real Mccoy 5 Ã¥rs','','25'),
+('rom','Real Mccoy 12 Ã¥rs','','35'),
 ('rom','Ron Ocumare Blanco','','20'),
 ('rom','Ron Ocumare Anejo','','25'),
 ('rom','Bacardi Carta Negra','','20'),
@@ -256,138 +252,138 @@ VALUES
 ('rom','Bacardi Pineapple','','20'),
 ('rom','Morgan Spiced','','20'),
 ('rom','Morgan Blanco','','20'),
-('rom','Don Papa 7 Års','','25'),
-('rom','Don Papa 10 Års','','30'),
+('rom','Don Papa 7 Ã…rs','','25'),
+('rom','Don Papa 10 Ã…rs','','30'),
 ('rom','Putacana Esplendido','','25'),
 ('rom','Quorhum 30 Anni','','45'),
 ('rom','Unhiq XO','','50'),
 ('rom','Puntacana XOX','','50'),
 ('rom','Ron Santiago Anejo','','25'),
-('rom','Ron Santiago 12 Års','','30'),
+('rom','Ron Santiago 12 Ã…rs','','30'),
 ('rom','Ron Cubay Carta Blanca','','20'),
 ('rom','Ron Cubay Anejo','','25'),
-('rom','Ron Cubay 10 Års','','30'),
+('rom','Ron Cubay 10 Ã…rs','','30'),
 ('rom','Alfreds Trail Rum Sauterne Cask','','35'),
 ('rom','Alfreds Trail Rum Port Finish','','35'),
-('rom','Fiji Rum South Pacific 10 Års','','40'),
-('rom','Caribean Blended 2004 11 Års','','50');
+('rom','Fiji Rum South Pacific 10 Ã…rs','','40'),
+('rom','Caribean Blended 2004 11 Ã…rs','','50');
 
-# indsætter element i selskabsmenu-table
+# indsÃ¦tter element i selskabsmenu-table
 INSERT INTO selskabsmenu (name,description,price,category)
-VALUES ('Klar suppe','Med boller og flütes','52','forret'),
-('Flødelegeret aspargessuppe','Med kødboller og flütes','52','forret'),
-('Karrysuppe','Med ris, hønsekød og flütes','52','forret'),
-('Hønsesalat på ananasring','Serveres med flütes','52','forret'),
-('2 tarteletter','Med høns i asparges','52','forret'),
+VALUES ('Klar suppe','Med boller og flÃ¼tes','52','forret'),
+('FlÃ¸delegeret aspargessuppe','Med kÃ¸dboller og flÃ¼tes','52','forret'),
+('Karrysuppe','Med ris, hÃ¸nsekÃ¸d og flÃ¼tes','52','forret'),
+('HÃ¸nsesalat pÃ¥ ananasring','Serveres med flÃ¼tes','52','forret'),
+('2 tarteletter','Med hÃ¸ns i asparges','52','forret'),
 ('Butterdejsskal med dampet og stegt fiskefilet','Rejer og hollandaisesauce','68','forret'),
-('Klassisk rejecocktail','Med håndpillede rejer og flütes','68','forret'),
-('Røget ørred','Med håndpillede rejer, kaviar, dressing og flütes','72','forret'),
-('Hvidvinsdampet laks','Med håndpillede rejer, kaviar, dressing og flütes','68','forret'),
-('Ferskrøget laks','Med flødestuvet spinat, asparges og flütes','68','forret'),
+('Klassisk rejecocktail','Med hÃ¥ndpillede rejer og flÃ¼tes','68','forret'),
+('RÃ¸get Ã¸rred','Med hÃ¥ndpillede rejer, kaviar, dressing og flÃ¼tes','72','forret'),
+('Hvidvinsdampet laks','Med hÃ¥ndpillede rejer, kaviar, dressing og flÃ¼tes','68','forret'),
+('FerskrÃ¸get laks','Med flÃ¸destuvet spinat, asparges og flÃ¼tes','68','forret'),
 ('Hummer a la Americaine','Fersk dampet hummer med garniture','215','forret'),
 #Hovedretter
-('Svinekam','Med svesker, rødkål, asier, hvide og brune kartofler','110','hovedret'),
-('Svinekam stegt som vildt','Med waldorffsalat, gelé, hvide og brune kartofler','120','hovedret'),
-('Kalvefillet','Med grøntsager, kartofler og portvinssauce','130','hovedret'),
-('Kalvefillet stegt som vildt','Med waldorffsalat, gelé, hvide og brune kartofler','130','hovedret'),
-('Gammeldags oksesteg','Med bønner, glasserede løg og hvide kartofler','120','hovedret'),
-('Oksemørbrad','Med grøntsager og smørstegte kartofler','175','hovedret'),
-('Lammeryg','Med grøntsager og kartofler','210','hovedret'),
-('Andesteg','Med rødkål, svesker, hvide og brune kartofler','135','hovedret'),
+('Svinekam','Med svesker, rÃ¸dkÃ¥l, asier, hvide og brune kartofler','110','hovedret'),
+('Svinekam stegt som vildt','Med waldorffsalat, gelÃ©, hvide og brune kartofler','120','hovedret'),
+('Kalvefillet','Med grÃ¸ntsager, kartofler og portvinssauce','130','hovedret'),
+('Kalvefillet stegt som vildt','Med waldorffsalat, gelÃ©, hvide og brune kartofler','130','hovedret'),
+('Gammeldags oksesteg','Med bÃ¸nner, glasserede lÃ¸g og hvide kartofler','120','hovedret'),
+('OksemÃ¸rbrad','Med grÃ¸ntsager og smÃ¸rstegte kartofler','175','hovedret'),
+('Lammeryg','Med grÃ¸ntsager og kartofler','210','hovedret'),
+('Andesteg','Med rÃ¸dkÃ¥l, svesker, hvide og brune kartofler','135','hovedret'),
 ('Dyreryg','Med waldorffsalat, hvide og brune kartofler','225','hovedret'),
 #Desserter
-('Hjemmelavet vanilje-is','Med jordbærsauce','52','dessert'),
-('Isbombe a la Frederiksberg','Med marcipan, chokolade og nødder','55','dessert'),
-('Chokoladeskål','Med friske frugter og pistacie-is','62','dessert'),
-('Valnødde-is','Med kandiserede valnødder og sorbet','55','dessert'),
+('Hjemmelavet vanilje-is','Med jordbÃ¦rsauce','52','dessert'),
+('Isbombe a la Frederiksberg','Med marcipan, chokolade og nÃ¸dder','55','dessert'),
+('ChokoladeskÃ¥l','Med friske frugter og pistacie-is','62','dessert'),
+('ValnÃ¸dde-is','Med kandiserede valnÃ¸dder og sorbet','55','dessert'),
 ('En halv ananas','Med friske frugter og soft ice','62','dessert'),
 ('Hjemmebagt amerikansk chokoladekage','Med soft ice','62','dessert'),
 ('Frisk frugtsalat','Med soft ice','62','dessert'),
 #Natmad
-('Klar suppe','Med boller og flütes','49','natmad'),
-('Karrysuppe','Med flütes','49','natmad'),
-('Flødelegeret aspargessuppe','Med kødboller og flütes','49','natmad'),
+('Klar suppe','Med boller og flÃ¼tes','49','natmad'),
+('Karrysuppe','Med flÃ¼tes','49','natmad'),
+('FlÃ¸delegeret aspargessuppe','Med kÃ¸dboller og flÃ¼tes','49','natmad'),
 ('Frikadeller','Med kartoffelsalat','49','natmad'),
-('Glasseret skinke','Med salat, dressing og flütes','59','natmad'),
-('Skibberlabskovs','Med rugbrød, smør og rødbeder','69','natmad'),
-('Pølsebord','Med 4 slags pålæg, leverpostej og ost','69','natmad'),
-('Hotdogs','Med klassisk tilbehør','45','natmad');
+('Glasseret skinke','Med salat, dressing og flÃ¼tes','59','natmad'),
+('Skibberlabskovs','Med rugbrÃ¸d, smÃ¸r og rÃ¸dbeder','69','natmad'),
+('PÃ¸lsebord','Med 4 slags pÃ¥lÃ¦g, leverpostej og ost','69','natmad'),
+('Hotdogs','Med klassisk tilbehÃ¸r','45','natmad');
 
-# indsætter elementer i table til åbningstider
+# indsÃ¦tter elementer i table til Ã¥bningstider
 INSERT INTO aabningstider (date,timeframe)
 VALUES ('Mandag','Kl. 10:00-00:00'),
 ('Tirsdag','Kl. 10:00-00:00'),
 ('Onsdag','Kl. 10:00-00:00'),
 ('Torsdag','Kl. 10:00-03:00'),
 ('Fredag','Kl. 10:00-03:00'),
-('Lørdag','Kl. 08:00-03:00'),
-('Søndag','Kl. 08:00-00:00'),
+('LÃ¸rdag','Kl. 08:00-03:00'),
+('SÃ¸ndag','Kl. 08:00-00:00'),
 ('Hver dag','Kl. 12:00-14:00 og Kl. 17:00-20:00');
 
-# indsætter elementer table til buffet
+# indsÃ¦tter elementer table til buffet
 INSERT INTO buffet (name,category)
 #Buffet1
 VALUES ('Hvide sild med karrysalat','Buffet1'),
-('Pålægsfad med 3 slags pålæg','Buffet1'),
+('PÃ¥lÃ¦gsfad med 3 slags pÃ¥lÃ¦g','Buffet1'),
 ('Lun glaseret skinke','Buffet1'),
-('Grønne salater med 2 slags dressing','Buffet1'),
-('Soltørrede tomater, oliven, marinerede hvidløg og croutoner','Buffet1'),
+('GrÃ¸nne salater med 2 slags dressing','Buffet1'),
+('SoltÃ¸rrede tomater, oliven, marinerede hvidlÃ¸g og croutoner','Buffet1'),
 ('Lun leverpostej med bacon og champignon','Buffet1'),
 ('Kyllingebryst med agurkesalat','Buffet1'),
 ('Pastasalat','Buffet1'),
-('Frikadeller med flødekartofler','Buffet1'),
+('Frikadeller med flÃ¸dekartofler','Buffet1'),
 ('Osteanretning med druer og frugt','Buffet1'),
-('Brød og smør','Buffet1'),
+('BrÃ¸d og smÃ¸r','Buffet1'),
 #Buffet2
 ('Laksefad med hummerdressing, rejer, asparges og kaviar','Buffet2'),
-('Lune mørbradbøffer med grilltomat og champignon a la creme','Buffet2'),
+('Lune mÃ¸rbradbÃ¸ffer med grilltomat og champignon a la creme','Buffet2'),
 ('Leverpostej med bacon og svampe','Buffet2'),
-('Okesefilet med flødekartofler','Buffet2'),
-('Grønne salater med 2 slags dressing','Buffet2'),
-('Kylling med olivenstegte kartofler, coleslaw salat, pesto, oliven, hvidløg, soltørrede tomater og croutoner','Buffet2'),
-('Soltørrede tomater og croutoner','Buffet2'),
+('Okesefilet med flÃ¸dekartofler','Buffet2'),
+('GrÃ¸nne salater med 2 slags dressing','Buffet2'),
+('Kylling med olivenstegte kartofler, coleslaw salat, pesto, oliven, hvidlÃ¸g, soltÃ¸rrede tomater og croutoner','Buffet2'),
+('SoltÃ¸rrede tomater og croutoner','Buffet2'),
 ('Pastasalat','Buffet2'),
 ('Osteanretning med druer og frugt','Buffet2'),
-('Brød og smør','Buffet2'),
+('BrÃ¸d og smÃ¸r','Buffet2'),
 #Buffet3
-('Røget laks med asparges og kaviar','Buffet3'),
+('RÃ¸get laks med asparges og kaviar','Buffet3'),
 ('Lune frikadeller med kartoffelsalat','Buffet3'),
-('Mørbradbøffer med bløde løg, sprød bacon. champignon og surt','Buffet3'),
+('MÃ¸rbradbÃ¸ffer med blÃ¸de lÃ¸g, sprÃ¸d bacon. champignon og surt','Buffet3'),
 ('Barbequekylling','Buffet3'),
-('Grønne salater med 2 slags dressing','Buffet3'),
-('Lun glaseret skinke med olivenstegte kartofler, pesto, oliven og marinerede hvidløg','Buffet3'),
-('Soltørrede tomater og croutoner','Buffet3'),
+('GrÃ¸nne salater med 2 slags dressing','Buffet3'),
+('Lun glaseret skinke med olivenstegte kartofler, pesto, oliven og marinerede hvidlÃ¸g','Buffet3'),
+('SoltÃ¸rrede tomater og croutoner','Buffet3'),
 ('Pastasalat','Buffet3'),
 ('Osteanretning med druer og frugt','Buffet3'),
-('Brød og smør','Buffet3'),
+('BrÃ¸d og smÃ¸r','Buffet3'),
 #Buffet4
 ('Kold dampet fiskefilet med asparges, kaviar og hummerdressing','Buffet4'),
 ('Rejer og mayonnaise','Buffet4'),
-('Lun lammekølle med myntegelé','Buffet4'),
-('Lun tyndstegsfilet med flødekartofler','Buffet4'),
+('Lun lammekÃ¸lle med myntegelÃ©','Buffet4'),
+('Lun tyndstegsfilet med flÃ¸dekartofler','Buffet4'),
 ('Lun glaseret skinke','Buffet4'),
 ('Salater med 2 slags dressing','Buffet4'),
 ('Lun leverpostej med bacon og champignon','Buffet4'),
 ('Stort ostebord med friske frugter','Buffet4'),
 #BuffetUSA
-('Salat med grillede rejer på bund af avocado, tomat og ananas - hertil cocktailsauce','BuffetUSA'),
-('Beer batter fish - stegt torsk i sprød dej på spidskål, majs og persille - hertil hvidløgscreme','BuffetUSA'),
+('Salat med grillede rejer pÃ¥ bund af avocado, tomat og ananas - hertil cocktailsauce','BuffetUSA'),
+('Beer batter fish - stegt torsk i sprÃ¸d dej pÃ¥ spidskÃ¥l, majs og persille - hertil hvidlÃ¸gscreme','BuffetUSA'),
 ('Pulled pork i chili og honning, braiserede urter, honningglaserede rodfrugter og syltede tomater','BuffetUSA'),
 ('US oksesteg med timian, bagte kartofler og salater','BuffetUSA'),
-('Majskylling stegt med persilleolie, marinerede svampe med mandler og bagte rødløg','BuffetUSA'),
-('Spinat- og kartoffeltærter med cheddarost','BuffetUSA'),
-('Caesar salat med sprøde croutoner, bagte tomater, sprød bacon og parmasanost','BuffetUSA'),
+('Majskylling stegt med persilleolie, marinerede svampe med mandler og bagte rÃ¸dlÃ¸g','BuffetUSA'),
+('Spinat- og kartoffeltÃ¦rter med cheddarost','BuffetUSA'),
+('Caesar salat med sprÃ¸de croutoner, bagte tomater, sprÃ¸d bacon og parmasanost','BuffetUSA'),
 ('American brownies med softice og frugt','BuffetUSA'),
 #BuffetItaly
 ('Insalata De Mare - skaldyrssalat med olivenolie og krydderurter','BuffetItaly'),
-('Carpaccio - marineret oksekød med parmasanost','BuffetItaly'),
-('Lufttørret parmaskinke med soltørret tomatsalat','BuffetItaly'),
-('Filetto De Maiale Gratinato - svinemørbrad vendt i olivenolie og paneret med krydderurter','BuffetItaly'),
+('Carpaccio - marineret oksekÃ¸d med parmasanost','BuffetItaly'),
+('LufttÃ¸rret parmaskinke med soltÃ¸rret tomatsalat','BuffetItaly'),
+('Filetto De Maiale Gratinato - svinemÃ¸rbrad vendt i olivenolie og paneret med krydderurter','BuffetItaly'),
 ('Farserede tomater','BuffetItaly'),
 ('Lasagne','BuffetItaly'),
 ('Spaghetti carbonara','BuffetItaly'),
-('Lammekølle med tomatsauce og risk basilikum','BuffetItaly'),
-('Små olivenristede kartfoler med friske krydderurter','BuffetItaly'),
+('LammekÃ¸lle med tomatsauce og risk basilikum','BuffetItaly'),
+('SmÃ¥ olivenristede kartfoler med friske krydderurter','BuffetItaly'),
 ('Friske frugter og italienske oste','BuffetItaly'),
 #Buffetoekologi
 ('Gazpacho suppe','BuffetOekologi'),
@@ -396,25 +392,25 @@ VALUES ('Hvide sild med karrysalat','Buffet1'),
 ('Farserede champignoner','BuffetOekologi'),
 ('Pinchos med forskellig fyld','BuffetOekologi'),
 ('Aioli med stegte kartofler','BuffetOekologi'),
-('Kødboller i tomatsauce','BuffetOekologi'),
+('KÃ¸dboller i tomatsauce','BuffetOekologi'),
 ('Lam med citron','BuffetOekologi'),
-('Empanadas med kødfyld','BuffetOekologi'),
+('Empanadas med kÃ¸dfyld','BuffetOekologi'),
 ('Oste med friske frugter','BuffetOekologi'),
 #Buffetjul
-('Marinerede sild, med æg og karrysalat','BuffetJul'),
+('Marinerede sild, med Ã¦g og karrysalat','BuffetJul'),
 ('Julesild','BuffetJul'),
 ('Fiskefillet','BuffetJul'),
 ('Rejer med mayonnaise','BuffetJul'),
-('Ribbensteg med rødkål','BuffetJul'),
+('Ribbensteg med rÃ¸dkÃ¥l','BuffetJul'),
 ('Julemedister','BuffetJul'),
 ('Frikadeller','BuffetJul'),
-('Stuvede hvidkål med kanel og sukker','BuffetJul'),
-('Vendysselsk grønlangkål','BuffetJul'),
+('Stuvede hvidkÃ¥l med kanel og sukker','BuffetJul'),
+('Vendysselsk grÃ¸nlangkÃ¥l','BuffetJul'),
 ('Brunede kartofler','BuffetJul'),
 ('Glaseret juleskinke','BuffetJul'),
-('Ris a la mande med kirsebærsovs','BuffetJul');
+('Ris a la mande med kirsebÃ¦rsovs','BuffetJul');
 
-# indsætter elementer i table til buffetpriser
+# indsÃ¦tter elementer i table til buffetpriser
 INSERT INTO buffetpriser (description,price,category)
 VALUES 
 #Buffet1
