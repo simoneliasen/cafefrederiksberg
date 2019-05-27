@@ -7,7 +7,7 @@ Widgets and thridparty implementations are not working as they are to be configu
 
 ## Quick guide to getting the website running
 
-### 1. Set the base href in header.php to your sites index.php location (in root folder)
+### 1. Set the base href in header.php to your sites index.php location (in the root folder)
 ex. base href="http://localhost/cafefrederiksberg/index.php"
 
 ### 2. Change server connection info
