@@ -5,7 +5,7 @@ A working prototypes is uploaded to: https://www.korius.dk/
 
 Widgets and thridparty implementations are not working as they are to be configured with our collaborator.
 
-### Quick guide to getting the website running
+## Quick guide to getting the website running
 
 ### 1. Set the base href in header.php to your sites index.php location (in root folder)
 ex. base href="http://localhost/cafefrederiksberg/index.php"
