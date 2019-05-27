@@ -21,6 +21,4 @@ footer.php
 config.php
 
 ### 3. Download the SQL-database (found in branch "database") & upload it to phpmyadmin
-
-To setup local server, copy the script from "db setup" into the cmd prompt.
-Make sure to have xampp installed and make sure that the directory is at C:\xampp\mysql\bin
+To setup local server, copy the script found in the folder "db setup" into the cmd prompt.
