@@ -1,4 +1,4 @@
-### Continuous updates will be made on the project after handing in.
+### Continuous updates will be made on the project after hand in.
 Find the newest updates here: https://github.com/simoneliasen/cafefrederiksberg
 
 A working prototypes is uploaded to: https://www.korius.dk/
