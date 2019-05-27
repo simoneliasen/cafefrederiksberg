@@ -1,20 +1,6 @@
 CREATE DATABASE admin;
 USE admin;
 
-DROP TABLE aabningstider;
-DROP TABLE admin;
-DROP TABLE announcements;
-DROP TABLE arrangementer;
-DROP TABLE barmenu;
-DROP TABLE buffet;
-DROP TABLE buffetpriser;
-DROP TABLE header;
-DROP TABLE katalog;
-DROP TABLE kontaktinfo;
-DROP TABLE menu;
-DROP TABLE selskabsmenu;
-
-
 # Opretter database
 CREATE DATABASE admin character set UTF8 collate utf8_bin;
 
@@ -110,21 +96,6 @@ id INT NOT NULL AUTO_INCREMENT,
 kontaktform VARCHAR(255) NOT NULL, 
 kontaktoplysninger VARCHAR(255) NOT NULL,
 PRIMARY KEY(id));  
-
-DELETE FROM aabningstider;
-DELETE FROM admin;
-DELETE FROM announcements;
-DELETE FROM arrangementer;
-DELETE FROM barmenu;
-DELETE FROM buffet;
-DELETE FROM buffetpriser;
-DELETE FROM header;
-DELETE FROM katalog;
-DELETE FROM kontaktinfo;
-DELETE FROM menu;
-DELETE FROM selskabsmenu;
-
-
 
 # Indsætter element i bruger-table (laver en bruger)
 INSERT INTO admin (username, password)
