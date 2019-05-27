@@ -1,25 +1,20 @@
-Front-end
-- Tekst til kunstnere der vil spille (kontakt eller event-side)
-- DJ?? (info om lejning af dj)
-- Tekst til tidslinjeside + Billeder (usability)
-
-Back-end
-- Gør det muligt at redigere buffetpriser i adminpanel
-- Kode til at indsætte data midt ind i tabeller
-
-Mobil
-- Mobiloptimering på side
-- mobilmenu til mobiler (duh)
-
-Implementering
-- Navigationsstruktur skal rettes (virker ikke på web)
-- SSL-certifikat (virker på 90 dages basis, skal vi spørge om)
-- Facebook + instagram integrering (Vil de betale for det?)
-- Google analytics
+# Quick guide to getting the website running
 
 
-Idéer
-- Mere kontrast til "bestil knapper?"
-- Tilbudsbanner på bar-siden, m. drinks tilbud eller fyraftensølpris mm.
-- Thumbnail-billede v. link sharing (relativt simpelt)
 
+### 1. Set the base href in header.php to your sites index.php location (in root folder)
+ex. base href="http://localhost/cafefrederiksberg/index.php"
+
+
+
+### 2. Change server connection info
+ex $db = mysqli_connect('localhost','user','password','admin');
+
+This should be done in the following files
+- header.php
+- announcement.php
+- footer.php
+- config.php
+
+
+### 3. Download the SQL-database (found in branch "database") & upload it to phpmyadmin
