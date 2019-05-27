@@ -21,6 +21,8 @@ This should be done in the following files
 
 - footer.php
 
+- tidslinje.php
+
 - config.php
 
 ### 3. Download the SQL-database (found in the folder db_setup) & upload it to phpmyadmin
