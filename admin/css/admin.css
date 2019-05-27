@@ -1,0 +1,320 @@
+/* CAFÉ FREDERIKSBERG STYLESHEET */
+/*
+    AALBORG UNIVERSITET GRUPPE B267A BAIT INF 2019
+*/
+/*
+A. LOGINPAGE
+B. WELCOMEPAGE
+C. ADMINPANEL
+
+COLORS
+-----------
+GULD          #CCB380
+SORT-ISH      #101010
+MØRKEGRÅ-ISH  #1E1D20
+*/
+
+@import url('https://rsms.me/inter/inter.css');
+
+body{
+  font-family: 'inter';
+}
+
+/*..............................................A LOGINPAGE */
+
+/*Link til forsiden  */
+#backtofrontpage {
+  text-decoration: none;
+  color: white;
+}
+#backtofrontpage:hover {
+  color: grey;
+}
+/*Centering af content  */
+.formcenter {
+  text-align: center;
+}
+/* container   */
+.container.loginpage {
+  margin-top: 5rem;
+  background-color: #101010;
+  float: inherit;
+}
+#loginknap {
+  margin-top: 1rem;
+}
+.logologin {
+  text-align: center;
+}
+.kodeord {
+  margin-top: 1rem;
+}
+#loginknap {
+  margin-top: 1rem;
+}
+.huskmig {
+  margin-top: 1rem;
+}
+/* Farve på input */
+input,
+select,
+textarea {
+  color: black;
+}
+
+/*..............................................B ADMINPANEL */
+
+h1{
+  color: #131313;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.logo{
+  position: fixed;
+  z-index: 1;
+  top: 40px;
+  left: 2%;
+  width: 10%;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 120px 0 0 0;
+  width: 18%;
+  background-color: #303030;
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+.nav li a {
+  display: block;
+  color: #EEEEEE;
+  padding: 18px 8px 18px 12%;
+  text-decoration: none;
+  border-bottom: solid 1px #414141;
+  font-weight: 500;
+}
+
+/* Change the link color on hover */
+.nav li a:hover {
+  background-color: #202020;
+  color: white;
+  transition: 0.1s;
+}
+
+.active {
+  border-left: 5px solid #3374dd;
+  color: #fff;
+}
+
+.top_bar{
+  width: 82%;
+  float: right;
+  height: 90px;
+  background-color: #fff;
+}
+
+.top_bar h1{
+  color: #CCB380;
+}
+
+.container{
+  width: 82%;
+  height: 100vh;
+  float: right;
+  background-color: #F1F1F1;
+}
+
+.content{
+  width: 95%;
+  margin: 25px auto 2% auto;
+  height: 90vh;
+  overflow: scroll;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 10px 49px -6px rgba(207,207,207,1);
+  -moz-box-shadow: 0px 10px 49px -6px rgba(207,207,207,1);
+  box-shadow: 0px 10px 49px -6px rgba(207,207,207,1);
+  border-radius: 12px;
+}
+
+.heading{
+  height: 100px;
+  border-bottom: solid 1px #DFDFDF;
+  line-height: 100px;
+}
+
+.heading h1{
+  margin: 0;
+  padding-left: 25px;
+  float: left;
+}
+
+.logout{
+  float: right;
+  padding-right: 25px;
+}
+
+.button{
+  font-weight: 600;
+  padding: 4px 15px;
+  background-color: ;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-decoration: none;
+  transition: 0.1s;
+  color: #000;
+  background-color: #fff;
+}
+
+.green{
+  border: 1px solid #0aad36;
+}
+
+.red{
+  border: 1px solid #dd0d0d;
+}
+
+.grey{
+  border: 1px solid #ccc;
+}
+
+.red:hover{
+  background-color: #dd0d0d;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 13px -4px rgba(221,13,13,1);
+  -moz-box-shadow: 0px 0px 13px -4px rgba(221,13,13,1);
+  box-shadow: 0px 0px 13px -4px rgba(221,13,13,1);
+}
+
+.green:hover{
+  background-color: #0aad36;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 13px -4px rgba(10,173,54,1);
+  -moz-box-shadow: 0px 0px 13px -4px rgba(10,173,54,1);
+  box-shadow: 0px 0px 13px -4px rgba(10,173,54,1);
+}
+
+.grey:hover{
+  background-color: #444444;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 13px -4px rgba(68,68,68,1);
+  -moz-box-shadow: 0px 0px 13px -4px rgba(68,68,68,1);
+  box-shadow: 0px 0px 13px -4px rgba(68,68,68,1);
+}
+
+.task_wrapper{
+  padding: 0 25px;
+}
+.task_heading{
+  padding: 5px 0;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  text-transform: capitalize;
+}
+
+.img_center{
+  width: 70%;
+  height: 200px;
+  margin: auto;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #dfdfdf;
+  margin-top: 50px;
+  padding: 0;
+}
+
+/* forms */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  padding: 4px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  width: 100%;}
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+textarea {
+  min-height: 100px;
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  resize: none;}
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+fieldset {
+  padding: 0;
+  border-width: 0; }
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+
+
+/* restaurant */
+.restaurant_form{
+  width: 50%;
+}
+table{ width: 100%; text-align: left; }
+table th{ padding: 10px 8px 10px 0px; }
+table td{ padding: 2px 8px 2px 4px; height: 40px;}
+table tr td .menu_item_index{ padding-left: 10px; font-weight: 700;}
+table tr td:first-child{ width: 50px; }
+table tr td input{padding: 2px 3px;}
+table tr .menu_item_price{ width: 50px; }
+table tr .table_buttons{ width: 180px;}
+table tr .table_buttons .button{ float: right; margin-left: 4px; }
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.slide_img_wrapper{
+  float: left;
+  min-width: 150px;
+  margin: 20px;
+  height: 400px;
+}
