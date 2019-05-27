@@ -103,7 +103,7 @@
 .mySlides img {
   object-fit: cover;
   width: 100%;
-  height: 75vh;
+  height: 90vh;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -149,7 +149,7 @@ if($header_choice['type'] == "video_choice"){
   ?>
 
   <div class="header_bg_img">
-    <video autoplay muted loop src="video/<?= $row['filename'] ?>" height="75vh"></video>
+    <video autoplay muted loop src="video/<?= $row['filename'] ?>" height="90vh"></video>
     <div class="header_text">
       <h1 class="test_text">Aalborgs Hyggeligste</h1>
       <div class="slider">
@@ -173,8 +173,12 @@ if($header_choice['type'] == "video_choice"){
           </ul>
         </div>
       </div>
+      <div style="text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.7);">
+      <p style="font-weight: 600;">Take-away, billetter og bordbooking:</p>
+      <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bestil online</a>
+      </div>
     </div>
-    <video autoplay muted loop src="/video/<?= $row['filename'] ?>" height="75vh"></video>
+    <video autoplay muted loop src="/video/<?= $row['filename'] ?>" height="90vh"></video>
   </div>
   <?php }else{
     $query = "SELECT filename FROM header WHERE type ='billede'";
@@ -212,6 +216,10 @@ if($header_choice['type'] == "video_choice"){
                 <div class="quote"><h1>Stemning</h1></div>
               </li>
             </ul>
+          </div>
+          <div style="text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.7);">
+          <p style="font-weight: 600;">Take-away, billetter og bordbooking:</p>
+          <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bestil online</a>
           </div>
         </div>
       </div>

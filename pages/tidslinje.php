@@ -1,86 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Oplev Café Frederiksbergs historie igennem denne tidslinje, og opdag historier udfalde sig på tværs af den nuværende og tidlgiere generationer"/>
   <link rel="icon" type="image/png" href="img/favicon.ico">
-
-  <!--Side titel  -->
   <title>Café Frederiksberg</title>
-  <!--Standard stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
-  <!-- Skeleton stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
-  <!-- Normalize stylesheet  -->
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-  <!-- Includer Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
-
 </head>
-
-
-
 <body>
-  <!--Tilføjer mulighed for announcementbar  -->
-  <?php include '../includes/announcement.php'; ?>
 
-  <!--Navigations-bar  -->
-    <!--Henter Jquery Script via CDN  -->
-    <script
-      src="https://code.jquery.com/jquery-1.12.4.js"
-      integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-      crossorigin="anonymous"></script>
-    <!--main navigationsbar  -->
+  <!-- Mobil navigation  -->
+    <div class="container">
+    <div class="mobilenav">
+      <span onclick="openNav()"><img src="./../img/hamburger.svg" id="hamburger" width="21px" height="auto"></span>
+        <a href="../index.php">
+          <img src="./../img/logo.svg" id="fredelogo" alt="Café frederiksberg logo" width="150rem" color="white" height="auto">
+        </a>
+    </div>
+    </div>
+
+    <?php // Tilføjer mulighed for announcementbar
+    include '../includes/announcement.php'; ?>
+
+  <!--Sidebar mobil  -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../index.php">Forside</a>
+      <a href="restaurant.php">Menukort</a>
+      <a href="bar.php">Barkort</a>
+      <a href="events.php">Events</a>
+      <a href="selskaber.php">Selskaber<i class="arrowdown" width="2px"></i></a>
+      <a href="selskaber/buffet.php" id="dropdown">Buffet</a>
+      <a href="selskaber/arrangementer.php" id="dropdown">Arrangementer</a>
+      <a href="selskaber/selskabsmenu.php" id="dropdown">Selskabsmenu</a>
+      <a href="tidslinje.php" class="active">Om os<i class="arrowdown" width="2px"></i></a>
+      <a href="kontakt.php" id="dropdown">Kontakt</a>
+    </div>
+  <script>
+  // viser sidebar ved klik på hamburgermenu
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0px";
+  }
+  </script>
+
+  <!--Desktop navigation  -->
     <div class="navigationbar">
-    <!--Container der centrere content i navigationsmenu  -->
       <nav class="container">
-    <!--Logo  -->
-    <div class="logo">
-      <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
-    </div>
-    <!-- Menu  -->
-    <div class="navigationmenu">
-    <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
-    <a href="/cafefrederiksberg/pages/bar.php">Barkort</a>
-    <a href="/cafefrederiksberg/pages/events.php">Events</a>
-    <!--Selskaber dropdown  -->
-    <div class="dropdown">
-      <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown"></i></a>
-      <div class="dropdown-content">
-      <a href="/cafefrederiksberg/pages/selskaber/buffet.php">Buffet</a>
-      <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php">Arrangementer</a>
-      <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
+      <div class="logo">
+        <a href="../index.php"><img src="./../img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
       </div>
+        <div class="navigationmenu">
+        <a href="restaurant.php">Menukort</a>
+        <a href="bar.php">Barkort</a>
+        <a href="events.php">Events</a>
+          <div class="dropdown">
+            <a href="selskaber.php">Selskaber<i class="arrowdown"></i></a>
+            <div class="dropdown-content">
+            <a href="selskaber/buffet.php">Buffet</a>
+            <a href="selskaber/arrangementer.php">Arrangementer</a>
+            <a href="selskaber/selskabsmenu.php">Selskabsmenu</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="tidslinje.php" class="active">Om os<i class="arrowdown"></i></a>
+            <div class="dropdown-content">
+            <a href="kontakt.php">Kontakt</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
-    <!--Om os dropdown  -->
-    <div class="dropdown">
-      <a href="/cafefrederiksberg/pages/tidslinje.php" class="active nav">Om os<i class="arrowdown"></i></a>
-      <div class="dropdown-content">
-      <a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
-      </div>
-    </div>
-    </div>
-    </nav>
-    </div>
-    <!-- Jquery Script that changes the color of the header on scroll (+opacity)  -->
     <script>
+    // Tilføjer sort baggrund onscroll
     var $nav = $('.navigationbar');
     $(document).scroll(function() {
         $nav.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
     });
-    // Does the same as above, just for The dropdown menu
+    // Tilføjer sort baggrund til dropdown items
     var $dropdown = $('.dropdown-content');
     $(document).scroll(function() {
         $dropdown.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
     });
     </script>
 
-
   <h2 style="text-align: center; padding: 4.5rem 0 2rem 0">Tidslinje</h2>
-
 
 <div class="bg_dark">
   <div class="container">
@@ -97,7 +108,7 @@
         </div>
       </div>
 
-      <div class="two columns" style="height: 300px;">
+      <div class="two columns tidslinje" style="height: 300px;">
         <!-- <div class="middleline"></div> -->
       </div>
 
@@ -123,7 +134,7 @@
         </div>
       </div>
 
-      <div class="two columns" style="height: 200px;"  >
+      <div class="two columns tidslinje" style="height: 200px;"  >
       </div>
 
       <div class="five columns">
@@ -140,22 +151,8 @@
 
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
 <!--Indrag footer fra filen includes/footer.php-->
 <?php include '../includes/footer.php'; ?>
 
-
 </body>
-
 </html>

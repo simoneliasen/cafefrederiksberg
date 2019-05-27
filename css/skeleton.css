@@ -51,7 +51,7 @@
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%; }
+    width: 85%; }
   .column,
   .columns {
     margin-left: 4%; }
@@ -112,9 +112,11 @@
 
 }
 
-
-
-
+@media (max-width: 900px) {
+  .six.columns{
+    width: 100%;
+  }
+}
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -187,6 +189,34 @@ input[type="button"].button-primary:focus {
   background-color: #CCB380;
   border-color: #CCB380; }
 
+.button{
+  display: inline-block;
+  height: 43px;
+  padding: 0 35px;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 43px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  transition-duration: 0.2s;
+  background-color: rgba(0, 0, 0, 0.25);
+  margin-top: 5px;
+}
+
+.button:hover{
+  background-color: #CCB380;
+  border-color: #CCB380;
+  color: #fff;
+}
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

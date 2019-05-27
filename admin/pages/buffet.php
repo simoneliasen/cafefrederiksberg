@@ -1,63 +1,56 @@
+<?php // Tjekker om du er logget ind + opretter forbindelse til database
+include('../session.php');
+
+$query ="SELECT * FROM buffet;";
+$results = mysqli_query($db,$query);
+if(!$results){
+  die("could not query the database" .mysqli_error());
+}
+
+  $category1 = array("Buffet1", "Buffet 1");
+  $category2 = array("Buffet2", "Buffet 2");
+  $category3 = array("Buffet3", "Buffet 3");
+  $category4 = array("Buffet4", "Buffet 4");
+  $category5 = array("BuffetUSA", "USA Buffet");
+  $category6 = array("BuffetItaly", "Italiensk Buffet");
+  $category7 = array("BuffetOekologi", "Økologisk Buffet");
+  $category8 = array("BuffetJul", "Julefrokost");
+
+if(isset($_GET['id'])){
+  $id = $_GET['id'];
+}else{
+  $id = 0;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!--Side titel  -->
   <title>Admin-dashboard</title>
-
   <link rel="stylesheet" type="text/css" href="../css/admin.css">
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-  <!-- Includer Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
-
 </head>
-
 <body>
 
-  <?php
-  // Tjekker om du er logget ind + opretter forbindelse til database
-  include('../session.php');
-
-  $query ="SELECT * FROM buffet;";
-  $results = mysqli_query($db,$query);
-  if(!$results){
-    die("could not query the database" .mysqli_error());
-  }
-
-    $category1 = array("Buffet1", "Buffet 1");
-    $category2 = array("Buffet2", "Buffet 2");
-    $category3 = array("Buffet3", "Buffet 3");
-    $category4 = array("Buffet4", "Buffet 4");
-    $category5 = array("BuffetUSA", "USA Buffet");
-    $category6 = array("BuffetItaly", "Italiensk Buffet");
-    $category7 = array("BuffetOekologi", "Økologisk Buffet");
-    $category8 = array("BuffetJul", "Julefrokost");
-
-  if(isset($_GET['id'])){
-    $id = $_GET['id'];
-  }else{
-    $id = 0;
-  }
-  ?>
-
+<!--Logo  -->
 <div class="logo">
-  <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="100%">
+  <img src="../../img/logo.svg" id="logo" width="100%">
 </div>
 
+<!--Navigationsbar  -->
 <div class="nav">
   <ul>
     <li><a href="analytics.php">Google analytics</a></li>
     <li><a href="generelt.php">Generelt</a></li>
-    <li><a href="restaurant.php">Restaurant</a></li>
-    <li><a href="bar.php">Bar</a></li>
+    <li><a href="restaurant.php">Menukort</a></li>
+    <li><a href="bar.php">Barkort</a></li>
     <li><a href="selskabsmenu.php">Selskabsmenu</a></li>
     <li><a href="buffet.php" class="active">Buffet</a></li>
     <li><a href="kontakt.php">Kontakt</a></li>
-    <li><a href="hjælp.php">Hjælp</a></li>
     <li id="backtopage"><a href="../backtopage.php" style="color: #CCB380;"> Tilbage til siden </a></li>
   </ul>
 </div>
@@ -705,5 +698,4 @@
 </div>
 
 </body>
-
 </html>

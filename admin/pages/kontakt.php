@@ -1,41 +1,42 @@
+<?php //Opretter forbindelse til databaser og ser om bruger er logget ind
+include('../session.php');
+
+$query ="SELECT * FROM aabningstider;";
+$results = mysqli_query($db,$query);
+if(!$results){
+  die("could not query the database" .mysqli_error());
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!--Side titel  -->
   <title>Admin-dashboard</title>
-
   <link rel="stylesheet" type="text/css" href="../css/admin.css">
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-  <!-- Includer Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
-
 </head>
-
 <body>
 
 <div class="logo">
-  <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="100%">
+  <img src="../../img/logo.svg" id="logo" width="100%">
 </div>
 
 <div class="nav">
   <ul>
     <li><a href="analytics.php">Google analytics</a></li>
     <li><a href="generelt.php">Generelt</a></li>
-    <li><a href="restaurant.php">Restaurant</a></li>
-    <li><a href="bar.php">Bar</a></li>
+    <li><a href="restaurant.php">Menukort</a></li>
+    <li><a href="bar.php">Barkort</a></li>
     <li><a href="selskabsmenu.php">Selskabsmenu</a></li>
     <li><a href="buffet.php">Buffet</a></li>
     <li><a href="kontakt.php" class="active">Kontakt</a></li>
-    <li><a href="hjælp.php">Hjælp</a></li>
     <li id="backtopage"><a href="../backtopage.php" style="color: #CCB380;"> Tilbage til siden </a></li>
   </ul>
 </div>
-
 
 <div class="container">
   <div class="content">
@@ -49,17 +50,6 @@
 
     <div class="task_wrapper">
       <h1 class="task_heading">Åbningstider</h1>
-
-      <?php
-      //Opretter forbindelse til databaser og ser om bruger er logget ind
-      include('../session.php');
-
-      $query ="SELECT * FROM aabningstider;";
-      $results = mysqli_query($db,$query);
-      if(!$results){
-        die("could not query the database" .mysqli_error());
-      }
-      ?>
 
       <table>
         <p><b>Redigér Åbningstider</b></p>
@@ -118,18 +108,12 @@
         <?php } endwhile; mysqli_close($db); ?>
         </table>
 
-
       </div>
-
-
-
-
 
   </div>
 </div>
   <div class="spacer" style="height:200px;"></div>
 </div>
 </div>
-
 </body>
 </html>

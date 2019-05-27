@@ -1,67 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Vi har noget til enhver smag, billige Fyraftensøl, whiskey, gin, champagne, rom, irish coffee alt hvad hjertet og halsen begærer, skål!"/>
   <link rel="icon" type="image/png" href="img/favicon.ico">
-
-  <!--Side titel  -->
   <title>Café Frederiksberg</title>
   <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
   <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
 </head>
-
 <body>
-  <?php
-  include '../includes/announcement.php';  ?>
 
-  <!--Navigations-bar  -->
-    <!--Henter Jquery Script via CDN  -->
-    <script
-      src="https://code.jquery.com/jquery-1.12.4.js"
-      integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-      crossorigin="anonymous"></script>
-    <!--main navigationsbar  -->
+  <!-- Mobil navigation -->
+    <div class="container">
+    <div class="mobilenav">
+      <span onclick="openNav()"><img src="./../img/hamburger.svg" id="hamburger" width="21px" height="auto"></span>
+        <a href="./index.php">
+          <img src="./../img/logo.svg" id="fredelogo" alt="Café frederiksberg logo" width="150rem" color="white" height="auto">
+        </a>
+    </div>
+    </div>
+
+    <?php // Tilføjer mulighed for announcementbar
+    include '../includes/announcement.php'; ?>
+
+  <!--Sidebar mobil  -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="./index.php">Forside</a>
+      <a href="./pages/restaurant.php">Menukort</a>
+      <a href="./pages/bar.php" class="active">Barkort</a>
+      <a href="./pages/events.php">Events</a>
+      <a href="./pages/selskaber.php">Selskaber<i class="arrowdown" width="2px"></i></a>
+      <a href="./pages/selskaber/buffet.php" id="dropdown">Buffet</a>
+      <a href="./pages/selskaber/arrangementer.php" id="dropdown">Arrangementer</a>
+      <a href="./pages/selskaber/selskabsmenu.php" id="dropdown">Selskabsmenu</a>
+      <a href="./pages/tidslinje.php">Om os<i class="arrowdown" width="2px"></i></a>
+      <a href="./pages/kontakt.php" id="dropdown">Kontakt</a>
+    </div>
+  <script>
+  // vis sidebar ved klik på hamburgermenu
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0px";
+  }
+  </script>
+
+  <!--Desktop navigation  -->
     <div class="navigationbar">
-    <!--Container der centrere content i navigationsmenu  -->
       <nav class="container">
-    <!--Logo  -->
-    <div class="logo">
-      <a href="/cafefrederiksberg/index.php"><img src="/cafefrederiksberg/img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
-    </div>
-    <!-- Menu  -->
-    <div class="navigationmenu">
-    <a href="/cafefrederiksberg/pages/restaurant.php">Menukort</a>
-    <a href="/cafefrederiksberg/pages/bar.php" class="active nav">Barkort</a>
-    <a href="/cafefrederiksberg/pages/events.php">Events</a>
-    <!--Selskaber dropdown  -->
-    <div class="dropdown">
-      <a href="/cafefrederiksberg/pages/selskaber.php">Selskaber<i class="arrowdown"></i></a>
-      <div class="dropdown-content">
-      <a href="/cafefrederiksberg/pages/selskaber/buffet.php">Buffet</a>
-      <a href="/cafefrederiksberg/pages/selskaber/arrangementer.php">Arrangementer</a>
-      <a href="/cafefrederiksberg/pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
+      <div class="logo">
+        <a href="./index.php"><img src="./../img/logo.svg" id="logo" alt="Café frederiksberg logo" width="150rem" height="auto"></a>
       </div>
+        <div class="navigationmenu">
+        <a href="./pages/restaurant.php">Menukort</a>
+        <a href="./pages/bar.php" class="active">Barkort</a>
+        <a href="./pages/events.php">Events</a>
+          <div class="dropdown">
+            <a href="./pages/selskaber.php">Selskaber<i class="arrowdown"></i></a>
+            <div class="dropdown-content">
+            <a href="./pages/selskaber/buffet.php">Buffet</a>
+            <a href="./pages/selskaber/arrangementer.php">Arrangementer</a>
+            <a href="./pages/selskaber/selskabsmenu.php">Selskabsmenu</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="./pages/tidslinje.php">Om os<i class="arrowdown"></i></a>
+            <div class="dropdown-content">
+            <a href="./pages/kontakt.php">Kontakt</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
-    <!--Om os dropdown  -->
-    <div class="dropdown">
-      <a href="/cafefrederiksberg/pages/tidslinje.php">Om os<i class="arrowdown"></i></a>
-      <div class="dropdown-content">
-      <a href="/cafefrederiksberg/pages/kontakt.php">Kontakt</a>
-      </div>
-    </div>
-    </div>
-    </nav>
-    </div>
-    <!-- Jquery Script that changes the color of the header on scroll (+opacity)  -->
     <script>
+    // Tilføj sort baggrund ved scroll
     var $nav = $('.navigationbar');
     $(document).scroll(function() {
         $nav.css({background: $(this).scrollTop() > 20? "rgba(0, 0, 0, 0.4)":"transparent"});
@@ -73,11 +91,11 @@
     });
     </script>
 
-      <?php
+<?php
+  // Indsætter video/billede slider
   include '../includes/header.php';
-  // Connects to database
+  // Opretter forbindelse til database
   include '../admin/config.php';
-
 
   $query ="SELECT * FROM barmenu";
   $results = mysqli_query($db,$query);

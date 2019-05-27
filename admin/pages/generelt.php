@@ -1,43 +1,34 @@
+<?php //Opretter forbindelse til databaser og ser om bruger er logget ind
+include('../session.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!--Side titel  -->
   <title>Admin-dashboard</title>
-
   <link rel="stylesheet" type="text/css" href="../css/admin.css">
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-  <!-- Includer Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
   <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|s)no-js(s|$)/,"$1js$2")})(document,window,0);</script>
-
 </head>
-
 <body>
 
-    <?php
-    //Opretter forbindelse til databaser og ser om bruger er logget ind
-    include('../session.php');
-    ?>
-
 <div class="logo">
-  <img src="/cafefrederiksberg/img/logo.svg" id="logo" width="100%">
+  <img src="../../img/logo.svg" id="logo" width="100%">
 </div>
 
 <div class="nav">
   <ul>
     <li><a href="analytics.php">Google analytics</a></li>
     <li><a href="generelt.php" class="active">Generelt</a></li>
-    <li><a href="restaurant.php">Restaurant</a></li>
-    <li><a href="bar.php">Bar</a></li>
+    <li><a href="restaurant.php">Menukort</a></li>
+    <li><a href="bar.php">Barkort</a></li>
     <li><a href="selskabsmenu.php">Selskabsmenu</a></li>
     <li><a href="buffet.php">Buffet</a></li>
     <li><a href="kontakt.php">Kontakt</a></li>
-    <li><a href="hjælp.php">Hjælp</a></li>
     <li id="backtopage"><a href="../backtopage.php" style="color: #CCB380;"> Tilbage til siden </a></li>
   </ul>
 </div>
