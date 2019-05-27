@@ -15,10 +15,13 @@ ex $db = mysqli_connect('localhost','user','password','admin');
 
 This should be done in the following files
 
-header.php
-announcement.php
-footer.php
-config.php
+- header.php
+
+- announcement.php
+
+- footer.php
+
+- config.php
 
 ### 3. Download the SQL-database (found in the folder db_setup) & upload it to phpmyadmin
 To setup local server, run the sql query found in the folder "db_setup" into the cmd prompt.
