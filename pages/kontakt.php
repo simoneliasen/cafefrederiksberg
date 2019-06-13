@@ -100,7 +100,7 @@
 
 <div class="bg_dark">
   <div class="container opening_info">
-<br>
+    <br>
     <div class="container traeffetidspunkt">
       <p style="text-align: center; font-size: 18px;"><i>Vi træffes bedst på telefon kl. <strong>10.00-11.30</strong>, kl. <strong>14.30-16.30</strong> samt efter kl. <strong>20.30</strong></i></p>
     </div>
@@ -110,118 +110,124 @@
         <h2 class="opening_headline">Åbningstider</h2>
         <!--Vis første 7 entries i sql-table (ugedages åbningstider)  -->
         <?php
-            $query ="SELECT * FROM aabningstider ORDER BY id ASC LIMIT 7;";
-            $results = mysqli_query($db,$query);
-            if(!$results){
-              die("could not query the database" .mysqli_error());
-            }
-            while($row = mysqli_fetch_row($results)): ?>
-            <div class="opening_time_day">
-              <div class="opening_day"><?= $row[1] ?></div>
-              <div class="opening_time"><?= $row[2] ?></div>
-            </div>
-          <?php endwhile;?>
-    </div>
-  <div class="six columns">
-    <h2 class="opening_headline">Kontaktinformationer</h2>
-    <div class="opening_time_day">
-      <div class="opening_day_party">
-        Adresse
+          $query ="SELECT * FROM aabningstider ORDER BY id ASC LIMIT 7;";
+          $results = mysqli_query($db,$query);
+          if(!$results){
+            die("could not query the database" .mysqli_error());
+          }
+          while($row = mysqli_fetch_row($results)): ?>
+          <div class="opening_time_day">
+            <div class="opening_day"><?= $row[1] ?></div>
+            <div class="opening_time"><?= $row[2] ?></div>
+          </div>
+        <?php endwhile;?>
       </div>
-      <div class="opening_time_right">
-        Hadsundvej 1B
-      </div>
-    </div>
-    <div class="opening_time_day">
-      <div class="opening_day_party">
-        By
-      </div>
-      <div class="opening_time_right">
-        9000 Aalborg, Danmark
-      </div>
-    </div>
-    <div class="opening_time_day">
-      <div class="opening_day_party">
-        Telefon
-      </div>
-      <div class="opening_time_right">
-        (+45) 98 12 03 83
-      </div>
-    </div>
-    <div class="opening_time_day">
-      <div class="opening_day_party">
-        E-mail
-      </div>
-      <div class="opening_time_right">
-        cafefrederiksberg@gmail.com
-      </div>
-    </div>
-  </div>
-</div>
 
-<!--Printer sidste værdi i aabningstider table (Køkkens åbningstider)  -->
-<?php
-$query ="SELECT * FROM aabningstider ORDER BY id DESC LIMIT 1;";
-$results = mysqli_query($db,$query);
-if(!$results){
-  die("could not query the database" .mysqli_error());
-}
-$row = mysqli_fetch_row($results)
-?>
-<div class="row kitchen_and_party">
-  <div class="six columns">
-    <h2 class="opening_headline">Køkken</h2>
-    <div class="contact_info_party">
-      <div class="opening_day"><?= $row[1];?></div>
-      <div class="opening_time"><?= $row[2];?></div>
+      <div class="six columns">
+        <h2 class="opening_headline">Kontaktinformationer</h2>
+        <div class="opening_time_day">
+          <div class="opening_day_party">
+            Adresse
+          </div>
+          <div class="opening_time_right">
+            Hadsundvej 1B
+          </div>
+        </div>
+        <div class="opening_time_day">
+          <div class="opening_day_party">
+            By
+          </div>
+          <div class="opening_time_right">
+            9000 Aalborg, Danmark
+          </div>
+        </div>
+        <div class="opening_time_day">
+          <div class="opening_day_party">
+            Telefon
+          </div>
+          <div class="opening_time_right">
+            (+45) 98 12 03 83
+          </div>
+        </div>
+        <div class="opening_time_day">
+          <div class="opening_day_party">
+            E-mail
+          </div>
+          <div class="opening_time_right">
+            cafefrederiksberg@gmail.com
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Printer sidste værdi i aabningstider table (Køkkens åbningstider)  -->
+    <?php
+    $query ="SELECT * FROM aabningstider ORDER BY id DESC LIMIT 1;";
+    $results = mysqli_query($db,$query);
+    if(!$results){
+      die("could not query the database" .mysqli_error());
+    }
+    $row = mysqli_fetch_row($results)
+    ?>
+    <div class="row kitchen_and_party">
+      <div class="six columns">
+        <h2 class="opening_headline">Køkken</h2>
+        <div class="contact_info_party">
+          <div class="opening_day"><?= $row[1];?></div>
+          <div class="opening_time"><?= $row[2];?></div>
+        </div>
+      </div>
+
+    <?php mysqli_close($db);?>
+
+      <div class="six columns">
+        <h2 class="opening_headline">Vedrørende fest</h2>
+        <div class="contact_info_party">
+          <div class="opening_day_party">
+            Telefon
+          </div>
+          <div class="opening_time_right">
+            (+45) 22 42 43 00
+          </div>
+        </div>
+        <div class="contact_info_party">
+          <div class="opening_day_party">
+            E-mail
+          </div>
+          <div class="opening_time_right">
+            Frederiksbergselskaber@gmail.com
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-<?php mysqli_close($db);?>
-  <div class="six columns">
-    <h2 class="opening_headline">Vedrørende fest</h2>
-    <div class="contact_info_party">
-      <div class="opening_day_party">
-        Telefon
-      </div>
-      <div class="opening_time_right">
-        (+45) 22 42 43 00
-      </div>
-    </div>
-    <div class="contact_info_party">
-      <div class="opening_day_party">
-        E-mail
-      </div>
-      <div class="opening_time_right">
-        Frederiksbergselskaber@gmail.com
-      </div>
-    </div>
-  </div>
-</div>
-</div>
 
 <!--Sociale medier  -->
-<br>
-<div class="container socialemedier">
-  <h2> Følg os på Sociale medier </h2>
-  <p id="socialemediertekst"><i>Hvis du vil have de seneste nyheder, leveret lige til mobilen. Så vær sikker på at du følger os på Facebook og Instagram</i></p>
-<div class="row">
-  <div class="six columns facebook">
-    <h5>Facebook</h5>
-    <a href="https://www.facebook.com/Fredelive/"><img src="./img/facebook.png"></a>
+  <br>
+  <div class="container socialemedier">
+    <h2> Følg os på Sociale medier </h2>
+    <p id="socialemediertekst"><i>Hvis du vil have de seneste nyheder, leveret lige til mobilen. Så vær sikker på at du følger os på Facebook og Instagram</i></p>
+
+    <div class="row">
+      <div class="six columns facebook">
+        <h5>Facebook</h5>
+        <a href="https://www.facebook.com/Fredelive/"><img src="./img/facebook.png"></a>
+      </div>
+      <div class="six columns instagram">
+        <h5>Instagram</h5>
+        <a href="https://www.instagram.com/cafefrederiksberg/"><img src="./img/instagram.png"></a>
+      </div>
+    </div>
   </div>
-  <div class="six columns instagram">
-    <h5>Instagram</h5>
-    <a href="https://www.instagram.com/cafefrederiksberg/"><img src="./img/instagram.png"></a>
-  </div>
-</div>
-</div>
-<br>
+  <br>
 </div>
 
 <!--Google maps  -->
 <div class="mapouter">
-<div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" title="google maps location" src="https://maps.google.com/maps?q=Caf%C3%A9%20Frederiksberg%20Aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
-    marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div>
+  <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" title="google maps location" src="https://maps.google.com/maps?q=Caf%C3%A9%20Frederiksberg%20Aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
+    marginwidth="0"></iframe><a href="https://www.emojilib.com"></a>
+  </div>
 </div>
 
 </body>

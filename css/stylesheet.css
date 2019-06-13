@@ -640,9 +640,15 @@ widthiv:nth-child(13) > div.sk-ww-facebook-feed > div:nth-child(6) > a {
 }
 
 .opening_day{
-  width: 50%;
+  width: 25%;
   float: left;
   font-weight: bold;
+}
+
+.opening_time{
+  width: 75%;
+  float: right;
+  font-weight: 700;
 }
 
 .opening_day_party{
@@ -651,11 +657,6 @@ widthiv:nth-child(13) > div.sk-ww-facebook-feed > div:nth-child(6) > a {
   font-weight: 700;
 }
 
-.opening_time{
-  width: 50%;
-  float: right;
-  font-weight: 700;
-}
 .opening_time_right{
   width: 85%;
   float: middle;
@@ -1001,25 +1002,72 @@ margin-bottom: 2.5rem;
 
 /* .............................................8.3 ARRANGEMENTER */
 
-.arrangementer{
-  position: relative;
-  height: 400px;
+.arr_header{
+  text-align: center;
+  margin: 3rem 0;
 }
 
-.arrangementer_wrapper{
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%,-50%);
+.arr_header h2{
+  margin-bottom: 1rem;
+}
+
+.arr_item_header{
+  padding: 2rem 0 2rem 0;
+}
+
+.arr_item{
+  margin-bottom: 3rem;
+}
+
+.barnedåb{
   width: 100%;
-  }
-
-
-.arrheader {
- text-align: center;
- padding-bottom:2rem;
- padding-top: 1rem;
- color: #CCB380;
+  background-image: url("../img/barnedåb.jpg");
+  height: 350px;
+  background-position: center;
+  background-size: cover;
 }
+
+.konfirmation{
+  width: 100%;
+  background-image: url("../img/konfirmation.jpg");
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+.bryllup{
+  width: 100%;
+  background-image: url("../img/bryllup.jpg");
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+.kaffebord{
+  width: 100%;
+  background-image: url("../img/kaffebord.jpg");
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+.julefrokost{
+  width: 100%;
+  background-image: url("../img/julefrokost.jpg");
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+.nytårsaften{
+  width: 100%;
+  background-image: url("../img/nytaarsaften.jpg");
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+
 
 /*.............................................9.0 TIDSLINJE */
 
