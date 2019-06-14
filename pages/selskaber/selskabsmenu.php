@@ -103,8 +103,8 @@
         <div class="six columns">
           <h2>Selskabsmenu</h2>
           <h6>Sammensæt din egen selskabsmenu</h6>
-          <p>Vælg mellem en lang række foretter, hovedretter deserter og natmad. Sammensæt selv en lækker menu hvor du får lige præcis det du kunne tænke dig.<br>
-          Ring og hør mere eller bestil allrede nu!</p>
+          <p>Vælg mellem en lang række foretter, hovedretter desserter og natmad. Sammensæt selv en lækker menu hvor du får lige præcis det du kunne tænke dig.<br>
+          Ring og hør mere eller bestil allerede nu!</p>
           <p>På telefon: (+45) 98 12 03 83</p>
           <p>Eller send en email: frederiksbergselskaber@gmail.com</p>
         </div>

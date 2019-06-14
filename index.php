@@ -105,7 +105,7 @@
         <div class="six columns">
           <h2>Café Frederiksberg</h2>
           <h6>Siden år 1900</h6>
-          <p>Café Frederiksberg har budt gæster velkommen siden 1900 og er dermed Aalborgs ældste værtshus på samme beliggenhed – men også Aalborgs største værtshus. Igennem de 119 år Café Frederiksberg har eksisteret, har der kun være tre ejerskift. Nu om dage er det navnet “Frede” som gæsterne ynder at bruge, og derfor har Café Frederiksbergs musikmagasin også fået navnet FREDE LIVE.</p>
+          <p>Café Frederiksberg har budt gæster velkommen siden 1900, og er dermed Aalborgs ældste værtshus på samme beliggenhed – men også Aalborgs største værtshus. Nu om dage er det navnet FREDE, som gæsterne ynder at bruge. Derfor har Café Frederiksbergs musikmagasin også fået navnet FREDE LIVE.</p>
           <a class="button" href="pages/tidslinje.php">Læs hele historien <u>her</u></a>
         </div>
         <!--Billede af butiksfront  -->
@@ -124,7 +124,7 @@
         <a href="pages/restaurant.php">
           <img src="img/inholdsoversigtrestaurant.png" alt="Genvej til restaurant indhold">
           <h5>Restaurant</h5>
-          <p>Se vores menukort og bestil take-away</p>
+          <p>Se vores menukort og bestil take away</p>
         </a>
       </div>
       <!--Bar genvej  -->
@@ -132,7 +132,7 @@
         <a href="pages/bar.php">
           <img src="img/inholdsoversigtbar.png"  alt="Genvej til bar indhold">
           <h5>Bar</h5>
-          <p>Se vores store bar-kort med Aalborgs største Gin udvalg</p>
+          <p>Se vores store barkort med Aalborgs største Gin udvalg</p>
         </a>
       </div>
       <!--Events genvej  -->
@@ -140,7 +140,7 @@
         <a href="pages/events.php">
           <img src="img/inholdsoversigtevents.png"  alt="Genvej til events indhold">
           <h5>Events</h5>
-          <p>Se vores mange live-events på Klub Frede</p>
+          <p>Se vores mange live events på Klub Frede</p>
         </a>
       </div>
       <!--Selskaber genvej  -->

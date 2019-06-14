@@ -97,7 +97,7 @@
 <div class="container">
   <div class="arr_header">
     <h2>Arrangementer på Cafe Frederiksberg</h2>
-    <p>Hos Café Frederiksberg tilbyder vi en lang række arrangementer. Ring til os, og så kan du få et skræddersyet tilbud. Nedenunder ses nogle af de mest almindelige arrangementer</p>
+    <p>Hos Café Frederiksberg tilbyder vi en lang række arrangementer. Ring til os, og få et skræddersyet tilbud. Nedenunder ses nogle af de mest almindelige arrangementer.</p>
   </div>
 </div>
 
@@ -108,7 +108,7 @@
       <div class="one-half column barnedåb"></div>
 
       <div class="one-half column">
-        <p>Er I lige blevet mor og far, har I nok rigeligt at tænke på, og derfor kan I lade os stå for barnedåben, hvilket vi her hos Café Frederiksberg har stor erfaring med. Vi kan tilbyde dig en pakkeløsning, hvor du kun skal tænkte på at nyde festen.</p>
+        <p>Er I lige blevet mor og far, har I nok rigeligt at tænke på, og derfor kan I lade os stå for barnedåben, hvilket vi her hos Café Frederiksberg har stor erfaring med. Vi kan tilbyde dig en pakkeløsning, hvor du kun skal tænke på at nyde festen.</p>
         <br>
         <h6>Ring på tlf: (+45) 22 42 43 00</h6>
         <h6>frederiksbergselskaber@gmail.com</h6>
@@ -123,7 +123,7 @@
   <div class="row arr_item">
 
     <div class="one-half column">
-      <p>Vi har gennem mange år holdt konformationer med stor succes. Har du en søn eller datter der ønsker et brag af en fest med god mad, flotte omgivelser og samtidig til en god pris, så ring og hør hvordan vi kan realisere din fest.</p>
+      <p>Vi har gennem mange år holdt konfirmationer med stor succes. Har du en søn eller datter der ønsker et brag af en fest med god mad, flotte omgivelser og samtidig til en god pris, så ring og hør hvordan vi kan realisere din fest.</p>
       <br>
       <h6>Ring på tlf: (+45) 22 42 43 00</h6>
       <h6>frederiksbergselskaber@gmail.com</h6>
@@ -156,7 +156,7 @@
   <div class="row arr_item">
 
     <div class="one-half column">
-      <p>En mindesammenkomst efter en bisættelse eller begravelse, er en god mulighed for at mødes efter ceremonien og dele tanker og minder i en afslappet atmosfære. Café Frederiksberg tilbyder forskellige muligheder for kaffeborde.</p>
+      <p>En mindesammenkomst efter en bisættelse eller begravelse er en god mulighed for at mødes efter ceremonien og dele tanker og minder i et afslappet miljø. Café Frederiksberg tilbyder forskellige muligheder for kaffeborde.</p>
       <br>
       <h6>Ring på tlf: (+45) 22 42 43 00</h6>
       <h6>frederiksbergselskaber@gmail.com</h6>
@@ -173,7 +173,7 @@
       <div class="one-half column julefrokost"></div>
 
       <div class="one-half column">
-        <p>Når julen nærmer sig Vi tilbyder julefrokostmenu til firmaer og selskaber i vore hyggekige lokaler. Vi har lokaler til store såvel som små selskaber. Vi har sammensat en lækker Julebuffet, og du kan vælge buffet alene og købe drikke ved siden af, eller købe en samlet pakke. valget er dit.</p>
+        <p>Når julen nærmer sig tilbyder vi julefrokostmenuer til firmaer og selskaber i vore hyggelige lokaler. Vi har lokaler til store såvel som små selskaber. Vi har sammensat en lækker julebuffet, og du kan vælge buffet alene og købe drikke ved siden af, eller købe en samlet pakke. Valget er dit.</p>
         <br>
         <h6>Ring på tlf: (+45) 22 42 43 00</h6>
         <h6>frederiksbergselskaber@gmail.com</h6>
