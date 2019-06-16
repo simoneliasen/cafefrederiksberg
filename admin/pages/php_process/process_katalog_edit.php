@@ -15,7 +15,6 @@
   if ($_FILES["fileToUpload"]["size"] == 0){
     $uploadOk = 0;
     echo "der er ikke valgt en fil til upload";
-    header("Location: ../generelt.php#præsentationsvideo");
     exit();
   }
 
