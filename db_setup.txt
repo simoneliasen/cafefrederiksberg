@@ -8,13 +8,13 @@ CREATE DATABASE admin character set UTF8 collate utf8_bin;
 USE admin;
 
 # Opretter table til brugere (login-system)
-CREATE TABLE admin ( 
-id INT NOT NULL AUTO_INCREMENT,  
-username VARCHAR(255) NOT NULL, 
+CREATE TABLE admin (
+id INT NOT NULL AUTO_INCREMENT,
+username VARCHAR(255) NOT NULL,
 password VARCHAR(255) NOT NULL,
-PRIMARY KEY(id));   
+PRIMARY KEY(id));
 
-# Opretter table til header 
+# Opretter table til header
 CREATE TABLE header(
 id INT NOT NULL AUTO_INCREMENT,
 filetype VARCHAR(255) NOT NULL,
@@ -25,27 +25,27 @@ PRIMARY KEY(id));
 # indsætter billede/video i header
 INSERT INTO header VALUES('1','header_choice','','video_choice');
 
-# Opretter table til menu 
+# Opretter table til menu
 CREATE TABLE menu(
-id INT NOT NULL AUTO_INCREMENT, 
+id INT NOT NULL AUTO_INCREMENT,
 m_pos INT UNSIGNED NOT NULL,
 m_name VARCHAR(255) NOT NULL,
 m_desc VARCHAR(255),
-m_price INT NOT NULL, 
-PRIMARY KEY(id));   
+m_price INT NOT NULL,
+PRIMARY KEY(id));
 
 # Opretter table til announcements
 CREATE TABLE announcements(
-id INT NOT NULL AUTO_INCREMENT, 
+id INT NOT NULL AUTO_INCREMENT,
 info VARCHAR(255) NOT NULL,
 removaldate VARCHAR(255),
-PRIMARY KEY(id));   
+PRIMARY KEY(id));
 
 # Opretter table til katalog
 CREATE TABLE katalog(
-id INT NOT NULL AUTO_INCREMENT,  
+id INT NOT NULL AUTO_INCREMENT,
 img VARCHAR(255) NOT NULL,
-Link VARCHAR(1000) NOT NULL, 
+Link VARCHAR(1000) NOT NULL,
 header VARCHAR(255) NOT NULL,
 subheader VARCHAR(255) NOT NULL,
 text VARCHAR(1000) NOT NULL,
@@ -53,50 +53,50 @@ PRIMARY KEY(id));
 
 # Opretter table til barmenu
 CREATE TABLE barmenu(
-id INT NOT NULL AUTO_INCREMENT, 
+id INT NOT NULL AUTO_INCREMENT,
 category VARCHAR(255) NOT NULL,
 name VARCHAR(255) NOT NULL,
 description VARCHAR(255),
-price INT NOT NULL, 
-PRIMARY KEY(id)); 
+price INT NOT NULL,
+PRIMARY KEY(id));
 
 # Opretter table til selskabsmenu
 CREATE TABLE selskabsmenu(
-id INT NOT NULL AUTO_INCREMENT, 
+id INT NOT NULL AUTO_INCREMENT,
 category VARCHAR(255) NOT NULL,
 name VARCHAR(255) NOT NULL,
 description VARCHAR(255),
-price INT NOT NULL, 
-PRIMARY KEY(id)); 
+price INT NOT NULL,
+PRIMARY KEY(id));
 
 # Opretter table til buffet
 CREATE TABLE buffet(
-id INT NOT NULL AUTO_INCREMENT, 
+id INT NOT NULL AUTO_INCREMENT,
 name VARCHAR(255) NOT NULL,
 category VARCHAR(255),
-PRIMARY KEY(id));   
+PRIMARY KEY(id));
 
 # Opretter table til buffetpriser
 CREATE TABLE buffetpriser(
-id INT NOT NULL AUTO_INCREMENT, 
+id INT NOT NULL AUTO_INCREMENT,
 description VARCHAR(255),
-price VARCHAR(255) NOT NULL, 
+price VARCHAR(255) NOT NULL,
 category VARCHAR(255),
-PRIMARY KEY(id));   
+PRIMARY KEY(id));
 
 # Opretter table til åbningstider (Denne data bruges både til footer/kontakt-side)
 CREATE TABLE aabningstider(
-id INT NOT NULL AUTO_INCREMENT, 
-date VARCHAR(255) NOT NULL, 
+id INT NOT NULL AUTO_INCREMENT,
+date VARCHAR(255) NOT NULL,
 timeframe VARCHAR(255) NOT NULL,
-PRIMARY KEY(id));  
+PRIMARY KEY(id));
 
 # Opretter table til kontaktinfo (denne data bruges både til footer og kontakt-side)
 CREATE TABLE kontaktinfo (
-id INT NOT NULL AUTO_INCREMENT,  
-kontaktform VARCHAR(255) NOT NULL, 
+id INT NOT NULL AUTO_INCREMENT,
+kontaktform VARCHAR(255) NOT NULL,
 kontaktoplysninger VARCHAR(255) NOT NULL,
-PRIMARY KEY(id));  
+PRIMARY KEY(id));
 
 # Indsætter element i bruger-table (laver en bruger)
 INSERT INTO admin (username, password)
@@ -134,15 +134,15 @@ VALUES ('1', 'video', 'video_choice');
 
 # indsætter element i katalog-table
 INSERT INTO katalog (link,header,subheader,text)
-VALUES ('https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/','Frede Live','Live Musik og events','Café Frederiksberg er stedet hvor musikken er I højsædet, med koncerter og events året rundt. Café Frederiksberg satser stærkt på livekoncerter som en essentiel del af vores tilbud til vores gæster. Vi byder på ugentlig torsdags og fredags jam, med et hav af spændende musikere og cover bands der hylder nogle af tidernes bedste musikere, og appellerer til enhver musikalsk genre og stil.');
+VALUES ('https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/','Frede Live','Live Musik og events','Café Frederiksberg er stedet hvor musikken er I højsædet, med koncerter og events året rundt. Hos Café Frederiksberg satser vi stærkt på livekoncerter som en essentiel del af vores tilbud til vores gæster. Vi byder på ugentlig torsdags og fredags jam, med et hav af spændende musikere og cover bands der hylder nogle af tidernes bedste musikere, og appellerer til enhver musikalsk genre og stil.');
 
 # indsætter element i barmenu-table
 INSERT INTO barmenu (category,name,description,price)
-VALUES 
-#ol_vand
+VALUES
+#ol
 ('ol_vand','Dansk Pilsner','super fin','10'),
-#varme_drikke
-('varme_drikke','Irish Coffee','den er finno','30'),
+#vin
+('varme_drikke','Fransk Vin','den er finno','30'),
 #gin
 ('gin','Finsbury','','19'),
 ('gin','Beefeater','','19'),
@@ -384,7 +384,7 @@ VALUES ('Hvide sild med karrysalat','Buffet1'),
 
 # indsætter elementer i table til buffetpriser
 INSERT INTO buffetpriser (description,price,category)
-VALUES 
+VALUES
 #Buffet1
 ('For 4 timer - under 20 personer','Kun 299','Buffet1'),
 ('For 4 timer - min. 20 personer','Kun 399','Buffet1'),
@@ -414,6 +414,3 @@ VALUES
 ('For 4 timer','Kun 365','BuffetItaly'),
 #BuffetJulefrokost
 ('Julebuffet - min. 20 personer','Kun 349','BuffetJul');
-
-
-
