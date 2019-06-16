@@ -30,8 +30,15 @@ SORT-ISH      #101010
 MØRKEGRÅ-ISH  #1E1D20
 
 */
-
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Poppins');
 @import url('https://rsms.me/inter/inter.css');
+
+@font-face {
+   font-family: 'Playfair Display';
+   src: local('Playfair Display'), url('font/playfair_display.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+}
 
 /* Base Styles –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* html {
