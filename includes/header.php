@@ -1,4 +1,11 @@
 <style>
+
+@media (max-width: 550px){
+  .header_bg_img{
+    margin-top: 25px;
+  }
+ }
+
 .slider {
   height: 130px;
   width: 680px;
