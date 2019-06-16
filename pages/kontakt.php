@@ -102,7 +102,7 @@
   <div class="container opening_info">
     <br>
     <div class="container traeffetidspunkt">
-      <p style="text-align: center; font-size: 18px;"><i>Vi træffes bedst på telefon kl. <strong>10.00-11.30</strong>, kl. <strong>14.30-16.30</strong> samt efter kl. <strong>20.30</strong></i></p>
+      <p style="text-align: center; font-size: 18px; margin-bottom: 3rem;"><i>Vi træffes bedst på telefon kl. <strong>10.00-11.30</strong>, kl. <strong>14.30-16.30</strong> samt efter kl. <strong>20.30</strong></i></p>
     </div>
 
     <div class="row opening_information">
