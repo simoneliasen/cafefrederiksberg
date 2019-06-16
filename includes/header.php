@@ -156,7 +156,9 @@ if($header_choice['type'] == "video_choice"){
   ?>
 
   <div class="header_bg_img">
-    <video autoplay muted loop src="video/<?= $row['filename'] ?>" height="90vh"></video>
+    <video autoplay muted loop playsinline height="90vh">
+      <source src="video/<?= $row['filename'] ?>" type="video/mp4">
+    </video>
     <div class="header_text">
       <h1 class="test_text">Aalborgs Hyggeligste</h1>
       <div class="slider">
@@ -185,7 +187,7 @@ if($header_choice['type'] == "video_choice"){
       <a class="button" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bestil online</a>
       </div>
     </div>
-    <video autoplay muted loop src="/video/<?= $row['filename'] ?>" height="90vh"></video>
+    <video autoplay playsinline muted loop src="/video/<?= $row['filename'] ?>" height="90vh"></video>
   </div>
   <?php }else{
     $query = "SELECT filename FROM header WHERE type ='billede'";
