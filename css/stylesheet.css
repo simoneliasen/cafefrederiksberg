@@ -635,16 +635,18 @@ widthiv:nth-child(13) > div.sk-ww-facebook-feed > div:nth-child(6) > a {
 .opening_day{
   font-weight: 700;
   float: left;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 .opening_time{
   text-align: right;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 .opening_headline{
   padding-bottom: 1rem;
+  text-align: center;
+  padding-top: 2rem;
 }
 
 .socialemedier{
