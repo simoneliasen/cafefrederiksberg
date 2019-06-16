@@ -150,16 +150,22 @@ include('../session.php');
 
     <div class="task_wrapper">
       <h1 class="task_heading">Katalog & Katalog tekst</h1>
-      <p>Opdater et, eller flere felter</p>
+
+
       <form method="post" name="post" action="php_process/process_katalog_edit.php" enctype="multipart/form-data"  id="katalogform" style="width: 60%;">
+      <p><strong>Nuværende coverbillede:</strong></p>
+
+      <img src="../../img/<?= $row[1] ?>" height="100px"></img>
+      <br>
+      <input type="file" name="fileToUpload" id="fileToUpload">
         <p><b>Link</b></p>
-      <input class="text_input" type="text" name="link" value="<?php  echo $row[1]; ?>">
+      <input class="text_input" type="text" name="link" value="<?php  echo $row[2]; ?>">
         <p><b>Overskrift </b></p>
-      <input class="text_input" type="text" name="header" value="<?php  echo $row[2]; ?>">
+      <input class="text_input" type="text" name="header" value="<?php  echo $row[3]; ?>">
         <p><b>Underoverskrift</b></p>
-      <input class="text_input" type="text" name="subheader" value="<?php  echo $row[3]; ?>">
+      <input class="text_input" type="text" name="subheader" value="<?php  echo $row[4]; ?>">
         <p><b>Tekst</b></p>
-      <textarea class="text_input" id="katalogtext" type="text" cols="10" rows="6" name="text"><?php  echo $row[4]; ?></textarea>
+      <textarea class="text_input" id="katalogtext" type="text" cols="10" rows="6" name="text"><?php  echo $row[5]; ?></textarea>
       <br><br>
       <input class="button green" type="submit" value="Gem">
         </form>

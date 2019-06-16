@@ -171,8 +171,8 @@
         <!--Frede live katalog-billede  -->
         <div class="one-half column frede_live_katalog">
           <div class="frede_live_katalog_img_container">
-            <a rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">
-              <div class="frede_live_katalog_img"></div>
+            <a rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[2]; ?>" target="_blank">
+              <div class="frede_live_katalog_img" style="background-image: url('img/<?= $row[1]; ?>');"></div>
             </a>
           </div>
         </div>
@@ -180,10 +180,10 @@
         <!--Katalog overskrift + underoverskrift + tekst + link   -->
         <div class="one-half column frede_live_katalog_text">
           <div class="frede_live_katalog_text_container">
-            <h2><?php echo $row[2]; ?></h2>
-            <h6><?php echo $row[3]; ?></h6>
-            <p><?php echo $row[4]; ?></p>
-            <a class="button" rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[1]; ?>" target="_blank">Se vores Magasin <u>her</u></a>
+            <h2><?php echo $row[3]; ?></h2>
+            <h6><?php echo $row[4]; ?></h6>
+            <p><?php echo $row[5]; ?></p>
+            <a class="button" rel="noopener" aria-label="Se Frede live katalog" href="<?php echo $row[2]; ?>" target="_blank">Se vores Magasin <u>her</u></a>
             <a style="border: 1px solid #CCB380; border-bottom: 3px solid #CCB380" class="button" rel="noopener" aria-label="Se Frede live katalog" href="https://cafefrederiksberg.azurewebsites.net/" target="_blank">Bestil biletter</a>
           </div>
         </div>
