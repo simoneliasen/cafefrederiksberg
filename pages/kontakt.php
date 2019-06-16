@@ -110,7 +110,7 @@
         <h2 class="opening_headline">Åbningstider</h2>
         <!--Vis første 7 entries i sql-table (ugedages åbningstider)  -->
         <?php
-          $query ="SELECT * FROM aabningstider ORDER BY id ASC LIMIT 7;";
+          $query ="SELECT * FROM aabningstider ORDER BY id ASC LIMIT 8;";
           $results = mysqli_query($db,$query);
           if(!$results){
             die("could not query the database" .mysqli_error());
@@ -124,97 +124,43 @@
       </div>
 
       <div class="six columns">
-        <h2 class="opening_headline">Kontaktinformationer</h2>
-        <div class="opening_time_day">
-          <div class="opening_day_party">
-            Adresse
-          </div>
-          <div class="opening_time_right">
-            Hadsundvej 1B
-          </div>
-        </div>
-        <div class="opening_time_day">
-          <div class="opening_day_party">
-            By
-          </div>
-          <div class="opening_time_right">
-            9000 Aalborg, Danmark
-          </div>
-        </div>
-        <div class="opening_time_day">
-          <div class="opening_day_party">
-            Telefon
-          </div>
-          <div class="opening_time_right">
-            (+45) 98 12 03 83
-          </div>
-        </div>
-        <div class="opening_time_day">
-          <div class="opening_day_party">
-            E-mail
-          </div>
-          <div class="opening_time_right">
-            cafefrederiksberg@gmail.com
-          </div>
-        </div>
-      </div>
-    </div>
+        <h2 class="opening_headline">Kontakt</h2>
 
-    <!--Printer sidste værdi i aabningstider table (Køkkens åbningstider)  -->
-    <?php
-    $query ="SELECT * FROM aabningstider ORDER BY id DESC LIMIT 1;";
-    $results = mysqli_query($db,$query);
-    if(!$results){
-      die("could not query the database" .mysqli_error());
-    }
-    $row = mysqli_fetch_row($results)
-    ?>
-    <div class="row kitchen_and_party">
-      <div class="six columns">
-        <h2 class="opening_headline">Køkken</h2>
-        <div class="contact_info_party">
-          <div class="opening_day"><?= $row[1];?></div>
-          <div class="opening_time"><?= $row[2];?></div>
-        </div>
-      </div>
+        <div class="opening_day">Adresse</div>
+        <div class="opening_time">Hadsundvej 1B</div>
 
-    <?php mysqli_close($db);?>
+        <div class="opening_day">By</div>
+        <div class="opening_time">Aalborg</div>
 
-      <div class="six columns">
+        <div class="opening_day">Telefon</div>
+        <div class="opening_time">(+45) 98 12 03 83</div>
+
+        <div class="opening_day">E-mail</div>
+        <div class="opening_time">cafefrederiksberg@gmail.com</div>
+
         <h2 class="opening_headline">Vedrørende fest</h2>
-        <div class="contact_info_party">
-          <div class="opening_day_party">
-            Telefon
-          </div>
-          <div class="opening_time_right">
-            (+45) 22 42 43 00
-          </div>
-        </div>
-        <div class="contact_info_party">
-          <div class="opening_day_party">
-            E-mail
-          </div>
-          <div class="opening_time_right">
-            Frederiksbergselskaber@gmail.com
-          </div>
-        </div>
-      </div>
 
+        <div class="opening_day">Telefon</div>
+        <div class="opening_time">(+45) 22 42 43 00</div>
+
+        <div class="opening_day">E-mail</div>
+        <div class="opening_time">Frederiksbergselskaber@gmail.com</div>
+      </div>
     </div>
   </div>
 
-<!--Sociale medier  -->
-  <br>
+
+  <br><br><br>
   <div class="container socialemedier">
     <h2> Følg os på Sociale medier </h2>
-    <p id="socialemediertekst"><i>Hvis du vil have de seneste nyheder, leveret lige til mobilen. Så vær sikker på at du følger os på Facebook og Instagram</i></p>
+    <p><i>Hvis du vil have de seneste nyheder, leveret lige til mobilen. Så vær sikker på at du følger os på Facebook og Instagram</i></p>
 
     <div class="row">
-      <div class="six columns facebook">
+      <div class="one-half column facebook">
         <h5>Facebook</h5>
         <a href="https://www.facebook.com/Fredelive/"><img src="./img/facebook.png"></a>
       </div>
-      <div class="six columns instagram">
+      <div class="one-half column instagram">
         <h5>Instagram</h5>
         <a href="https://www.instagram.com/cafefrederiksberg/"><img src="./img/instagram.png"></a>
       </div>

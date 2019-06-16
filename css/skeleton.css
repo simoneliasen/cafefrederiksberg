@@ -115,6 +115,7 @@
 @media (max-width: 900px) {
   .six.columns{
     width: 100%;
+    margin: 0;
   }
 }
 

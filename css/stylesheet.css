@@ -632,78 +632,25 @@ widthiv:nth-child(13) > div.sk-ww-facebook-feed > div:nth-child(6) > a {
 
 /*..............................................6 KONTAKT */
 
-.container.traeffetidspunkt{
-  font-size: 18px;
-}
-
-.opening_headline{
-  padding: 1rem 0;
-  margin-bottom: 2.5rem 0;
-}
-
-.opening_time_day{
-  padding-bottom: 2.3rem;
-}
-
 .opening_day{
-  width: 25%;
+  font-weight: 700;
   float: left;
-  font-weight: bold;
+  padding-bottom: 0.5rem;
 }
 
 .opening_time{
-  width: 75%;
-  float: right;
-  font-weight: 700;
+  text-align: right;
+  padding-bottom: 0.5rem;
 }
 
-.opening_day_party{
-  width: 25%;
-  float: left;
-  font-weight: 700;
+.opening_headline{
+  padding-bottom: 1rem;
 }
 
-.opening_time_right{
-  width: 85%;
-  float: middle;
-  font-weight: 700;
-}
-
-.contact_info{
-padding-bottom: 3rem;
-margin-bottom: 2.5rem;
-}
-
-.contact_info_party{
-padding-bottom: 1rem;
-margin-bottom: 2.5rem;
-}
-
-.container.traeffetidspunkt {
+.socialemedier{
   text-align: center;
-  padding-right: 7rem;
-  font-size: 18px;
-
-}
-.six.columns.facebook {
-  display: inline;
-  float: left;
-  margin: 0;
-}
-.six.columns.instagram {
-  display: inline;
-  float: right;
-  margin: 0;
 }
 
-.container.socialemedier {
-  text-align: center;
-  padding-right: 7rem;
-  padding-bottom: 3rem;
-}
-#socialemediertekst {
-  padding-top: 4px;
-}
 
 /*..............................................7 RESTAURANT */
 
