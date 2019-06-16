@@ -396,10 +396,10 @@ VALUES
 ('For 5 timer - under 20 personer','Kun 329','Buffet2'),
 ('For 5 timer - min. 20 personer','Kun 429','Buffet2'),
 #Buffet3
-('For 4 timer - under 20 personer','Kun 299','Buffet3'),
-('For 4 timer - min. 20 personer','Kun 399','Buffet3'),
-('For 5 timer - under 20 personer','Kun 329','Buffet3'),
-('For 5 timer - min. 20 personer','Kun 429','Buffet3'),
+#('For 4 timer - under 20 personer','Kun 299','Buffet3'),
+#('For 4 timer - min. 20 personer','Kun 399','Buffet3'),
+#('For 5 timer - under 20 personer','Kun 329','Buffet3'),
+#('For 5 timer - min. 20 personer','Kun 429','Buffet3'),
 #Buffet4
 ('Per couv.','Kun 189','Buffet3'),
 ('For 4 timer','Kun 365','Buffet3'),
