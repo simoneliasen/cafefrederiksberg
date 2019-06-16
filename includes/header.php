@@ -128,7 +128,7 @@
 }
 
 </style>
-<base href="http://localhost/cafefrederiksberg/index.php">
+<base href="https://localhost/cafefrederiksberg/index.php">
 <?php
 
 //Opretter forbindelse manelt kontra include, da de ellers er duplikeret i main-content
