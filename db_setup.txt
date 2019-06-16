@@ -44,6 +44,7 @@ PRIMARY KEY(id));
 # Opretter table til katalog
 CREATE TABLE katalog(
 id INT NOT NULL AUTO_INCREMENT,  
+img VARCHAR(255) NOT NULL,
 Link VARCHAR(1000) NOT NULL, 
 header VARCHAR(255) NOT NULL,
 subheader VARCHAR(255) NOT NULL,
