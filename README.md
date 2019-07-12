@@ -1,8 +1,5 @@
 ### Continuous updates will be made on the project after hand in.
 Find the newest updates here: https://github.com/simoneliasen/cafefrederiksberg
-
-A working prototypes is uploaded to: https://www.korius.dk/
-
 Widgets and thridparty implementations are not working as they are to be configured with our collaborator.
 
 ## Quick guide to getting the website running
