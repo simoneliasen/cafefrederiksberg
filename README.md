@@ -24,3 +24,6 @@ This should be done in the following files
 
 ### 3. Download the SQL-database (found in the folder db_setup) & upload it to phpmyadmin
 To setup local server, run the sql query found in the folder "db_setup" into the cmd prompt in the repository folder.
+
+## Screenshot of front-page:
+![alt text](http://korius.dk/github/frederiksberg.PNG)
