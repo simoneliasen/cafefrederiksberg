@@ -1,7 +1,3 @@
-### Continuous updates will be made on the project after hand in.
-Find the newest updates here: https://github.com/simoneliasen/cafefrederiksberg
-Widgets and thridparty implementations are not working as they are to be configured with our collaborator.
-
 ## Quick guide to getting the website running
 
 ### 1. Set the base href in header.php to your sites index.php location (in the root folder)
