@@ -23,3 +23,6 @@ To setup local server, run the sql query found in the folder "db_setup" into the
 
 ## Screenshot of front-page:
 ![alt text](http://korius.dk/github/frederiksberg.PNG)
+
+Deployment of the site can be seen at:
+https://cafefrederiksberg.dk/
