@@ -138,13 +138,14 @@
     </div>
   </div>
 
+
 <!-- Buffet 1 -->
 <div id="Buffet_1">
 <div class="bg_dark">
   <div class="container buffet_1">
     <div class="row buffet_odd">
         <div class="six columns">
-            <h2>Buffet 1</h2>
+          <h2>Buffet 1</h2>
           <?php
           $query ="SELECT * FROM buffet WHERE category='Buffet1';";
           $results = mysqli_query($db,$query);
