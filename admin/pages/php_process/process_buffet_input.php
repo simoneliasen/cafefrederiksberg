@@ -1,14 +1,18 @@
 <?php
 require_once '../../config.php';
 
+  $buffetNumber = ...;
+
   $menu_item_name = htmlentities($_POST['menu_item_name']);
   $id=$_GET['id'];
   $category = htmlspecialchars($_POST['hidden_category']);
 
   $query = "INSERT INTO buffet VALUES(
     '$id',/* ID ligger først i tablet og autoincrementes, derfor lades denne være blank */
-    '$menu_item_name',
-    '$category'
+    '$buffetName',
+    '$buffetNumber',
+    '$buffetitem',
+    ''
   )";
   $results = mysqli_query($db, $query);
 

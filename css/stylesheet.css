@@ -834,7 +834,6 @@ widthiv:nth-child(13) > div.sk-ww-facebook-feed > div:nth-child(6) > a {
 
 /* Buffet odd numbers */
 .row.buffet_odd{
-  background-color: #1E1D20;
   padding: 2rem 0;
 }
 

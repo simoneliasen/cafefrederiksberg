@@ -1,0 +1,420 @@
+cd C:\xampp\mysql\bin
+mysql -u root
+
+DROP DATABASE admin;
+
+# Opretter database
+CREATE DATABASE admin character set UTF8 collate utf8_bin;
+
+# Vælg database
+USE admin;
+
+# Opretter table til brugere (login-system)
+CREATE TABLE admin (
+id INT NOT NULL AUTO_INCREMENT,
+username VARCHAR(255) NOT NULL,
+password VARCHAR(255) NOT NULL,
+PRIMARY KEY(id));
+
+# Opretter table til header
+CREATE TABLE header(
+id INT NOT NULL AUTO_INCREMENT,
+filetype VARCHAR(255) NOT NULL,
+filename VARCHAR(255) NOT NULL,
+type VARCHAR(255) NOT NULL,
+PRIMARY KEY(id));
+
+# indsætter billede/video i header
+INSERT INTO header VALUES('1','header_choice','','video_choice');
+
+# Opretter table til menu
+CREATE TABLE menu(
+id INT NOT NULL AUTO_INCREMENT,
+m_pos INT UNSIGNED NOT NULL,
+m_name VARCHAR(255) NOT NULL,
+m_desc VARCHAR(255),
+m_price INT NOT NULL,
+PRIMARY KEY(id));
+
+# Opretter table til announcements
+CREATE TABLE announcements(
+id INT NOT NULL AUTO_INCREMENT,
+info VARCHAR(255) NOT NULL,
+removaldate VARCHAR(255),
+PRIMARY KEY(id));
+
+# Opretter table til katalog
+CREATE TABLE katalog(
+id INT NOT NULL AUTO_INCREMENT,
+img VARCHAR(255) NOT NULL,
+Link VARCHAR(1000) NOT NULL,
+header VARCHAR(255) NOT NULL,
+subheader VARCHAR(255) NOT NULL,
+text VARCHAR(1000) NOT NULL,
+PRIMARY KEY(id));
+
+# Opretter table til barmenu
+CREATE TABLE barmenu(
+id INT NOT NULL AUTO_INCREMENT,
+category VARCHAR(255) NOT NULL,
+name VARCHAR(255) NOT NULL,
+description VARCHAR(255),
+price INT NOT NULL,
+PRIMARY KEY(id));
+
+# Opretter table til selskabsmenu
+CREATE TABLE selskabsmenu(
+id INT NOT NULL AUTO_INCREMENT,
+category VARCHAR(255) NOT NULL,
+name VARCHAR(255) NOT NULL,
+description VARCHAR(255),
+price INT NOT NULL,
+PRIMARY KEY(id));
+
+# Opretter table til buffet
+CREATE TABLE buffet(
+id INT NOT NULL AUTO_INCREMENT,
+buffetName VARCHAR(255) NOT NULL,
+buffetNumber INT NOT NULL,
+buffetItem VARCHAR(255),
+img VARCHAR(255) NOT NULL,
+PRIMARY KEY(id));
+
+# Opretter table til buffetpriser
+CREATE TABLE buffetpriser(
+id INT NOT NULL AUTO_INCREMENT,
+description VARCHAR(255),
+price VARCHAR(255) NOT NULL,
+category VARCHAR(255),
+PRIMARY KEY(id));
+
+# Opretter table til åbningstider (Denne data bruges både til footer/kontakt-side)
+CREATE TABLE aabningstider(
+id INT NOT NULL AUTO_INCREMENT,
+date VARCHAR(255) NOT NULL,
+timeframe VARCHAR(255) NOT NULL,
+PRIMARY KEY(id));
+
+# Opretter table til kontaktinfo (denne data bruges både til footer og kontakt-side)
+CREATE TABLE kontaktinfo (
+id INT NOT NULL AUTO_INCREMENT,
+kontaktform VARCHAR(255) NOT NULL,
+kontaktoplysninger VARCHAR(255) NOT NULL,
+PRIMARY KEY(id));
+
+# Indsætter element i bruger-table (laver en bruger)
+INSERT INTO admin (username, password)
+VALUES ('user', 'password'),
+('bruger', 'kodeord');
+
+# indsætter element i menu-table
+INSERT INTO menu (m_pos, m_name, m_desc, m_price)
+VALUES ('1','Rejecocktail', '', '45'),
+('2','Stjerneskud', '', '59'),
+('3','Kæmpe stjerneskud', '', '79'),
+('4','Fiskefillet', 'med pommes frites', '69'),
+('5','Kyllingenuggets', 'med pommes frites', '69'),
+('6','Hotwings', 'med pommes frites', '69'),
+('7','Black Angus Burger', 'med pommes frites', '69'),
+('8','Black Angus Cheeseburger', 'med pommes frites', '72'),
+('9','Bøfsandwich', 'med sauce', '69'),
+('10','Bøfsandwich', 'med sauce og pommes frites', '75'),
+('11','Omelet', 'med bacon, tomat, purløg og grøn salat', '69'),
+('12','Herregårdsbøf (håndlavet hakkebøf)', 'med løg, ærter, bernaisesauce, griltomat og pommes frites', '89'),
+('13','Marineret sild', 'på rugbrød med karrysalat', '45'),
+('14','2 lune frikadeller', 'med rugbrød og kål', '45'),
+('15','1 stk. Smørrebrød', '', '28'),
+('16','3 stk. Smørrebrød', '', '79'),
+('17','Pariserbøf', 'klassisk med tilbehør', '89'),
+('18','Nachos', 'med smeltet ost og dip', '39');
+
+ # indsætter element i announcement-table
+ INSERT INTO announcements (info,removaldate)
+VALUES ('Kæmpe festivitas, kom forbi!','29-05-1997');
+
+# indsætter element i header
+INSERT INTO header (id,filetype,type)
+VALUES ('1', 'video', 'video_choice');
+
+# indsætter element i katalog-table
+INSERT INTO katalog (link,header,subheader,text)
+VALUES ('https://publizr.com/citygraphic/fredelivemusikmagasin-nr10-2019web?html=true&fbclid=IwAR0FNrTprOacjXPfp2C0WAxVmpEGbFYg4KkYu3W5MllwcCIZcFgvHJA7ss8#/0/','Frede Live','Live Musik og events','Café Frederiksberg er stedet hvor musikken er I højsædet, med koncerter og events året rundt. Hos Café Frederiksberg satser vi stærkt på livekoncerter som en essentiel del af vores tilbud til vores gæster. Vi byder på ugentlig torsdags og fredags jam, med et hav af spændende musikere og cover bands der hylder nogle af tidernes bedste musikere, og appellerer til enhver musikalsk genre og stil.');
+
+# indsætter element i barmenu-table
+INSERT INTO barmenu (category,name,description,price)
+VALUES
+#ol
+('ol_vand','Dansk Pilsner','super fin','10'),
+#vin
+('varme_drikke','Fransk Vin','den er finno','30'),
+#gin
+('gin','Finsbury','','19'),
+('gin','Beefeater','','19'),
+('gin','Gordons','','19'),
+('gin','Gordons Premium Pink','','20'),
+('gin','Tanqueray','','20'),
+('gin','Tanqueray Rangpur','','25'),
+('gin','Tanqueray No. 10','','35'),
+('gin','Bombay Saphire','','20'),
+('gin','Bombay Dry Gin','','20'),
+('gin','Star of Bombay','','35'),
+('gin','Haymans Sloe Gin','','25'),
+('gin','Foxdenton Sloe Gin','','25'),
+('gin','Foxdenton Original 48','','30'),
+('gin','Penderyn Brecon','','25'),
+('gin','Penderyn Brecon Special','','30'),
+('gin','Penderyn Brecon Botanical','','30'),
+('gin','Hernö Swedish Excellence','','30'),
+('gin','Hernö Navy Strenght 57%','','35'),
+('gin','Four Pillars','','30'),
+('gin','Ferdinands','','30'),
+('gin','Skin Gin','','35'),
+('gin','Gin Mare','','30'),
+('gin','Langleys No. 8','','25'),
+('gin','Ungava','','25'),
+('gin','Edgerton Pink Gin','','25'),
+('gin','Silent Pool','','30'),
+('gin','Loca Lab Minus -33','','30'),
+('gin','Barrister Old Tom','','25'),
+('gin','Barrister Dry Gin','','20'),
+('gin','Staethearn Heather Rose','','25'),
+('gin','Indian Summer','','25'),
+('gin','Foxdention Winslow Plum','','25'),
+('gin','Damson Gin','','25'),
+('gin','Raspberry Gin','','25'),
+('gin','Hendricks','','25'),
+('gin','Caorunn','','25'),
+('gin','London No. 1','','30'),
+('gin','Bulldog','','25'),
+('gin','Blind Tiger','','35'),
+('gin','Tarquins','','35'),
+('gin','Masters Dry Gin','','30'),
+('gin','Djøn Økologisk Gin','','25'),
+#champagne
+('champagne','Champagne Barons de Rothschild Brut Rosé','udsøgt finesse. Fin, livlig, delikat, kompleks og alligevel harmonisk. En fryd for sanserne','850'),
+('champagne','Champagne Barons de Rothschild Extra Brut','Cuvée der fryder enhver vinelsker, som er på udkig efter renhed og modenhed','800'),
+('champagne','Moet & Chandon Imperial Brut','En af verdens mest kendte champagner. Blød velafbalancerende stil','650'),
+('champagne','Charles Mignon Rosé 1. Cru Brut','En herlig frisk rosé Champagne hvor alle druer er fra marker der er klassificeret som 1er Cru.','450'),
+('champagne','Charles Mignon 1. Cru Brut','Smagen er fokuseret med sprød grøn frugt og fornemmelsen af sommer.','425'),
+('champagne','Charles Mignon 1. Cru Brut (37,5 ml.)','Smagen er fokuseret med sprød grøn frugt og fornemmelsen af sommer.','225'),
+('champagne','Charles Mignon 1. Cru Brut(38,75 ml.)','Smagen er fokuseret med sprød grøn frugt og fornemmelsen af sommer.','125'),
+('champagne','Mont Marcal Cava Rosado Brut','Rosé Cava fra mesteren hos Mont Marcal. Intens, liflig og perfekt til at skabe en god stemning','165'),
+('champagne','Castellblanc Cava Brut','En forrygende flot Cava med en lækker og lang eftersmag. Et oplagt alternativ til Champagne','165'),
+('champagne','Contessa di Castiglione Asti Spumante DOCG','Sødmefuld og frisk Asti der byder på noter af honning of citrusfrugter','150'),
+#rom
+('rom','Havanna 3 Especial','','20'),
+('rom','Havanna 7 Års','','25'),
+('rom','Havanna Maestros','','35'),
+('rom','Zacapa 15 Års','','25'),
+('rom','Zacapa 23 Års','','35'),
+('rom','Zacapa 25 Års','','50'),
+('rom','Matusalem Platino','','20'),
+('rom','Matusalem 15 Års','','30'),
+('rom','El Dorado 8 Års','','25'),
+('rom','El Dorado 15 Års','','35'),
+('rom','Kraken','','25'),
+('rom','Chamarel V.S.O.P','','35'),
+('rom','Skotlander Rum V','','65'),
+('rom','Skotlander White','','25'),
+('rom','Real Mccoy 3 års','','20'),
+('rom','Real Mccoy 5 års','','25'),
+('rom','Real Mccoy 12 års','','35'),
+('rom','Ron Ocumare Blanco','','20'),
+('rom','Ron Ocumare Anejo','','25'),
+('rom','Bacardi Carta Negra','','20'),
+('rom','Bacardi Blanco','','20'),
+('rom','Bacardi Citrus','','20'),
+('rom','Bacardi Razz','','20'),
+('rom','Bacardi Pineapple','','20'),
+('rom','Morgan Spiced','','20'),
+('rom','Morgan Blanco','','20'),
+('rom','Don Papa 7 Års','','25'),
+('rom','Don Papa 10 Års','','30'),
+('rom','Putacana Esplendido','','25'),
+('rom','Quorhum 30 Anni','','45'),
+('rom','Unhiq XO','','50'),
+('rom','Puntacana XOX','','50'),
+('rom','Ron Santiago Anejo','','25'),
+('rom','Ron Santiago 12 Års','','30'),
+('rom','Ron Cubay Carta Blanca','','20'),
+('rom','Ron Cubay Anejo','','25'),
+('rom','Ron Cubay 10 Års','','30'),
+('rom','Alfreds Trail Rum Sauterne Cask','','35'),
+('rom','Alfreds Trail Rum Port Finish','','35'),
+('rom','Fiji Rum South Pacific 10 Års','','40'),
+('rom','Caribean Blended 2004 11 Års','','50');
+
+# indsætter element i selskabsmenu-table
+INSERT INTO selskabsmenu (name,description,price,category)
+VALUES ('Klar suppe','Med boller og flütes','52','forret'),
+('Flødelegeret aspargessuppe','Med kødboller og flütes','52','forret'),
+('Karrysuppe','Med ris, hønsekød og flütes','52','forret'),
+('Hønsesalat på ananasring','Serveres med flütes','52','forret'),
+('2 tarteletter','Med høns i asparges','52','forret'),
+('Butterdejsskal med dampet og stegt fiskefilet','Rejer og hollandaisesauce','68','forret'),
+('Klassisk rejecocktail','Med håndpillede rejer og flütes','68','forret'),
+('Røget ørred','Med håndpillede rejer, kaviar, dressing og flütes','72','forret'),
+('Hvidvinsdampet laks','Med håndpillede rejer, kaviar, dressing og flütes','68','forret'),
+('Ferskrøget laks','Med flødestuvet spinat, asparges og flütes','68','forret'),
+('Hummer a la Americaine','Fersk dampet hummer med garniture','215','forret'),
+#Hovedretter
+('Svinekam','Med svesker, rødkål, asier, hvide og brune kartofler','110','hovedret'),
+('Svinekam stegt som vildt','Med waldorffsalat, gelé, hvide og brune kartofler','120','hovedret'),
+('Kalvefillet','Med grøntsager, kartofler og portvinssauce','130','hovedret'),
+('Kalvefillet stegt som vildt','Med waldorffsalat, gelé, hvide og brune kartofler','130','hovedret'),
+('Gammeldags oksesteg','Med bønner, glasserede løg og hvide kartofler','120','hovedret'),
+('Oksemørbrad','Med grøntsager og smørstegte kartofler','175','hovedret'),
+('Lammeryg','Med grøntsager og kartofler','210','hovedret'),
+('Andesteg','Med rødkål, svesker, hvide og brune kartofler','135','hovedret'),
+('Dyreryg','Med waldorffsalat, hvide og brune kartofler','225','hovedret'),
+#Desserter
+('Hjemmelavet vanilje-is','Med jordbærsauce','52','dessert'),
+('Isbombe a la Frederiksberg','Med marcipan, chokolade og nødder','55','dessert'),
+('Chokoladeskål','Med friske frugter og pistacie-is','62','dessert'),
+('Valnødde-is','Med kandiserede valnødder og sorbet','55','dessert'),
+('En halv ananas','Med friske frugter og soft ice','62','dessert'),
+('Hjemmebagt amerikansk chokoladekage','Med soft ice','62','dessert'),
+('Frisk frugtsalat','Med soft ice','62','dessert'),
+#Natmad
+('Klar suppe','Med boller og flütes','49','natmad'),
+('Karrysuppe','Med flütes','49','natmad'),
+('Flødelegeret aspargessuppe','Med kødboller og flütes','49','natmad'),
+('Frikadeller','Med kartoffelsalat','49','natmad'),
+('Glasseret skinke','Med salat, dressing og flütes','59','natmad'),
+('Skibberlabskovs','Med rugbrød, smør og rødbeder','69','natmad'),
+('Pølsebord','Med 4 slags pålæg, leverpostej og ost','69','natmad'),
+('Hotdogs','Med klassisk tilbehør','45','natmad');
+
+# indsætter elementer i table til åbningstider
+INSERT INTO aabningstider (date,timeframe)
+VALUES ('Mandag','Kl. 10:00-00:00'),
+('Tirsdag','Kl. 10:00-00:00'),
+('Onsdag','Kl. 10:00-00:00'),
+('Torsdag','Kl. 10:00-03:00'),
+('Fredag','Kl. 10:00-03:00'),
+('Lørdag','Kl. 08:00-03:00'),
+('Søndag','Kl. 08:00-00:00'),
+('Hver dag','Kl. 12:00-14:00 og Kl. 17:00-20:00');
+
+# indsætter elementer table til buffet
+INSERT INTO buffet (buffetItem, buffetName, buffetNumber)
+#Buffet1
+VALUES ('Hvide sild med karrysalat','Buffet1','1'),
+('Pålægsfad med 3 slags pålæg','Buffet1','1'),
+('Lun glaseret skinke','Buffet1','1'),
+('Grønne salater med 2 slags dressing','Buffet1','1'),
+('Soltørrede tomater, oliven, marinerede hvidløg og croutoner','Buffet1','1'),
+('Lun leverpostej med bacon og champignon','Buffet1','1'),
+('Kyllingebryst med agurkesalat','Buffet1','1'),
+('Pastasalat','Buffet1','1'),
+('Frikadeller med flødekartofler','Buffet1','1'),
+('Osteanretning med druer og frugt','Buffet1','1'),
+('Brød og smør','Buffet1','1'),
+#Buffet2
+('Laksefad med hummerdressing, rejer, asparges og kaviar','Buffet2','2'),
+('Lune mørbradbøffer med grilltomat og champignon a la creme','Buffet2','2'),
+('Leverpostej med bacon og svampe','Buffet2','2'),
+('Okesefilet med flødekartofler','Buffet2','2'),
+('Grønne salater med 2 slags dressing','Buffet2','2'),
+('Kylling med olivenstegte kartofler, coleslaw salat, pesto, oliven, hvidløg, soltørrede tomater og croutoner','Buffet2','2'),
+('Soltørrede tomater og croutoner','Buffet2','2'),
+('Pastasalat','Buffet2','2'),
+('Osteanretning med druer og frugt','Buffet2','2'),
+('Brød og smør','Buffet2','2'),
+#Buffet3
+('Røget laks med asparges og kaviar','Buffet3','3'),
+('Lune frikadeller med kartoffelsalat','Buffet3','3'),
+('Mørbradbøffer med bløde løg, sprød bacon. champignon og surt','Buffet3','3'),
+('Barbequekylling','Buffet3','3'),
+('Grønne salater med 2 slags dressing','Buffet3','3'),
+('Lun glaseret skinke med olivenstegte kartofler, pesto, oliven og marinerede hvidløg','Buffet3','3'),
+('Soltørrede tomater og croutoner','Buffet3','3'),
+('Pastasalat','Buffet3','3'),
+('Osteanretning med druer og frugt','Buffet3','3'),
+('Brød og smør','Buffet3','3'),
+#Buffet4
+('Kold dampet fiskefilet med asparges, kaviar og hummerdressing','Buffet4','4'),
+('Rejer og mayonnaise','Buffet4','4'),
+('Lun lammekølle med myntegelé','Buffet4','4'),
+('Lun tyndstegsfilet med flødekartofler','Buffet4','4'),
+('Lun glaseret skinke','Buffet4','4'),
+('Salater med 2 slags dressing','Buffet4','4'),
+('Lun leverpostej med bacon og champignon','Buffet4','4'),
+('Stort ostebord med friske frugter','Buffet4','4'),
+#BuffetUSA
+('Salat med grillede rejer på bund af avocado, tomat og ananas - hertil cocktailsauce','BuffetUSA','5'),
+('Beer batter fish - stegt torsk i sprød dej på spidskål, majs og persille - hertil hvidløgscreme','BuffetUSA','5'),
+('Pulled pork i chili og honning, braiserede urter, honningglaserede rodfrugter og syltede tomater','BuffetUSA','5'),
+('US oksesteg med timian, bagte kartofler og salater','BuffetUSA','5'),
+('Majskylling stegt med persilleolie, marinerede svampe med mandler og bagte rødløg','BuffetUSA','5'),
+('Spinat- og kartoffeltærter med cheddarost','BuffetUSA','5'),
+('Caesar salat med sprøde croutoner, bagte tomater, sprød bacon og parmasanost','BuffetUSA','5'),
+('American brownies med softice og frugt','BuffetUSA','5'),
+#BuffetItaly
+('Insalata De Mare - skaldyrssalat med olivenolie og krydderurter','BuffetItaly','6'),
+('Carpaccio - marineret oksekød med parmasanost','BuffetItaly','6'),
+('Lufttørret parmaskinke med soltørret tomatsalat','BuffetItaly','6'),
+('Filetto De Maiale Gratinato - svinemørbrad vendt i olivenolie og paneret med krydderurter','BuffetItaly','6'),
+('Farserede tomater','BuffetItaly','6'),
+('Lasagne','BuffetItaly','6'),
+('Spaghetti carbonara','BuffetItaly','6'),
+('Lammekølle med tomatsauce og risk basilikum','BuffetItaly','6'),
+('Små olivenristede kartfoler med friske krydderurter','BuffetItaly','6'),
+('Friske frugter og italienske oste','BuffetItaly','6'),
+#Buffetoekologi
+('Gazpacho suppe','BuffetOekologi','7'),
+('Kartoffelomelet','BuffetOekologi','7'),
+('Fyldte muslinger','BuffetOekologi','7'),
+('Farserede champignoner','BuffetOekologi','7'),
+('Pinchos med forskellig fyld','BuffetOekologi','7'),
+('Aioli med stegte kartofler','BuffetOekologi','7'),
+('Kødboller i tomatsauce','BuffetOekologi','7'),
+('Lam med citron','BuffetOekologi','7'),
+('Empanadas med kødfyld','BuffetOekologi','7'),
+('Oste med friske frugter','BuffetOekologi','7'),
+#Buffetjul
+('Marinerede sild, med æg og karrysalat','BuffetJul','8'),
+('Julesild','BuffetJul','8'),
+('Fiskefillet','BuffetJul','8'),
+('Rejer med mayonnaise','BuffetJul','8'),
+('Ribbensteg med rødkål','BuffetJul','8'),
+('Julemedister','BuffetJul','8'),
+('Frikadeller','BuffetJul','8'),
+('Stuvede hvidkål med kanel og sukker','BuffetJul','8'),
+('Vendysselsk grønlangkål','BuffetJul','8'),
+('Brunede kartofler','BuffetJul','8'),
+('Glaseret juleskinke','BuffetJul','8'),
+('Ris a la mande med kirsebærsovs','BuffetJul','8');
+
+# indsætter elementer i table til buffetpriser
+INSERT INTO buffetpriser (description,price,category)
+VALUES
+#Buffet1
+('For 4 timer - under 20 personer','Kun 299','Buffet1'),
+('For 4 timer - min. 20 personer','Kun 399','Buffet1'),
+('For 5 timer - under 20 personer','Kun 329','Buffet1'),
+('For 5 timer - min. 20 personer','Kun 429','Buffet1'),
+#Buffet2
+('For 4 timer - under 20 personer','Kun 299','Buffet2'),
+('For 4 timer - min. 20 personer','Kun 399','Buffet2'),
+('For 5 timer - under 20 personer','Kun 329','Buffet2'),
+('For 5 timer - min. 20 personer','Kun 429','Buffet2'),
+#Buffet3
+#('For 4 timer - under 20 personer','Kun 299','Buffet3'),
+#('For 4 timer - min. 20 personer','Kun 399','Buffet3'),
+#('For 5 timer - under 20 personer','Kun 329','Buffet3'),
+#('For 5 timer - min. 20 personer','Kun 429','Buffet3'),
+#Buffet4
+('Per couv.','Kun 189','Buffet3'),
+('For 4 timer','Kun 365','Buffet3'),
+#BuffetUSA
+('For 4 timer - min. 20 personer','Kun 379','Buffet4'),
+('For 4 timer - under 20 personer','Kun 479','Buffet4'),
+#BuffetOekkologi
+('For 4 timer - min. 20 personer','Kun 489','BuffetOekologi'),
+('For 4 timer - under personer','Kun 589','BuffetOekologi'),
+#BuffetItaly
+('Per couv.','Kun 189','BuffetItaly'),
+('For 4 timer','Kun 365','BuffetItaly'),
+#BuffetJulefrokost
+('Julebuffet - min. 20 personer','Kun 349','BuffetJul');
