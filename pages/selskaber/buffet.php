@@ -146,14 +146,12 @@
     </div>
 
 
-    <!-- Buffet -->
     <?php
-
     // return amount of buffetnumbers
     $query = "SELECT MAX(buffetNumber) FROM buffet;";
     $buffetMax = mysqli_fetch_row(mysqli_query($db, $query));
     if (!$results) {
-      die("could not query the database" . mysqli_error());
+      die("could not query the database");
     }
 
     // Returns buffetitems that has specified Buffetcounter. (initializes with 1)
@@ -178,59 +176,39 @@
       return $overskrift['buffetName'];
     }
 
-    //While loop that prints items and imgs corresponding to buffetnumber, 
-    //changing between odd/even column if it has even or uneven buffetnumber
-    //Nested while loop prints menuitems
+    //While loop prints buffetinfo changing order every row 
     while ($buffetCounter <= $buffetMax[0]) :
-      if ($buffetCounter % 2 == 0) : ?>
+      $imgFloatDirection = ($buffetCounter % 2 == 0) ? 'float: right;' : 'float: left;';
+      $menuFloatDirection = ($buffetCounter % 2 == 0) ? 'float: left;' : 'float: right;';
+      $rowColor = ($buffetCounter % 2 == 0) ? '' : 'background-color: #1E1D20';
+      ?>
+
+      <div class="wrapper" style="<?php echo ($rowColor) ?>">
         <div class="container">
           <div class="row buffet_even">
-            <div class="six columns">
+            <div class="six columns" style="<?php echo ($menuFloatDirection) ?>">
               <h2><?= buffetOverskrift() ?></h2>
               <ul>
                 <?php
-                    $row_result = buffetPicker();
-                    while ($row = mysqli_fetch_row($row_result)) :
-                      ?>
+                  $row_result = buffetPicker();
+                  while ($row = mysqli_fetch_row($row_result)) :
+                    ?>
                   <li class="buffet_list"><?= $row[3] ?></li>
                 <?php endwhile; ?>
               </ul>
             </div>
-            <div class="six columns"> <img src="img/Buffet2.jpg"> </div>
+            <div class="six columns"> <img src="img/Buffet2.jpg" style="<?php echo ($imgFloatDirection); ?>"> </div>
           </div>
         </div>
-  </div>
-
-  <!-- If BuffetCounter is an odd number echo elements on odd column -->
-<?php else : ?>
-  <div class="bg_dark">
-    <div class="container">
-      <div class="row buffet_odd">
-        <div class="six columns"> <img src="img/Buffet2.jpg" style="float:left;"> </div>
-        <div class="six columns">
-          <h2><?= buffetOverskrift() ?></h2>
-          <ul>
-            <?php
-                $row_result = buffetPicker();
-                while ($row = mysqli_fetch_row($row_result)) :
-                  ?>
-              <li class="buffet_list"><?= $row[3] ?></li>
-            <?php endwhile; ?>
-          </ul>
-        </div>
       </div>
-    </div>
-  </div>
 
-<?php
-  endif;
-  $buffetCounter++;
-endwhile;
-?>
+    <?php
+      $buffetCounter++;
+    endwhile;
 
-<?php include '../../includes/footer.php'; ?>
-<?php mysqli_close($db); ?>
+    include '../../includes/footer.php';
+    mysqli_close($db);
+    ?>
 
 </body>
-
 </html>
