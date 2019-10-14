@@ -197,7 +197,7 @@
               </ul>
             </div>
             <div class="six columns">
-              <img src="img/Buffet<?php echo($buffetCounter)?>.jpg" style="<?php echo ($imgFloatDirection); ?>" width="400px" height="500px""> 
+              <img src="img/buffet_files/Buffet<?php echo($buffetCounter)?>.jpg" style="<?php echo ($imgFloatDirection); ?>" width="400px" height="500px""> 
             </div>
           </div>
         </div>
