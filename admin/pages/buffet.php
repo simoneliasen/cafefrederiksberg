@@ -126,7 +126,7 @@
             <?php
               mysqli_data_seek($results, 0);
               while ($row = mysqli_fetch_row($results)) :
-                if ($row[1] == $categories[$buffetNumber][0]) {
+                if ($row[1] == $categories[$buffetNumber][0]) { 
                   if ($id == $row[0]) {
                     ?>
 
@@ -162,7 +162,6 @@
                       </a>
                     </td>
                   </tr>
-
                   <!--Print resterende elementer for buffet når rediger knap trykkes -->
                 <?php } else { ?>
                   <tr>
@@ -175,13 +174,79 @@
                     <td class="table_buttons"></td>
                   </tr>
             <?php }
-                }
+ 
+          }   
               endwhile; ?>
           </table>
         </div>
 
-        <hr>
 
+
+
+
+
+        
+<div class="task_wrapper" id="præsentationsvideo">
+<h3> Billede til <?php echo($categories[$buffetNumber][1]) ?></h3>
+
+<?php
+$query2 = "SELECT img FROM buffet WHERE buffetNumber = $buffetNumber AND img != '' LIMIT 1";
+$results2 = mysqli_query($db, $query2);
+
+while($row2 = mysqli_fetch_row($results2)):
+?>
+  <form method="post" name="post" action="php_process/process_header_choice.php" enctype="multipart/form-data">
+    <input type="hidden" onchange='this.form.submit();' name="type" value="billede_choice" checked>
+  </form>
+
+  <p><strong>Nuværende billeder:</strong></p>
+
+  <td><img src="../../img/buffet_files/<?= $row2[0] ?>" id="logo" height="100px"></td>
+
+  <?php
+endwhile;
+?>
+  <table>
+    <tr>
+      <th>navn</th>
+      <th>billede</th>
+      <th>slet</th>
+    </tr>
+
+
+    <?php while($row2 = mysqli_fetch_row($results2)):?>
+    <tr>
+      <td><?= $row2[2] ?></td>
+      <td><img src="../../header_slide/<?= $row2[2] ?>" id="logo" height="100px"></td>
+      <td>
+        <form method="post" name="post" action="php_process/process_header_delete.php?id=<?=$row2[0]?>" enctype="multipart/form-data">
+          <input class="button red" type="submit" value="slet">
+        </form>
+      </td>
+    </tr>
+    
+    <?php endwhile; ?>
+  </table>
+  <br><br>
+
+  <form method="post" name="post" action="php_process/process_header_upload.php" enctype="multipart/form-data">
+    <input type="file" name="fileToUpload" id="fileToUpload" width='150px' height='150px'>
+    <input class="button green" type="submit" value="Upload">
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <hr>
       <?php
         $buffetNumber++;
       endwhile;
