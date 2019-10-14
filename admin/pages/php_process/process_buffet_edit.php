@@ -2,10 +2,9 @@
   require_once '../../config.php';
 
   $id = $_GET['id'];
-  $menu_item_name = htmlentities($_POST['menu_item_name']);
-  $category = htmlspecialchars($_POST['hidden_category']);
+  $buffetItem = htmlentities($_POST['menu_item_name']);
 
-  $query = "UPDATE buffet SET name = '$menu_item_name' WHERE id = '$id'";
+  $query = "UPDATE buffet SET buffetItem = '$buffetItem' WHERE id = '$id'";
   $results = mysqli_query($db, $query);
 
   if($results){
@@ -16,4 +15,3 @@
   }
 
   mysqli_close($db);
- ?>

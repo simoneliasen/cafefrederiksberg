@@ -81,14 +81,14 @@
         $id = 0;
       }
 
-      //Buffetnumber initialized, prints all buffets with and then icrements
+      //Buffetnumber initialized, prints all buffetsitems and then increments
       //set to 1 as count in db starts at 1
-      // BuffetMax is set to -1 as, its array starts at 0
+      // BuffetMax is set to -1 as, its array starts at 0 (adding one buffet too many)
       $buffetNumber = 1;
       while ($buffetNumber <= $buffetMax[0] - 1) :
         ?>
 
-        <!-- Giver os titel med nickname for buffet og giver vores class navnet på buffetnavn i db -->
+        <!-- Giver os et div med buffetnavn fra db, og en heading med pænt buffetnavn -->
         <div class="task_wrapper" id="category_<?= $categories[$buffetNumber][0] ?>">
           <h2 class="task_heading"><?= $categories[$buffetNumber][1]; ?></h2>
           <!-- Hvis der trykkes "tilføj"-->
@@ -96,7 +96,7 @@
             <!-- Når "tilføj" er trykket fra standard state  -->
             <form class="restaurant_form" method="post" name="post" action="php_process/process_buffet_input.php?id=<?= $_GET['id'] ?>" enctype="multipart/form-data">
               <label for="menu_item_name_input">Navn på ret</label>
-              <!-- menu_item_name vidersende til menu_item_nameInpit -->
+              <!-- menu_item_name vidersende til menu_item_nameInput -->
               <input name="menu_item_name" type="text" placeholder="Angiv navn" required maxlength="100" />
               <br><br>
               <!--Fortryd knap sender os tilbage med buffet vi ændrede i i fokus  -->
@@ -122,7 +122,7 @@
               <th>Navn</th>
             </tr>
 
-            <!-- Print så længe at der er rækker med ønsket buffetnavn -->
+            <!-- Print så længe at der er elementer i række med buffetnummer/navn -->
             <?php
               mysqli_data_seek($results, 0);
               while ($row = mysqli_fetch_row($results)) :
