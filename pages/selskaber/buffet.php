@@ -145,7 +145,6 @@
       </div>
     </div>
 
-
     <?php
     // return amount of buffetnumbers
     $query = "SELECT MAX(buffetNumber) FROM buffet;";
@@ -197,17 +196,18 @@
                 <?php endwhile; ?>
               </ul>
             </div>
-            <div class="six columns"> <img src="img/Buffet2.jpg" style="<?php echo ($imgFloatDirection); ?>"> </div>
+            <div class="six columns">
+              <img src="img/Buffet<?php echo($buffetCounter)?>.jpg" style="<?php echo ($imgFloatDirection); ?>" width="400px" height="500px""> 
+            </div>
           </div>
         </div>
       </div>
-
+      
     <?php
       $buffetCounter++;
     endwhile;
-
-    include '../../includes/footer.php';
     mysqli_close($db);
+    include '../../includes/footer.php';
     ?>
 
 </body>
