@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
 </head>
+
 <body>
 
   <!--Logo  -->
@@ -84,7 +86,7 @@
       //Buffetnumber initialized, prints all buffetsitems and then increments
       //set to 1 as count in db starts at 1
       // BuffetMax is set to -1 as, its array starts at 0 (adding one buffet too many)
-      $buffetNumber = 1;
+      $buffetNumber = 0;
       while ($buffetNumber <= $buffetMax[0] - 1) :
         ?>
 
@@ -126,7 +128,7 @@
             <?php
               mysqli_data_seek($results, 0);
               while ($row = mysqli_fetch_row($results)) :
-                if ($row[1] == $categories[$buffetNumber][0]) { 
+                if ($row[1] == $categories[$buffetNumber][0]) {
                   if ($id == $row[0]) {
                     ?>
 
@@ -162,6 +164,7 @@
                       </a>
                     </td>
                   </tr>
+
                   <!--Print resterende elementer for buffet når rediger knap trykkes -->
                 <?php } else { ?>
                   <tr>
@@ -174,75 +177,59 @@
                     <td class="table_buttons"></td>
                   </tr>
             <?php }
- 
-          }   
+                }
               endwhile; ?>
           </table>
         </div>
 
 
+        <!-- Visning af billede thumbnails -->
+        <div class="task_wrapper" id="billedeupload">
+          <h3> Billede til <?php echo ($categories[$buffetNumber][1]) ?></h3>
+
+          <!-- Sql variabler har fået 2 tilføjet, så de ikke forstyrre andre queries i dette dokument -->
+          <?php
+            $query2 = "SELECT img FROM buffet WHERE buffetNumber = $buffetNumber + 1 AND img != '' LIMIT 1";
+            $results2 = mysqli_query($db, $query2);
+
+            while ($row2 = mysqli_fetch_row($results2)) :
+              ?>
+            <p><strong>Nuværende billeder:</strong></p>
+            <td><img src="../../img/buffet_files/<?= $row2[0] ?>" id="logo" height="100px"></td>
+
+          <?php
+            endwhile;
+            ?>
+          <table>
+            <tr>
+              <th>navn</th>
+              <th>billede</th>
+              <th>slet</th>
+            </tr>
 
 
+            <!-- EKSPERIMENTABEL KODE START - MANGLER LOKIG TIL AT SLETTE/UPLOADE KORREKT -->
+            <?php while ($row2 = mysqli_fetch_row($results2)) : ?>
+              <tr>
+                <td><?= $row2[2] ?></td>
+                <td><img src="../../header_slide/<?= $row2[2] ?>" id="logo" height="100px"></td>
+                <td>
+                  <form method="post" name="post" action="php_process/process_header_delete.php?id=<?= $row2[0] ?>" enctype="multipart/form-data">
+                    <input class="button red" type="submit" value="slet">
+                  </form>
+                </td>
+              </tr>
 
+            <?php endwhile; ?>
+          </table>
+          <br><br>
 
-        
-<div class="task_wrapper" id="præsentationsvideo">
-<h3> Billede til <?php echo($categories[$buffetNumber][1]) ?></h3>
-
-<?php
-$query2 = "SELECT img FROM buffet WHERE buffetNumber = $buffetNumber AND img != '' LIMIT 1";
-$results2 = mysqli_query($db, $query2);
-
-while($row2 = mysqli_fetch_row($results2)):
-?>
-  <form method="post" name="post" action="php_process/process_header_choice.php" enctype="multipart/form-data">
-    <input type="hidden" onchange='this.form.submit();' name="type" value="billede_choice" checked>
-  </form>
-
-  <p><strong>Nuværende billeder:</strong></p>
-
-  <td><img src="../../img/buffet_files/<?= $row2[0] ?>" id="logo" height="100px"></td>
-
-  <?php
-endwhile;
-?>
-  <table>
-    <tr>
-      <th>navn</th>
-      <th>billede</th>
-      <th>slet</th>
-    </tr>
-
-
-    <?php while($row2 = mysqli_fetch_row($results2)):?>
-    <tr>
-      <td><?= $row2[2] ?></td>
-      <td><img src="../../header_slide/<?= $row2[2] ?>" id="logo" height="100px"></td>
-      <td>
-        <form method="post" name="post" action="php_process/process_header_delete.php?id=<?=$row2[0]?>" enctype="multipart/form-data">
-          <input class="button red" type="submit" value="slet">
-        </form>
-      </td>
-    </tr>
-    
-    <?php endwhile; ?>
-  </table>
-  <br><br>
-
-  <form method="post" name="post" action="php_process/process_header_upload.php" enctype="multipart/form-data">
-    <input type="file" name="fileToUpload" id="fileToUpload" width='150px' height='150px'>
-    <input class="button green" type="submit" value="Upload">
-  </form>
-</div>
-
-
-
-
-
-
-
-
-
+          <form method="post" name="post" action="php_process/process_header_upload.php" enctype="multipart/form-data">
+            <input type="file" name="fileToUpload" id="fileToUpload" width='150px' height='150px'>
+            <input class="button green" type="submit" value="Upload">
+          </form>
+        </div>
+        <!-- EKSPERIMENTABL KODE SLUT  MANGLER LOKIG TIL AT SLETTE/UPLOADE KORREKT -->
 
 
 
@@ -256,4 +243,5 @@ endwhile;
     </div>
   </div>
 </body>
+
 </html>
