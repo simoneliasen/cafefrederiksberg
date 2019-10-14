@@ -2,7 +2,7 @@
 require_once '../../config.php';
 
   $id = '';
-  $buffetNumber = '';
+  $buffetNumber = htmlentities($_POST['buffetNumber']);
   $buffetItem = htmlentities($_POST['menu_item_name']);
   $buffetName = htmlspecialchars($_POST['hidden_category']);
   $img = 'test img';
@@ -12,7 +12,6 @@ require_once '../../config.php';
     '$id',
     '$buffetName',
     '$buffetNumber',
-    
     '$buffetItem',
     '$img'
   )";
