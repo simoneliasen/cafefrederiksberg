@@ -1,28 +1,31 @@
 <?php
 require_once '../../config.php';
 
-  $buffetNumber = ...;
-
-  $menu_item_name = htmlentities($_POST['menu_item_name']);
-  $id=$_GET['id'];
-  $category = htmlspecialchars($_POST['hidden_category']);
+  $id = '';
+  $buffetNumber = '';
+  $buffetItem = htmlentities($_POST['menu_item_name']);
+  $buffetName = htmlspecialchars($_POST['hidden_category']);
+  $img = 'test img';
 
   $query = "INSERT INTO buffet VALUES(
-    '$id',/* ID ligger først i tablet og autoincrementes, derfor lades denne være blank */
+    /* ID ligger først i tablet og autoincrementes, derfor lades denne være blank */
+    '$id',
     '$buffetName',
     '$buffetNumber',
-    '$buffetitem',
-    ''
+    
+    '$buffetItem',
+    '$img'
   )";
   $results = mysqli_query($db, $query);
 
-  if($results){
-    header("Location: ../buffet.php#category_$category");
-    exit();
-  }else {
-    die("could not query the database");
-  }
 
-mysqli_close($db);
+   if($results){
+     header("Location: ../buffet.php#category_$hidden_category");
+     exit();
+   }else {
+     die("could not query the database");
+   }
+
 
 ?>
+

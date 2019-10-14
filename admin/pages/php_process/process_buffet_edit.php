@@ -2,7 +2,6 @@
   require_once '../../config.php';
 
   $id = $_GET['id'];
-
   $menu_item_name = htmlentities($_POST['menu_item_name']);
   $category = htmlspecialchars($_POST['hidden_category']);
 

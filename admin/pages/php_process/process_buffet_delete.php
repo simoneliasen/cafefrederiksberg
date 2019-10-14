@@ -13,5 +13,4 @@ require_once '../../config.php';
   }
 
 mysqli_close($db);
-
 ?>

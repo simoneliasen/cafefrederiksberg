@@ -4,9 +4,10 @@ include('../session.php');
 $query ="SELECT * FROM buffet;";
 $results = mysqli_query($db,$query);
 if(!$results){
-  die("could not query the database" .mysqli_error());
+  die("could not query the database");
 }
 
+  //catergories with db + nickname of buffet
   $category1 = array("Buffet1", "Buffet 1");
   $category2 = array("Buffet2", "Buffet 2");
   $category3 = array("Buffet3", "Buffet 3");
@@ -16,12 +17,15 @@ if(!$results){
   $category7 = array("BuffetOekologi", "Økologisk Buffet");
   $category8 = array("BuffetJul", "Julefrokost");
 
+
 if(isset($_GET['id'])){
   $id = $_GET['id'];
 }else{
   $id = 0;
 }
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -71,47 +75,62 @@ if(isset($_GET['id'])){
     </div>
     <hr>
 
-<!--BUFFET 1  -->
-    <div class="task_wrapper" id="category_<?= $category1[0] ?>">
+
+
+
+
+
+
+
+    <!--BUFFET 1  -->
+    <!-- Giver os titel med nickname for buffet 1 og giver vores class navnet på buffetnavn i db -->
+    <div class="task_wrapper" id="category_<?= $category1[0] ?>"> 
     <h2 class="task_heading"><?= $category1[1]; ?></h2>
 
+
+    <!-- Hvis der trykkes "tilføj"-->
     <?php if($id === $category1[0]){ ?>
 
+    <!-- Når "tilføj" er trykket fra standard state  --> 
     <form class="restaurant_form" method="post" name="post" action="php_process/process_buffet_input.php?id=<?=$_GET['id']?>" enctype="multipart/form-data">
       <label for="menu_item_name_input">Navn på ret</label>
+      <!-- menu_item_name vidersende til menu_item_nameInpit -->
       <input name="menu_item_name" type="text" placeholder="Angiv navn" required maxlength="100" />
       <br><br>
+      <!--Fortryd knap sender os tilbage med buffet vi ændrede i i fokus  -->
       <a class="button red" href="buffet.php?#category_<?=$category1[0]?>">Fortryd</a>
       <input class="button green" type="submit" value="Tilføj">
+      <!--Vidersender skjult data i form af navn på buffet  -->
       <input type="hidden" name="hidden_category" value="<?= $category1[0] ?>">
     </form>
 
+    <!--Hvis ingen data er angivet på forhånd i bufetter  -->
     <?php }else{ ?>
-
     <form method="post" name="post" action="buffet.php?id=<?= $category1[0] ?>#category_<?=$category1[0]?>" enctype="multipart/form-data">
       <input class="button green" type="submit" value="Tilføj">
     </form>
-
     <?php } ?>
 
+
+    <!-- Overskrifter til kolonne indhold -->
     <table>
       <tr>
         <th>Indeks</th>
         <th>Navn</th>
       </tr>
 
+
       <?php
       mysqli_data_seek($results, 0);
       while($row = mysqli_fetch_row($results)):
-        // Ændret fra 1 til 2 (Gjorde at man kunne se database (kategorier))
-        if($row[2] == $category1[0]){
+        if($row[1] == $category1[0]){
           if($id == $row[0]){
       ?>
 
       <tr>
         <form method="post" name="post" action="php_process/process_buffet_edit.php?id=<?=$id?>" enctype="multipart/form-data">
           <td><input name="menu_item_index" type="text" value="<?= $row[0] ?>" required maxlength="10" /></td>
-          <td><input name="menu_item_name" type="text" value="<?= $row[1] ?>" required maxlength="100" /></td>
+          <td><input name="menu_item_name" type="text" value="<?= $row[3] ?>" required maxlength="100" /></td>
           <input type="hidden" name="hidden_category" value="<?= $category1[0] ?>">
           <td class="table_buttons">
             <input class="button green" type="submit" value="Gem">
@@ -121,10 +140,12 @@ if(isset($_GET['id'])){
         </form>
       </tr>
 
+
+      <!-- If no button is pressed display elements able to be pressed -->
       <?php }elseif($id === 0){ ?>
       <tr>
         <td><div class="menu_item_index"><?= $row[0] ?></div></td>
-        <td><div class="menu_item_name"><?= $row[1] ?></div></td>
+        <td><div class="menu_item_name"><?= $row[3] ?></div></td>
         <td class="table_buttons">
           <form class="table_buttons" method="post" name="post" action="php_process/process_buffet_delete.php?id=<?=$row[0]?>" enctype="multipart/form-data">
             <input id="<?=$row[0]?>" class="button red" type="submit" value="Slet">
@@ -135,10 +156,11 @@ if(isset($_GET['id'])){
         </td>
       </tr>
 
+      <!--Print resterende elementer for buffet når rediger knap trykkes -->
       <?php }else{ ?>
       <tr>
         <td><div class="menu_item_index"><?= $row[0] ?></div></td>
-        <td><div class="menu_item_name"><?= $row[1] ?></div></td>
+        <td><div class="menu_item_name"><?= $row[3] ?></div></td>
         <td class="table_buttons"></td>
       </tr>
       <?php } } endwhile; ?>
@@ -146,6 +168,47 @@ if(isset($_GET['id'])){
   </div>
 
   <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--BUFFET 2 -->
   <div class="task_wrapper" id="category_<?= $category2[0] ?>">
