@@ -156,6 +156,15 @@
       $overskrift = $results->fetch_assoc();
       return $overskrift['buffetName'];
     }
+
+    //Get buffetpriser
+    function buffetPriser(){
+      global $buffetCounter;
+      global $db;
+      $query = "SELECT * FROM buffetpriser WHERE buffetNumber = $buffetCounter;";
+      $results = mysqli_query($db, $query);
+      return $results;
+    }
 ?>
 
 <!-- Add while loop to make links corresponding with buffetOverskrift -->
@@ -178,9 +187,9 @@
       </div>
     </div>
 <!-- Make above section a a while loop -->
-    
+
 <?php
-    //While loop prints buffetinfo changing order every row 
+    //While loop prints buffetinfo changing order every row
     while ($buffetCounter <= $buffetMax[0]) :
       $imgFloatDirection = ($buffetCounter % 2 == 0) ? 'float: right;' : 'float: left;';
       $menuFloatDirection = ($buffetCounter % 2 == 0) ? 'float: left;' : 'float: right;';
@@ -200,14 +209,25 @@
                   <li class="buffet_list"><?= $row[3] ?></li>
                 <?php endwhile; ?>
               </ul>
+              <h2>Priser</h2>
+              <p>inkl. fri øl, vin og vand</p>
+              <?php
+                $row_buffetpriser = buffetPriser();
+                while ($row = mysqli_fetch_row($row_buffetpriser)) :
+              ?>
+              <div class="buffet_price">
+                <div class="buffet_price_info"><?=$row[1]?></div>
+                <div class="buffet_price_price"><?=$row[2]?></div>
+              </div>
+              <?php endwhile; ?>
             </div>
             <div class="six columns">
-              <img src="img/buffet_files/Buffet<?php echo($buffetCounter)?>.jpg" style="<?php echo ($imgFloatDirection); ?>" width="400px" height="500px""> 
+              <img src="img/buffet_files/Buffet<?php echo($buffetCounter)?>.jpg" style="<?php echo ($imgFloatDirection); ?>" width="400px" height="500px"">
             </div>
           </div>
         </div>
       </div>
-      
+
     <?php
       $buffetCounter++;
     endwhile;
