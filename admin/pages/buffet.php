@@ -212,7 +212,7 @@
           <!-- Set action to be process_buffet_upload_img.php and write the logic for it -->
           <form method="post" name="post" action="php_process/process_buffet_upload_img.php" enctype="multipart/form-data">
             <input type="file" name="fileToUpload" id="fileToUpload" width='150px' height='150px'>
-            <input type="hidden" name="buffetNumber" id="buffetNumber" value="<?= $categories[$buffetNumber][0] ?>">
+            <input type="hidden" name="buffetNumber" id="buffetNumber" value="<?= $buffetNumber ?>">
             <input class="button green" type="submit" value="Upload">
           </form>
         </div>
