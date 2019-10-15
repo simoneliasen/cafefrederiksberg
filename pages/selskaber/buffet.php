@@ -173,14 +173,14 @@
         <div class="twelve columns">
           <div class="menulinje-buffet">
             <ul>
-              <li><a href="pages/selskaber/buffet.php#Buffet_1">Buffet 1</a></li>
-              <li><a href="pages/selskaber/buffet.php#Buffet_2">Buffet 2</a></li>
-              <li><a href="pages/selskaber/buffet.php#Buffet_3">Buffet 3</a></li>
-              <li><a href="pages/selskaber/buffet.php#Buffet_4">Buffet 4</a></li>
-              <li><a href="pages/selskaber/buffet.php#USA_buffet">USA buffet</a></li>
-              <li><a href="pages/selskaber/buffet.php#Italiensk_buffet">Italiensk Buffet</a></li>
-              <li><a href="pages/selskaber/buffet.php#Øko_buffet">Øko buffet</a></li>
-              <li><a href="pages/selskaber/buffet.php#BuffetJul">Jule Buffet</a></li>
+              <?php
+                while($buffetCounter <= $buffetMax[0]):
+              ?>
+              <li><a href="pages/selskaber/buffet.php#<?=buffetOverskrift() ?>"><?=buffetOverskrift()?></a></li>
+              <?php
+                $buffetCounter++;
+                endwhile;
+              ?>
             </ul>
           </div>
         </div>
@@ -189,6 +189,7 @@
 <!-- Make above section a a while loop -->
 
 <?php
+    $buffetCounter = 1;
     //While loop prints buffetinfo changing order every row
     while ($buffetCounter <= $buffetMax[0]) :
       $imgFloatDirection = ($buffetCounter % 2 == 0) ? 'float: right;' : 'float: left;';
@@ -209,7 +210,9 @@
                   <li class="buffet_list"><?= $row[3] ?></li>
                 <?php endwhile; ?>
               </ul>
-              <h2>Priser</h2>
+                <?php $buffetCounter++; ?>
+              <h2 id="<?=  buffetOverskrift();?>">Priser</h2>
+                <?php $buffetCounter--; ?>
               <p>inkl. fri øl, vin og vand</p>
               <?php
                 $row_buffetpriser = buffetPriser();
