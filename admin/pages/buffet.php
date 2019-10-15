@@ -182,21 +182,17 @@
           </table>
         </div>
 
-
         <!-- Visning af billede thumbnails -->
         <div class="task_wrapper" id="billedeupload">
           <h3> Billede til <?php echo ($categories[$buffetNumber][1]) ?></h3>
-
           <!-- Sql variabler har fået 2 tilføjet, så de ikke forstyrre andre queries i dette dokument -->
           <?php
             $query2 = "SELECT img FROM buffet WHERE buffetNumber = $buffetNumber + 1 AND img != '' LIMIT 1";
             $results2 = mysqli_query($db, $query2);
-
             while ($row2 = mysqli_fetch_row($results2)) :
               ?>
             <p><strong>Nuværende billeder:</strong></p>
             <td><img src="../../img/buffet_files/<?= $row2[0] ?>" id="logo" height="100px"></td>
-
           <?php
             endwhile;
             ?>
@@ -214,6 +210,7 @@
                 <td><?= $row2[2] ?></td>
                 <td><img src="../../header_slide/<?= $row2[2] ?>" id="logo" height="100px"></td>
                 <td>
+                  <!-- Set action to be process_buffet_delete_img.php and write the logic for it -->
                   <form method="post" name="post" action="php_process/process_header_delete.php?id=<?= $row2[0] ?>" enctype="multipart/form-data">
                     <input class="button red" type="submit" value="slet">
                   </form>
@@ -223,14 +220,13 @@
             <?php endwhile; ?>
           </table>
           <br><br>
-
+          <!-- Set action to be process_buffet_upload_img.php and write the logic for it -->
           <form method="post" name="post" action="php_process/process_header_upload.php" enctype="multipart/form-data">
             <input type="file" name="fileToUpload" id="fileToUpload" width='150px' height='150px'>
             <input class="button green" type="submit" value="Upload">
           </form>
         </div>
         <!-- EKSPERIMENTABL KODE SLUT  MANGLER LOKIG TIL AT SLETTE/UPLOADE KORREKT -->
-
 
 
         <hr>
