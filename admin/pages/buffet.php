@@ -74,7 +74,7 @@
         array("BuffetUSA", "USA Buffet"),
         array("BuffetItaly", "Italiensk Buffet"),
         array("BuffetOekologi", "Økologisk Buffet"),
-        array("BuffetJul", "Julefrokost")
+        array("BuffetJul", "Julebuffet")
       );
 
       if (isset($_GET['id'])) {
@@ -93,9 +93,9 @@
         <!-- Giver os et div med buffetnavn fra db, og en heading med pænt buffetnavn -->
         <div class="task_wrapper" id="category_<?= $categories[$buffetNumber][0] ?>">
           <h2 class="task_heading"><?= $categories[$buffetNumber][1]; ?></h2>
+
           <!-- Hvis der trykkes "tilføj"-->
           <?php if ($id === $categories[$buffetNumber][0]) { ?>
-            <!-- Når "tilføj" er trykket fra standard state  -->
             <form class="restaurant_form" method="post" name="post" action="php_process/process_buffet_input.php?id=<?= $_GET['id'] ?>" enctype="multipart/form-data">
               <label for="menu_item_name_input">Navn på ret</label>
               <!-- menu_item_name vidersende til menu_item_nameInput -->
@@ -128,7 +128,7 @@
             <?php
               mysqli_data_seek($results, 0);
               while ($row = mysqli_fetch_row($results)) :
-                if ($row[1] == $categories[$buffetNumber][0]) {
+                if ($row[1] == $categories[$buffetNumber][1]) {
                   if ($id == $row[0]) {
                     ?>
 
@@ -182,6 +182,9 @@
           </table>
         </div>
 
+
+
+        
         <!-- Visning af billede thumbnails -->
         <div class="task_wrapper" id="billedeupload">
           <h3> Billede til <?php echo ($categories[$buffetNumber][1]) ?></h3>
@@ -197,37 +200,22 @@
             endwhile;
             ?>
           <table>
-            <tr>
-              <th>navn</th>
-              <th>billede</th>
-              <th>slet</th>
-            </tr>
-
-
-            <!-- EKSPERIMENTABEL KODE START - MANGLER LOKIG TIL AT SLETTE/UPLOADE KORREKT -->
             <?php while ($row2 = mysqli_fetch_row($results2)) : ?>
               <tr>
                 <td><?= $row2[2] ?></td>
                 <td><img src="../../header_slide/<?= $row2[2] ?>" id="logo" height="100px"></td>
-                <td>
-                  <!-- Set action to be process_buffet_delete_img.php and write the logic for it -->
-                  <form method="post" name="post" action="php_process/process_header_delete.php?id=<?= $row2[0] ?>" enctype="multipart/form-data">
-                    <input class="button red" type="submit" value="slet">
-                  </form>
-                </td>
-              </tr>
-
+              </tr> 
             <?php endwhile; ?>
           </table>
           <br><br>
+
           <!-- Set action to be process_buffet_upload_img.php and write the logic for it -->
-          <form method="post" name="post" action="php_process/process_header_upload.php" enctype="multipart/form-data">
+          <form method="post" name="post" action="php_process/process_buffet_upload_img.php" enctype="multipart/form-data">
             <input type="file" name="fileToUpload" id="fileToUpload" width='150px' height='150px'>
+            <input type="hidden" name="buffetNumber" id="buffetNumber" value="<?= $categories[$buffetNumber][0] ?>">
             <input class="button green" type="submit" value="Upload">
           </form>
         </div>
-        <!-- EKSPERIMENTABL KODE SLUT  MANGLER LOKIG TIL AT SLETTE/UPLOADE KORREKT -->
-
 
         <hr>
       <?php
