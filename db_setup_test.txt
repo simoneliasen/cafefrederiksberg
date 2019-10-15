@@ -104,8 +104,7 @@ PRIMARY KEY(id));
 
 # Indsætter element i bruger-table (laver en bruger)
 INSERT INTO admin (username, password)
-VALUES ('user', 'password'),
-('bruger', 'kodeord');
+VALUES ('user', 'password');
 
 # indsætter element i menu-table
 INSERT INTO menu (m_pos, m_name, m_desc, m_price)

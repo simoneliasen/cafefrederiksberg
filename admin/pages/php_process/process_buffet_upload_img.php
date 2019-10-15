@@ -3,26 +3,23 @@ require_once '../../config.php';
 
 //Get filename + extension from uploaded file
 $temp = explode(".", $_FILES["fileToUpload"]["name"]);
-
 //Name of file
 $fileName = strtolower(current($temp));
 echo ($fileName);
-
 // Filetype
 $imageFileType = strtolower(end($temp));
 echo ($imageFileType);
-
 //Buffet we want to upload img to
 echo $_POST["buffetNumber"];
 
 // Targetdir + file to upload
 $target_dir = "../../../img/buffet_files/";
-
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-
 $uploadOk = 1;
 
 
+$newFileName = 'funny'; // New unique file name
+move_uploaded_file($_FILES["file"]["tmp_name"], "uploads/upload/{$newFileName}.mp4");
 
 
 
@@ -38,10 +35,13 @@ if (isset($_POST["submit"])) {
   }
 }
 
-// Check if file already exists
+// Check if file already exists and replaces it if it does
 if (file_exists($target_file)) {
-  echo "Sorry, file already exists.";
-  $uploadOk = 0;
+  unlink($target_file);
+  if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+    echo "The file " . basename($_FILES["fileToUpload"]["name"]) . " has been uploaded.";
+  }
+  // $uploadOk = 1;
 }
 
 // Check file size
@@ -65,16 +65,15 @@ if ($uploadOk == 0) {
   if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
     echo "The file " . basename($_FILES["fileToUpload"]["name"]) . " has been uploaded.";
   } else {
-    echo "Sorry, there was an error uploading your file.";
+    echo "";
   }
 }
-
-// if ($uploadOk == 1) {
-//   header("Location: ../buffet.php");
-//   exit();
-// } else {
-//   die("Kunne ikke forbinde til databasen");
-// }
-
+// Redirect back to page
+if ($uploadOk == 1) {
+  header("Location: ../buffet.php");
+  exit();
+} else {
+  die("Kunne ikke forbinde til databasen");
+}
 
 
