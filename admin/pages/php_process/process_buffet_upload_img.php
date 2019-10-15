@@ -17,9 +17,14 @@ echo $_POST["buffetNumber"];
 
 // Targetdir + file to upload
 $target_dir = "../../../img/buffet_files/";
+
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 
 $uploadOk = 1;
+
+
+
+
 
 // Check if image file is a actual image or fake image
 if (isset($_POST["submit"])) {
@@ -64,11 +69,12 @@ if ($uploadOk == 0) {
   }
 }
 
-if ($uploadOk == 1) {
-  header("Location: ../buffet.php");
-  exit();
-} else {
-  die("Kunne ikke forbinde til databasen");
-}
+// if ($uploadOk == 1) {
+//   header("Location: ../buffet.php");
+//   exit();
+// } else {
+//   die("Kunne ikke forbinde til databasen");
+// }
 
-mysqli_close($db);
+
+
