@@ -185,8 +185,6 @@
           </table>
         </div>
 
-
-
         
         <!-- Visning af billede thumbnails -->
         <div class="task_wrapper" id="billedeupload">

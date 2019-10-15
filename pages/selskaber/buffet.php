@@ -167,7 +167,7 @@
     }
 ?>
 
-<!-- Add while loop to make links corresponding with buffetOverskrift -->
+<!-- while loop to make links corresponding with buffetOverskrift -->
     <div class="container">
       <div class="row">
         <div class="twelve columns">
@@ -186,7 +186,7 @@
         </div>
       </div>
     </div>
-<!-- Make above section a a while loop -->
+
 
 <?php
     $buffetCounter = 1;
@@ -195,6 +195,10 @@
       $imgFloatDirection = ($buffetCounter % 2 == 0) ? 'float: right;' : 'float: left;';
       $menuFloatDirection = ($buffetCounter % 2 == 0) ? 'float: left;' : 'float: right;';
       $rowColor = ($buffetCounter % 2 == 0) ? '' : 'background-color: #1E1D20';
+      //Get file path to buffetimage
+      $trueFilePathToImage = glob("../../img/buffet_files/" . 'Buffet' . $buffetCounter . ".*");
+      $relativeFilePathToBuffetImage = explode("../../", $trueFilePathToImage[0]);
+      
       ?>
 
       <div class="wrapper" style="<?php echo ($rowColor) ?>">
@@ -225,7 +229,8 @@
               <?php endwhile; ?>
             </div>
             <div class="six columns">
-              <img src="img/buffet_files/Buffet<?php echo($buffetCounter)?>.jpg" style="<?php echo ($imgFloatDirection); ?>" width="400px" height="500px"">
+          
+              <img src="<?php echo($relativeFilePathToBuffetImage[1])?>" style="<?php echo ($imgFloatDirection); ?>" width="400px" height="500px"">
             </div>
           </div>
         </div>
