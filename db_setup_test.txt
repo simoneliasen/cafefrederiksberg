@@ -85,7 +85,7 @@ CREATE TABLE buffetpriser(
 id INT NOT NULL AUTO_INCREMENT,
 description VARCHAR(255),
 price VARCHAR(255) NOT NULL,
-buffetNumber VARCHAR(255),
+buffetNumber INT NOT NULL,
 PRIMARY KEY(id));
 
 # Opretter table til åbningstider (Denne data bruges både til footer/kontakt-side)
