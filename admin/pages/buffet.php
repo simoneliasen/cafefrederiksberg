@@ -88,6 +88,9 @@
       // BuffetMax is set to -1 as, its array starts at 0 (adding one buffet too many)
       $buffetNumber = 0;
       while ($buffetNumber <= $buffetMax[0] - 1) :
+
+        $buffetAdjustForZeroArrays = $buffetNumber + 1;
+        $buffetImageFilePath = glob("../../img/buffet_files/" . 'Buffet' . $buffetAdjustForZeroArrays . ".*");
         ?>
 
         <!-- Giver os et div med buffetnavn fra db, og en heading med pænt buffetnavn -->
@@ -195,7 +198,8 @@
             while ($row2 = mysqli_fetch_row($results2)) :
               ?>
             <p><strong>Nuværende billeder:</strong></p>
-            <td><img src="../../img/buffet_files/<?= $row2[0] ?>" id="logo" height="100px"></td>
+            <td><img src="<?= $buffetImageFilePath[0]; ?>" id="logo" height="100px"></td>
+      
           <?php
             endwhile;
             ?>
@@ -220,6 +224,7 @@
         <hr>
       <?php
         $buffetNumber++;
+    
       endwhile;
       ?>
 
