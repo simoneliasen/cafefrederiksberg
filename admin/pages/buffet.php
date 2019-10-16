@@ -105,7 +105,8 @@
               <br><br>
               <a class="button red" href="buffet.php?#category_<?= $categories[$buffetNumber][0] ?>">Fortryd</a>
               <input class="button green" type="submit" value="Tilføj">
-              <input type="hidden" name="hidden_category" value="<?= $categories[$buffetNumber][0] ?>">
+              <input type="hidden" name="hidden_category" value="<?= $categories[$buffetNumber][1] ?>">
+              <input type="hidden" name="category" value="<?= $categories[$buffetNumber][0] ?>">
               <input type="hidden" name="buffetNumber" value="<?= $buffetNumber ?>">
             </form>
 
