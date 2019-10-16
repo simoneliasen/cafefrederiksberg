@@ -187,7 +187,6 @@
       </div>
     </div>
 
-
 <?php
     $buffetCounter = 1;
     //While loop prints buffetinfo changing order every row
@@ -198,7 +197,6 @@
       //Get file path to buffetimage
       $trueFilePathToImage = glob("../../img/buffet_files/" . 'Buffet' . $buffetCounter . ".*");
       $relativeFilePathToBuffetImage = explode("../../", $trueFilePathToImage[0]);
-      
       ?>
 
       <div class="wrapper" style="<?php echo ($rowColor) ?>">
@@ -229,7 +227,6 @@
               <?php endwhile; ?>
             </div>
             <div class="six columns">
-          
               <img src="<?php echo($relativeFilePathToBuffetImage[1])?>" style="<?php echo ($imgFloatDirection); ?>" width="400px" height="500px"">
             </div>
           </div>
