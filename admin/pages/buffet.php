@@ -101,26 +101,21 @@
           <?php if ($id === $categories[$buffetNumber][0]) { ?>
             <form class="restaurant_form" method="post" name="post" action="php_process/process_buffet_input.php?id=<?= $_GET['id'] ?>" enctype="multipart/form-data">
               <label for="menu_item_name_input">Navn på ret</label>
-              <!-- menu_item_name vidersende til menu_item_nameInput -->
               <input name="menu_item_name" type="text" placeholder="Angiv navn" required maxlength="100" />
               <br><br>
-              <!--Fortryd knap sender os tilbage med buffet vi ændrede i i fokus  -->
               <a class="button red" href="buffet.php?#category_<?= $categories[$buffetNumber][0] ?>">Fortryd</a>
               <input class="button green" type="submit" value="Tilføj">
-              <!--Vidersender skjult data i form af navn på buffet  -->
               <input type="hidden" name="hidden_category" value="<?= $categories[$buffetNumber][0] ?>">
-              <!-- passes buffetnumber + 1 as arrays start at 0, and our buffets start at 1 -->
               <input type="hidden" name="buffetNumber" value="<?= $buffetNumber ?>">
             </form>
 
-            <!--Hvis ingen data er angivet på forhånd i bufetter  -->
+    
           <?php } else { ?>
             <form method="post" name="post" action="buffet.php?id=<?= $categories[$buffetNumber][0] ?>#category_<?= $categories[$buffetNumber][0] ?>" enctype="multipart/form-data">
               <input class="button green" type="submit" value="Tilføj">
             </form>
           <?php } ?>
 
-          <!-- Overskrifter til kolonne indhold -->
           <table>
             <tr>
               <th>Indeks</th>
@@ -160,6 +155,7 @@
                     </td>
                     <td class="table_buttons">
                       <form class="table_buttons" method="post" name="post" action="php_process/process_buffet_delete.php?id=<?= $row[0] ?>" enctype="multipart/form-data">
+                      <input type="hidden" name="hidden_category" value="<?= $categories[$buffetNumber][0] ?>">
                         <input id="<?= $row[0] ?>" class="button red" type="submit" value="Slet">
                       </form>
                       <a href="buffet.php?id=<?= $row[0] ?>#category_<?= $categories[$buffetNumber][0] ?>">
@@ -215,6 +211,7 @@
           <form method="post" name="post" action="php_process/process_buffet_upload_img.php" enctype="multipart/form-data">
             <input type="file" name="fileToUpload" id="fileToUpload" width='150px' height='150px'>
             <input type="hidden" name="buffetNumber" id="buffetNumber" value="<?= $buffetNumber ?>">
+            <input type="hidden" name="hidden_category" value="<?= $categories[$buffetNumber][0] ?>">
             <input class="button green" type="submit" value="Upload">
           </form>
         </div>

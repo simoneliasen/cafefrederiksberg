@@ -19,7 +19,7 @@ require_once '../../config.php';
 
 
    if($results){
-     header("Location: ../buffet.php#category_$hidden_category");
+    header("Location: ../buffet.php#category_" . $buffetName);
      exit();
    }else {
      die("could not query the database");

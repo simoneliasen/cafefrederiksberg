@@ -1,6 +1,8 @@
 <?php
 require_once '../../config.php';
 
+//Navn på buffet
+$buffetName = htmlspecialchars($_POST['hidden_category']);
 //Get filename + extension from uploaded file
 $temp = explode(".", $_FILES["fileToUpload"]["name"]);
 //Name of file
@@ -66,7 +68,7 @@ if ($uploadOk == 0) {
 }
  //Redirect back to page
  if ($uploadOk == 1) {
-   header("Location: ../buffet.php");
+  header("Location: ../buffet.php#category_" . $buffetName);
    exit();
  } else {
    die("Kunne ikke forbinde til databasen");
