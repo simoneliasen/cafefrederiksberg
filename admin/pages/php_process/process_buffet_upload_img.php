@@ -10,7 +10,7 @@ $fileName = strtolower(current($temp));
 // Filetype
 $imageFileType = strtolower(end($temp));
 //Buffet we want to upload img to
-$buffetNumber = $_POST["buffetNumber"] + 1;
+$buffetNumber = $_POST["buffetNumber"];
 //Upload file with name of selected buffet + file extension
 $newfilename = 'Buffet' . $buffetNumber . '.' . end($temp);
 //Path to check for if file exist with any extension (used with glob later on)

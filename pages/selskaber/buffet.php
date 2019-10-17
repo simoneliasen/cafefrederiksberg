@@ -129,7 +129,7 @@
 
     <?php
     // return amount of buffetnumbers
-    $query = "SELECT MAX(buffetNumber) FROM buffet;";
+    $query = "SELECT MAX(id) FROM buffet;";
     $buffetMax = mysqli_fetch_row(mysqli_query($db, $query));
     if (!$results) {
       die("could not query the database");
@@ -141,7 +141,7 @@
     {
       global $buffetCounter;
       global $db;
-      $query = "SELECT * FROM buffet WHERE buffetNumber = $buffetCounter;";
+      $query = "SELECT * FROM buffetItems WHERE buffetNumber = $buffetCounter;";
       $results = mysqli_query($db, $query);
       return $results;
     }
@@ -151,7 +151,7 @@
     {
       global $buffetCounter;
       global $db;
-      $query = "SELECT buffetName FROM buffet WHERE buffetNumber = $buffetCounter LIMIT 1;";
+      $query = "SELECT buffetName FROM buffet WHERE id = $buffetCounter;";
       $results = mysqli_query($db, $query);
       $overskrift = $results->fetch_assoc();
       return $overskrift['buffetName'];
@@ -209,7 +209,7 @@
                   $row_result = buffetPicker();
                   while ($row = mysqli_fetch_row($row_result)) :
                     ?>
-                  <li class="buffet_list"><?= $row[3] ?></li>
+                  <li class="buffet_list"><?= $row[2] ?></li>
                 <?php endwhile; ?>
               </ul>
                 <?php $buffetCounter++; ?>
@@ -221,8 +221,8 @@
                 while ($row = mysqli_fetch_row($row_buffetpriser)) :
               ?>
               <div class="buffet_price">
-                <div class="buffet_price_info"><?=$row[1]?></div>
-                <div class="buffet_price_price"><?=$row[2]?></div>
+                <div class="buffet_price_info"><?=$row[2]?></div>
+                <div class="buffet_price_price"><?=$row[3]?></div>
               </div>
               <?php endwhile; ?>
             </div>

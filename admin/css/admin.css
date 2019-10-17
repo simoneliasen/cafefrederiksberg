@@ -310,7 +310,7 @@ table tr td input{padding: 2px 3px;}
 table tr .menu_item_price{ width: 50px; }
 table tr .table_buttons{ width: 180px;}
 table tr .table_buttons .button{ float: right; margin-left: 4px; }
-tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(odd) {background-color: #f2f2f2;}
 
 .slide_img_wrapper{
   float: left;

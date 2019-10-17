@@ -75,17 +75,22 @@ PRIMARY KEY(id));
 CREATE TABLE buffet(
 id INT NOT NULL AUTO_INCREMENT,
 buffetName VARCHAR(255) NOT NULL,
+img VARCHAR(255) NOT NULL,
+PRIMARY KEY(id));
+
+# Opretter table til buffetItems
+CREATE TABLE buffetItems(
+id INT NOT NULL AUTO_INCREMENT,
 buffetNumber INT  NOT NULL,
 buffetItem VARCHAR(255),
-img VARCHAR(255) NOT NULL,
 PRIMARY KEY(id));
 
 # Opretter table til buffetpriser
 CREATE TABLE buffetpriser(
 id INT NOT NULL AUTO_INCREMENT,
+buffetNumber INT NOT NULL,
 description VARCHAR(255),
 price VARCHAR(255) NOT NULL,
-buffetNumber INT NOT NULL,
 PRIMARY KEY(id));
 
 # Opretter table til åbningstider (Denne data bruges både til footer/kontakt-side)
@@ -295,125 +300,140 @@ VALUES ('Mandag','Kl. 10:00-00:00'),
 ('Søndag','Kl. 08:00-00:00'),
 ('Hver dag','Kl. 12:00-14:00 og Kl. 17:00-20:00');
 
-# indsætter elementer table til buffet
-INSERT INTO buffet (buffetItem, buffetName, buffetNumber, img)
-#Buffet1
-VALUES ('Hvide sild med karrysalat','Buffet 1','1','Buffet1.jpg'),
-('Pålægsfad med 3 slags pålæg','Buffet 1','1','Buffet1.jpg'),
-('Lun glaseret skinke','Buffet 1','1','Buffet1.jpg'),
-('Grønne salater med 2 slags dressing','Buffet 1','1','Buffet1.jpg'),
-('Soltørrede tomater, oliven, marinerede hvidløg og croutoner','Buffet 1','1','Buffet1.jpg'),
-('Lun leverpostej med bacon og champignon','Buffet 1','1','Buffet1.jpg'),
-('Kyllingebryst med agurkesalat','Buffet 1','1','Buffet1.jpg'),
-('Pastasalat','Buffet 1','1','Buffet1.jpg'),
-('Frikadeller med flødekartofler','Buffet 1','1','Buffet1.jpg'),
-('Osteanretning med druer og frugt','Buffet 1','1','Buffet1.jpg'),
-('Brød og smør','Buffet 1','1','Buffet1.jpg'),
-#Buffet2
-('Laksefad med hummerdressing, rejer, asparges og kaviar','Buffet 2','2','Buffet2.jpg'),
-('Lune mørbradbøffer med grilltomat og champignon a la creme','Buffet 2','2','Buffet2.jpg'),
-('Leverpostej med bacon og svampe','Buffet 2','2','Buffet2.jpg'),
-('Okesefilet med flødekartofler','Buffet 2','2','Buffet2.jpg'),
-('Grønne salater med 2 slags dressing','Buffet 2','2','Buffet2.jpg'),
-('Kylling med olivenstegte kartofler, coleslaw salat, pesto, oliven, hvidløg, soltørrede tomater og croutoner','Buffet 2','2','Buffet2.jpg'),
-('Soltørrede tomater og croutoner','Buffet 2','2','Buffet2.jpg'),
-('Pastasalat','Buffet 2','2','Buffet2.jpg'),
-('Osteanretning med druer og frugt','Buffet 2','2','Buffet2.jpg'),
-('Brød og smør','Buffet 2','2','Buffet2.jpg'),
-#Buffet3
-('Røget laks med asparges og kaviar','Buffet 3','3','Buffet3.jpg'),
-('Lune frikadeller med kartoffelsalat','Buffet 3','3','Buffet3.jpg'),
-('Mørbradbøffer med bløde løg, sprød bacon. champignon og surt','Buffet 3','3','Buffet3.jpg'),
-('Barbequekylling','Buffet 3','3','Buffet3.jpg'),
-('Grønne salater med 2 slags dressing','Buffet 3','3','Buffet3.jpg'),
-('Lun glaseret skinke med olivenstegte kartofler, pesto, oliven og marinerede hvidløg','Buffet 3','3','Buffet3.jpg'),
-('Soltørrede tomater og croutoner','Buffet 3','3','Buffet3.jpg'),
-('Pastasalat','Buffet 3','3','Buffet3.jpg'),
-('Osteanretning med druer og frugt','Buffet 3','3','Buffet3.jpg'),
-('Brød og smør','Buffet 3','3','Buffet3.jpg'),
-#Buffet4
-('Kold dampet fiskefilet med asparges, kaviar og hummerdressing','Buffet 4','4','Buffet4.jpg'),
-('Rejer og mayonnaise','Buffet 4','4','Buffet4.jpg'),
-('Lun lammekølle med myntegelé','Buffet 4','4','Buffet4.jpg'),
-('Lun tyndstegsfilet med flødekartofler','Buffet 4','4','Buffet4.jpg'),
-('Lun glaseret skinke','Buffet 4','4','Buffet4.jpg'),
-('Salater med 2 slags dressing','Buffet 4','4','Buffet4.jpg'),
-('Lun leverpostej med bacon og champignon','Buffet 4','4','Buffet4.jpg'),
-('Stort ostebord med friske frugter','Buffet 4','4','Buffet4.jpg'),
-#BuffetUSA
-('Salat med grillede rejer på bund af avocado, tomat og ananas - hertil cocktailsauce','USA Buffet','5','Buffet5.jpg'),
-('Beer batter fish - stegt torsk i sprød dej på spidskål, majs og persille - hertil hvidløgscreme','USA Buffet','5','Buffet5.jpg'),
-('Pulled pork i chili og honning, braiserede urter, honningglaserede rodfrugter og syltede tomater','USA Buffet','5','Buffet5.jpg'),
-('US oksesteg med timian, bagte kartofler og salater','USA Buffet','5','Buffet5.jpg'),
-('Majskylling stegt med persilleolie, marinerede svampe med mandler og bagte rødløg','USA Buffet','5','Buffet5.jpg'),
-('Spinat- og kartoffeltærter med cheddarost','USA Buffet','5','Buffet5.jpg'),
-('Caesar salat med sprøde croutoner, bagte tomater, sprød bacon og parmasanost','USA Buffet','5','Buffet5.jpg'),
-('American brownies med softice og frugt','USA Buffet','5','Buffet5.jpg'),
-#BuffetItaly
-('Insalata De Mare - skaldyrssalat med olivenolie og krydderurter','Italiensk Buffet','6','Buffet6.jpg'),
-('Carpaccio - marineret oksekød med parmasanost','Italiensk Buffet','6','Buffet6.jpg'),
-('Lufttørret parmaskinke med soltørret tomatsalat','Italiensk Buffet','6','Buffet6.jpg'),
-('Filetto De Maiale Gratinato - svinemørbrad vendt i olivenolie og paneret med krydderurter','Italiensk Buffet','6','Buffet6.jpg'),
-('Farserede tomater','Italiensk Buffet','6','Buffet6.jpg'),
-('Lasagne','Italiensk Buffet','6','Buffet6.jpg'),
-('Spaghetti carbonara','Italiensk Buffet','6','Buffet6.jpg'),
-('Lammekølle med tomatsauce og risk basilikum','Italiensk Buffet','6','Buffet6.jpg'),
-('Små olivenristede kartfoler med friske krydderurter','Italiensk Buffet','6','Buffet6.jpg'),
-('Friske frugter og italienske oste','Italiensk Buffet','6','Buffet6.jpg'),
-#Buffetoekologi
-('Gazpacho suppe','Økologisk Buffet','7','Buffet7.jpg'),
-('Kartoffelomelet','Økologisk Buffet','7','Buffet7.jpg'),
-('Fyldte muslinger','Økologisk Buffet','7','Buffet7.jpg'),
-('Farserede champignoner','Økologisk Buffet','7','Buffet7.jpg'),
-('Pinchos med forskellig fyld','Økologisk Buffet','7','Buffet7.jpg'),
-('Aioli med stegte kartofler','Økologisk Buffet','7','Buffet7.jpg'),
-('Kødboller i tomatsauce','Økologisk Buffet','7','Buffet7.jpg'),
-('Lam med citron','Økologisk Buffet','7','Buffet7.jpg'),
-('Empanadas med kødfyld','Økologisk Buffet','7','Buffet7.jpg'),
-('Oste med friske frugter','Økologisk Buffet','7','Buffet7.jpg'),
-#Buffetjul
-('Marinerede sild, med æg og karrysalat','Julebuffet','8','Buffet8.jpg'),
-('Julesild','Julebuffet','8','Buffet8.jpg'),
-('Fiskefillet','Julebuffet','8','Buffet8.jpg'),
-('Rejer med mayonnaise','Julebuffet','8','Buffet8.jpg'),
-('Ribbensteg med rødkål','Julebuffet','8','Buffet8.jpg'),
-('Julemedister','Julebuffet','8','Buffet8.jpg'),
-('Frikadeller','Julebuffet','8','Buffet8.jpg'),
-('Stuvede hvidkål med kanel og sukker','Julebuffet','8','Buffet8.jpg'),
-('Vendysselsk grønlangkål','Julebuffet','8','Buffet8.jpg'),
-('Brunede kartofler','Julebuffet','8','Buffet8.jpg'),
-('Glaseret juleskinke','Julebuffet','8','Buffet8.jpg'),
-('Ris a la mande med kirsebærsovs','Julebuffet','8','Buffet8.jpg');
+# indsætter elementer i buffet
+INSERT INTO buffet(buffetName)
+VALUES
+('buffet 1'),
+('buffet 2'),
+('buffet 3'),
+('buffet 4'),
+('USA Buffet'),
+('Italiensk Buffet'),
+('Økologisk Buffet'),
+('Julebuffet')
+;
 
 # indsætter elementer i table til buffetpriser
-INSERT INTO buffetpriser (description,price,buffetNumber)
+INSERT INTO buffetpriser (buffetNumber,description,price)
 VALUES
-#Buffet1
-('For 4 timer - under 20 personer','Kun 299','1'),
-('For 4 timer - min. 20 personer','Kun 399','1'),
-('For 5 timer - under 20 personer','Kun 329','1'),
-('For 5 timer - min. 20 personer','Kun 429','1'),
-#Buffet2
-('For 4 timer - under 20 personer','Kun 299','2'),
-('For 4 timer - min. 20 personer','Kun 399','2'),
-('For 5 timer - under 20 personer','Kun 329','2'),
-('For 5 timer - min. 20 personer','Kun 429','2'),
-#Buffet3
-('For 4 timer - under 20 personer','Kun 299','3'),
-('For 4 timer - min. 20 personer','Kun 399','3'),
-('For 5 timer - under 20 personer','Kun 329','3'),
-('For 5 timer - min. 20 personer','Kun 429','3'),
-#Buffet4
-('Per couv.','Kun 189','4'),
-('For 4 timer','Kun 365','4'),
-#BuffetUSA
-('For 4 timer - min. 20 personer','Kun 379','5'),
-('For 4 timer - under 20 personer','Kun 479','5'),
-#BuffetOekkologi
-('For 4 timer - min. 20 personer','Kun 489','6'),
-('For 4 timer - under personer','Kun 589','6'),
-#BuffetItaly
-('Per couv.','Kun 189','7'),
-('For 4 timer','Kun 365','7'),
-#BuffetJulefrokost
-('Julebuffet - min. 20 personer','Kun 349','8');
+('1','For 4 timer - under 20 personer','Kun 299'),
+('1','For 4 timer - min. 20 personer','Kun 399'),
+('1','For 5 timer - under 20 personer','Kun 329'),
+('1','For 5 timer - min. 20 personer','Kun 429'),
+
+('2','For 4 timer - under 20 personer','Kun 299'),
+('2','For 4 timer - min. 20 personer','Kun 399'),
+('2','For 5 timer - under 20 personer','Kun 329'),
+('2','For 5 timer - min. 20 personer','Kun 429'),
+
+('3','For 4 timer - under 20 personer','Kun 299'),
+('3','For 4 timer - min. 20 personer','Kun 399'),
+('3','For 5 timer - under 20 personer','Kun 329'),
+('3','For 5 timer - min. 20 personer','Kun 429'),
+
+('4','Per couv.','Kun 189'),
+('4','For 4 timer','Kun 365'),
+
+('5','For 4 timer - min. 20 personer','Kun 379'),
+('5','For 4 timer - under 20 personer','Kun 479'),
+
+('6','For 4 timer - min. 20 personer','Kun 489'),
+('6','For 4 timer - under personer','Kun 589'),
+
+('7','Per couv.','Kun 189'),
+('7','For 4 timer','Kun 365'),
+
+('8','Julebuffet - min. 20 personer','Kun 349')
+;
+
+# indsætter elementer table til buffetItems
+INSERT INTO buffetItems (buffetNumber,buffetItem)
+
+VALUES
+('1','Hvide sild med karrysalat'),
+('1','Pålægsfad med 3 slags pålæg'),
+('1','Lun glaseret skinke'),
+('1','Grønne salater med 2 slags dressing'),
+('1','Soltørrede tomater, oliven, marinerede hvidløg og croutoner'),
+('1','Lun leverpostej med bacon og champignon'),
+('1','Kyllingebryst med agurkesalat'),
+('1','Pastasalat'),
+('1','Frikadeller med flødekartofler'),
+('1','Osteanretning med druer og frugt'),
+('1','Brød og smør'),
+
+('2','Laksefad med hummerdressing, rejer, asparges og kaviar'),
+('2','Lune mørbradbøffer med grilltomat og champignon a la creme'),
+('2','Leverpostej med bacon og svampe'),
+('2','Okesefilet med flødekartofler'),
+('2','Grønne salater med 2 slags dressing'),
+('2','Kylling med olivenstegte kartofler, coleslaw salat, pesto, oliven, hvidløg, soltørrede tomater og croutoner'),
+('2','Soltørrede tomater og croutoner'),
+('2','Pastasalat'),
+('2','Osteanretning med druer og frugt'),
+('2','Brød og smør'),
+
+('3','Røget laks med asparges og kaviar'),
+('3','Lune frikadeller med kartoffelsalat'),
+('3','Mørbradbøffer med bløde løg, sprød bacon. champignon og surt'),
+('3','Barbequekylling'),
+('3','Grønne salater med 2 slags dressing'),
+('3','Lun glaseret skinke med olivenstegte kartofler, pesto, oliven og marinerede hvidløg'),
+('3','Soltørrede tomater og croutoner'),
+('3','Pastasalat'),
+('3','Osteanretning med druer og frugt'),
+('3','Brød og smør'),
+
+('4','Kold dampet fiskefilet med asparges, kaviar og hummerdressing'),
+('4','Rejer og mayonnaise'),
+('4','Lun lammekølle med myntegelé'),
+('4','Lun tyndstegsfilet med flødekartofler'),
+('4','Lun glaseret skinke'),
+('4','Salater med 2 slags dressing'),
+('4','Lun leverpostej med bacon og champignon'),
+('4','Stort ostebord med friske frugter'),
+
+('5','Salat med grillede rejer på bund af avocado, tomat og ananas - hertil cocktailsauce'),
+('5','Beer batter fish - stegt torsk i sprød dej på spidskål, majs og persille - hertil hvidløgscreme'),
+('5','Pulled pork i chili og honning, braiserede urter, honningglaserede rodfrugter og syltede tomater'),
+('5','US oksesteg med timian, bagte kartofler og salater'),
+('5','Majskylling stegt med persilleolie, marinerede svampe med mandler og bagte rødløg'),
+('5','Spinat- og kartoffeltærter med cheddarost'),
+('5','Caesar salat med sprøde croutoner, bagte tomater, sprød bacon og parmasanost'),
+('5','American brownies med softice og frugt'),
+
+('6','Insalata De Mare - skaldyrssalat med olivenolie og krydderurter'),
+('6','Carpaccio - marineret oksekød med parmasanost'),
+('6','Lufttørret parmaskinke med soltørret tomatsalat'),
+('6','Filetto De Maiale Gratinato - svinemørbrad vendt i olivenolie og paneret med krydderurter'),
+('6','Farserede tomater'),
+('6','Lasagne'),
+('6','Spaghetti carbonara'),
+('6','Lammekølle med tomatsauce og risk basilikum'),
+('6','Små olivenristede kartfoler med friske krydderurter'),
+('6','Friske frugter og italienske oste'),
+
+('7','Gazpacho suppe'),
+('7','Kartoffelomelet'),
+('7','Fyldte muslinger'),
+('7','Farserede champignoner'),
+('7','Pinchos med forskellig fyld'),
+('7','Aioli med stegte kartofler'),
+('7','Kødboller i tomatsauce'),
+('7','Lam med citron'),
+('7','Empanadas med kødfyld'),
+('7','Oste med friske frugter'),
+
+('8','Marinerede sild, med æg og karrysalat'),
+('8','Julesild'),
+('8','Fiskefillet'),
+('8','Rejer med mayonnaise'),
+('8','Ribbensteg med rødkål'),
+('8','Julemedister'),
+('8','Frikadeller'),
+('8','Stuvede hvidkål med kanel og sukker'),
+('8','Vendysselsk grønlangkål'),
+('8','Brunede kartofler'),
+('8','Glaseret juleskinke'),
+('8','Ris a la mande med kirsebærsovs')
+;

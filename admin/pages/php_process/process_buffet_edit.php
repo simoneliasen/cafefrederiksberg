@@ -5,7 +5,7 @@
   $buffetItem = htmlentities($_POST['menu_item_name']);
   $buffetName = $_POST['hidden_category'];
 
-  $query = "UPDATE buffet SET buffetItem = '$buffetItem' WHERE id = '$id'";
+  $query = "UPDATE buffetItems SET buffetItem = '$buffetItem' WHERE id = '$id'";
   $results = mysqli_query($db, $query);
 
   if($results){
