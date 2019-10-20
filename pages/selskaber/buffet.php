@@ -227,7 +227,7 @@
               <?php endwhile; ?>
             </div>
             <div class="six columns">
-              <img src="<?php echo($relativeFilePathToBuffetImage[1])?>" style="<?php echo ($imgFloatDirection); ?>" width="400px" height="500px">
+              <img src="<?php echo($relativeFilePathToBuffetImage[1])?>" style="<?php echo ($imgFloatDirection); ?> object-fit: cover;" width="400px" height="500px">
             </div>
           </div>
         </div>
