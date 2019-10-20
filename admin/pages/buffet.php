@@ -49,7 +49,7 @@
           <input name="b_name" type="text" placeholder="Angiv Buffetnavn" required maxlength="100" />
           <br><br>
           <label>Buffet Billede</label>
-          <input type="file" name="fileToUpload" id="fileToUpload" width='150px' height='150px'>
+          <input type="file" name="fileToUpload" id="fileToUpload" width='150px' height='150px' required>
           <br><br>
           <input class="button red"   type="reset"  value="Fortryd">
           <input class="button green" type="submit" value="Gem">
