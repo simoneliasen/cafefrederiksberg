@@ -2,30 +2,40 @@
 <?php
 require_once '../../config.php';
 
-  $id = '';
   $buffetName = htmlspecialchars($_POST['b_name']);
   $img = 'test img';
 
   $query = "INSERT INTO buffet VALUES(
-    '$id',
+    '',
     '$buffetName',
-    '$img'
-  )";
+    '$img');";
   $results = mysqli_query($db, $query);
-
+  if(!$results){
+   echo '1';
+}
   $query = "SELECT MAX(id) FROM buffet;";
   $buffetMax = mysqli_fetch_row(mysqli_query($db, $query));
-  echo $buffetMax[0];
 
   $query = "INSERT INTO buffetItems VALUES(
-    '$id',
+    '',
     '$buffetMax[0]',
-    'Buffeten er tom'
-  )";
+    'Buffeten er tom!'
+  );";
   $results = mysqli_query($db, $query);
+  if(!$results){
+   echo '2';
+}
+  $query = "INSERT INTO buffetpriser VALUES(
+    '',
+    '$buffetMax[0]',
+    'ingen pris er angivet!',
+    'N/A');";
+  $results = mysqli_query($db, $query);
+  if(!$results){
+   echo '3';
+ }
 
 
-  $buffetName = htmlspecialchars($_POST['hidden_category']);
   //Get filename + extension from uploaded file
   $temp = explode(".", $_FILES["fileToUpload"]["name"]);
   //Name of file
