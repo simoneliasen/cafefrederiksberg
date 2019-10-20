@@ -239,10 +239,14 @@
     ?>
 
     </div>
-    <div class="spacer" style="height:200px;"></div>
+    <div class="spacer" style="height: 0px;"></div>
   </div>
 
-
+<style>
+  hr {
+    height: 1px;
+  }
+  </style>
 </body>
 
 </html>
