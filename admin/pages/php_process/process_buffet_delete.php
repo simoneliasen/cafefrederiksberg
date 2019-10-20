@@ -7,7 +7,7 @@ require_once '../../config.php';
   $results = mysqli_query($db, $query);
 
   if($results){
-    header("Location: ../buffet.php#category_$buffetName");
+    header("Location: ../buffet.php#$id");
     exit();
   }else {
     die("could not query the database");

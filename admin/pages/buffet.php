@@ -70,14 +70,18 @@
         return $overskrift['buffetName'];
       }
 
-      function buffetChecker(){
-        global $buffetCounter;
-        global $db;
-        $query = "SELECT id FROM buffet WHERE id = $buffetCounter;";
-        $results = mysqli_query($db, $query);
-        $overskrift = $results->fetch_assoc();
-        return $overskrift['buffetName'];
+
+      function buffetImageChecker($index){
+
+        $files = glob('../../img/buffet_files/*');
+        $path = '../../img/buffet_files/' ;
+        $fileName = '../../img/buffet_files/Buffet' . $index . '.';
+
+        if(file_exists($fileName . 'jpg' ) or file_exists($fileName . 'jpeg') or file_exists($fileName . 'png')){
+          return true;
+        }
       }
+
 
       //finder max for buffeter
       $query = "SELECT MAX(id) FROM buffet;";
@@ -99,6 +103,7 @@
         ?>
         <table>
         <h2 class="task_heading" id="section_<?= $buffetCounter ?>"><?=buffetOverskrift()?></h2>
+
         <?php
           $query = "SELECT * FROM buffetItems WHERE buffetNumber = $buffetCounter";
           $results = mysqli_query($db, $query);
@@ -140,23 +145,79 @@
               <?php
             endif;
           endwhile;
-          ?>
-          </table>
-          <div class="task_wrapper" id="billedeupload">
-            <!-- Sql variabler har fået 2 tilføjet, så de ikke forstyrre andre queries i dette dokument -->
-            <?php
-              //// QUESTION: Er det her noget der er lavet til at hente billeder fra databse? Kan ikke se det bliver kaldt nogle steder
-              //// QUESTION: Så jeg har kommenteret det ud
 
-              // echo $buffetCounter;
-              // $query2 = "SELECT img FROM buffet WHERE id = $buffetCounter AND img != '' LIMIT 1";
-              // $results2 = mysqli_query($db, $query2);
-              // $img = $results2->fetch_assoc();
-              // $img['img'];
+          ?>
+
+          <?php
+          $query = "SELECT buffetNumber FROM buffetpriser WHERE buffetNumber = $buffetCounter";
+          $priserChecker = mysqli_query($db, $query);
+          if (mysqli_num_rows($priserChecker)!==0) :
+            ?>
+            <tr>
+              <form method="post" name="post" action="php_process/process_buffetItem_add.php?id=<?= $buffetCounter ?>" enctype="multipart/form-data">
+                <td><div class="menu_item_index">+</td>
+                <td>
+                  <input name="buffetItem_add" type="text" placeholder="Tilføj til Buffet" required maxlength="100" />
+                </td>
+                <td class="table_buttons">
+                  <input type="hidden" name="hidden_section" value="<?= $row[1] ?>">
+                  <input id="<?= $row[0] ?>" class="button green" type="submit" value="Tilføj">
+                </td>
+              </form>
+            </tr>
+            </table>
+            <p><b>Priser:</b></p>
+            <table>
+            <?php
+            $query = "SELECT * FROM buffetpriser WHERE buffetNumber = $buffetCounter";
+            $results = mysqli_query($db, $query);
+            while ($row = mysqli_fetch_row($results)) :
+
+              ?>
+
+                <tr>
+                  <td><div class="menu_item_index"><?= $row[1] ?></div></td>
+                  <td><div class="menu_item_name"><?= $row[2] ?></div></td>
+
+                  <td class="table_buttons">
+                    <form class="table_buttons" method="post" name="post" action="php_process/process_buffet_delete.php?id=<?= $row[0] ?>" enctype="multipart/form-data">
+                    <input type="hidden" name="hidden_section" value="<?= $row[1] ?>">
+                      <input id="<?= $row[0] ?>" class="button red" type="submit" value="Slet">
+                    </form>
+                    <a href="buffet.php?id=<?= $row[0] ?>#section_<?= $row[1] ?>">
+                      <input class="button grey" type="submit" value="Rediger">
+                    </a>
+                  </td>
+                </tr>
+
+
+              <?php
+            endwhile;
+            ?>
+            <tr>
+              <form method="post" name="post" action="php_process/process_buffetItem_add.php?id=<?= $buffetCounter ?>" enctype="multipart/form-data">
+                <td><div class="menu_item_index">+</td>
+                <td>
+                  <input name="buffetItem_add" type="text" placeholder="Tilføj priser" required maxlength="100" />
+                </td>
+                <td class="table_buttons">
+                  <input type="hidden" name="hidden_section" value="<?= $row[1] ?>">
+                  <input id="<?= $row[0] ?>" class="button green" type="submit" value="Tilføj">
+                </td>
+              </form>
+            </tr>
+          </table>
+          <?php
+          endif;
+          if(buffetImageChecker($buffetCounter)) : ?>
+
+          <div id="billedeupload">
+            <?php
+
               $buffetImageFilePath = glob("../../img/buffet_files/" . 'Buffet' . $buffetCounter . ".*");
             ?>
             <p><strong>Buffet billede:</strong></p>
-            <td><img src="<?= $buffetImageFilePath[0]; ?>" id="logo" height="100px"></td>
+            <img src="<?= $buffetImageFilePath[0]; ?>" id="logo" height="100px">
             <br><br>
 
             <!-- Set action to be process_buffet_upload_img.php and write the logic for it -->
@@ -170,10 +231,11 @@
               <input id="<?= $buffetCounter ?>" class="button red" type="submit" value="SLET BUFFET">
             </form>
           </div>
-          <br>
 
         <hr>
+        <br><br><br>
         <?php
+        endif;
         $buffetCounter++;
       endwhile;
 
