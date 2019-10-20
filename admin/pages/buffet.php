@@ -178,15 +178,13 @@
                 <tr>
                   <td><div class="menu_item_index"><?= $row[1] ?></div></td>
                   <td><div class="menu_item_name"><?= $row[2] ?></div></td>
+                  <td><div class="menu_item_name"><?= $row[3] ?></div></td>
 
                   <td class="table_buttons">
-                    <form class="table_buttons" method="post" name="post" action="php_process/process_buffet_delete.php?id=<?= $row[0] ?>" enctype="multipart/form-data">
+                    <form class="table_buttons" method="post" name="post" action="php_process/process_buffetPrice_delete.php?id=<?= $row[0] ?>" enctype="multipart/form-data">
                     <input type="hidden" name="hidden_section" value="<?= $row[1] ?>">
                       <input id="<?= $row[0] ?>" class="button red" type="submit" value="Slet">
                     </form>
-                    <a href="buffet.php?id=<?= $row[0] ?>#section_<?= $row[1] ?>">
-                      <input class="button grey" type="submit" value="Rediger">
-                    </a>
                   </td>
                 </tr>
 
@@ -195,11 +193,10 @@
             endwhile;
             ?>
             <tr>
-              <form method="post" name="post" action="php_process/process_buffetItem_add.php?id=<?= $buffetCounter ?>" enctype="multipart/form-data">
+              <form method="post" name="post" action="php_process/process_buffetPrice_add.php?id=<?= $buffetCounter ?>" enctype="multipart/form-data">
                 <td><div class="menu_item_index">+</td>
-                <td>
-                  <input name="buffetItem_add" type="text" placeholder="Tilføj priser" required maxlength="100" />
-                </td>
+                <td><input name="buffetDesc_add" type="text" placeholder="Tilføj beskrivelse" required maxlength="100" /></td>
+                <td><input name="buffetPrice_add" type="text" placeholder="Tilføj pris" required maxlength="100" /></td>
                 <td class="table_buttons">
                   <input type="hidden" name="hidden_section" value="<?= $row[1] ?>">
                   <input id="<?= $row[0] ?>" class="button green" type="submit" value="Tilføj">
