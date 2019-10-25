@@ -2,7 +2,7 @@
 require_once '../../config.php';
 
 //Navn på buffet
-$buffetName = htmlspecialchars($_POST['hidden_category']);
+// $buffetName = htmlspecialchars($_POST['hidden_category']);
 //Get filename + extension from uploaded file
 $temp = explode(".", $_FILES["fileToUpload"]["name"]);
 //Name of file
@@ -33,21 +33,8 @@ if (isset($_POST["submit"])) {
   }
 }
 
-// Replace existing file with of any file extension with new file
-if (glob($mask)) {
-  array_map("unlink", glob($mask));
-  if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], "../../../img/buffet_files/" . $newfilename)) {
-    echo "The file " . basename($_FILES["fileToUpload"]["name"]) . " has been uploaded.";
-  }
-  // $uploadOk = 1;
-}
 
-// Check file size
-if ($_FILES["fileToUpload"]["size"] > 100000000) {
-  echo "Sorry, your file is too large.";
-  $uploadOk = 0;
-}
-// Allow certain file formats
+
 if (
   $imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
   && $imageFileType != "gif"
@@ -55,6 +42,29 @@ if (
   echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
   $uploadOk = 0;
 }
+elseif (glob($mask)) {
+  array_map("unlink", glob($mask));
+  if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], "../../../img/buffet_files/" . $newfilename)) {
+    echo "The file " . basename($_FILES["fileToUpload"]["name"]) . " has been uploaded.";
+    $uploadOk = 1;
+  }
+else  pass;
+}
+
+
+// Check file size
+if ($_FILES["fileToUpload"]["size"] > 100000000) {
+  echo "Sorry, your file is too large.";
+  $uploadOk = 0;
+}
+// Allow certain file formats
+
+
+
+
+
+
+
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
   echo "Sorry, your file was not uploaded.";

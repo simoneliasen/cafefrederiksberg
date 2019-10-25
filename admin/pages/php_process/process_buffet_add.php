@@ -66,13 +66,20 @@ require_once '../../config.php';
     }
   }
 
-  // Replace existing file with of any file extension with new file
-  if (glob($mask)) {
+  if (
+    $imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+    && $imageFileType != "gif"
+  ) {
+    echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+    $uploadOk = 0;
+  }
+  elseif (glob($mask)) {
     array_map("unlink", glob($mask));
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], "../../../img/buffet_files/" . $newfilename)) {
       echo "The file " . basename($_FILES["fileToUpload"]["name"]) . " has been uploaded.";
+      $uploadOk = 1;
     }
-    // $uploadOk = 1;
+  else  pass;
   }
 
   // Check file size
