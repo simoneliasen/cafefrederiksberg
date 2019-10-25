@@ -165,7 +165,21 @@
       $results = mysqli_query($db, $query);
       return $results;
     }
+
+    function buffetChecker(){
+      global $buffetCounter;
+      global $db;
+      $query = "SELECT * FROM buffet WHERE id = $buffetCounter;";
+      $results = mysqli_query($db, $query);
+      if (mysqli_num_rows($results) == 0) {
+        return false;
+      }else{
+        return true;
+      }
+    }
 ?>
+
+
 
 <!-- while loop to make links corresponding with buffetOverskrift -->
     <div class="container">
@@ -189,12 +203,16 @@
 
 <?php
     $buffetCounter = 1;
+    $floatCounter = 1;
     //While loop prints buffetinfo changing order every row
     while ($buffetCounter <= $buffetMax[0]) :
-      $imgFloatDirection = ($buffetCounter % 2 == 0) ? 'float: right;' : 'float: left;';
-      $menuFloatDirection = ($buffetCounter % 2 == 0) ? 'float: left;' : 'float: right;';
-      $rowColor = ($buffetCounter % 2 == 0) ? '' : 'background-color: #1E1D20';
+
+      $imgFloatDirection = ($floatCounter % 2 == 0) ? 'float: right;' : 'float: left;';
+      $menuFloatDirection = ($floatCounter % 2 == 0) ? 'float: left;' : 'float: right;';
+      $rowColor = ($floatCounter % 2 == 0) ? '' : 'background-color: #1E1D20';
+      if(buffetChecker()) :
       //Get file path to buffetimage
+
       $trueFilePathToImage = glob("../../img/buffet_files/" . 'Buffet' . $buffetCounter . ".*");
       $relativeFilePathToBuffetImage = explode("../../", $trueFilePathToImage[0]);
       ?>
@@ -234,6 +252,8 @@
       </div>
 
     <?php
+      $floatCounter++;
+    endif;
       $buffetCounter++;
     endwhile;
     mysqli_close($db);
