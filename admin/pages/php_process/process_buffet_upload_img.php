@@ -33,8 +33,6 @@ if (isset($_POST["submit"])) {
   }
 }
 
-
-
 if (
   $imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
   && $imageFileType != "gif"
@@ -51,19 +49,11 @@ elseif (glob($mask)) {
 else  pass;
 }
 
-
 // Check file size
 if ($_FILES["fileToUpload"]["size"] > 100000000) {
   echo "Sorry, your file is too large.";
   $uploadOk = 0;
 }
-// Allow certain file formats
-
-
-
-
-
-
 
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {

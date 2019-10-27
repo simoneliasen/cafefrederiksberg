@@ -1,3 +1,6 @@
+<?php //Opretter forbindelse til databaser og ser om bruger er logget ind
+include('../session.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 

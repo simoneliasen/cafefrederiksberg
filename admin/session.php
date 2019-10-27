@@ -1,8 +1,8 @@
 <?php
-// Finder og går ind i database
-   include('config.php');
    // Starter en session
    session_start();
+// Finder og går ind i database
+   include('config.php');
 // Checker om brugeren er logget ind
    $user_check = $_SESSION['login_user'];
 // Ser om indtastede login stemmer overens med brugernavn/password i database
