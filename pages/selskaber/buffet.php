@@ -221,7 +221,7 @@
         <div class="container">
           <div class="row buffet_even">
             <div class="six columns" style="<?php echo ($menuFloatDirection) ?>">
-              <h2><?= buffetOverskrift() ?></h2>
+              <h2 style="text-transform: capitalize;"><?= buffetOverskrift() ?></h2>
               <ul>
                 <?php
                   $row_result = buffetPicker();
