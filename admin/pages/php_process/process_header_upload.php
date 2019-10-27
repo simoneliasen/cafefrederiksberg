@@ -71,7 +71,7 @@
 
       $query = "INSERT INTO header VALUES ('','$fileType','$newFileName','$type')";
       $results = mysqli_query($db, $query);
-      echo "Filen ". basename($_FILES["fileToUpload"]["name"]). " er blevet uploaded.";
+    
 
     } else {
       echo "Der var et problem med at uploade filen";

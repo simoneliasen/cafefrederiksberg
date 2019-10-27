@@ -76,7 +76,6 @@ require_once '../../config.php';
   elseif (glob($mask)) {
     array_map("unlink", glob($mask));
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], "../../../img/buffet_files/" . $newfilename)) {
-      echo "The file " . basename($_FILES["fileToUpload"]["name"]) . " has been uploaded.";
       $uploadOk = 1;
     }
   else  pass;

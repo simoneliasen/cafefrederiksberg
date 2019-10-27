@@ -34,7 +34,6 @@
   } elseif(move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
     $query = "UPDATE katalog SET img ='$newFileName' WHERE id=1;";
     $results = mysqli_query($db, $query);
-    echo "Filen ". basename($_FILES["fileToUpload"]["name"]). " er blevet uploaded.";
   } else {
     echo "Der var et problem med at uploade filen";
   }
